@@ -90,5 +90,19 @@ namespace QuanLy_NhanSu
         {
 
         }
+
+        private void groupBox10_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_ThongKe_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataSetQLNS.DANHSACHUNGVIENROT' table. You can move, or remove it, as needed.
+            this.dANHSACHUNGVIENROTTableAdapter.Fill(this.dataSetQLNS.DANHSACHUNGVIENROT);
+            // TODO: This line of code loads data into the 'dataSetQLNS.DANHSACHUNGVIENDAU' table. You can move, or remove it, as needed.
+            this.dANHSACHUNGVIENDAUTableAdapter.Fill(this.dataSetQLNS.DANHSACHUNGVIENDAU);
+
+        }
     }
 }
