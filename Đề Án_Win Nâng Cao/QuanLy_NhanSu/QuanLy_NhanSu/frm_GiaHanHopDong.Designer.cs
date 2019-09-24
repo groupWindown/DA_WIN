@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox37 = new System.Windows.Forms.TextBox();
             this.dateEdit3 = new DevExpress.XtraEditors.DateEdit();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@
             this.label49 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
@@ -92,6 +92,26 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin chi tiết";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.ItemHeight = 20;
+            this.comboBox2.Location = new System.Drawing.Point(121, 217);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(207, 28);
+            this.comboBox2.TabIndex = 93;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ItemHeight = 20;
+            this.comboBox1.Location = new System.Drawing.Point(121, 79);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(207, 28);
+            this.comboBox1.TabIndex = 92;
+            // 
             // dateEdit2
             // 
             this.dateEdit2.EditValue = null;
@@ -120,6 +140,16 @@
             this.dateEdit1.Size = new System.Drawing.Size(207, 27);
             this.dateEdit1.TabIndex = 90;
             // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.ItemHeight = 20;
+            this.comboBox3.Location = new System.Drawing.Point(121, 35);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(207, 28);
+            this.comboBox3.TabIndex = 83;
+            // 
             // textBox37
             // 
             this.textBox37.Location = new System.Drawing.Point(477, 173);
@@ -141,16 +171,6 @@
             this.dateEdit3.Properties.CellSize = new System.Drawing.Size(207, 27);
             this.dateEdit3.Size = new System.Drawing.Size(207, 27);
             this.dateEdit3.TabIndex = 88;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.ItemHeight = 20;
-            this.comboBox3.Location = new System.Drawing.Point(121, 35);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(207, 28);
-            this.comboBox3.TabIndex = 83;
             // 
             // label55
             // 
@@ -289,26 +309,6 @@
             this.button7.Text = "Lưu";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 20;
-            this.comboBox1.Location = new System.Drawing.Point(121, 79);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(207, 28);
-            this.comboBox1.TabIndex = 92;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.ItemHeight = 20;
-            this.comboBox2.Location = new System.Drawing.Point(121, 217);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(207, 28);
-            this.comboBox2.TabIndex = 93;
-            // 
             // frm_GiaHanHopDong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,7 +320,6 @@
             this.Controls.Add(this.groupBox5);
             this.Name = "frm_GiaHanHopDong";
             this.Text = "frm_GiaHanHopDong";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();

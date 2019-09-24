@@ -53,7 +53,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.labler1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(248, 89);
+            this.panel1.Location = new System.Drawing.Point(447, 204);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(533, 264);
             this.panel1.TabIndex = 9;
@@ -146,7 +146,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1013, 514);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel1);
             this.Name = "frm_DangNhap";
             this.Text = "frm_DangNhap";

@@ -58,6 +58,23 @@
             this.dANHSACHUNGVIENDAUBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetQLNS = new QuanLy_NhanSu.DataSetQLNS();
             this.xtraTabPage10 = new DevExpress.XtraTab.XtraTabPage();
+            this.dANHSACHUNGVIENROTDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn76 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn77 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn78 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn79 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn81 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn83 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn84 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn85 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn86 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn87 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn88 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn89 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn75 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dANHSACHUNGVIENROTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.panel8 = new System.Windows.Forms.Panel();
             this.dataGridView10 = new System.Windows.Forms.DataGridView();
@@ -314,24 +331,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.dANHSACHUNGVIENDAUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DANHSACHUNGVIENDAUTableAdapter();
             this.tableAdapterManager = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager();
-            this.dANHSACHUNGVIENROTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dANHSACHUNGVIENROTTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DANHSACHUNGVIENROTTableAdapter();
-            this.dANHSACHUNGVIENROTDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn76 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn77 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn78 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn79 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn81 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn83 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn84 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn85 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn86 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn87 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn88 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn89 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn75 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabNavigationPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tileNavPane1)).BeginInit();
             this.tabNavigationPage10.SuspendLayout();
@@ -343,6 +343,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENDAUBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
             this.xtraTabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTBindingSource)).BeginInit();
             this.tabNavigationPage6.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
@@ -422,8 +424,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit12.Properties)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tileNavCategory1
@@ -647,6 +647,128 @@
             this.xtraTabPage10.Name = "xtraTabPage10";
             this.xtraTabPage10.Size = new System.Drawing.Size(1364, 694);
             this.xtraTabPage10.Text = "Danh sách ứng viên rớt";
+            // 
+            // dANHSACHUNGVIENROTDataGridView
+            // 
+            this.dANHSACHUNGVIENROTDataGridView.AutoGenerateColumns = false;
+            this.dANHSACHUNGVIENROTDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dANHSACHUNGVIENROTDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn76,
+            this.dataGridViewTextBoxColumn77,
+            this.dataGridViewTextBoxColumn78,
+            this.dataGridViewTextBoxColumn79,
+            this.dataGridViewTextBoxColumn80,
+            this.dataGridViewTextBoxColumn81,
+            this.dataGridViewTextBoxColumn82,
+            this.dataGridViewTextBoxColumn83,
+            this.dataGridViewTextBoxColumn84,
+            this.dataGridViewTextBoxColumn85,
+            this.dataGridViewTextBoxColumn86,
+            this.dataGridViewTextBoxColumn87,
+            this.dataGridViewTextBoxColumn88,
+            this.dataGridViewTextBoxColumn89,
+            this.dataGridViewTextBoxColumn75});
+            this.dANHSACHUNGVIENROTDataGridView.DataSource = this.dANHSACHUNGVIENROTBindingSource;
+            this.dANHSACHUNGVIENROTDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dANHSACHUNGVIENROTDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.dANHSACHUNGVIENROTDataGridView.Name = "dANHSACHUNGVIENROTDataGridView";
+            this.dANHSACHUNGVIENROTDataGridView.Size = new System.Drawing.Size(1364, 694);
+            this.dANHSACHUNGVIENROTDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn76
+            // 
+            this.dataGridViewTextBoxColumn76.DataPropertyName = "MAUNGVIEN";
+            this.dataGridViewTextBoxColumn76.HeaderText = "Mã ứng viên";
+            this.dataGridViewTextBoxColumn76.Name = "dataGridViewTextBoxColumn76";
+            // 
+            // dataGridViewTextBoxColumn77
+            // 
+            this.dataGridViewTextBoxColumn77.DataPropertyName = "HOTEN";
+            this.dataGridViewTextBoxColumn77.HeaderText = "Họ tên";
+            this.dataGridViewTextBoxColumn77.Name = "dataGridViewTextBoxColumn77";
+            // 
+            // dataGridViewTextBoxColumn78
+            // 
+            this.dataGridViewTextBoxColumn78.DataPropertyName = "GIOITINH";
+            this.dataGridViewTextBoxColumn78.HeaderText = "Giới tính";
+            this.dataGridViewTextBoxColumn78.Name = "dataGridViewTextBoxColumn78";
+            // 
+            // dataGridViewTextBoxColumn79
+            // 
+            this.dataGridViewTextBoxColumn79.DataPropertyName = "NGAYSINH";
+            this.dataGridViewTextBoxColumn79.HeaderText = "Ngày sinh";
+            this.dataGridViewTextBoxColumn79.Name = "dataGridViewTextBoxColumn79";
+            // 
+            // dataGridViewTextBoxColumn80
+            // 
+            this.dataGridViewTextBoxColumn80.DataPropertyName = "NOISINH";
+            this.dataGridViewTextBoxColumn80.HeaderText = "Nơi sinh";
+            this.dataGridViewTextBoxColumn80.Name = "dataGridViewTextBoxColumn80";
+            // 
+            // dataGridViewTextBoxColumn81
+            // 
+            this.dataGridViewTextBoxColumn81.DataPropertyName = "CMND";
+            this.dataGridViewTextBoxColumn81.HeaderText = "CMND";
+            this.dataGridViewTextBoxColumn81.Name = "dataGridViewTextBoxColumn81";
+            // 
+            // dataGridViewTextBoxColumn82
+            // 
+            this.dataGridViewTextBoxColumn82.DataPropertyName = "NOIOHIENTAI";
+            this.dataGridViewTextBoxColumn82.HeaderText = "Nơi ở hiện tại";
+            this.dataGridViewTextBoxColumn82.Name = "dataGridViewTextBoxColumn82";
+            // 
+            // dataGridViewTextBoxColumn83
+            // 
+            this.dataGridViewTextBoxColumn83.DataPropertyName = "DIENTHOAI";
+            this.dataGridViewTextBoxColumn83.HeaderText = "Số điện thoại";
+            this.dataGridViewTextBoxColumn83.Name = "dataGridViewTextBoxColumn83";
+            // 
+            // dataGridViewTextBoxColumn84
+            // 
+            this.dataGridViewTextBoxColumn84.DataPropertyName = "EMAIL";
+            this.dataGridViewTextBoxColumn84.HeaderText = "Email";
+            this.dataGridViewTextBoxColumn84.Name = "dataGridViewTextBoxColumn84";
+            // 
+            // dataGridViewTextBoxColumn85
+            // 
+            this.dataGridViewTextBoxColumn85.DataPropertyName = "TINHTRANGHONNHAN";
+            this.dataGridViewTextBoxColumn85.HeaderText = "Hôn nhân";
+            this.dataGridViewTextBoxColumn85.Name = "dataGridViewTextBoxColumn85";
+            // 
+            // dataGridViewTextBoxColumn86
+            // 
+            this.dataGridViewTextBoxColumn86.DataPropertyName = "TINHTRANGSUCKHOE";
+            this.dataGridViewTextBoxColumn86.HeaderText = "Sức khỏe";
+            this.dataGridViewTextBoxColumn86.Name = "dataGridViewTextBoxColumn86";
+            // 
+            // dataGridViewTextBoxColumn87
+            // 
+            this.dataGridViewTextBoxColumn87.DataPropertyName = "NGAYTUYENDUNG";
+            this.dataGridViewTextBoxColumn87.HeaderText = "Ngày tuyển dụng";
+            this.dataGridViewTextBoxColumn87.Name = "dataGridViewTextBoxColumn87";
+            // 
+            // dataGridViewTextBoxColumn88
+            // 
+            this.dataGridViewTextBoxColumn88.DataPropertyName = "HINHTHUCTUYENDUNG";
+            this.dataGridViewTextBoxColumn88.HeaderText = "Hình thức";
+            this.dataGridViewTextBoxColumn88.Name = "dataGridViewTextBoxColumn88";
+            // 
+            // dataGridViewTextBoxColumn89
+            // 
+            this.dataGridViewTextBoxColumn89.DataPropertyName = "VITRITUYENDUNG";
+            this.dataGridViewTextBoxColumn89.HeaderText = "Vị trí tuyển dụng";
+            this.dataGridViewTextBoxColumn89.Name = "dataGridViewTextBoxColumn89";
+            // 
+            // dataGridViewTextBoxColumn75
+            // 
+            this.dataGridViewTextBoxColumn75.DataPropertyName = "KETQUA";
+            this.dataGridViewTextBoxColumn75.HeaderText = "Kết quả";
+            this.dataGridViewTextBoxColumn75.Name = "dataGridViewTextBoxColumn75";
+            // 
+            // dANHSACHUNGVIENROTBindingSource
+            // 
+            this.dANHSACHUNGVIENROTBindingSource.DataMember = "DANHSACHUNGVIENROT";
+            this.dANHSACHUNGVIENROTBindingSource.DataSource = this.dataSetQLNS;
             // 
             // tabNavigationPage6
             // 
@@ -2994,131 +3116,9 @@
             this.tableAdapterManager.TRINHDOTINHOCTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // dANHSACHUNGVIENROTBindingSource
-            // 
-            this.dANHSACHUNGVIENROTBindingSource.DataMember = "DANHSACHUNGVIENROT";
-            this.dANHSACHUNGVIENROTBindingSource.DataSource = this.dataSetQLNS;
-            // 
             // dANHSACHUNGVIENROTTableAdapter
             // 
             this.dANHSACHUNGVIENROTTableAdapter.ClearBeforeFill = true;
-            // 
-            // dANHSACHUNGVIENROTDataGridView
-            // 
-            this.dANHSACHUNGVIENROTDataGridView.AutoGenerateColumns = false;
-            this.dANHSACHUNGVIENROTDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dANHSACHUNGVIENROTDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn76,
-            this.dataGridViewTextBoxColumn77,
-            this.dataGridViewTextBoxColumn78,
-            this.dataGridViewTextBoxColumn79,
-            this.dataGridViewTextBoxColumn80,
-            this.dataGridViewTextBoxColumn81,
-            this.dataGridViewTextBoxColumn82,
-            this.dataGridViewTextBoxColumn83,
-            this.dataGridViewTextBoxColumn84,
-            this.dataGridViewTextBoxColumn85,
-            this.dataGridViewTextBoxColumn86,
-            this.dataGridViewTextBoxColumn87,
-            this.dataGridViewTextBoxColumn88,
-            this.dataGridViewTextBoxColumn89,
-            this.dataGridViewTextBoxColumn75});
-            this.dANHSACHUNGVIENROTDataGridView.DataSource = this.dANHSACHUNGVIENROTBindingSource;
-            this.dANHSACHUNGVIENROTDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dANHSACHUNGVIENROTDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.dANHSACHUNGVIENROTDataGridView.Name = "dANHSACHUNGVIENROTDataGridView";
-            this.dANHSACHUNGVIENROTDataGridView.Size = new System.Drawing.Size(1364, 694);
-            this.dANHSACHUNGVIENROTDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn76
-            // 
-            this.dataGridViewTextBoxColumn76.DataPropertyName = "MAUNGVIEN";
-            this.dataGridViewTextBoxColumn76.HeaderText = "Mã ứng viên";
-            this.dataGridViewTextBoxColumn76.Name = "dataGridViewTextBoxColumn76";
-            // 
-            // dataGridViewTextBoxColumn77
-            // 
-            this.dataGridViewTextBoxColumn77.DataPropertyName = "HOTEN";
-            this.dataGridViewTextBoxColumn77.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn77.Name = "dataGridViewTextBoxColumn77";
-            // 
-            // dataGridViewTextBoxColumn78
-            // 
-            this.dataGridViewTextBoxColumn78.DataPropertyName = "GIOITINH";
-            this.dataGridViewTextBoxColumn78.HeaderText = "Giới tính";
-            this.dataGridViewTextBoxColumn78.Name = "dataGridViewTextBoxColumn78";
-            // 
-            // dataGridViewTextBoxColumn79
-            // 
-            this.dataGridViewTextBoxColumn79.DataPropertyName = "NGAYSINH";
-            this.dataGridViewTextBoxColumn79.HeaderText = "Ngày sinh";
-            this.dataGridViewTextBoxColumn79.Name = "dataGridViewTextBoxColumn79";
-            // 
-            // dataGridViewTextBoxColumn80
-            // 
-            this.dataGridViewTextBoxColumn80.DataPropertyName = "NOISINH";
-            this.dataGridViewTextBoxColumn80.HeaderText = "Nơi sinh";
-            this.dataGridViewTextBoxColumn80.Name = "dataGridViewTextBoxColumn80";
-            // 
-            // dataGridViewTextBoxColumn81
-            // 
-            this.dataGridViewTextBoxColumn81.DataPropertyName = "CMND";
-            this.dataGridViewTextBoxColumn81.HeaderText = "CMND";
-            this.dataGridViewTextBoxColumn81.Name = "dataGridViewTextBoxColumn81";
-            // 
-            // dataGridViewTextBoxColumn82
-            // 
-            this.dataGridViewTextBoxColumn82.DataPropertyName = "NOIOHIENTAI";
-            this.dataGridViewTextBoxColumn82.HeaderText = "Nơi ở hiện tại";
-            this.dataGridViewTextBoxColumn82.Name = "dataGridViewTextBoxColumn82";
-            // 
-            // dataGridViewTextBoxColumn83
-            // 
-            this.dataGridViewTextBoxColumn83.DataPropertyName = "DIENTHOAI";
-            this.dataGridViewTextBoxColumn83.HeaderText = "Số điện thoại";
-            this.dataGridViewTextBoxColumn83.Name = "dataGridViewTextBoxColumn83";
-            // 
-            // dataGridViewTextBoxColumn84
-            // 
-            this.dataGridViewTextBoxColumn84.DataPropertyName = "EMAIL";
-            this.dataGridViewTextBoxColumn84.HeaderText = "Email";
-            this.dataGridViewTextBoxColumn84.Name = "dataGridViewTextBoxColumn84";
-            // 
-            // dataGridViewTextBoxColumn85
-            // 
-            this.dataGridViewTextBoxColumn85.DataPropertyName = "TINHTRANGHONNHAN";
-            this.dataGridViewTextBoxColumn85.HeaderText = "Hôn nhân";
-            this.dataGridViewTextBoxColumn85.Name = "dataGridViewTextBoxColumn85";
-            // 
-            // dataGridViewTextBoxColumn86
-            // 
-            this.dataGridViewTextBoxColumn86.DataPropertyName = "TINHTRANGSUCKHOE";
-            this.dataGridViewTextBoxColumn86.HeaderText = "Sức khỏe";
-            this.dataGridViewTextBoxColumn86.Name = "dataGridViewTextBoxColumn86";
-            // 
-            // dataGridViewTextBoxColumn87
-            // 
-            this.dataGridViewTextBoxColumn87.DataPropertyName = "NGAYTUYENDUNG";
-            this.dataGridViewTextBoxColumn87.HeaderText = "Ngày tuyển dụng";
-            this.dataGridViewTextBoxColumn87.Name = "dataGridViewTextBoxColumn87";
-            // 
-            // dataGridViewTextBoxColumn88
-            // 
-            this.dataGridViewTextBoxColumn88.DataPropertyName = "HINHTHUCTUYENDUNG";
-            this.dataGridViewTextBoxColumn88.HeaderText = "Hình thức";
-            this.dataGridViewTextBoxColumn88.Name = "dataGridViewTextBoxColumn88";
-            // 
-            // dataGridViewTextBoxColumn89
-            // 
-            this.dataGridViewTextBoxColumn89.DataPropertyName = "VITRITUYENDUNG";
-            this.dataGridViewTextBoxColumn89.HeaderText = "Vị trí tuyển dụng";
-            this.dataGridViewTextBoxColumn89.Name = "dataGridViewTextBoxColumn89";
-            // 
-            // dataGridViewTextBoxColumn75
-            // 
-            this.dataGridViewTextBoxColumn75.DataPropertyName = "KETQUA";
-            this.dataGridViewTextBoxColumn75.HeaderText = "Kết quả";
-            this.dataGridViewTextBoxColumn75.Name = "dataGridViewTextBoxColumn75";
             // 
             // frm_ThongKe
             // 
@@ -3142,6 +3142,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENDAUBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
             this.xtraTabPage10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTBindingSource)).EndInit();
             this.tabNavigationPage6.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
@@ -3230,8 +3232,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit12.Properties)).EndInit();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -253,3 +253,6 @@ C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\Quan
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\bin\Debug\es\DevExpress.Dialogs.v18.2.Core.resources.dll
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\bin\Debug\ja\DevExpress.Dialogs.v18.2.Core.resources.dll
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\bin\Debug\ru\DevExpress.Dialogs.v18.2.Core.resources.dll
+C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_ChamCong.resources
+C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_KhenThuong_KyLuat.resources
+C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_Luong.resources

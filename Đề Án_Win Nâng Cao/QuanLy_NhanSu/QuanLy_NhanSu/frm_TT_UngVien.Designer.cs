@@ -161,7 +161,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(348, 627);
+            this.panel1.Size = new System.Drawing.Size(349, 627);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -188,7 +188,7 @@
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(6, 68);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(342, 483);
+            this.groupBox5.Size = new System.Drawing.Size(330, 483);
             this.groupBox5.TabIndex = 55;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Tìm kiếm nâng cao";
@@ -205,7 +205,7 @@
             // 
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(248, 105);
+            this.button5.Location = new System.Drawing.Point(236, 105);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(69, 28);
             this.button5.TabIndex = 10;
@@ -233,7 +233,7 @@
             // 
             this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(157, 72);
+            this.button6.Location = new System.Drawing.Point(145, 72);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(69, 28);
             this.button6.TabIndex = 2;
@@ -1233,6 +1233,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frm_TT_UngVien";
             this.Text = "frm_TT_UngVien";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_TT_UngVien_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);

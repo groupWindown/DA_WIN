@@ -280,7 +280,6 @@
             this.Controls.Add(this.groupBox8);
             this.Name = "frm_DangKyBaoHiem";
             this.Text = "frm_DangKyBaoHiem";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox9.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
