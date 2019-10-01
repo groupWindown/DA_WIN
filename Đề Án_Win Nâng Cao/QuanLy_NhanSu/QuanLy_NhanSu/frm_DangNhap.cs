@@ -21,5 +21,35 @@ namespace QuanLy_NhanSu
         {
 
         }
+
+        private void btn_DangNhap_Click(object sender, EventArgs e)
+        {
+            if(txt_User.Text.Length==0 && txt_Password.Text.Length==0)
+            {
+                MessageBox.Show("Chưa nhập tài khoản và mật khẩu, vui lòng nhập!");
+            }
+            else
+            {
+                if (txt_User.Text.Length == 0)
+                {
+                    MessageBox.Show("Chưa nhập tài khoản, vui lòng nhập!");
+                }
+                else
+                {
+                    if (txt_Password.Text.Length == 0)
+                    {
+                        MessageBox.Show("Chưa nhập mật khẩu, vui lòng nhập!");
+                    }
+                    else
+                    {
+                        frm_KetNoiCSDL frm = new frm_KetNoiCSDL();
+                        frm.ShowDialog();
+
+
+
+                    }
+                }
+            }
+        }
     }
 }

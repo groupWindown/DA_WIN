@@ -102,6 +102,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ThietKeControl_PhungTheHoan">
+      <HintPath>..\..\..\..\..\..\source\repos\HoTroWinDowsForm\ThietKeControl_PhungTheHoan\bin\Debug\ThietKeControl_PhungTheHoan.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +145,12 @@
     </Compile>
     <Compile Include="frm_GiaHanHopDong.Designer.cs">
       <DependentUpon>frm_GiaHanHopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KetNoiCSDL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KetNoiCSDL.Designer.cs">
+      <DependentUpon>frm_KetNoiCSDL.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_KhenThuong_KyLuat.cs">
       <SubType>Form</SubType>
@@ -201,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_GiaHanHopDong.resx">
       <DependentUpon>frm_GiaHanHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KetNoiCSDL.resx">
+      <DependentUpon>frm_KetNoiCSDL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_KhenThuong_KyLuat.resx">
       <DependentUpon>frm_KhenThuong_KyLuat.cs</DependentUpon>
@@ -332,6 +344,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hinh-nen-4k-dep-21_1249515.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hideshow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

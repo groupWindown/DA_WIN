@@ -133,6 +133,16 @@ namespace QuanLy_NhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hideshow {
+            get {
+                object obj = ResourceManager.GetObject("hideshow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hinh_nen_4k_dep_21_124951 {
             get {
                 object obj = ResourceManager.GetObject("hinh-nen-4k-dep-21_124951", resourceCulture);

@@ -6,17 +6,23 @@ using System.Windows.Forms;
 
 namespace QuanLy_NhanSu
 {
-    static class Program
+    public static class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_ChamCong());
+
+            //------------------------------------------
+            frm_DangNhap frmDangNhap = new frm_DangNhap();
+            frm_Main frmMain = new frm_Main();
+            //------------------------------------------
+
+            Application.Run(frmDangNhap);//dùng cái khác (new +tên form)
         }
     }
 }

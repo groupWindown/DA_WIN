@@ -33,8 +33,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ckb_LuuTK = new System.Windows.Forms.CheckBox();
             this.btn_DangNhap = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Password = new System.Windows.Forms.TextBox();
+            this.txt_User = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.labler1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,8 +48,8 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.ckb_LuuTK);
             this.panel1.Controls.Add(this.btn_DangNhap);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_Password);
+            this.panel1.Controls.Add(this.txt_User);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.labler1);
             this.panel1.Controls.Add(this.label1);
@@ -92,22 +92,23 @@
             this.btn_DangNhap.TabIndex = 14;
             this.btn_DangNhap.Text = "Sign In";
             this.btn_DangNhap.UseVisualStyleBackColor = false;
+            this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 
-            // textBox2
+            // txt_Password
             // 
-            this.textBox2.Location = new System.Drawing.Point(142, 139);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 23);
-            this.textBox2.TabIndex = 13;
+            this.txt_Password.Location = new System.Drawing.Point(142, 139);
+            this.txt_Password.Multiline = true;
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.Size = new System.Drawing.Size(201, 23);
+            this.txt_Password.TabIndex = 13;
             // 
-            // textBox1
+            // txt_User
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 94);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 23);
-            this.textBox1.TabIndex = 12;
+            this.txt_User.Location = new System.Drawing.Point(142, 94);
+            this.txt_User.Multiline = true;
+            this.txt_User.Name = "txt_User";
+            this.txt_User.Size = new System.Drawing.Size(201, 23);
+            this.txt_User.TabIndex = 12;
             // 
             // label2
             // 
@@ -146,7 +147,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.panel1);
             this.Name = "frm_DangNhap";
             this.Text = "frm_DangNhap";
@@ -165,8 +166,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox ckb_LuuTK;
         private System.Windows.Forms.Button btn_DangNhap;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Password;
+        private System.Windows.Forms.TextBox txt_User;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labler1;
         private System.Windows.Forms.Label label1;
