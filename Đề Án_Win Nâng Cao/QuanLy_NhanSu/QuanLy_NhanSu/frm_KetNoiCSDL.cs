@@ -21,19 +21,7 @@ namespace QuanLy_NhanSu
 
         private void frm_KetNoiCSDL_Load(object sender, EventArgs e)
         {
-            foreach (Control item in userCtrlConnectDataBase1.Controls)
-            {
-               if(item.GetType()==typeof(ComboBox))
-                {
-                    DataTable dataTable = new DataTable();
-                    dataTable = SqlDataSourceEnumerator.Instance.GetDataSources();
-                    foreach(DataRow dataRow in dataTable.Rows)
-                    {
-
-                    }
-                    break;
-                }
-            }
+            
         }
         public int Check_Config()
         {

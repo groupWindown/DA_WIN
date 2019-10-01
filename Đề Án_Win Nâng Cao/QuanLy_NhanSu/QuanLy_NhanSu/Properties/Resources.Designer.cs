@@ -73,6 +73,16 @@ namespace QuanLy_NhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap accept {
+            get {
+                object obj = ResourceManager.GetObject("accept", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Checklist_icon {
             get {
                 object obj = ResourceManager.GetObject("Checklist-icon", resourceCulture);
@@ -106,6 +116,16 @@ namespace QuanLy_NhanSu.Properties {
         internal static System.Drawing.Bitmap chup_hinh_the_dep_412 {
             get {
                 object obj = ResourceManager.GetObject("chup-hinh-the-dep-412", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap decline {
+            get {
+                object obj = ResourceManager.GetObject("decline", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
