@@ -46,9 +46,10 @@
             this.btn_Decline.BackgroundImage = global::QuanLy_NhanSu.Properties.Resources.decline;
             this.btn_Decline.Location = new System.Drawing.Point(417, 93);
             this.btn_Decline.Name = "btn_Decline";
-            this.btn_Decline.Size = new System.Drawing.Size(52, 92);
+            this.btn_Decline.Size = new System.Drawing.Size(52, 96);
             this.btn_Decline.TabIndex = 29;
             this.btn_Decline.UseVisualStyleBackColor = false;
+            this.btn_Decline.Click += new System.EventHandler(this.btn_Decline_Click);
             // 
             // cbb_Database
             // 
@@ -65,6 +66,7 @@
             this.cbb_SeverName.Name = "cbb_SeverName";
             this.cbb_SeverName.Size = new System.Drawing.Size(204, 21);
             this.cbb_SeverName.TabIndex = 26;
+            this.cbb_SeverName.TextChanged += new System.EventHandler(this.cbb_SeverName_TextChanged);
             // 
             // txt_Password
             // 
@@ -124,17 +126,19 @@
             // 
             this.btn_Accept.BackColor = System.Drawing.Color.White;
             this.btn_Accept.BackgroundImage = global::QuanLy_NhanSu.Properties.Resources.accept;
-            this.btn_Accept.Location = new System.Drawing.Point(417, 2);
+            this.btn_Accept.Location = new System.Drawing.Point(417, -2);
             this.btn_Accept.Name = "btn_Accept";
-            this.btn_Accept.Size = new System.Drawing.Size(52, 92);
+            this.btn_Accept.Size = new System.Drawing.Size(52, 96);
             this.btn_Accept.TabIndex = 28;
             this.btn_Accept.UseVisualStyleBackColor = false;
+            this.btn_Accept.Click += new System.EventHandler(this.btn_Accept_Click);
             // 
             // frm_KetNoiCSDL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 186);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(467, 187);
             this.ControlBox = false;
             this.Controls.Add(this.btn_Decline);
             this.Controls.Add(this.btn_Accept);
@@ -148,8 +152,6 @@
             this.Controls.Add(this.label1);
             this.HelpButton = true;
             this.Name = "frm_KetNoiCSDL";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "frm_KetNoiCSDL";
             this.Load += new System.EventHandler(this.frm_KetNoiCSDL_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

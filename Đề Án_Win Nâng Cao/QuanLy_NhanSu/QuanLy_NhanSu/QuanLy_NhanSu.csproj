@@ -108,6 +108,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CAUHINH.cs" />
     <Compile Include="DataSetQLNS.cs">
       <DependentUpon>DataSetQLNS.xsd</DependentUpon>
     </Compile>

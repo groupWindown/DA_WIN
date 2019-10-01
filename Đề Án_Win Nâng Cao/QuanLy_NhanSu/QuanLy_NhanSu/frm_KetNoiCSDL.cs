@@ -14,6 +14,7 @@ namespace QuanLy_NhanSu
 {
     public partial class frm_KetNoiCSDL : Form
     {
+        CAUHINH cauhinh = new CAUHINH();
         public frm_KetNoiCSDL()
         {
             InitializeComponent();
@@ -21,23 +22,58 @@ namespace QuanLy_NhanSu
 
         private void frm_KetNoiCSDL_Load(object sender, EventArgs e)
         {
-            
+            DataTable dataTable= cauhinh.GetServerName();
+            cbb_SeverName.Items.Clear();
+            foreach (System.Data.DataRow row in dataTable.Rows)
+            {
+                foreach (System.Data.DataColumn col in dataTable.Columns)
+                {
+                    cbb_SeverName.Items.Add(row[col]);
+                }
+            }
         }
-        public int Check_Config()
+      
+
+        private void btn_Decline_Click(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.DA_WIN_NANGCAOConnectionString == string.Empty)
-                return 1;// Chuỗi cấu hình không tồn tại
-            SqlConnection _Sqlconn = new SqlConnection(Properties.Settings.Default.DA_WIN_NANGCAOConnectionString);
-            try
+            Application.Exit();
+        }
+
+        private void btn_Accept_Click(object sender, EventArgs e)
+        {
+            string bien = "Vui lòng điền ";
+            if (cbb_SeverName.Text.Length == 0)
+                bien += "SeverName ";
+            if (txt_Password.Text.Length == 0)
+                bien += "Password ";
+            if (txt_UserName.Text.Length == 0)
+                bien += "UserName ";
+            if (cbb_Database.Text.Length == 0)
+                bien += "DataBase ";
+            MessageBox.Show(bien);
+        }
+
+        private void cbb_SeverName_TextChanged(object sender, EventArgs e)
+        {
+            if (CheckedBeforSearchNameDB())
             {
-                if (_Sqlconn.State == System.Data.ConnectionState.Closed)
-                    _Sqlconn.Open();
-                return 0;// Kết nối thành công chuỗi cấu hình hợp lệ
+                cbb_Database.Items.Clear();
+                List<string> _list = cauhinh.GetDatabaseName(cbb_SeverName.Text,txt_UserName.Text, txt_Password.Text);
+                if (_list == null)
+                {
+                    return;
+                }
+                foreach (string item in _list)
+                {
+                    cbb_Database.Items.Add(item);
+                }
             }
-            catch
-            {
-                return 2;// Chuỗi không phù hợp
-            }
+        }
+        private bool CheckedBeforSearchNameDB()
+        {
+            if (cbb_SeverName.Text.Length > 0 && txt_Password.Text.Length > 0 && txt_UserName.Text.Length > 0)
+                return true;
+            return false;
         }
     }
 }
