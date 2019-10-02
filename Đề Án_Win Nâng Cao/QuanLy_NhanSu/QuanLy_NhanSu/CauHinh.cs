@@ -21,9 +21,10 @@ namespace QuanLy_NhanSu
         {
             if (Properties.Settings.Default.DA_WIN_NANGCAOConnectionString == string.Empty)
                 return 1;// Chuỗi cấu hình không tồn tại
-            SqlConnection _Sqlconn = new SqlConnection(Properties.Settings.Default.DA_WIN_NANGCAOConnectionString);
             try
             {
+                SqlConnection _Sqlconn = new SqlConnection(Properties.Settings.Default.DA_WIN_NANGCAOConnectionString);
+
                 if (_Sqlconn.State == System.Data.ConnectionState.Closed)
                     _Sqlconn.Open();
                 return 0;// Kết nối thành công chuỗi cấu hình hợp lệ
@@ -51,7 +52,7 @@ namespace QuanLy_NhanSu
         //lấy SeverName
         public DataTable GetServerName()
         {
-            SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
+            SqlDataSourceEnumerator instance =SqlDataSourceEnumerator.Instance;
             System.Data.DataTable table = instance.GetDataSources();
             return table;
         }
@@ -72,13 +73,12 @@ namespace QuanLy_NhanSu
                     }
                 }
             }
-            catch(Exception e)
+            catch
             {
-                MessageBox.Show(e.ToString());
                 return null;
-                
             }
             return _list;
         }
+      
     }
 }

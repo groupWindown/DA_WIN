@@ -112,6 +112,7 @@
             this.btn_MatKhauMoi.Size = new System.Drawing.Size(35, 27);
             this.btn_MatKhauMoi.TabIndex = 7;
             this.btn_MatKhauMoi.UseVisualStyleBackColor = true;
+            this.btn_MatKhauMoi.Click += new System.EventHandler(this.btn_MatKhauMoi_Click);
             // 
             // frm_DoiMatKhau
             // 

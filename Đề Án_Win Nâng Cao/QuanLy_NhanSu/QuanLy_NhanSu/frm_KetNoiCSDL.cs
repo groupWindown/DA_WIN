@@ -6,6 +6,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,15 +23,21 @@ namespace QuanLy_NhanSu
 
         private void frm_KetNoiCSDL_Load(object sender, EventArgs e)
         {
+            SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
+            System.Data.DataTable table = instance.GetDataSources();
             DataTable dataTable = cauhinh.GetServerName();
             cbb_SeverName.Items.Clear();
-            foreach (System.Data.DataRow row in dataTable.Rows)
+            foreach (System.Data.DataRow row in table.Rows)
             {
-                foreach (System.Data.DataColumn col in dataTable.Columns)
+                foreach (System.Data.DataColumn col in table.Columns)
                 {
                     cbb_SeverName.Items.Add(row[col]);
                 }
             }
+           
+            //System.Windows.Forms.SystemInformation.ComputerName
+            //System.Environment.GetEnvironmentVariable("COMPUTERNAME")
+            //WindowsIdentity.GetCurrent().Name.ToString()
         }
 
         private void btn_Decline_Click(object sender, EventArgs e)
@@ -40,19 +47,34 @@ namespace QuanLy_NhanSu
 
         private void btn_Accept_Click(object sender, EventArgs e)
         {
-            string bien = "Vui lòng điền ";
-            if (cbb_SeverName.Text.Length == 0)
-                bien += "SeverName ";
-            if (txt_Password.Text.Length == 0)
-                bien += "Password ";
-            if (txt_UserName.Text.Length == 0)
-                bien += "UserName ";
-            if (cbb_Database.Text.Length == 0)
-                bien += "DataBase ";
-            MessageBox.Show(bien);
+            if (cbb_SeverName.Text.Length > 0 && txt_Password.Text.Length > 0 && txt_UserName.Text.Length > 0 && cbb_Database.Text.Length > 0)
+            {
+                ChangeConnectionString(cbb_SeverName.Text, cbb_Database.Text, txt_UserName.Text, txt_Password.Text);
+                this.Close();
+            }
+            else
+            {
+                string bien = "Vui lòng điền ";
+                if (cbb_SeverName.Text.Length == 0)
+                    bien += "SeverName ";
+                if (txt_Password.Text.Length == 0)
+                    bien += "Password ";
+                if (txt_UserName.Text.Length == 0)
+                    bien += "UserName ";
+                if (cbb_Database.Text.Length == 0)
+                    bien += "DataBase ";
+                MessageBox.Show(bien);
+            }
+        }
+        public void ChangeConnectionString(string pServerName, string pDataBase, string pUser, string pPass)
+        {
+            string chuoi = "Data Source=" + pServerName + ";Initial Catalog=" + pDataBase + ";User ID=" + pUser + ";Password = " + pPass + "";
+
+            Properties.Settings.Default.DA_WIN_NANGCAOConnectionString = chuoi;
+            Properties.Settings.Default.Save();
         }
 
-       
+
 
         private bool CheckedBeforSearchNameDB()
         {

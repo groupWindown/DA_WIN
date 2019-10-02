@@ -36,5 +36,10 @@ namespace QuanLy_NhanSu
         {
 
         }
+
+        private void frm_Main_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

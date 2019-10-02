@@ -109,7 +109,7 @@ namespace QuanLy_NhanSu
         //sai chuổi câu hình, xử lý chuổi
         public void ProcessConfig()
         {
-            this.Hide();this.Show();
+            this.Hide();
             frm_KetNoiCSDL frm = new frm_KetNoiCSDL();
             frm.ShowDialog();
             

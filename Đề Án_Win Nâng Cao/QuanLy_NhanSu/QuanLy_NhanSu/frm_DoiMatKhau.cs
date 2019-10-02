@@ -34,5 +34,10 @@ namespace QuanLy_NhanSu
         {
 
         }
+
+        private void btn_MatKhauMoi_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
