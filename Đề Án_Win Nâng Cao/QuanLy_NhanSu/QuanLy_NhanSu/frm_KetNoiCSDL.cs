@@ -22,7 +22,7 @@ namespace QuanLy_NhanSu
 
         private void frm_KetNoiCSDL_Load(object sender, EventArgs e)
         {
-            DataTable dataTable= cauhinh.GetServerName();
+            DataTable dataTable = cauhinh.GetServerName();
             cbb_SeverName.Items.Clear();
             foreach (System.Data.DataRow row in dataTable.Rows)
             {
@@ -32,7 +32,6 @@ namespace QuanLy_NhanSu
                 }
             }
         }
-      
 
         private void btn_Decline_Click(object sender, EventArgs e)
         {
@@ -53,12 +52,20 @@ namespace QuanLy_NhanSu
             MessageBox.Show(bien);
         }
 
-        private void cbb_SeverName_TextChanged(object sender, EventArgs e)
+       
+
+        private bool CheckedBeforSearchNameDB()
+        {
+            if (cbb_SeverName.Text.Length > 0 && txt_Password.Text.Length > 0 && txt_UserName.Text.Length > 0)
+                return true;
+            return false;
+        }
+        private void loadDatabase()
         {
             if (CheckedBeforSearchNameDB())
             {
                 cbb_Database.Items.Clear();
-                List<string> _list = cauhinh.GetDatabaseName(cbb_SeverName.Text,txt_UserName.Text, txt_Password.Text);
+                List<string> _list = cauhinh.GetDatabaseName(cbb_SeverName.Text, txt_UserName.Text, txt_Password.Text);
                 if (_list == null)
                 {
                     return;
@@ -67,13 +74,27 @@ namespace QuanLy_NhanSu
                 {
                     cbb_Database.Items.Add(item);
                 }
+
             }
         }
-        private bool CheckedBeforSearchNameDB()
+
+
+        private void cbb_SeverName_TextChanged(object sender, EventArgs e)
         {
-            if (cbb_SeverName.Text.Length > 0 && txt_Password.Text.Length > 0 && txt_UserName.Text.Length > 0)
-                return true;
-            return false;
+            loadDatabase();
+        }
+        private void txt_UserName_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txt_Password_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void cbb_SeverName_SelectedValueChanged(object sender, EventArgs e)
+        {
+            loadDatabase();
         }
     }
 }
+

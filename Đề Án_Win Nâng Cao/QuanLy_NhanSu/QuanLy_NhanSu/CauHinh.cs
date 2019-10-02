@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace QuanLy_NhanSu
 {
@@ -71,9 +72,11 @@ namespace QuanLy_NhanSu
                     }
                 }
             }
-            catch
+            catch(Exception e)
             {
+                MessageBox.Show(e.ToString());
                 return null;
+                
             }
             return _list;
         }

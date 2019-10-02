@@ -146,11 +146,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.DarkOrchid;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(680, 360);
+            this.ClientSize = new System.Drawing.Size(702, 376);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "frm_DangNhap";
             this.Text = "frm_DangNhap";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_DangNhap_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

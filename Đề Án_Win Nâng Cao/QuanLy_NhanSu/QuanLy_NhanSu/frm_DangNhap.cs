@@ -22,6 +22,7 @@ namespace QuanLy_NhanSu
 
         private void frm_DangNhap_Load(object sender, EventArgs e)
         {
+            //gán mật khẩu củ đã lưu
             txt_User.Text = Properties.Settings.Default.user;
             txt_Password.Text = Properties.Settings.Default.pass;
 

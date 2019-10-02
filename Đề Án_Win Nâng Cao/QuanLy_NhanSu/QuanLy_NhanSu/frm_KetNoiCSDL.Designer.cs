@@ -66,6 +66,7 @@
             this.cbb_SeverName.Name = "cbb_SeverName";
             this.cbb_SeverName.Size = new System.Drawing.Size(204, 21);
             this.cbb_SeverName.TabIndex = 26;
+            this.cbb_SeverName.SelectedValueChanged += new System.EventHandler(this.cbb_SeverName_SelectedValueChanged);
             this.cbb_SeverName.TextChanged += new System.EventHandler(this.cbb_SeverName_TextChanged);
             // 
             // txt_Password
@@ -74,6 +75,7 @@
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Size = new System.Drawing.Size(204, 20);
             this.txt_Password.TabIndex = 25;
+            this.txt_Password.TextChanged += new System.EventHandler(this.txt_Password_TextChanged);
             // 
             // txt_UserName
             // 
@@ -81,6 +83,7 @@
             this.txt_UserName.Name = "txt_UserName";
             this.txt_UserName.Size = new System.Drawing.Size(204, 20);
             this.txt_UserName.TabIndex = 24;
+            this.txt_UserName.TextChanged += new System.EventHandler(this.txt_UserName_TextChanged);
             // 
             // label4
             // 
