@@ -1,0 +1,10 @@
+
+-============================
+==================================
+=====================================
+
+- khi kết quả tuyển dụng là đậu thì tự động thêm nhân viên
+- tự động thêm tài khoản khi thêm nhân viên
+- tạo mã nhân viên mới khi nhận lại nhân viên đã nghỉ việc
+- Tính tổng tiền lương
+- 

@@ -171,6 +171,24 @@
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_SuaTTNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SuaTTNhanVien.Designer.cs">
+      <DependentUpon>frm_SuaTTNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Sua_ThemMoiNV_UngVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Sua_ThemMoiNV_UngVien.Designer.cs">
+      <DependentUpon>frm_Sua_ThemMoiNV_UngVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ThemNV_TuUV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ThemNV_TuUV.Designer.cs">
+      <DependentUpon>frm_ThemNV_TuUV.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_ThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +241,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SuaTTNhanVien.resx">
+      <DependentUpon>frm_SuaTTNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Sua_ThemMoiNV_UngVien.resx">
+      <DependentUpon>frm_Sua_ThemMoiNV_UngVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ThemNV_TuUV.resx">
+      <DependentUpon>frm_ThemNV_TuUV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ThongKe.resx">
       <DependentUpon>frm_ThongKe.cs</DependentUpon>
