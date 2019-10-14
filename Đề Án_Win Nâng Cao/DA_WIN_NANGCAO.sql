@@ -678,8 +678,7 @@ VALUES ('PB000001',N'Phòng nhân sự',NULL),
 		('PB000005',N'Phòng sản xuất',NULL),
 		('PB000006',N'Phòng kinh doanh',NULL),
 		('PB000007',N'Phòng hành chính',NULL),
-		('PB000008',N'Phòng giám đốc',NULL),
-		('PB000009',N'Phòng tuyển dụng',NULL)
+		('PB000008',N'Phòng giám đốc',NULL)
 
 --- chuyên môn đổi thành kỹ năng chuyên môn của nhân viên
 INSERT INTO CHUYENMON
