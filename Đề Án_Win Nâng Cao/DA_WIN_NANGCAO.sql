@@ -846,7 +846,10 @@ VALUES ('MH01',N'Hệ thống'),
 		('MH04',N'Lương'),
 		('MH05',N'Khen thưởng kỷ luật'),
 		('MH06',N'Chấm công'),
-		('MH07',N'Thống kê')
+		('MH07',N'Thống kê'),
+		('MH08',N'Chương trình đào tạo'),
+		('MH09',N'Tác vụ'),
+		('MH10',N'Trợ giúp')
 
 INSERT INTO PHANQUYEN
 VALUES ('MH07','NND01',1),
