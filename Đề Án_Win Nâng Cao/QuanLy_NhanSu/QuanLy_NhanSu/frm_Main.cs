@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DevExpress.XtraBars;
+using DevExpress.XtraBars.Ribbon;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,61 +42,89 @@ namespace QuanLy_NhanSu
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
-            LinQDataContext linQDataContext = new LinQDataContext();
+            ////load screen 
+            //DataTable dt = GetNhomNguoiDung(Properties.Settings.Default.user);
 
-            DataGridView nhomND = new DataGridView();
-
-            var list =from danhSachNhom in linQDataContext.NGUOIDUNGNHOMNGUOIDUNGs
-                       join taikhoan in linQDataContext.TAIKHOANs
-                       on danhSachNhom.MANV equals taikhoan.MANV
-                       where taikhoan.MANV == Properties.Settings.Default.user
-                       select new { danhSachNhom.MANHOM };
-
-            nhomND.DataSource=list;
-            //foreach (string item in nhomND.DataSource)
+            //foreach (DataRow item in dt.Rows)
             //{
-            //    DataTable dsQuyen = NguoiDung.GetMaManHinh(item);
+            //    DataTable dsQuyen = GetMaManHinh(item[0].ToString());
             //    foreach (DataRow mh in dsQuyen.Rows)
             //    {
-            //        //FindMenuPhanQuyen(this.menuStrip1.Items,mh[0].ToString(), Convert.ToBoolean(mh[1].ToString()));
+            //        FindMenuPhanQuyen(this.ribbonPage_TacVu.Groups, mh[0].ToString(), Convert.ToBoolean(mh[1].ToString()));
             //    }
             //}
+
+
+
+
+
         }
-        private void FindMenuPhanQuyen(ToolStripItemCollection mnuItems, string pScreenName, bool pEnable)
+
+   
+
+        public DataTable GetNhomNguoiDung(string str)
         {
-            foreach (ToolStripItem menu in mnuItems)
+            //using LinQ to get MaNhom
+            LinQDataContext linQDataContext = new LinQDataContext();
+            DataGridView nhomND = new DataGridView();
+
+            var list = (from danhSachNhom in linQDataContext.NGUOIDUNGNHOMNGUOIDUNGs
+                       join taikhoan in linQDataContext.TAIKHOANs
+                       on danhSachNhom.MANV equals taikhoan.MANV
+                       where taikhoan.MANV == str
+                       select new { danhSachNhom.MANHOM }).Distinct();
+
+            DataTable dt = new DataTable();
+            nhomND.DataSource = list;
+            dt = (DataTable)nhomND.DataSource;
+
+            return dt;
+        }
+        public DataTable GetMaManHinh(string str)
+        {
+            //using LinQ to get MaManHinh
+            LinQDataContext linQDataContext = new LinQDataContext();
+            DataGridView nhomND = new DataGridView();
+
+            var list = (from nhomNguoiDung in linQDataContext.NHOMNGUOIDUNGs
+                       join phanQuyen in linQDataContext.PHANQUYENs
+                       on nhomNguoiDung.MANHOM equals phanQuyen.MANHOM
+                       where nhomNguoiDung.MANHOM == str
+                       select new { phanQuyen.MAMANHINH }).Distinct();
+
+            DataTable dt = new DataTable();
+            nhomND.DataSource = list;
+            dt = (DataTable)nhomND.DataSource;
+            return dt;
+        }
+
+
+        private void FindMenuPhanQuyen(RibbonPageGroupCollection mnuItems, string pScreenName, bool pEnable)
+        {
+            foreach (RibbonPageGroup menu in mnuItems)
             {
-                if (menu is ToolStripMenuItem &&
-                ((ToolStripMenuItem)(menu)).DropDownItems.Count > 0)
-                {
-                    FindMenuPhanQuyen(((ToolStripMenuItem)(menu)).DropDownItems,
-                    pScreenName, pEnable);
-                    menu.Enabled =
-                    CheckAllMenuChildVisible(((ToolStripMenuItem)(menu)).DropDownItems);
-                    menu.Visible = menu.Enabled;
-                }
-                else if (string.Equals(pScreenName, menu.Tag))
+                if (string.Equals(pScreenName, menu.Tag))
                 {
                     menu.Enabled = pEnable;
                     menu.Visible = pEnable;
                 }
             }
         }
-        private bool CheckAllMenuChildVisible(ToolStripItemCollection mnuItems)
-        {
-            foreach (ToolStripItem menuItem in mnuItems)
-            {
-                if (menuItem is ToolStripMenuItem && menuItem.Enabled)
-                {
-                    return true;
-                }
-                else if (menuItem is ToolStripSeparator)
-                {
-                    continue;
-                }
-            }
-            return false;
-        }
+        //private bool CheckAllMenuChildVisible(RibbonPageGroupCollection mnuItems)
+        //{
+        //    foreach (RibbonPageGroup menuItem in mnuItems)
+        //    {
+        //        if (menuItem is RibbonPageGroup && menuItem.Enabled)
+        //        {
+        //            return true;
+        //        }
+        //        else if (menuItem is RibbonPageGroup)
+        //        {
+        //            continue;
+        //        }
+        //    }
+        //    return false;
+        //}
 
     }
 }

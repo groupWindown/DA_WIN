@@ -840,16 +840,14 @@ VALUES ('NV000001','NND02','')
 --		('NV000013','NND03','')
 
 INSERT INTO MANHINH
-VALUES ('MH01',N'Hệ thống'),
-		('MH02',N'Hồ sơ nhân viên'),
-		('MH03',N'Hồ sơ ứng viên'),
-		('MH04',N'Lương'),
-		('MH05',N'Khen thưởng kỷ luật'),
-		('MH06',N'Chấm công'),
-		('MH07',N'Thống kê'),
-		('MH08',N'Chương trình đào tạo'),
-		('MH09',N'Tác vụ'),
-		('MH10',N'Trợ giúp')
+VALUES 	('MH01',N'Hồ sơ nhân viên'),
+		('MH02',N'Hồ sơ ứng viên'),
+		('MH03',N'Lương'),
+		('MH04',N'Khen thưởng kỷ luật'),
+		('MH05',N'Chấm công'),
+		('MH06',N'Thống kê'),
+		('MH07',N'Chương trình đào tạo')
+		
 
 INSERT INTO PHANQUYEN
 VALUES ('MH07','NND01',1),
