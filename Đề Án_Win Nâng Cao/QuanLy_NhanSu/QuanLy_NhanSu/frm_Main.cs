@@ -61,11 +61,11 @@ namespace QuanLy_NhanSu
         }
 
    
-
+        LinQDataContext linQDataContext = new LinQDataContext();
         public DataTable GetNhomNguoiDung(string str)
         {
             //using LinQ to get MaNhom
-            LinQDataContext linQDataContext = new LinQDataContext();
+            
             DataGridView nhomND = new DataGridView();
 
             var list = (from danhSachNhom in linQDataContext.NGUOIDUNGNHOMNGUOIDUNGs
@@ -80,10 +80,12 @@ namespace QuanLy_NhanSu
 
             return dt;
         }
+
+        
         public DataTable GetMaManHinh(string str)
         {
             //using LinQ to get MaManHinh
-            LinQDataContext linQDataContext = new LinQDataContext();
+           
             DataGridView nhomND = new DataGridView();
 
             var list = (from nhomNguoiDung in linQDataContext.NHOMNGUOIDUNGs

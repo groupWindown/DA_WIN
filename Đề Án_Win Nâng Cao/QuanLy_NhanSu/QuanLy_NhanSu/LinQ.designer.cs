@@ -164,8 +164,10 @@ namespace QuanLy_NhanSu
 			OnCreated();
 		}
 
-        public LinQDataContext()
+        public LinQDataContext(): 
+            base(global::QuanLy_NhanSu.Properties.Settings.Default.DA_WIN_NANGCAOConnectionString, mappingSource)
         {
+            OnCreated();
         }
 
         public System.Data.Linq.Table<BANGCHAMCONG> BANGCHAMCONGs

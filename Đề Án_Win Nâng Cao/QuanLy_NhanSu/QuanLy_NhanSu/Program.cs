@@ -23,7 +23,7 @@ namespace QuanLy_NhanSu
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_ThemNV_TuUV());
+            Application.Run(new frm_Main());
         }
         
     }
