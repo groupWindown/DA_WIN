@@ -25,6 +25,22 @@ namespace QuanLy_NhanSu.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
+<SerializableConnectionString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
+  <ConnectionString>Data Source=DESKTOP-CKJCBOM\SQLEXPRESS;Initial Catalog=DA_WIN_NANGCAO;Integrated Security=True</ConnectionString>
+  <ProviderName>System.Data.SqlClient</ProviderName>
+</SerializableConnectionString>")]
+        public string DA_WIN_NANGCAOConnectionString {
+            get {
+                return ((string)(this["DA_WIN_NANGCAOConnectionString"]));
+            }
+            set {
+                this["DA_WIN_NANGCAOConnectionString"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string user {
             get {
@@ -47,19 +63,14 @@ namespace QuanLy_NhanSu.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
-<SerializableConnectionString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <ConnectionString>Data Source=DESKTOP-CKJCBOM\SQLEXPRESS;Initial Catalog=DA_WIN_NANGCAO;Integrated Security=True</ConnectionString>
-  <ProviderName>System.Data.SqlClient</ProviderName>
-</SerializableConnectionString>")]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-CKJCBOM\\SQLEXPRESS;Initial Catalog=DA_WIN_NANGCAO;Integrated " +
+            "Security=True")]
         public string DA_WIN_NANGCAOConnectionString1 {
             get {
                 return ((string)(this["DA_WIN_NANGCAOConnectionString1"]));
-            }
-            set {
-                this["DA_WIN_NANGCAOConnectionString1"] = value;
             }
         }
     }

@@ -117,12 +117,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetQLNS.xsd</DependentUpon>
     </Compile>
-    <Compile Include="frm_Doi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_Doi.Designer.cs">
-      <DependentUpon>frm_Doi.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_ChamCong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,9 +238,6 @@
     <Compile Include="Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frm_Doi.resx">
-      <DependentUpon>frm_Doi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_ChamCong.resx">
       <DependentUpon>frm_ChamCong.cs</DependentUpon>
     </EmbeddedResource>

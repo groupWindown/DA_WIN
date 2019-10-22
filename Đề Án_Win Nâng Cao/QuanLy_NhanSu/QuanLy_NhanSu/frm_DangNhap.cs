@@ -22,15 +22,17 @@ namespace QuanLy_NhanSu
 
         private void frm_DangNhap_Load(object sender, EventArgs e)
         {
-            ////gán mật khẩu củ đã lưu
+            //gán mật khẩu củ đã lưu
             txt_User.Text = Properties.Settings.Default.user;
             txt_Password.Text = Properties.Settings.Default.pass;
+
+
+
         }
 
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
-           
-            if (txt_User.Text.Length==0 && txt_Password.Text.Length==0)
+            if(txt_User.Text.Length==0 && txt_Password.Text.Length==0)
             {
                 MessageBox.Show("Chưa nhập tài khoản và mật khẩu, vui lòng nhập!");
             }
@@ -48,17 +50,16 @@ namespace QuanLy_NhanSu
                     }
                     else
                     {
-                        int kqCauHinh = cauhinh.Check_Config();
-                        if (kqCauHinh == 0)
+                        if (cauhinh.Check_Config() == 0)
                         {
                             ProcessLogin();// Cấu hình phù hợp xử lý đăng nhập
                         }
-                        if (kqCauHinh == 1)
+                        if (cauhinh.Check_Config() == 1)
                         {
                             MessageBox.Show("Chuỗi cấu hình không tồn tại");// Xử lý cấu hình
                             ProcessConfig();
                         }
-                        if (kqCauHinh == 2)
+                        if (cauhinh.Check_Config() == 2)
                         {
                             MessageBox.Show("Chuỗi cấu hình không phù hợp");// Xử lý cấu hình
                             ProcessConfig();
@@ -83,7 +84,7 @@ namespace QuanLy_NhanSu
         public void ProcessLogin()
         {
             int result;
-            result = cauhinh.Check_User(txt_User.Text.Trim().ToString(), txt_Password.Text.Trim().ToString());
+            result = cauhinh.Check_User(txt_User.Text, txt_Password.Text);
             // Wrong username or pass
             if (result == 0)//không hợp lệ (Invalid)
             {
@@ -111,21 +112,7 @@ namespace QuanLy_NhanSu
             this.Hide();
             frm_KetNoiCSDL frm = new frm_KetNoiCSDL();
             frm.ShowDialog();
-        }
-
-        private void frm_DangNhap_KeyDown(object sender, KeyEventArgs e)
-        {
             
-        }
-        
-
-        private void txt_Password_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar==13)//phím enter
-            {
-                e.Handled = true;
-                btn_DangNhap.PerformClick();
-            }
         }
     }
 }

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.ComponentModel;
-using System.Configuration;
 using System.Data;
 using System.Data.Sql;
 using System.Data.SqlClient;
@@ -25,9 +23,6 @@ namespace QuanLy_NhanSu
 
         private void frm_KetNoiCSDL_Load(object sender, EventArgs e)
         {
-            frm_Doi frmDoi = new frm_Doi();
-            frmDoi.Show();
-
             SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
             System.Data.DataTable table = instance.GetDataSources();
             DataTable dataTable = cauhinh.GetServerName();
@@ -39,7 +34,6 @@ namespace QuanLy_NhanSu
                     cbb_SeverName.Items.Add(row[col]);
                 }
             }
-            frmDoi.Close();
            
             //System.Windows.Forms.SystemInformation.ComputerName
             //System.Environment.GetEnvironmentVariable("COMPUTERNAME")
@@ -57,7 +51,6 @@ namespace QuanLy_NhanSu
             {
                 ChangeConnectionString(cbb_SeverName.Text, cbb_Database.Text, txt_UserName.Text, txt_Password.Text);
                 this.Close();
-                Program.frmDangNhap.Show();
             }
             else
             {
@@ -77,8 +70,8 @@ namespace QuanLy_NhanSu
         {
             string chuoi = "Data Source=" + pServerName + ";Initial Catalog=" + pDataBase + ";User ID=" + pUser + ";Password = " + pPass + "";
 
-            Properties.Settings.Default.DA_WIN_NANGCAOConnectionString1 = chuoi.ToString();
-            
+            Properties.Settings.Default.DA_WIN_NANGCAOConnectionString = chuoi;
+            Properties.Settings.Default.Save();
         }
 
 
@@ -103,6 +96,7 @@ namespace QuanLy_NhanSu
                 {
                     cbb_Database.Items.Add(item);
                 }
+
             }
         }
 
