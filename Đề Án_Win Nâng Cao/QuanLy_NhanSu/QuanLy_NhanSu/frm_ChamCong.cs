@@ -17,10 +17,7 @@ namespace QuanLy_NhanSu
             InitializeComponent();
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+     
 
         private void editFormUserControl1_Load(object sender, EventArgs e)
         {
@@ -103,6 +100,30 @@ namespace QuanLy_NhanSu
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pHONGBANBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.pHONGBANBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dataSetQLNS);
+
+        }
+
+        private void frm_ChamCong_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataSetQLNS._CHAMCONG_NHANVIEN' table. You can move, or remove it, as needed.
+            this.cHAMCONG_NHANVIENTableAdapter.Fill(this.dataSetQLNS._CHAMCONG_NHANVIEN);
+            // TODO: This line of code loads data into the 'dataSetQLNS.CHUCVU' table. You can move, or remove it, as needed.
+            this.cHUCVUTableAdapter.Fill(this.dataSetQLNS.CHUCVU);
+            // TODO: This line of code loads data into the 'dataSetQLNS.PHONGBAN' table. You can move, or remove it, as needed.
+            this.pHONGBANTableAdapter.Fill(this.dataSetQLNS.PHONGBAN);
+
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
         {
 
         }

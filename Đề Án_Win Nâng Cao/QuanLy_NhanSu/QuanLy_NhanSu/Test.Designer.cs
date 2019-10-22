@@ -157,7 +157,6 @@
             this.tableAdapterManager.HOPDONGLAODONGTableAdapter = null;
             this.tableAdapterManager.HOSOTUYENDUNGTableAdapter = null;
             this.tableAdapterManager.KQ_TUYENDUNGTableAdapter = null;
-            this.tableAdapterManager.LOAICONGTableAdapter = null;
             this.tableAdapterManager.LOAIKHENTHUONGTableAdapter = null;
             this.tableAdapterManager.NGOAINGUTableAdapter = null;
             this.tableAdapterManager.NHANVIENTableAdapter = null;
@@ -166,7 +165,6 @@
             this.tableAdapterManager.QUANLYNGHIVIECTableAdapter = null;
             this.tableAdapterManager.QUANLYTHAISANTableAdapter = null;
             this.tableAdapterManager.QUOCTICHTableAdapter = null;
-            this.tableAdapterManager.QUYENTableAdapter = null;
             this.tableAdapterManager.TAIKHOANTableAdapter = null;
             this.tableAdapterManager.TONGIAOTableAdapter = null;
             this.tableAdapterManager.TONGLUONGTableAdapter = null;

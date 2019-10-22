@@ -112,6 +112,12 @@ namespace QuanLy_NhanSu
                 }
             }
         }
+
+        private void barButtonItem18_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_NhapLieu frm = new frm_NhapLieu();
+            panel_Main_Tacvu.Controls.Add(frm);
+        }
         //private bool CheckAllMenuChildVisible(RibbonPageGroupCollection mnuItems)
         //{
         //    foreach (RibbonPageGroup menuItem in mnuItems)

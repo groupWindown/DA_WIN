@@ -329,7 +329,6 @@
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label19 = new System.Windows.Forms.Label();
-            this.dANHSACHUNGVIENDAUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DANHSACHUNGVIENDAUTableAdapter();
             this.tableAdapterManager = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager();
             this.dANHSACHUNGVIENROTTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DANHSACHUNGVIENROTTableAdapter();
             this.tabNavigationPage2.SuspendLayout();
@@ -3072,9 +3071,7 @@
             this.label19.Text = "Danh sách tìm kiếm nhân viên";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dANHSACHUNGVIENDAUTableAdapter
-            // 
-            this.dANHSACHUNGVIENDAUTableAdapter.ClearBeforeFill = true;
+            // dANHSACHUNGVIENDAUTableAdapte
             // 
             // tableAdapterManager
             // 
@@ -3099,7 +3096,6 @@
             this.tableAdapterManager.HOPDONGLAODONGTableAdapter = null;
             this.tableAdapterManager.HOSOTUYENDUNGTableAdapter = null;
             this.tableAdapterManager.KQ_TUYENDUNGTableAdapter = null;
-            this.tableAdapterManager.LOAICONGTableAdapter = null;
             this.tableAdapterManager.LOAIKHENTHUONGTableAdapter = null;
             this.tableAdapterManager.NGOAINGUTableAdapter = null;
             this.tableAdapterManager.NHANVIENTableAdapter = null;
@@ -3108,7 +3104,6 @@
             this.tableAdapterManager.QUANLYNGHIVIECTableAdapter = null;
             this.tableAdapterManager.QUANLYTHAISANTableAdapter = null;
             this.tableAdapterManager.QUOCTICHTableAdapter = null;
-            this.tableAdapterManager.QUYENTableAdapter = null;
             this.tableAdapterManager.TAIKHOANTableAdapter = null;
             this.tableAdapterManager.TONGIAOTableAdapter = null;
             this.tableAdapterManager.TONGLUONGTableAdapter = null;
@@ -3118,7 +3113,6 @@
             // 
             // dANHSACHUNGVIENROTTableAdapter
             // 
-            this.dANHSACHUNGVIENROTTableAdapter.ClearBeforeFill = true;
             // 
             // frm_ThongKe
             // 
@@ -3503,7 +3497,6 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage10;
         private DataSetQLNS dataSetQLNS;
         private System.Windows.Forms.BindingSource dANHSACHUNGVIENDAUBindingSource;
-        private DataSetQLNSTableAdapters.DANHSACHUNGVIENDAUTableAdapter dANHSACHUNGVIENDAUTableAdapter;
         private DataSetQLNSTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView dANHSACHUNGVIENDAUDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

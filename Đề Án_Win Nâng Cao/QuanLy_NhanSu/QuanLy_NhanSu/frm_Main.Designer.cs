@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Main));
             this.ribbonControl_Main = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
@@ -57,31 +58,34 @@
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem_them = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage_HeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage_TacVu = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup_HoSoNV = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6_HoSoUV = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup_Luong = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup_KhenThuongKL = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup_ChamCong = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup_ThongKe = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup_ChuongTrinhDT = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage_TroGiup = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel_Main_Tacvu = new System.Windows.Forms.Panel();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
+            this.ribbonMiniToolbar2 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl_Main)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonControl_Main
@@ -111,9 +115,11 @@
             this.barButtonItem13,
             this.barButtonItem14,
             this.barButtonItem15,
-            this.barButtonItem16});
+            this.barButtonItem16,
+            this.barButtonItem17,
+            this.barButtonItem_them});
             this.ribbonControl_Main.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl_Main.MaxItemId = 26;
+            this.ribbonControl_Main.MaxItemId = 28;
             this.ribbonControl_Main.Name = "ribbonControl_Main";
             this.ribbonControl_Main.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage_HeThong,
@@ -343,6 +349,22 @@
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.barButtonItem16.Tag = "";
             // 
+            // barButtonItem17
+            // 
+            this.barButtonItem17.Caption = "Hồ sơ nhân viên";
+            this.barButtonItem17.Id = 26;
+            this.barButtonItem17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.ImageOptions.Image")));
+            this.barButtonItem17.Name = "barButtonItem17";
+            this.barButtonItem17.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
+            // barButtonItem_them
+            // 
+            this.barButtonItem_them.Caption = "thêm";
+            this.barButtonItem_them.Id = 27;
+            this.barButtonItem_them.Name = "barButtonItem_them";
+            this.barButtonItem_them.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem18_ItemClick);
+            // 
             // ribbonPage_HeThong
             // 
             this.ribbonPage_HeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -370,21 +392,16 @@
             // ribbonPage_TacVu
             // 
             this.ribbonPage_TacVu.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup_HoSoNV,
             this.ribbonPageGroup6_HoSoUV,
             this.ribbonPageGroup_Luong,
             this.ribbonPageGroup_KhenThuongKL,
             this.ribbonPageGroup_ChamCong,
-            this.ribbonPageGroup_ThongKe,
-            this.ribbonPageGroup_ChuongTrinhDT});
+            this.ribbonPageGroup_ChuongTrinhDT,
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup2,
+            this.ribbonPageGroup5});
             this.ribbonPage_TacVu.Name = "ribbonPage_TacVu";
             this.ribbonPage_TacVu.Text = "Tác vụ";
-            // 
-            // ribbonPageGroup_HoSoNV
-            // 
-            this.ribbonPageGroup_HoSoNV.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup_HoSoNV.Name = "ribbonPageGroup_HoSoNV";
-            this.ribbonPageGroup_HoSoNV.Tag = "MH01";
             // 
             // ribbonPageGroup6_HoSoUV
             // 
@@ -394,13 +411,13 @@
             // 
             // ribbonPageGroup_Luong
             // 
-            this.ribbonPageGroup_Luong.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup_Luong.ItemLinks.Add(this.barButtonItem17);
             this.ribbonPageGroup_Luong.Name = "ribbonPageGroup_Luong";
             this.ribbonPageGroup_Luong.Tag = "MH03";
             // 
             // ribbonPageGroup_KhenThuongKL
             // 
-            this.ribbonPageGroup_KhenThuongKL.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup_KhenThuongKL.ItemLinks.Add(this.barButtonItem16);
             this.ribbonPageGroup_KhenThuongKL.Name = "ribbonPageGroup_KhenThuongKL";
             this.ribbonPageGroup_KhenThuongKL.Tag = "MH04";
             // 
@@ -410,17 +427,26 @@
             this.ribbonPageGroup_ChamCong.Name = "ribbonPageGroup_ChamCong";
             this.ribbonPageGroup_ChamCong.Tag = "MH05";
             // 
-            // ribbonPageGroup_ThongKe
-            // 
-            this.ribbonPageGroup_ThongKe.ItemLinks.Add(this.barButtonItem10);
-            this.ribbonPageGroup_ThongKe.Name = "ribbonPageGroup_ThongKe";
-            this.ribbonPageGroup_ThongKe.Tag = "MH06";
-            // 
             // ribbonPageGroup_ChuongTrinhDT
             // 
-            this.ribbonPageGroup_ChuongTrinhDT.ItemLinks.Add(this.barButtonItem16);
+            this.ribbonPageGroup_ChuongTrinhDT.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup_ChuongTrinhDT.Name = "ribbonPageGroup_ChuongTrinhDT";
             this.ribbonPageGroup_ChuongTrinhDT.Tag = "MH07";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem10);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            // 
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem_them);
+            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             // 
             // ribbonPage_TroGiup
             // 
@@ -433,26 +459,17 @@
             // 
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             // 
-            // panel1
+            // panel_Main_Tacvu
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 141);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(925, 309);
-            this.panel1.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(352, 82);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Làm thêm form đào tạo, thêm xóa sửa";
+            this.panel_Main_Tacvu.AutoScroll = true;
+            this.panel_Main_Tacvu.AutoSize = true;
+            this.panel_Main_Tacvu.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel_Main_Tacvu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_Main_Tacvu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Main_Tacvu.Location = new System.Drawing.Point(0, 141);
+            this.panel_Main_Tacvu.Name = "panel_Main_Tacvu";
+            this.panel_Main_Tacvu.Size = new System.Drawing.Size(925, 309);
+            this.panel_Main_Tacvu.TabIndex = 3;
             // 
             // barButtonItem12
             // 
@@ -468,12 +485,20 @@
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.Text = "ribbonPageGroup9";
             // 
+            // ribbonMiniToolbar1
+            // 
+            this.ribbonMiniToolbar1.ParentControl = this;
+            // 
+            // ribbonMiniToolbar2
+            // 
+            this.ribbonMiniToolbar2.ParentControl = this;
+            // 
             // frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel_Main_Tacvu);
             this.Controls.Add(this.ribbonControl_Main);
             this.Name = "frm_Main";
             this.Text = "frm_Main";
@@ -485,8 +510,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -497,7 +520,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl_Main;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage_HeThong;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage_TacVu;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup_HoSoNV;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage_TroGiup;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.BarEditItem barEditItem1;
@@ -527,9 +549,8 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup_ChamCong;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup_ThongKe;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_Main_Tacvu;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
@@ -539,6 +560,12 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
         private DevExpress.XtraBars.BarButtonItem barButtonItem16;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup_ChuongTrinhDT;
-        private System.Windows.Forms.Label label1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem17;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.Ribbon.RibbonMiniToolbar ribbonMiniToolbar1;
+        private DevExpress.XtraBars.Ribbon.RibbonMiniToolbar ribbonMiniToolbar2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem_them;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
     }
 }
