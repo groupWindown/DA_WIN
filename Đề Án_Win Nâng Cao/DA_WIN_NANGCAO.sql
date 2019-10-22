@@ -648,37 +648,30 @@ AS
 		
 --SELECT REPLACE(CONVERT(NVARCHAR(10),(SELECT NGAYSINH FROM HOSOTUYENDUNG,NHANVIEN WHERE HOSOTUYENDUNG.MAUNGVIEN=NHANVIEN.MAHOSO and NHANVIEN.MAHOSO='HSTD0001')),'-','')
 
---------------------------------------FUNTION---------------------------------------------------------
+
 
 
 ---------------------------------------------------NHẬP LIỆU-------------------------------------------------------
 INSERT INTO  CHUCVU
-VALUES	('CVGD0001',N'Tổng giám đốc'),
-		('CVGD0002',N'Phó giám đốc'),
-		('CVGD0003',N'Giám đốc '),
-		('CVGD0004',N'Giám đốc điều hành'),
-		('CVGD0005',N'Giám đốc tài chính'),
-		('CVGD0006',N'Giám đốc thông tin'),
+VALUES  ('CVGD0001',N'Giám đốc '),
 		('CVTP0001',N'Trưởng phòng nhân sự'),
-		('CVTP0002',N'Trưởng phòng kế toán'),
-		('CVTP0003',N'Trưởng phòng tài chính'),
-		('CVTP0004',N'Trường phòng marketing'),
-		('CVTP0005',N'Trưởng phòng sản xuất'),
-		('CVTP0006',N'Trưởng phòng kinh doanh'),
-		('CVTP0007',N'Trưởng phòng hành chính'),
-		('CVTP0008',N'Trưởng phòng tuyển dụng'),
+		('CVTP0002',N'Trưởng phòng kế toán - tài chính'),
+		('CVTP0003',N'Trường phòng marketing'),
+		('CVTP0004',N'Trưởng phòng sản xuất'),
+		('CVTP0005',N'Trưởng phòng kinh doanh'),
+		('CVTP0006',N'Trưởng phòng hành chính'),
+		('CVTP0007',N'Trưởng phòng tuyển dụng'),
 		('CVNV0001',N'Nhân viên cao cấp'),
 		('CVNV0002',N'Nhân viên văn phòng')	
 -- MaPB, TenPB, Ma Trưởng Phòng
 INSERT INTO PHONGBAN
 VALUES ('PB000001',N'Phòng nhân sự',NULL),
-		('PB000002',N'Phòng kế toán',NULL),
-		('PB000003',N'Phòng tài chính',NULL),
-		('PB000004',N'Phòng marketing',NULL),
-		('PB000005',N'Phòng sản xuất',NULL),
-		('PB000006',N'Phòng kinh doanh',NULL),
-		('PB000007',N'Phòng hành chính',NULL),
-		('PB000008',N'Phòng giám đốc',NULL)
+		('PB000002',N'Phòng kế toán - tài chính',NULL),
+		('PB000003',N'Phòng marketing',NULL),
+		('PB000004',N'Phòng sản xuất',NULL),
+		('PB000005',N'Phòng kinh doanh',NULL),
+		('PB000006',N'Phòng hành chính',NULL),
+		('PB000007',N'Phòng giám đốc',NULL)
 
 --- chuyên môn đổi thành kỹ năng chuyên môn của nhân viên
 INSERT INTO CHUYENMON
