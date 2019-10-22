@@ -19,12 +19,19 @@ namespace QuanLy_NhanSu
 
         private void frm_NhapLieu_KT_KL_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataSetQLNS.DANHMUCTANGCA' table. You can move, or remove it, as needed.
+            this.dANHMUCTANGCATableAdapter.Fill(this.dataSetQLNS.DANHMUCTANGCA);
             // TODO: This line of code loads data into the 'dataSetQLNS.DAOTAO' table. You can move, or remove it, as needed.
             this.dAOTAOTableAdapter.Fill(this.dataSetQLNS.DAOTAO);
             // TODO: This line of code loads data into the 'dataSetQLNS.DS_KYLUAT' table. You can move, or remove it, as needed.
             this.dS_KYLUATTableAdapter.Fill(this.dataSetQLNS.DS_KYLUAT);
             // TODO: This line of code loads data into the 'dataSetQLNS.LOAIKHENTHUONG' table. You can move, or remove it, as needed.
             this.lOAIKHENTHUONGTableAdapter.Fill(this.dataSetQLNS.LOAIKHENTHUONG);
+
+        }
+
+        private void gridControl2_Click(object sender, EventArgs e)
+        {
 
         }
     }
