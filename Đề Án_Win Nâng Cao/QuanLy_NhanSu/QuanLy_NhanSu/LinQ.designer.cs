@@ -165,7 +165,7 @@ namespace QuanLy_NhanSu
 		}
 
         public LinQDataContext(): 
-            base(global::QuanLy_NhanSu.Properties.Settings.Default.DA_WIN_NANGCAOConnectionString, mappingSource)
+            base(global::QuanLy_NhanSu.Properties.Settings.Default.DA_WIN_NANGCAOConnectionString1, mappingSource)
         {
             OnCreated();
         }

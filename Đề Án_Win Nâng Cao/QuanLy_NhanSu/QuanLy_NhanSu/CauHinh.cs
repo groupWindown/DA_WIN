@@ -19,11 +19,11 @@ namespace QuanLy_NhanSu
 
         public int Check_Config()
         {
-            if (Properties.Settings.Default.DA_WIN_NANGCAOConnectionString == string.Empty)
+            if (Properties.Settings.Default.DA_WIN_NANGCAOConnectionString1 == string.Empty)
                 return 1;// Chuỗi cấu hình không tồn tại
             try
             {
-                SqlConnection _Sqlconn = new SqlConnection(Properties.Settings.Default.DA_WIN_NANGCAOConnectionString);
+                SqlConnection _Sqlconn = new SqlConnection(Properties.Settings.Default.DA_WIN_NANGCAOConnectionString1);
 
                 if (_Sqlconn.State == System.Data.ConnectionState.Closed)
                     _Sqlconn.Open();
@@ -37,7 +37,7 @@ namespace QuanLy_NhanSu
 
         public int Check_User(string pUser, string pPass)
         {
-            SqlDataAdapter daUser = new SqlDataAdapter("select * from TAIKHOAN where MANV = '" + pUser + "' and MATKHAU = '" + pPass + "'",Properties.Settings.Default.DA_WIN_NANGCAOConnectionString);
+            SqlDataAdapter daUser = new SqlDataAdapter("select * from TAIKHOAN where MANV = '" + pUser + "' and MATKHAU = '" + pPass + "'",Properties.Settings.Default.DA_WIN_NANGCAOConnectionString1);
             DataTable dt = new DataTable();
             daUser.Fill(dt);
             if (dt.Rows.Count == 0)

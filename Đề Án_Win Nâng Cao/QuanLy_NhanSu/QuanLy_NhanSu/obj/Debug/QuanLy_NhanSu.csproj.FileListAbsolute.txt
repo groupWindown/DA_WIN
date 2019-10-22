@@ -513,3 +513,7 @@ C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\Quan
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_NhapLieu_KT_KL.resources
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_NhapLieu_TrinhDo.resources
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_Sua_ThemMoiNV_UngVien.resources
+C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_NhapLieu.resources
+C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_NhapLieu_KT_KL.resources
+C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_NhapLieu_TrinhDo.resources
+C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_Doi.resources
