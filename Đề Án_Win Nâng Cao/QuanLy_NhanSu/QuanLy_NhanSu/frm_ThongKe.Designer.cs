@@ -3071,8 +3071,6 @@
             this.label19.Text = "Danh sách tìm kiếm nhân viên";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dANHSACHUNGVIENDAUTableAdapte
-            // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
@@ -3097,8 +3095,12 @@
             this.tableAdapterManager.HOSOTUYENDUNGTableAdapter = null;
             this.tableAdapterManager.KQ_TUYENDUNGTableAdapter = null;
             this.tableAdapterManager.LOAIKHENTHUONGTableAdapter = null;
+            this.tableAdapterManager.MANHINHTableAdapter = null;
             this.tableAdapterManager.NGOAINGUTableAdapter = null;
+            this.tableAdapterManager.NGUOIDUNGNHOMNGUOIDUNGTableAdapter = null;
             this.tableAdapterManager.NHANVIENTableAdapter = null;
+            this.tableAdapterManager.NHOMNGUOIDUNGTableAdapter = null;
+            this.tableAdapterManager.PHANQUYENTableAdapter = null;
             this.tableAdapterManager.PHONGBANTableAdapter = null;
             this.tableAdapterManager.QUANLYKYLUATTableAdapter = null;
             this.tableAdapterManager.QUANLYNGHIVIECTableAdapter = null;
@@ -3113,6 +3115,7 @@
             // 
             // dANHSACHUNGVIENROTTableAdapter
             // 
+            this.dANHSACHUNGVIENROTTableAdapter.ClearBeforeFill = true;
             // 
             // frm_ThongKe
             // 

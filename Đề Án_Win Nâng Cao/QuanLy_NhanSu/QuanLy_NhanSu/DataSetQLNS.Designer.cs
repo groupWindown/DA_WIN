@@ -98,6 +98,10 @@ namespace QuanLy_NhanSu {
         
         private CHUCVUDataTable tableCHUCVU;
         
+        private DANHSACHUNGVIENDAUDataTable tableDANHSACHUNGVIENDAU;
+        
+        private DANHSACHUNGVIENROTDataTable tableDANHSACHUNGVIENROT;
+        
         private global::System.Data.DataRelation relationFK__BANGCHAMCO__MANV__6A30C649;
         
         private global::System.Data.DataRelation relationFK__BANGTANGC__MALOA__6C190EBB;
@@ -173,6 +177,46 @@ namespace QuanLy_NhanSu {
         private global::System.Data.DataRelation relationFK__BANGCHAMCO__MANV__6A30C6491;
         
         private global::System.Data.DataRelation relationFK__NHANVIEN__MACHUC__5BE2A6F2;
+        
+        private global::System.Data.DataRelation relationFK__CHITIETCH__MAUNG__5812160E1;
+        
+        private global::System.Data.DataRelation relationFK__CHITIETNG__MAUNG__59FA5E801;
+        
+        private global::System.Data.DataRelation relationFK__HINHANH__MAUNGVI__787EE5A01;
+        
+        private global::System.Data.DataRelation relationFK__KQ_TUYEND__MAUNG__778AC1671;
+        
+        private global::System.Data.DataRelation relationFK__NHANVIEN__MAHOSO__5CD6CB2B1;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MADAN__74AE54BC1;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MAQUO__76969D2E1;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATON__75A278F51;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATRI__72C60C4A1;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATRI__73BA30831;
+        
+        private global::System.Data.DataRelation relationFK__CHITIETCH__MAUNG__5812160E2;
+        
+        private global::System.Data.DataRelation relationFK__CHITIETNG__MAUNG__59FA5E802;
+        
+        private global::System.Data.DataRelation relationFK__HINHANH__MAUNGVI__787EE5A02;
+        
+        private global::System.Data.DataRelation relationFK__KQ_TUYEND__MAUNG__778AC1672;
+        
+        private global::System.Data.DataRelation relationFK__NHANVIEN__MAHOSO__5CD6CB2B2;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MADAN__74AE54BC2;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MAQUO__76969D2E2;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATON__75A278F52;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATRI__72C60C4A2;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATRI__73BA30832;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -312,6 +356,12 @@ namespace QuanLy_NhanSu {
                 }
                 if ((ds.Tables["CHUCVU"] != null)) {
                     base.Tables.Add(new CHUCVUDataTable(ds.Tables["CHUCVU"]));
+                }
+                if ((ds.Tables["DANHSACHUNGVIENDAU"] != null)) {
+                    base.Tables.Add(new DANHSACHUNGVIENDAUDataTable(ds.Tables["DANHSACHUNGVIENDAU"]));
+                }
+                if ((ds.Tables["DANHSACHUNGVIENROT"] != null)) {
+                    base.Tables.Add(new DANHSACHUNGVIENROTDataTable(ds.Tables["DANHSACHUNGVIENROT"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -703,6 +753,26 @@ namespace QuanLy_NhanSu {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public DANHSACHUNGVIENDAUDataTable DANHSACHUNGVIENDAU {
+            get {
+                return this.tableDANHSACHUNGVIENDAU;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public DANHSACHUNGVIENROTDataTable DANHSACHUNGVIENROT {
+            get {
+                return this.tableDANHSACHUNGVIENROT;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -878,6 +948,12 @@ namespace QuanLy_NhanSu {
                 }
                 if ((ds.Tables["CHUCVU"] != null)) {
                     base.Tables.Add(new CHUCVUDataTable(ds.Tables["CHUCVU"]));
+                }
+                if ((ds.Tables["DANHSACHUNGVIENDAU"] != null)) {
+                    base.Tables.Add(new DANHSACHUNGVIENDAUDataTable(ds.Tables["DANHSACHUNGVIENDAU"]));
+                }
+                if ((ds.Tables["DANHSACHUNGVIENROT"] != null)) {
+                    base.Tables.Add(new DANHSACHUNGVIENROTDataTable(ds.Tables["DANHSACHUNGVIENROT"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -1134,6 +1210,18 @@ namespace QuanLy_NhanSu {
                     this.tableCHUCVU.InitVars();
                 }
             }
+            this.tableDANHSACHUNGVIENDAU = ((DANHSACHUNGVIENDAUDataTable)(base.Tables["DANHSACHUNGVIENDAU"]));
+            if ((initTable == true)) {
+                if ((this.tableDANHSACHUNGVIENDAU != null)) {
+                    this.tableDANHSACHUNGVIENDAU.InitVars();
+                }
+            }
+            this.tableDANHSACHUNGVIENROT = ((DANHSACHUNGVIENROTDataTable)(base.Tables["DANHSACHUNGVIENROT"]));
+            if ((initTable == true)) {
+                if ((this.tableDANHSACHUNGVIENROT != null)) {
+                    this.tableDANHSACHUNGVIENROT.InitVars();
+                }
+            }
             this.relationFK__BANGCHAMCO__MANV__6A30C649 = this.Relations["FK__BANGCHAMCO__MANV__6A30C649"];
             this.relationFK__BANGTANGC__MALOA__6C190EBB = this.Relations["FK__BANGTANGC__MALOA__6C190EBB"];
             this.relationFK__BANGTANGCA__MANV__6B24EA82 = this.Relations["FK__BANGTANGCA__MANV__6B24EA82"];
@@ -1172,6 +1260,26 @@ namespace QuanLy_NhanSu {
             this.relationFK__TONGLUONG__MANV__6E01572D = this.Relations["FK__TONGLUONG__MANV__6E01572D"];
             this.relationFK__BANGCHAMCO__MANV__6A30C6491 = this.Relations["FK__BANGCHAMCO__MANV__6A30C6491"];
             this.relationFK__NHANVIEN__MACHUC__5BE2A6F2 = this.Relations["FK__NHANVIEN__MACHUC__5BE2A6F2"];
+            this.relationFK__CHITIETCH__MAUNG__5812160E1 = this.Relations["FK__CHITIETCH__MAUNG__5812160E1"];
+            this.relationFK__CHITIETNG__MAUNG__59FA5E801 = this.Relations["FK__CHITIETNG__MAUNG__59FA5E801"];
+            this.relationFK__HINHANH__MAUNGVI__787EE5A01 = this.Relations["FK__HINHANH__MAUNGVI__787EE5A01"];
+            this.relationFK__KQ_TUYEND__MAUNG__778AC1671 = this.Relations["FK__KQ_TUYEND__MAUNG__778AC1671"];
+            this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B1 = this.Relations["FK__NHANVIEN__MAHOSO__5CD6CB2B1"];
+            this.relationFK__HOSOTUYEN__MADAN__74AE54BC1 = this.Relations["FK__HOSOTUYEN__MADAN__74AE54BC1"];
+            this.relationFK__HOSOTUYEN__MAQUO__76969D2E1 = this.Relations["FK__HOSOTUYEN__MAQUO__76969D2E1"];
+            this.relationFK__HOSOTUYEN__MATON__75A278F51 = this.Relations["FK__HOSOTUYEN__MATON__75A278F51"];
+            this.relationFK__HOSOTUYEN__MATRI__72C60C4A1 = this.Relations["FK__HOSOTUYEN__MATRI__72C60C4A1"];
+            this.relationFK__HOSOTUYEN__MATRI__73BA30831 = this.Relations["FK__HOSOTUYEN__MATRI__73BA30831"];
+            this.relationFK__CHITIETCH__MAUNG__5812160E2 = this.Relations["FK__CHITIETCH__MAUNG__5812160E2"];
+            this.relationFK__CHITIETNG__MAUNG__59FA5E802 = this.Relations["FK__CHITIETNG__MAUNG__59FA5E802"];
+            this.relationFK__HINHANH__MAUNGVI__787EE5A02 = this.Relations["FK__HINHANH__MAUNGVI__787EE5A02"];
+            this.relationFK__KQ_TUYEND__MAUNG__778AC1672 = this.Relations["FK__KQ_TUYEND__MAUNG__778AC1672"];
+            this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B2 = this.Relations["FK__NHANVIEN__MAHOSO__5CD6CB2B2"];
+            this.relationFK__HOSOTUYEN__MADAN__74AE54BC2 = this.Relations["FK__HOSOTUYEN__MADAN__74AE54BC2"];
+            this.relationFK__HOSOTUYEN__MAQUO__76969D2E2 = this.Relations["FK__HOSOTUYEN__MAQUO__76969D2E2"];
+            this.relationFK__HOSOTUYEN__MATON__75A278F52 = this.Relations["FK__HOSOTUYEN__MATON__75A278F52"];
+            this.relationFK__HOSOTUYEN__MATRI__72C60C4A2 = this.Relations["FK__HOSOTUYEN__MATRI__72C60C4A2"];
+            this.relationFK__HOSOTUYEN__MATRI__73BA30832 = this.Relations["FK__HOSOTUYEN__MATRI__73BA30832"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1256,6 +1364,10 @@ namespace QuanLy_NhanSu {
             base.Tables.Add(this._tableCHAMCONG_NHANVIEN);
             this.tableCHUCVU = new CHUCVUDataTable();
             base.Tables.Add(this.tableCHUCVU);
+            this.tableDANHSACHUNGVIENDAU = new DANHSACHUNGVIENDAUDataTable();
+            base.Tables.Add(this.tableDANHSACHUNGVIENDAU);
+            this.tableDANHSACHUNGVIENROT = new DANHSACHUNGVIENROTDataTable();
+            base.Tables.Add(this.tableDANHSACHUNGVIENROT);
             this.relationFK__BANGCHAMCO__MANV__6A30C649 = new global::System.Data.DataRelation("FK__BANGCHAMCO__MANV__6A30C649", new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.MANVColumn}, new global::System.Data.DataColumn[] {
                         this.tableBANGCHAMCONG.MANVColumn}, false);
@@ -1408,6 +1520,86 @@ namespace QuanLy_NhanSu {
                         this.tableCHUCVU.MACHUCVUColumn}, new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.MACHUCVUColumn}, false);
             this.Relations.Add(this.relationFK__NHANVIEN__MACHUC__5BE2A6F2);
+            this.relationFK__CHITIETCH__MAUNG__5812160E1 = new global::System.Data.DataRelation("FK__CHITIETCH__MAUNG__5812160E1", new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENDAU.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCHITIETCHUYENMON.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__CHITIETCH__MAUNG__5812160E1);
+            this.relationFK__CHITIETNG__MAUNG__59FA5E801 = new global::System.Data.DataRelation("FK__CHITIETNG__MAUNG__59FA5E801", new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENDAU.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCHITIETNGOAINGU.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__CHITIETNG__MAUNG__59FA5E801);
+            this.relationFK__HINHANH__MAUNGVI__787EE5A01 = new global::System.Data.DataRelation("FK__HINHANH__MAUNGVI__787EE5A01", new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENDAU.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableHINHANH.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__HINHANH__MAUNGVI__787EE5A01);
+            this.relationFK__KQ_TUYEND__MAUNG__778AC1671 = new global::System.Data.DataRelation("FK__KQ_TUYEND__MAUNG__778AC1671", new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENDAU.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableKQ_TUYENDUNG.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__KQ_TUYEND__MAUNG__778AC1671);
+            this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B1 = new global::System.Data.DataRelation("FK__NHANVIEN__MAHOSO__5CD6CB2B1", new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENDAU.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableNHANVIEN.MAHOSOColumn}, false);
+            this.Relations.Add(this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B1);
+            this.relationFK__HOSOTUYEN__MADAN__74AE54BC1 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MADAN__74AE54BC1", new global::System.Data.DataColumn[] {
+                        this.tableDANTOC.MADANTOCColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENDAU.MADANTOCColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MADAN__74AE54BC1);
+            this.relationFK__HOSOTUYEN__MAQUO__76969D2E1 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MAQUO__76969D2E1", new global::System.Data.DataColumn[] {
+                        this.tableQUOCTICH.MAQUOCTICHColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENDAU.MAQUOCTICHColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MAQUO__76969D2E1);
+            this.relationFK__HOSOTUYEN__MATON__75A278F51 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATON__75A278F51", new global::System.Data.DataColumn[] {
+                        this.tableTONGIAO.MATONGIAOColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENDAU.MATONGIAOColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MATON__75A278F51);
+            this.relationFK__HOSOTUYEN__MATRI__72C60C4A1 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATRI__72C60C4A1", new global::System.Data.DataColumn[] {
+                        this.tableTRINHDOHOCVAN.MATRINHDOHOCVANColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENDAU.MATRINHDOHOCVANColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MATRI__72C60C4A1);
+            this.relationFK__HOSOTUYEN__MATRI__73BA30831 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATRI__73BA30831", new global::System.Data.DataColumn[] {
+                        this.tableTRINHDOTINHOC.MATRINHDOTINHOCColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENDAU.MATRINHDOTINHOCColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MATRI__73BA30831);
+            this.relationFK__CHITIETCH__MAUNG__5812160E2 = new global::System.Data.DataRelation("FK__CHITIETCH__MAUNG__5812160E2", new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENROT.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCHITIETCHUYENMON.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__CHITIETCH__MAUNG__5812160E2);
+            this.relationFK__CHITIETNG__MAUNG__59FA5E802 = new global::System.Data.DataRelation("FK__CHITIETNG__MAUNG__59FA5E802", new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENROT.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCHITIETNGOAINGU.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__CHITIETNG__MAUNG__59FA5E802);
+            this.relationFK__HINHANH__MAUNGVI__787EE5A02 = new global::System.Data.DataRelation("FK__HINHANH__MAUNGVI__787EE5A02", new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENROT.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableHINHANH.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__HINHANH__MAUNGVI__787EE5A02);
+            this.relationFK__KQ_TUYEND__MAUNG__778AC1672 = new global::System.Data.DataRelation("FK__KQ_TUYEND__MAUNG__778AC1672", new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENROT.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableKQ_TUYENDUNG.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__KQ_TUYEND__MAUNG__778AC1672);
+            this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B2 = new global::System.Data.DataRelation("FK__NHANVIEN__MAHOSO__5CD6CB2B2", new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENROT.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableNHANVIEN.MAHOSOColumn}, false);
+            this.Relations.Add(this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B2);
+            this.relationFK__HOSOTUYEN__MADAN__74AE54BC2 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MADAN__74AE54BC2", new global::System.Data.DataColumn[] {
+                        this.tableDANTOC.MADANTOCColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENROT.MADANTOCColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MADAN__74AE54BC2);
+            this.relationFK__HOSOTUYEN__MAQUO__76969D2E2 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MAQUO__76969D2E2", new global::System.Data.DataColumn[] {
+                        this.tableQUOCTICH.MAQUOCTICHColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENROT.MAQUOCTICHColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MAQUO__76969D2E2);
+            this.relationFK__HOSOTUYEN__MATON__75A278F52 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATON__75A278F52", new global::System.Data.DataColumn[] {
+                        this.tableTONGIAO.MATONGIAOColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENROT.MATONGIAOColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MATON__75A278F52);
+            this.relationFK__HOSOTUYEN__MATRI__72C60C4A2 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATRI__72C60C4A2", new global::System.Data.DataColumn[] {
+                        this.tableTRINHDOHOCVAN.MATRINHDOHOCVANColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENROT.MATRINHDOHOCVANColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MATRI__72C60C4A2);
+            this.relationFK__HOSOTUYEN__MATRI__73BA30832 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATRI__73BA30832", new global::System.Data.DataColumn[] {
+                        this.tableTRINHDOTINHOC.MATRINHDOTINHOCColumn}, new global::System.Data.DataColumn[] {
+                        this.tableDANHSACHUNGVIENROT.MATRINHDOTINHOCColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MATRI__73BA30832);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1634,6 +1826,18 @@ namespace QuanLy_NhanSu {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        private bool ShouldSerializeDANHSACHUNGVIENDAU() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        private bool ShouldSerializeDANHSACHUNGVIENROT() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -1797,6 +2001,12 @@ namespace QuanLy_NhanSu {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public delegate void CHUCVURowChangeEventHandler(object sender, CHUCVURowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        public delegate void DANHSACHUNGVIENDAURowChangeEventHandler(object sender, DANHSACHUNGVIENDAURowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        public delegate void DANHSACHUNGVIENROTRowChangeEventHandler(object sender, DANHSACHUNGVIENROTRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -13300,6 +13510,1320 @@ namespace QuanLy_NhanSu {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class DANHSACHUNGVIENDAUDataTable : global::System.Data.TypedTableBase<DANHSACHUNGVIENDAURow> {
+            
+            private global::System.Data.DataColumn columnMAUNGVIEN;
+            
+            private global::System.Data.DataColumn columnMADANTOC;
+            
+            private global::System.Data.DataColumn columnMATONGIAO;
+            
+            private global::System.Data.DataColumn columnMAQUOCTICH;
+            
+            private global::System.Data.DataColumn columnHOTEN;
+            
+            private global::System.Data.DataColumn columnGIOITINH;
+            
+            private global::System.Data.DataColumn columnNGAYSINH;
+            
+            private global::System.Data.DataColumn columnNOISINH;
+            
+            private global::System.Data.DataColumn columnCMND;
+            
+            private global::System.Data.DataColumn columnNGAYCAP;
+            
+            private global::System.Data.DataColumn columnNOICAP;
+            
+            private global::System.Data.DataColumn columnQUEQUAN;
+            
+            private global::System.Data.DataColumn columnDIACHITHUONGTRU;
+            
+            private global::System.Data.DataColumn columnNOIOHIENTAI;
+            
+            private global::System.Data.DataColumn columnDIENTHOAI;
+            
+            private global::System.Data.DataColumn columnEMAIL;
+            
+            private global::System.Data.DataColumn columnTINHTRANGHONNHAN;
+            
+            private global::System.Data.DataColumn columnDIENUUTIEN;
+            
+            private global::System.Data.DataColumn columnTINHTRANGSUCKHOE;
+            
+            private global::System.Data.DataColumn columnNGAYTUYENDUNG;
+            
+            private global::System.Data.DataColumn columnHINHTHUCTUYENDUNG;
+            
+            private global::System.Data.DataColumn columnVITRITUYENDUNG;
+            
+            private global::System.Data.DataColumn columnMATRINHDOHOCVAN;
+            
+            private global::System.Data.DataColumn columnMATRINHDOTINHOC;
+            
+            private global::System.Data.DataColumn columnKETQUA;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAUDataTable() {
+                this.TableName = "DANHSACHUNGVIENDAU";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            internal DANHSACHUNGVIENDAUDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected DANHSACHUNGVIENDAUDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MAUNGVIENColumn {
+                get {
+                    return this.columnMAUNGVIEN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MADANTOCColumn {
+                get {
+                    return this.columnMADANTOC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MATONGIAOColumn {
+                get {
+                    return this.columnMATONGIAO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MAQUOCTICHColumn {
+                get {
+                    return this.columnMAQUOCTICH;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn HOTENColumn {
+                get {
+                    return this.columnHOTEN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn GIOITINHColumn {
+                get {
+                    return this.columnGIOITINH;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NGAYSINHColumn {
+                get {
+                    return this.columnNGAYSINH;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NOISINHColumn {
+                get {
+                    return this.columnNOISINH;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CMNDColumn {
+                get {
+                    return this.columnCMND;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NGAYCAPColumn {
+                get {
+                    return this.columnNGAYCAP;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NOICAPColumn {
+                get {
+                    return this.columnNOICAP;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn QUEQUANColumn {
+                get {
+                    return this.columnQUEQUAN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn DIACHITHUONGTRUColumn {
+                get {
+                    return this.columnDIACHITHUONGTRU;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NOIOHIENTAIColumn {
+                get {
+                    return this.columnNOIOHIENTAI;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn DIENTHOAIColumn {
+                get {
+                    return this.columnDIENTHOAI;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn EMAILColumn {
+                get {
+                    return this.columnEMAIL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn TINHTRANGHONNHANColumn {
+                get {
+                    return this.columnTINHTRANGHONNHAN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn DIENUUTIENColumn {
+                get {
+                    return this.columnDIENUUTIEN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn TINHTRANGSUCKHOEColumn {
+                get {
+                    return this.columnTINHTRANGSUCKHOE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NGAYTUYENDUNGColumn {
+                get {
+                    return this.columnNGAYTUYENDUNG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn HINHTHUCTUYENDUNGColumn {
+                get {
+                    return this.columnHINHTHUCTUYENDUNG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn VITRITUYENDUNGColumn {
+                get {
+                    return this.columnVITRITUYENDUNG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MATRINHDOHOCVANColumn {
+                get {
+                    return this.columnMATRINHDOHOCVAN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MATRINHDOTINHOCColumn {
+                get {
+                    return this.columnMATRINHDOTINHOC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn KETQUAColumn {
+                get {
+                    return this.columnKETQUA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow this[int index] {
+                get {
+                    return ((DANHSACHUNGVIENDAURow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public event DANHSACHUNGVIENDAURowChangeEventHandler DANHSACHUNGVIENDAURowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public event DANHSACHUNGVIENDAURowChangeEventHandler DANHSACHUNGVIENDAURowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public event DANHSACHUNGVIENDAURowChangeEventHandler DANHSACHUNGVIENDAURowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public event DANHSACHUNGVIENDAURowChangeEventHandler DANHSACHUNGVIENDAURowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void AddDANHSACHUNGVIENDAURow(DANHSACHUNGVIENDAURow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow AddDANHSACHUNGVIENDAURow(
+                        string MAUNGVIEN, 
+                        DANTOCRow parentDANTOCRowByFK__HOSOTUYEN__MADAN__74AE54BC1, 
+                        TONGIAORow parentTONGIAORowByFK__HOSOTUYEN__MATON__75A278F51, 
+                        QUOCTICHRow parentQUOCTICHRowByFK__HOSOTUYEN__MAQUO__76969D2E1, 
+                        string HOTEN, 
+                        string GIOITINH, 
+                        System.DateTime NGAYSINH, 
+                        string NOISINH, 
+                        int CMND, 
+                        System.DateTime NGAYCAP, 
+                        string NOICAP, 
+                        string QUEQUAN, 
+                        string DIACHITHUONGTRU, 
+                        string NOIOHIENTAI, 
+                        int DIENTHOAI, 
+                        string EMAIL, 
+                        string TINHTRANGHONNHAN, 
+                        string DIENUUTIEN, 
+                        string TINHTRANGSUCKHOE, 
+                        System.DateTime NGAYTUYENDUNG, 
+                        string HINHTHUCTUYENDUNG, 
+                        string VITRITUYENDUNG, 
+                        TRINHDOHOCVANRow parentTRINHDOHOCVANRowByFK__HOSOTUYEN__MATRI__72C60C4A1, 
+                        TRINHDOTINHOCRow parentTRINHDOTINHOCRowByFK__HOSOTUYEN__MATRI__73BA30831, 
+                        string KETQUA) {
+                DANHSACHUNGVIENDAURow rowDANHSACHUNGVIENDAURow = ((DANHSACHUNGVIENDAURow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        MAUNGVIEN,
+                        null,
+                        null,
+                        null,
+                        HOTEN,
+                        GIOITINH,
+                        NGAYSINH,
+                        NOISINH,
+                        CMND,
+                        NGAYCAP,
+                        NOICAP,
+                        QUEQUAN,
+                        DIACHITHUONGTRU,
+                        NOIOHIENTAI,
+                        DIENTHOAI,
+                        EMAIL,
+                        TINHTRANGHONNHAN,
+                        DIENUUTIEN,
+                        TINHTRANGSUCKHOE,
+                        NGAYTUYENDUNG,
+                        HINHTHUCTUYENDUNG,
+                        VITRITUYENDUNG,
+                        null,
+                        null,
+                        KETQUA};
+                if ((parentDANTOCRowByFK__HOSOTUYEN__MADAN__74AE54BC1 != null)) {
+                    columnValuesArray[1] = parentDANTOCRowByFK__HOSOTUYEN__MADAN__74AE54BC1[0];
+                }
+                if ((parentTONGIAORowByFK__HOSOTUYEN__MATON__75A278F51 != null)) {
+                    columnValuesArray[2] = parentTONGIAORowByFK__HOSOTUYEN__MATON__75A278F51[0];
+                }
+                if ((parentQUOCTICHRowByFK__HOSOTUYEN__MAQUO__76969D2E1 != null)) {
+                    columnValuesArray[3] = parentQUOCTICHRowByFK__HOSOTUYEN__MAQUO__76969D2E1[0];
+                }
+                if ((parentTRINHDOHOCVANRowByFK__HOSOTUYEN__MATRI__72C60C4A1 != null)) {
+                    columnValuesArray[22] = parentTRINHDOHOCVANRowByFK__HOSOTUYEN__MATRI__72C60C4A1[0];
+                }
+                if ((parentTRINHDOTINHOCRowByFK__HOSOTUYEN__MATRI__73BA30831 != null)) {
+                    columnValuesArray[23] = parentTRINHDOTINHOCRowByFK__HOSOTUYEN__MATRI__73BA30831[0];
+                }
+                rowDANHSACHUNGVIENDAURow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDANHSACHUNGVIENDAURow);
+                return rowDANHSACHUNGVIENDAURow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow FindByMAUNGVIEN(string MAUNGVIEN) {
+                return ((DANHSACHUNGVIENDAURow)(this.Rows.Find(new object[] {
+                            MAUNGVIEN})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                DANHSACHUNGVIENDAUDataTable cln = ((DANHSACHUNGVIENDAUDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new DANHSACHUNGVIENDAUDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            internal void InitVars() {
+                this.columnMAUNGVIEN = base.Columns["MAUNGVIEN"];
+                this.columnMADANTOC = base.Columns["MADANTOC"];
+                this.columnMATONGIAO = base.Columns["MATONGIAO"];
+                this.columnMAQUOCTICH = base.Columns["MAQUOCTICH"];
+                this.columnHOTEN = base.Columns["HOTEN"];
+                this.columnGIOITINH = base.Columns["GIOITINH"];
+                this.columnNGAYSINH = base.Columns["NGAYSINH"];
+                this.columnNOISINH = base.Columns["NOISINH"];
+                this.columnCMND = base.Columns["CMND"];
+                this.columnNGAYCAP = base.Columns["NGAYCAP"];
+                this.columnNOICAP = base.Columns["NOICAP"];
+                this.columnQUEQUAN = base.Columns["QUEQUAN"];
+                this.columnDIACHITHUONGTRU = base.Columns["DIACHITHUONGTRU"];
+                this.columnNOIOHIENTAI = base.Columns["NOIOHIENTAI"];
+                this.columnDIENTHOAI = base.Columns["DIENTHOAI"];
+                this.columnEMAIL = base.Columns["EMAIL"];
+                this.columnTINHTRANGHONNHAN = base.Columns["TINHTRANGHONNHAN"];
+                this.columnDIENUUTIEN = base.Columns["DIENUUTIEN"];
+                this.columnTINHTRANGSUCKHOE = base.Columns["TINHTRANGSUCKHOE"];
+                this.columnNGAYTUYENDUNG = base.Columns["NGAYTUYENDUNG"];
+                this.columnHINHTHUCTUYENDUNG = base.Columns["HINHTHUCTUYENDUNG"];
+                this.columnVITRITUYENDUNG = base.Columns["VITRITUYENDUNG"];
+                this.columnMATRINHDOHOCVAN = base.Columns["MATRINHDOHOCVAN"];
+                this.columnMATRINHDOTINHOC = base.Columns["MATRINHDOTINHOC"];
+                this.columnKETQUA = base.Columns["KETQUA"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            private void InitClass() {
+                this.columnMAUNGVIEN = new global::System.Data.DataColumn("MAUNGVIEN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMAUNGVIEN);
+                this.columnMADANTOC = new global::System.Data.DataColumn("MADANTOC", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMADANTOC);
+                this.columnMATONGIAO = new global::System.Data.DataColumn("MATONGIAO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMATONGIAO);
+                this.columnMAQUOCTICH = new global::System.Data.DataColumn("MAQUOCTICH", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMAQUOCTICH);
+                this.columnHOTEN = new global::System.Data.DataColumn("HOTEN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHOTEN);
+                this.columnGIOITINH = new global::System.Data.DataColumn("GIOITINH", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGIOITINH);
+                this.columnNGAYSINH = new global::System.Data.DataColumn("NGAYSINH", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNGAYSINH);
+                this.columnNOISINH = new global::System.Data.DataColumn("NOISINH", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNOISINH);
+                this.columnCMND = new global::System.Data.DataColumn("CMND", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCMND);
+                this.columnNGAYCAP = new global::System.Data.DataColumn("NGAYCAP", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNGAYCAP);
+                this.columnNOICAP = new global::System.Data.DataColumn("NOICAP", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNOICAP);
+                this.columnQUEQUAN = new global::System.Data.DataColumn("QUEQUAN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnQUEQUAN);
+                this.columnDIACHITHUONGTRU = new global::System.Data.DataColumn("DIACHITHUONGTRU", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDIACHITHUONGTRU);
+                this.columnNOIOHIENTAI = new global::System.Data.DataColumn("NOIOHIENTAI", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNOIOHIENTAI);
+                this.columnDIENTHOAI = new global::System.Data.DataColumn("DIENTHOAI", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDIENTHOAI);
+                this.columnEMAIL = new global::System.Data.DataColumn("EMAIL", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEMAIL);
+                this.columnTINHTRANGHONNHAN = new global::System.Data.DataColumn("TINHTRANGHONNHAN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTINHTRANGHONNHAN);
+                this.columnDIENUUTIEN = new global::System.Data.DataColumn("DIENUUTIEN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDIENUUTIEN);
+                this.columnTINHTRANGSUCKHOE = new global::System.Data.DataColumn("TINHTRANGSUCKHOE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTINHTRANGSUCKHOE);
+                this.columnNGAYTUYENDUNG = new global::System.Data.DataColumn("NGAYTUYENDUNG", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNGAYTUYENDUNG);
+                this.columnHINHTHUCTUYENDUNG = new global::System.Data.DataColumn("HINHTHUCTUYENDUNG", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHINHTHUCTUYENDUNG);
+                this.columnVITRITUYENDUNG = new global::System.Data.DataColumn("VITRITUYENDUNG", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVITRITUYENDUNG);
+                this.columnMATRINHDOHOCVAN = new global::System.Data.DataColumn("MATRINHDOHOCVAN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMATRINHDOHOCVAN);
+                this.columnMATRINHDOTINHOC = new global::System.Data.DataColumn("MATRINHDOTINHOC", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMATRINHDOTINHOC);
+                this.columnKETQUA = new global::System.Data.DataColumn("KETQUA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnKETQUA);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnMAUNGVIEN}, true));
+                this.columnMAUNGVIEN.AllowDBNull = false;
+                this.columnMAUNGVIEN.Unique = true;
+                this.columnMAUNGVIEN.MaxLength = 10;
+                this.columnMADANTOC.AllowDBNull = false;
+                this.columnMADANTOC.MaxLength = 10;
+                this.columnMATONGIAO.AllowDBNull = false;
+                this.columnMATONGIAO.MaxLength = 10;
+                this.columnMAQUOCTICH.AllowDBNull = false;
+                this.columnMAQUOCTICH.MaxLength = 10;
+                this.columnHOTEN.MaxLength = 50;
+                this.columnGIOITINH.MaxLength = 10;
+                this.columnNOISINH.MaxLength = 50;
+                this.columnNOICAP.MaxLength = 50;
+                this.columnQUEQUAN.MaxLength = 50;
+                this.columnDIACHITHUONGTRU.MaxLength = 50;
+                this.columnNOIOHIENTAI.MaxLength = 50;
+                this.columnEMAIL.MaxLength = 50;
+                this.columnTINHTRANGHONNHAN.MaxLength = 10;
+                this.columnDIENUUTIEN.MaxLength = 50;
+                this.columnTINHTRANGSUCKHOE.MaxLength = 50;
+                this.columnHINHTHUCTUYENDUNG.MaxLength = 50;
+                this.columnVITRITUYENDUNG.MaxLength = 50;
+                this.columnMATRINHDOHOCVAN.MaxLength = 10;
+                this.columnMATRINHDOTINHOC.MaxLength = 10;
+                this.columnKETQUA.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow NewDANHSACHUNGVIENDAURow() {
+                return ((DANHSACHUNGVIENDAURow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new DANHSACHUNGVIENDAURow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(DANHSACHUNGVIENDAURow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.DANHSACHUNGVIENDAURowChanged != null)) {
+                    this.DANHSACHUNGVIENDAURowChanged(this, new DANHSACHUNGVIENDAURowChangeEvent(((DANHSACHUNGVIENDAURow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.DANHSACHUNGVIENDAURowChanging != null)) {
+                    this.DANHSACHUNGVIENDAURowChanging(this, new DANHSACHUNGVIENDAURowChangeEvent(((DANHSACHUNGVIENDAURow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.DANHSACHUNGVIENDAURowDeleted != null)) {
+                    this.DANHSACHUNGVIENDAURowDeleted(this, new DANHSACHUNGVIENDAURowChangeEvent(((DANHSACHUNGVIENDAURow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.DANHSACHUNGVIENDAURowDeleting != null)) {
+                    this.DANHSACHUNGVIENDAURowDeleting(this, new DANHSACHUNGVIENDAURowChangeEvent(((DANHSACHUNGVIENDAURow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void RemoveDANHSACHUNGVIENDAURow(DANHSACHUNGVIENDAURow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSetQLNS ds = new DataSetQLNS();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "DANHSACHUNGVIENDAUDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class DANHSACHUNGVIENROTDataTable : global::System.Data.TypedTableBase<DANHSACHUNGVIENROTRow> {
+            
+            private global::System.Data.DataColumn columnMAUNGVIEN;
+            
+            private global::System.Data.DataColumn columnMADANTOC;
+            
+            private global::System.Data.DataColumn columnMATONGIAO;
+            
+            private global::System.Data.DataColumn columnMAQUOCTICH;
+            
+            private global::System.Data.DataColumn columnHOTEN;
+            
+            private global::System.Data.DataColumn columnGIOITINH;
+            
+            private global::System.Data.DataColumn columnNGAYSINH;
+            
+            private global::System.Data.DataColumn columnNOISINH;
+            
+            private global::System.Data.DataColumn columnCMND;
+            
+            private global::System.Data.DataColumn columnNGAYCAP;
+            
+            private global::System.Data.DataColumn columnNOICAP;
+            
+            private global::System.Data.DataColumn columnQUEQUAN;
+            
+            private global::System.Data.DataColumn columnDIACHITHUONGTRU;
+            
+            private global::System.Data.DataColumn columnNOIOHIENTAI;
+            
+            private global::System.Data.DataColumn columnDIENTHOAI;
+            
+            private global::System.Data.DataColumn columnEMAIL;
+            
+            private global::System.Data.DataColumn columnTINHTRANGHONNHAN;
+            
+            private global::System.Data.DataColumn columnDIENUUTIEN;
+            
+            private global::System.Data.DataColumn columnTINHTRANGSUCKHOE;
+            
+            private global::System.Data.DataColumn columnNGAYTUYENDUNG;
+            
+            private global::System.Data.DataColumn columnHINHTHUCTUYENDUNG;
+            
+            private global::System.Data.DataColumn columnVITRITUYENDUNG;
+            
+            private global::System.Data.DataColumn columnMATRINHDOHOCVAN;
+            
+            private global::System.Data.DataColumn columnMATRINHDOTINHOC;
+            
+            private global::System.Data.DataColumn columnKETQUA;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTDataTable() {
+                this.TableName = "DANHSACHUNGVIENROT";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            internal DANHSACHUNGVIENROTDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected DANHSACHUNGVIENROTDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MAUNGVIENColumn {
+                get {
+                    return this.columnMAUNGVIEN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MADANTOCColumn {
+                get {
+                    return this.columnMADANTOC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MATONGIAOColumn {
+                get {
+                    return this.columnMATONGIAO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MAQUOCTICHColumn {
+                get {
+                    return this.columnMAQUOCTICH;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn HOTENColumn {
+                get {
+                    return this.columnHOTEN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn GIOITINHColumn {
+                get {
+                    return this.columnGIOITINH;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NGAYSINHColumn {
+                get {
+                    return this.columnNGAYSINH;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NOISINHColumn {
+                get {
+                    return this.columnNOISINH;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CMNDColumn {
+                get {
+                    return this.columnCMND;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NGAYCAPColumn {
+                get {
+                    return this.columnNGAYCAP;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NOICAPColumn {
+                get {
+                    return this.columnNOICAP;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn QUEQUANColumn {
+                get {
+                    return this.columnQUEQUAN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn DIACHITHUONGTRUColumn {
+                get {
+                    return this.columnDIACHITHUONGTRU;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NOIOHIENTAIColumn {
+                get {
+                    return this.columnNOIOHIENTAI;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn DIENTHOAIColumn {
+                get {
+                    return this.columnDIENTHOAI;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn EMAILColumn {
+                get {
+                    return this.columnEMAIL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn TINHTRANGHONNHANColumn {
+                get {
+                    return this.columnTINHTRANGHONNHAN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn DIENUUTIENColumn {
+                get {
+                    return this.columnDIENUUTIEN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn TINHTRANGSUCKHOEColumn {
+                get {
+                    return this.columnTINHTRANGSUCKHOE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn NGAYTUYENDUNGColumn {
+                get {
+                    return this.columnNGAYTUYENDUNG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn HINHTHUCTUYENDUNGColumn {
+                get {
+                    return this.columnHINHTHUCTUYENDUNG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn VITRITUYENDUNGColumn {
+                get {
+                    return this.columnVITRITUYENDUNG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MATRINHDOHOCVANColumn {
+                get {
+                    return this.columnMATRINHDOHOCVAN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MATRINHDOTINHOCColumn {
+                get {
+                    return this.columnMATRINHDOTINHOC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn KETQUAColumn {
+                get {
+                    return this.columnKETQUA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow this[int index] {
+                get {
+                    return ((DANHSACHUNGVIENROTRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public event DANHSACHUNGVIENROTRowChangeEventHandler DANHSACHUNGVIENROTRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public event DANHSACHUNGVIENROTRowChangeEventHandler DANHSACHUNGVIENROTRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public event DANHSACHUNGVIENROTRowChangeEventHandler DANHSACHUNGVIENROTRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public event DANHSACHUNGVIENROTRowChangeEventHandler DANHSACHUNGVIENROTRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void AddDANHSACHUNGVIENROTRow(DANHSACHUNGVIENROTRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow AddDANHSACHUNGVIENROTRow(
+                        string MAUNGVIEN, 
+                        DANTOCRow parentDANTOCRowByFK__HOSOTUYEN__MADAN__74AE54BC2, 
+                        TONGIAORow parentTONGIAORowByFK__HOSOTUYEN__MATON__75A278F52, 
+                        QUOCTICHRow parentQUOCTICHRowByFK__HOSOTUYEN__MAQUO__76969D2E2, 
+                        string HOTEN, 
+                        string GIOITINH, 
+                        System.DateTime NGAYSINH, 
+                        string NOISINH, 
+                        int CMND, 
+                        System.DateTime NGAYCAP, 
+                        string NOICAP, 
+                        string QUEQUAN, 
+                        string DIACHITHUONGTRU, 
+                        string NOIOHIENTAI, 
+                        int DIENTHOAI, 
+                        string EMAIL, 
+                        string TINHTRANGHONNHAN, 
+                        string DIENUUTIEN, 
+                        string TINHTRANGSUCKHOE, 
+                        System.DateTime NGAYTUYENDUNG, 
+                        string HINHTHUCTUYENDUNG, 
+                        string VITRITUYENDUNG, 
+                        TRINHDOHOCVANRow parentTRINHDOHOCVANRowByFK__HOSOTUYEN__MATRI__72C60C4A2, 
+                        TRINHDOTINHOCRow parentTRINHDOTINHOCRowByFK__HOSOTUYEN__MATRI__73BA30832, 
+                        string KETQUA) {
+                DANHSACHUNGVIENROTRow rowDANHSACHUNGVIENROTRow = ((DANHSACHUNGVIENROTRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        MAUNGVIEN,
+                        null,
+                        null,
+                        null,
+                        HOTEN,
+                        GIOITINH,
+                        NGAYSINH,
+                        NOISINH,
+                        CMND,
+                        NGAYCAP,
+                        NOICAP,
+                        QUEQUAN,
+                        DIACHITHUONGTRU,
+                        NOIOHIENTAI,
+                        DIENTHOAI,
+                        EMAIL,
+                        TINHTRANGHONNHAN,
+                        DIENUUTIEN,
+                        TINHTRANGSUCKHOE,
+                        NGAYTUYENDUNG,
+                        HINHTHUCTUYENDUNG,
+                        VITRITUYENDUNG,
+                        null,
+                        null,
+                        KETQUA};
+                if ((parentDANTOCRowByFK__HOSOTUYEN__MADAN__74AE54BC2 != null)) {
+                    columnValuesArray[1] = parentDANTOCRowByFK__HOSOTUYEN__MADAN__74AE54BC2[0];
+                }
+                if ((parentTONGIAORowByFK__HOSOTUYEN__MATON__75A278F52 != null)) {
+                    columnValuesArray[2] = parentTONGIAORowByFK__HOSOTUYEN__MATON__75A278F52[0];
+                }
+                if ((parentQUOCTICHRowByFK__HOSOTUYEN__MAQUO__76969D2E2 != null)) {
+                    columnValuesArray[3] = parentQUOCTICHRowByFK__HOSOTUYEN__MAQUO__76969D2E2[0];
+                }
+                if ((parentTRINHDOHOCVANRowByFK__HOSOTUYEN__MATRI__72C60C4A2 != null)) {
+                    columnValuesArray[22] = parentTRINHDOHOCVANRowByFK__HOSOTUYEN__MATRI__72C60C4A2[0];
+                }
+                if ((parentTRINHDOTINHOCRowByFK__HOSOTUYEN__MATRI__73BA30832 != null)) {
+                    columnValuesArray[23] = parentTRINHDOTINHOCRowByFK__HOSOTUYEN__MATRI__73BA30832[0];
+                }
+                rowDANHSACHUNGVIENROTRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDANHSACHUNGVIENROTRow);
+                return rowDANHSACHUNGVIENROTRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow FindByMAUNGVIEN(string MAUNGVIEN) {
+                return ((DANHSACHUNGVIENROTRow)(this.Rows.Find(new object[] {
+                            MAUNGVIEN})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                DANHSACHUNGVIENROTDataTable cln = ((DANHSACHUNGVIENROTDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new DANHSACHUNGVIENROTDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            internal void InitVars() {
+                this.columnMAUNGVIEN = base.Columns["MAUNGVIEN"];
+                this.columnMADANTOC = base.Columns["MADANTOC"];
+                this.columnMATONGIAO = base.Columns["MATONGIAO"];
+                this.columnMAQUOCTICH = base.Columns["MAQUOCTICH"];
+                this.columnHOTEN = base.Columns["HOTEN"];
+                this.columnGIOITINH = base.Columns["GIOITINH"];
+                this.columnNGAYSINH = base.Columns["NGAYSINH"];
+                this.columnNOISINH = base.Columns["NOISINH"];
+                this.columnCMND = base.Columns["CMND"];
+                this.columnNGAYCAP = base.Columns["NGAYCAP"];
+                this.columnNOICAP = base.Columns["NOICAP"];
+                this.columnQUEQUAN = base.Columns["QUEQUAN"];
+                this.columnDIACHITHUONGTRU = base.Columns["DIACHITHUONGTRU"];
+                this.columnNOIOHIENTAI = base.Columns["NOIOHIENTAI"];
+                this.columnDIENTHOAI = base.Columns["DIENTHOAI"];
+                this.columnEMAIL = base.Columns["EMAIL"];
+                this.columnTINHTRANGHONNHAN = base.Columns["TINHTRANGHONNHAN"];
+                this.columnDIENUUTIEN = base.Columns["DIENUUTIEN"];
+                this.columnTINHTRANGSUCKHOE = base.Columns["TINHTRANGSUCKHOE"];
+                this.columnNGAYTUYENDUNG = base.Columns["NGAYTUYENDUNG"];
+                this.columnHINHTHUCTUYENDUNG = base.Columns["HINHTHUCTUYENDUNG"];
+                this.columnVITRITUYENDUNG = base.Columns["VITRITUYENDUNG"];
+                this.columnMATRINHDOHOCVAN = base.Columns["MATRINHDOHOCVAN"];
+                this.columnMATRINHDOTINHOC = base.Columns["MATRINHDOTINHOC"];
+                this.columnKETQUA = base.Columns["KETQUA"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            private void InitClass() {
+                this.columnMAUNGVIEN = new global::System.Data.DataColumn("MAUNGVIEN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMAUNGVIEN);
+                this.columnMADANTOC = new global::System.Data.DataColumn("MADANTOC", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMADANTOC);
+                this.columnMATONGIAO = new global::System.Data.DataColumn("MATONGIAO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMATONGIAO);
+                this.columnMAQUOCTICH = new global::System.Data.DataColumn("MAQUOCTICH", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMAQUOCTICH);
+                this.columnHOTEN = new global::System.Data.DataColumn("HOTEN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHOTEN);
+                this.columnGIOITINH = new global::System.Data.DataColumn("GIOITINH", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGIOITINH);
+                this.columnNGAYSINH = new global::System.Data.DataColumn("NGAYSINH", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNGAYSINH);
+                this.columnNOISINH = new global::System.Data.DataColumn("NOISINH", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNOISINH);
+                this.columnCMND = new global::System.Data.DataColumn("CMND", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCMND);
+                this.columnNGAYCAP = new global::System.Data.DataColumn("NGAYCAP", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNGAYCAP);
+                this.columnNOICAP = new global::System.Data.DataColumn("NOICAP", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNOICAP);
+                this.columnQUEQUAN = new global::System.Data.DataColumn("QUEQUAN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnQUEQUAN);
+                this.columnDIACHITHUONGTRU = new global::System.Data.DataColumn("DIACHITHUONGTRU", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDIACHITHUONGTRU);
+                this.columnNOIOHIENTAI = new global::System.Data.DataColumn("NOIOHIENTAI", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNOIOHIENTAI);
+                this.columnDIENTHOAI = new global::System.Data.DataColumn("DIENTHOAI", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDIENTHOAI);
+                this.columnEMAIL = new global::System.Data.DataColumn("EMAIL", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEMAIL);
+                this.columnTINHTRANGHONNHAN = new global::System.Data.DataColumn("TINHTRANGHONNHAN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTINHTRANGHONNHAN);
+                this.columnDIENUUTIEN = new global::System.Data.DataColumn("DIENUUTIEN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDIENUUTIEN);
+                this.columnTINHTRANGSUCKHOE = new global::System.Data.DataColumn("TINHTRANGSUCKHOE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTINHTRANGSUCKHOE);
+                this.columnNGAYTUYENDUNG = new global::System.Data.DataColumn("NGAYTUYENDUNG", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNGAYTUYENDUNG);
+                this.columnHINHTHUCTUYENDUNG = new global::System.Data.DataColumn("HINHTHUCTUYENDUNG", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHINHTHUCTUYENDUNG);
+                this.columnVITRITUYENDUNG = new global::System.Data.DataColumn("VITRITUYENDUNG", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVITRITUYENDUNG);
+                this.columnMATRINHDOHOCVAN = new global::System.Data.DataColumn("MATRINHDOHOCVAN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMATRINHDOHOCVAN);
+                this.columnMATRINHDOTINHOC = new global::System.Data.DataColumn("MATRINHDOTINHOC", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMATRINHDOTINHOC);
+                this.columnKETQUA = new global::System.Data.DataColumn("KETQUA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnKETQUA);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnMAUNGVIEN}, true));
+                this.columnMAUNGVIEN.AllowDBNull = false;
+                this.columnMAUNGVIEN.Unique = true;
+                this.columnMAUNGVIEN.MaxLength = 10;
+                this.columnMADANTOC.AllowDBNull = false;
+                this.columnMADANTOC.MaxLength = 10;
+                this.columnMATONGIAO.AllowDBNull = false;
+                this.columnMATONGIAO.MaxLength = 10;
+                this.columnMAQUOCTICH.AllowDBNull = false;
+                this.columnMAQUOCTICH.MaxLength = 10;
+                this.columnHOTEN.MaxLength = 50;
+                this.columnGIOITINH.MaxLength = 10;
+                this.columnNOISINH.MaxLength = 50;
+                this.columnNOICAP.MaxLength = 50;
+                this.columnQUEQUAN.MaxLength = 50;
+                this.columnDIACHITHUONGTRU.MaxLength = 50;
+                this.columnNOIOHIENTAI.MaxLength = 50;
+                this.columnEMAIL.MaxLength = 50;
+                this.columnTINHTRANGHONNHAN.MaxLength = 10;
+                this.columnDIENUUTIEN.MaxLength = 50;
+                this.columnTINHTRANGSUCKHOE.MaxLength = 50;
+                this.columnHINHTHUCTUYENDUNG.MaxLength = 50;
+                this.columnVITRITUYENDUNG.MaxLength = 50;
+                this.columnMATRINHDOHOCVAN.MaxLength = 10;
+                this.columnMATRINHDOTINHOC.MaxLength = 10;
+                this.columnKETQUA.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow NewDANHSACHUNGVIENROTRow() {
+                return ((DANHSACHUNGVIENROTRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new DANHSACHUNGVIENROTRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(DANHSACHUNGVIENROTRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.DANHSACHUNGVIENROTRowChanged != null)) {
+                    this.DANHSACHUNGVIENROTRowChanged(this, new DANHSACHUNGVIENROTRowChangeEvent(((DANHSACHUNGVIENROTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.DANHSACHUNGVIENROTRowChanging != null)) {
+                    this.DANHSACHUNGVIENROTRowChanging(this, new DANHSACHUNGVIENROTRowChangeEvent(((DANHSACHUNGVIENROTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.DANHSACHUNGVIENROTRowDeleted != null)) {
+                    this.DANHSACHUNGVIENROTRowDeleted(this, new DANHSACHUNGVIENROTRowChangeEvent(((DANHSACHUNGVIENROTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.DANHSACHUNGVIENROTRowDeleting != null)) {
+                    this.DANHSACHUNGVIENROTRowDeleting(this, new DANHSACHUNGVIENROTRowChangeEvent(((DANHSACHUNGVIENROTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void RemoveDANHSACHUNGVIENROTRow(DANHSACHUNGVIENROTRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSetQLNS ds = new DataSetQLNS();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "DANHSACHUNGVIENROTDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class BANGCHAMCONGRow : global::System.Data.DataRow {
@@ -13464,6 +14988,28 @@ namespace QuanLy_NhanSu {
                 }
                 else {
                     return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__73BA3083"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow[] GetDANHSACHUNGVIENDAURows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__73BA30831"] == null)) {
+                    return new DANHSACHUNGVIENDAURow[0];
+                }
+                else {
+                    return ((DANHSACHUNGVIENDAURow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__73BA30831"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow[] GetDANHSACHUNGVIENROTRows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__73BA30832"] == null)) {
+                    return new DANHSACHUNGVIENROTRow[0];
+                }
+                else {
+                    return ((DANHSACHUNGVIENROTRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__73BA30832"])));
                 }
             }
         }
@@ -13960,6 +15506,28 @@ namespace QuanLy_NhanSu {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETCH__MAUNG__5812160E"]);
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow DANHSACHUNGVIENDAURow {
+                get {
+                    return ((DANHSACHUNGVIENDAURow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETCH__MAUNG__5812160E1"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETCH__MAUNG__5812160E1"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow DANHSACHUNGVIENROTRow {
+                get {
+                    return ((DANHSACHUNGVIENROTRow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETCH__MAUNG__5812160E2"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETCH__MAUNG__5812160E2"]);
+                }
+            }
         }
         
         /// <summary>
@@ -14325,6 +15893,28 @@ namespace QuanLy_NhanSu {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETNG__MAUNG__59FA5E80"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow DANHSACHUNGVIENDAURow {
+                get {
+                    return ((DANHSACHUNGVIENDAURow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETNG__MAUNG__59FA5E801"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETNG__MAUNG__59FA5E801"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow DANHSACHUNGVIENROTRow {
+                get {
+                    return ((DANHSACHUNGVIENROTRow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETNG__MAUNG__59FA5E802"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETNG__MAUNG__59FA5E802"]);
                 }
             }
         }
@@ -14704,6 +16294,28 @@ namespace QuanLy_NhanSu {
                     return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MADAN__74AE54BC"])));
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow[] GetDANHSACHUNGVIENDAURows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MADAN__74AE54BC1"] == null)) {
+                    return new DANHSACHUNGVIENDAURow[0];
+                }
+                else {
+                    return ((DANHSACHUNGVIENDAURow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MADAN__74AE54BC1"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow[] GetDANHSACHUNGVIENROTRows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MADAN__74AE54BC2"] == null)) {
+                    return new DANHSACHUNGVIENROTRow[0];
+                }
+                else {
+                    return ((DANHSACHUNGVIENROTRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MADAN__74AE54BC2"])));
+                }
+            }
         }
         
         /// <summary>
@@ -14995,6 +16607,28 @@ namespace QuanLy_NhanSu {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__HINHANH__MAUNGVI__787EE5A0"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow DANHSACHUNGVIENDAURow {
+                get {
+                    return ((DANHSACHUNGVIENDAURow)(this.GetParentRow(this.Table.ParentRelations["FK__HINHANH__MAUNGVI__787EE5A01"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HINHANH__MAUNGVI__787EE5A01"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow DANHSACHUNGVIENROTRow {
+                get {
+                    return ((DANHSACHUNGVIENROTRow)(this.GetParentRow(this.Table.ParentRelations["FK__HINHANH__MAUNGVI__787EE5A02"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HINHANH__MAUNGVI__787EE5A02"]);
                 }
             }
             
@@ -15894,6 +17528,28 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow DANHSACHUNGVIENDAURow {
+                get {
+                    return ((DANHSACHUNGVIENDAURow)(this.GetParentRow(this.Table.ParentRelations["FK__KQ_TUYEND__MAUNG__778AC1671"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__KQ_TUYEND__MAUNG__778AC1671"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow DANHSACHUNGVIENROTRow {
+                get {
+                    return ((DANHSACHUNGVIENROTRow)(this.GetParentRow(this.Table.ParentRelations["FK__KQ_TUYEND__MAUNG__778AC1672"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__KQ_TUYEND__MAUNG__778AC1672"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsKETQUANull() {
                 return this.IsNull(this.tableKQ_TUYENDUNG.KETQUAColumn);
             }
@@ -16322,6 +17978,28 @@ namespace QuanLy_NhanSu {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__NHANVIEN__MACHUC__5BE2A6F2"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow DANHSACHUNGVIENDAURow {
+                get {
+                    return ((DANHSACHUNGVIENDAURow)(this.GetParentRow(this.Table.ParentRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B1"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B1"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow DANHSACHUNGVIENROTRow {
+                get {
+                    return ((DANHSACHUNGVIENROTRow)(this.GetParentRow(this.Table.ParentRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B2"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B2"]);
                 }
             }
             
@@ -17461,6 +19139,28 @@ namespace QuanLy_NhanSu {
                     return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MAQUO__76969D2E"])));
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow[] GetDANHSACHUNGVIENDAURows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MAQUO__76969D2E1"] == null)) {
+                    return new DANHSACHUNGVIENDAURow[0];
+                }
+                else {
+                    return ((DANHSACHUNGVIENDAURow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MAQUO__76969D2E1"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow[] GetDANHSACHUNGVIENROTRows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MAQUO__76969D2E2"] == null)) {
+                    return new DANHSACHUNGVIENROTRow[0];
+                }
+                else {
+                    return ((DANHSACHUNGVIENROTRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MAQUO__76969D2E2"])));
+                }
+            }
         }
         
         /// <summary>
@@ -17630,6 +19330,28 @@ namespace QuanLy_NhanSu {
                     return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATON__75A278F5"])));
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow[] GetDANHSACHUNGVIENDAURows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATON__75A278F51"] == null)) {
+                    return new DANHSACHUNGVIENDAURow[0];
+                }
+                else {
+                    return ((DANHSACHUNGVIENDAURow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATON__75A278F51"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow[] GetDANHSACHUNGVIENROTRows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATON__75A278F52"] == null)) {
+                    return new DANHSACHUNGVIENROTRow[0];
+                }
+                else {
+                    return ((DANHSACHUNGVIENROTRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATON__75A278F52"])));
+                }
+            }
         }
         
         /// <summary>
@@ -17769,6 +19491,28 @@ namespace QuanLy_NhanSu {
                 }
                 else {
                     return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__72C60C4A"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow[] GetDANHSACHUNGVIENDAURows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__72C60C4A1"] == null)) {
+                    return new DANHSACHUNGVIENDAURow[0];
+                }
+                else {
+                    return ((DANHSACHUNGVIENDAURow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__72C60C4A1"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow[] GetDANHSACHUNGVIENROTRows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__72C60C4A2"] == null)) {
+                    return new DANHSACHUNGVIENROTRow[0];
+                }
+                else {
+                    return ((DANHSACHUNGVIENROTRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__72C60C4A2"])));
                 }
             }
         }
@@ -17966,6 +19710,1522 @@ namespace QuanLy_NhanSu {
                 }
                 else {
                     return ((NHANVIENRow[])(base.GetChildRows(this.Table.ChildRelations["FK__NHANVIEN__MACHUC__5BE2A6F2"])));
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class DANHSACHUNGVIENDAURow : global::System.Data.DataRow {
+            
+            private DANHSACHUNGVIENDAUDataTable tableDANHSACHUNGVIENDAU;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            internal DANHSACHUNGVIENDAURow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableDANHSACHUNGVIENDAU = ((DANHSACHUNGVIENDAUDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MAUNGVIEN {
+                get {
+                    return ((string)(this[this.tableDANHSACHUNGVIENDAU.MAUNGVIENColumn]));
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.MAUNGVIENColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MADANTOC {
+                get {
+                    return ((string)(this[this.tableDANHSACHUNGVIENDAU.MADANTOCColumn]));
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.MADANTOCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MATONGIAO {
+                get {
+                    return ((string)(this[this.tableDANHSACHUNGVIENDAU.MATONGIAOColumn]));
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.MATONGIAOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MAQUOCTICH {
+                get {
+                    return ((string)(this[this.tableDANHSACHUNGVIENDAU.MAQUOCTICHColumn]));
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.MAQUOCTICHColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string HOTEN {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.HOTENColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HOTEN\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.HOTENColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string GIOITINH {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.GIOITINHColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'GIOITINH\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.GIOITINHColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public System.DateTime NGAYSINH {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableDANHSACHUNGVIENDAU.NGAYSINHColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NGAYSINH\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.NGAYSINHColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string NOISINH {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.NOISINHColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NOISINH\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.NOISINHColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int CMND {
+                get {
+                    try {
+                        return ((int)(this[this.tableDANHSACHUNGVIENDAU.CMNDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CMND\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.CMNDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public System.DateTime NGAYCAP {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableDANHSACHUNGVIENDAU.NGAYCAPColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NGAYCAP\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.NGAYCAPColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string NOICAP {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.NOICAPColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NOICAP\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.NOICAPColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string QUEQUAN {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.QUEQUANColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'QUEQUAN\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.QUEQUANColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string DIACHITHUONGTRU {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.DIACHITHUONGTRUColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DIACHITHUONGTRU\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.DIACHITHUONGTRUColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string NOIOHIENTAI {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.NOIOHIENTAIColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NOIOHIENTAI\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.NOIOHIENTAIColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int DIENTHOAI {
+                get {
+                    try {
+                        return ((int)(this[this.tableDANHSACHUNGVIENDAU.DIENTHOAIColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DIENTHOAI\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.DIENTHOAIColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string EMAIL {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.EMAILColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EMAIL\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.EMAILColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string TINHTRANGHONNHAN {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.TINHTRANGHONNHANColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TINHTRANGHONNHAN\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.TINHTRANGHONNHANColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string DIENUUTIEN {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.DIENUUTIENColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DIENUUTIEN\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.DIENUUTIENColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string TINHTRANGSUCKHOE {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.TINHTRANGSUCKHOEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TINHTRANGSUCKHOE\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.TINHTRANGSUCKHOEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public System.DateTime NGAYTUYENDUNG {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableDANHSACHUNGVIENDAU.NGAYTUYENDUNGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NGAYTUYENDUNG\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.NGAYTUYENDUNGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string HINHTHUCTUYENDUNG {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.HINHTHUCTUYENDUNGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HINHTHUCTUYENDUNG\' in table \'DANHSACHUNGVIENDAU\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.HINHTHUCTUYENDUNGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string VITRITUYENDUNG {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.VITRITUYENDUNGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'VITRITUYENDUNG\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.VITRITUYENDUNGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MATRINHDOHOCVAN {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.MATRINHDOHOCVANColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MATRINHDOHOCVAN\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.MATRINHDOHOCVANColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MATRINHDOTINHOC {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.MATRINHDOTINHOCColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MATRINHDOTINHOC\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.MATRINHDOTINHOCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string KETQUA {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENDAU.KETQUAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'KETQUA\' in table \'DANHSACHUNGVIENDAU\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENDAU.KETQUAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANTOCRow DANTOCRow {
+                get {
+                    return ((DANTOCRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MADAN__74AE54BC1"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MADAN__74AE54BC1"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public QUOCTICHRow QUOCTICHRow {
+                get {
+                    return ((QUOCTICHRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MAQUO__76969D2E1"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MAQUO__76969D2E1"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public TONGIAORow TONGIAORow {
+                get {
+                    return ((TONGIAORow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MATON__75A278F51"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MATON__75A278F51"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public TRINHDOHOCVANRow TRINHDOHOCVANRow {
+                get {
+                    return ((TRINHDOHOCVANRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__72C60C4A1"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__72C60C4A1"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public TRINHDOTINHOCRow TRINHDOTINHOCRow {
+                get {
+                    return ((TRINHDOTINHOCRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__73BA30831"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__73BA30831"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsHOTENNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.HOTENColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetHOTENNull() {
+                this[this.tableDANHSACHUNGVIENDAU.HOTENColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsGIOITINHNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.GIOITINHColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetGIOITINHNull() {
+                this[this.tableDANHSACHUNGVIENDAU.GIOITINHColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNGAYSINHNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.NGAYSINHColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNGAYSINHNull() {
+                this[this.tableDANHSACHUNGVIENDAU.NGAYSINHColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNOISINHNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.NOISINHColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNOISINHNull() {
+                this[this.tableDANHSACHUNGVIENDAU.NOISINHColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCMNDNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.CMNDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCMNDNull() {
+                this[this.tableDANHSACHUNGVIENDAU.CMNDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNGAYCAPNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.NGAYCAPColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNGAYCAPNull() {
+                this[this.tableDANHSACHUNGVIENDAU.NGAYCAPColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNOICAPNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.NOICAPColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNOICAPNull() {
+                this[this.tableDANHSACHUNGVIENDAU.NOICAPColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsQUEQUANNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.QUEQUANColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetQUEQUANNull() {
+                this[this.tableDANHSACHUNGVIENDAU.QUEQUANColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsDIACHITHUONGTRUNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.DIACHITHUONGTRUColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetDIACHITHUONGTRUNull() {
+                this[this.tableDANHSACHUNGVIENDAU.DIACHITHUONGTRUColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNOIOHIENTAINull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.NOIOHIENTAIColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNOIOHIENTAINull() {
+                this[this.tableDANHSACHUNGVIENDAU.NOIOHIENTAIColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsDIENTHOAINull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.DIENTHOAIColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetDIENTHOAINull() {
+                this[this.tableDANHSACHUNGVIENDAU.DIENTHOAIColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsEMAILNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.EMAILColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetEMAILNull() {
+                this[this.tableDANHSACHUNGVIENDAU.EMAILColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsTINHTRANGHONNHANNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.TINHTRANGHONNHANColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetTINHTRANGHONNHANNull() {
+                this[this.tableDANHSACHUNGVIENDAU.TINHTRANGHONNHANColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsDIENUUTIENNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.DIENUUTIENColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetDIENUUTIENNull() {
+                this[this.tableDANHSACHUNGVIENDAU.DIENUUTIENColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsTINHTRANGSUCKHOENull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.TINHTRANGSUCKHOEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetTINHTRANGSUCKHOENull() {
+                this[this.tableDANHSACHUNGVIENDAU.TINHTRANGSUCKHOEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNGAYTUYENDUNGNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.NGAYTUYENDUNGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNGAYTUYENDUNGNull() {
+                this[this.tableDANHSACHUNGVIENDAU.NGAYTUYENDUNGColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsHINHTHUCTUYENDUNGNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.HINHTHUCTUYENDUNGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetHINHTHUCTUYENDUNGNull() {
+                this[this.tableDANHSACHUNGVIENDAU.HINHTHUCTUYENDUNGColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsVITRITUYENDUNGNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.VITRITUYENDUNGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetVITRITUYENDUNGNull() {
+                this[this.tableDANHSACHUNGVIENDAU.VITRITUYENDUNGColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsMATRINHDOHOCVANNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.MATRINHDOHOCVANColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetMATRINHDOHOCVANNull() {
+                this[this.tableDANHSACHUNGVIENDAU.MATRINHDOHOCVANColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsMATRINHDOTINHOCNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.MATRINHDOTINHOCColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetMATRINHDOTINHOCNull() {
+                this[this.tableDANHSACHUNGVIENDAU.MATRINHDOTINHOCColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsKETQUANull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENDAU.KETQUAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetKETQUANull() {
+                this[this.tableDANHSACHUNGVIENDAU.KETQUAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public CHITIETCHUYENMONRow[] GetCHITIETCHUYENMONRows() {
+                if ((this.Table.ChildRelations["FK__CHITIETCH__MAUNG__5812160E1"] == null)) {
+                    return new CHITIETCHUYENMONRow[0];
+                }
+                else {
+                    return ((CHITIETCHUYENMONRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETCH__MAUNG__5812160E1"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public CHITIETNGOAINGURow[] GetCHITIETNGOAINGURows() {
+                if ((this.Table.ChildRelations["FK__CHITIETNG__MAUNG__59FA5E801"] == null)) {
+                    return new CHITIETNGOAINGURow[0];
+                }
+                else {
+                    return ((CHITIETNGOAINGURow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETNG__MAUNG__59FA5E801"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HINHANHRow[] GetHINHANHRows() {
+                if ((this.Table.ChildRelations["FK__HINHANH__MAUNGVI__787EE5A01"] == null)) {
+                    return new HINHANHRow[0];
+                }
+                else {
+                    return ((HINHANHRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HINHANH__MAUNGVI__787EE5A01"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public KQ_TUYENDUNGRow[] GetKQ_TUYENDUNGRows() {
+                if ((this.Table.ChildRelations["FK__KQ_TUYEND__MAUNG__778AC1671"] == null)) {
+                    return new KQ_TUYENDUNGRow[0];
+                }
+                else {
+                    return ((KQ_TUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__KQ_TUYEND__MAUNG__778AC1671"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public NHANVIENRow[] GetNHANVIENRows() {
+                if ((this.Table.ChildRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B1"] == null)) {
+                    return new NHANVIENRow[0];
+                }
+                else {
+                    return ((NHANVIENRow[])(base.GetChildRows(this.Table.ChildRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B1"])));
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class DANHSACHUNGVIENROTRow : global::System.Data.DataRow {
+            
+            private DANHSACHUNGVIENROTDataTable tableDANHSACHUNGVIENROT;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            internal DANHSACHUNGVIENROTRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableDANHSACHUNGVIENROT = ((DANHSACHUNGVIENROTDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MAUNGVIEN {
+                get {
+                    return ((string)(this[this.tableDANHSACHUNGVIENROT.MAUNGVIENColumn]));
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.MAUNGVIENColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MADANTOC {
+                get {
+                    return ((string)(this[this.tableDANHSACHUNGVIENROT.MADANTOCColumn]));
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.MADANTOCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MATONGIAO {
+                get {
+                    return ((string)(this[this.tableDANHSACHUNGVIENROT.MATONGIAOColumn]));
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.MATONGIAOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MAQUOCTICH {
+                get {
+                    return ((string)(this[this.tableDANHSACHUNGVIENROT.MAQUOCTICHColumn]));
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.MAQUOCTICHColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string HOTEN {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.HOTENColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HOTEN\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.HOTENColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string GIOITINH {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.GIOITINHColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'GIOITINH\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.GIOITINHColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public System.DateTime NGAYSINH {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableDANHSACHUNGVIENROT.NGAYSINHColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NGAYSINH\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.NGAYSINHColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string NOISINH {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.NOISINHColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NOISINH\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.NOISINHColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int CMND {
+                get {
+                    try {
+                        return ((int)(this[this.tableDANHSACHUNGVIENROT.CMNDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CMND\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.CMNDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public System.DateTime NGAYCAP {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableDANHSACHUNGVIENROT.NGAYCAPColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NGAYCAP\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.NGAYCAPColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string NOICAP {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.NOICAPColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NOICAP\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.NOICAPColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string QUEQUAN {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.QUEQUANColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'QUEQUAN\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.QUEQUANColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string DIACHITHUONGTRU {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.DIACHITHUONGTRUColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DIACHITHUONGTRU\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.DIACHITHUONGTRUColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string NOIOHIENTAI {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.NOIOHIENTAIColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NOIOHIENTAI\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.NOIOHIENTAIColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int DIENTHOAI {
+                get {
+                    try {
+                        return ((int)(this[this.tableDANHSACHUNGVIENROT.DIENTHOAIColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DIENTHOAI\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.DIENTHOAIColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string EMAIL {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.EMAILColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EMAIL\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.EMAILColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string TINHTRANGHONNHAN {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.TINHTRANGHONNHANColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TINHTRANGHONNHAN\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.TINHTRANGHONNHANColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string DIENUUTIEN {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.DIENUUTIENColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DIENUUTIEN\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.DIENUUTIENColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string TINHTRANGSUCKHOE {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.TINHTRANGSUCKHOEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TINHTRANGSUCKHOE\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.TINHTRANGSUCKHOEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public System.DateTime NGAYTUYENDUNG {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableDANHSACHUNGVIENROT.NGAYTUYENDUNGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NGAYTUYENDUNG\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.NGAYTUYENDUNGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string HINHTHUCTUYENDUNG {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.HINHTHUCTUYENDUNGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HINHTHUCTUYENDUNG\' in table \'DANHSACHUNGVIENROT\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.HINHTHUCTUYENDUNGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string VITRITUYENDUNG {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.VITRITUYENDUNGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'VITRITUYENDUNG\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.VITRITUYENDUNGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MATRINHDOHOCVAN {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.MATRINHDOHOCVANColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MATRINHDOHOCVAN\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.MATRINHDOHOCVANColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MATRINHDOTINHOC {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.MATRINHDOTINHOCColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MATRINHDOTINHOC\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.MATRINHDOTINHOCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string KETQUA {
+                get {
+                    try {
+                        return ((string)(this[this.tableDANHSACHUNGVIENROT.KETQUAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'KETQUA\' in table \'DANHSACHUNGVIENROT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDANHSACHUNGVIENROT.KETQUAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANTOCRow DANTOCRow {
+                get {
+                    return ((DANTOCRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MADAN__74AE54BC2"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MADAN__74AE54BC2"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public QUOCTICHRow QUOCTICHRow {
+                get {
+                    return ((QUOCTICHRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MAQUO__76969D2E2"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MAQUO__76969D2E2"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public TONGIAORow TONGIAORow {
+                get {
+                    return ((TONGIAORow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MATON__75A278F52"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MATON__75A278F52"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public TRINHDOHOCVANRow TRINHDOHOCVANRow {
+                get {
+                    return ((TRINHDOHOCVANRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__72C60C4A2"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__72C60C4A2"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public TRINHDOTINHOCRow TRINHDOTINHOCRow {
+                get {
+                    return ((TRINHDOTINHOCRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__73BA30832"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__73BA30832"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsHOTENNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.HOTENColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetHOTENNull() {
+                this[this.tableDANHSACHUNGVIENROT.HOTENColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsGIOITINHNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.GIOITINHColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetGIOITINHNull() {
+                this[this.tableDANHSACHUNGVIENROT.GIOITINHColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNGAYSINHNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.NGAYSINHColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNGAYSINHNull() {
+                this[this.tableDANHSACHUNGVIENROT.NGAYSINHColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNOISINHNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.NOISINHColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNOISINHNull() {
+                this[this.tableDANHSACHUNGVIENROT.NOISINHColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCMNDNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.CMNDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCMNDNull() {
+                this[this.tableDANHSACHUNGVIENROT.CMNDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNGAYCAPNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.NGAYCAPColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNGAYCAPNull() {
+                this[this.tableDANHSACHUNGVIENROT.NGAYCAPColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNOICAPNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.NOICAPColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNOICAPNull() {
+                this[this.tableDANHSACHUNGVIENROT.NOICAPColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsQUEQUANNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.QUEQUANColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetQUEQUANNull() {
+                this[this.tableDANHSACHUNGVIENROT.QUEQUANColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsDIACHITHUONGTRUNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.DIACHITHUONGTRUColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetDIACHITHUONGTRUNull() {
+                this[this.tableDANHSACHUNGVIENROT.DIACHITHUONGTRUColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNOIOHIENTAINull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.NOIOHIENTAIColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNOIOHIENTAINull() {
+                this[this.tableDANHSACHUNGVIENROT.NOIOHIENTAIColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsDIENTHOAINull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.DIENTHOAIColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetDIENTHOAINull() {
+                this[this.tableDANHSACHUNGVIENROT.DIENTHOAIColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsEMAILNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.EMAILColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetEMAILNull() {
+                this[this.tableDANHSACHUNGVIENROT.EMAILColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsTINHTRANGHONNHANNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.TINHTRANGHONNHANColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetTINHTRANGHONNHANNull() {
+                this[this.tableDANHSACHUNGVIENROT.TINHTRANGHONNHANColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsDIENUUTIENNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.DIENUUTIENColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetDIENUUTIENNull() {
+                this[this.tableDANHSACHUNGVIENROT.DIENUUTIENColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsTINHTRANGSUCKHOENull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.TINHTRANGSUCKHOEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetTINHTRANGSUCKHOENull() {
+                this[this.tableDANHSACHUNGVIENROT.TINHTRANGSUCKHOEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsNGAYTUYENDUNGNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.NGAYTUYENDUNGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetNGAYTUYENDUNGNull() {
+                this[this.tableDANHSACHUNGVIENROT.NGAYTUYENDUNGColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsHINHTHUCTUYENDUNGNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.HINHTHUCTUYENDUNGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetHINHTHUCTUYENDUNGNull() {
+                this[this.tableDANHSACHUNGVIENROT.HINHTHUCTUYENDUNGColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsVITRITUYENDUNGNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.VITRITUYENDUNGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetVITRITUYENDUNGNull() {
+                this[this.tableDANHSACHUNGVIENROT.VITRITUYENDUNGColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsMATRINHDOHOCVANNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.MATRINHDOHOCVANColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetMATRINHDOHOCVANNull() {
+                this[this.tableDANHSACHUNGVIENROT.MATRINHDOHOCVANColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsMATRINHDOTINHOCNull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.MATRINHDOTINHOCColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetMATRINHDOTINHOCNull() {
+                this[this.tableDANHSACHUNGVIENROT.MATRINHDOTINHOCColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsKETQUANull() {
+                return this.IsNull(this.tableDANHSACHUNGVIENROT.KETQUAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetKETQUANull() {
+                this[this.tableDANHSACHUNGVIENROT.KETQUAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public CHITIETCHUYENMONRow[] GetCHITIETCHUYENMONRows() {
+                if ((this.Table.ChildRelations["FK__CHITIETCH__MAUNG__5812160E2"] == null)) {
+                    return new CHITIETCHUYENMONRow[0];
+                }
+                else {
+                    return ((CHITIETCHUYENMONRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETCH__MAUNG__5812160E2"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public CHITIETNGOAINGURow[] GetCHITIETNGOAINGURows() {
+                if ((this.Table.ChildRelations["FK__CHITIETNG__MAUNG__59FA5E802"] == null)) {
+                    return new CHITIETNGOAINGURow[0];
+                }
+                else {
+                    return ((CHITIETNGOAINGURow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETNG__MAUNG__59FA5E802"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HINHANHRow[] GetHINHANHRows() {
+                if ((this.Table.ChildRelations["FK__HINHANH__MAUNGVI__787EE5A02"] == null)) {
+                    return new HINHANHRow[0];
+                }
+                else {
+                    return ((HINHANHRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HINHANH__MAUNGVI__787EE5A02"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public KQ_TUYENDUNGRow[] GetKQ_TUYENDUNGRows() {
+                if ((this.Table.ChildRelations["FK__KQ_TUYEND__MAUNG__778AC1672"] == null)) {
+                    return new KQ_TUYENDUNGRow[0];
+                }
+                else {
+                    return ((KQ_TUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__KQ_TUYEND__MAUNG__778AC1672"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public NHANVIENRow[] GetNHANVIENRows() {
+                if ((this.Table.ChildRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B2"] == null)) {
+                    return new NHANVIENRow[0];
+                }
+                else {
+                    return ((NHANVIENRow[])(base.GetChildRows(this.Table.ChildRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B2"])));
                 }
             }
         }
@@ -19214,6 +22474,74 @@ namespace QuanLy_NhanSu {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public CHUCVURow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        public class DANHSACHUNGVIENDAURowChangeEvent : global::System.EventArgs {
+            
+            private DANHSACHUNGVIENDAURow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURowChangeEvent(DANHSACHUNGVIENDAURow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENDAURow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        public class DANHSACHUNGVIENROTRowChangeEvent : global::System.EventArgs {
+            
+            private DANHSACHUNGVIENROTRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRowChangeEvent(DANHSACHUNGVIENROTRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANHSACHUNGVIENROTRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -34654,6 +37982,400 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class DANHSACHUNGVIENDAUTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        public DANHSACHUNGVIENDAUTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "DANHSACHUNGVIENDAU";
+            tableMapping.ColumnMappings.Add("MAUNGVIEN", "MAUNGVIEN");
+            tableMapping.ColumnMappings.Add("MADANTOC", "MADANTOC");
+            tableMapping.ColumnMappings.Add("MATONGIAO", "MATONGIAO");
+            tableMapping.ColumnMappings.Add("MAQUOCTICH", "MAQUOCTICH");
+            tableMapping.ColumnMappings.Add("HOTEN", "HOTEN");
+            tableMapping.ColumnMappings.Add("GIOITINH", "GIOITINH");
+            tableMapping.ColumnMappings.Add("NGAYSINH", "NGAYSINH");
+            tableMapping.ColumnMappings.Add("NOISINH", "NOISINH");
+            tableMapping.ColumnMappings.Add("CMND", "CMND");
+            tableMapping.ColumnMappings.Add("NGAYCAP", "NGAYCAP");
+            tableMapping.ColumnMappings.Add("NOICAP", "NOICAP");
+            tableMapping.ColumnMappings.Add("QUEQUAN", "QUEQUAN");
+            tableMapping.ColumnMappings.Add("DIACHITHUONGTRU", "DIACHITHUONGTRU");
+            tableMapping.ColumnMappings.Add("NOIOHIENTAI", "NOIOHIENTAI");
+            tableMapping.ColumnMappings.Add("DIENTHOAI", "DIENTHOAI");
+            tableMapping.ColumnMappings.Add("EMAIL", "EMAIL");
+            tableMapping.ColumnMappings.Add("TINHTRANGHONNHAN", "TINHTRANGHONNHAN");
+            tableMapping.ColumnMappings.Add("DIENUUTIEN", "DIENUUTIEN");
+            tableMapping.ColumnMappings.Add("TINHTRANGSUCKHOE", "TINHTRANGSUCKHOE");
+            tableMapping.ColumnMappings.Add("NGAYTUYENDUNG", "NGAYTUYENDUNG");
+            tableMapping.ColumnMappings.Add("HINHTHUCTUYENDUNG", "HINHTHUCTUYENDUNG");
+            tableMapping.ColumnMappings.Add("VITRITUYENDUNG", "VITRITUYENDUNG");
+            tableMapping.ColumnMappings.Add("MATRINHDOHOCVAN", "MATRINHDOHOCVAN");
+            tableMapping.ColumnMappings.Add("MATRINHDOTINHOC", "MATRINHDOTINHOC");
+            tableMapping.ColumnMappings.Add("KETQUA", "KETQUA");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::QuanLy_NhanSu.Properties.Settings.Default.DA_WIN_NANGCAOConnectionString1;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT        HOSOTUYENDUNG.MAUNGVIEN, HOSOTUYENDUNG.MADANTOC, HOSOTUYENDUNG.MATONGIAO, HOSOTUYENDUNG.MAQUOCTICH, HOSOTUYENDUNG.HOTEN, HOSOTUYENDUNG.GIOITINH, HOSOTUYENDUNG.NGAYSINH, 
+                         HOSOTUYENDUNG.NOISINH, HOSOTUYENDUNG.CMND, HOSOTUYENDUNG.NGAYCAP, HOSOTUYENDUNG.NOICAP, HOSOTUYENDUNG.QUEQUAN, HOSOTUYENDUNG.DIACHITHUONGTRU, HOSOTUYENDUNG.NOIOHIENTAI, 
+                         HOSOTUYENDUNG.DIENTHOAI, HOSOTUYENDUNG.EMAIL, HOSOTUYENDUNG.TINHTRANGHONNHAN, HOSOTUYENDUNG.DIENUUTIEN, HOSOTUYENDUNG.TINHTRANGSUCKHOE, HOSOTUYENDUNG.NGAYTUYENDUNG, 
+                         HOSOTUYENDUNG.HINHTHUCTUYENDUNG, HOSOTUYENDUNG.VITRITUYENDUNG, HOSOTUYENDUNG.MATRINHDOHOCVAN, HOSOTUYENDUNG.MATRINHDOTINHOC, KQ_TUYENDUNG.KETQUA
+FROM            HOSOTUYENDUNG INNER JOIN
+                         KQ_TUYENDUNG ON HOSOTUYENDUNG.MAUNGVIEN = KQ_TUYENDUNG.MAUNGVIEN
+WHERE        (KQ_TUYENDUNG.KETQUA = N'Đậu')";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSetQLNS.DANHSACHUNGVIENDAUDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSetQLNS.DANHSACHUNGVIENDAUDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSetQLNS.DANHSACHUNGVIENDAUDataTable dataTable = new DataSetQLNS.DANHSACHUNGVIENDAUDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class DANHSACHUNGVIENROTTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        public DANHSACHUNGVIENROTTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "DANHSACHUNGVIENROT";
+            tableMapping.ColumnMappings.Add("MAUNGVIEN", "MAUNGVIEN");
+            tableMapping.ColumnMappings.Add("MADANTOC", "MADANTOC");
+            tableMapping.ColumnMappings.Add("MATONGIAO", "MATONGIAO");
+            tableMapping.ColumnMappings.Add("MAQUOCTICH", "MAQUOCTICH");
+            tableMapping.ColumnMappings.Add("HOTEN", "HOTEN");
+            tableMapping.ColumnMappings.Add("GIOITINH", "GIOITINH");
+            tableMapping.ColumnMappings.Add("NGAYSINH", "NGAYSINH");
+            tableMapping.ColumnMappings.Add("NOISINH", "NOISINH");
+            tableMapping.ColumnMappings.Add("CMND", "CMND");
+            tableMapping.ColumnMappings.Add("NGAYCAP", "NGAYCAP");
+            tableMapping.ColumnMappings.Add("NOICAP", "NOICAP");
+            tableMapping.ColumnMappings.Add("QUEQUAN", "QUEQUAN");
+            tableMapping.ColumnMappings.Add("DIACHITHUONGTRU", "DIACHITHUONGTRU");
+            tableMapping.ColumnMappings.Add("NOIOHIENTAI", "NOIOHIENTAI");
+            tableMapping.ColumnMappings.Add("DIENTHOAI", "DIENTHOAI");
+            tableMapping.ColumnMappings.Add("EMAIL", "EMAIL");
+            tableMapping.ColumnMappings.Add("TINHTRANGHONNHAN", "TINHTRANGHONNHAN");
+            tableMapping.ColumnMappings.Add("DIENUUTIEN", "DIENUUTIEN");
+            tableMapping.ColumnMappings.Add("TINHTRANGSUCKHOE", "TINHTRANGSUCKHOE");
+            tableMapping.ColumnMappings.Add("NGAYTUYENDUNG", "NGAYTUYENDUNG");
+            tableMapping.ColumnMappings.Add("HINHTHUCTUYENDUNG", "HINHTHUCTUYENDUNG");
+            tableMapping.ColumnMappings.Add("VITRITUYENDUNG", "VITRITUYENDUNG");
+            tableMapping.ColumnMappings.Add("MATRINHDOHOCVAN", "MATRINHDOHOCVAN");
+            tableMapping.ColumnMappings.Add("MATRINHDOTINHOC", "MATRINHDOTINHOC");
+            tableMapping.ColumnMappings.Add("KETQUA", "KETQUA");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::QuanLy_NhanSu.Properties.Settings.Default.DA_WIN_NANGCAOConnectionString1;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT        HOSOTUYENDUNG.MAUNGVIEN, HOSOTUYENDUNG.MADANTOC, HOSOTUYENDUNG.MATONGIAO, HOSOTUYENDUNG.MAQUOCTICH, HOSOTUYENDUNG.HOTEN, HOSOTUYENDUNG.GIOITINH, HOSOTUYENDUNG.NGAYSINH, 
+                         HOSOTUYENDUNG.NOISINH, HOSOTUYENDUNG.CMND, HOSOTUYENDUNG.NGAYCAP, HOSOTUYENDUNG.NOICAP, HOSOTUYENDUNG.QUEQUAN, HOSOTUYENDUNG.DIACHITHUONGTRU, HOSOTUYENDUNG.NOIOHIENTAI, 
+                         HOSOTUYENDUNG.DIENTHOAI, HOSOTUYENDUNG.EMAIL, HOSOTUYENDUNG.TINHTRANGHONNHAN, HOSOTUYENDUNG.DIENUUTIEN, HOSOTUYENDUNG.TINHTRANGSUCKHOE, HOSOTUYENDUNG.NGAYTUYENDUNG, 
+                         HOSOTUYENDUNG.HINHTHUCTUYENDUNG, HOSOTUYENDUNG.VITRITUYENDUNG, HOSOTUYENDUNG.MATRINHDOHOCVAN, HOSOTUYENDUNG.MATRINHDOTINHOC, KQ_TUYENDUNG.KETQUA
+FROM            HOSOTUYENDUNG INNER JOIN
+                         KQ_TUYENDUNG ON HOSOTUYENDUNG.MAUNGVIEN = KQ_TUYENDUNG.MAUNGVIEN
+WHERE        (KQ_TUYENDUNG.KETQUA = N'Rớt')";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSetQLNS.DANHSACHUNGVIENROTDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSetQLNS.DANHSACHUNGVIENROTDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSetQLNS.DANHSACHUNGVIENROTDataTable dataTable = new DataSetQLNS.DANHSACHUNGVIENROTDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -35578,21 +39300,21 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._dANTOCTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.DANTOC.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dANTOCTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._qUOCTICHTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.QUOCTICH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._qUOCTICHTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dANTOCTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.DANTOC.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dANTOCTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -35632,12 +39354,12 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._cHUYENMONTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.CHUYENMON.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._tAIKHOANTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.TAIKHOAN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._cHUYENMONTableAdapter.Update(updatedRows));
+                    result = (result + this._tAIKHOANTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -35650,30 +39372,21 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._tAIKHOANTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.TAIKHOAN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._nGOAINGUTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.NGOAINGU.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._tAIKHOANTableAdapter.Update(updatedRows));
+                    result = (result + this._nGOAINGUTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._dAOTAOTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.DAOTAO.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._mANHINHTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.MANHINH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._dAOTAOTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dS_KYLUATTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.DS_KYLUAT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dS_KYLUATTableAdapter.Update(updatedRows));
+                    result = (result + this._mANHINHTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -35695,21 +39408,21 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._mANHINHTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.MANHINH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._dS_KYLUATTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.DS_KYLUAT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._mANHINHTableAdapter.Update(updatedRows));
+                    result = (result + this._dS_KYLUATTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._nGOAINGUTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.NGOAINGU.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._dAOTAOTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.DAOTAO.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._nGOAINGUTableAdapter.Update(updatedRows));
+                    result = (result + this._dAOTAOTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -35722,129 +39435,12 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._qUANLYNGHIVIECTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.QUANLYNGHIVIEC.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._cHUYENMONTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.CHUYENMON.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._qUANLYNGHIVIECTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._qUANLYKYLUATTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.QUANLYKYLUAT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._qUANLYKYLUATTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._tONGLUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.TONGLUONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._tONGLUONGTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._pHANQUYENTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.PHANQUYEN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._pHANQUYENTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._qUANLYTHAISANTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.QUANLYTHAISAN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._qUANLYTHAISANTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._kQ_TUYENDUNGTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.KQ_TUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._kQ_TUYENDUNGTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hINHANHTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hINHANHTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._cHUONGTRINHDAOTAOTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.CHUONGTRINHDAOTAO.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._cHUONGTRINHDAOTAOTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._cHITIETNGOAINGUTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.CHITIETNGOAINGU.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._cHITIETNGOAINGUTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._cHITIETKHENTHUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.CHITIETKHENTHUONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._cHITIETKHENTHUONGTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._cHITIETHOPDONGTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.CHITIETHOPDONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._cHITIETHOPDONGTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._cHITIETCHUYENMONTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.CHITIETCHUYENMON.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._cHITIETCHUYENMONTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._bAOHIEMTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.BAOHIEM.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._bAOHIEMTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._bANGTANGLUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.BANGTANGLUONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._bANGTANGLUONGTableAdapter.Update(updatedRows));
+                    result = (result + this._cHUYENMONTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -35857,12 +39453,138 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._bANGTANGLUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.BANGTANGLUONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._bANGTANGLUONGTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._tONGLUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.TONGLUONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tONGLUONGTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._bAOHIEMTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.BAOHIEM.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._bAOHIEMTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._cHITIETCHUYENMONTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.CHITIETCHUYENMON.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._cHITIETCHUYENMONTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._cHITIETHOPDONGTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.CHITIETHOPDONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._cHITIETHOPDONGTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._qUANLYTHAISANTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.QUANLYTHAISAN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._qUANLYTHAISANTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._qUANLYKYLUATTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.QUANLYKYLUAT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._qUANLYKYLUATTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hINHANHTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hINHANHTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._cHITIETKHENTHUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.CHITIETKHENTHUONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._cHITIETKHENTHUONGTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._pHANQUYENTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.PHANQUYEN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._pHANQUYENTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._cHITIETNGOAINGUTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.CHITIETNGOAINGU.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._cHITIETNGOAINGUTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._cHUONGTRINHDAOTAOTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.CHUONGTRINHDAOTAO.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._cHUONGTRINHDAOTAOTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._nGUOIDUNGNHOMNGUOIDUNGTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.NGUOIDUNGNHOMNGUOIDUNG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._kQ_TUYENDUNGTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.KQ_TUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._kQ_TUYENDUNGTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._qUANLYNGHIVIECTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.QUANLYNGHIVIEC.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._qUANLYNGHIVIECTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -35909,19 +39631,19 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._dANTOCTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.DANTOC.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dANTOCTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._qUOCTICHTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.QUOCTICH.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._qUOCTICHTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dANTOCTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.DANTOC.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dANTOCTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -35957,11 +39679,11 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._cHUYENMONTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.CHUYENMON.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._tAIKHOANTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.TAIKHOAN.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._cHUYENMONTableAdapter.Update(addedRows));
+                    result = (result + this._tAIKHOANTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -35973,27 +39695,19 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._tAIKHOANTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.TAIKHOAN.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._nGOAINGUTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.NGOAINGU.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._tAIKHOANTableAdapter.Update(addedRows));
+                    result = (result + this._nGOAINGUTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._dAOTAOTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.DAOTAO.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._mANHINHTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.MANHINH.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._dAOTAOTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dS_KYLUATTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.DS_KYLUAT.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dS_KYLUATTableAdapter.Update(addedRows));
+                    result = (result + this._mANHINHTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -36013,19 +39727,19 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._mANHINHTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.MANHINH.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._dS_KYLUATTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.DS_KYLUAT.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._mANHINHTableAdapter.Update(addedRows));
+                    result = (result + this._dS_KYLUATTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._nGOAINGUTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.NGOAINGU.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._dAOTAOTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.DAOTAO.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._nGOAINGUTableAdapter.Update(addedRows));
+                    result = (result + this._dAOTAOTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -36037,115 +39751,11 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._qUANLYNGHIVIECTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.QUANLYNGHIVIEC.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._cHUYENMONTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.CHUYENMON.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._qUANLYNGHIVIECTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._qUANLYKYLUATTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.QUANLYKYLUAT.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._qUANLYKYLUATTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._tONGLUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.TONGLUONG.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._tONGLUONGTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._pHANQUYENTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.PHANQUYEN.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._pHANQUYENTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._qUANLYTHAISANTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.QUANLYTHAISAN.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._qUANLYTHAISANTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._kQ_TUYENDUNGTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.KQ_TUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._kQ_TUYENDUNGTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hINHANHTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hINHANHTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._cHUONGTRINHDAOTAOTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.CHUONGTRINHDAOTAO.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._cHUONGTRINHDAOTAOTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._cHITIETNGOAINGUTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.CHITIETNGOAINGU.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._cHITIETNGOAINGUTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._cHITIETKHENTHUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.CHITIETKHENTHUONG.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._cHITIETKHENTHUONGTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._cHITIETHOPDONGTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.CHITIETHOPDONG.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._cHITIETHOPDONGTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._cHITIETCHUYENMONTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.CHITIETCHUYENMON.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._cHITIETCHUYENMONTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._bAOHIEMTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.BAOHIEM.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._bAOHIEMTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._bANGTANGLUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.BANGTANGLUONG.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._bANGTANGLUONGTableAdapter.Update(addedRows));
+                    result = (result + this._cHUYENMONTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -36157,11 +39767,123 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._bANGTANGLUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.BANGTANGLUONG.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._bANGTANGLUONGTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._tONGLUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.TONGLUONG.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tONGLUONGTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._bAOHIEMTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.BAOHIEM.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._bAOHIEMTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._cHITIETCHUYENMONTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.CHITIETCHUYENMON.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._cHITIETCHUYENMONTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._cHITIETHOPDONGTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.CHITIETHOPDONG.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._cHITIETHOPDONGTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._qUANLYTHAISANTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.QUANLYTHAISAN.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._qUANLYTHAISANTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._qUANLYKYLUATTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.QUANLYKYLUAT.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._qUANLYKYLUATTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hINHANHTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hINHANHTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._cHITIETKHENTHUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.CHITIETKHENTHUONG.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._cHITIETKHENTHUONGTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._pHANQUYENTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.PHANQUYEN.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._pHANQUYENTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._cHITIETNGOAINGUTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.CHITIETNGOAINGU.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._cHITIETNGOAINGUTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._cHUONGTRINHDAOTAOTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.CHUONGTRINHDAOTAO.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._cHUONGTRINHDAOTAOTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._nGUOIDUNGNHOMNGUOIDUNGTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.NGUOIDUNGNHOMNGUOIDUNG.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._kQ_TUYENDUNGTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.KQ_TUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._kQ_TUYENDUNGTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._qUANLYNGHIVIECTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.QUANLYNGHIVIEC.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._qUANLYNGHIVIECTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -36191,83 +39913,11 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._nGUOIDUNGNHOMNGUOIDUNGTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.NGUOIDUNGNHOMNGUOIDUNG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._qUANLYNGHIVIECTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.QUANLYNGHIVIEC.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._bANGTANGCATableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.BANGTANGCA.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._bANGTANGCATableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._bANGTANGLUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.BANGTANGLUONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._bANGTANGLUONGTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._bAOHIEMTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.BAOHIEM.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._bAOHIEMTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._cHITIETCHUYENMONTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETCHUYENMON.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._cHITIETCHUYENMONTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._cHITIETHOPDONGTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETHOPDONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._cHITIETHOPDONGTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._cHITIETKHENTHUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETKHENTHUONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._cHITIETKHENTHUONGTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._cHITIETNGOAINGUTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETNGOAINGU.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._cHITIETNGOAINGUTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._cHUONGTRINHDAOTAOTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CHUONGTRINHDAOTAO.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._cHUONGTRINHDAOTAOTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hINHANHTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hINHANHTableAdapter.Update(deletedRows));
+                    result = (result + this._qUANLYNGHIVIECTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -36279,11 +39929,27 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._qUANLYTHAISANTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.QUANLYTHAISAN.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._nGUOIDUNGNHOMNGUOIDUNGTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.NGUOIDUNGNHOMNGUOIDUNG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._qUANLYTHAISANTableAdapter.Update(deletedRows));
+                    result = (result + this._nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._cHUONGTRINHDAOTAOTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.CHUONGTRINHDAOTAO.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._cHUONGTRINHDAOTAOTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._cHITIETNGOAINGUTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETNGOAINGU.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._cHITIETNGOAINGUTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -36295,11 +39961,19 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._tONGLUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.TONGLUONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._cHITIETKHENTHUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETKHENTHUONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._tONGLUONGTableAdapter.Update(deletedRows));
+                    result = (result + this._cHITIETKHENTHUONGTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hINHANHTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hINHANHTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -36311,11 +39985,67 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._qUANLYNGHIVIECTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.QUANLYNGHIVIEC.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._qUANLYTHAISANTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.QUANLYTHAISAN.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._qUANLYNGHIVIECTableAdapter.Update(deletedRows));
+                    result = (result + this._qUANLYTHAISANTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._cHITIETHOPDONGTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETHOPDONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._cHITIETHOPDONGTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._cHITIETCHUYENMONTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETCHUYENMON.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._cHITIETCHUYENMONTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._bAOHIEMTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.BAOHIEM.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._bAOHIEMTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._tONGLUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.TONGLUONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tONGLUONGTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._bANGTANGLUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.BANGTANGLUONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._bANGTANGLUONGTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._bANGTANGCATableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.BANGTANGCA.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._bANGTANGCATableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._cHUYENMONTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.CHUYENMON.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._cHUYENMONTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -36327,19 +40057,19 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._nGOAINGUTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.NGOAINGU.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._dAOTAOTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.DAOTAO.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._nGOAINGUTableAdapter.Update(deletedRows));
+                    result = (result + this._dAOTAOTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._mANHINHTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.MANHINH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._dS_KYLUATTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.DS_KYLUAT.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._mANHINHTableAdapter.Update(deletedRows));
+                    result = (result + this._dS_KYLUATTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -36359,27 +40089,19 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._dS_KYLUATTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.DS_KYLUAT.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._mANHINHTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.MANHINH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._dS_KYLUATTableAdapter.Update(deletedRows));
+                    result = (result + this._mANHINHTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._dAOTAOTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.DAOTAO.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._nGOAINGUTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.NGOAINGU.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._dAOTAOTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._tAIKHOANTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.TAIKHOAN.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._tAIKHOANTableAdapter.Update(deletedRows));
+                    result = (result + this._nGOAINGUTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -36391,11 +40113,11 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._cHUYENMONTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CHUYENMON.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._tAIKHOANTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.TAIKHOAN.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._cHUYENMONTableAdapter.Update(deletedRows));
+                    result = (result + this._tAIKHOANTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -36431,19 +40153,19 @@ SELECT MACHUCVU, TENCHUCVU FROM CHUCVU WHERE (MACHUCVU = @MACHUCVU)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._qUOCTICHTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.QUOCTICH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._qUOCTICHTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._dANTOCTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.DANTOC.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._dANTOCTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._qUOCTICHTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.QUOCTICH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._qUOCTICHTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
