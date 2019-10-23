@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.Linq.SqlClient;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -69,9 +71,14 @@ namespace QuanLy_NhanSu
         public void ChangeConnectionString(string pServerName, string pDataBase, string pUser, string pPass)
         {
             string chuoi = "Data Source=" + pServerName + ";Initial Catalog=" + pDataBase + ";User ID=" + pUser + ";Password = " + pPass + "";
+            SqlConnection sqlHelpers = new SqlConnection(chuoi);
+            Configuration configuration =  ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            configuration.ConnectionStrings.ConnectionStrings["QuanLy_NhanSu.Properties.Settings.DA_WIN_NANGCAOConnectionString1"].ConnectionString = chuoi;
+            configuration.ConnectionStrings.ConnectionStrings["QuanLy_NhanSu.Properties.Settings.DA_WIN_NANGCAOConnectionString1"].ProviderName = "System.Data.SqlClient";
+            configuration.Save(ConfigurationSaveMode.Modified);
 
-            Properties.Settings.Default.DA_WIN_NANGCAOConnectionString = chuoi;
-            Properties.Settings.Default.Save();
+            //Properties.Settings.Default.DA_WIN_NANGCAOConnectionString1 = chuoi;
+            //Properties.Settings.Default.Save();
         }
 
 

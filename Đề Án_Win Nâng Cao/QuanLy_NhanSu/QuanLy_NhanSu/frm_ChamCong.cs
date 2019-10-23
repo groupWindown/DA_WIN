@@ -114,12 +114,18 @@ namespace QuanLy_NhanSu
 
         private void frm_ChamCong_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataSetQLNS.BANGTANGCA' table. You can move, or remove it, as needed.
+            this.bANGTANGCATableAdapter.Fill(this.dataSetQLNS.BANGTANGCA);
+            // TODO: This line of code loads data into the 'dataSetQLNS.DANHMUCTANGCA' table. You can move, or remove it, as needed.
+            this.dANHMUCTANGCATableAdapter.Fill(this.dataSetQLNS.DANHMUCTANGCA);
             // TODO: This line of code loads data into the 'dataSetQLNS._CHAMCONG_NHANVIEN' table. You can move, or remove it, as needed.
             this.cHAMCONG_NHANVIENTableAdapter.Fill(this.dataSetQLNS._CHAMCONG_NHANVIEN);
             // TODO: This line of code loads data into the 'dataSetQLNS.CHUCVU' table. You can move, or remove it, as needed.
             this.cHUCVUTableAdapter.Fill(this.dataSetQLNS.CHUCVU);
             // TODO: This line of code loads data into the 'dataSetQLNS.PHONGBAN' table. You can move, or remove it, as needed.
             this.pHONGBANTableAdapter.Fill(this.dataSetQLNS.PHONGBAN);
+
+
 
         }
 
