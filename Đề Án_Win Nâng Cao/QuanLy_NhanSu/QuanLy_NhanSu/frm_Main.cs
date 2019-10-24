@@ -35,10 +35,7 @@ namespace QuanLy_NhanSu
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+      
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
@@ -116,7 +113,55 @@ namespace QuanLy_NhanSu
         private void barButtonItem18_ItemClick(object sender, ItemClickEventArgs e)
         {
             frm_NhapLieu frm = new frm_NhapLieu();
-            panel_Main_Tacvu.Controls.Add(frm);
+            panel_Main.Controls.Add(frm);
+        }
+
+        private void barButtonItem_HoSoUngVien_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_TT_UngVien frm_TT_UngVien = new frm_TT_UngVien();
+            panel_Main.Controls.Add(frm_TT_UngVien);
+        }
+
+        private void barButtonItem_HoSoNhanVien_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_TT_NhanVien frm_TT_NhanVien = new frm_TT_NhanVien();
+            panel_Main.Controls.Add(frm_TT_NhanVien);
+        }
+
+        private void barButtonItem_ChamCong_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_ChamCong frm_ChamCong = new frm_ChamCong();
+            panel_Main.Controls.Add(frm_ChamCong);
+        }
+
+        private void barButtonItem_ThongKe_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_ThongKe frm_ThongKe = new frm_ThongKe();
+            panel_Main.Controls.Add(frm_ThongKe);
+        }
+
+        private void barButtonItem_DoiMatKhau_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_DoiMatKhau frm_DoiMatKhau = new frm_DoiMatKhau();
+            panel_Main.Controls.Add(frm_DoiMatKhau);
+        }
+
+        private void barButtonItem_DangXuat_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            //Application.Exit();
+        }
+
+        private void frm_Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("Đăng xuất", "Exit!!!!!!!!!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)==DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void frm_Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Program.frmDangNhap.Show();
         }
         //private bool CheckAllMenuChildVisible(RibbonPageGroupCollection mnuItems)
         //{

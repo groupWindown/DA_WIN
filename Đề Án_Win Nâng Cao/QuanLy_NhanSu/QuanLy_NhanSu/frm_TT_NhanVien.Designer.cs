@@ -1528,8 +1528,7 @@
             this.Controls.Add(this.editFormUserControl2);
             this.Name = "frm_TT_NhanVien";
             this.Text = "from_TT_NhanVien";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.from_TT_NhanVien_Load);
+             this.Load += new System.EventHandler(this.from_TT_NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
             this.tabNavigationPage4.ResumeLayout(false);

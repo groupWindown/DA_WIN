@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace QuanLy_NhanSu
 {
-    public partial class frm_TT_UngVien : Form
+    public partial class frm_TT_UngVien : UserControl
     {
         public frm_TT_UngVien()
         {

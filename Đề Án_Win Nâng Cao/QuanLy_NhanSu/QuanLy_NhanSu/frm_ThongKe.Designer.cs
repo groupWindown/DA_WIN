@@ -164,16 +164,6 @@
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Colum29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.comboBox23 = new System.Windows.Forms.ComboBox();
             this.label55 = new System.Windows.Forms.Label();
@@ -375,8 +365,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.xtraTabPage3.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -1574,77 +1562,10 @@
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.dataGridView2);
             this.panel13.Location = new System.Drawing.Point(347, 11);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(1014, 623);
             this.panel13.TabIndex = 54;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowDrop = true;
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.Column28,
-            this.Colum29,
-            this.Column29,
-            this.Column30,
-            this.Column31,
-            this.dataGridViewTextBoxColumn4,
-            this.Column32});
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1014, 620);
-            this.dataGridView2.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Mã nhân viên";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // Column28
-            // 
-            this.Column28.HeaderText = "Giới tính";
-            this.Column28.Name = "Column28";
-            // 
-            // Colum29
-            // 
-            this.Colum29.HeaderText = "Ngày sinh";
-            this.Colum29.Name = "Colum29";
-            // 
-            // Column29
-            // 
-            this.Column29.HeaderText = "Số điện thoại";
-            this.Column29.Name = "Column29";
-            // 
-            // Column30
-            // 
-            this.Column30.HeaderText = "Email";
-            this.Column30.Name = "Column30";
-            // 
-            // Column31
-            // 
-            this.Column31.HeaderText = "Địa chỉ";
-            this.Column31.Name = "Column31";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Chức vụ";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // Column32
-            // 
-            this.Column32.HeaderText = "Phòng ban";
-            this.Column32.Name = "Column32";
             // 
             // groupBox8
             // 
@@ -3122,11 +3043,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.tabPane1);
             this.Name = "frm_ThongKe";
-            this.Text = "frm_ThongKe";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Size = new System.Drawing.Size(1370, 749);
             this.Load += new System.EventHandler(this.frm_ThongKe_Load);
             this.tabNavigationPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tileNavPane1)).EndInit();
@@ -3175,8 +3094,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.xtraTabPage3.ResumeLayout(false);
@@ -3324,7 +3241,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.ComboBox comboBox21;
         private System.Windows.Forms.Label label59;
@@ -3446,15 +3362,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column28;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Colum29;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column29;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column30;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column31;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column32;
         private System.Windows.Forms.ComboBox comboBox23;
         private System.Windows.Forms.Label label55;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;

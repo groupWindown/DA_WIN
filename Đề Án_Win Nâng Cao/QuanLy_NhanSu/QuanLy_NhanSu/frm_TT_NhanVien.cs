@@ -11,7 +11,7 @@ using DevExpress.XtraScheduler;
 
 namespace QuanLy_NhanSu
 {
-    public partial class frm_TT_NhanVien : Form
+    public partial class frm_TT_NhanVien : UserControl
     {
         public frm_TT_NhanVien()
         {

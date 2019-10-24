@@ -649,8 +649,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "frm_TT_UngVien";
             this.Text = "frm_TT_UngVien";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frm_TT_UngVien_Load);
+             this.Load += new System.EventHandler(this.frm_TT_UngVien_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);

@@ -114,5 +114,14 @@ namespace QuanLy_NhanSu
             frm.ShowDialog();
             
         }
+
+        private void txt_Password_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar==13)//phim enter
+            {
+                e.Handled = true;
+                btn_DangNhap.PerformClick();
+            }
+        }
     }
 }

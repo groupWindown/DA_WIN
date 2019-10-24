@@ -45,6 +45,7 @@ namespace QuanLy_NhanSu
         private void btn_Decline_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            Program.frmDangNhap.Show();
         }
 
         private void btn_Accept_Click(object sender, EventArgs e)
@@ -53,6 +54,8 @@ namespace QuanLy_NhanSu
             {
                 ChangeConnectionString(cbb_SeverName.Text, cbb_Database.Text, txt_UserName.Text, txt_Password.Text);
                 this.Close();
+                //gọi lại fromDangNhap
+                Program.frmDangNhap.Show();
             }
             else
             {
