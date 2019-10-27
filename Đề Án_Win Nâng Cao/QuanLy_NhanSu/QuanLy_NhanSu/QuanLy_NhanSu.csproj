@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BLL">
+      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -118,7 +121,7 @@
       <DependentUpon>DataSetQLNS.xsd</DependentUpon>
     </Compile>
     <Compile Include="frm_ChamCong.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="frm_ChamCong.Designer.cs">
       <DependentUpon>frm_ChamCong.cs</DependentUpon>
@@ -171,6 +174,12 @@
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_NhaLieu_PhanQuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frm_NhaLieu_PhanQuyen.Designer.cs">
+      <DependentUpon>frm_NhaLieu_PhanQuyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_NhapLieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -208,19 +217,19 @@
       <DependentUpon>frm_ThemNV_TuUV.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ThongKe.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="frm_ThongKe.Designer.cs">
       <DependentUpon>frm_ThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_TT_UngVien.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="frm_TT_UngVien.Designer.cs">
       <DependentUpon>frm_TT_UngVien.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_TT_NhanVien.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="frm_TT_NhanVien.Designer.cs">
       <DependentUpon>frm_TT_NhanVien.cs</DependentUpon>
@@ -264,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NhaLieu_PhanQuyen.resx">
+      <DependentUpon>frm_NhaLieu_PhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_NhapLieu.resx">
       <DependentUpon>frm_NhapLieu.cs</DependentUpon>

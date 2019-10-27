@@ -112,8 +112,9 @@ namespace QuanLy_NhanSu
 
         private void barButtonItem18_ItemClick(object sender, ItemClickEventArgs e)
         {
-            frm_NhapLieu frm = new frm_NhapLieu();
-            panel_Main.Controls.Add(frm);
+            frm_NhaLieu_PhanQuyen fr = new frm_NhaLieu_PhanQuyen();
+            //frm_NhapLieu frm = new frm_NhapLieu();
+            panel_Main.Controls.Add(fr);
         }
 
         private void barButtonItem_HoSoUngVien_ItemClick(object sender, ItemClickEventArgs e)

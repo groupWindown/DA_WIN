@@ -7,4 +7,11 @@
 - tự động thêm tài khoản khi thêm nhân viên
 - tạo mã nhân viên mới khi nhận lại nhân viên đã nghỉ việc
 - Tính tổng tiền lương
-- 
+-
+//////////////////////////////////////////////////
+nhập liệu 
+NHOMNGUOIDUNG
+MANHINH
+
+phân quyên nhân viên
+reset mật khẩu nhân viên 

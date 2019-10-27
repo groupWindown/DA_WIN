@@ -19,11 +19,11 @@ namespace QuanLy_NhanSu
        
         public static void Main()
         {
-            
-
+           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(frmDangNhap= new frm_DangNhap());
+            Application.Run(frmDangNhap = new frm_DangNhap());
+            
         }
         
     }

@@ -239,7 +239,6 @@ C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\Quan
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.csproj.CopyComplete
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.exe
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.pdb
-C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.csprojAssemblyReference.cache
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_TT_UngVien.resources
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_DangKyBaoHiem.resources
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_GiaHanHopDong.resources
@@ -502,7 +501,6 @@ C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\Quan
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\bin\Debug\ru\DevExpress.Diagram.v18.2.Core.resources.dll
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.csproj.CoreCompileInputs.cache
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.csproj.CopyComplete
-C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\bin\Debug\ThietKeControl_PhungTheHoan.pdb
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_KetNoiCSDL.resources
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_SuaTTNhanVien.resources
 C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_ThemNV_TuUV.resources
@@ -516,3 +514,5 @@ C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\Quan
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_NhapLieu.resources
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_NhapLieu_KT_KL.resources
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_NhapLieu_TrinhDo.resources
+C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_NhaLieu_PhanQuyen.resources

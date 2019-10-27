@@ -1,0 +1,5 @@
+C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\BLL\bin\Debug\BLL.dll
+C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\BLL\bin\Debug\BLL.pdb
+C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\BLL\obj\Debug\BLL.dll
+C:\Users\DELL\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\BLL\obj\Debug\BLL.pdb
