@@ -112,7 +112,7 @@ namespace QuanLy_NhanSu
 
         private void barButtonItem18_ItemClick(object sender, ItemClickEventArgs e)
         {
-            frm_NhaLieu_PhanQuyen fr = new frm_NhaLieu_PhanQuyen();
+            frm_NhapLieu_KT_KL fr = new frm_NhapLieu_KT_KL();
             //frm_NhapLieu frm = new frm_NhapLieu();
             panel_Main.Controls.Add(fr);
         }
@@ -163,6 +163,11 @@ namespace QuanLy_NhanSu
         private void frm_Main_FormClosed(object sender, FormClosedEventArgs e)
         {
             Program.frmDangNhap.Show();
+        }
+
+        private void panel_Main_Paint(object sender, PaintEventArgs e)
+        {
+
         }
         //private bool CheckAllMenuChildVisible(RibbonPageGroupCollection mnuItems)
         //{

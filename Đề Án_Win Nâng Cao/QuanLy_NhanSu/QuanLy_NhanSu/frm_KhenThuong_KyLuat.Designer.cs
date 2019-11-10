@@ -28,12 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label mAKYLUATLabel;
+            System.Windows.Forms.Label tENKYLUATLabel;
             this.editFormUserControl1 = new DevExpress.XtraGrid.Views.Grid.EditFormUserControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cHUCVUBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetQLNS = new QuanLy_NhanSu.DataSetQLNS();
+            this.pHONGBANComboBox = new System.Windows.Forms.ComboBox();
+            this.pHONGBANBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -70,36 +75,56 @@
             this.Colum5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridControl_KyLuat = new DevExpress.XtraGrid.GridControl();
+            this.nhanVien_KyLuatBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView_KyLuat = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMAPHONGBAN = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMACHUCVU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMANV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHOTEN = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMAKYLUAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTENKYLUAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYKYLUAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTIENKYLUAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCOQUANKYLUAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.qUANLYKYLUATComboBox = new System.Windows.Forms.ComboBox();
+            this.qUANLYKYLUATBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dS_KYLUATBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tENKYLUATComboBox = new System.Windows.Forms.ComboBox();
+            this.mAKYLUATComboBox = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.dateEdit3 = new DevExpress.XtraEditors.DateEdit();
-            this.label17 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.cHUCVUBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.label22 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dateEdit3 = new DevExpress.XtraEditors.DateEdit();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
+            this.pHONGBANBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pHONGBANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.PHONGBANTableAdapter();
+            this.tableAdapterManager = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager();
+            this.pHONGBANBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.cHUCVUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHUCVUTableAdapter();
+            this.dS_KYLUATTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DS_KYLUATTableAdapter();
+            this.qUANLYKYLUATTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.QUANLYKYLUATTableAdapter();
+            this.nhanVien_KyLuatTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NhanVien_KyLuatTableAdapter();
+            this.pHONGBANBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.pHONGBANComboBox1 = new System.Windows.Forms.ComboBox();
+            this.cHUCVUBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.cHUCVUComboBox = new System.Windows.Forms.ComboBox();
+            this.cHUCVUBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.cHUCVUComboBox2 = new System.Windows.Forms.ComboBox();
+            mAKYLUATLabel = new System.Windows.Forms.Label();
+            tENKYLUATLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
             this.panel1.SuspendLayout();
@@ -110,10 +135,40 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabNavigationPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_KyLuat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVien_KyLuatBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_KyLuat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUANLYKYLUATBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_KYLUATBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource3)).BeginInit();
             this.SuspendLayout();
+            // 
+            // mAKYLUATLabel
+            // 
+            mAKYLUATLabel.AutoSize = true;
+            this.editFormUserControl1.SetBoundPropertyName(mAKYLUATLabel, "");
+            mAKYLUATLabel.Location = new System.Drawing.Point(364, 28);
+            mAKYLUATLabel.Name = "mAKYLUATLabel";
+            mAKYLUATLabel.Size = new System.Drawing.Size(75, 13);
+            mAKYLUATLabel.TabIndex = 136;
+            mAKYLUATLabel.Text = "Mã loại kỷ luật";
+            // 
+            // tENKYLUATLabel
+            // 
+            tENKYLUATLabel.AutoSize = true;
+            this.editFormUserControl1.SetBoundPropertyName(tENKYLUATLabel, "");
+            tENKYLUATLabel.Location = new System.Drawing.Point(364, 64);
+            tENKYLUATLabel.Name = "tENKYLUATLabel";
+            tENKYLUATLabel.Size = new System.Drawing.Size(60, 13);
+            tENKYLUATLabel.TabIndex = 137;
+            tENKYLUATLabel.Text = "Tên kỷ luật";
             // 
             // editFormUserControl1
             // 
@@ -122,16 +177,17 @@
             this.editFormUserControl1.Name = "editFormUserControl1";
             this.editFormUserControl1.Size = new System.Drawing.Size(348, 749);
             this.editFormUserControl1.TabIndex = 2;
+            this.editFormUserControl1.Load += new System.EventHandler(this.editFormUserControl1_Load);
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.editFormUserControl1.SetBoundPropertyName(this.groupBox1, "");
+            this.groupBox1.Controls.Add(this.cHUCVUComboBox);
+            this.groupBox1.Controls.Add(this.pHONGBANComboBox);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.dateEdit2);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -140,10 +196,37 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(6, 68);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(342, 616);
+            this.groupBox1.Size = new System.Drawing.Size(336, 616);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm nâng cao";
+            // 
+            // cHUCVUBindingSource
+            // 
+            this.cHUCVUBindingSource.DataMember = "CHUCVU";
+            this.cHUCVUBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // dataSetQLNS
+            // 
+            this.dataSetQLNS.DataSetName = "DataSetQLNS";
+            this.dataSetQLNS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pHONGBANComboBox
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.pHONGBANComboBox, "");
+            this.pHONGBANComboBox.DataSource = this.pHONGBANBindingSource1;
+            this.pHONGBANComboBox.DisplayMember = "TENPHONGBAN";
+            this.pHONGBANComboBox.FormattingEnabled = true;
+            this.pHONGBANComboBox.Location = new System.Drawing.Point(90, 74);
+            this.pHONGBANComboBox.Name = "pHONGBANComboBox";
+            this.pHONGBANComboBox.Size = new System.Drawing.Size(213, 27);
+            this.pHONGBANComboBox.TabIndex = 94;
+            this.pHONGBANComboBox.ValueMember = "MAPHONGBAN";
+            // 
+            // pHONGBANBindingSource1
+            // 
+            this.pHONGBANBindingSource1.DataMember = "PHONGBAN";
+            this.pHONGBANBindingSource1.DataSource = this.dataSetQLNS;
             // 
             // label5
             // 
@@ -169,24 +252,6 @@
             this.dateEdit2.Properties.CellSize = new System.Drawing.Size(207, 27);
             this.dateEdit2.Size = new System.Drawing.Size(213, 27);
             this.dateEdit2.TabIndex = 93;
-            // 
-            // comboBox2
-            // 
-            this.editFormUserControl1.SetBoundPropertyName(this.comboBox2, "");
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(90, 111);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(213, 27);
-            this.comboBox2.TabIndex = 6;
-            // 
-            // comboBox1
-            // 
-            this.editFormUserControl1.SetBoundPropertyName(this.comboBox1, "");
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(90, 69);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(213, 27);
-            this.comboBox1.TabIndex = 5;
             // 
             // label4
             // 
@@ -222,7 +287,7 @@
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.editFormUserControl1.SetBoundPropertyName(this.button1, "");
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(267, 25);
+            this.button1.Location = new System.Drawing.Point(261, 25);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(69, 28);
             this.button1.TabIndex = 2;
@@ -537,21 +602,21 @@
             // 
             this.editFormUserControl1.SetBoundPropertyName(this.tabNavigationPage2, "");
             this.tabNavigationPage2.Caption = "Kỷ luật";
-            this.tabNavigationPage2.Controls.Add(this.comboBox11);
-            this.tabNavigationPage2.Controls.Add(this.label22);
-            this.tabNavigationPage2.Controls.Add(this.dataGridView2);
+            this.tabNavigationPage2.Controls.Add(this.cHUCVUComboBox2);
+            this.tabNavigationPage2.Controls.Add(this.pHONGBANComboBox1);
+            this.tabNavigationPage2.Controls.Add(this.gridControl_KyLuat);
+            this.tabNavigationPage2.Controls.Add(this.qUANLYKYLUATComboBox);
+            this.tabNavigationPage2.Controls.Add(tENKYLUATLabel);
+            this.tabNavigationPage2.Controls.Add(this.tENKYLUATComboBox);
+            this.tabNavigationPage2.Controls.Add(mAKYLUATLabel);
+            this.tabNavigationPage2.Controls.Add(this.mAKYLUATComboBox);
             this.tabNavigationPage2.Controls.Add(this.textBox5);
-            this.tabNavigationPage2.Controls.Add(this.label14);
-            this.tabNavigationPage2.Controls.Add(this.comboBox7);
-            this.tabNavigationPage2.Controls.Add(this.comboBox8);
-            this.tabNavigationPage2.Controls.Add(this.label15);
-            this.tabNavigationPage2.Controls.Add(this.label16);
-            this.tabNavigationPage2.Controls.Add(this.dateEdit3);
-            this.tabNavigationPage2.Controls.Add(this.label17);
             this.tabNavigationPage2.Controls.Add(this.textBox6);
+            this.tabNavigationPage2.Controls.Add(this.label22);
+            this.tabNavigationPage2.Controls.Add(this.label14);
+            this.tabNavigationPage2.Controls.Add(this.label15);
+            this.tabNavigationPage2.Controls.Add(this.dateEdit3);
             this.tabNavigationPage2.Controls.Add(this.label18);
-            this.tabNavigationPage2.Controls.Add(this.comboBox9);
-            this.tabNavigationPage2.Controls.Add(this.comboBox10);
             this.tabNavigationPage2.Controls.Add(this.label19);
             this.tabNavigationPage2.Controls.Add(this.button3);
             this.tabNavigationPage2.Controls.Add(this.label20);
@@ -560,99 +625,184 @@
             this.tabNavigationPage2.Name = "tabNavigationPage2";
             this.tabNavigationPage2.Size = new System.Drawing.Size(1022, 722);
             // 
-            // comboBox11
+            // gridControl_KyLuat
             // 
-            this.editFormUserControl1.SetBoundPropertyName(this.comboBox11, "");
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(779, 17);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(213, 21);
-            this.comboBox11.TabIndex = 131;
+            this.editFormUserControl1.SetBoundPropertyName(this.gridControl_KyLuat, "");
+            this.gridControl_KyLuat.DataSource = this.nhanVien_KyLuatBindingSource;
+            this.gridControl_KyLuat.Location = new System.Drawing.Point(34, 215);
+            this.gridControl_KyLuat.MainView = this.gridView_KyLuat;
+            this.gridControl_KyLuat.Name = "gridControl_KyLuat";
+            this.gridControl_KyLuat.Size = new System.Drawing.Size(968, 200);
+            this.gridControl_KyLuat.TabIndex = 139;
+            this.gridControl_KyLuat.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView_KyLuat});
+            // 
+            // nhanVien_KyLuatBindingSource
+            // 
+            this.nhanVien_KyLuatBindingSource.DataMember = "NhanVien_KyLuat";
+            this.nhanVien_KyLuatBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // gridView_KyLuat
+            // 
+            this.gridView_KyLuat.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMAPHONGBAN,
+            this.colMACHUCVU,
+            this.colMANV,
+            this.colHOTEN,
+            this.colMAKYLUAT,
+            this.colTENKYLUAT,
+            this.colNGAYKYLUAT,
+            this.colTIENKYLUAT,
+            this.colCOQUANKYLUAT});
+            this.gridView_KyLuat.GridControl = this.gridControl_KyLuat;
+            this.gridView_KyLuat.Name = "gridView_KyLuat";
+            // 
+            // colMAPHONGBAN
+            // 
+            this.colMAPHONGBAN.Caption = "Mã phòng ban";
+            this.colMAPHONGBAN.FieldName = "MAPHONGBAN";
+            this.colMAPHONGBAN.Name = "colMAPHONGBAN";
+            this.colMAPHONGBAN.Visible = true;
+            this.colMAPHONGBAN.VisibleIndex = 0;
+            // 
+            // colMACHUCVU
+            // 
+            this.colMACHUCVU.Caption = "Mã chức vụ";
+            this.colMACHUCVU.FieldName = "MACHUCVU";
+            this.colMACHUCVU.Name = "colMACHUCVU";
+            this.colMACHUCVU.Visible = true;
+            this.colMACHUCVU.VisibleIndex = 1;
+            // 
+            // colMANV
+            // 
+            this.colMANV.Caption = "Mã nhân viên";
+            this.colMANV.FieldName = "MANV";
+            this.colMANV.Name = "colMANV";
+            this.colMANV.Visible = true;
+            this.colMANV.VisibleIndex = 2;
+            // 
+            // colHOTEN
+            // 
+            this.colHOTEN.Caption = "Họ tên";
+            this.colHOTEN.FieldName = "HOTEN";
+            this.colHOTEN.Name = "colHOTEN";
+            this.colHOTEN.Visible = true;
+            this.colHOTEN.VisibleIndex = 3;
+            // 
+            // colMAKYLUAT
+            // 
+            this.colMAKYLUAT.Caption = "Mã kỷ luật";
+            this.colMAKYLUAT.FieldName = "MAKYLUAT";
+            this.colMAKYLUAT.Name = "colMAKYLUAT";
+            this.colMAKYLUAT.Visible = true;
+            this.colMAKYLUAT.VisibleIndex = 4;
+            // 
+            // colTENKYLUAT
+            // 
+            this.colTENKYLUAT.Caption = "Tên kỷ luật";
+            this.colTENKYLUAT.FieldName = "TENKYLUAT";
+            this.colTENKYLUAT.Name = "colTENKYLUAT";
+            this.colTENKYLUAT.Visible = true;
+            this.colTENKYLUAT.VisibleIndex = 5;
+            // 
+            // colNGAYKYLUAT
+            // 
+            this.colNGAYKYLUAT.Caption = "Ngày kỷ luật";
+            this.colNGAYKYLUAT.FieldName = "NGAYKYLUAT";
+            this.colNGAYKYLUAT.Name = "colNGAYKYLUAT";
+            this.colNGAYKYLUAT.Visible = true;
+            this.colNGAYKYLUAT.VisibleIndex = 6;
+            // 
+            // colTIENKYLUAT
+            // 
+            this.colTIENKYLUAT.Caption = "Tiền kỷ luật";
+            this.colTIENKYLUAT.FieldName = "TIENKYLUAT";
+            this.colTIENKYLUAT.Name = "colTIENKYLUAT";
+            this.colTIENKYLUAT.Visible = true;
+            this.colTIENKYLUAT.VisibleIndex = 7;
+            // 
+            // colCOQUANKYLUAT
+            // 
+            this.colCOQUANKYLUAT.Caption = "Cơ quan kỷ luật";
+            this.colCOQUANKYLUAT.FieldName = "COQUANKYLUAT";
+            this.colCOQUANKYLUAT.Name = "colCOQUANKYLUAT";
+            this.colCOQUANKYLUAT.Visible = true;
+            this.colCOQUANKYLUAT.VisibleIndex = 8;
+            // 
+            // qUANLYKYLUATComboBox
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.qUANLYKYLUATComboBox, "");
+            this.qUANLYKYLUATComboBox.DataSource = this.qUANLYKYLUATBindingSource;
+            this.qUANLYKYLUATComboBox.DisplayMember = "MANV";
+            this.qUANLYKYLUATComboBox.FormattingEnabled = true;
+            this.qUANLYKYLUATComboBox.Location = new System.Drawing.Point(789, 25);
+            this.qUANLYKYLUATComboBox.Name = "qUANLYKYLUATComboBox";
+            this.qUANLYKYLUATComboBox.Size = new System.Drawing.Size(213, 21);
+            this.qUANLYKYLUATComboBox.TabIndex = 138;
+            this.qUANLYKYLUATComboBox.ValueMember = "MAQUANLYKYLUAT";
+            // 
+            // qUANLYKYLUATBindingSource
+            // 
+            this.qUANLYKYLUATBindingSource.DataMember = "FK__QUANLYKYL__MAKYL__6FE99F9F";
+            this.qUANLYKYLUATBindingSource.DataSource = this.dS_KYLUATBindingSource;
+            // 
+            // dS_KYLUATBindingSource
+            // 
+            this.dS_KYLUATBindingSource.DataMember = "DS_KYLUAT";
+            this.dS_KYLUATBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tENKYLUATComboBox
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.tENKYLUATComboBox, "");
+            this.tENKYLUATComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.dS_KYLUATBindingSource, "TENKYLUAT", true));
+            this.tENKYLUATComboBox.FormattingEnabled = true;
+            this.tENKYLUATComboBox.Location = new System.Drawing.Point(445, 61);
+            this.tENKYLUATComboBox.Name = "tENKYLUATComboBox";
+            this.tENKYLUATComboBox.Size = new System.Drawing.Size(213, 21);
+            this.tENKYLUATComboBox.TabIndex = 138;
+            // 
+            // mAKYLUATComboBox
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.mAKYLUATComboBox, "");
+            this.mAKYLUATComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.dS_KYLUATBindingSource, "MAKYLUAT", true));
+            this.mAKYLUATComboBox.FormattingEnabled = true;
+            this.mAKYLUATComboBox.Location = new System.Drawing.Point(445, 25);
+            this.mAKYLUATComboBox.Name = "mAKYLUATComboBox";
+            this.mAKYLUATComboBox.Size = new System.Drawing.Size(213, 21);
+            this.mAKYLUATComboBox.TabIndex = 137;
+            // 
+            // textBox5
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.textBox5, "");
+            this.textBox5.Location = new System.Drawing.Point(445, 144);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(213, 21);
+            this.textBox5.TabIndex = 136;
+            // 
+            // textBox6
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.textBox6, "");
+            this.textBox6.Location = new System.Drawing.Point(115, 144);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(213, 21);
+            this.textBox6.TabIndex = 135;
+            // 
+            // cHUCVUBindingSource1
+            // 
+            this.cHUCVUBindingSource1.DataMember = "CHUCVU";
+            this.cHUCVUBindingSource1.DataSource = this.dataSetQLNS;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.editFormUserControl1.SetBoundPropertyName(this.label22, "");
-            this.label22.Location = new System.Drawing.Point(692, 22);
+            this.label22.Location = new System.Drawing.Point(702, 28);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(81, 13);
             this.label22.TabIndex = 130;
             this.label22.Text = "Cơ quan kỷ luật";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.editFormUserControl1.SetBoundPropertyName(this.dataGridView2, "");
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.Column7,
-            this.dataGridViewTextBoxColumn8});
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 265);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1022, 457);
-            this.dataGridView2.TabIndex = 129;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Phòng ban";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Chức vụ";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Mã nhân viên";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Mã loại kỷ luật";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Loại kỷ luật";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Ngày kỷ luật";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Cơ quan kỷ luật";
-            this.Column7.Name = "Column7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Tiền kỷ luật";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // textBox5
-            // 
-            this.editFormUserControl1.SetBoundPropertyName(this.textBox5, "");
-            this.textBox5.Location = new System.Drawing.Point(445, 140);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(213, 27);
-            this.textBox5.TabIndex = 128;
             // 
             // label14
             // 
@@ -664,24 +814,6 @@
             this.label14.TabIndex = 127;
             this.label14.Text = "Tiền kỷ luật";
             // 
-            // comboBox7
-            // 
-            this.editFormUserControl1.SetBoundPropertyName(this.comboBox7, "");
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(445, 53);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(213, 21);
-            this.comboBox7.TabIndex = 126;
-            // 
-            // comboBox8
-            // 
-            this.editFormUserControl1.SetBoundPropertyName(this.comboBox8, "");
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(445, 17);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(213, 21);
-            this.comboBox8.TabIndex = 125;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -692,21 +824,11 @@
             this.label15.TabIndex = 120;
             this.label15.Text = "Ngày kỷ luật";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.editFormUserControl1.SetBoundPropertyName(this.label16, "");
-            this.label16.Location = new System.Drawing.Point(364, 61);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(61, 13);
-            this.label16.TabIndex = 124;
-            this.label16.Text = "Loại kỷ luật";
-            // 
             // dateEdit3
             // 
             this.editFormUserControl1.SetBoundPropertyName(this.dateEdit3, "");
             this.dateEdit3.EditValue = null;
-            this.dateEdit3.Location = new System.Drawing.Point(445, 93);
+            this.dateEdit3.Location = new System.Drawing.Point(445, 104);
             this.dateEdit3.Name = "dateEdit3";
             this.dateEdit3.Properties.AutoHeight = false;
             this.dateEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -714,27 +836,8 @@
             this.dateEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit3.Properties.CellSize = new System.Drawing.Size(207, 27);
-            this.dateEdit3.Size = new System.Drawing.Size(213, 27);
+            this.dateEdit3.Size = new System.Drawing.Size(213, 21);
             this.dateEdit3.TabIndex = 119;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.editFormUserControl1.SetBoundPropertyName(this.label17, "");
-            this.label17.Location = new System.Drawing.Point(364, 25);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(75, 13);
-            this.label17.TabIndex = 123;
-            this.label17.Text = "Mã loại kỷ luật";
-            // 
-            // textBox6
-            // 
-            this.editFormUserControl1.SetBoundPropertyName(this.textBox6, "");
-            this.textBox6.Location = new System.Drawing.Point(115, 95);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(213, 27);
-            this.textBox6.TabIndex = 122;
             // 
             // label18
             // 
@@ -745,24 +848,6 @@
             this.label18.Size = new System.Drawing.Size(72, 13);
             this.label18.TabIndex = 121;
             this.label18.Text = "Mã nhân viên";
-            // 
-            // comboBox9
-            // 
-            this.editFormUserControl1.SetBoundPropertyName(this.comboBox9, "");
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(115, 55);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(213, 21);
-            this.comboBox9.TabIndex = 118;
-            // 
-            // comboBox10
-            // 
-            this.editFormUserControl1.SetBoundPropertyName(this.comboBox10, "");
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(116, 19);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(213, 21);
-            this.comboBox10.TabIndex = 117;
             // 
             // label19
             // 
@@ -779,7 +864,7 @@
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.editFormUserControl1.SetBoundPropertyName(this.button3, "");
             this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(923, 132);
+            this.button3.Location = new System.Drawing.Point(933, 132);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(69, 28);
             this.button3.TabIndex = 114;
@@ -799,10 +884,10 @@
             // textBox7
             // 
             this.editFormUserControl1.SetBoundPropertyName(this.textBox7, "");
-            this.textBox7.Location = new System.Drawing.Point(115, 142);
+            this.textBox7.Location = new System.Drawing.Point(115, 102);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(213, 27);
+            this.textBox7.Size = new System.Drawing.Size(213, 21);
             this.textBox7.TabIndex = 113;
             // 
             // label21
@@ -815,21 +900,145 @@
             this.label21.TabIndex = 112;
             this.label21.Text = "Họ tên";
             // 
+            // pHONGBANBindingSource
+            // 
+            this.pHONGBANBindingSource.DataMember = "PHONGBAN";
+            this.pHONGBANBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // pHONGBANTableAdapter
+            // 
+            this.pHONGBANTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.BANGCHAMCONGTableAdapter = null;
+            this.tableAdapterManager.BANGTANGCATableAdapter = null;
+            this.tableAdapterManager.BANGTANGLUONGTableAdapter = null;
+            this.tableAdapterManager.BAOHIEMTableAdapter = null;
+            this.tableAdapterManager.CHITIETCHUYENMONTableAdapter = null;
+            this.tableAdapterManager.CHITIETHOPDONGTableAdapter = null;
+            this.tableAdapterManager.CHITIETKHENTHUONGTableAdapter = null;
+            this.tableAdapterManager.CHITIETNGOAINGUTableAdapter = null;
+            this.tableAdapterManager.CHUCVUTableAdapter = null;
+            this.tableAdapterManager.CHUONGTRINHDAOTAOTableAdapter = null;
+            this.tableAdapterManager.CHUYENMONTableAdapter = null;
+            this.tableAdapterManager.DANHMUCTANGCATableAdapter = null;
+            this.tableAdapterManager.DANTOCTableAdapter = null;
+            this.tableAdapterManager.DAOTAOTableAdapter = null;
+            this.tableAdapterManager.DS_KYLUATTableAdapter = null;
+            this.tableAdapterManager.HINHANHTableAdapter = null;
+            this.tableAdapterManager.HOPDONGLAODONGTableAdapter = null;
+            this.tableAdapterManager.HOSOTUYENDUNGTableAdapter = null;
+            this.tableAdapterManager.KQ_TUYENDUNGTableAdapter = null;
+            this.tableAdapterManager.LOAIKHENTHUONGTableAdapter = null;
+            this.tableAdapterManager.MANHINHTableAdapter = null;
+            this.tableAdapterManager.NGOAINGUTableAdapter = null;
+            this.tableAdapterManager.NGUOIDUNGNHOMNGUOIDUNGTableAdapter = null;
+            this.tableAdapterManager.NHANVIENTableAdapter = null;
+            this.tableAdapterManager.NHOMNGUOIDUNGTableAdapter = null;
+            this.tableAdapterManager.PHANQUYENTableAdapter = null;
+            this.tableAdapterManager.PHONGBANTableAdapter = this.pHONGBANTableAdapter;
+            this.tableAdapterManager.QUANLYKYLUATTableAdapter = null;
+            this.tableAdapterManager.QUANLYNGHIVIECTableAdapter = null;
+            this.tableAdapterManager.QUANLYTHAISANTableAdapter = null;
+            this.tableAdapterManager.QUOCTICHTableAdapter = null;
+            this.tableAdapterManager.TAIKHOANTableAdapter = null;
+            this.tableAdapterManager.TONGIAOTableAdapter = null;
+            this.tableAdapterManager.TONGLUONGTableAdapter = null;
+            this.tableAdapterManager.TRINHDOHOCVANTableAdapter = null;
+            this.tableAdapterManager.TRINHDOTINHOCTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // pHONGBANBindingSource2
+            // 
+            this.pHONGBANBindingSource2.DataMember = "PHONGBAN";
+            this.pHONGBANBindingSource2.DataSource = this.dataSetQLNS;
+            // 
+            // cHUCVUTableAdapter
+            // 
+            this.cHUCVUTableAdapter.ClearBeforeFill = true;
+            // 
+            // dS_KYLUATTableAdapter
+            // 
+            this.dS_KYLUATTableAdapter.ClearBeforeFill = true;
+            // 
+            // qUANLYKYLUATTableAdapter
+            // 
+            this.qUANLYKYLUATTableAdapter.ClearBeforeFill = true;
+            // 
+            // nhanVien_KyLuatTableAdapter
+            // 
+            this.nhanVien_KyLuatTableAdapter.ClearBeforeFill = true;
+            // 
+            // pHONGBANBindingSource3
+            // 
+            this.pHONGBANBindingSource3.DataMember = "PHONGBAN";
+            this.pHONGBANBindingSource3.DataSource = this.dataSetQLNS;
+            // 
+            // pHONGBANComboBox1
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.pHONGBANComboBox1, "");
+            this.pHONGBANComboBox1.DataSource = this.pHONGBANBindingSource3;
+            this.pHONGBANComboBox1.DisplayMember = "TENPHONGBAN";
+            this.pHONGBANComboBox1.FormattingEnabled = true;
+            this.pHONGBANComboBox1.Location = new System.Drawing.Point(115, 22);
+            this.pHONGBANComboBox1.Name = "pHONGBANComboBox1";
+            this.pHONGBANComboBox1.Size = new System.Drawing.Size(213, 21);
+            this.pHONGBANComboBox1.TabIndex = 139;
+            this.pHONGBANComboBox1.ValueMember = "MAPHONGBAN";
+            // 
+            // cHUCVUBindingSource2
+            // 
+            this.cHUCVUBindingSource2.DataMember = "CHUCVU";
+            this.cHUCVUBindingSource2.DataSource = this.dataSetQLNS;
+            // 
+            // cHUCVUComboBox
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.cHUCVUComboBox, "");
+            this.cHUCVUComboBox.DataSource = this.cHUCVUBindingSource2;
+            this.cHUCVUComboBox.DisplayMember = "TENCHUCVU";
+            this.cHUCVUComboBox.FormattingEnabled = true;
+            this.cHUCVUComboBox.Location = new System.Drawing.Point(90, 116);
+            this.cHUCVUComboBox.Name = "cHUCVUComboBox";
+            this.cHUCVUComboBox.Size = new System.Drawing.Size(213, 27);
+            this.cHUCVUComboBox.TabIndex = 94;
+            this.cHUCVUComboBox.ValueMember = "MACHUCVU";
+            // 
+            // cHUCVUBindingSource3
+            // 
+            this.cHUCVUBindingSource3.DataMember = "CHUCVU";
+            this.cHUCVUBindingSource3.DataSource = this.dataSetQLNS;
+            // 
+            // cHUCVUComboBox2
+            // 
+            this.editFormUserControl1.SetBoundPropertyName(this.cHUCVUComboBox2, "");
+            this.cHUCVUComboBox2.DataSource = this.cHUCVUBindingSource3;
+            this.cHUCVUComboBox2.DisplayMember = "TENCHUCVU";
+            this.cHUCVUComboBox2.FormattingEnabled = true;
+            this.cHUCVUComboBox2.Location = new System.Drawing.Point(115, 60);
+            this.cHUCVUComboBox2.Name = "cHUCVUComboBox2";
+            this.cHUCVUComboBox2.Size = new System.Drawing.Size(213, 21);
+            this.cHUCVUComboBox2.TabIndex = 139;
+            this.cHUCVUComboBox2.ValueMember = "MACHUCVU";
+            // 
             // frm_KhenThuong_KyLuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.editFormUserControl1.SetBoundPropertyName(this, "");
-            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.editFormUserControl1);
             this.Name = "frm_KhenThuong_KyLuat";
-            this.Text = "frm_KhenThuong_KyLuat";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Size = new System.Drawing.Size(1370, 749);
+            this.Load += new System.EventHandler(this.frm_KhenThuong_KyLuat_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -842,9 +1051,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabNavigationPage2.ResumeLayout(false);
             this.tabNavigationPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_KyLuat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVien_KyLuatBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_KyLuat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUANLYKYLUATBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dS_KYLUATBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -855,8 +1074,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
         private DevExpress.XtraEditors.DateEdit dateEdit2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
@@ -893,34 +1110,53 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         private DevExpress.XtraEditors.DateEdit dateEdit3;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox comboBox11;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private DataSetQLNS dataSetQLNS;
+        private System.Windows.Forms.BindingSource pHONGBANBindingSource;
+        private DataSetQLNSTableAdapters.PHONGBANTableAdapter pHONGBANTableAdapter;
+        private DataSetQLNSTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.ComboBox pHONGBANComboBox;
+        private System.Windows.Forms.BindingSource pHONGBANBindingSource1;
+        private System.Windows.Forms.BindingSource cHUCVUBindingSource;
+        private System.Windows.Forms.ComboBox qUANLYKYLUATComboBox;
+        private System.Windows.Forms.BindingSource qUANLYKYLUATBindingSource;
+        private System.Windows.Forms.BindingSource dS_KYLUATBindingSource;
+        private System.Windows.Forms.ComboBox tENKYLUATComboBox;
+        private System.Windows.Forms.ComboBox mAKYLUATComboBox;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.BindingSource cHUCVUBindingSource1;
+        private System.Windows.Forms.BindingSource pHONGBANBindingSource2;
+        private DataSetQLNSTableAdapters.CHUCVUTableAdapter cHUCVUTableAdapter;
+        private DataSetQLNSTableAdapters.DS_KYLUATTableAdapter dS_KYLUATTableAdapter;
+        private DataSetQLNSTableAdapters.QUANLYKYLUATTableAdapter qUANLYKYLUATTableAdapter;
+        private System.Windows.Forms.BindingSource nhanVien_KyLuatBindingSource;
+        private DataSetQLNSTableAdapters.NhanVien_KyLuatTableAdapter nhanVien_KyLuatTableAdapter;
+        private DevExpress.XtraGrid.GridControl gridControl_KyLuat;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView_KyLuat;
+        private DevExpress.XtraGrid.Columns.GridColumn colMAPHONGBAN;
+        private DevExpress.XtraGrid.Columns.GridColumn colMACHUCVU;
+        private DevExpress.XtraGrid.Columns.GridColumn colMANV;
+        private DevExpress.XtraGrid.Columns.GridColumn colHOTEN;
+        private DevExpress.XtraGrid.Columns.GridColumn colMAKYLUAT;
+        private DevExpress.XtraGrid.Columns.GridColumn colTENKYLUAT;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYKYLUAT;
+        private DevExpress.XtraGrid.Columns.GridColumn colTIENKYLUAT;
+        private DevExpress.XtraGrid.Columns.GridColumn colCOQUANKYLUAT;
+        private System.Windows.Forms.ComboBox pHONGBANComboBox1;
+        private System.Windows.Forms.BindingSource pHONGBANBindingSource3;
+        private System.Windows.Forms.ComboBox cHUCVUComboBox;
+        private System.Windows.Forms.BindingSource cHUCVUBindingSource2;
+        private System.Windows.Forms.ComboBox cHUCVUComboBox2;
+        private System.Windows.Forms.BindingSource cHUCVUBindingSource3;
     }
 }

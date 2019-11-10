@@ -396,6 +396,7 @@
             this.panel_Main.Name = "panel_Main";
             this.panel_Main.Size = new System.Drawing.Size(925, 309);
             this.panel_Main.TabIndex = 3;
+            this.panel_Main.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Main_Paint);
             // 
             // barButtonItem12
             // 

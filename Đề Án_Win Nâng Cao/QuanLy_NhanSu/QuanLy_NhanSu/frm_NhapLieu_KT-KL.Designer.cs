@@ -72,6 +72,16 @@
             this.dS_KYLUATTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DS_KYLUATTableAdapter();
             this.dAOTAOTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DAOTAOTableAdapter();
             this.groupBox_DanhMucTangCa = new System.Windows.Forms.GroupBox();
+            this.gridControl_DMTangCa = new DevExpress.XtraGrid.GridControl();
+            this.dANHMUCTANGCABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView_DMTangCa = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMALOAICA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTENLOAICA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHESO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSOGIOTANGCA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btn_Sua_DMTC = new System.Windows.Forms.Button();
+            this.btn_Xoa_DMTC = new System.Windows.Forms.Button();
+            this.btn_Them_DMTC = new System.Windows.Forms.Button();
             this.txt_SoGioTangCa = new System.Windows.Forms.TextBox();
             this.txt_HeSo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -80,17 +90,7 @@
             this.txt_MaLoaiCa = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.btn_Sua_DMTC = new System.Windows.Forms.Button();
-            this.btn_Xoa_DMTC = new System.Windows.Forms.Button();
-            this.btn_Them_DMTC = new System.Windows.Forms.Button();
-            this.gridControl_DMTangCa = new DevExpress.XtraGrid.GridControl();
-            this.gridView_DMTangCa = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.dANHMUCTANGCABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dANHMUCTANGCATableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DANHMUCTANGCATableAdapter();
-            this.colMALOAICA = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTENLOAICA = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colHESO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSOGIOTANGCA = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupBox_KhenThuong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_KhenThuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIKHENTHUONGBindingSource)).BeginInit();
@@ -103,8 +103,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dAOTAOBindingSource)).BeginInit();
             this.groupBox_DanhMucTangCa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_DMTangCa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView_DMTangCa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dANHMUCTANGCABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_DMTangCa)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Sua_KyLuat
@@ -115,6 +115,7 @@
             this.btn_Sua_KyLuat.TabIndex = 11;
             this.btn_Sua_KyLuat.Text = "Sửa";
             this.btn_Sua_KyLuat.UseVisualStyleBackColor = true;
+            this.btn_Sua_KyLuat.Click += new System.EventHandler(this.btn_Sua_KyLuat_Click);
             // 
             // btn_Xoa_KyLuat
             // 
@@ -124,6 +125,7 @@
             this.btn_Xoa_KyLuat.TabIndex = 10;
             this.btn_Xoa_KyLuat.Text = "Xóa";
             this.btn_Xoa_KyLuat.UseVisualStyleBackColor = true;
+            this.btn_Xoa_KyLuat.Click += new System.EventHandler(this.btn_Xoa_KyLuat_Click);
             // 
             // btn_Them_KyLuat
             // 
@@ -133,6 +135,7 @@
             this.btn_Them_KyLuat.TabIndex = 8;
             this.btn_Them_KyLuat.Text = "Thêm";
             this.btn_Them_KyLuat.UseVisualStyleBackColor = true;
+            this.btn_Them_KyLuat.Click += new System.EventHandler(this.btn_Them_KyLuat_Click);
             // 
             // txt_TenKyLuat
             // 
@@ -192,6 +195,7 @@
             this.txt_TienThuong.Name = "txt_TienThuong";
             this.txt_TienThuong.Size = new System.Drawing.Size(199, 26);
             this.txt_TienThuong.TabIndex = 14;
+            this.txt_TienThuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_HeSo_KeyPress);
             // 
             // label7
             // 
@@ -268,6 +272,7 @@
             this.btn_Sua_KhenThuong.TabIndex = 11;
             this.btn_Sua_KhenThuong.Text = "Sửa";
             this.btn_Sua_KhenThuong.UseVisualStyleBackColor = true;
+            this.btn_Sua_KhenThuong.Click += new System.EventHandler(this.btn_Sua_KhenThuong_Click);
             // 
             // btn_Xoa_KhenThuong
             // 
@@ -277,6 +282,7 @@
             this.btn_Xoa_KhenThuong.TabIndex = 10;
             this.btn_Xoa_KhenThuong.Text = "Xóa";
             this.btn_Xoa_KhenThuong.UseVisualStyleBackColor = true;
+            this.btn_Xoa_KhenThuong.Click += new System.EventHandler(this.btn_Xoa_KhenThuong_Click);
             // 
             // btn_Them_KhenThuong
             // 
@@ -286,6 +292,7 @@
             this.btn_Them_KhenThuong.TabIndex = 8;
             this.btn_Them_KhenThuong.Text = "Thêm";
             this.btn_Them_KhenThuong.UseVisualStyleBackColor = true;
+            this.btn_Them_KhenThuong.Click += new System.EventHandler(this.btn_Them_KhenThuong_Click);
             // 
             // txt_LoaiKhenThuong
             // 
@@ -406,6 +413,7 @@
             this.txt_TienKyLuat.Name = "txt_TienKyLuat";
             this.txt_TienKyLuat.Size = new System.Drawing.Size(199, 26);
             this.txt_TienKyLuat.TabIndex = 15;
+            this.txt_TienKyLuat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_HeSo_KeyPress);
             // 
             // txt_HinhThuc
             // 
@@ -511,6 +519,95 @@
             this.groupBox_DanhMucTangCa.TabIndex = 9;
             this.groupBox_DanhMucTangCa.TabStop = false;
             this.groupBox_DanhMucTangCa.Text = "Danh mục tăng ca";
+            this.groupBox_DanhMucTangCa.Enter += new System.EventHandler(this.groupBox_DanhMucTangCa_Enter);
+            // 
+            // gridControl_DMTangCa
+            // 
+            this.gridControl_DMTangCa.DataSource = this.dANHMUCTANGCABindingSource;
+            this.gridControl_DMTangCa.Location = new System.Drawing.Point(27, 156);
+            this.gridControl_DMTangCa.MainView = this.gridView_DMTangCa;
+            this.gridControl_DMTangCa.Name = "gridControl_DMTangCa";
+            this.gridControl_DMTangCa.Size = new System.Drawing.Size(563, 197);
+            this.gridControl_DMTangCa.TabIndex = 27;
+            this.gridControl_DMTangCa.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView_DMTangCa});
+            // 
+            // dANHMUCTANGCABindingSource
+            // 
+            this.dANHMUCTANGCABindingSource.DataMember = "DANHMUCTANGCA";
+            this.dANHMUCTANGCABindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // gridView_DMTangCa
+            // 
+            this.gridView_DMTangCa.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMALOAICA,
+            this.colTENLOAICA,
+            this.colHESO,
+            this.colSOGIOTANGCA});
+            this.gridView_DMTangCa.GridControl = this.gridControl_DMTangCa;
+            this.gridView_DMTangCa.Name = "gridView_DMTangCa";
+            // 
+            // colMALOAICA
+            // 
+            this.colMALOAICA.Caption = "Mã loại ca";
+            this.colMALOAICA.FieldName = "MALOAICA";
+            this.colMALOAICA.Name = "colMALOAICA";
+            this.colMALOAICA.Visible = true;
+            this.colMALOAICA.VisibleIndex = 0;
+            // 
+            // colTENLOAICA
+            // 
+            this.colTENLOAICA.Caption = "Tên loại ca";
+            this.colTENLOAICA.FieldName = "TENLOAICA";
+            this.colTENLOAICA.Name = "colTENLOAICA";
+            this.colTENLOAICA.Visible = true;
+            this.colTENLOAICA.VisibleIndex = 1;
+            // 
+            // colHESO
+            // 
+            this.colHESO.Caption = "Hệ số";
+            this.colHESO.FieldName = "HESO";
+            this.colHESO.Name = "colHESO";
+            this.colHESO.Visible = true;
+            this.colHESO.VisibleIndex = 2;
+            // 
+            // colSOGIOTANGCA
+            // 
+            this.colSOGIOTANGCA.Caption = "Số giờ tăng ca";
+            this.colSOGIOTANGCA.FieldName = "SOGIOTANGCA";
+            this.colSOGIOTANGCA.Name = "colSOGIOTANGCA";
+            this.colSOGIOTANGCA.Visible = true;
+            this.colSOGIOTANGCA.VisibleIndex = 3;
+            // 
+            // btn_Sua_DMTC
+            // 
+            this.btn_Sua_DMTC.Location = new System.Drawing.Point(515, 72);
+            this.btn_Sua_DMTC.Name = "btn_Sua_DMTC";
+            this.btn_Sua_DMTC.Size = new System.Drawing.Size(75, 29);
+            this.btn_Sua_DMTC.TabIndex = 26;
+            this.btn_Sua_DMTC.Text = "Sửa";
+            this.btn_Sua_DMTC.UseVisualStyleBackColor = true;
+            this.btn_Sua_DMTC.Click += new System.EventHandler(this.btn_Sua_DMTC_Click);
+            // 
+            // btn_Xoa_DMTC
+            // 
+            this.btn_Xoa_DMTC.Location = new System.Drawing.Point(434, 72);
+            this.btn_Xoa_DMTC.Name = "btn_Xoa_DMTC";
+            this.btn_Xoa_DMTC.Size = new System.Drawing.Size(75, 29);
+            this.btn_Xoa_DMTC.TabIndex = 25;
+            this.btn_Xoa_DMTC.Text = "Xóa";
+            this.btn_Xoa_DMTC.UseVisualStyleBackColor = true;
+            this.btn_Xoa_DMTC.Click += new System.EventHandler(this.btn_Xoa_DMTC_Click);
+            // 
+            // btn_Them_DMTC
+            // 
+            this.btn_Them_DMTC.Location = new System.Drawing.Point(353, 72);
+            this.btn_Them_DMTC.Name = "btn_Them_DMTC";
+            this.btn_Them_DMTC.Size = new System.Drawing.Size(75, 29);
+            this.btn_Them_DMTC.TabIndex = 24;
+            this.btn_Them_DMTC.Text = "Thêm";
+            this.btn_Them_DMTC.UseVisualStyleBackColor = true;
+            this.btn_Them_DMTC.Click += new System.EventHandler(this.btn_Them_DMTC_Click);
             // 
             // txt_SoGioTangCa
             // 
@@ -518,6 +615,7 @@
             this.txt_SoGioTangCa.Name = "txt_SoGioTangCa";
             this.txt_SoGioTangCa.Size = new System.Drawing.Size(199, 26);
             this.txt_SoGioTangCa.TabIndex = 23;
+            this.txt_SoGioTangCa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_HeSo_KeyPress);
             // 
             // txt_HeSo
             // 
@@ -525,6 +623,8 @@
             this.txt_HeSo.Name = "txt_HeSo";
             this.txt_HeSo.Size = new System.Drawing.Size(199, 26);
             this.txt_HeSo.TabIndex = 22;
+            this.txt_HeSo.TextChanged += new System.EventHandler(this.txt_HeSo_TextChanged);
+            this.txt_HeSo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_HeSo_KeyPress);
             // 
             // label5
             // 
@@ -576,106 +676,19 @@
             this.label11.TabIndex = 16;
             this.label11.Text = "Mã loại ca";
             // 
-            // btn_Sua_DMTC
-            // 
-            this.btn_Sua_DMTC.Location = new System.Drawing.Point(515, 72);
-            this.btn_Sua_DMTC.Name = "btn_Sua_DMTC";
-            this.btn_Sua_DMTC.Size = new System.Drawing.Size(75, 29);
-            this.btn_Sua_DMTC.TabIndex = 26;
-            this.btn_Sua_DMTC.Text = "Sửa";
-            this.btn_Sua_DMTC.UseVisualStyleBackColor = true;
-            // 
-            // btn_Xoa_DMTC
-            // 
-            this.btn_Xoa_DMTC.Location = new System.Drawing.Point(434, 72);
-            this.btn_Xoa_DMTC.Name = "btn_Xoa_DMTC";
-            this.btn_Xoa_DMTC.Size = new System.Drawing.Size(75, 29);
-            this.btn_Xoa_DMTC.TabIndex = 25;
-            this.btn_Xoa_DMTC.Text = "Xóa";
-            this.btn_Xoa_DMTC.UseVisualStyleBackColor = true;
-            // 
-            // btn_Them_DMTC
-            // 
-            this.btn_Them_DMTC.Location = new System.Drawing.Point(353, 72);
-            this.btn_Them_DMTC.Name = "btn_Them_DMTC";
-            this.btn_Them_DMTC.Size = new System.Drawing.Size(75, 29);
-            this.btn_Them_DMTC.TabIndex = 24;
-            this.btn_Them_DMTC.Text = "Thêm";
-            this.btn_Them_DMTC.UseVisualStyleBackColor = true;
-            // 
-            // gridControl_DMTangCa
-            // 
-            this.gridControl_DMTangCa.DataSource = this.dANHMUCTANGCABindingSource;
-            this.gridControl_DMTangCa.Location = new System.Drawing.Point(27, 156);
-            this.gridControl_DMTangCa.MainView = this.gridView_DMTangCa;
-            this.gridControl_DMTangCa.Name = "gridControl_DMTangCa";
-            this.gridControl_DMTangCa.Size = new System.Drawing.Size(563, 197);
-            this.gridControl_DMTangCa.TabIndex = 27;
-            this.gridControl_DMTangCa.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView_DMTangCa});
-            // 
-            // gridView_DMTangCa
-            // 
-            this.gridView_DMTangCa.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colMALOAICA,
-            this.colTENLOAICA,
-            this.colHESO,
-            this.colSOGIOTANGCA});
-            this.gridView_DMTangCa.GridControl = this.gridControl_DMTangCa;
-            this.gridView_DMTangCa.Name = "gridView_DMTangCa";
-            // 
-            // dANHMUCTANGCABindingSource
-            // 
-            this.dANHMUCTANGCABindingSource.DataMember = "DANHMUCTANGCA";
-            this.dANHMUCTANGCABindingSource.DataSource = this.dataSetQLNS;
-            // 
             // dANHMUCTANGCATableAdapter
             // 
             this.dANHMUCTANGCATableAdapter.ClearBeforeFill = true;
-            // 
-            // colMALOAICA
-            // 
-            this.colMALOAICA.Caption = "Mã loại ca";
-            this.colMALOAICA.FieldName = "MALOAICA";
-            this.colMALOAICA.Name = "colMALOAICA";
-            this.colMALOAICA.Visible = true;
-            this.colMALOAICA.VisibleIndex = 0;
-            // 
-            // colTENLOAICA
-            // 
-            this.colTENLOAICA.Caption = "Tên loại ca";
-            this.colTENLOAICA.FieldName = "TENLOAICA";
-            this.colTENLOAICA.Name = "colTENLOAICA";
-            this.colTENLOAICA.Visible = true;
-            this.colTENLOAICA.VisibleIndex = 1;
-            // 
-            // colHESO
-            // 
-            this.colHESO.Caption = "Hệ số";
-            this.colHESO.FieldName = "HESO";
-            this.colHESO.Name = "colHESO";
-            this.colHESO.Visible = true;
-            this.colHESO.VisibleIndex = 2;
-            // 
-            // colSOGIOTANGCA
-            // 
-            this.colSOGIOTANGCA.Caption = "Số giờ tăng ca";
-            this.colSOGIOTANGCA.FieldName = "SOGIOTANGCA";
-            this.colSOGIOTANGCA.Name = "colSOGIOTANGCA";
-            this.colSOGIOTANGCA.Visible = true;
-            this.colSOGIOTANGCA.VisibleIndex = 3;
             // 
             // frm_NhapLieu_KT_KL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.groupBox_DanhMucTangCa);
             this.Controls.Add(this.groupBox_KhenThuong);
             this.Controls.Add(this.groupBox_KyLuat);
             this.Name = "frm_NhapLieu_KT_KL";
-            this.Text = "frm_NhapLieu_KT_KL";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Size = new System.Drawing.Size(1370, 749);
             this.Load += new System.EventHandler(this.frm_NhapLieu_KT_KL_Load);
             this.groupBox_KhenThuong.ResumeLayout(false);
             this.groupBox_KhenThuong.PerformLayout();
@@ -692,8 +705,8 @@
             this.groupBox_DanhMucTangCa.ResumeLayout(false);
             this.groupBox_DanhMucTangCa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_DMTangCa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView_DMTangCa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dANHMUCTANGCABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_DMTangCa)).EndInit();
             this.ResumeLayout(false);
 
         }

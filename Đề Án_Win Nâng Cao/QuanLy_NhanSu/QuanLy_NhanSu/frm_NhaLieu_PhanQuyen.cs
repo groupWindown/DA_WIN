@@ -171,5 +171,10 @@ namespace QuanLy_NhanSu
             //cHUCVUTableAdapter
             load_dataManHinh();
         }
+
+        private void groupBox_NguoiDungNhomNguoiDun_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

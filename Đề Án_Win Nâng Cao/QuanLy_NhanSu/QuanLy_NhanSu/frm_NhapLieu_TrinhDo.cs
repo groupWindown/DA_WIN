@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace QuanLy_NhanSu
 {
-    public partial class frm_NhapLieu_TrinhDo : Form
+    public partial class frm_NhapLieu_TrinhDo : UserControl
     {
         public frm_NhapLieu_TrinhDo()
         {
@@ -191,6 +191,99 @@ namespace QuanLy_NhanSu
             tRINHDOHOCVANTableAdapter.Update(this.dataSetQLNS.TRINHDOHOCVAN);
             //cHUCVUTableAdapter
             load_dataTDHocVan();
+        }
+
+
+        // trình độc ngoại ngữ
+        public void load_dataTDNgoaiNgu()
+        {
+            gridControl_NgoaiNgu.DataSource = nGOAINGUTableAdapter.Fill(this.dataSetQLNS.NGOAINGU);
+        }
+        private void btn_Them_NgoaiNgu_Click(object sender, EventArgs e)
+        {
+            if (KTKC_New(txt_MaNgoaiNgu.Text.ToString(), dataSetQLNS.NGOAINGU) == false)
+            {
+                nGOAINGUTableAdapter.Insert(txt_MaNgoaiNgu.Text, txt_TenNgoaiNgu.Text);
+                load_dataTDNgoaiNgu();
+                MessageBox.Show("Thêm thành công !!!");
+            }
+            else
+            {
+                MessageBox.Show("Trùng khoá chính !!!");
+            }
+        }
+
+        private void btn_Xoa_NgoaiNgu_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                return;
+            int cathu = gridView_NgoaiNgu.FocusedRowHandle;
+            string sql_matdnn = gridView_NgoaiNgu.GetRowCellValue(cathu, "MANGOAINGU").ToString();
+            string sql_tentdnn= gridView_NgoaiNgu.GetRowCellValue(cathu, "TENNGOAINGU").ToString();
+            MessageBox.Show("Thành công");
+            nGOAINGUTableAdapter.Delete(sql_matdnn, sql_tentdnn);
+            load_dataTDNgoaiNgu();
+        }
+
+        private void btn_Sua_NgoaiNgu_Click(object sender, EventArgs e)
+        {
+            int cathu = gridView_NgoaiNgu.FocusedRowHandle;
+            string sql_matdnn = gridView_NgoaiNgu.GetRowCellValue(cathu, "MANGOAINGU").ToString();
+            string sql_tentdnn = gridView_NgoaiNgu.GetRowCellValue(cathu, "TENNGOAINGU").ToString();
+            DataSetQLNS.NGOAINGURow data = dataSetQLNS.NGOAINGU.FindByMANGOAINGU(sql_matdnn);
+            data.TENNGOAINGU = sql_tentdnn;
+            nGOAINGUTableAdapter.Update(this.dataSetQLNS.NGOAINGU);
+            //cHUCVUTableAdapter
+            load_dataTDNgoaiNgu();
+        }
+
+        // trình độc tin học
+
+        public void load_dataTDTinHoc()
+        {
+            gridControl_TinHoc.DataSource = tRINHDOTINHOCTableAdapter.Fill(this.dataSetQLNS.TRINHDOTINHOC);
+        }
+        private void btn_Them_TinHoc_Click(object sender, EventArgs e)
+        {
+            if (KTKC_New(txt_MaTinHoc.Text.ToString(), dataSetQLNS.TRINHDOTINHOC) == false)
+            {
+                tRINHDOTINHOCTableAdapter.Insert(txt_MaTinHoc.Text, txt_TenTinHoc.Text);
+                load_dataTDTinHoc();
+                MessageBox.Show("Thêm thành công !!!");
+            }
+            else
+            {
+                MessageBox.Show("Trùng khoá chính !!!");
+            }
+        }
+
+        private void btn_Xoa_TinHoc_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                return;
+            int cathu = gridView_TinHoc.FocusedRowHandle;
+            string sql_matdth = gridView_TinHoc.GetRowCellValue(cathu, "MATRINHDOTINHOC").ToString();
+            string sql_tentdth = gridView_TinHoc.GetRowCellValue(cathu, "TENTRINHDOTINHOC").ToString();
+            MessageBox.Show("Thành công");
+            tRINHDOTINHOCTableAdapter.Delete(sql_matdth, sql_tentdth);
+            load_dataTDTinHoc();
+        }
+
+        private void btn_Sua_TinHoc_Click(object sender, EventArgs e)
+        {
+            int cathu = gridView_TinHoc.FocusedRowHandle;
+            string sql_matdth = gridView_TinHoc.GetRowCellValue(cathu, "MATRINHDOTINHOC").ToString();
+            string sql_tentdth = gridView_TinHoc.GetRowCellValue(cathu, "TENTRINHDOTINHOC").ToString();
+            DataSetQLNS.TRINHDOTINHOCRow data = dataSetQLNS.TRINHDOTINHOC.FindByMATRINHDOTINHOC(sql_matdth);
+            data.TENTRINHDOTINHOC = sql_tentdth;
+            tRINHDOTINHOCTableAdapter.Update(this.dataSetQLNS.TRINHDOTINHOC);
+            //cHUCVUTableAdapter
+            load_dataTDTinHoc();
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

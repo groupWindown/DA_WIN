@@ -57,11 +57,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox_TinHoc = new System.Windows.Forms.GroupBox();
-            this.gridControl_TinHoc = new DevExpress.XtraGrid.GridControl();
             this.tRINHDOTINHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gridView_TinHoc = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colMATRINHDOTINHOC = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTENTRINHDOTINHOC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btn_Sua_TinHoc = new System.Windows.Forms.Button();
             this.btn_Xoa_TinHoc = new System.Windows.Forms.Button();
             this.btn_Them_TinHoc = new System.Windows.Forms.Button();
@@ -103,6 +99,10 @@
             this.cHUONGTRINHDAOTAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cHUONGTRINHDAOTAOTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHUONGTRINHDAOTAOTableAdapter();
             this.dAOTAOTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DAOTAOTableAdapter();
+            this.gridControl_TinHoc = new DevExpress.XtraGrid.GridControl();
+            this.gridView_TinHoc = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMATRINHDOTINHOC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTENTRINHDOTINHOC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupBox_TDHocVan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_TDHocVan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).BeginInit();
@@ -113,9 +113,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_NgoaiNgu)).BeginInit();
             this.groupBox_TinHoc.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl_TinHoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView_TinHoc)).BeginInit();
             this.groupBox_ChuyenMon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_ChuyenMon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).BeginInit();
@@ -125,6 +123,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dAOTAOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_DaoTao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHUONGTRINHDAOTAOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_TinHoc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_TinHoc)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox_TDHocVan
@@ -319,6 +319,7 @@
             this.btn_Sua_NgoaiNgu.TabIndex = 11;
             this.btn_Sua_NgoaiNgu.Text = "Sửa";
             this.btn_Sua_NgoaiNgu.UseVisualStyleBackColor = true;
+            this.btn_Sua_NgoaiNgu.Click += new System.EventHandler(this.btn_Sua_NgoaiNgu_Click);
             // 
             // btn_Xoa_NgoaiNgu
             // 
@@ -328,6 +329,7 @@
             this.btn_Xoa_NgoaiNgu.TabIndex = 10;
             this.btn_Xoa_NgoaiNgu.Text = "Xóa";
             this.btn_Xoa_NgoaiNgu.UseVisualStyleBackColor = true;
+            this.btn_Xoa_NgoaiNgu.Click += new System.EventHandler(this.btn_Xoa_NgoaiNgu_Click);
             // 
             // btn_Them_NgoaiNgu
             // 
@@ -337,6 +339,7 @@
             this.btn_Them_NgoaiNgu.TabIndex = 8;
             this.btn_Them_NgoaiNgu.Text = "Thêm";
             this.btn_Them_NgoaiNgu.UseVisualStyleBackColor = true;
+            this.btn_Them_NgoaiNgu.Click += new System.EventHandler(this.btn_Them_NgoaiNgu_Click);
             // 
             // txt_TenNgoaiNgu
             // 
@@ -388,41 +391,10 @@
             this.groupBox_TinHoc.TabStop = false;
             this.groupBox_TinHoc.Text = "Trình độ tin học";
             // 
-            // gridControl_TinHoc
-            // 
-            this.gridControl_TinHoc.DataSource = this.tRINHDOTINHOCBindingSource;
-            this.gridControl_TinHoc.Location = new System.Drawing.Point(24, 101);
-            this.gridControl_TinHoc.MainView = this.gridView_TinHoc;
-            this.gridControl_TinHoc.Name = "gridControl_TinHoc";
-            this.gridControl_TinHoc.Size = new System.Drawing.Size(557, 111);
-            this.gridControl_TinHoc.TabIndex = 12;
-            this.gridControl_TinHoc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView_TinHoc});
-            // 
             // tRINHDOTINHOCBindingSource
             // 
             this.tRINHDOTINHOCBindingSource.DataMember = "TRINHDOTINHOC";
             this.tRINHDOTINHOCBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // gridView_TinHoc
-            // 
-            this.gridView_TinHoc.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colMATRINHDOTINHOC,
-            this.colTENTRINHDOTINHOC});
-            this.gridView_TinHoc.GridControl = this.gridControl_TinHoc;
-            this.gridView_TinHoc.Name = "gridView_TinHoc";
-            // 
-            // colMATRINHDOTINHOC
-            // 
-            this.colMATRINHDOTINHOC.Caption = "Mã tin học";
-            this.colMATRINHDOTINHOC.FieldName = "MATRINHDOTINHOC";
-            this.colMATRINHDOTINHOC.Name = "colMATRINHDOTINHOC";
-            // 
-            // colTENTRINHDOTINHOC
-            // 
-            this.colTENTRINHDOTINHOC.Caption = "Tên tin học";
-            this.colTENTRINHDOTINHOC.FieldName = "TENTRINHDOTINHOC";
-            this.colTENTRINHDOTINHOC.Name = "colTENTRINHDOTINHOC";
             // 
             // btn_Sua_TinHoc
             // 
@@ -432,6 +404,7 @@
             this.btn_Sua_TinHoc.TabIndex = 11;
             this.btn_Sua_TinHoc.Text = "Sửa";
             this.btn_Sua_TinHoc.UseVisualStyleBackColor = true;
+            this.btn_Sua_TinHoc.Click += new System.EventHandler(this.btn_Sua_TinHoc_Click);
             // 
             // btn_Xoa_TinHoc
             // 
@@ -441,6 +414,7 @@
             this.btn_Xoa_TinHoc.TabIndex = 10;
             this.btn_Xoa_TinHoc.Text = "Xóa";
             this.btn_Xoa_TinHoc.UseVisualStyleBackColor = true;
+            this.btn_Xoa_TinHoc.Click += new System.EventHandler(this.btn_Xoa_TinHoc_Click);
             // 
             // btn_Them_TinHoc
             // 
@@ -450,6 +424,7 @@
             this.btn_Them_TinHoc.TabIndex = 8;
             this.btn_Them_TinHoc.Text = "Thêm";
             this.btn_Them_TinHoc.UseVisualStyleBackColor = true;
+            this.btn_Them_TinHoc.Click += new System.EventHandler(this.btn_Them_TinHoc_Click);
             // 
             // txt_TenTinHoc
             // 
@@ -684,7 +659,7 @@
             this.gridControl_DaoTao.Location = new System.Drawing.Point(24, 98);
             this.gridControl_DaoTao.MainView = this.gridView_DaoTao;
             this.gridControl_DaoTao.Name = "gridControl_DaoTao";
-            this.gridControl_DaoTao.Size = new System.Drawing.Size(561, 200);
+            this.gridControl_DaoTao.Size = new System.Drawing.Size(561, 226);
             this.gridControl_DaoTao.TabIndex = 12;
             this.gridControl_DaoTao.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_DaoTao});
@@ -793,19 +768,53 @@
             // 
             this.dAOTAOTableAdapter.ClearBeforeFill = true;
             // 
+            // gridControl_TinHoc
+            // 
+            this.gridControl_TinHoc.DataSource = this.tRINHDOTINHOCBindingSource;
+            this.gridControl_TinHoc.Location = new System.Drawing.Point(24, 98);
+            this.gridControl_TinHoc.MainView = this.gridView_TinHoc;
+            this.gridControl_TinHoc.Name = "gridControl_TinHoc";
+            this.gridControl_TinHoc.Size = new System.Drawing.Size(557, 110);
+            this.gridControl_TinHoc.TabIndex = 12;
+            this.gridControl_TinHoc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView_TinHoc});
+            this.gridControl_TinHoc.Click += new System.EventHandler(this.gridControl1_Click);
+            // 
+            // gridView_TinHoc
+            // 
+            this.gridView_TinHoc.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMATRINHDOTINHOC,
+            this.colTENTRINHDOTINHOC});
+            this.gridView_TinHoc.GridControl = this.gridControl_TinHoc;
+            this.gridView_TinHoc.Name = "gridView_TinHoc";
+            // 
+            // colMATRINHDOTINHOC
+            // 
+            this.colMATRINHDOTINHOC.Caption = "Mã trình độ tin học";
+            this.colMATRINHDOTINHOC.FieldName = "MATRINHDOTINHOC";
+            this.colMATRINHDOTINHOC.Name = "colMATRINHDOTINHOC";
+            this.colMATRINHDOTINHOC.Visible = true;
+            this.colMATRINHDOTINHOC.VisibleIndex = 0;
+            // 
+            // colTENTRINHDOTINHOC
+            // 
+            this.colTENTRINHDOTINHOC.Caption = "Tên trình độ tin học";
+            this.colTENTRINHDOTINHOC.FieldName = "TENTRINHDOTINHOC";
+            this.colTENTRINHDOTINHOC.Name = "colTENTRINHDOTINHOC";
+            this.colTENTRINHDOTINHOC.Visible = true;
+            this.colTENTRINHDOTINHOC.VisibleIndex = 1;
+            // 
             // frm_NhapLieu_TrinhDo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.groupBox_DaoTao);
             this.Controls.Add(this.groupBox_ChuyenMon);
             this.Controls.Add(this.groupBox_TinHoc);
             this.Controls.Add(this.groupBox_NgoaiNgu);
             this.Controls.Add(this.groupBox_TDHocVan);
             this.Name = "frm_NhapLieu_TrinhDo";
-            this.Text = "frm_NhapLieu_TrinhDo";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Size = new System.Drawing.Size(1370, 870);
             this.Load += new System.EventHandler(this.frm_NhapLieu_TrinhDo_Load);
             this.groupBox_TDHocVan.ResumeLayout(false);
             this.groupBox_TDHocVan.PerformLayout();
@@ -820,9 +829,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView_NgoaiNgu)).EndInit();
             this.groupBox_TinHoc.ResumeLayout(false);
             this.groupBox_TinHoc.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl_TinHoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView_TinHoc)).EndInit();
             this.groupBox_ChuyenMon.ResumeLayout(false);
             this.groupBox_ChuyenMon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_ChuyenMon)).EndInit();
@@ -834,6 +841,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dAOTAOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_DaoTao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHUONGTRINHDAOTAOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_TinHoc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_TinHoc)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -876,8 +885,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView_TDHocVan;
         private DevExpress.XtraGrid.GridControl gridControl_NgoaiNgu;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView_NgoaiNgu;
-        private DevExpress.XtraGrid.GridControl gridControl_TinHoc;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView_TinHoc;
         private DevExpress.XtraGrid.GridControl gridControl_ChuyenMon;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView_ChuyenMon;
         private DataSetQLNS dataSetQLNS;
@@ -892,8 +899,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colTENNGOAINGU;
         private DataSetQLNSTableAdapters.TRINHDOTINHOCTableAdapter tRINHDOTINHOCTableAdapter;
         private System.Windows.Forms.BindingSource tRINHDOTINHOCBindingSource;
-        private DevExpress.XtraGrid.Columns.GridColumn colMATRINHDOTINHOC;
-        private DevExpress.XtraGrid.Columns.GridColumn colTENTRINHDOTINHOC;
         private DataSetQLNSTableAdapters.CHUYENMONTableAdapter cHUYENMONTableAdapter;
         private System.Windows.Forms.BindingSource cHUYENMONBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colMACHUYENMON;
@@ -914,5 +919,9 @@
         private DataSetQLNSTableAdapters.DAOTAOTableAdapter dAOTAOTableAdapter;
         private DevExpress.XtraGrid.Columns.GridColumn colMAKHOADAOTAO;
         private DevExpress.XtraGrid.Columns.GridColumn colTENKHOADAOTAO;
+        private DevExpress.XtraGrid.GridControl gridControl_TinHoc;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView_TinHoc;
+        private DevExpress.XtraGrid.Columns.GridColumn colMATRINHDOTINHOC;
+        private DevExpress.XtraGrid.Columns.GridColumn colTENTRINHDOTINHOC;
     }
 }
