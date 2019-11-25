@@ -116,8 +116,6 @@ namespace QuanLy_NhanSu {
         
         private global::System.Data.DataRelation relationFK__CHITIETCH__MACHU__571DF1D5;
         
-        private global::System.Data.DataRelation relationFK__CHITIETCH__MAUNG__5812160E;
-        
         private global::System.Data.DataRelation relationFK__CHITIETHO__MAHOP__6383C8BA;
         
         private global::System.Data.DataRelation relationFK__CHITIETHOP__MANV__6477ECF3;
@@ -128,33 +126,15 @@ namespace QuanLy_NhanSu {
         
         private global::System.Data.DataRelation relationFK__CHITIETNG__MANGO__59063A47;
         
-        private global::System.Data.DataRelation relationFK__CHITIETNG__MAUNG__59FA5E80;
-        
         private global::System.Data.DataRelation relationFK__CHUONGTRI__MAKHO__68487DD7;
         
         private global::System.Data.DataRelation relationFK__CHUONGTRIN__MANV__6754599E;
         
         private global::System.Data.DataRelation relationFK__HINHANH__MANV__797309D9;
         
-        private global::System.Data.DataRelation relationFK__HINHANH__MAUNGVI__787EE5A0;
-        
-        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MADAN__74AE54BC;
-        
-        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MAQUO__76969D2E;
-        
-        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATON__75A278F5;
-        
-        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATRI__72C60C4A;
-        
-        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATRI__73BA3083;
-        
-        private global::System.Data.DataRelation relationFK__KQ_TUYEND__MAUNG__778AC167;
-        
         private global::System.Data.DataRelation relationFK__NGUOIDUNG__MANHO__60A75C0F;
         
         private global::System.Data.DataRelation relationFK__NGUOIDUNGN__MANV__5FB337D6;
-        
-        private global::System.Data.DataRelation relationFK__NHANVIEN__MAHOSO__5CD6CB2B;
         
         private global::System.Data.DataRelation relationFK__NHANVIEN__MAPHON__5AEE82B9;
         
@@ -221,6 +201,26 @@ namespace QuanLy_NhanSu {
         private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATRI__73BA30832;
         
         private global::System.Data.DataRelation relationFK__NHANVIEN__MACHUC__5BE2A6F21;
+        
+        private global::System.Data.DataRelation relationFK__NHANVIEN__MAHOSO__5CD6CB2B;
+        
+        private global::System.Data.DataRelation relationFK__KQ_TUYEND__MAUNG__778AC167;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATRI__73BA3083;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATRI__72C60C4A;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MATON__75A278F5;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MAQUO__76969D2E;
+        
+        private global::System.Data.DataRelation relationFK__HOSOTUYEN__MADAN__74AE54BC;
+        
+        private global::System.Data.DataRelation relationFK__HINHANH__MAUNGVI__787EE5A0;
+        
+        private global::System.Data.DataRelation relationFK__CHITIETNG__MAUNG__59FA5E80;
+        
+        private global::System.Data.DataRelation relationFK__CHITIETCH__MAUNG__5812160E;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -1254,26 +1254,16 @@ namespace QuanLy_NhanSu {
             this.relationFK__BANGTANGLU__MANV__6D0D32F4 = this.Relations["FK__BANGTANGLU__MANV__6D0D32F4"];
             this.relationFK__BAOHIEM__MANV__693CA210 = this.Relations["FK__BAOHIEM__MANV__693CA210"];
             this.relationFK__CHITIETCH__MACHU__571DF1D5 = this.Relations["FK__CHITIETCH__MACHU__571DF1D5"];
-            this.relationFK__CHITIETCH__MAUNG__5812160E = this.Relations["FK__CHITIETCH__MAUNG__5812160E"];
             this.relationFK__CHITIETHO__MAHOP__6383C8BA = this.Relations["FK__CHITIETHO__MAHOP__6383C8BA"];
             this.relationFK__CHITIETHOP__MANV__6477ECF3 = this.Relations["FK__CHITIETHOP__MANV__6477ECF3"];
             this.relationFK__CHITIETKH__MALOA__66603565 = this.Relations["FK__CHITIETKH__MALOA__66603565"];
             this.relationFK__CHITIETKHE__MANV__656C112C = this.Relations["FK__CHITIETKHE__MANV__656C112C"];
             this.relationFK__CHITIETNG__MANGO__59063A47 = this.Relations["FK__CHITIETNG__MANGO__59063A47"];
-            this.relationFK__CHITIETNG__MAUNG__59FA5E80 = this.Relations["FK__CHITIETNG__MAUNG__59FA5E80"];
             this.relationFK__CHUONGTRI__MAKHO__68487DD7 = this.Relations["FK__CHUONGTRI__MAKHO__68487DD7"];
             this.relationFK__CHUONGTRIN__MANV__6754599E = this.Relations["FK__CHUONGTRIN__MANV__6754599E"];
             this.relationFK__HINHANH__MANV__797309D9 = this.Relations["FK__HINHANH__MANV__797309D9"];
-            this.relationFK__HINHANH__MAUNGVI__787EE5A0 = this.Relations["FK__HINHANH__MAUNGVI__787EE5A0"];
-            this.relationFK__HOSOTUYEN__MADAN__74AE54BC = this.Relations["FK__HOSOTUYEN__MADAN__74AE54BC"];
-            this.relationFK__HOSOTUYEN__MAQUO__76969D2E = this.Relations["FK__HOSOTUYEN__MAQUO__76969D2E"];
-            this.relationFK__HOSOTUYEN__MATON__75A278F5 = this.Relations["FK__HOSOTUYEN__MATON__75A278F5"];
-            this.relationFK__HOSOTUYEN__MATRI__72C60C4A = this.Relations["FK__HOSOTUYEN__MATRI__72C60C4A"];
-            this.relationFK__HOSOTUYEN__MATRI__73BA3083 = this.Relations["FK__HOSOTUYEN__MATRI__73BA3083"];
-            this.relationFK__KQ_TUYEND__MAUNG__778AC167 = this.Relations["FK__KQ_TUYEND__MAUNG__778AC167"];
             this.relationFK__NGUOIDUNG__MANHO__60A75C0F = this.Relations["FK__NGUOIDUNG__MANHO__60A75C0F"];
             this.relationFK__NGUOIDUNGN__MANV__5FB337D6 = this.Relations["FK__NGUOIDUNGN__MANV__5FB337D6"];
-            this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B = this.Relations["FK__NHANVIEN__MAHOSO__5CD6CB2B"];
             this.relationFK__NHANVIEN__MAPHON__5AEE82B9 = this.Relations["FK__NHANVIEN__MAPHON__5AEE82B9"];
             this.relationFK__PHANQUYEN__MAMAN__619B8048 = this.Relations["FK__PHANQUYEN__MAMAN__619B8048"];
             this.relationFK__PHANQUYEN__MANHO__628FA481 = this.Relations["FK__PHANQUYEN__MANHO__628FA481"];
@@ -1307,6 +1297,16 @@ namespace QuanLy_NhanSu {
             this.relationFK__HOSOTUYEN__MATRI__72C60C4A2 = this.Relations["FK__HOSOTUYEN__MATRI__72C60C4A2"];
             this.relationFK__HOSOTUYEN__MATRI__73BA30832 = this.Relations["FK__HOSOTUYEN__MATRI__73BA30832"];
             this.relationFK__NHANVIEN__MACHUC__5BE2A6F21 = this.Relations["FK__NHANVIEN__MACHUC__5BE2A6F21"];
+            this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B = this.Relations["FK__NHANVIEN__MAHOSO__5CD6CB2B"];
+            this.relationFK__KQ_TUYEND__MAUNG__778AC167 = this.Relations["FK__KQ_TUYEND__MAUNG__778AC167"];
+            this.relationFK__HOSOTUYEN__MATRI__73BA3083 = this.Relations["FK__HOSOTUYEN__MATRI__73BA3083"];
+            this.relationFK__HOSOTUYEN__MATRI__72C60C4A = this.Relations["FK__HOSOTUYEN__MATRI__72C60C4A"];
+            this.relationFK__HOSOTUYEN__MATON__75A278F5 = this.Relations["FK__HOSOTUYEN__MATON__75A278F5"];
+            this.relationFK__HOSOTUYEN__MAQUO__76969D2E = this.Relations["FK__HOSOTUYEN__MAQUO__76969D2E"];
+            this.relationFK__HOSOTUYEN__MADAN__74AE54BC = this.Relations["FK__HOSOTUYEN__MADAN__74AE54BC"];
+            this.relationFK__HINHANH__MAUNGVI__787EE5A0 = this.Relations["FK__HINHANH__MAUNGVI__787EE5A0"];
+            this.relationFK__CHITIETNG__MAUNG__59FA5E80 = this.Relations["FK__CHITIETNG__MAUNG__59FA5E80"];
+            this.relationFK__CHITIETCH__MAUNG__5812160E = this.Relations["FK__CHITIETCH__MAUNG__5812160E"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1421,10 +1421,6 @@ namespace QuanLy_NhanSu {
                         this.tableCHUYENMON.MACHUYENMONColumn}, new global::System.Data.DataColumn[] {
                         this.tableCHITIETCHUYENMON.MACHUYENMONColumn}, false);
             this.Relations.Add(this.relationFK__CHITIETCH__MACHU__571DF1D5);
-            this.relationFK__CHITIETCH__MAUNG__5812160E = new global::System.Data.DataRelation("FK__CHITIETCH__MAUNG__5812160E", new global::System.Data.DataColumn[] {
-                        this.tableHOSOTUYENDUNG.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCHITIETCHUYENMON.MAUNGVIENColumn}, false);
-            this.Relations.Add(this.relationFK__CHITIETCH__MAUNG__5812160E);
             this.relationFK__CHITIETHO__MAHOP__6383C8BA = new global::System.Data.DataRelation("FK__CHITIETHO__MAHOP__6383C8BA", new global::System.Data.DataColumn[] {
                         this.tableHOPDONGLAODONG.MAHOPDONGColumn}, new global::System.Data.DataColumn[] {
                         this.tableCHITIETHOPDONG.MAHOPDONGColumn}, false);
@@ -1445,10 +1441,6 @@ namespace QuanLy_NhanSu {
                         this.tableNGOAINGU.MANGOAINGUColumn}, new global::System.Data.DataColumn[] {
                         this.tableCHITIETNGOAINGU.MANGOAINGUColumn}, false);
             this.Relations.Add(this.relationFK__CHITIETNG__MANGO__59063A47);
-            this.relationFK__CHITIETNG__MAUNG__59FA5E80 = new global::System.Data.DataRelation("FK__CHITIETNG__MAUNG__59FA5E80", new global::System.Data.DataColumn[] {
-                        this.tableHOSOTUYENDUNG.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCHITIETNGOAINGU.MAUNGVIENColumn}, false);
-            this.Relations.Add(this.relationFK__CHITIETNG__MAUNG__59FA5E80);
             this.relationFK__CHUONGTRI__MAKHO__68487DD7 = new global::System.Data.DataRelation("FK__CHUONGTRI__MAKHO__68487DD7", new global::System.Data.DataColumn[] {
                         this.tableDAOTAO.MAKHOADAOTAOColumn}, new global::System.Data.DataColumn[] {
                         this.tableCHUONGTRINHDAOTAO.MAKHOADAOTAOColumn}, false);
@@ -1461,34 +1453,6 @@ namespace QuanLy_NhanSu {
                         this.tableNHANVIEN.MANVColumn}, new global::System.Data.DataColumn[] {
                         this.tableHINHANH.MANVColumn}, false);
             this.Relations.Add(this.relationFK__HINHANH__MANV__797309D9);
-            this.relationFK__HINHANH__MAUNGVI__787EE5A0 = new global::System.Data.DataRelation("FK__HINHANH__MAUNGVI__787EE5A0", new global::System.Data.DataColumn[] {
-                        this.tableHOSOTUYENDUNG.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
-                        this.tableHINHANH.MAUNGVIENColumn}, false);
-            this.Relations.Add(this.relationFK__HINHANH__MAUNGVI__787EE5A0);
-            this.relationFK__HOSOTUYEN__MADAN__74AE54BC = new global::System.Data.DataRelation("FK__HOSOTUYEN__MADAN__74AE54BC", new global::System.Data.DataColumn[] {
-                        this.tableDANTOC.MADANTOCColumn}, new global::System.Data.DataColumn[] {
-                        this.tableHOSOTUYENDUNG.MADANTOCColumn}, false);
-            this.Relations.Add(this.relationFK__HOSOTUYEN__MADAN__74AE54BC);
-            this.relationFK__HOSOTUYEN__MAQUO__76969D2E = new global::System.Data.DataRelation("FK__HOSOTUYEN__MAQUO__76969D2E", new global::System.Data.DataColumn[] {
-                        this.tableQUOCTICH.MAQUOCTICHColumn}, new global::System.Data.DataColumn[] {
-                        this.tableHOSOTUYENDUNG.MAQUOCTICHColumn}, false);
-            this.Relations.Add(this.relationFK__HOSOTUYEN__MAQUO__76969D2E);
-            this.relationFK__HOSOTUYEN__MATON__75A278F5 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATON__75A278F5", new global::System.Data.DataColumn[] {
-                        this.tableTONGIAO.MATONGIAOColumn}, new global::System.Data.DataColumn[] {
-                        this.tableHOSOTUYENDUNG.MATONGIAOColumn}, false);
-            this.Relations.Add(this.relationFK__HOSOTUYEN__MATON__75A278F5);
-            this.relationFK__HOSOTUYEN__MATRI__72C60C4A = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATRI__72C60C4A", new global::System.Data.DataColumn[] {
-                        this.tableTRINHDOHOCVAN.MATRINHDOHOCVANColumn}, new global::System.Data.DataColumn[] {
-                        this.tableHOSOTUYENDUNG.MATRINHDOHOCVANColumn}, false);
-            this.Relations.Add(this.relationFK__HOSOTUYEN__MATRI__72C60C4A);
-            this.relationFK__HOSOTUYEN__MATRI__73BA3083 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATRI__73BA3083", new global::System.Data.DataColumn[] {
-                        this.tableTRINHDOTINHOC.MATRINHDOTINHOCColumn}, new global::System.Data.DataColumn[] {
-                        this.tableHOSOTUYENDUNG.MATRINHDOTINHOCColumn}, false);
-            this.Relations.Add(this.relationFK__HOSOTUYEN__MATRI__73BA3083);
-            this.relationFK__KQ_TUYEND__MAUNG__778AC167 = new global::System.Data.DataRelation("FK__KQ_TUYEND__MAUNG__778AC167", new global::System.Data.DataColumn[] {
-                        this.tableHOSOTUYENDUNG.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
-                        this.tableKQ_TUYENDUNG.MAUNGVIENColumn}, false);
-            this.Relations.Add(this.relationFK__KQ_TUYEND__MAUNG__778AC167);
             this.relationFK__NGUOIDUNG__MANHO__60A75C0F = new global::System.Data.DataRelation("FK__NGUOIDUNG__MANHO__60A75C0F", new global::System.Data.DataColumn[] {
                         this.tableNHOMNGUOIDUNG.MANHOMColumn}, new global::System.Data.DataColumn[] {
                         this.tableNGUOIDUNGNHOMNGUOIDUNG.MANHOMColumn}, false);
@@ -1497,10 +1461,6 @@ namespace QuanLy_NhanSu {
                         this.tableTAIKHOAN.MANVColumn}, new global::System.Data.DataColumn[] {
                         this.tableNGUOIDUNGNHOMNGUOIDUNG.MANVColumn}, false);
             this.Relations.Add(this.relationFK__NGUOIDUNGN__MANV__5FB337D6);
-            this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B = new global::System.Data.DataRelation("FK__NHANVIEN__MAHOSO__5CD6CB2B", new global::System.Data.DataColumn[] {
-                        this.tableHOSOTUYENDUNG.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
-                        this.tableNHANVIEN.MAHOSOColumn}, false);
-            this.Relations.Add(this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B);
             this.relationFK__NHANVIEN__MAPHON__5AEE82B9 = new global::System.Data.DataRelation("FK__NHANVIEN__MAPHON__5AEE82B9", new global::System.Data.DataColumn[] {
                         this.tablePHONGBAN.MAPHONGBANColumn}, new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.MAPHONGBANColumn}, false);
@@ -1633,6 +1593,46 @@ namespace QuanLy_NhanSu {
                         this.tableNhanVien_KyLuat.MACHUCVUColumn}, new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.MACHUCVUColumn}, false);
             this.Relations.Add(this.relationFK__NHANVIEN__MACHUC__5BE2A6F21);
+            this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B = new global::System.Data.DataRelation("FK__NHANVIEN__MAHOSO__5CD6CB2B", new global::System.Data.DataColumn[] {
+                        this.tableHOSOTUYENDUNG.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableNHANVIEN.MAHOSOColumn}, false);
+            this.Relations.Add(this.relationFK__NHANVIEN__MAHOSO__5CD6CB2B);
+            this.relationFK__KQ_TUYEND__MAUNG__778AC167 = new global::System.Data.DataRelation("FK__KQ_TUYEND__MAUNG__778AC167", new global::System.Data.DataColumn[] {
+                        this.tableHOSOTUYENDUNG.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableKQ_TUYENDUNG.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__KQ_TUYEND__MAUNG__778AC167);
+            this.relationFK__HOSOTUYEN__MATRI__73BA3083 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATRI__73BA3083", new global::System.Data.DataColumn[] {
+                        this.tableTRINHDOTINHOC.MATRINHDOTINHOCColumn}, new global::System.Data.DataColumn[] {
+                        this.tableHOSOTUYENDUNG.MATRINHDOTINHOCColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MATRI__73BA3083);
+            this.relationFK__HOSOTUYEN__MATRI__72C60C4A = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATRI__72C60C4A", new global::System.Data.DataColumn[] {
+                        this.tableTRINHDOHOCVAN.MATRINHDOHOCVANColumn}, new global::System.Data.DataColumn[] {
+                        this.tableHOSOTUYENDUNG.MATRINHDOHOCVANColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MATRI__72C60C4A);
+            this.relationFK__HOSOTUYEN__MATON__75A278F5 = new global::System.Data.DataRelation("FK__HOSOTUYEN__MATON__75A278F5", new global::System.Data.DataColumn[] {
+                        this.tableTONGIAO.MATONGIAOColumn}, new global::System.Data.DataColumn[] {
+                        this.tableHOSOTUYENDUNG.MATONGIAOColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MATON__75A278F5);
+            this.relationFK__HOSOTUYEN__MAQUO__76969D2E = new global::System.Data.DataRelation("FK__HOSOTUYEN__MAQUO__76969D2E", new global::System.Data.DataColumn[] {
+                        this.tableQUOCTICH.MAQUOCTICHColumn}, new global::System.Data.DataColumn[] {
+                        this.tableHOSOTUYENDUNG.MAQUOCTICHColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MAQUO__76969D2E);
+            this.relationFK__HOSOTUYEN__MADAN__74AE54BC = new global::System.Data.DataRelation("FK__HOSOTUYEN__MADAN__74AE54BC", new global::System.Data.DataColumn[] {
+                        this.tableDANTOC.MADANTOCColumn}, new global::System.Data.DataColumn[] {
+                        this.tableHOSOTUYENDUNG.MADANTOCColumn}, false);
+            this.Relations.Add(this.relationFK__HOSOTUYEN__MADAN__74AE54BC);
+            this.relationFK__HINHANH__MAUNGVI__787EE5A0 = new global::System.Data.DataRelation("FK__HINHANH__MAUNGVI__787EE5A0", new global::System.Data.DataColumn[] {
+                        this.tableHOSOTUYENDUNG.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableHINHANH.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__HINHANH__MAUNGVI__787EE5A0);
+            this.relationFK__CHITIETNG__MAUNG__59FA5E80 = new global::System.Data.DataRelation("FK__CHITIETNG__MAUNG__59FA5E80", new global::System.Data.DataColumn[] {
+                        this.tableHOSOTUYENDUNG.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCHITIETNGOAINGU.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__CHITIETNG__MAUNG__59FA5E80);
+            this.relationFK__CHITIETCH__MAUNG__5812160E = new global::System.Data.DataRelation("FK__CHITIETCH__MAUNG__5812160E", new global::System.Data.DataColumn[] {
+                        this.tableHOSOTUYENDUNG.MAUNGVIENColumn}, new global::System.Data.DataColumn[] {
+                        this.tableCHITIETCHUYENMON.MAUNGVIENColumn}, false);
+            this.Relations.Add(this.relationFK__CHITIETCH__MAUNG__5812160E);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3708,7 +3708,7 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public CHITIETCHUYENMONRow AddCHITIETCHUYENMONRow(CHUYENMONRow parentCHUYENMONRowByFK__CHITIETCH__MACHU__571DF1D5, HOSOTUYENDUNGRow parentHOSOTUYENDUNGRowByFK__CHITIETCH__MAUNG__5812160E) {
+            public CHITIETCHUYENMONRow AddCHITIETCHUYENMONRow(CHUYENMONRow parentCHUYENMONRowByFK__CHITIETCH__MACHU__571DF1D5, DANHSACHUNGVIENDAURow parentDANHSACHUNGVIENDAURowByFK__CHITIETCH__MAUNG__5812160E1) {
                 CHITIETCHUYENMONRow rowCHITIETCHUYENMONRow = ((CHITIETCHUYENMONRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3716,8 +3716,8 @@ namespace QuanLy_NhanSu {
                 if ((parentCHUYENMONRowByFK__CHITIETCH__MACHU__571DF1D5 != null)) {
                     columnValuesArray[0] = parentCHUYENMONRowByFK__CHITIETCH__MACHU__571DF1D5[0];
                 }
-                if ((parentHOSOTUYENDUNGRowByFK__CHITIETCH__MAUNG__5812160E != null)) {
-                    columnValuesArray[1] = parentHOSOTUYENDUNGRowByFK__CHITIETCH__MAUNG__5812160E[0];
+                if ((parentDANHSACHUNGVIENDAURowByFK__CHITIETCH__MAUNG__5812160E1 != null)) {
+                    columnValuesArray[1] = parentDANHSACHUNGVIENDAURowByFK__CHITIETCH__MAUNG__5812160E1[0];
                 }
                 rowCHITIETCHUYENMONRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCHITIETCHUYENMONRow);
@@ -4668,7 +4668,7 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public CHITIETNGOAINGURow AddCHITIETNGOAINGURow(NGOAINGURow parentNGOAINGURowByFK__CHITIETNG__MANGO__59063A47, HOSOTUYENDUNGRow parentHOSOTUYENDUNGRowByFK__CHITIETNG__MAUNG__59FA5E80) {
+            public CHITIETNGOAINGURow AddCHITIETNGOAINGURow(NGOAINGURow parentNGOAINGURowByFK__CHITIETNG__MANGO__59063A47, DANHSACHUNGVIENDAURow parentDANHSACHUNGVIENDAURowByFK__CHITIETNG__MAUNG__59FA5E801) {
                 CHITIETNGOAINGURow rowCHITIETNGOAINGURow = ((CHITIETNGOAINGURow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -4676,8 +4676,8 @@ namespace QuanLy_NhanSu {
                 if ((parentNGOAINGURowByFK__CHITIETNG__MANGO__59063A47 != null)) {
                     columnValuesArray[0] = parentNGOAINGURowByFK__CHITIETNG__MANGO__59063A47[0];
                 }
-                if ((parentHOSOTUYENDUNGRowByFK__CHITIETNG__MAUNG__59FA5E80 != null)) {
-                    columnValuesArray[1] = parentHOSOTUYENDUNGRowByFK__CHITIETNG__MAUNG__59FA5E80[0];
+                if ((parentDANHSACHUNGVIENDAURowByFK__CHITIETNG__MAUNG__59FA5E801 != null)) {
+                    columnValuesArray[1] = parentDANHSACHUNGVIENDAURowByFK__CHITIETNG__MAUNG__59FA5E801[0];
                 }
                 rowCHITIETNGOAINGURow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCHITIETNGOAINGURow);
@@ -6732,7 +6732,7 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HINHANHRow AddHINHANHRow(string MAHINHANH, string TENHINHANH, string URL, NHANVIENRow parentNHANVIENRowByFK__HINHANH__MANV__797309D9, HOSOTUYENDUNGRow parentHOSOTUYENDUNGRowByFK__HINHANH__MAUNGVI__787EE5A0) {
+            public HINHANHRow AddHINHANHRow(string MAHINHANH, string TENHINHANH, string URL, NHANVIENRow parentNHANVIENRowByFK__HINHANH__MANV__797309D9, DANHSACHUNGVIENDAURow parentDANHSACHUNGVIENDAURowByFK__HINHANH__MAUNGVI__787EE5A01) {
                 HINHANHRow rowHINHANHRow = ((HINHANHRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         MAHINHANH,
@@ -6743,8 +6743,8 @@ namespace QuanLy_NhanSu {
                 if ((parentNHANVIENRowByFK__HINHANH__MANV__797309D9 != null)) {
                     columnValuesArray[3] = parentNHANVIENRowByFK__HINHANH__MANV__797309D9[0];
                 }
-                if ((parentHOSOTUYENDUNGRowByFK__HINHANH__MAUNGVI__787EE5A0 != null)) {
-                    columnValuesArray[4] = parentHOSOTUYENDUNGRowByFK__HINHANH__MAUNGVI__787EE5A0[0];
+                if ((parentDANHSACHUNGVIENDAURowByFK__HINHANH__MAUNGVI__787EE5A01 != null)) {
+                    columnValuesArray[4] = parentDANHSACHUNGVIENDAURowByFK__HINHANH__MAUNGVI__787EE5A01[0];
                 }
                 rowHINHANHRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowHINHANHRow);
@@ -7953,14 +7953,14 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public KQ_TUYENDUNGRow AddKQ_TUYENDUNGRow(string MAKQ, HOSOTUYENDUNGRow parentHOSOTUYENDUNGRowByFK__KQ_TUYEND__MAUNG__778AC167, string KETQUA) {
+            public KQ_TUYENDUNGRow AddKQ_TUYENDUNGRow(string MAKQ, DANHSACHUNGVIENDAURow parentDANHSACHUNGVIENDAURowByFK__KQ_TUYEND__MAUNG__778AC1671, string KETQUA) {
                 KQ_TUYENDUNGRow rowKQ_TUYENDUNGRow = ((KQ_TUYENDUNGRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         MAKQ,
                         null,
                         KETQUA};
-                if ((parentHOSOTUYENDUNGRowByFK__KQ_TUYEND__MAUNG__778AC167 != null)) {
-                    columnValuesArray[1] = parentHOSOTUYENDUNGRowByFK__KQ_TUYEND__MAUNG__778AC167[0];
+                if ((parentDANHSACHUNGVIENDAURowByFK__KQ_TUYEND__MAUNG__778AC1671 != null)) {
+                    columnValuesArray[1] = parentDANHSACHUNGVIENDAURowByFK__KQ_TUYEND__MAUNG__778AC1671[0];
                 }
                 rowKQ_TUYENDUNGRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowKQ_TUYENDUNGRow);
@@ -9422,7 +9422,7 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public NHANVIENRow AddNHANVIENRow(string MANV, string HOTEN, PHONGBANRow parentPHONGBANRowByFK__NHANVIEN__MAPHON__5AEE82B9, CHUCVURow parentCHUCVURowByFK__NHANVIEN__MACHUC__5BE2A6F2, System.DateTime NGAYVAOLAM, string TINHTRANG, HOSOTUYENDUNGRow parentHOSOTUYENDUNGRowByFK__NHANVIEN__MAHOSO__5CD6CB2B) {
+            public NHANVIENRow AddNHANVIENRow(string MANV, string HOTEN, PHONGBANRow parentPHONGBANRowByFK__NHANVIEN__MAPHON__5AEE82B9, CHUCVURow parentCHUCVURowByFK__NHANVIEN__MACHUC__5BE2A6F2, System.DateTime NGAYVAOLAM, string TINHTRANG, DANHSACHUNGVIENDAURow parentDANHSACHUNGVIENDAURowByFK__NHANVIEN__MAHOSO__5CD6CB2B1) {
                 NHANVIENRow rowNHANVIENRow = ((NHANVIENRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         MANV,
@@ -9438,8 +9438,8 @@ namespace QuanLy_NhanSu {
                 if ((parentCHUCVURowByFK__NHANVIEN__MACHUC__5BE2A6F2 != null)) {
                     columnValuesArray[3] = parentCHUCVURowByFK__NHANVIEN__MACHUC__5BE2A6F2[0];
                 }
-                if ((parentHOSOTUYENDUNGRowByFK__NHANVIEN__MAHOSO__5CD6CB2B != null)) {
-                    columnValuesArray[6] = parentHOSOTUYENDUNGRowByFK__NHANVIEN__MAHOSO__5CD6CB2B[0];
+                if ((parentDANHSACHUNGVIENDAURowByFK__NHANVIEN__MAHOSO__5CD6CB2B1 != null)) {
+                    columnValuesArray[6] = parentDANHSACHUNGVIENDAURowByFK__NHANVIEN__MAHOSO__5CD6CB2B1[0];
                 }
                 rowNHANVIENRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowNHANVIENRow);
@@ -15394,17 +15394,6 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HOSOTUYENDUNGRow[] GetHOSOTUYENDUNGRows() {
-                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__73BA3083"] == null)) {
-                    return new HOSOTUYENDUNGRow[0];
-                }
-                else {
-                    return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__73BA3083"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DANHSACHUNGVIENDAURow[] GetDANHSACHUNGVIENDAURows() {
                 if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__73BA30831"] == null)) {
                     return new DANHSACHUNGVIENDAURow[0];
@@ -15422,6 +15411,17 @@ namespace QuanLy_NhanSu {
                 }
                 else {
                     return ((DANHSACHUNGVIENROTRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__73BA30832"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HOSOTUYENDUNGRow[] GetHOSOTUYENDUNGRows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__73BA3083"] == null)) {
+                    return new HOSOTUYENDUNGRow[0];
+                }
+                else {
+                    return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__73BA3083"])));
                 }
             }
         }
@@ -15910,17 +15910,6 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HOSOTUYENDUNGRow HOSOTUYENDUNGRow {
-                get {
-                    return ((HOSOTUYENDUNGRow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETCH__MAUNG__5812160E"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETCH__MAUNG__5812160E"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DANHSACHUNGVIENDAURow DANHSACHUNGVIENDAURow {
                 get {
                     return ((DANHSACHUNGVIENDAURow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETCH__MAUNG__5812160E1"])));
@@ -15938,6 +15927,17 @@ namespace QuanLy_NhanSu {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETCH__MAUNG__5812160E2"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HOSOTUYENDUNGRow HOSOTUYENDUNGRow {
+                get {
+                    return ((HOSOTUYENDUNGRow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETCH__MAUNG__5812160E"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETCH__MAUNG__5812160E"]);
                 }
             }
         }
@@ -16299,17 +16299,6 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HOSOTUYENDUNGRow HOSOTUYENDUNGRow {
-                get {
-                    return ((HOSOTUYENDUNGRow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETNG__MAUNG__59FA5E80"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETNG__MAUNG__59FA5E80"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DANHSACHUNGVIENDAURow DANHSACHUNGVIENDAURow {
                 get {
                     return ((DANHSACHUNGVIENDAURow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETNG__MAUNG__59FA5E801"])));
@@ -16327,6 +16316,17 @@ namespace QuanLy_NhanSu {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETNG__MAUNG__59FA5E802"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HOSOTUYENDUNGRow HOSOTUYENDUNGRow {
+                get {
+                    return ((HOSOTUYENDUNGRow)(this.GetParentRow(this.Table.ParentRelations["FK__CHITIETNG__MAUNG__59FA5E80"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CHITIETNG__MAUNG__59FA5E80"]);
                 }
             }
         }
@@ -16698,17 +16698,6 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HOSOTUYENDUNGRow[] GetHOSOTUYENDUNGRows() {
-                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MADAN__74AE54BC"] == null)) {
-                    return new HOSOTUYENDUNGRow[0];
-                }
-                else {
-                    return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MADAN__74AE54BC"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DANHSACHUNGVIENDAURow[] GetDANHSACHUNGVIENDAURows() {
                 if ((this.Table.ChildRelations["FK__HOSOTUYEN__MADAN__74AE54BC1"] == null)) {
                     return new DANHSACHUNGVIENDAURow[0];
@@ -16726,6 +16715,17 @@ namespace QuanLy_NhanSu {
                 }
                 else {
                     return ((DANHSACHUNGVIENROTRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MADAN__74AE54BC2"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HOSOTUYENDUNGRow[] GetHOSOTUYENDUNGRows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MADAN__74AE54BC"] == null)) {
+                    return new HOSOTUYENDUNGRow[0];
+                }
+                else {
+                    return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MADAN__74AE54BC"])));
                 }
             }
         }
@@ -17013,17 +17013,6 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HOSOTUYENDUNGRow HOSOTUYENDUNGRow {
-                get {
-                    return ((HOSOTUYENDUNGRow)(this.GetParentRow(this.Table.ParentRelations["FK__HINHANH__MAUNGVI__787EE5A0"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__HINHANH__MAUNGVI__787EE5A0"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DANHSACHUNGVIENDAURow DANHSACHUNGVIENDAURow {
                 get {
                     return ((DANHSACHUNGVIENDAURow)(this.GetParentRow(this.Table.ParentRelations["FK__HINHANH__MAUNGVI__787EE5A01"])));
@@ -17041,6 +17030,17 @@ namespace QuanLy_NhanSu {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__HINHANH__MAUNGVI__787EE5A02"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HOSOTUYENDUNGRow HOSOTUYENDUNGRow {
+                get {
+                    return ((HOSOTUYENDUNGRow)(this.GetParentRow(this.Table.ParentRelations["FK__HINHANH__MAUNGVI__787EE5A0"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HINHANH__MAUNGVI__787EE5A0"]);
                 }
             }
             
@@ -17526,34 +17526,12 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DANTOCRow DANTOCRow {
+            public TRINHDOTINHOCRow TRINHDOTINHOCRow {
                 get {
-                    return ((DANTOCRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MADAN__74AE54BC"])));
+                    return ((TRINHDOTINHOCRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__73BA3083"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MADAN__74AE54BC"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public QUOCTICHRow QUOCTICHRow {
-                get {
-                    return ((QUOCTICHRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MAQUO__76969D2E"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MAQUO__76969D2E"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public TONGIAORow TONGIAORow {
-                get {
-                    return ((TONGIAORow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MATON__75A278F5"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MATON__75A278F5"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__73BA3083"]);
                 }
             }
             
@@ -17570,12 +17548,34 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public TRINHDOTINHOCRow TRINHDOTINHOCRow {
+            public TONGIAORow TONGIAORow {
                 get {
-                    return ((TRINHDOTINHOCRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__73BA3083"])));
+                    return ((TONGIAORow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MATON__75A278F5"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MATRI__73BA3083"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MATON__75A278F5"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public QUOCTICHRow QUOCTICHRow {
+                get {
+                    return ((QUOCTICHRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MAQUO__76969D2E"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MAQUO__76969D2E"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public DANTOCRow DANTOCRow {
+                get {
+                    return ((DANTOCRow)(this.GetParentRow(this.Table.ParentRelations["FK__HOSOTUYEN__MADAN__74AE54BC"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__HOSOTUYEN__MADAN__74AE54BC"]);
                 }
             }
             
@@ -17821,34 +17821,12 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public CHITIETCHUYENMONRow[] GetCHITIETCHUYENMONRows() {
-                if ((this.Table.ChildRelations["FK__CHITIETCH__MAUNG__5812160E"] == null)) {
-                    return new CHITIETCHUYENMONRow[0];
+            public NHANVIENRow[] GetNHANVIENRows() {
+                if ((this.Table.ChildRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B"] == null)) {
+                    return new NHANVIENRow[0];
                 }
                 else {
-                    return ((CHITIETCHUYENMONRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETCH__MAUNG__5812160E"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public CHITIETNGOAINGURow[] GetCHITIETNGOAINGURows() {
-                if ((this.Table.ChildRelations["FK__CHITIETNG__MAUNG__59FA5E80"] == null)) {
-                    return new CHITIETNGOAINGURow[0];
-                }
-                else {
-                    return ((CHITIETNGOAINGURow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETNG__MAUNG__59FA5E80"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HINHANHRow[] GetHINHANHRows() {
-                if ((this.Table.ChildRelations["FK__HINHANH__MAUNGVI__787EE5A0"] == null)) {
-                    return new HINHANHRow[0];
-                }
-                else {
-                    return ((HINHANHRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HINHANH__MAUNGVI__787EE5A0"])));
+                    return ((NHANVIENRow[])(base.GetChildRows(this.Table.ChildRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B"])));
                 }
             }
             
@@ -17865,12 +17843,34 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public NHANVIENRow[] GetNHANVIENRows() {
-                if ((this.Table.ChildRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B"] == null)) {
-                    return new NHANVIENRow[0];
+            public HINHANHRow[] GetHINHANHRows() {
+                if ((this.Table.ChildRelations["FK__HINHANH__MAUNGVI__787EE5A0"] == null)) {
+                    return new HINHANHRow[0];
                 }
                 else {
-                    return ((NHANVIENRow[])(base.GetChildRows(this.Table.ChildRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B"])));
+                    return ((HINHANHRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HINHANH__MAUNGVI__787EE5A0"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public CHITIETNGOAINGURow[] GetCHITIETNGOAINGURows() {
+                if ((this.Table.ChildRelations["FK__CHITIETNG__MAUNG__59FA5E80"] == null)) {
+                    return new CHITIETNGOAINGURow[0];
+                }
+                else {
+                    return ((CHITIETNGOAINGURow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETNG__MAUNG__59FA5E80"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public CHITIETCHUYENMONRow[] GetCHITIETCHUYENMONRows() {
+                if ((this.Table.ChildRelations["FK__CHITIETCH__MAUNG__5812160E"] == null)) {
+                    return new CHITIETCHUYENMONRow[0];
+                }
+                else {
+                    return ((CHITIETCHUYENMONRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CHITIETCH__MAUNG__5812160E"])));
                 }
             }
         }
@@ -17929,17 +17929,6 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HOSOTUYENDUNGRow HOSOTUYENDUNGRow {
-                get {
-                    return ((HOSOTUYENDUNGRow)(this.GetParentRow(this.Table.ParentRelations["FK__KQ_TUYEND__MAUNG__778AC167"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__KQ_TUYEND__MAUNG__778AC167"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DANHSACHUNGVIENDAURow DANHSACHUNGVIENDAURow {
                 get {
                     return ((DANHSACHUNGVIENDAURow)(this.GetParentRow(this.Table.ParentRelations["FK__KQ_TUYEND__MAUNG__778AC1671"])));
@@ -17957,6 +17946,17 @@ namespace QuanLy_NhanSu {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__KQ_TUYEND__MAUNG__778AC1672"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HOSOTUYENDUNGRow HOSOTUYENDUNGRow {
+                get {
+                    return ((HOSOTUYENDUNGRow)(this.GetParentRow(this.Table.ParentRelations["FK__KQ_TUYEND__MAUNG__778AC167"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__KQ_TUYEND__MAUNG__778AC167"]);
                 }
             }
             
@@ -18362,17 +18362,6 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HOSOTUYENDUNGRow HOSOTUYENDUNGRow {
-                get {
-                    return ((HOSOTUYENDUNGRow)(this.GetParentRow(this.Table.ParentRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public PHONGBANRow PHONGBANRow {
                 get {
                     return ((PHONGBANRow)(this.GetParentRow(this.Table.ParentRelations["FK__NHANVIEN__MAPHON__5AEE82B9"])));
@@ -18423,6 +18412,17 @@ namespace QuanLy_NhanSu {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK__NHANVIEN__MACHUC__5BE2A6F21"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HOSOTUYENDUNGRow HOSOTUYENDUNGRow {
+                get {
+                    return ((HOSOTUYENDUNGRow)(this.GetParentRow(this.Table.ParentRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__NHANVIEN__MAHOSO__5CD6CB2B"]);
                 }
             }
             
@@ -19554,17 +19554,6 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HOSOTUYENDUNGRow[] GetHOSOTUYENDUNGRows() {
-                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MAQUO__76969D2E"] == null)) {
-                    return new HOSOTUYENDUNGRow[0];
-                }
-                else {
-                    return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MAQUO__76969D2E"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DANHSACHUNGVIENDAURow[] GetDANHSACHUNGVIENDAURows() {
                 if ((this.Table.ChildRelations["FK__HOSOTUYEN__MAQUO__76969D2E1"] == null)) {
                     return new DANHSACHUNGVIENDAURow[0];
@@ -19582,6 +19571,17 @@ namespace QuanLy_NhanSu {
                 }
                 else {
                     return ((DANHSACHUNGVIENROTRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MAQUO__76969D2E2"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HOSOTUYENDUNGRow[] GetHOSOTUYENDUNGRows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MAQUO__76969D2E"] == null)) {
+                    return new HOSOTUYENDUNGRow[0];
+                }
+                else {
+                    return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MAQUO__76969D2E"])));
                 }
             }
         }
@@ -19745,17 +19745,6 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HOSOTUYENDUNGRow[] GetHOSOTUYENDUNGRows() {
-                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATON__75A278F5"] == null)) {
-                    return new HOSOTUYENDUNGRow[0];
-                }
-                else {
-                    return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATON__75A278F5"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DANHSACHUNGVIENDAURow[] GetDANHSACHUNGVIENDAURows() {
                 if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATON__75A278F51"] == null)) {
                     return new DANHSACHUNGVIENDAURow[0];
@@ -19773,6 +19762,17 @@ namespace QuanLy_NhanSu {
                 }
                 else {
                     return ((DANHSACHUNGVIENROTRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATON__75A278F52"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HOSOTUYENDUNGRow[] GetHOSOTUYENDUNGRows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATON__75A278F5"] == null)) {
+                    return new HOSOTUYENDUNGRow[0];
+                }
+                else {
+                    return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATON__75A278F5"])));
                 }
             }
         }
@@ -19908,17 +19908,6 @@ namespace QuanLy_NhanSu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public HOSOTUYENDUNGRow[] GetHOSOTUYENDUNGRows() {
-                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__72C60C4A"] == null)) {
-                    return new HOSOTUYENDUNGRow[0];
-                }
-                else {
-                    return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__72C60C4A"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DANHSACHUNGVIENDAURow[] GetDANHSACHUNGVIENDAURows() {
                 if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__72C60C4A1"] == null)) {
                     return new DANHSACHUNGVIENDAURow[0];
@@ -19936,6 +19925,17 @@ namespace QuanLy_NhanSu {
                 }
                 else {
                     return ((DANHSACHUNGVIENROTRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__72C60C4A2"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public HOSOTUYENDUNGRow[] GetHOSOTUYENDUNGRows() {
+                if ((this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__72C60C4A"] == null)) {
+                    return new HOSOTUYENDUNGRow[0];
+                }
+                else {
+                    return ((HOSOTUYENDUNGRow[])(base.GetChildRows(this.Table.ChildRelations["FK__HOSOTUYEN__MATRI__72C60C4A"])));
                 }
             }
         }
@@ -40166,21 +40166,21 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._cHUCVUTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.CHUCVU.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._cHUCVUTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._hOSOTUYENDUNGTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.HOSOTUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._hOSOTUYENDUNGTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._cHUCVUTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.CHUCVU.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._cHUCVUTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -40229,21 +40229,21 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._mANHINHTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.MANHINH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._mANHINHTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._lOAIKHENTHUONGTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.LOAIKHENTHUONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._lOAIKHENTHUONGTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._mANHINHTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.MANHINH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._mANHINHTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -40292,12 +40292,12 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._hINHANHTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._kQ_TUYENDUNGTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.KQ_TUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hINHANHTableAdapter.Update(updatedRows));
+                    result = (result + this._kQ_TUYENDUNGTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -40328,21 +40328,21 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._tONGLUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.TONGLUONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._tONGLUONGTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._cHITIETCHUYENMONTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.CHITIETCHUYENMON.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._cHITIETCHUYENMONTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._tONGLUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.TONGLUONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tONGLUONGTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -40355,30 +40355,12 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._qUANLYNGHIVIECTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.QUANLYNGHIVIEC.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._qUANLYNGHIVIECTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._qUANLYTHAISANTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.QUANLYTHAISAN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._qUANLYTHAISANTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._qUANLYKYLUATTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.QUANLYKYLUAT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._qUANLYKYLUATTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -40391,12 +40373,21 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._pHANQUYENTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.PHANQUYEN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._qUANLYNGHIVIECTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.QUANLYNGHIVIEC.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._pHANQUYENTableAdapter.Update(updatedRows));
+                    result = (result + this._qUANLYNGHIVIECTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._qUANLYKYLUATTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.QUANLYKYLUAT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._qUANLYKYLUATTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -40409,6 +40400,15 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._pHANQUYENTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.PHANQUYEN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._pHANQUYENTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._nGUOIDUNGNHOMNGUOIDUNGTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.NGUOIDUNGNHOMNGUOIDUNG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -40418,12 +40418,12 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._kQ_TUYENDUNGTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.KQ_TUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hINHANHTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._kQ_TUYENDUNGTableAdapter.Update(updatedRows));
+                    result = (result + this._hINHANHTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -40495,19 +40495,19 @@ FROM            CHUCVU INNER JOIN
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._cHUCVUTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.CHUCVU.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._cHUCVUTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._hOSOTUYENDUNGTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.HOSOTUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._hOSOTUYENDUNGTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._cHUCVUTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.CHUCVU.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._cHUCVUTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -40551,19 +40551,19 @@ FROM            CHUCVU INNER JOIN
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._mANHINHTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.MANHINH.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._mANHINHTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._lOAIKHENTHUONGTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.LOAIKHENTHUONG.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._lOAIKHENTHUONGTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._mANHINHTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.MANHINH.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._mANHINHTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -40607,11 +40607,11 @@ FROM            CHUCVU INNER JOIN
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._hINHANHTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._kQ_TUYENDUNGTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.KQ_TUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hINHANHTableAdapter.Update(addedRows));
+                    result = (result + this._kQ_TUYENDUNGTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -40639,19 +40639,19 @@ FROM            CHUCVU INNER JOIN
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._tONGLUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.TONGLUONG.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._tONGLUONGTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._cHITIETCHUYENMONTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.CHITIETCHUYENMON.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._cHITIETCHUYENMONTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._tONGLUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.TONGLUONG.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tONGLUONGTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -40663,27 +40663,11 @@ FROM            CHUCVU INNER JOIN
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._qUANLYNGHIVIECTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.QUANLYNGHIVIEC.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._qUANLYNGHIVIECTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._qUANLYTHAISANTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.QUANLYTHAISAN.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._qUANLYTHAISANTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._qUANLYKYLUATTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.QUANLYKYLUAT.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._qUANLYKYLUATTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -40695,11 +40679,19 @@ FROM            CHUCVU INNER JOIN
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._pHANQUYENTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.PHANQUYEN.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._qUANLYNGHIVIECTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.QUANLYNGHIVIEC.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._pHANQUYENTableAdapter.Update(addedRows));
+                    result = (result + this._qUANLYNGHIVIECTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._qUANLYKYLUATTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.QUANLYKYLUAT.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._qUANLYKYLUATTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -40711,6 +40703,14 @@ FROM            CHUCVU INNER JOIN
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._pHANQUYENTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.PHANQUYEN.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._pHANQUYENTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._nGUOIDUNGNHOMNGUOIDUNGTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.NGUOIDUNGNHOMNGUOIDUNG.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -40719,11 +40719,11 @@ FROM            CHUCVU INNER JOIN
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._kQ_TUYENDUNGTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.KQ_TUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hINHANHTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._kQ_TUYENDUNGTableAdapter.Update(addedRows));
+                    result = (result + this._hINHANHTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -40769,11 +40769,11 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._kQ_TUYENDUNGTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.KQ_TUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._hINHANHTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._kQ_TUYENDUNGTableAdapter.Update(deletedRows));
+                    result = (result + this._hINHANHTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -40785,14 +40785,6 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._cHUONGTRINHDAOTAOTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CHUONGTRINHDAOTAO.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._cHUONGTRINHDAOTAOTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._pHANQUYENTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.PHANQUYEN.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -40801,11 +40793,11 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._cHITIETNGOAINGUTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETNGOAINGU.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._cHUONGTRINHDAOTAOTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.CHUONGTRINHDAOTAO.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._cHITIETNGOAINGUTableAdapter.Update(deletedRows));
+                    result = (result + this._cHUONGTRINHDAOTAOTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -40817,19 +40809,27 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._qUANLYTHAISANTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.QUANLYTHAISAN.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._qUANLYTHAISANTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._qUANLYNGHIVIECTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.QUANLYNGHIVIEC.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._qUANLYNGHIVIECTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._cHITIETNGOAINGUTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETNGOAINGU.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._cHITIETNGOAINGUTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._qUANLYTHAISANTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.QUANLYTHAISAN.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._qUANLYTHAISANTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -40841,19 +40841,19 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._cHITIETCHUYENMONTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETCHUYENMON.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._cHITIETCHUYENMONTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._tONGLUONGTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.TONGLUONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._tONGLUONGTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._cHITIETCHUYENMONTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.CHITIETCHUYENMON.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._cHITIETCHUYENMONTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -40881,11 +40881,11 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hINHANHTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HINHANH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._kQ_TUYENDUNGTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.KQ_TUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._hINHANHTableAdapter.Update(deletedRows));
+                    result = (result + this._kQ_TUYENDUNGTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -40929,19 +40929,19 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._lOAIKHENTHUONGTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.LOAIKHENTHUONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._lOAIKHENTHUONGTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._mANHINHTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.MANHINH.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._mANHINHTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._lOAIKHENTHUONGTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.LOAIKHENTHUONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._lOAIKHENTHUONGTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -40985,19 +40985,19 @@ FROM            CHUCVU INNER JOIN
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hOSOTUYENDUNGTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HOSOTUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hOSOTUYENDUNGTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._cHUCVUTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.CHUCVU.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._cHUCVUTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hOSOTUYENDUNGTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HOSOTUYENDUNG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hOSOTUYENDUNGTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
