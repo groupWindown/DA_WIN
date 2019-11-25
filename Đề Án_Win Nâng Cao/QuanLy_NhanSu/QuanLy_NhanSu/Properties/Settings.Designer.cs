@@ -47,17 +47,6 @@ namespace QuanLy_NhanSu.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-DSSGJN2\\SQLEXPRES;Initial Catalog=DA_WIN_NANGCAO;User ID=hoan" +
-            ";Password=sa123123")]
-        public string DA_WIN_NANGCAOConnectionString1 {
-            get {
-                return ((string)(this["DA_WIN_NANGCAOConnectionString1"]));
-            }
-        }
-        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("1")]
@@ -79,6 +68,17 @@ namespace QuanLy_NhanSu.Properties {
             }
             set {
                 this["UngVienClick"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-DSSGJN2\\SQLEXPRESS;Initial Catalog=DA_WIN_NANGCAO;Integrated " +
+            "Security=True")]
+        public string DA_WIN_NANGCAOConnectionString1 {
+            get {
+                return ((string)(this["DA_WIN_NANGCAOConnectionString1"]));
             }
         }
     }

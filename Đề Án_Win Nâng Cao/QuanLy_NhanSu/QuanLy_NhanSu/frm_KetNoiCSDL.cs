@@ -65,7 +65,7 @@ namespace QuanLy_NhanSu
             configuration.ConnectionStrings.ConnectionStrings["QuanLy_NhanSu.Properties.Settings.DA_WIN_NANGCAOConnectionString1"].ProviderName = "System.Data.SqlClient";
             configuration.Save(ConfigurationSaveMode.Modified);
 
-            Properties.Settings.Default["DA_WIN_NANGCAOConnectionString1"] = chuoi;
+            Properties.Settings.Default["DA_WIN_NANGCAOConnectionString"] = chuoi;
             Properties.Settings.Default.Save();
         }
 

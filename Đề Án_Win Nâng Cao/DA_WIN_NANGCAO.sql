@@ -779,6 +779,13 @@ VALUES ('HSTD0001','DT000001','TG000001','QT000001',N'Đặng Tuấn Anh',N'Nam'
 SET DATEFORMAT DMY
 INSERT INTO HOSOTUYENDUNG
 VALUES	('HSTD0002','DT000001','TG000001','QT000001',N'ĐặnG Anh',N'Nam','22/08/1994',N'Đồng Nai','123456789','24/07/2009',N'Đồng Nai',N'Đồng Nai',N'Biên Hòa - Đồng Nai',N'140 Lê Trọng Tấn','0123456789','dangtuananh123@gmail.com',N'Độc thân',N'Không',N'Tốt',N'10/01/2018',N'Trực tiếp',N'Trưởng phòng nhân sự','TDHV0001','TDTH0002')
+SET DATEFORMAT DMY
+INSERT INTO HOSOTUYENDUNG
+VALUES	('HSTD0003','DT000001','TG000001','QT000001',N'Phùng Gia',N'Nam','22/08/1994',N'TPHCM','123456789','24/07/2009',N'Đồng Nai',N'Đồng Nai',N'Biên Hòa - Đồng Nai',N'140 Lê Trọng Tấn','0123456789','dangtuananh123@gmail.com',N'Độc thân',N'Không',N'Tốt',N'10/01/2018',N'Trực tiếp',N'Trưởng phòng nhân sự','TDHV0001','TDTH0002')
+SET DATEFORMAT DMY
+INSERT INTO HOSOTUYENDUNG
+VALUES	('HSTD0004','DT000001','TG000001','QT000001',N'Cô Long',N'Nam','22/08/1994',N'Đồng Nai','123456789','24/07/2009',N'Đồng Nai',N'Đồng Nai',N'Biên Hòa - Đồng Nai',N'140 Lê Trọng Tấn','0123456789','dangtuananh123@gmail.com',N'Độc thân',N'Không',N'Tốt',N'10/01/2018',N'Trực tiếp',N'Trưởng phòng nhân sự','TDHV0001','TDTH0002')
+
 
 INSERT INTO CHITIETCHUYENMON
 VALUES ('CM000001','HSTD0001')

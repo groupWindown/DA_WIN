@@ -40,49 +40,49 @@
             // 
             // pictureEdit_HinhAnh
             // 
-            this.pictureEdit_HinhAnh.Location = new System.Drawing.Point(3, 3);
+            this.pictureEdit_HinhAnh.Location = new System.Drawing.Point(7, 6);
             this.pictureEdit_HinhAnh.Name = "pictureEdit_HinhAnh";
             this.pictureEdit_HinhAnh.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit_HinhAnh.Size = new System.Drawing.Size(112, 139);
+            this.pictureEdit_HinhAnh.Size = new System.Drawing.Size(66, 80);
             this.pictureEdit_HinhAnh.TabIndex = 0;
             // 
             // lbl_TenUngVien
             // 
             this.lbl_TenUngVien.AutoSize = true;
-            this.lbl_TenUngVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TenUngVien.Location = new System.Drawing.Point(130, 13);
+            this.lbl_TenUngVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TenUngVien.Location = new System.Drawing.Point(79, 6);
             this.lbl_TenUngVien.Name = "lbl_TenUngVien";
-            this.lbl_TenUngVien.Size = new System.Drawing.Size(39, 20);
+            this.lbl_TenUngVien.Size = new System.Drawing.Size(40, 20);
             this.lbl_TenUngVien.TabIndex = 1;
             this.lbl_TenUngVien.Text = "Ten";
             // 
             // lbl_ChucVuUngTuyen
             // 
             this.lbl_ChucVuUngTuyen.AutoSize = true;
-            this.lbl_ChucVuUngTuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ChucVuUngTuyen.Location = new System.Drawing.Point(130, 37);
+            this.lbl_ChucVuUngTuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ChucVuUngTuyen.Location = new System.Drawing.Point(80, 26);
             this.lbl_ChucVuUngTuyen.Name = "lbl_ChucVuUngTuyen";
-            this.lbl_ChucVuUngTuyen.Size = new System.Drawing.Size(66, 20);
+            this.lbl_ChucVuUngTuyen.Size = new System.Drawing.Size(60, 18);
             this.lbl_ChucVuUngTuyen.TabIndex = 1;
             this.lbl_ChucVuUngTuyen.Text = "ChucVu";
             // 
             // lbl_NgaySinh
             // 
             this.lbl_NgaySinh.AutoSize = true;
-            this.lbl_NgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_NgaySinh.Location = new System.Drawing.Point(130, 66);
+            this.lbl_NgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NgaySinh.Location = new System.Drawing.Point(79, 46);
             this.lbl_NgaySinh.Name = "lbl_NgaySinh";
-            this.lbl_NgaySinh.Size = new System.Drawing.Size(77, 20);
+            this.lbl_NgaySinh.Size = new System.Drawing.Size(71, 18);
             this.lbl_NgaySinh.TabIndex = 1;
             this.lbl_NgaySinh.Text = "NgaySinh";
             // 
             // lbl_Email
             // 
             this.lbl_Email.AutoSize = true;
-            this.lbl_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Email.Location = new System.Drawing.Point(130, 95);
+            this.lbl_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Email.Location = new System.Drawing.Point(80, 66);
             this.lbl_Email.Name = "lbl_Email";
-            this.lbl_Email.Size = new System.Drawing.Size(48, 20);
+            this.lbl_Email.Size = new System.Drawing.Size(45, 18);
             this.lbl_Email.TabIndex = 1;
             this.lbl_Email.Text = "Email";
             // 
@@ -90,7 +90,7 @@
             // 
             this.lbl_MaUngVienCtrl.AutoSize = true;
             this.lbl_MaUngVienCtrl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_MaUngVienCtrl.Location = new System.Drawing.Point(10, 145);
+            this.lbl_MaUngVienCtrl.Location = new System.Drawing.Point(3, 86);
             this.lbl_MaUngVienCtrl.Name = "lbl_MaUngVienCtrl";
             this.lbl_MaUngVienCtrl.Size = new System.Drawing.Size(109, 24);
             this.lbl_MaUngVienCtrl.TabIndex = 1;
@@ -99,10 +99,10 @@
             // lbl_SDT
             // 
             this.lbl_SDT.AutoSize = true;
-            this.lbl_SDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_SDT.Location = new System.Drawing.Point(130, 124);
+            this.lbl_SDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SDT.Location = new System.Drawing.Point(79, 86);
             this.lbl_SDT.Name = "lbl_SDT";
-            this.lbl_SDT.Size = new System.Drawing.Size(41, 20);
+            this.lbl_SDT.Size = new System.Drawing.Size(38, 18);
             this.lbl_SDT.TabIndex = 1;
             this.lbl_SDT.Text = "SDT";
             // 
@@ -110,6 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lbl_SDT);
             this.Controls.Add(this.lbl_Email);
             this.Controls.Add(this.lbl_NgaySinh);
@@ -118,7 +119,7 @@
             this.Controls.Add(this.lbl_TenUngVien);
             this.Controls.Add(this.pictureEdit_HinhAnh);
             this.Name = "UserControl_Dong_UngVien";
-            this.Size = new System.Drawing.Size(418, 173);
+            this.Size = new System.Drawing.Size(219, 104);
             this.Load += new System.EventHandler(this.UserControl_Dong_UngVien_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.UserControl_Dong_UngVien_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit_HinhAnh.Properties)).EndInit();

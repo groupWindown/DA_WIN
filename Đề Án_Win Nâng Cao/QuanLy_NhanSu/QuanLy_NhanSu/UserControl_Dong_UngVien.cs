@@ -12,15 +12,25 @@ namespace QuanLy_NhanSu
 {
     public partial class UserControl_Dong_UngVien : UserControl
     {
-        public UserControl_Dong_UngVien()
+        public UserControl_Dong_UngVien(string pMaUV, string pTenUV, string pNgayUV, string pSDTUV, string pEMailUV, string pChucVuUV)
         {
+
             InitializeComponent();
+
+            lbl_MaUngVienCtrl.Text = pMaUV.ToString();
+            lbl_TenUngVien.Text = pTenUV.ToString();
+            lbl_NgaySinh.Text = pNgayUV.ToString();
+            lbl_SDT.Text = pSDTUV.ToString();
+            lbl_Email.Text = pEMailUV.ToString();
+            lbl_ChucVuUngTuyen.Text = pChucVuUV.ToString();
         }
 
         private void UserControl_Dong_UngVien_Load(object sender, EventArgs e)
         {
-
+            
         }
+
+    
 
         private void UserControl_Dong_UngVien_MouseClick(object sender, MouseEventArgs e)
         {

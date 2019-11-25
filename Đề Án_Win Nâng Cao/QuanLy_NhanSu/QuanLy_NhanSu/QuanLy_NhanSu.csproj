@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -139,7 +154,7 @@
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_DoiMatKhau.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="frm_DoiMatKhau.Designer.cs">
       <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
@@ -157,7 +172,7 @@
       <DependentUpon>frm_KetNoiCSDL.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_KhenThuong_KyLuat.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="frm_KhenThuong_KyLuat.Designer.cs">
       <DependentUpon>frm_KhenThuong_KyLuat.cs</DependentUpon>
@@ -187,13 +202,13 @@
       <DependentUpon>frm_NhapLieu.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_NhapLieu_KT-KL.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="frm_NhapLieu_KT-KL.Designer.cs">
       <DependentUpon>frm_NhapLieu_KT-KL.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_NhapLieu_TrinhDo.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="frm_NhapLieu_TrinhDo.Designer.cs">
       <DependentUpon>frm_NhapLieu_TrinhDo.cs</DependentUpon>
@@ -329,6 +344,7 @@
     </EmbeddedResource>
     <None Include="DataSetQLNS.xsc">
       <DependentUpon>DataSetQLNS.xsd</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
     <None Include="DataSetQLNS.xsd">
       <SubType>Designer</SubType>
@@ -357,7 +373,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\th.jpg" />
@@ -448,6 +466,18 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

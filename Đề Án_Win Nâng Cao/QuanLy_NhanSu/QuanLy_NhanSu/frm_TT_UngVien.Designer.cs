@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
@@ -83,6 +84,11 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
+            this.dataSetQLNS = new QuanLy_NhanSu.DataSetQLNS();
+            this.hOSOTUYENDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hOSOTUYENDUNGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.HOSOTUYENDUNGTableAdapter();
+            this.tableAdapterManager = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
@@ -92,6 +98,8 @@
             this.tabNavigationPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hOSOTUYENDUNGBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -130,7 +138,7 @@
             // 
             // panel_TT_UngVien
             // 
-            this.panel_TT_UngVien.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel_TT_UngVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_TT_UngVien.Location = new System.Drawing.Point(348, 0);
             this.panel_TT_UngVien.Name = "panel_TT_UngVien";
             this.panel_TT_UngVien.Size = new System.Drawing.Size(1022, 600);
@@ -628,6 +636,66 @@
             this.label83.Size = new System.Drawing.Size(0, 19);
             this.label83.TabIndex = 7;
             // 
+            // dataSetQLNS
+            // 
+            this.dataSetQLNS.DataSetName = "DataSetQLNS";
+            this.dataSetQLNS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hOSOTUYENDUNGBindingSource
+            // 
+            this.hOSOTUYENDUNGBindingSource.DataMember = "HOSOTUYENDUNG";
+            this.hOSOTUYENDUNGBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // hOSOTUYENDUNGTableAdapter
+            // 
+            this.hOSOTUYENDUNGTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.BANGCHAMCONGTableAdapter = null;
+            this.tableAdapterManager.BANGTANGCATableAdapter = null;
+            this.tableAdapterManager.BANGTANGLUONGTableAdapter = null;
+            this.tableAdapterManager.BAOHIEMTableAdapter = null;
+            this.tableAdapterManager.CHITIETCHUYENMONTableAdapter = null;
+            this.tableAdapterManager.CHITIETHOPDONGTableAdapter = null;
+            this.tableAdapterManager.CHITIETKHENTHUONGTableAdapter = null;
+            this.tableAdapterManager.CHITIETNGOAINGUTableAdapter = null;
+            this.tableAdapterManager.CHUCVUTableAdapter = null;
+            this.tableAdapterManager.CHUONGTRINHDAOTAOTableAdapter = null;
+            this.tableAdapterManager.CHUYENMONTableAdapter = null;
+            this.tableAdapterManager.DANHMUCTANGCATableAdapter = null;
+            this.tableAdapterManager.DANTOCTableAdapter = null;
+            this.tableAdapterManager.DAOTAOTableAdapter = null;
+            this.tableAdapterManager.DS_KYLUATTableAdapter = null;
+            this.tableAdapterManager.HINHANHTableAdapter = null;
+            this.tableAdapterManager.HOPDONGLAODONGTableAdapter = null;
+            this.tableAdapterManager.HOSOTUYENDUNGTableAdapter = this.hOSOTUYENDUNGTableAdapter;
+            this.tableAdapterManager.KQ_TUYENDUNGTableAdapter = null;
+            this.tableAdapterManager.LOAIKHENTHUONGTableAdapter = null;
+            this.tableAdapterManager.MANHINHTableAdapter = null;
+            this.tableAdapterManager.NGOAINGUTableAdapter = null;
+            this.tableAdapterManager.NGUOIDUNGNHOMNGUOIDUNGTableAdapter = null;
+            this.tableAdapterManager.NHANVIENTableAdapter = null;
+            this.tableAdapterManager.NHOMNGUOIDUNGTableAdapter = null;
+            this.tableAdapterManager.PHANQUYENTableAdapter = null;
+            this.tableAdapterManager.PHONGBANTableAdapter = null;
+            this.tableAdapterManager.QUANLYKYLUATTableAdapter = null;
+            this.tableAdapterManager.QUANLYNGHIVIECTableAdapter = null;
+            this.tableAdapterManager.QUANLYTHAISANTableAdapter = null;
+            this.tableAdapterManager.QUOCTICHTableAdapter = null;
+            this.tableAdapterManager.TAIKHOANTableAdapter = null;
+            this.tableAdapterManager.TONGIAOTableAdapter = null;
+            this.tableAdapterManager.TONGLUONGTableAdapter = null;
+            this.tableAdapterManager.TRINHDOHOCVANTableAdapter = null;
+            this.tableAdapterManager.TRINHDOTINHOCTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frm_TT_UngVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -649,6 +717,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hOSOTUYENDUNGBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -709,5 +779,10 @@
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_XoaUV;
+        private DataSetQLNS dataSetQLNS;
+        private System.Windows.Forms.BindingSource hOSOTUYENDUNGBindingSource;
+        private DataSetQLNSTableAdapters.HOSOTUYENDUNGTableAdapter hOSOTUYENDUNGTableAdapter;
+        private DataSetQLNSTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.Timer timer1;
     }
 }
