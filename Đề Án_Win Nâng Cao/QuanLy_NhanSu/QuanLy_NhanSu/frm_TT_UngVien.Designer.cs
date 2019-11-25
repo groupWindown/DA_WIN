@@ -31,23 +31,23 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label45 = new System.Windows.Forms.Label();
+            this.panel_TT_UngVien = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btn_XoaUV = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.txt_MaUV = new System.Windows.Forms.TextBox();
+            this.btn_search = new System.Windows.Forms.Button();
             this.label48 = new System.Windows.Forms.Label();
-            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.txt_HoTenUV = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.label50 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_ThemUV = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -83,17 +83,15 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
             this.tabNavigationPage1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tabNavigationPage4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -123,38 +121,26 @@
             // tabNavigationPage1
             // 
             this.tabNavigationPage1.Caption = "Danh sách ứng viên";
-            this.tabNavigationPage1.Controls.Add(this.panel3);
+            this.tabNavigationPage1.Controls.Add(this.panel_TT_UngVien);
             this.tabNavigationPage1.Controls.Add(this.panel1);
             this.tabNavigationPage1.Controls.Add(this.tabNavigationPage4);
             this.tabNavigationPage1.Controls.Add(this.label83);
             this.tabNavigationPage1.Name = "tabNavigationPage1";
             this.tabNavigationPage1.Size = new System.Drawing.Size(1370, 600);
             // 
-            // panel3
+            // panel_TT_UngVien
             // 
-            this.panel3.Controls.Add(this.label45);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(348, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1022, 600);
-            this.panel3.TabIndex = 60;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.Red;
-            this.label45.Location = new System.Drawing.Point(332, 147);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(222, 31);
-            this.label45.TabIndex = 53;
-            this.label45.Text = "Các control động ";
+            this.panel_TT_UngVien.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel_TT_UngVien.Location = new System.Drawing.Point(348, 0);
+            this.panel_TT_UngVien.Name = "panel_TT_UngVien";
+            this.panel_TT_UngVien.Size = new System.Drawing.Size(1022, 600);
+            this.panel_TT_UngVien.TabIndex = 60;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.btn_XoaUV);
             this.panel1.Controls.Add(this.groupBox5);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btn_ThemUV);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -162,21 +148,21 @@
             this.panel1.Size = new System.Drawing.Size(348, 600);
             this.panel1.TabIndex = 59;
             // 
-            // button7
+            // btn_XoaUV
             // 
-            this.button7.Location = new System.Drawing.Point(197, 273);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(120, 28);
-            this.button7.TabIndex = 16;
-            this.button7.Text = "Xóa ứng viên";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_XoaUV.Location = new System.Drawing.Point(197, 273);
+            this.btn_XoaUV.Name = "btn_XoaUV";
+            this.btn_XoaUV.Size = new System.Drawing.Size(120, 28);
+            this.btn_XoaUV.TabIndex = 16;
+            this.btn_XoaUV.Text = "Xóa ứng viên";
+            this.btn_XoaUV.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox43);
-            this.groupBox5.Controls.Add(this.button5);
+            this.groupBox5.Controls.Add(this.txt_MaUV);
+            this.groupBox5.Controls.Add(this.btn_search);
             this.groupBox5.Controls.Add(this.label48);
-            this.groupBox5.Controls.Add(this.textBox42);
+            this.groupBox5.Controls.Add(this.txt_HoTenUV);
             this.groupBox5.Controls.Add(this.button6);
             this.groupBox5.Controls.Add(this.label50);
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -187,24 +173,25 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Tìm kiếm nâng cao";
             // 
-            // textBox43
+            // txt_MaUV
             // 
-            this.textBox43.Location = new System.Drawing.Point(98, 31);
-            this.textBox43.Multiline = true;
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(219, 27);
-            this.textBox43.TabIndex = 9;
+            this.txt_MaUV.Location = new System.Drawing.Point(98, 31);
+            this.txt_MaUV.Multiline = true;
+            this.txt_MaUV.Name = "txt_MaUV";
+            this.txt_MaUV.Size = new System.Drawing.Size(219, 27);
+            this.txt_MaUV.TabIndex = 9;
             // 
-            // button5
+            // btn_search
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(236, 105);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(69, 28);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Search";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_search.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.Location = new System.Drawing.Point(236, 105);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(69, 28);
+            this.btn_search.TabIndex = 10;
+            this.btn_search.Text = "Search";
+            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // label48
             // 
@@ -215,13 +202,13 @@
             this.label48.TabIndex = 8;
             this.label48.Text = "Mã ứng viên";
             // 
-            // textBox42
+            // txt_HoTenUV
             // 
-            this.textBox42.Location = new System.Drawing.Point(98, 72);
-            this.textBox42.Multiline = true;
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(219, 27);
-            this.textBox42.TabIndex = 1;
+            this.txt_HoTenUV.Location = new System.Drawing.Point(98, 72);
+            this.txt_HoTenUV.Multiline = true;
+            this.txt_HoTenUV.Name = "txt_HoTenUV";
+            this.txt_HoTenUV.Size = new System.Drawing.Size(219, 27);
+            this.txt_HoTenUV.TabIndex = 1;
             // 
             // button6
             // 
@@ -243,14 +230,14 @@
             this.label50.TabIndex = 0;
             this.label50.Text = "Họ tên";
             // 
-            // button4
+            // btn_ThemUV
             // 
-            this.button4.Location = new System.Drawing.Point(34, 273);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 28);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Thêm ứng viên";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_ThemUV.Location = new System.Drawing.Point(34, 273);
+            this.btn_ThemUV.Name = "btn_ThemUV";
+            this.btn_ThemUV.Size = new System.Drawing.Size(120, 28);
+            this.btn_ThemUV.TabIndex = 15;
+            this.btn_ThemUV.Text = "Thêm ứng viên";
+            this.btn_ThemUV.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -304,6 +291,16 @@
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(120, 27);
             this.textBox20.TabIndex = 41;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::QuanLy_NhanSu.Properties.Resources.chup_hinh_the_dep_412;
+            this.pictureBox2.Location = new System.Drawing.Point(560, 39);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(138, 160);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 40;
+            this.pictureBox2.TabStop = false;
             // 
             // label9
             // 
@@ -631,40 +628,27 @@
             this.label83.Size = new System.Drawing.Size(0, 19);
             this.label83.TabIndex = 7;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::QuanLy_NhanSu.Properties.Resources.chup_hinh_the_dep_412;
-            this.pictureBox2.Location = new System.Drawing.Point(560, 39);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(138, 160);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 40;
-            this.pictureBox2.TabStop = false;
-            // 
             // frm_TT_UngVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 627);
             this.Controls.Add(this.panel2);
             this.Name = "frm_TT_UngVien";
-            this.Text = "frm_TT_UngVien";
-             this.Load += new System.EventHandler(this.frm_TT_UngVien_Load);
+            this.Size = new System.Drawing.Size(1370, 627);
+            this.Load += new System.EventHandler(this.frm_TT_UngVien_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
             this.tabNavigationPage1.ResumeLayout(false);
             this.tabNavigationPage1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.tabNavigationPage4.ResumeLayout(false);
             this.tabNavigationPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -713,18 +697,17 @@
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel_TT_UngVien;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_ThemUV;
+        private System.Windows.Forms.TextBox txt_MaUV;
+        private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.TextBox txt_HoTenUV;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btn_XoaUV;
     }
 }

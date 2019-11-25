@@ -23,11 +23,16 @@ namespace QuanLy_NhanSu
         private void frm_DangNhap_Load(object sender, EventArgs e)
         {
             //gán mật khẩu củ đã lưu
-            txt_User.Text = Properties.Settings.Default.user;
-            txt_Password.Text = Properties.Settings.Default.pass;
-
-
-
+            if (Properties.Settings.Default.flag == 1.ToString())//1 là nhớ tk mk
+            {
+                txt_User.Text = Properties.Settings.Default.user;
+                txt_Password.Text = Properties.Settings.Default.pass;
+            }
+            else//0 là không nhớ tk mk
+            {
+                txt_User.Text = "";
+                txt_Password.Text = "";
+            }
         }
 
         private void btn_DangNhap_Click(object sender, EventArgs e)
@@ -68,14 +73,14 @@ namespace QuanLy_NhanSu
                         //luu tai khoan mat khau
                         if (ckb_LuuTK.Checked)
                         {
-                            Properties.Settings.Default.user = txt_User.Text;
-                            Properties.Settings.Default.pass = txt_Password.Text;
+                            Properties.Settings.Default.flag = 1.ToString();
                         }
                         else
                         {
-                            Properties.Settings.Default.user = "";
-                            Properties.Settings.Default.pass = "";
+                            Properties.Settings.Default.flag = 1.ToString();
                         }
+                        Properties.Settings.Default.user = txt_User.Text;
+                        Properties.Settings.Default.pass = txt_Password.Text;
                     }
                 }
             }

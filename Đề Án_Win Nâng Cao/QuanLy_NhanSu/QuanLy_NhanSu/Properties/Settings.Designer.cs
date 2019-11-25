@@ -57,5 +57,29 @@ namespace QuanLy_NhanSu.Properties {
                 return ((string)(this["DA_WIN_NANGCAOConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string flag {
+            get {
+                return ((string)(this["flag"]));
+            }
+            set {
+                this["flag"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string UngVienClick {
+            get {
+                return ((string)(this["UngVienClick"]));
+            }
+            set {
+                this["UngVienClick"] = value;
+            }
+        }
     }
 }

@@ -247,6 +247,12 @@
     <Compile Include="Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_Dong_UngVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Dong_UngVien.Designer.cs">
+      <DependentUpon>UserControl_Dong_UngVien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_ChamCong.resx">
       <DependentUpon>frm_ChamCong.cs</DependentUpon>
     </EmbeddedResource>
@@ -317,6 +323,9 @@
     </Compile>
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Dong_UngVien.resx">
+      <DependentUpon>UserControl_Dong_UngVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSetQLNS.xsc">
       <DependentUpon>DataSetQLNS.xsd</DependentUpon>

@@ -22,37 +22,9 @@ namespace QuanLy_NhanSu
 
         }
 
-        private void label45_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void label22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox4_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPane1_Click(object sender, EventArgs e)
+        private void btn_search_Click(object sender, EventArgs e)
         {
 
         }

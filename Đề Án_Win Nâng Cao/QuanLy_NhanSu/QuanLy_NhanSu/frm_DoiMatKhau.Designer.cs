@@ -28,14 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_MK = new System.Windows.Forms.TextBox();
             this.txt_NhapMatKhau = new System.Windows.Forms.TextBox();
             this.txt_NhapLaiMatKhau = new System.Windows.Forms.TextBox();
             this.btn_NhapLaiMatKhau = new System.Windows.Forms.Button();
             this.btn_MatKhauMoi = new System.Windows.Forms.Button();
+            this.btn_DoiMK = new System.Windows.Forms.Button();
+            this.dataSetQLNS = new QuanLy_NhanSu.DataSetQLNS();
+            this.tAIKHOANBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tAIKHOANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TAIKHOANTableAdapter();
+            this.tableAdapterManager = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,13 +76,13 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Nhập lại mật khẩu";
             // 
-            // textBox2
+            // txt_MK
             // 
-            this.textBox2.Location = new System.Drawing.Point(262, 49);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(223, 27);
-            this.textBox2.TabIndex = 3;
+            this.txt_MK.Location = new System.Drawing.Point(262, 49);
+            this.txt_MK.Multiline = true;
+            this.txt_MK.Name = "txt_MK";
+            this.txt_MK.Size = new System.Drawing.Size(223, 27);
+            this.txt_MK.TabIndex = 3;
             // 
             // txt_NhapMatKhau
             // 
@@ -114,22 +122,90 @@
             this.btn_MatKhauMoi.UseVisualStyleBackColor = true;
             this.btn_MatKhauMoi.Click += new System.EventHandler(this.btn_MatKhauMoi_Click);
             // 
+            // btn_DoiMK
+            // 
+            this.btn_DoiMK.Location = new System.Drawing.Point(262, 181);
+            this.btn_DoiMK.Name = "btn_DoiMK";
+            this.btn_DoiMK.Size = new System.Drawing.Size(223, 25);
+            this.btn_DoiMK.TabIndex = 8;
+            this.btn_DoiMK.Text = "Đổi Mật Khẩu";
+            this.btn_DoiMK.UseVisualStyleBackColor = true;
+            this.btn_DoiMK.Click += new System.EventHandler(this.btn_DoiMatKhau_Click);
+            // 
+            // dataSetQLNS
+            // 
+            this.dataSetQLNS.DataSetName = "DataSetQLNS";
+            this.dataSetQLNS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tAIKHOANBindingSource
+            // 
+            this.tAIKHOANBindingSource.DataMember = "TAIKHOAN";
+            this.tAIKHOANBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tAIKHOANTableAdapter
+            // 
+            this.tAIKHOANTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.BANGCHAMCONGTableAdapter = null;
+            this.tableAdapterManager.BANGTANGCATableAdapter = null;
+            this.tableAdapterManager.BANGTANGLUONGTableAdapter = null;
+            this.tableAdapterManager.BAOHIEMTableAdapter = null;
+            this.tableAdapterManager.CHITIETCHUYENMONTableAdapter = null;
+            this.tableAdapterManager.CHITIETHOPDONGTableAdapter = null;
+            this.tableAdapterManager.CHITIETKHENTHUONGTableAdapter = null;
+            this.tableAdapterManager.CHITIETNGOAINGUTableAdapter = null;
+            this.tableAdapterManager.CHUCVUTableAdapter = null;
+            this.tableAdapterManager.CHUONGTRINHDAOTAOTableAdapter = null;
+            this.tableAdapterManager.CHUYENMONTableAdapter = null;
+            this.tableAdapterManager.DANHMUCTANGCATableAdapter = null;
+            this.tableAdapterManager.DANTOCTableAdapter = null;
+            this.tableAdapterManager.DAOTAOTableAdapter = null;
+            this.tableAdapterManager.DS_KYLUATTableAdapter = null;
+            this.tableAdapterManager.HINHANHTableAdapter = null;
+            this.tableAdapterManager.HOPDONGLAODONGTableAdapter = null;
+            this.tableAdapterManager.HOSOTUYENDUNGTableAdapter = null;
+            this.tableAdapterManager.KQ_TUYENDUNGTableAdapter = null;
+            this.tableAdapterManager.LOAIKHENTHUONGTableAdapter = null;
+            this.tableAdapterManager.MANHINHTableAdapter = null;
+            this.tableAdapterManager.NGOAINGUTableAdapter = null;
+            this.tableAdapterManager.NGUOIDUNGNHOMNGUOIDUNGTableAdapter = null;
+            this.tableAdapterManager.NHANVIENTableAdapter = null;
+            this.tableAdapterManager.NHOMNGUOIDUNGTableAdapter = null;
+            this.tableAdapterManager.PHANQUYENTableAdapter = null;
+            this.tableAdapterManager.PHONGBANTableAdapter = null;
+            this.tableAdapterManager.QUANLYKYLUATTableAdapter = null;
+            this.tableAdapterManager.QUANLYNGHIVIECTableAdapter = null;
+            this.tableAdapterManager.QUANLYTHAISANTableAdapter = null;
+            this.tableAdapterManager.QUOCTICHTableAdapter = null;
+            this.tableAdapterManager.TAIKHOANTableAdapter = this.tAIKHOANTableAdapter;
+            this.tableAdapterManager.TONGIAOTableAdapter = null;
+            this.tableAdapterManager.TONGLUONGTableAdapter = null;
+            this.tableAdapterManager.TRINHDOHOCVANTableAdapter = null;
+            this.tableAdapterManager.TRINHDOTINHOCTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // frm_DoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 231);
+            this.AutoSize = true;
+            this.Controls.Add(this.btn_DoiMK);
             this.Controls.Add(this.btn_MatKhauMoi);
             this.Controls.Add(this.btn_NhapLaiMatKhau);
             this.Controls.Add(this.txt_NhapLaiMatKhau);
             this.Controls.Add(this.txt_NhapMatKhau);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_MK);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frm_DoiMatKhau";
-            this.Text = "frm_DoiMatKhau";
+            this.Size = new System.Drawing.Size(640, 235);
             this.Load += new System.EventHandler(this.frm_DoiMatKhau_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,10 +216,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_MK;
         private System.Windows.Forms.TextBox txt_NhapMatKhau;
         private System.Windows.Forms.TextBox txt_NhapLaiMatKhau;
         private System.Windows.Forms.Button btn_NhapLaiMatKhau;
         private System.Windows.Forms.Button btn_MatKhauMoi;
+        private System.Windows.Forms.Button btn_DoiMK;
+        private DataSetQLNS dataSetQLNS;
+        private System.Windows.Forms.BindingSource tAIKHOANBindingSource;
+        private DataSetQLNSTableAdapters.TAIKHOANTableAdapter tAIKHOANTableAdapter;
+        private DataSetQLNSTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
