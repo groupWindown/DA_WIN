@@ -44,7 +44,7 @@
             // 
             this.btn_Decline.BackColor = System.Drawing.Color.White;
             this.btn_Decline.BackgroundImage = global::QuanLy_NhanSu.Properties.Resources.decline;
-            this.btn_Decline.Location = new System.Drawing.Point(417, 93);
+            this.btn_Decline.Location = new System.Drawing.Point(417, 86);
             this.btn_Decline.Name = "btn_Decline";
             this.btn_Decline.Size = new System.Drawing.Size(52, 96);
             this.btn_Decline.TabIndex = 29;
@@ -58,6 +58,7 @@
             this.cbb_Database.Name = "cbb_Database";
             this.cbb_Database.Size = new System.Drawing.Size(204, 21);
             this.cbb_Database.TabIndex = 27;
+            this.cbb_Database.DropDown += new System.EventHandler(this.cbb_Database_DropDown);
             // 
             // cbb_SeverName
             // 
@@ -66,6 +67,7 @@
             this.cbb_SeverName.Name = "cbb_SeverName";
             this.cbb_SeverName.Size = new System.Drawing.Size(204, 21);
             this.cbb_SeverName.TabIndex = 26;
+            this.cbb_SeverName.DropDown += new System.EventHandler(this.cbb_SeverName_DropDown);
             this.cbb_SeverName.SelectedValueChanged += new System.EventHandler(this.cbb_SeverName_SelectedValueChanged);
             this.cbb_SeverName.TextChanged += new System.EventHandler(this.cbb_SeverName_TextChanged);
             // 
@@ -130,7 +132,7 @@
             // 
             this.btn_Accept.BackColor = System.Drawing.Color.White;
             this.btn_Accept.BackgroundImage = global::QuanLy_NhanSu.Properties.Resources.accept;
-            this.btn_Accept.Location = new System.Drawing.Point(417, -2);
+            this.btn_Accept.Location = new System.Drawing.Point(417, -9);
             this.btn_Accept.Name = "btn_Accept";
             this.btn_Accept.Size = new System.Drawing.Size(52, 96);
             this.btn_Accept.TabIndex = 28;
@@ -142,7 +144,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(467, 187);
+            this.ClientSize = new System.Drawing.Size(467, 175);
             this.ControlBox = false;
             this.Controls.Add(this.btn_Decline);
             this.Controls.Add(this.btn_Accept);

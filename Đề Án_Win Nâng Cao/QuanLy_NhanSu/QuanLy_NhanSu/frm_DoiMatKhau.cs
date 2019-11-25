@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace QuanLy_NhanSu
 {
-    public partial class frm_DoiMatKhau : Form
+    public partial class frm_DoiMatKhau : UserControl
     {
         public frm_DoiMatKhau()
         {

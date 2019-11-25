@@ -113,43 +113,49 @@ namespace QuanLy_NhanSu
         private void barButtonItem18_ItemClick(object sender, ItemClickEventArgs e)
         {
             frm_NhapLieu_KT_KL fr = new frm_NhapLieu_KT_KL();
-            //frm_NhapLieu frm = new frm_NhapLieu();
+            panel_Main.Controls.Clear();
             panel_Main.Controls.Add(fr);
         }
 
         private void barButtonItem_HoSoUngVien_ItemClick(object sender, ItemClickEventArgs e)
         {
             frm_TT_UngVien frm_TT_UngVien = new frm_TT_UngVien();
+            panel_Main.Controls.Clear();
             panel_Main.Controls.Add(frm_TT_UngVien);
         }
 
         private void barButtonItem_HoSoNhanVien_ItemClick(object sender, ItemClickEventArgs e)
         {
             frm_TT_NhanVien frm_TT_NhanVien = new frm_TT_NhanVien();
+            panel_Main.Controls.Clear();
             panel_Main.Controls.Add(frm_TT_NhanVien);
         }
 
         private void barButtonItem_ChamCong_ItemClick(object sender, ItemClickEventArgs e)
         {
             frm_ChamCong frm_ChamCong = new frm_ChamCong();
+            panel_Main.Controls.Clear();
             panel_Main.Controls.Add(frm_ChamCong);
         }
 
         private void barButtonItem_ThongKe_ItemClick(object sender, ItemClickEventArgs e)
         {
             frm_ThongKe frm_ThongKe = new frm_ThongKe();
+            panel_Main.Controls.Clear();
             panel_Main.Controls.Add(frm_ThongKe);
         }
 
         private void barButtonItem_DoiMatKhau_ItemClick(object sender, ItemClickEventArgs e)
         {
             frm_DoiMatKhau frm_DoiMatKhau = new frm_DoiMatKhau();
+            panel_Main.Controls.Clear();
             panel_Main.Controls.Add(frm_DoiMatKhau);
         }
 
         private void barButtonItem_DangXuat_ItemClick(object sender, ItemClickEventArgs e)
         {
-            //Application.Exit();
+            this.Close();
+            Application.Exit();
         }
 
         private void frm_Main_FormClosing(object sender, FormClosingEventArgs e)

@@ -25,21 +25,6 @@ namespace QuanLy_NhanSu
 
         private void frm_KetNoiCSDL_Load(object sender, EventArgs e)
         {
-            SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
-            System.Data.DataTable table = instance.GetDataSources();
-            DataTable dataTable = cauhinh.GetServerName();
-            cbb_SeverName.Items.Clear();
-            foreach (System.Data.DataRow row in table.Rows)
-            {
-                foreach (System.Data.DataColumn col in table.Columns)
-                {
-                    cbb_SeverName.Items.Add(row[col]);
-                }
-            }
-           
-            //System.Windows.Forms.SystemInformation.ComputerName
-            //System.Environment.GetEnvironmentVariable("COMPUTERNAME")
-            //WindowsIdentity.GetCurrent().Name.ToString()
         }
 
         private void btn_Decline_Click(object sender, EventArgs e)
@@ -80,8 +65,8 @@ namespace QuanLy_NhanSu
             configuration.ConnectionStrings.ConnectionStrings["QuanLy_NhanSu.Properties.Settings.DA_WIN_NANGCAOConnectionString1"].ProviderName = "System.Data.SqlClient";
             configuration.Save(ConfigurationSaveMode.Modified);
 
-            //Properties.Settings.Default.DA_WIN_NANGCAOConnectionString1 = chuoi;
-            //Properties.Settings.Default.Save();
+            Properties.Settings.Default["DA_WIN_NANGCAOConnectionString1"] = chuoi;
+            Properties.Settings.Default.Save();
         }
 
 
@@ -124,6 +109,25 @@ namespace QuanLy_NhanSu
         }
 
         private void cbb_SeverName_SelectedValueChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void cbb_SeverName_DropDown(object sender, EventArgs e)
+        {
+            SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
+            System.Data.DataTable table = instance.GetDataSources();
+            DataTable dataTable = cauhinh.GetServerName();
+            cbb_SeverName.Items.Clear();
+            foreach (System.Data.DataRow row in table.Rows)
+            {
+               
+                    cbb_SeverName.Items.Add( string.Format(@"{0}\{1}",row[table.Columns["ServerName"]], row[table.Columns["InstanceName"]]));
+                
+            }
+        }
+
+        private void cbb_Database_DropDown(object sender, EventArgs e)
         {
             loadDatabase();
         }
