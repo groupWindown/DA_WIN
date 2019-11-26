@@ -34,9 +34,37 @@ namespace QuanLy_NhanSu
 
         private void UserControl_Dong_UngVien_MouseClick(object sender, MouseEventArgs e)
         {
+            Properties.Settings.Default.controldongclick = this.lbl_MaUngVienCtrl.Text;
+        }
+
+        private void UserControl_Dong_UngVien_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
             frm_Sua_ThemMoiNV_UngVien frm = new frm_Sua_ThemMoiNV_UngVien();
             Properties.Settings.Default.UngVienClick = lbl_MaUngVienCtrl.Text.Trim().ToString();
             frm.ShowDialog();
+        }
+        int flag = 0;
+        private void UserControl_Dong_UngVien_MouseHover(object sender, EventArgs e)
+        {
+            if (flag == 0)
+            {
+                this.BackColor = Color.CornflowerBlue;
+                flag = 1;
+            }
+        }
+
+        private void UserControl_Dong_UngVien_Leave(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void UserControl_Dong_UngVien_MouseLeave(object sender, EventArgs e)
+        {
+            if (flag == 1)
+            {
+                flag = 0;
+                this.BackColor = Color.White;
+            }
         }
     }
 }

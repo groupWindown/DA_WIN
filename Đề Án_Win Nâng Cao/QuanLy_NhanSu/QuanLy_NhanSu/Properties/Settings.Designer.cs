@@ -81,5 +81,17 @@ namespace QuanLy_NhanSu.Properties {
                 return ((string)(this["DA_WIN_NANGCAOConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string controldongclick {
+            get {
+                return ((string)(this["controldongclick"]));
+            }
+            set {
+                this["controldongclick"] = value;
+            }
+        }
     }
 }

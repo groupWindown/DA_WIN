@@ -14,9 +14,12 @@ namespace QuanLy_NhanSu
     }
 }
 
-namespace QuanLy_NhanSu.DataSetQLNSTableAdapters {
-    
-    
+namespace QuanLy_NhanSu.DataSetQLNSTableAdapters
+{
+    partial class HINHANHTableAdapter
+    {
+    }
+
     public partial class DANHSACHUNGVIENROTTableAdapter {
     }
 }

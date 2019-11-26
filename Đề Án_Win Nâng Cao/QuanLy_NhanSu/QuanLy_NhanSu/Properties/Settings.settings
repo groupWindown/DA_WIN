@@ -22,5 +22,8 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=DESKTOP-DSSGJN2\SQLEXPRESS;Initial Catalog=DA_WIN_NANGCAO;Integrated Security=True</Value>
     </Setting>
+    <Setting Name="controldongclick" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

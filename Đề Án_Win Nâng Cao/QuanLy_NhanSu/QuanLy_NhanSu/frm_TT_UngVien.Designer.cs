@@ -37,7 +37,6 @@
             this.btn_XoaUV = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txt_MaUV = new System.Windows.Forms.TextBox();
-            this.btn_search = new System.Windows.Forms.Button();
             this.label48 = new System.Windows.Forms.Label();
             this.txt_HoTenUV = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -158,17 +157,17 @@
             // 
             // btn_XoaUV
             // 
-            this.btn_XoaUV.Location = new System.Drawing.Point(197, 273);
+            this.btn_XoaUV.Location = new System.Drawing.Point(199, 212);
             this.btn_XoaUV.Name = "btn_XoaUV";
-            this.btn_XoaUV.Size = new System.Drawing.Size(120, 28);
+            this.btn_XoaUV.Size = new System.Drawing.Size(130, 28);
             this.btn_XoaUV.TabIndex = 16;
             this.btn_XoaUV.Text = "Xóa ứng viên";
             this.btn_XoaUV.UseVisualStyleBackColor = true;
+            this.btn_XoaUV.Click += new System.EventHandler(this.btn_XoaUV_Click);
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.txt_MaUV);
-            this.groupBox5.Controls.Add(this.btn_search);
             this.groupBox5.Controls.Add(this.label48);
             this.groupBox5.Controls.Add(this.txt_HoTenUV);
             this.groupBox5.Controls.Add(this.button6);
@@ -176,7 +175,7 @@
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(12, 54);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(330, 185);
+            this.groupBox5.Size = new System.Drawing.Size(330, 130);
             this.groupBox5.TabIndex = 57;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Tìm kiếm nâng cao";
@@ -188,18 +187,7 @@
             this.txt_MaUV.Name = "txt_MaUV";
             this.txt_MaUV.Size = new System.Drawing.Size(219, 27);
             this.txt_MaUV.TabIndex = 9;
-            // 
-            // btn_search
-            // 
-            this.btn_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_search.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_search.Location = new System.Drawing.Point(236, 105);
-            this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(69, 28);
-            this.btn_search.TabIndex = 10;
-            this.btn_search.Text = "Search";
-            this.btn_search.UseVisualStyleBackColor = true;
-            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
+            this.txt_MaUV.TextChanged += new System.EventHandler(this.txt_MaUV_TextChanged);
             // 
             // label48
             // 
@@ -217,6 +205,7 @@
             this.txt_HoTenUV.Name = "txt_HoTenUV";
             this.txt_HoTenUV.Size = new System.Drawing.Size(219, 27);
             this.txt_HoTenUV.TabIndex = 1;
+            this.txt_HoTenUV.TextChanged += new System.EventHandler(this.txt_MaUV_TextChanged);
             // 
             // button6
             // 
@@ -240,12 +229,13 @@
             // 
             // btn_ThemUV
             // 
-            this.btn_ThemUV.Location = new System.Drawing.Point(34, 273);
+            this.btn_ThemUV.Location = new System.Drawing.Point(23, 212);
             this.btn_ThemUV.Name = "btn_ThemUV";
-            this.btn_ThemUV.Size = new System.Drawing.Size(120, 28);
+            this.btn_ThemUV.Size = new System.Drawing.Size(124, 28);
             this.btn_ThemUV.TabIndex = 15;
             this.btn_ThemUV.Text = "Thêm ứng viên";
             this.btn_ThemUV.UseVisualStyleBackColor = true;
+            this.btn_ThemUV.Click += new System.EventHandler(this.btn_ThemUV_Click);
             // 
             // label1
             // 
@@ -772,7 +762,6 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button btn_ThemUV;
         private System.Windows.Forms.TextBox txt_MaUV;
-        private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TextBox txt_HoTenUV;
         private System.Windows.Forms.Button button6;
