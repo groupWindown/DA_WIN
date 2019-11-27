@@ -155,7 +155,6 @@ namespace QuanLy_NhanSu
         private void barButtonItem_DangXuat_ItemClick(object sender, ItemClickEventArgs e)
         {
             this.Close();
-            Application.Exit();
         }
 
         private void frm_Main_FormClosing(object sender, FormClosingEventArgs e)

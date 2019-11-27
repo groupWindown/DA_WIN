@@ -88,6 +88,8 @@
             this.hOSOTUYENDUNGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.HOSOTUYENDUNGTableAdapter();
             this.tableAdapterManager = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.kQ_TUYENDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kQ_TUYENDUNGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.KQ_TUYENDUNGTableAdapter();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
@@ -99,6 +101,7 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOSOTUYENDUNGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kQ_TUYENDUNGBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -686,6 +689,15 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // kQ_TUYENDUNGBindingSource
+            // 
+            this.kQ_TUYENDUNGBindingSource.DataMember = "KQ_TUYENDUNG";
+            this.kQ_TUYENDUNGBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // kQ_TUYENDUNGTableAdapter
+            // 
+            this.kQ_TUYENDUNGTableAdapter.ClearBeforeFill = true;
+            // 
             // frm_TT_UngVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -709,6 +721,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOSOTUYENDUNGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kQ_TUYENDUNGBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -773,5 +786,7 @@
         private DataSetQLNSTableAdapters.HOSOTUYENDUNGTableAdapter hOSOTUYENDUNGTableAdapter;
         private DataSetQLNSTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.BindingSource kQ_TUYENDUNGBindingSource;
+        private DataSetQLNSTableAdapters.KQ_TUYENDUNGTableAdapter kQ_TUYENDUNGTableAdapter;
     }
 }

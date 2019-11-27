@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Forms;
+using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Columns;
 
 namespace QuanLy_NhanSu
 {
@@ -21,6 +24,22 @@ namespace QuanLy_NhanSu
 
         private void frm_Sua_ThemMoiNV_UngVien_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataSetQLNS.PHONGBAN' table. You can move, or remove it, as needed.
+            this.pHONGBANTableAdapter.Fill(this.dataSetQLNS.PHONGBAN);
+            // TODO: This line of code loads data into the 'dataSetQLNS.CHUCVU' table. You can move, or remove it, as needed.
+            this.cHUCVUTableAdapter.Fill(this.dataSetQLNS.CHUCVU);
+            // TODO: This line of code loads data into the 'dataSetQLNS.NHANVIEN' table. You can move, or remove it, as needed.
+            this.nHANVIENTableAdapter.Fill(this.dataSetQLNS.NHANVIEN);
+            // TODO: This line of code loads data into the 'dataSetQLNS.CHITIETHOPDONG' table. You can move, or remove it, as needed.
+            this.cHITIETHOPDONGTableAdapter.Fill(this.dataSetQLNS.CHITIETHOPDONG);
+            // TODO: This line of code loads data into the 'dataSetQLNS.HOPDONGLAODONG' table. You can move, or remove it, as needed.
+            this.hOPDONGLAODONGTableAdapter.Fill(this.dataSetQLNS.HOPDONGLAODONG);
+            // TODO: This line of code loads data into the 'dataSetQLNS.KQ_TUYENDUNG' table. You can move, or remove it, as needed.
+            this.kQ_TUYENDUNGTableAdapter.Fill(this.dataSetQLNS.KQ_TUYENDUNG);
+            // TODO: This line of code loads data into the 'dataSetQLNS.CHITIETNGOAINGU' table. You can move, or remove it, as needed.
+            this.cHITIETNGOAINGUTableAdapter.Fill(this.dataSetQLNS.CHITIETNGOAINGU);
+            // TODO: This line of code loads data into the 'dataSetQLNS.CHITIETCHUYENMON' table. You can move, or remove it, as needed.
+            this.cHITIETCHUYENMONTableAdapter.Fill(this.dataSetQLNS.CHITIETCHUYENMON);
             // TODO: This line of code loads data into the 'dataSetQLNS.QUOCTICH' table. You can move, or remove it, as needed.
             this.qUOCTICHTableAdapter.Fill(this.dataSetQLNS.QUOCTICH);
             // TODO: This line of code loads data into the 'dataSetQLNS.DANTOC' table. You can move, or remove it, as needed.
@@ -42,57 +61,64 @@ namespace QuanLy_NhanSu
             // add in comboboxGioitinh
             cbo_GioiTinh.Items.Add("Nam");
             cbo_GioiTinh.Items.Add("Nữ");
+
+            hOPDONGLAODONGTableAdapter.Fill(dataSetQLNS.HOPDONGLAODONG);
+            hOPDONGLAODONGComboBox.DisplayMember = "TENHOPDONG";
+           
+            cHITIETHOPDONGTableAdapter.Fill(dataSetQLNS.CHITIETHOPDONG);
+            cHUCVUTableAdapter.Fill(dataSetQLNS.CHUCVU);
+            pHONGBANTableAdapter.Fill(dataSetQLNS.PHONGBAN);
+            try
+            {
+                hOPDONGLAODONGComboBox.SelectedIndex = 0;
+                cHUCVUComboBox.SelectedIndex = 0;
+                pHONGBANComboBox.SelectedIndex = 0;
+            }
+            catch
+            {
+
+            }
+            
+
             LoadUV();
             Load_CM_NN();
         }
-
         private void Load_CM_NN()
         {
-            findCM(mAUNGVIENTextEdit.Text);
-            findNN(mAUNGVIENTextEdit.Text);
+            for (int i = 0; i < gridView1.DataRowCount; i++)
+            {
+                cHITIETCHUYENMONTableAdapter.Fill(dataSetQLNS.CHITIETCHUYENMON);
+                DataSetQLNS.CHITIETCHUYENMONRow data = dataSetQLNS.CHITIETCHUYENMON.FindByMACHUYENMONMAUNGVIEN(gridView1.GetDataRow(i)["MACHUYENMON"].ToString().Trim(), mAUNGVIENTextEdit.Text.Trim());
+                if(data!=null)
+                {
+                    gridView1.SelectRow(i);
+                }
+                        //DataRow row = dataTable.NewRow();
+                        //row["Ten"] = gridView1.GetRowCellValue(i, colMACHUYENMON).ToString();
+                        //row["Ma"] = gridView1.GetRowCellValue(i, colMACHUYENMON).ToString();
+                        //row["Ckeck"] = DefaultValue.False;
+                        //dataTable.Rows.Add(row);
+                        // int[] u = gridView1.GetSelectedRows();
+                        //foreach(int y in u) {
+                        //    ...Inssert(gridView1.GetRowCellValue(y, colCoChuyenMon),...,);
+      
+                        //int tt = gridView1.FocusedRowHandle;
+                   
+                      ////gridView1.SetRowCellValue(i, "colCoChuyenMon", 1);//"True");
+       
+            }
+            for (int i = 0; i < gridView2.DataRowCount; i++)
+            {
+                cHITIETNGOAINGUTableAdapter.Fill(dataSetQLNS.CHITIETNGOAINGU);
+                DataSetQLNS.CHITIETNGOAINGURow data = dataSetQLNS.CHITIETNGOAINGU.FindByMANGOAINGUMAUNGVIEN(gridView2.GetDataRow(i)["MANGOAINGU"].ToString(), mAUNGVIENTextEdit.Text);
+                if (data != null)
+                {
+                    gridView2.SelectRow(i);
+                }
+            }
         }
 
-        private List<string> findNN(string text)
-        {
-            try
-            {
-                List<string> lststring = new List<string>();
-                DataTable data = dataSetQLNS.NGOAINGU;
-                foreach (DataRow rows in data.Rows)
-                {
-                    if (rows["MAUNGVIEN"].ToString() == text)
-                    {
-                        lststring.Add(rows["MANGOAINGU"].ToString());
-                    }
-                }
-                return lststring;
-            }
-            catch
-            {
-                return null;
-            }
-        }
-
-        private List<string> findCM(string text)
-        {
-            try
-            {
-                List<string> lststring = new List<string>();
-                DataTable data = dataSetQLNS.CHUYENMON;
-                foreach (DataRow rows in data.Rows)
-                {
-                    if (rows["MAUNGVIEN"].ToString() == text)
-                    {
-                        lststring.Add(rows["MANGOAINGU"].ToString());
-                    }
-                }
-                return lststring;
-            }
-            catch
-            {
-                return null;
-            }
-        }
+      
 
         private void LoadUV()
         {
@@ -106,13 +132,10 @@ namespace QuanLy_NhanSu
             cMNDTextEdit.Text= data.CMND;
             nGAYCAPDateEdit.Text= data.NGAYCAP.ToString().Split(' ')[0].ToString();
             nOICAPTextEdit.Text= data.NOICAP;
-            dANTOCComboBox.ValueMember = "MADANTOC";
-            dANTOCComboBox.Text= data.MADANTOC;
-            tONGIAOComboBox.ValueMember = "MATONGIAO";
-            tONGIAOComboBox.Text= data.MATONGIAO;
-            nGAYCAPDateEdit.Text= data.NGAYCAP.ToString().Split(' ')[0].ToString();
-            qUOCTICHComboBox.ValueMember = "MAQUOCTICH";
-            qUOCTICHComboBox.Text = data.MAQUOCTICH;
+            dANTOCComboBox.Text= dataSetQLNS.DANTOC.FindByMADANTOC( data.MADANTOC).TENDANTOC.ToString();  
+            tONGIAOComboBox.Text= dataSetQLNS.TONGIAO.FindByMATONGIAO(data.MATONGIAO).TENTONGIAO.ToString();
+            nGAYCAPDateEdit.Text= data.NGAYCAP.ToString().Split(' ')[0].ToString();  
+            qUOCTICHComboBox.Text = dataSetQLNS.QUOCTICH.FindByMAQUOCTICH(data.MAQUOCTICH).TENQUOCTICH.ToString();
             qUEQUANTextEdit.Text = data.QUEQUAN;
             nOISINHTextEdit.Text = data.NOISINH;
             dIACHITHUONGTRUTextEdit.Text = data.DIACHITHUONGTRU;
@@ -204,6 +227,174 @@ namespace QuanLy_NhanSu
                 pictureEdit_hinhUV.Image = image;
             }catch
             {    }
+        }
+
+        private void btn_ThemNV_Click(object sender, EventArgs e)
+        {
+            kQ_TUYENDUNGTableAdapter.Fill(dataSetQLNS.KQ_TUYENDUNG);
+            
+            if (cbo_KetQuaTuyenDung.Text=="Đậu")
+            {
+                //try
+                //{
+                    if (txt_LuongThoaThuan.Text.Length > 0 && dateEdit_NgayBatDau.Text.Length > 0)
+                    {
+
+                        //thêm KQTD
+                        insertKQTD();
+                        //thêm Nhân Viên
+                        string nhanvien = sinhtudongMaNV();
+                        insertNhanVien(nhanvien);
+                        //thêm Hợp Đồng
+                        insertHDLD(nhanvien);
+                        //thêm hình nhân viên
+                        insertHinhAnh(nhanvien);
+                        MessageBox.Show("Nhân viên " + nhanvien + " vừa được tạo thành công");
+                    }
+                //}
+                //catch
+                //{
+                //}
+            }
+            else
+            {
+                try
+                {
+                    insertKQTD();
+                    MessageBox.Show("Lưu thành công");
+                }
+                catch
+                {
+                }
+            }
+        }
+
+        private void insertHinhAnh(string pMaNV)
+        {
+            MessageBox.Show(pictureEdit_hinhUV.Name+"////"+pictureEdit_hinhUV.Text);
+            hINHANHTableAdapter.Insert(sinhtudongMaHA(), pictureEdit_hinhUV.Name, pMaNV, mAUNGVIENTextEdit.Text, imageToByteArray(pictureEdit_hinhUV.Image));
+            
+        }
+
+        private string sinhtudongMaHA()
+        {
+            int number = dataSetQLNS.NHANVIEN.Count + 1;
+            int value = number;
+            int strick = 1;
+            while (number < 999999)
+            {
+                number = value + strick;
+                strick *= 10;
+            }
+            return "HA" + number.ToString().Substring(1, 6);
+        }
+
+        private void insertNhanVien(string nhanvien)
+        {
+            
+            nHANVIENTableAdapter.Fill(dataSetQLNS.NHANVIEN);
+            nHANVIENTableAdapter.Insert(nhanvien,dataSetQLNS.HOSOTUYENDUNG.FindByMAUNGVIEN(mAUNGVIENTextEdit.Text).HOTEN.ToString(),pHONGBANComboBox.SelectedValue.ToString(),cHUCVUComboBox.SelectedValue.ToString(), DateTime.Now,"Đang làm",mAUNGVIENTextEdit.Text);
+        }
+
+        private string sinhtudongMaNV()
+        {
+            int number = dataSetQLNS.NHANVIEN.Count + 1;
+            int value = number;
+            int strick = 1;
+            while(number<999999)
+            {
+                number =value+strick;
+                strick *= 10;
+            }
+            return "NV" + number.ToString().Substring(1, 6);
+        }
+        private string sinhtudongCTHD()
+        {
+            int number = dataSetQLNS.CHITIETHOPDONG.Count + 1;
+            int value = number;
+            int strick = 1;
+            while (number < 9999)
+            {
+                number = value + strick;
+                strick *= 10;
+            }
+            return "CTHD" + number.ToString().Substring(1, 4);
+        }
+        private void insertHDLD(string nhanvien)
+        {
+            //dataSetQLNS.CHITIETHOPDONG.
+            cHITIETHOPDONGTableAdapter.Insert(sinhtudongCTHD(), hOPDONGLAODONGComboBox.SelectedValue.ToString(), nhanvien,0, DateTime.Now, DateTime.Parse( dateEdit_NgayBatDau.Text),getNgayKT(),decimal.Parse(txt_LuongThoaThuan.Text.Trim()));
+        }
+
+        private DateTime? getNgayKT()
+        {
+            try
+            {
+                if(hOPDONGLAODONGComboBox.Text== "Không thời hạn")
+                {
+                    return null;
+                }
+                string[] lst = dateEdit_NgayBatDau.Text.Split('/');
+                string ngay = lst[1];
+                int thang = (Convert.ToInt32 (lst[0]) + Convert.ToInt32 (hOPDONGLAODONGComboBox.Text.ToString().Trim()));
+                int nam = Convert.ToInt32 (lst[2]);
+                while(thang >12)
+                {
+                    thang -= 12;
+                    nam++;
+                }
+                MessageBox.Show(DateTime.Parse(ngay + "/" + thang.ToString() + "/" + nam.ToString()).ToString());
+                return DateTime.Parse(ngay + "/" + thang.ToString() + "/" + nam.ToString());
+            }catch
+            {
+                return null;
+            }
+        }
+
+        private void insertKQTD()
+        {
+            //unique ma ung vien chi co 1
+            kQ_TUYENDUNGTableAdapter.Insert("KQTD00" +  (dataSetQLNS.KQ_TUYENDUNG.Count + 1).ToString(), mAUNGVIENTextEdit.Text, cbo_KetQuaTuyenDung.Text);
+        }
+
+        //private void UpdateKQTD()
+        //{
+        //    kQ_TUYENDUNGTableAdapter.Update(cbo_KetQuaTuyenDung.Text, loadMaKQ(mAUNGVIENTextEdit.Text), mAUNGVIENTextEdit.Text, cbo_KetQuaTuyenDung.Text);
+        //}
+
+        private string loadMaKQ(string text)
+        {
+            foreach(DataSetQLNS.KQ_TUYENDUNGRow kq in dataSetQLNS.KQ_TUYENDUNG)
+            {
+                if(kq.MAUNGVIEN.ToString()==text)
+                {
+                    return kq.MAKQ.ToString();
+                }
+            }
+            return null;
+        }
+
+        private void gridView1_RowCellClick(object sender, RowCellClickEventArgs e)
+        {
+            if (e.RowHandle!=-1){
+                //DataRow data = dataTable.NewRow();
+                //data["Ten"] = gridView1.GetRowCellValue(e.RowHandle, "colCoChuyenMon").ToString();
+                //data["Ma"] = gridView1.GetRowCellValue(e.RowHandle, "colCoChuyenMon").ToString();
+                //data["Ckeck"] = ""+gridView1.GetRowCellValue(e.RowHandle, "colCoChuyenMon").ToString();
+                //dataTable.Rows.RemoveAt(e.RowHandle);
+                //dataTable.Rows.Add(data);
+
+                //gridControlCM.DataSource = dataTable;
+            }
+        }
+
+        private void txt_LuongThoaThuan_TextChanged(object sender, EventArgs e)
+        {
+            if(txt_LuongThoaThuan.Text.Length>15)
+            {
+                MessageBox.Show("vượt tầm kiểm soát số liệu (max 15 số)");
+                txt_LuongThoaThuan.Text=txt_LuongThoaThuan.Text.Substring(0, 15);
+            }
         }
     }
 }
