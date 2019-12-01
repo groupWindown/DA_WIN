@@ -90,6 +90,16 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.kQ_TUYENDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kQ_TUYENDUNGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.KQ_TUYENDUNGTableAdapter();
+            this.hINHANHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hINHANHTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.HINHANHTableAdapter();
+            this.cHITIETNGOAINGUBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cHITIETNGOAINGUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHITIETNGOAINGUTableAdapter();
+            this.cHITIETCHUYENMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cHITIETCHUYENMONTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHITIETCHUYENMONTableAdapter();
+            this.cHUYENMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cHUYENMONTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHUYENMONTableAdapter();
+            this.nGOAINGUBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nGOAINGUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NGOAINGUTableAdapter();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
@@ -102,6 +112,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOSOTUYENDUNGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kQ_TUYENDUNGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hINHANHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHITIETNGOAINGUBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHITIETCHUYENMONBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -698,6 +713,51 @@
             // 
             this.kQ_TUYENDUNGTableAdapter.ClearBeforeFill = true;
             // 
+            // hINHANHBindingSource
+            // 
+            this.hINHANHBindingSource.DataMember = "HINHANH";
+            this.hINHANHBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // hINHANHTableAdapter
+            // 
+            this.hINHANHTableAdapter.ClearBeforeFill = true;
+            // 
+            // cHITIETNGOAINGUBindingSource
+            // 
+            this.cHITIETNGOAINGUBindingSource.DataMember = "CHITIETNGOAINGU";
+            this.cHITIETNGOAINGUBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // cHITIETNGOAINGUTableAdapter
+            // 
+            this.cHITIETNGOAINGUTableAdapter.ClearBeforeFill = true;
+            // 
+            // cHITIETCHUYENMONBindingSource
+            // 
+            this.cHITIETCHUYENMONBindingSource.DataMember = "CHITIETCHUYENMON";
+            this.cHITIETCHUYENMONBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // cHITIETCHUYENMONTableAdapter
+            // 
+            this.cHITIETCHUYENMONTableAdapter.ClearBeforeFill = true;
+            // 
+            // cHUYENMONBindingSource
+            // 
+            this.cHUYENMONBindingSource.DataMember = "CHUYENMON";
+            this.cHUYENMONBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // cHUYENMONTableAdapter
+            // 
+            this.cHUYENMONTableAdapter.ClearBeforeFill = true;
+            // 
+            // nGOAINGUBindingSource
+            // 
+            this.nGOAINGUBindingSource.DataMember = "NGOAINGU";
+            this.nGOAINGUBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // nGOAINGUTableAdapter
+            // 
+            this.nGOAINGUTableAdapter.ClearBeforeFill = true;
+            // 
             // frm_TT_UngVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -722,6 +782,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOSOTUYENDUNGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kQ_TUYENDUNGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hINHANHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHITIETNGOAINGUBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHITIETCHUYENMONBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -788,5 +853,15 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.BindingSource kQ_TUYENDUNGBindingSource;
         private DataSetQLNSTableAdapters.KQ_TUYENDUNGTableAdapter kQ_TUYENDUNGTableAdapter;
+        private System.Windows.Forms.BindingSource hINHANHBindingSource;
+        private DataSetQLNSTableAdapters.HINHANHTableAdapter hINHANHTableAdapter;
+        private System.Windows.Forms.BindingSource cHITIETNGOAINGUBindingSource;
+        private DataSetQLNSTableAdapters.CHITIETNGOAINGUTableAdapter cHITIETNGOAINGUTableAdapter;
+        private System.Windows.Forms.BindingSource cHITIETCHUYENMONBindingSource;
+        private DataSetQLNSTableAdapters.CHITIETCHUYENMONTableAdapter cHITIETCHUYENMONTableAdapter;
+        private System.Windows.Forms.BindingSource cHUYENMONBindingSource;
+        private DataSetQLNSTableAdapters.CHUYENMONTableAdapter cHUYENMONTableAdapter;
+        private System.Windows.Forms.BindingSource nGOAINGUBindingSource;
+        private DataSetQLNSTableAdapters.NGOAINGUTableAdapter nGOAINGUTableAdapter;
     }
 }

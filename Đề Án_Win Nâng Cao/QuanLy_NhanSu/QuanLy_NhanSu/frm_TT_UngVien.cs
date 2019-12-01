@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,13 @@ namespace QuanLy_NhanSu
         {
             Properties.Settings.Default.controldongclick = null;
 
+            kQ_TUYENDUNGTableAdapter.Fill(dataSetQLNS.KQ_TUYENDUNG);
+            hOSOTUYENDUNGTableAdapter.Fill(dataSetQLNS.HOSOTUYENDUNG);
+            hINHANHTableAdapter.Fill(dataSetQLNS.HINHANH);
+            cHITIETNGOAINGUTableAdapter.Fill(dataSetQLNS.CHITIETNGOAINGU);
+            cHITIETCHUYENMONTableAdapter.Fill(dataSetQLNS.CHITIETCHUYENMON);
+            cHUYENMONTableAdapter.Fill(dataSetQLNS.CHUYENMON);
+            nGOAINGUTableAdapter.Fill(dataSetQLNS.NGOAINGU);
             load();
         }
 
@@ -30,8 +38,7 @@ namespace QuanLy_NhanSu
         {
             listQLNS.Clear();
 
-            hOSOTUYENDUNGTableAdapter.Fill(dataSetQLNS.HOSOTUYENDUNG);
-            kQ_TUYENDUNGTableAdapter.Fill(dataSetQLNS.KQ_TUYENDUNG);
+            
             foreach (DataRow dataRow in dataSetQLNS.HOSOTUYENDUNG)
             {
                 if (kiemtratrungMaUngVien(dataRow["MAUNGVIEN"].ToString())==true)
@@ -42,16 +49,43 @@ namespace QuanLy_NhanSu
                     string pSDTUV = dataRow["DIENTHOAI"].ToString();
                     string pEMailUV = dataRow["EMAIL"].ToString();
                     string pChucVuUV = dataRow["VITRITUYENDUNG"].ToString();
-                    UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV);
+                    
+                    UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV,loadhinh(pMaUV));
 
                     listQLNS.Add(usercotrol);
                 }
             }
         }
+        private Image loadhinh(string v)
+        {
+            try
+            {
+                DataSetQLNS.HINHANHDataTable data = dataSetQLNS.HINHANH;
+                foreach (DataSetQLNS.HINHANHRow rows in data.Rows)
+                {
+                    if (rows.MAUNGVIEN.ToString() == v)
+                    {
+                        return byteArrayToImage(rows.URL.ToArray());
+                    }
+                }
+                return null;
+
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        //byte[] -> ảnh
+        public System.Drawing.Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            System.Drawing.Image returnImage = System.Drawing.Image.FromStream(ms);
+            return returnImage;
+        }
 
         private bool kiemtratrungMaUngVien(string v)
         {
-            kQ_TUYENDUNGTableAdapter.Fill(dataSetQLNS.KQ_TUYENDUNG);
             DataSetQLNS.KQ_TUYENDUNGDataTable datatable = dataSetQLNS.KQ_TUYENDUNG;
             foreach(DataSetQLNS.KQ_TUYENDUNGRow rows in datatable)
             {
@@ -114,7 +148,6 @@ namespace QuanLy_NhanSu
             {
                 listQLNSSearch.Clear();
 
-                hOSOTUYENDUNGTableAdapter.Fill(dataSetQLNS.HOSOTUYENDUNG);
                 foreach (DataRow dataRow in dataSetQLNS.HOSOTUYENDUNG)
                 {
                     if (kiemtratrungMaUngVien(dataRow["MAUNGVIEN"].ToString()) == true)
@@ -125,7 +158,7 @@ namespace QuanLy_NhanSu
                         string pSDTUV = dataRow["DIENTHOAI"].ToString();
                         string pEMailUV = dataRow["EMAIL"].ToString();
                         string pChucVuUV = dataRow["VITRITUYENDUNG"].ToString();
-                        UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV);
+                        UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV,loadhinh(pMaUV));
                         if (pMaUV.ToLower().ToString().Contains(txt_MaUV.Text.ToLower().ToString()) == true && pTenUV.ToLower().ToString().Contains(txt_HoTenUV.Text.ToLower().ToString()) == true)
                             listQLNSSearch.Add(usercotrol);
                     }
@@ -138,8 +171,7 @@ namespace QuanLy_NhanSu
                 if (txt_MaUV.Text.Trim().Length > 0)
                 {
                     listQLNSSearch.Clear();
-
-                    hOSOTUYENDUNGTableAdapter.Fill(dataSetQLNS.HOSOTUYENDUNG);
+                    
                     foreach (DataRow dataRow in dataSetQLNS.HOSOTUYENDUNG)
                     {
                         if (kiemtratrungMaUngVien(dataRow["MAUNGVIEN"].ToString()) == true)
@@ -150,7 +182,7 @@ namespace QuanLy_NhanSu
                             string pSDTUV = dataRow["DIENTHOAI"].ToString();
                             string pEMailUV = dataRow["EMAIL"].ToString();
                             string pChucVuUV = dataRow["VITRITUYENDUNG"].ToString();
-                            UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV);
+                            UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV, loadhinh(pMaUV));
                             if (pMaUV.ToLower().ToString().Contains(txt_MaUV.Text.ToLower().ToString()) == true)
                                 listQLNSSearch.Add(usercotrol);
                         }
@@ -163,8 +195,7 @@ namespace QuanLy_NhanSu
                     if (txt_HoTenUV.Text.Trim().Length > 0)
                     {
                         listQLNSSearch.Clear();
-
-                        hOSOTUYENDUNGTableAdapter.Fill(dataSetQLNS.HOSOTUYENDUNG);
+                        
                         foreach (DataRow dataRow in dataSetQLNS.HOSOTUYENDUNG)
                         {
                             if (kiemtratrungMaUngVien(dataRow["MAUNGVIEN"].ToString()) == true)
@@ -175,7 +206,7 @@ namespace QuanLy_NhanSu
                                 string pSDTUV = dataRow["DIENTHOAI"].ToString();
                                 string pEMailUV = dataRow["EMAIL"].ToString();
                                 string pChucVuUV = dataRow["VITRITUYENDUNG"].ToString();
-                                UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV);
+                                UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV, loadhinh(pMaUV));
                                 if (pTenUV.ToLower().ToString().Contains(txt_HoTenUV.Text.ToLower().ToString()) == true)
                                     listQLNSSearch.Add(usercotrol);
                             }
@@ -230,6 +261,28 @@ namespace QuanLy_NhanSu
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                 return;
             DataSetQLNS.HOSOTUYENDUNGRow data = dataSetQLNS.HOSOTUYENDUNG.FindByMAUNGVIEN(pMaUV);
+
+            //xoa chi tiet chuyen mon
+            foreach(DataSetQLNS.CHUYENMONRow cm in dataSetQLNS.CHUYENMON)
+            {
+                try
+                {
+                    cHITIETCHUYENMONTableAdapter.Delete(cm.MACHUYENMON, pMaUV);
+                }
+                catch
+                {    }
+            }
+            //xoa chi tiet ngoai ngu
+            foreach (DataSetQLNS.NGOAINGURow nn in dataSetQLNS.NGOAINGU)
+            {
+                try
+                {
+                    cHITIETNGOAINGUTableAdapter.Delete(nn.MANGOAINGU, pMaUV);
+                }
+                catch
+                { }
+            }
+            //xoa ung vien
             hOSOTUYENDUNGTableAdapter.Delete(pMaUV,data.MADANTOC, data.MATONGIAO, data.MAQUOCTICH, data.HOTEN, data.GIOITINH, data.NGAYSINH, data.NOISINH, data.CMND, data.NGAYCAP, data.NOICAP, data.QUEQUAN, data.DIACHITHUONGTRU, data.NOIOHIENTAI, data.DIENTHOAI, data.EMAIL, data.TINHTRANGHONNHAN, data.DIENUUTIEN, data.TINHTRANGSUCKHOE, data.NGAYTUYENDUNG, data.HINHTHUCTUYENDUNG, data.VITRITUYENDUNG, data.MATRINHDOHOCVAN, data.MATRINHDOTINHOC);
             load();
             Properties.Settings.Default.controldongclick = null;

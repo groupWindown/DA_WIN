@@ -93,18 +93,7 @@ namespace QuanLy_NhanSu
                 {
                     gridView1.SelectRow(i);
                 }
-                        //DataRow row = dataTable.NewRow();
-                        //row["Ten"] = gridView1.GetRowCellValue(i, colMACHUYENMON).ToString();
-                        //row["Ma"] = gridView1.GetRowCellValue(i, colMACHUYENMON).ToString();
-                        //row["Ckeck"] = DefaultValue.False;
-                        //dataTable.Rows.Add(row);
-                        // int[] u = gridView1.GetSelectedRows();
-                        //foreach(int y in u) {
-                        //    ...Inssert(gridView1.GetRowCellValue(y, colCoChuyenMon),...,);
-      
-                        //int tt = gridView1.FocusedRowHandle;
-                   
-                      ////gridView1.SetRowCellValue(i, "colCoChuyenMon", 1);//"True");
+                       
        
             }
             for (int i = 0; i < gridView2.DataRowCount; i++)
@@ -232,12 +221,12 @@ namespace QuanLy_NhanSu
         private void btn_ThemNV_Click(object sender, EventArgs e)
         {
             kQ_TUYENDUNGTableAdapter.Fill(dataSetQLNS.KQ_TUYENDUNG);
-            
-            if (cbo_KetQuaTuyenDung.Text=="Đậu")
+
+            if (cbo_KetQuaTuyenDung.Text == "Đậu")
             {
-                //try
-                //{
-                    if (txt_LuongThoaThuan.Text.Length > 0 && dateEdit_NgayBatDau.Text.Length > 0)
+                try
+                {
+                    if (txt_LuongThoaThuan.Text.Length > 0 && dateEdit_NgayBatDau.Text.Length > 0 && cHUCVUComboBox.Text.Length > 0 && pHONGBANComboBox.Text.Length > 0 && hOPDONGLAODONGComboBox.Text.Length > 0)
                     {
 
                         //thêm KQTD
@@ -247,14 +236,20 @@ namespace QuanLy_NhanSu
                         insertNhanVien(nhanvien);
                         //thêm Hợp Đồng
                         insertHDLD(nhanvien);
-                        //thêm hình nhân viên
-                        insertHinhAnh(nhanvien);
+
+
+
+
                         MessageBox.Show("Nhân viên " + nhanvien + " vừa được tạo thành công");
                     }
-                //}
-                //catch
-                //{
-                //}
+                    else
+                    {
+                        MessageBox.Show("vui long điền đủ dữ liệu");
+                    }
+                }
+                catch
+                {
+                }
             }
             else
             {
@@ -269,16 +264,43 @@ namespace QuanLy_NhanSu
             }
         }
 
-        private void insertHinhAnh(string pMaNV)
+        private void insertHinhAnh()
         {
-            MessageBox.Show(pictureEdit_hinhUV.Name+"////"+pictureEdit_hinhUV.Text);
-            hINHANHTableAdapter.Insert(sinhtudongMaHA(), pictureEdit_hinhUV.Name, pMaNV, mAUNGVIENTextEdit.Text, imageToByteArray(pictureEdit_hinhUV.Image));
-            
-        }
+            if (pictureEdit_hinhUV.Image != null)
+            {
+                try
+                {
+                    hINHANHTableAdapter.Insert(sinhtudongMaHA(), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, imageToByteArray(pictureEdit_hinhUV.Image));
+                }
+                catch
+                {
+                    try
+                    {
+                        hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, imageToByteArray(pictureEdit_hinhUV.Image), timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
+                    }
+                    catch
+                    {
 
+                    }
+                }
+            }
+        }
+        //tìm hình ảnh bằng mã ứng viên
+        private string timhinhanh(string text)
+        {
+            foreach (DataSetQLNS.HINHANHRow kq in dataSetQLNS.HINHANH)
+            {
+                if (kq.MAUNGVIEN.ToString() == text)
+                {
+                    return kq.MAHINHANH.ToString();
+                }
+            }
+            return null;
+        }
+        //tự sinh Mã Hình ảnh
         private string sinhtudongMaHA()
         {
-            int number = dataSetQLNS.NHANVIEN.Count + 1;
+            int number = dataSetQLNS.HINHANH.Count + 1;
             int value = number;
             int strick = 1;
             while (number < 999999)
@@ -295,7 +317,7 @@ namespace QuanLy_NhanSu
             nHANVIENTableAdapter.Fill(dataSetQLNS.NHANVIEN);
             nHANVIENTableAdapter.Insert(nhanvien,dataSetQLNS.HOSOTUYENDUNG.FindByMAUNGVIEN(mAUNGVIENTextEdit.Text).HOTEN.ToString(),pHONGBANComboBox.SelectedValue.ToString(),cHUCVUComboBox.SelectedValue.ToString(), DateTime.Now,"Đang làm",mAUNGVIENTextEdit.Text);
         }
-
+        //tự sinh Mã Nhân viên
         private string sinhtudongMaNV()
         {
             int number = dataSetQLNS.NHANVIEN.Count + 1;
@@ -308,6 +330,7 @@ namespace QuanLy_NhanSu
             }
             return "NV" + number.ToString().Substring(1, 6);
         }
+        //tự sinh Mã ChiTietHopDong
         private string sinhtudongCTHD()
         {
             int number = dataSetQLNS.CHITIETHOPDONG.Count + 1;
@@ -322,7 +345,6 @@ namespace QuanLy_NhanSu
         }
         private void insertHDLD(string nhanvien)
         {
-            //dataSetQLNS.CHITIETHOPDONG.
             cHITIETHOPDONGTableAdapter.Insert(sinhtudongCTHD(), hOPDONGLAODONGComboBox.SelectedValue.ToString(), nhanvien,0, DateTime.Now, DateTime.Parse( dateEdit_NgayBatDau.Text),getNgayKT(),decimal.Parse(txt_LuongThoaThuan.Text.Trim()));
         }
 
@@ -343,8 +365,7 @@ namespace QuanLy_NhanSu
                     thang -= 12;
                     nam++;
                 }
-                MessageBox.Show(DateTime.Parse(ngay + "/" + thang.ToString() + "/" + nam.ToString()).ToString());
-                return DateTime.Parse(ngay + "/" + thang.ToString() + "/" + nam.ToString());
+                 return DateTime.Parse(ngay + "/" + thang.ToString() + "/" + nam.ToString());
             }catch
             {
                 return null;
@@ -392,9 +413,92 @@ namespace QuanLy_NhanSu
         {
             if(txt_LuongThoaThuan.Text.Length>15)
             {
-                MessageBox.Show("vượt tầm kiểm soát số liệu (max 15 số)");
+                MessageBox.Show("Vượt tầm kiểm soát số liệu (max 15 số)");
                 txt_LuongThoaThuan.Text=txt_LuongThoaThuan.Text.Substring(0, 15);
             }
         }
+
+        private void txt_LuongThoaThuan_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+            if (qUOCTICHComboBox.SelectedValue != null && dANTOCComboBox.SelectedValue != null && tONGIAOComboBox.SelectedValue != null)
+            {
+                //luu hinh anh
+                insertHinhAnh();
+                //update du lieu cua ung vien
+                hOSOTUYENDUNGTableAdapter.Update(mAUNGVIENTextEdit.Text, dANTOCComboBox.SelectedValue.ToString(), tONGIAOComboBox.SelectedValue.ToString(), qUOCTICHComboBox.SelectedValue.ToString(), hOTENTextEdit.Text, cbo_GioiTinh.Text, nGAYSINHDateEdit.DateTime, nOISINHTextEdit.Text, cMNDTextEdit.Text, nGAYCAPDateEdit.DateTime, nOICAPTextEdit.Text, qUEQUANTextEdit.Text, dIACHITHUONGTRUTextEdit.Text, nOIOHIENTAITextEdit.Text, dIENTHOAITextEdit.Text, eMAILTextEdit.Text, tINHTRANGHONNHANTextEdit.Text, dIENUUTIENTextEdit.Text, tINHTRANGSUCKHOETextEdit.Text, nGAYTUYENDUNGDateEdit.DateTime, hINHTHUCTUYENDUNGTextEdit.Text, vITRITUYENDUNGTextEdit.Text, mATRINHDOHOCVANTextEdit.Text, mATRINHDOTINHOCTextEdit.Text, mAUNGVIENTextEdit.Text, dANTOCComboBox.SelectedValue.ToString(), tONGIAOComboBox.SelectedValue.ToString(), qUOCTICHComboBox.SelectedValue.ToString(), hOTENTextEdit.Text, cbo_GioiTinh.Text, nGAYSINHDateEdit.DateTime, nOISINHTextEdit.Text, cMNDTextEdit.Text, nGAYCAPDateEdit.DateTime, nOICAPTextEdit.Text, qUEQUANTextEdit.Text, dIACHITHUONGTRUTextEdit.Text, nOIOHIENTAITextEdit.Text, dIENTHOAITextEdit.Text, eMAILTextEdit.Text, tINHTRANGHONNHANTextEdit.Text, dIENUUTIENTextEdit.Text, tINHTRANGSUCKHOETextEdit.Text, nGAYTUYENDUNGDateEdit.DateTime, hINHTHUCTUYENDUNGTextEdit.Text, vITRITUYENDUNGTextEdit.Text, mATRINHDOHOCVANTextEdit.Text, mATRINHDOTINHOCTextEdit.Text);
+                //update chuyen mon
+                for(int i=0;i<gridView1.RowCount;i++)
+                {
+                    if (gridView1.IsRowSelected(i))
+                    {
+                        try
+                        {
+                            cHITIETCHUYENMONTableAdapter.Insert(gridView1.GetRowCellValue(i,"MACHUYENMON").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                        catch
+                        {
+                            cHITIETCHUYENMONTableAdapter.Update(gridView1.GetRowCellValue(i, "MACHUYENMON").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                    }
+                    else
+                    {
+                        try
+                        {
+                            cHITIETCHUYENMONTableAdapter.Delete(gridView1.GetRowCellValue(i, "MACHUYENMON").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                }
+                //update ngoai ngu
+                for (int i = 0; i < gridView2.RowCount; i++)
+                {
+                    if (gridView2.IsRowSelected(i))
+                    {
+                        try
+                        {
+                            cHITIETNGOAINGUTableAdapter.Insert(gridView2.GetRowCellValue(i, "MANGOAINGU").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                        catch
+                        {
+                            cHITIETNGOAINGUTableAdapter.Update(gridView2.GetRowCellValue(i, "MANGOAINGU").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                    }
+                    else
+                    {
+                        try
+                        {
+                             cHITIETNGOAINGUTableAdapter.Delete(gridView2.GetRowCellValue(i, "MANGOAINGU").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                }
+
+                MessageBox.Show("Sửa thành công");
+            }
+        }
+        //DataRow row = dataTable.NewRow();
+        //row["Ten"] = gridView1.GetRowCellValue(i, colMACHUYENMON).ToString();
+        //row["Ma"] = gridView1.GetRowCellValue(i, colMACHUYENMON).ToString();
+        //row["Ckeck"] = DefaultValue.False;
+        //dataTable.Rows.Add(row);
+        // int[] u = gridView1.GetSelectedRows();
+        //foreach(int y in u) {
+        //    ...Inssert(gridView1.GetRowCellValue(y, colCoChuyenMon),...,);
+
+        //int tt = gridView1.FocusedRowHandle;
+
+        ////gridView1.SetRowCellValue(i, "colCoChuyenMon", 1);//"True");
     }
 }

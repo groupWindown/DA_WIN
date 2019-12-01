@@ -12,7 +12,7 @@ namespace QuanLy_NhanSu
 {
     public partial class UserControl_Dong_UngVien : UserControl
     {
-        public UserControl_Dong_UngVien(string pMaUV, string pTenUV, string pNgayUV, string pSDTUV, string pEMailUV, string pChucVuUV)
+        public UserControl_Dong_UngVien(string pMaUV, string pTenUV, string pNgayUV, string pSDTUV, string pEMailUV, string pChucVuUV,Image imageUV)
         {
 
             InitializeComponent();
@@ -23,6 +23,7 @@ namespace QuanLy_NhanSu
             lbl_SDT.Text = pSDTUV.ToString();
             lbl_Email.Text = pEMailUV.ToString();
             lbl_ChucVuUngTuyen.Text = pChucVuUV.ToString();
+            pictureEdit_HinhAnh.Image = imageUV;
         }
 
         private void UserControl_Dong_UngVien_Load(object sender, EventArgs e)
