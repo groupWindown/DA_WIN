@@ -119,9 +119,14 @@ namespace QuanLy_NhanSu
 
         private void barButtonItem_HoSoUngVien_ItemClick(object sender, ItemClickEventArgs e)
         {
-            frm_TT_UngVien frm_TT_UngVien = new frm_TT_UngVien();
+            //if (Program.frmTTUV == null || Program.frmTTUV.IsDisposed)
+            //{
+            //Program.frmTTUV = new frm_TT_UngVien();
+
+            //}
+            frm_TT_UngVien frm = new frm_TT_UngVien();
             panel_Main.Controls.Clear();
-            panel_Main.Controls.Add(frm_TT_UngVien);
+            panel_Main.Controls.Add(frm);
         }
 
         private void barButtonItem_HoSoNhanVien_ItemClick(object sender, ItemClickEventArgs e)

@@ -43,6 +43,7 @@ namespace QuanLy_NhanSu
             frm_Sua_ThemMoiNV_UngVien frm = new frm_Sua_ThemMoiNV_UngVien();
             Properties.Settings.Default.UngVienClick = lbl_MaUngVienCtrl.Text.Trim().ToString();
             frm.ShowDialog();
+            
         }
         int flag = 0;
         private void UserControl_Dong_UngVien_MouseHover(object sender, EventArgs e)

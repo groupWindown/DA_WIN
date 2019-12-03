@@ -144,7 +144,7 @@ namespace QuanLy_NhanSu
 
         private void txt_MaUV_TextChanged(object sender, EventArgs e)
         {
-            if (txt_MaUV.Text.Trim().Length > 0 && txt_HoTenUV.Text.Trim().Length > 0)
+            if (txt_MaUV.Text.Trim().Length > 0 && txt_HoTenUV.Text.Trim().Length > 0 && txt_ChucVu.Text.Length > 0)
             {
                 listQLNSSearch.Clear();
 
@@ -158,8 +158,8 @@ namespace QuanLy_NhanSu
                         string pSDTUV = dataRow["DIENTHOAI"].ToString();
                         string pEMailUV = dataRow["EMAIL"].ToString();
                         string pChucVuUV = dataRow["VITRITUYENDUNG"].ToString();
-                        UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV,loadhinh(pMaUV));
-                        if (pMaUV.ToLower().ToString().Contains(txt_MaUV.Text.ToLower().ToString()) == true && pTenUV.ToLower().ToString().Contains(txt_HoTenUV.Text.ToLower().ToString()) == true)
+                        UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV, loadhinh(pMaUV));
+                        if (pMaUV.ToLower().ToString().Contains(txt_MaUV.Text.ToLower().ToString()) == true && pTenUV.ToLower().ToString().Contains(txt_HoTenUV.Text.ToLower().ToString()) == true && pChucVuUV.ToLower().ToString().Contains(txt_ChucVu.Text.ToLower().ToString()) == true)
                             listQLNSSearch.Add(usercotrol);
                     }
                 }
@@ -168,10 +168,10 @@ namespace QuanLy_NhanSu
             }
             else
             {
-                if (txt_MaUV.Text.Trim().Length > 0)
+                if (txt_ChucVu.Text.Trim().Length > 0 && txt_HoTenUV.Text.Trim().Length > 0)
                 {
                     listQLNSSearch.Clear();
-                    
+
                     foreach (DataRow dataRow in dataSetQLNS.HOSOTUYENDUNG)
                     {
                         if (kiemtratrungMaUngVien(dataRow["MAUNGVIEN"].ToString()) == true)
@@ -183,19 +183,19 @@ namespace QuanLy_NhanSu
                             string pEMailUV = dataRow["EMAIL"].ToString();
                             string pChucVuUV = dataRow["VITRITUYENDUNG"].ToString();
                             UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV, loadhinh(pMaUV));
-                            if (pMaUV.ToLower().ToString().Contains(txt_MaUV.Text.ToLower().ToString()) == true)
+                            if (pChucVuUV.ToLower().ToString().Contains(txt_ChucVu.Text.ToLower().ToString()) == true && pTenUV.ToLower().ToString().Contains(txt_HoTenUV.Text.ToLower().ToString()) == true)
                                 listQLNSSearch.Add(usercotrol);
                         }
                     }
+
                     sapxep(listQLNSSearch);
                 }
                 else
                 {
-
-                    if (txt_HoTenUV.Text.Trim().Length > 0)
+                    if (txt_MaUV.Text.Trim().Length > 0 && txt_ChucVu.Text.Trim().Length > 0)
                     {
                         listQLNSSearch.Clear();
-                        
+
                         foreach (DataRow dataRow in dataSetQLNS.HOSOTUYENDUNG)
                         {
                             if (kiemtratrungMaUngVien(dataRow["MAUNGVIEN"].ToString()) == true)
@@ -207,15 +207,114 @@ namespace QuanLy_NhanSu
                                 string pEMailUV = dataRow["EMAIL"].ToString();
                                 string pChucVuUV = dataRow["VITRITUYENDUNG"].ToString();
                                 UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV, loadhinh(pMaUV));
-                                if (pTenUV.ToLower().ToString().Contains(txt_HoTenUV.Text.ToLower().ToString()) == true)
+                                if (pMaUV.ToLower().ToString().Contains(txt_MaUV.Text.ToLower().ToString()) == true && pChucVuUV.ToLower().ToString().Contains(txt_ChucVu.Text.ToLower().ToString()) == true)
                                     listQLNSSearch.Add(usercotrol);
                             }
                         }
+
                         sapxep(listQLNSSearch);
                     }
                     else
                     {
-                        sapxep(listQLNS);
+                        if (txt_MaUV.Text.Trim().Length > 0 && txt_HoTenUV.Text.Trim().Length > 0)
+                        {
+                            listQLNSSearch.Clear();
+
+                            foreach (DataRow dataRow in dataSetQLNS.HOSOTUYENDUNG)
+                            {
+                                if (kiemtratrungMaUngVien(dataRow["MAUNGVIEN"].ToString()) == true)
+                                {
+                                    string pMaUV = dataRow["MAUNGVIEN"].ToString();
+                                    string pTenUV = dataRow["HOTEN"].ToString();
+                                    string pNgayUV = dataRow["NGAYSINH"].ToString().Split(' ')[0].ToString();
+                                    string pSDTUV = dataRow["DIENTHOAI"].ToString();
+                                    string pEMailUV = dataRow["EMAIL"].ToString();
+                                    string pChucVuUV = dataRow["VITRITUYENDUNG"].ToString();
+                                    UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV, loadhinh(pMaUV));
+                                    if (pMaUV.ToLower().ToString().Contains(txt_MaUV.Text.ToLower().ToString()) == true && pTenUV.ToLower().ToString().Contains(txt_HoTenUV.Text.ToLower().ToString()) == true)
+                                        listQLNSSearch.Add(usercotrol);
+                                }
+                            }
+
+                            sapxep(listQLNSSearch);
+                        }
+                        else
+                        {
+                            if (txt_MaUV.Text.Trim().Length > 0)
+                            {
+                                listQLNSSearch.Clear();
+
+                                foreach (DataRow dataRow in dataSetQLNS.HOSOTUYENDUNG)
+                                {
+                                    if (kiemtratrungMaUngVien(dataRow["MAUNGVIEN"].ToString()) == true)
+                                    {
+                                        string pMaUV = dataRow["MAUNGVIEN"].ToString();
+                                        string pTenUV = dataRow["HOTEN"].ToString();
+                                        string pNgayUV = dataRow["NGAYSINH"].ToString().Split(' ')[0].ToString();
+                                        string pSDTUV = dataRow["DIENTHOAI"].ToString();
+                                        string pEMailUV = dataRow["EMAIL"].ToString();
+                                        string pChucVuUV = dataRow["VITRITUYENDUNG"].ToString();
+                                        UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV, loadhinh(pMaUV));
+                                        if (pMaUV.ToLower().ToString().Contains(txt_MaUV.Text.ToLower().ToString()) == true)
+                                            listQLNSSearch.Add(usercotrol);
+                                    }
+                                }
+                                sapxep(listQLNSSearch);
+                            }
+                            else
+                            {
+
+                                if (txt_HoTenUV.Text.Trim().Length > 0)
+                                {
+                                    listQLNSSearch.Clear();
+
+                                    foreach (DataRow dataRow in dataSetQLNS.HOSOTUYENDUNG)
+                                    {
+                                        if (kiemtratrungMaUngVien(dataRow["MAUNGVIEN"].ToString()) == true)
+                                        {
+                                            string pMaUV = dataRow["MAUNGVIEN"].ToString();
+                                            string pTenUV = dataRow["HOTEN"].ToString();
+                                            string pNgayUV = dataRow["NGAYSINH"].ToString().Split(' ')[0].ToString();
+                                            string pSDTUV = dataRow["DIENTHOAI"].ToString();
+                                            string pEMailUV = dataRow["EMAIL"].ToString();
+                                            string pChucVuUV = dataRow["VITRITUYENDUNG"].ToString();
+                                            UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV, loadhinh(pMaUV));
+                                            if (pTenUV.ToLower().ToString().Contains(txt_HoTenUV.Text.ToLower().ToString()) == true)
+                                                listQLNSSearch.Add(usercotrol);
+                                        }
+                                    }
+                                    sapxep(listQLNSSearch);
+                                }
+                                else
+                                {
+                                    if (txt_ChucVu.Text.Trim().Length > 0)
+                                    {
+                                        listQLNSSearch.Clear();
+
+                                        foreach (DataRow dataRow in dataSetQLNS.HOSOTUYENDUNG)
+                                        {
+                                            if (kiemtratrungMaUngVien(dataRow["MAUNGVIEN"].ToString()) == true)
+                                            {
+                                                string pMaUV = dataRow["MAUNGVIEN"].ToString();
+                                                string pTenUV = dataRow["HOTEN"].ToString();
+                                                string pNgayUV = dataRow["NGAYSINH"].ToString().Split(' ')[0].ToString();
+                                                string pSDTUV = dataRow["DIENTHOAI"].ToString();
+                                                string pEMailUV = dataRow["EMAIL"].ToString();
+                                                string pChucVuUV = dataRow["VITRITUYENDUNG"].ToString();
+                                                UserControl_Dong_UngVien usercotrol = new UserControl_Dong_UngVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV, loadhinh(pMaUV));
+                                                if (pChucVuUV.ToLower().ToString().Contains(txt_ChucVu.Text.ToLower().ToString()) == true)
+                                                    listQLNSSearch.Add(usercotrol);
+                                            }
+                                        }
+                                        sapxep(listQLNSSearch);
+                                    }
+                                    else
+                                    {
+                                        sapxep(listQLNS);
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -287,5 +386,7 @@ namespace QuanLy_NhanSu
             load();
             Properties.Settings.Default.controldongclick = null;
         }
+
+      
     }
 }

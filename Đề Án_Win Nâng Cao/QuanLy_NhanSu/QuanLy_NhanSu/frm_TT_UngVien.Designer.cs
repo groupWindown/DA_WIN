@@ -34,12 +34,12 @@
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.panel_TT_UngVien = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_XoaUV = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txt_MaUV = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
+            this.txt_ChucVu = new System.Windows.Forms.TextBox();
             this.txt_HoTenUV = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.btn_ThemUV = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -163,7 +163,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btn_XoaUV);
             this.panel1.Controls.Add(this.groupBox5);
             this.panel1.Controls.Add(this.btn_ThemUV);
             this.panel1.Controls.Add(this.label1);
@@ -173,27 +172,18 @@
             this.panel1.Size = new System.Drawing.Size(348, 600);
             this.panel1.TabIndex = 59;
             // 
-            // btn_XoaUV
-            // 
-            this.btn_XoaUV.Location = new System.Drawing.Point(199, 212);
-            this.btn_XoaUV.Name = "btn_XoaUV";
-            this.btn_XoaUV.Size = new System.Drawing.Size(130, 28);
-            this.btn_XoaUV.TabIndex = 16;
-            this.btn_XoaUV.Text = "Xóa ứng viên";
-            this.btn_XoaUV.UseVisualStyleBackColor = true;
-            this.btn_XoaUV.Click += new System.EventHandler(this.btn_XoaUV_Click);
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.txt_MaUV);
             this.groupBox5.Controls.Add(this.label48);
+            this.groupBox5.Controls.Add(this.txt_ChucVu);
             this.groupBox5.Controls.Add(this.txt_HoTenUV);
-            this.groupBox5.Controls.Add(this.button6);
+            this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Controls.Add(this.label50);
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(12, 54);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(330, 130);
+            this.groupBox5.Size = new System.Drawing.Size(330, 177);
             this.groupBox5.TabIndex = 57;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Tìm kiếm nâng cao";
@@ -216,30 +206,37 @@
             this.label48.TabIndex = 8;
             this.label48.Text = "Mã ứng viên";
             // 
+            // txt_ChucVu
+            // 
+            this.txt_ChucVu.Location = new System.Drawing.Point(98, 122);
+            this.txt_ChucVu.Multiline = true;
+            this.txt_ChucVu.Name = "txt_ChucVu";
+            this.txt_ChucVu.Size = new System.Drawing.Size(219, 27);
+            this.txt_ChucVu.TabIndex = 1;
+            this.txt_ChucVu.TextChanged += new System.EventHandler(this.txt_MaUV_TextChanged);
+            // 
             // txt_HoTenUV
             // 
-            this.txt_HoTenUV.Location = new System.Drawing.Point(98, 72);
+            this.txt_HoTenUV.Location = new System.Drawing.Point(98, 77);
             this.txt_HoTenUV.Multiline = true;
             this.txt_HoTenUV.Name = "txt_HoTenUV";
             this.txt_HoTenUV.Size = new System.Drawing.Size(219, 27);
             this.txt_HoTenUV.TabIndex = 1;
             this.txt_HoTenUV.TextChanged += new System.EventHandler(this.txt_MaUV_TextChanged);
             // 
-            // button6
+            // label5
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(145, 72);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(69, 28);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Search";
-            this.button6.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 125);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 19);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Chức Vụ";
             // 
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(7, 75);
+            this.label50.Location = new System.Drawing.Point(7, 77);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(50, 19);
             this.label50.TabIndex = 0;
@@ -247,7 +244,7 @@
             // 
             // btn_ThemUV
             // 
-            this.btn_ThemUV.Location = new System.Drawing.Point(23, 212);
+            this.btn_ThemUV.Location = new System.Drawing.Point(205, 237);
             this.btn_ThemUV.Name = "btn_ThemUV";
             this.btn_ThemUV.Size = new System.Drawing.Size(124, 28);
             this.btn_ThemUV.TabIndex = 15;
@@ -842,10 +839,8 @@
         private System.Windows.Forms.TextBox txt_MaUV;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TextBox txt_HoTenUV;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_XoaUV;
         private DataSetQLNS dataSetQLNS;
         private System.Windows.Forms.BindingSource hOSOTUYENDUNGBindingSource;
         private DataSetQLNSTableAdapters.HOSOTUYENDUNGTableAdapter hOSOTUYENDUNGTableAdapter;
@@ -863,5 +858,7 @@
         private DataSetQLNSTableAdapters.CHUYENMONTableAdapter cHUYENMONTableAdapter;
         private System.Windows.Forms.BindingSource nGOAINGUBindingSource;
         private DataSetQLNSTableAdapters.NGOAINGUTableAdapter nGOAINGUTableAdapter;
+        private System.Windows.Forms.TextBox txt_ChucVu;
+        private System.Windows.Forms.Label label5;
     }
 }

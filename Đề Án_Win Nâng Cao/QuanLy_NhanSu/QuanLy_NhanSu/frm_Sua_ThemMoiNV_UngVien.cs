@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Columns;
+using DevExpress.XtraBars;
 
 namespace QuanLy_NhanSu
 {
@@ -24,6 +25,10 @@ namespace QuanLy_NhanSu
 
         private void frm_Sua_ThemMoiNV_UngVien_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataSetQLNS.TRINHDOTINHOC' table. You can move, or remove it, as needed.
+            this.tRINHDOTINHOCTableAdapter.Fill(this.dataSetQLNS.TRINHDOTINHOC);
+            // TODO: This line of code loads data into the 'dataSetQLNS.TRINHDOHOCVAN' table. You can move, or remove it, as needed.
+            this.tRINHDOHOCVANTableAdapter.Fill(this.dataSetQLNS.TRINHDOHOCVAN);
             // TODO: This line of code loads data into the 'dataSetQLNS.PHONGBAN' table. You can move, or remove it, as needed.
             this.pHONGBANTableAdapter.Fill(this.dataSetQLNS.PHONGBAN);
             // TODO: This line of code loads data into the 'dataSetQLNS.CHUCVU' table. You can move, or remove it, as needed.
@@ -137,8 +142,8 @@ namespace QuanLy_NhanSu
             nGAYTUYENDUNGDateEdit.Text = data.NGAYTUYENDUNG.ToString().Split(' ')[0].ToString();
             vITRITUYENDUNGTextEdit.Text = data.VITRITUYENDUNG;
             hINHTHUCTUYENDUNGTextEdit.Text = data.HINHTHUCTUYENDUNG;
-            mATRINHDOHOCVANTextEdit.Text = data.MATRINHDOHOCVAN;
-            mATRINHDOTINHOCTextEdit.Text = data.MATRINHDOTINHOC;
+            tRINHDOHOCVANComboBox.Text =dataSetQLNS.TRINHDOHOCVAN.FindByMATRINHDOHOCVAN( data.MATRINHDOHOCVAN).TENTRINHDOHOCVAN.ToString();
+            tRINHDOTINHOCComboBox.Text = dataSetQLNS.TRINHDOTINHOC.FindByMATRINHDOTINHOC( data.MATRINHDOTINHOC).TENTRINHDOTINHOC.ToString();
 
             hINHANHTableAdapter.Fill(dataSetQLNS.HINHANH);
 
@@ -241,6 +246,8 @@ namespace QuanLy_NhanSu
 
 
                         MessageBox.Show("Nhân viên " + nhanvien + " vừa được tạo thành công");
+
+                        this.Close();
                     }
                     else
                     {
@@ -257,9 +264,26 @@ namespace QuanLy_NhanSu
                 {
                     insertKQTD();
                     MessageBox.Show("Lưu thành công");
+                    
+                    
+                    this.Close(); 
                 }
                 catch
                 {
+                }
+            }
+        }
+
+        private void refreshPanel()
+        {
+            foreach (System.Windows.Forms.Control ctrl in Program.frmMain.Controls)
+            {
+                if (ctrl.GetType() == typeof(System.Windows.Forms.Panel))
+                {
+                    ctrl.Controls.Clear();
+                    frm_TT_UngVien frm = new frm_TT_UngVien();
+                    ctrl.Controls.Add(frm);
+
                 }
             }
         }
@@ -426,12 +450,12 @@ namespace QuanLy_NhanSu
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            if (qUOCTICHComboBox.SelectedValue != null && dANTOCComboBox.SelectedValue != null && tONGIAOComboBox.SelectedValue != null)
+            if (qUOCTICHComboBox.SelectedValue != null && dANTOCComboBox.SelectedValue != null && tONGIAOComboBox.SelectedValue != null && tRINHDOTINHOCComboBox.SelectedValue != null && tRINHDOHOCVANComboBox.SelectedValue != null)
             {
                 //luu hinh anh
                 insertHinhAnh();
                 //update du lieu cua ung vien
-                hOSOTUYENDUNGTableAdapter.Update(mAUNGVIENTextEdit.Text, dANTOCComboBox.SelectedValue.ToString(), tONGIAOComboBox.SelectedValue.ToString(), qUOCTICHComboBox.SelectedValue.ToString(), hOTENTextEdit.Text, cbo_GioiTinh.Text, nGAYSINHDateEdit.DateTime, nOISINHTextEdit.Text, cMNDTextEdit.Text, nGAYCAPDateEdit.DateTime, nOICAPTextEdit.Text, qUEQUANTextEdit.Text, dIACHITHUONGTRUTextEdit.Text, nOIOHIENTAITextEdit.Text, dIENTHOAITextEdit.Text, eMAILTextEdit.Text, tINHTRANGHONNHANTextEdit.Text, dIENUUTIENTextEdit.Text, tINHTRANGSUCKHOETextEdit.Text, nGAYTUYENDUNGDateEdit.DateTime, hINHTHUCTUYENDUNGTextEdit.Text, vITRITUYENDUNGTextEdit.Text, mATRINHDOHOCVANTextEdit.Text, mATRINHDOTINHOCTextEdit.Text, mAUNGVIENTextEdit.Text, dANTOCComboBox.SelectedValue.ToString(), tONGIAOComboBox.SelectedValue.ToString(), qUOCTICHComboBox.SelectedValue.ToString(), hOTENTextEdit.Text, cbo_GioiTinh.Text, nGAYSINHDateEdit.DateTime, nOISINHTextEdit.Text, cMNDTextEdit.Text, nGAYCAPDateEdit.DateTime, nOICAPTextEdit.Text, qUEQUANTextEdit.Text, dIACHITHUONGTRUTextEdit.Text, nOIOHIENTAITextEdit.Text, dIENTHOAITextEdit.Text, eMAILTextEdit.Text, tINHTRANGHONNHANTextEdit.Text, dIENUUTIENTextEdit.Text, tINHTRANGSUCKHOETextEdit.Text, nGAYTUYENDUNGDateEdit.DateTime, hINHTHUCTUYENDUNGTextEdit.Text, vITRITUYENDUNGTextEdit.Text, mATRINHDOHOCVANTextEdit.Text, mATRINHDOTINHOCTextEdit.Text);
+                hOSOTUYENDUNGTableAdapter.Update(mAUNGVIENTextEdit.Text, dANTOCComboBox.SelectedValue.ToString(), tONGIAOComboBox.SelectedValue.ToString(), qUOCTICHComboBox.SelectedValue.ToString(), hOTENTextEdit.Text, cbo_GioiTinh.Text, nGAYSINHDateEdit.DateTime, nOISINHTextEdit.Text, cMNDTextEdit.Text, nGAYCAPDateEdit.DateTime, nOICAPTextEdit.Text, qUEQUANTextEdit.Text, dIACHITHUONGTRUTextEdit.Text, nOIOHIENTAITextEdit.Text, dIENTHOAITextEdit.Text, eMAILTextEdit.Text, tINHTRANGHONNHANTextEdit.Text, dIENUUTIENTextEdit.Text, tINHTRANGSUCKHOETextEdit.Text, nGAYTUYENDUNGDateEdit.DateTime, hINHTHUCTUYENDUNGTextEdit.Text, vITRITUYENDUNGTextEdit.Text, tRINHDOHOCVANComboBox.Text, tRINHDOTINHOCComboBox.Text, mAUNGVIENTextEdit.Text, dANTOCComboBox.SelectedValue.ToString(), tONGIAOComboBox.SelectedValue.ToString(), qUOCTICHComboBox.SelectedValue.ToString(), hOTENTextEdit.Text, cbo_GioiTinh.Text, nGAYSINHDateEdit.DateTime, nOISINHTextEdit.Text, cMNDTextEdit.Text, nGAYCAPDateEdit.DateTime, nOICAPTextEdit.Text, qUEQUANTextEdit.Text, dIACHITHUONGTRUTextEdit.Text, nOIOHIENTAITextEdit.Text, dIENTHOAITextEdit.Text, eMAILTextEdit.Text, tINHTRANGHONNHANTextEdit.Text, dIENUUTIENTextEdit.Text, tINHTRANGSUCKHOETextEdit.Text, nGAYTUYENDUNGDateEdit.DateTime, hINHTHUCTUYENDUNGTextEdit.Text, vITRITUYENDUNGTextEdit.Text, tRINHDOHOCVANComboBox.Text, tRINHDOTINHOCComboBox.Text);
                 //update chuyen mon
                 for(int i=0;i<gridView1.RowCount;i++)
                 {
@@ -487,6 +511,20 @@ namespace QuanLy_NhanSu
 
                 MessageBox.Show("Sửa thành công");
             }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đủ Trình độ Học Vấn,Tin học,Quốc tịch,Dân tộc,Tôn giáo");
+            }
+        }
+
+        private void frm_Sua_ThemMoiNV_UngVien_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            refreshPanel();
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
         }
         //DataRow row = dataTable.NewRow();
         //row["Ten"] = gridView1.GetRowCellValue(i, colMACHUYENMON).ToString();

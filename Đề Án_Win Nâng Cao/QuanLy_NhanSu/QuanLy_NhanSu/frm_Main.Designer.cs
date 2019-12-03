@@ -156,7 +156,7 @@
             this.barButtonItem_HoSoUngVien.Name = "barButtonItem_HoSoUngVien";
             this.barButtonItem_HoSoUngVien.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
-            this.barButtonItem_HoSoUngVien.Tag = "";
+            this.barButtonItem_HoSoUngVien.Tag = "100000";
             this.barButtonItem_HoSoUngVien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_HoSoUngVien_ItemClick);
             // 
             // barButtonItem_ChamCong

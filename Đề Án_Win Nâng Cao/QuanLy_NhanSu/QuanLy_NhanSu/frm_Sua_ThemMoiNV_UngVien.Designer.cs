@@ -64,8 +64,6 @@
             this.nGAYTUYENDUNGDateEdit = new DevExpress.XtraEditors.DateEdit();
             this.hINHTHUCTUYENDUNGTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.vITRITUYENDUNGTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.mATRINHDOHOCVANTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.mATRINHDOTINHOCTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gridControlCM = new DevExpress.XtraGrid.GridControl();
             this.cHUYENMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -141,6 +139,12 @@
             this.nHANVIENTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NHANVIENTableAdapter();
             this.cHUCVUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHUCVUTableAdapter();
             this.pHONGBANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.PHONGBANTableAdapter();
+            this.tRINHDOHOCVANBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tRINHDOHOCVANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOHOCVANTableAdapter();
+            this.tRINHDOHOCVANComboBox = new System.Windows.Forms.ComboBox();
+            this.tRINHDOTINHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tRINHDOTINHOCTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOTINHOCTableAdapter();
+            this.tRINHDOTINHOCComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
@@ -173,8 +177,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nGAYTUYENDUNGDateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hINHTHUCTUYENDUNGTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vITRITUYENDUNGTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOHOCVANTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOTINHOCTextEdit.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlCM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).BeginInit();
@@ -194,10 +196,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.hOPDONGLAODONGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETHOPDONGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.tRINHDOTINHOCComboBox);
+            this.groupBox3.Controls.Add(this.tRINHDOHOCVANComboBox);
             this.groupBox3.Controls.Add(this.qUOCTICHComboBox);
             this.groupBox3.Controls.Add(this.groupBox4);
             this.groupBox3.Controls.Add(this.dANTOCComboBox);
@@ -222,8 +228,6 @@
             this.groupBox3.Controls.Add(this.nGAYTUYENDUNGDateEdit);
             this.groupBox3.Controls.Add(this.hINHTHUCTUYENDUNGTextEdit);
             this.groupBox3.Controls.Add(this.vITRITUYENDUNGTextEdit);
-            this.groupBox3.Controls.Add(this.mATRINHDOHOCVANTextEdit);
-            this.groupBox3.Controls.Add(this.mATRINHDOTINHOCTextEdit);
             this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Controls.Add(this.btn_ThemNV);
             this.groupBox3.Controls.Add(this.groupBox_ChiTietHopDong);
@@ -262,6 +266,7 @@
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin ứng viên";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // qUOCTICHComboBox
             // 
@@ -588,26 +593,6 @@
             this.vITRITUYENDUNGTextEdit.Properties.Appearance.Options.UseFont = true;
             this.vITRITUYENDUNGTextEdit.Size = new System.Drawing.Size(175, 26);
             this.vITRITUYENDUNGTextEdit.TabIndex = 131;
-            // 
-            // mATRINHDOHOCVANTextEdit
-            // 
-            this.mATRINHDOHOCVANTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "MATRINHDOHOCVAN", true));
-            this.mATRINHDOHOCVANTextEdit.Location = new System.Drawing.Point(689, 253);
-            this.mATRINHDOHOCVANTextEdit.Name = "mATRINHDOHOCVANTextEdit";
-            this.mATRINHDOHOCVANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mATRINHDOHOCVANTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mATRINHDOHOCVANTextEdit.Size = new System.Drawing.Size(175, 26);
-            this.mATRINHDOHOCVANTextEdit.TabIndex = 133;
-            // 
-            // mATRINHDOTINHOCTextEdit
-            // 
-            this.mATRINHDOTINHOCTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "MATRINHDOTINHOC", true));
-            this.mATRINHDOTINHOCTextEdit.Location = new System.Drawing.Point(689, 297);
-            this.mATRINHDOTINHOCTextEdit.Name = "mATRINHDOTINHOCTextEdit";
-            this.mATRINHDOTINHOCTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mATRINHDOTINHOCTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mATRINHDOTINHOCTextEdit.Size = new System.Drawing.Size(175, 26);
-            this.mATRINHDOTINHOCTextEdit.TabIndex = 135;
             // 
             // groupBox1
             // 
@@ -1213,6 +1198,46 @@
             // 
             this.pHONGBANTableAdapter.ClearBeforeFill = true;
             // 
+            // tRINHDOHOCVANBindingSource
+            // 
+            this.tRINHDOHOCVANBindingSource.DataMember = "TRINHDOHOCVAN";
+            this.tRINHDOHOCVANBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tRINHDOHOCVANTableAdapter
+            // 
+            this.tRINHDOHOCVANTableAdapter.ClearBeforeFill = true;
+            // 
+            // tRINHDOHOCVANComboBox
+            // 
+            this.tRINHDOHOCVANComboBox.DataSource = this.tRINHDOHOCVANBindingSource;
+            this.tRINHDOHOCVANComboBox.DisplayMember = "TENTRINHDOHOCVAN";
+            this.tRINHDOHOCVANComboBox.FormattingEnabled = true;
+            this.tRINHDOHOCVANComboBox.Location = new System.Drawing.Point(689, 254);
+            this.tRINHDOHOCVANComboBox.Name = "tRINHDOHOCVANComboBox";
+            this.tRINHDOHOCVANComboBox.Size = new System.Drawing.Size(175, 27);
+            this.tRINHDOHOCVANComboBox.TabIndex = 136;
+            this.tRINHDOHOCVANComboBox.ValueMember = "MATRINHDOHOCVAN";
+            // 
+            // tRINHDOTINHOCBindingSource
+            // 
+            this.tRINHDOTINHOCBindingSource.DataMember = "TRINHDOTINHOC";
+            this.tRINHDOTINHOCBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tRINHDOTINHOCTableAdapter
+            // 
+            this.tRINHDOTINHOCTableAdapter.ClearBeforeFill = true;
+            // 
+            // tRINHDOTINHOCComboBox
+            // 
+            this.tRINHDOTINHOCComboBox.DataSource = this.tRINHDOTINHOCBindingSource;
+            this.tRINHDOTINHOCComboBox.DisplayMember = "TENTRINHDOTINHOC";
+            this.tRINHDOTINHOCComboBox.FormattingEnabled = true;
+            this.tRINHDOTINHOCComboBox.Location = new System.Drawing.Point(689, 298);
+            this.tRINHDOTINHOCComboBox.Name = "tRINHDOTINHOCComboBox";
+            this.tRINHDOTINHOCComboBox.Size = new System.Drawing.Size(175, 27);
+            this.tRINHDOTINHOCComboBox.TabIndex = 136;
+            this.tRINHDOTINHOCComboBox.ValueMember = "MATRINHDOTINHOC";
+            // 
             // frm_Sua_ThemMoiNV_UngVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1223,6 +1248,7 @@
             this.Name = "frm_Sua_ThemMoiNV_UngVien";
             this.Text = "frm_Sua_ThemMoiNV_UngVien";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_Sua_ThemMoiNV_UngVien_FormClosed);
             this.Load += new System.EventHandler(this.frm_Sua_ThemMoiNV_UngVien_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -1257,8 +1283,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nGAYTUYENDUNGDateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hINHTHUCTUYENDUNGTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vITRITUYENDUNGTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOHOCVANTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOTINHOCTextEdit.Properties)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlCM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).EndInit();
@@ -1279,6 +1303,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.hOPDONGLAODONGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETHOPDONGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1355,8 +1381,6 @@
         private DevExpress.XtraEditors.DateEdit nGAYTUYENDUNGDateEdit;
         private DevExpress.XtraEditors.TextEdit hINHTHUCTUYENDUNGTextEdit;
         private DevExpress.XtraEditors.TextEdit vITRITUYENDUNGTextEdit;
-        private DevExpress.XtraEditors.TextEdit mATRINHDOHOCVANTextEdit;
-        private DevExpress.XtraEditors.TextEdit mATRINHDOTINHOCTextEdit;
         private System.Windows.Forms.ComboBox cbo_GioiTinh;
         private System.Windows.Forms.BindingSource hOSOTUYENDUNGBindingSource1;
         private DevExpress.XtraEditors.DateEdit dateEdit_NgayBatDau;
@@ -1397,5 +1421,11 @@
         private System.Windows.Forms.BindingSource pHONGBANBindingSource;
         private DataSetQLNSTableAdapters.PHONGBANTableAdapter pHONGBANTableAdapter;
         private System.Windows.Forms.ComboBox pHONGBANComboBox;
+        private System.Windows.Forms.BindingSource tRINHDOHOCVANBindingSource;
+        private DataSetQLNSTableAdapters.TRINHDOHOCVANTableAdapter tRINHDOHOCVANTableAdapter;
+        private System.Windows.Forms.ComboBox tRINHDOHOCVANComboBox;
+        private System.Windows.Forms.BindingSource tRINHDOTINHOCBindingSource;
+        private DataSetQLNSTableAdapters.TRINHDOTINHOCTableAdapter tRINHDOTINHOCTableAdapter;
+        private System.Windows.Forms.ComboBox tRINHDOTINHOCComboBox;
     }
 }

@@ -8,7 +8,7 @@ namespace QuanLy_NhanSu
 {
     public static class Program
     {
-
+        public static frm_TT_UngVien frmTTUV;
         public static frm_DangNhap frmDangNhap;
         public static frm_Main frmMain;
 
