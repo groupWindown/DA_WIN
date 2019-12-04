@@ -39,6 +39,8 @@ namespace QuanLy_NhanSu
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataSetQLNS.NHANVIEN' table. You can move, or remove it, as needed.
+            this.nHANVIENTableAdapter.Fill(this.dataSetQLNS.NHANVIEN);
             ////load screen 
             //DataTable dt = GetNhomNguoiDung(Properties.Settings.Default.user);
 
@@ -50,8 +52,9 @@ namespace QuanLy_NhanSu
             //        FindMenuPhanQuyen(this.ribbonPage_TacVu.Groups, mh[0].ToString(), Convert.ToBoolean(mh[1].ToString()));
             //    }
             //}
-
-
+            nHANVIENTableAdapter.Fill(dataSetQLNS.NHANVIEN);
+            LabelTenNV.Text = dataSetQLNS.NHANVIEN.FindByMANV(Properties.Settings.Default.user).HOTEN.ToString();
+            labelChucVu.Text= dataSetQLNS.NHANVIEN.FindByMANV(Properties.Settings.Default.user).MACHUCVU.ToString();
 
 
 
@@ -177,6 +180,19 @@ namespace QuanLy_NhanSu
 
         private void panel_Main_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void ribbonControl_Main_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nHANVIENBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.nHANVIENBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dataSetQLNS);
 
         }
         //private bool CheckAllMenuChildVisible(RibbonPageGroupCollection mnuItems)

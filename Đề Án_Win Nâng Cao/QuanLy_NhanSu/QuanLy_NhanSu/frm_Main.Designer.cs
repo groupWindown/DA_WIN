@@ -64,12 +64,20 @@
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.ribbonMiniToolbar2 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.LabelTenNV = new System.Windows.Forms.Label();
+            this.labelChucVu = new System.Windows.Forms.Label();
+            this.dataSetQLNS = new QuanLy_NhanSu.DataSetQLNS();
+            this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nHANVIENTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NHANVIENTableAdapter();
+            this.tableAdapterManager = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl_Main)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl_Main
@@ -103,6 +111,8 @@
             this.repositoryItemPictureEdit2,
             this.repositoryItemImageComboBox1});
             this.ribbonControl_Main.Size = new System.Drawing.Size(925, 141);
+            this.ribbonControl_Main.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Above;
+            this.ribbonControl_Main.Click += new System.EventHandler(this.ribbonControl_Main_Click);
             // 
             // barCheckItem1
             // 
@@ -122,7 +132,7 @@
             // 
             // barButtonItem_DoiMatKhau
             // 
-            this.barButtonItem_DoiMatKhau.Caption = "Đổi mật khẩu";
+            this.barButtonItem_DoiMatKhau.Caption = "Đổi mật  khẩu";
             this.barButtonItem_DoiMatKhau.Id = 11;
             this.barButtonItem_DoiMatKhau.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem_DoiMatKhau.ImageOptions.Image")));
             this.barButtonItem_DoiMatKhau.Name = "barButtonItem_DoiMatKhau";
@@ -150,7 +160,7 @@
             // 
             // barButtonItem_HoSoUngVien
             // 
-            this.barButtonItem_HoSoUngVien.Caption = "Hồ sơ úng viên";
+            this.barButtonItem_HoSoUngVien.Caption = "Hồ sơ ứng viên";
             this.barButtonItem_HoSoUngVien.Id = 14;
             this.barButtonItem_HoSoUngVien.ImageOptions.Image = global::QuanLy_NhanSu.Properties.Resources.users_vector_icon_png_260862;
             this.barButtonItem_HoSoUngVien.Name = "barButtonItem_HoSoUngVien";
@@ -266,6 +276,7 @@
             // 
             // ribbonPageGroup5
             // 
+            this.ribbonPageGroup5.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem_TuongTacDuLieu);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Tag = "MH06";
@@ -351,13 +362,93 @@
             this.barButtonItem14.Id = 23;
             this.barButtonItem14.Name = "barButtonItem14";
             // 
+            // LabelTenNV
+            // 
+            this.LabelTenNV.AutoSize = true;
+            this.LabelTenNV.BackColor = System.Drawing.Color.White;
+            this.LabelTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTenNV.Location = new System.Drawing.Point(348, 68);
+            this.LabelTenNV.Name = "LabelTenNV";
+            this.LabelTenNV.Size = new System.Drawing.Size(16, 18);
+            this.LabelTenNV.TabIndex = 5;
+            this.LabelTenNV.Text = "a";
+            // 
+            // labelChucVu
+            // 
+            this.labelChucVu.AutoSize = true;
+            this.labelChucVu.BackColor = System.Drawing.Color.White;
+            this.labelChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChucVu.Location = new System.Drawing.Point(348, 95);
+            this.labelChucVu.Name = "labelChucVu";
+            this.labelChucVu.Size = new System.Drawing.Size(16, 18);
+            this.labelChucVu.TabIndex = 5;
+            this.labelChucVu.Text = "a";
+            // 
+            // dataSetQLNS
+            // 
+            this.dataSetQLNS.DataSetName = "DataSetQLNS";
+            this.dataSetQLNS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nHANVIENBindingSource
+            // 
+            this.nHANVIENBindingSource.DataMember = "NHANVIEN";
+            this.nHANVIENBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // nHANVIENTableAdapter
+            // 
+            this.nHANVIENTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.BANGCHAMCONGTableAdapter = null;
+            this.tableAdapterManager.BANGTANGCATableAdapter = null;
+            this.tableAdapterManager.BANGTANGLUONGTableAdapter = null;
+            this.tableAdapterManager.BAOHIEMTableAdapter = null;
+            this.tableAdapterManager.CHITIETCHUYENMONTableAdapter = null;
+            this.tableAdapterManager.CHITIETHOPDONGTableAdapter = null;
+            this.tableAdapterManager.CHITIETKHENTHUONGTableAdapter = null;
+            this.tableAdapterManager.CHITIETNGOAINGUTableAdapter = null;
+            this.tableAdapterManager.CHUCVUTableAdapter = null;
+            this.tableAdapterManager.CHUONGTRINHDAOTAOTableAdapter = null;
+            this.tableAdapterManager.CHUYENMONTableAdapter = null;
+            this.tableAdapterManager.DANHMUCTANGCATableAdapter = null;
+            this.tableAdapterManager.DANTOCTableAdapter = null;
+            this.tableAdapterManager.DAOTAOTableAdapter = null;
+            this.tableAdapterManager.DS_KYLUATTableAdapter = null;
+            this.tableAdapterManager.HINHANHTableAdapter = null;
+            this.tableAdapterManager.HOPDONGLAODONGTableAdapter = null;
+            this.tableAdapterManager.HOSOTUYENDUNGTableAdapter = null;
+            this.tableAdapterManager.KQ_TUYENDUNGTableAdapter = null;
+            this.tableAdapterManager.LOAIKHENTHUONGTableAdapter = null;
+            this.tableAdapterManager.MANHINHTableAdapter = null;
+            this.tableAdapterManager.NGOAINGUTableAdapter = null;
+            this.tableAdapterManager.NGUOIDUNGNHOMNGUOIDUNGTableAdapter = null;
+            this.tableAdapterManager.NHANVIENTableAdapter = this.nHANVIENTableAdapter;
+            this.tableAdapterManager.NHOMNGUOIDUNGTableAdapter = null;
+            this.tableAdapterManager.PHANQUYENTableAdapter = null;
+            this.tableAdapterManager.PHONGBANTableAdapter = null;
+            this.tableAdapterManager.QUANLYKYLUATTableAdapter = null;
+            this.tableAdapterManager.QUANLYNGHIVIECTableAdapter = null;
+            this.tableAdapterManager.QUANLYTHAISANTableAdapter = null;
+            this.tableAdapterManager.QUOCTICHTableAdapter = null;
+            this.tableAdapterManager.TAIKHOANTableAdapter = null;
+            this.tableAdapterManager.TONGIAOTableAdapter = null;
+            this.tableAdapterManager.TONGLUONGTableAdapter = null;
+            this.tableAdapterManager.TRINHDOHOCVANTableAdapter = null;
+            this.tableAdapterManager.TRINHDOTINHOCTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 450);
+            this.Controls.Add(this.labelChucVu);
+            this.Controls.Add(this.LabelTenNV);
             this.Controls.Add(this.panel_Main);
             this.Controls.Add(this.ribbonControl_Main);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_Main";
             this.Text = "frm_Main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -370,6 +461,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -411,5 +504,11 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem_TuongTacDuLieu;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
+        private System.Windows.Forms.Label LabelTenNV;
+        private System.Windows.Forms.Label labelChucVu;
+        private System.Windows.Forms.BindingSource nHANVIENBindingSource;
+        private DataSetQLNS dataSetQLNS;
+        private DataSetQLNSTableAdapters.NHANVIENTableAdapter nHANVIENTableAdapter;
+        private DataSetQLNSTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

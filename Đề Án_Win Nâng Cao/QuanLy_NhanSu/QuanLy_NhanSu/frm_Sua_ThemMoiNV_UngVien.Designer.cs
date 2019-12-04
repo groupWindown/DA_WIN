@@ -29,10 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Sua_ThemMoiNV_UngVien));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tRINHDOTINHOCComboBox = new System.Windows.Forms.ComboBox();
+            this.tRINHDOTINHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetQLNS = new QuanLy_NhanSu.DataSetQLNS();
+            this.tRINHDOHOCVANComboBox = new System.Windows.Forms.ComboBox();
+            this.tRINHDOHOCVANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qUOCTICHComboBox = new System.Windows.Forms.ComboBox();
             this.qUOCTICHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSetQLNS = new QuanLy_NhanSu.DataSetQLNS();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.gridControlNN = new DevExpress.XtraGrid.GridControl();
             this.nGOAINGUBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -139,15 +144,13 @@
             this.nHANVIENTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NHANVIENTableAdapter();
             this.cHUCVUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHUCVUTableAdapter();
             this.pHONGBANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.PHONGBANTableAdapter();
-            this.tRINHDOHOCVANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tRINHDOHOCVANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOHOCVANTableAdapter();
-            this.tRINHDOHOCVANComboBox = new System.Windows.Forms.ComboBox();
-            this.tRINHDOTINHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tRINHDOTINHOCTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOTINHOCTableAdapter();
-            this.tRINHDOTINHOCComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlNN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).BeginInit();
@@ -196,8 +199,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.hOPDONGLAODONGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETHOPDONGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -268,6 +269,43 @@
             this.groupBox3.Text = "Thông tin ứng viên";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
+            // tRINHDOTINHOCComboBox
+            // 
+            this.tRINHDOTINHOCComboBox.DataSource = this.tRINHDOTINHOCBindingSource;
+            this.tRINHDOTINHOCComboBox.DisplayMember = "TENTRINHDOTINHOC";
+            this.tRINHDOTINHOCComboBox.FormattingEnabled = true;
+            this.tRINHDOTINHOCComboBox.Location = new System.Drawing.Point(689, 298);
+            this.tRINHDOTINHOCComboBox.Name = "tRINHDOTINHOCComboBox";
+            this.tRINHDOTINHOCComboBox.Size = new System.Drawing.Size(175, 27);
+            this.tRINHDOTINHOCComboBox.TabIndex = 136;
+            this.tRINHDOTINHOCComboBox.ValueMember = "MATRINHDOTINHOC";
+            // 
+            // tRINHDOTINHOCBindingSource
+            // 
+            this.tRINHDOTINHOCBindingSource.DataMember = "TRINHDOTINHOC";
+            this.tRINHDOTINHOCBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // dataSetQLNS
+            // 
+            this.dataSetQLNS.DataSetName = "DataSetQLNS";
+            this.dataSetQLNS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tRINHDOHOCVANComboBox
+            // 
+            this.tRINHDOHOCVANComboBox.DataSource = this.tRINHDOHOCVANBindingSource;
+            this.tRINHDOHOCVANComboBox.DisplayMember = "TENTRINHDOHOCVAN";
+            this.tRINHDOHOCVANComboBox.FormattingEnabled = true;
+            this.tRINHDOHOCVANComboBox.Location = new System.Drawing.Point(689, 254);
+            this.tRINHDOHOCVANComboBox.Name = "tRINHDOHOCVANComboBox";
+            this.tRINHDOHOCVANComboBox.Size = new System.Drawing.Size(175, 27);
+            this.tRINHDOHOCVANComboBox.TabIndex = 136;
+            this.tRINHDOHOCVANComboBox.ValueMember = "MATRINHDOHOCVAN";
+            // 
+            // tRINHDOHOCVANBindingSource
+            // 
+            this.tRINHDOHOCVANBindingSource.DataMember = "TRINHDOHOCVAN";
+            this.tRINHDOHOCVANBindingSource.DataSource = this.dataSetQLNS;
+            // 
             // qUOCTICHComboBox
             // 
             this.qUOCTICHComboBox.DataSource = this.qUOCTICHBindingSource;
@@ -283,11 +321,6 @@
             // 
             this.qUOCTICHBindingSource.DataMember = "QUOCTICH";
             this.qUOCTICHBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // dataSetQLNS
-            // 
-            this.dataSetQLNS.DataSetName = "DataSetQLNS";
-            this.dataSetQLNS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox4
             // 
@@ -1198,45 +1231,13 @@
             // 
             this.pHONGBANTableAdapter.ClearBeforeFill = true;
             // 
-            // tRINHDOHOCVANBindingSource
-            // 
-            this.tRINHDOHOCVANBindingSource.DataMember = "TRINHDOHOCVAN";
-            this.tRINHDOHOCVANBindingSource.DataSource = this.dataSetQLNS;
-            // 
             // tRINHDOHOCVANTableAdapter
             // 
             this.tRINHDOHOCVANTableAdapter.ClearBeforeFill = true;
             // 
-            // tRINHDOHOCVANComboBox
-            // 
-            this.tRINHDOHOCVANComboBox.DataSource = this.tRINHDOHOCVANBindingSource;
-            this.tRINHDOHOCVANComboBox.DisplayMember = "TENTRINHDOHOCVAN";
-            this.tRINHDOHOCVANComboBox.FormattingEnabled = true;
-            this.tRINHDOHOCVANComboBox.Location = new System.Drawing.Point(689, 254);
-            this.tRINHDOHOCVANComboBox.Name = "tRINHDOHOCVANComboBox";
-            this.tRINHDOHOCVANComboBox.Size = new System.Drawing.Size(175, 27);
-            this.tRINHDOHOCVANComboBox.TabIndex = 136;
-            this.tRINHDOHOCVANComboBox.ValueMember = "MATRINHDOHOCVAN";
-            // 
-            // tRINHDOTINHOCBindingSource
-            // 
-            this.tRINHDOTINHOCBindingSource.DataMember = "TRINHDOTINHOC";
-            this.tRINHDOTINHOCBindingSource.DataSource = this.dataSetQLNS;
-            // 
             // tRINHDOTINHOCTableAdapter
             // 
             this.tRINHDOTINHOCTableAdapter.ClearBeforeFill = true;
-            // 
-            // tRINHDOTINHOCComboBox
-            // 
-            this.tRINHDOTINHOCComboBox.DataSource = this.tRINHDOTINHOCBindingSource;
-            this.tRINHDOTINHOCComboBox.DisplayMember = "TENTRINHDOTINHOC";
-            this.tRINHDOTINHOCComboBox.FormattingEnabled = true;
-            this.tRINHDOTINHOCComboBox.Location = new System.Drawing.Point(689, 298);
-            this.tRINHDOTINHOCComboBox.Name = "tRINHDOTINHOCComboBox";
-            this.tRINHDOTINHOCComboBox.Size = new System.Drawing.Size(175, 27);
-            this.tRINHDOTINHOCComboBox.TabIndex = 136;
-            this.tRINHDOTINHOCComboBox.ValueMember = "MATRINHDOTINHOC";
             // 
             // frm_Sua_ThemMoiNV_UngVien
             // 
@@ -1245,6 +1246,7 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1370, 709);
             this.Controls.Add(this.groupBox3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_Sua_ThemMoiNV_UngVien";
             this.Text = "frm_Sua_ThemMoiNV_UngVien";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -1252,8 +1254,10 @@
             this.Load += new System.EventHandler(this.frm_Sua_ThemMoiNV_UngVien_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlNN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).EndInit();
@@ -1303,8 +1307,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.hOPDONGLAODONGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETHOPDONGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

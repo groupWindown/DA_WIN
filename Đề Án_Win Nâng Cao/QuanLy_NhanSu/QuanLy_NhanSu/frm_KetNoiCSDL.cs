@@ -98,7 +98,7 @@ namespace QuanLy_NhanSu
 
         private void cbb_SeverName_TextChanged(object sender, EventArgs e)
         {
-            loadDatabase();
+            
         }
         private void txt_UserName_TextChanged(object sender, EventArgs e)
         {
@@ -125,6 +125,7 @@ namespace QuanLy_NhanSu
                     cbb_SeverName.Items.Add( string.Format(@"{0}\{1}",row[table.Columns["ServerName"]], row[table.Columns["InstanceName"]]));
                 
             }
+
         }
 
         private void cbb_Database_DropDown(object sender, EventArgs e)

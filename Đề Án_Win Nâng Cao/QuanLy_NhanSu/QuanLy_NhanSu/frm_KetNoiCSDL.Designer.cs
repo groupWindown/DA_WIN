@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_KetNoiCSDL));
             this.btn_Decline = new System.Windows.Forms.Button();
             this.cbb_Database = new System.Windows.Forms.ComboBox();
             this.cbb_SeverName = new System.Windows.Forms.ComboBox();
@@ -157,6 +158,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_KetNoiCSDL";
             this.Load += new System.EventHandler(this.frm_KetNoiCSDL_Load);
             this.ResumeLayout(false);

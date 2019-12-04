@@ -34,6 +34,8 @@ namespace QuanLy_NhanSu
         {
             txt_NhapLaiMatKhau.PasswordChar = '*';
             txt_NhapMatKhau.PasswordChar = '*';
+            nHANVIENTableAdapter.Fill(dataSetQLNS.NHANVIEN);
+            labelNV.Text = dataSetQLNS.NHANVIEN.FindByMANV(Properties.Settings.Default.user).HOTEN.ToString();
         }
 
         private void btn_MatKhauMoi_Click(object sender, EventArgs e)
