@@ -270,28 +270,24 @@
             this.ribbonPageGroup6_HoSoUV.ItemLinks.Add(this.barButtonItem_HoSoUngVien);
             this.ribbonPageGroup6_HoSoUV.Name = "ribbonPageGroup6_HoSoUV";
             this.ribbonPageGroup6_HoSoUV.Tag = "MH01";
-            this.ribbonPageGroup6_HoSoUV.Visible = false;
             // 
             // ribbonPageGroup_Luong
             // 
             this.ribbonPageGroup_Luong.ItemLinks.Add(this.barButtonItem_HoSoNhanVien);
             this.ribbonPageGroup_Luong.Name = "ribbonPageGroup_Luong";
             this.ribbonPageGroup_Luong.Tag = "MH02";
-            this.ribbonPageGroup_Luong.Visible = false;
             // 
             // ribbonPageGroup_ChamCong
             // 
             this.ribbonPageGroup_ChamCong.ItemLinks.Add(this.barButtonItem_ChamCong);
             this.ribbonPageGroup_ChamCong.Name = "ribbonPageGroup_ChamCong";
             this.ribbonPageGroup_ChamCong.Tag = "MH03";
-            this.ribbonPageGroup_ChamCong.Visible = false;
             // 
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem_ThongKe);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Tag = "MH04";
-            this.ribbonPageGroup2.Visible = false;
             // 
             // ribbonPageGroup5
             // 
@@ -299,7 +295,6 @@
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem_TuongTacDuLieu);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Tag = "MH05";
-            this.ribbonPageGroup5.Visible = false;
             // 
             // ribbonPage_TroGiup
             // 

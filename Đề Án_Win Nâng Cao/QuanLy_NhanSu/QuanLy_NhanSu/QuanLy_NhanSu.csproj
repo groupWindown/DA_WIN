@@ -126,6 +126,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Background.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Background.Designer.cs">
+      <DependentUpon>Background.cs</DependentUpon>
+    </Compile>
     <Compile Include="CAUHINH.cs" />
     <Compile Include="DataSetQLNS.cs">
       <DependentUpon>DataSetQLNS.xsd</DependentUpon>
@@ -268,6 +274,9 @@
     <Compile Include="UserControl_Dong_UngVien.Designer.cs">
       <DependentUpon>UserControl_Dong_UngVien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Background.resx">
+      <DependentUpon>Background.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_ChamCong.resx">
       <DependentUpon>frm_ChamCong.cs</DependentUpon>
     </EmbeddedResource>
@@ -478,6 +487,30 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

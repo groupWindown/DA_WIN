@@ -130,6 +130,7 @@
             this.cHITIETNGOAINGUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHITIETNGOAINGUTableAdapter();
             this.cHITIETCHUYENMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cHITIETCHUYENMONTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHITIETCHUYENMONTableAdapter();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             hINHTHUCTUYENDUNGLabel = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource1)).BeginInit();
@@ -179,6 +180,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETNGOAINGUBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETCHUYENMONBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // hINHTHUCTUYENDUNGLabel
@@ -193,6 +195,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.pictureBox1);
             this.groupBox3.Controls.Add(this.tRINHDOHOCVANComboBox);
             this.groupBox3.Controls.Add(this.tRINHDOTINHOCComboBox);
             this.groupBox3.Controls.Add(this.pictureEdit1);
@@ -301,7 +304,7 @@
             this.pictureEdit1.Location = new System.Drawing.Point(652, 143);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(139, 178);
+            this.pictureEdit1.Size = new System.Drawing.Size(149, 180);
             this.pictureEdit1.TabIndex = 132;
             // 
             // txt_MaNV
@@ -1092,6 +1095,16 @@
             // 
             this.cHITIETCHUYENMONTableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QuanLy_NhanSu.Properties.Resources.ic_x1;
+            this.pictureBox1.Location = new System.Drawing.Point(807, 143);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(17, 19);
+            this.pictureBox1.TabIndex = 138;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frm_SuaTTNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1153,6 +1166,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETNGOAINGUBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETCHUYENMONBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1258,5 +1272,6 @@
         private DataSetQLNSTableAdapters.CHITIETNGOAINGUTableAdapter cHITIETNGOAINGUTableAdapter;
         private System.Windows.Forms.BindingSource cHITIETCHUYENMONBindingSource;
         private DataSetQLNSTableAdapters.CHITIETCHUYENMONTableAdapter cHITIETCHUYENMONTableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

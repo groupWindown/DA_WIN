@@ -74,8 +74,8 @@ namespace QuanLy_NhanSu
                 labelChucVu.Text = "Admin nè";
 
             }
-
-
+            Background frm = new Background();
+            panel_Main.Controls.Add(frm);
 
         }
 

@@ -109,6 +109,8 @@
             this.tONGIAOTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TONGIAOTableAdapter();
             this.tRINHDOHOCVANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOHOCVANTableAdapter();
             this.tRINHDOTINHOCTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOTINHOCTableAdapter();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.xtraOpenFileDialog1 = new DevExpress.XtraEditors.XtraOpenFileDialog(this.components);
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tONGIAOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
@@ -147,10 +149,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlNN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewNN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.pictureBox1);
             this.groupBox3.Controls.Add(this.tONGIAOComboBox);
             this.groupBox3.Controls.Add(this.qUOCTICHComboBox);
             this.groupBox3.Controls.Add(this.dANTOCComboBox);
@@ -517,8 +521,9 @@
             this.pictureEdit1.Location = new System.Drawing.Point(686, 37);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(136, 180);
+            this.pictureEdit1.Size = new System.Drawing.Size(149, 180);
             this.pictureEdit1.TabIndex = 87;
+            this.pictureEdit1.Click += new System.EventHandler(this.pictureEdit1_Click);
             // 
             // groupBox2
             // 
@@ -628,6 +633,7 @@
             this.btn_Them.TabIndex = 81;
             this.btn_Them.Text = "Thêm ứng viên";
             this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // label5
             // 
@@ -944,6 +950,20 @@
             // 
             this.tRINHDOTINHOCTableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QuanLy_NhanSu.Properties.Resources.ic_x1;
+            this.pictureBox1.Location = new System.Drawing.Point(841, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(17, 19);
+            this.pictureBox1.TabIndex = 138;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // xtraOpenFileDialog1
+            // 
+            this.xtraOpenFileDialog1.FileName = "xtraOpenFileDialog1";
+            // 
             // frm_ThemUV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -994,6 +1014,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlNN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewNN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1080,5 +1101,7 @@
         private DataSetQLNSTableAdapters.TONGIAOTableAdapter tONGIAOTableAdapter;
         private System.Windows.Forms.BindingSource tONGIAOBindingSource;
         private System.Windows.Forms.ComboBox tONGIAOComboBox;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraEditors.XtraOpenFileDialog xtraOpenFileDialog1;
     }
 }

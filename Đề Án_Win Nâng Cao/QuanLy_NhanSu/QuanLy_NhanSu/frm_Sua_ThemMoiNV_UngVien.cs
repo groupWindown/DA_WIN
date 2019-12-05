@@ -226,50 +226,52 @@ namespace QuanLy_NhanSu
         private void btn_ThemNV_Click(object sender, EventArgs e)
         {
             kQ_TUYENDUNGTableAdapter.Fill(dataSetQLNS.KQ_TUYENDUNG);
-
-            if (cbo_KetQuaTuyenDung.Text == "Đậu")
+            if (qUOCTICHComboBox.SelectedValue != null && dANTOCComboBox.SelectedValue != null && tONGIAOComboBox.SelectedValue != null && tRINHDOTINHOCComboBox.SelectedValue != null && tRINHDOHOCVANComboBox.SelectedValue != null)
             {
-                try
+                if (cbo_KetQuaTuyenDung.Text == "Đậu")
                 {
-                    if (txt_LuongThoaThuan.Text.Length > 0 && dateEdit_NgayBatDau.Text.Length > 0 && cHUCVUComboBox.Text.Length > 0 && pHONGBANComboBox.Text.Length > 0 && hOPDONGLAODONGComboBox.Text.Length > 0)
+                    try
                     {
+                        if (txt_LuongThoaThuan.Text.Length > 0 && dateEdit_NgayBatDau.Text.Length > 0 && cHUCVUComboBox.Text.Length > 0 && pHONGBANComboBox.Text.Length > 0 && hOPDONGLAODONGComboBox.Text.Length > 0)
+                        {
 
-                        //thêm KQTD
+                            //thêm KQTD
+                            insertKQTD();
+                            //thêm Nhân Viên
+                            string nhanvien = sinhtudongMaNV();
+                            insertNhanVien(nhanvien);
+                            //thêm Hợp Đồng
+                            insertHDLD(nhanvien);
+
+
+
+
+                            MessageBox.Show("Nhân viên " + nhanvien + " vừa được tạo thành công");
+
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("vui long điền đủ dữ liệu");
+                        }
+                    }
+                    catch
+                    {
+                    }
+                }
+                else
+                {
+                    try
+                    {
                         insertKQTD();
-                        //thêm Nhân Viên
-                        string nhanvien = sinhtudongMaNV();
-                        insertNhanVien(nhanvien);
-                        //thêm Hợp Đồng
-                        insertHDLD(nhanvien);
+                        MessageBox.Show("Lưu thành công");
 
-
-
-
-                        MessageBox.Show("Nhân viên " + nhanvien + " vừa được tạo thành công");
 
                         this.Close();
                     }
-                    else
+                    catch
                     {
-                        MessageBox.Show("vui long điền đủ dữ liệu");
                     }
-                }
-                catch
-                {
-                }
-            }
-            else
-            {
-                try
-                {
-                    insertKQTD();
-                    MessageBox.Show("Lưu thành công");
-                    
-                    
-                    this.Close(); 
-                }
-                catch
-                {
                 }
             }
         }
@@ -294,13 +296,31 @@ namespace QuanLy_NhanSu
             {
                 try
                 {
-                    hINHANHTableAdapter.Insert(sinhtudongMaHA(), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, imageToByteArray(pictureEdit_hinhUV.Image));
+                    hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, imageToByteArray(pictureEdit_hinhUV.Image), timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
                 }
                 catch
                 {
                     try
                     {
-                        hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, imageToByteArray(pictureEdit_hinhUV.Image), timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
+                        hINHANHTableAdapter.Insert(sinhtudongMaHA(), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, imageToByteArray(pictureEdit_hinhUV.Image));
+                    }
+                    catch
+                    {
+
+                    }
+                }
+            }
+            else
+            {
+                try
+                {
+                    hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null, timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
+                }
+                catch
+                {
+                    try
+                    {
+                        hINHANHTableAdapter.Insert(sinhtudongMaHA(), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null);
                     }
                     catch
                     {
@@ -523,6 +543,22 @@ namespace QuanLy_NhanSu
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                pictureEdit_hinhUV.Image.Dispose();
+                pictureEdit_hinhUV.Image = null;
+            }
+            //pictureEdit_hinhUV.Image = null;
+            //pictureEdit_hinhUV.Invalidate();
+        }
+
+        private void pictureEdit_hinhUV_EditValueChanged(object sender, EventArgs e)
         {
 
         }

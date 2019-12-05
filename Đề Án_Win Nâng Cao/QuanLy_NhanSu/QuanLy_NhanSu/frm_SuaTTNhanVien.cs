@@ -78,5 +78,14 @@ namespace QuanLy_NhanSu
                 }
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                pictureEdit1.Image.Dispose();
+                pictureEdit1.Image = null;
+            }
+        }
     }
 }

@@ -46,7 +46,32 @@ namespace QuanLy_NhanSu
             // add in comboboxGioitinh
             cbo_GioiTinh.Items.Add("Nam");
             cbo_GioiTinh.Items.Add("Nữ");
-            
+            cbo_GioiTinh.SelectedIndex=0;
+
+            mAUNGVIENTextEdit.Text = "";
+            hOTENTextEdit.Text = "";
+            cMNDTextEdit.Text = "";
+            nOICAPTextEdit.Text = "";
+            nGAYCAPDateEdit.Text = "";
+            dANTOCComboBox.Text = "";
+            tONGIAOComboBox.Text = "";
+            qUOCTICHComboBox.Text = "";
+            qUEQUANTextEdit.Text = "";
+            nOISINHTextEdit.Text = "";
+            dIACHITHUONGTRUTextEdit.Text = "";
+            nOIOHIENTAITextEdit.Text = "";
+            dIENTHOAITextEdit.Text = "";
+            eMAILTextEdit.Text = "";
+            tINHTRANGHONNHANTextEdit.Text = "";
+            dIENUUTIENTextEdit.Text = "";
+            tINHTRANGSUCKHOETextEdit.Text = "";
+            vITRITUYENDUNGTextEdit.Text = "";
+            hINHTHUCTUYENDUNGTextEdit.Text = "";
+            tRINHDOHOCVANComboBox.Text = "";
+            tRINHDOTINHOCComboBox.Text = "";
+            nGAYCAPDateEdit.Text = "";
+            nGAYSINHDateEdit.Text = "";
+            nGAYTUYENDUNGDateEdit.Text = "";
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -57,6 +82,40 @@ namespace QuanLy_NhanSu
         private void hINHTHUCTUYENDUNGTextEdit_EditValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            if (qUOCTICHComboBox.SelectedValue != null && dANTOCComboBox.SelectedValue != null && tONGIAOComboBox.SelectedValue != null && tRINHDOTINHOCComboBox.SelectedValue != null && tRINHDOHOCVANComboBox.SelectedValue != null)
+            {
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                pictureEdit1.Image.Dispose();
+                pictureEdit1.Image = null;
+            }
+        }
+
+        private void pictureEdit1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                xtraOpenFileDialog1.ShowDialog();
+                xtraOpenFileDialog1.Filter = "JPG FILE (*.jpg)|*.jpg|All files (*.*)|*.*";
+                string file = xtraOpenFileDialog1.FileName;
+                if (string.IsNullOrEmpty(file))
+                {
+                    return;
+                }
+                System.Drawing.Image image = System.Drawing.Image.FromFile(file);
+                pictureEdit1.Image = image;
+            }
+            catch
+            { }
         }
     }
 }
