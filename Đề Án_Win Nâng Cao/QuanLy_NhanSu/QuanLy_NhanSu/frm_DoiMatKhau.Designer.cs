@@ -82,6 +82,7 @@
             // 
             // txt_MK
             // 
+            this.txt_MK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MK.Location = new System.Drawing.Point(549, 183);
             this.txt_MK.Multiline = true;
             this.txt_MK.Name = "txt_MK";
@@ -90,6 +91,7 @@
             // 
             // txt_NhapMatKhau
             // 
+            this.txt_NhapMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_NhapMatKhau.Location = new System.Drawing.Point(549, 226);
             this.txt_NhapMatKhau.Multiline = true;
             this.txt_NhapMatKhau.Name = "txt_NhapMatKhau";
@@ -98,6 +100,7 @@
             // 
             // txt_NhapLaiMatKhau
             // 
+            this.txt_NhapLaiMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_NhapLaiMatKhau.Location = new System.Drawing.Point(549, 270);
             this.txt_NhapLaiMatKhau.Multiline = true;
             this.txt_NhapLaiMatKhau.Name = "txt_NhapLaiMatKhau";
@@ -128,9 +131,10 @@
             // 
             // btn_DoiMK
             // 
+            this.btn_DoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DoiMK.Location = new System.Drawing.Point(549, 315);
             this.btn_DoiMK.Name = "btn_DoiMK";
-            this.btn_DoiMK.Size = new System.Drawing.Size(223, 25);
+            this.btn_DoiMK.Size = new System.Drawing.Size(223, 30);
             this.btn_DoiMK.TabIndex = 8;
             this.btn_DoiMK.Text = "Đổi Mật Khẩu";
             this.btn_DoiMK.UseVisualStyleBackColor = true;
@@ -195,11 +199,11 @@
             // 
             this.labelNV.AutoSize = true;
             this.labelNV.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNV.Location = new System.Drawing.Point(545, 113);
+            this.labelNV.Location = new System.Drawing.Point(529, 128);
             this.labelNV.Name = "labelNV";
-            this.labelNV.Size = new System.Drawing.Size(115, 28);
+            this.labelNV.Size = new System.Drawing.Size(252, 28);
             this.labelNV.TabIndex = 0;
-            this.labelNV.Text = "Nhân viên";
+            this.labelNV.Text = "Đổi mật khẩu nhân viên";
             // 
             // nHANVIENBindingSource
             // 

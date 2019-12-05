@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DA_WIN_NANGCAO" Class="linQDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-DSSGJN2\SQLEXPRESS;Initial Catalog=DA_WIN_NANGCAO;Integrated Security=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="DA_WIN_NANGCAOConnectionString1" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.TRINHDOTINHOC" Member="TRINHDOTINHOCs">
-    <Type Name="TRINHDOTINHOC">
-      <Column Name="MATRINHDOTINHOC" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TENTRINHDOTINHOC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Association Name="TRINHDOTINHOC_HOSOTUYENDUNG" Member="HOSOTUYENDUNGs" ThisKey="MATRINHDOTINHOC" OtherKey="MATRINHDOTINHOC" Type="HOSOTUYENDUNG" />
-      <Association Name="TRINHDOTINHOC_HOSOTUYENDUNG1" Member="HOSOTUYENDUNG1s" ThisKey="MATRINHDOTINHOC" OtherKey="MATRINHDOTINHOC" Type="HOSOTUYENDUNG1" />
-    </Type>
-  </Table>
   <Table Name="dbo.BANGCHAMCONG" Member="BANGCHAMCONGs">
     <Type Name="BANGCHAMCONG">
       <Column Name="MANV" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -15,6 +7,13 @@
       <Column Name="GIOVAO" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
       <Column Name="GIORA" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
       <Association Name="NHANVIEN_BANGCHAMCONG" Member="NHANVIEN" ThisKey="MANV" OtherKey="MANV" Type="NHANVIEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TRINHDOTINHOC" Member="TRINHDOTINHOCs">
+    <Type Name="TRINHDOTINHOC">
+      <Column Name="MATRINHDOTINHOC" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENTRINHDOTINHOC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="TRINHDOTINHOC_HOSOTUYENDUNG" Member="HOSOTUYENDUNGs" ThisKey="MATRINHDOTINHOC" OtherKey="MATRINHDOTINHOC" Type="HOSOTUYENDUNG" />
     </Type>
   </Table>
   <Table Name="dbo.BANGTANGCA" Member="BANGTANGCAs">
@@ -55,7 +54,6 @@
       <Column Name="MAUNGVIEN" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Association Name="CHUYENMON_CHITIETCHUYENMON" Member="CHUYENMON" ThisKey="MACHUYENMON" OtherKey="MACHUYENMON" Type="CHUYENMON" IsForeignKey="true" />
       <Association Name="HOSOTUYENDUNG_CHITIETCHUYENMON" Member="HOSOTUYENDUNG" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="HOSOTUYENDUNG" IsForeignKey="true" />
-      <Association Name="HOSOTUYENDUNG1_CHITIETCHUYENMON" Member="HOSOTUYENDUNG1" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="HOSOTUYENDUNG1" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.CHITIETHOPDONG" Member="CHITIETHOPDONGs">
@@ -88,7 +86,6 @@
       <Column Name="MAUNGVIEN" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Association Name="HOSOTUYENDUNG_CHITIETNGOAINGU" Member="HOSOTUYENDUNG" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="HOSOTUYENDUNG" IsForeignKey="true" />
       <Association Name="NGOAINGU_CHITIETNGOAINGU" Member="NGOAINGU" ThisKey="MANGOAINGU" OtherKey="MANGOAINGU" Type="NGOAINGU" IsForeignKey="true" />
-      <Association Name="HOSOTUYENDUNG1_CHITIETNGOAINGU" Member="HOSOTUYENDUNG1" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="HOSOTUYENDUNG1" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.CHUCVU" Member="CHUCVUs">
@@ -130,7 +127,6 @@
       <Column Name="MADANTOC" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENDANTOC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="DANTOC_HOSOTUYENDUNG" Member="HOSOTUYENDUNGs" ThisKey="MADANTOC" OtherKey="MADANTOC" Type="HOSOTUYENDUNG" />
-      <Association Name="DANTOC_HOSOTUYENDUNG1" Member="HOSOTUYENDUNG1s" ThisKey="MADANTOC" OtherKey="MADANTOC" Type="HOSOTUYENDUNG1" />
     </Type>
   </Table>
   <Table Name="dbo.DAOTAO" Member="DAOTAOs">
@@ -153,12 +149,9 @@
     <Type Name="HINHANH">
       <Column Name="MAHINHANH" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENHINHANH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="URL" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="MANV" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="MAUNGVIEN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="URL" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="HOSOTUYENDUNG_HINHANH" Member="HOSOTUYENDUNG" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="HOSOTUYENDUNG" IsForeignKey="true" />
-      <Association Name="NHANVIEN_HINHANH" Member="NHANVIEN" ThisKey="MANV" OtherKey="MANV" Type="NHANVIEN" IsForeignKey="true" />
-      <Association Name="HOSOTUYENDUNG1_HINHANH" Member="HOSOTUYENDUNG1" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="HOSOTUYENDUNG1" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.HOPDONGLAODONG" Member="HOPDONGLAODONGs">
@@ -178,13 +171,13 @@
       <Column Name="GIOITINH" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="NGAYSINH" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="NOISINH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="CMND" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMND" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="NGAYCAP" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="NOICAP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="QUEQUAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="DIACHITHUONGTRU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="NOIOHIENTAI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="DIENTHOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DIENTHOAI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="EMAIL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="TINHTRANGHONNHAN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="DIENUUTIEN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
@@ -212,7 +205,6 @@
       <Column Name="MAUNGVIEN" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="KETQUA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="HOSOTUYENDUNG_KQ_TUYENDUNG" Member="HOSOTUYENDUNG" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="HOSOTUYENDUNG" IsForeignKey="true" />
-      <Association Name="HOSOTUYENDUNG1_KQ_TUYENDUNG" Member="HOSOTUYENDUNG1" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="HOSOTUYENDUNG1" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.LOAIKHENTHUONG" Member="LOAIKHENTHUONGs">
@@ -262,7 +254,6 @@
       <Association Name="NHANVIEN_CHITIETHOPDONG" Member="CHITIETHOPDONGs" ThisKey="MANV" OtherKey="MANV" Type="CHITIETHOPDONG" />
       <Association Name="NHANVIEN_CHITIETKHENTHUONG" Member="CHITIETKHENTHUONGs" ThisKey="MANV" OtherKey="MANV" Type="CHITIETKHENTHUONG" />
       <Association Name="NHANVIEN_CHUONGTRINHDAOTAO" Member="CHUONGTRINHDAOTAOs" ThisKey="MANV" OtherKey="MANV" Type="CHUONGTRINHDAOTAO" />
-      <Association Name="NHANVIEN_HINHANH" Member="HINHANHs" ThisKey="MANV" OtherKey="MANV" Type="HINHANH" />
       <Association Name="NHANVIEN_PHONGBAN" Member="PHONGBANs" ThisKey="MANV" OtherKey="MATRUONGPHONG" Type="PHONGBAN" />
       <Association Name="NHANVIEN_QUANLYKYLUAT" Member="QUANLYKYLUATs" ThisKey="MANV" OtherKey="MANV" Type="QUANLYKYLUAT" />
       <Association Name="NHANVIEN_QUANLYNGHIVIEC" Member="QUANLYNGHIVIECs" ThisKey="MANV" OtherKey="MANV" Type="QUANLYNGHIVIEC" />
@@ -272,7 +263,6 @@
       <Association Name="CHUCVU_NHANVIEN" Member="CHUCVU" ThisKey="MACHUCVU" OtherKey="MACHUCVU" Type="CHUCVU" IsForeignKey="true" />
       <Association Name="HOSOTUYENDUNG_NHANVIEN" Member="HOSOTUYENDUNG" ThisKey="MAHOSO" OtherKey="MAUNGVIEN" Type="HOSOTUYENDUNG" IsForeignKey="true" />
       <Association Name="PHONGBAN_NHANVIEN" Member="PHONGBAN" ThisKey="MAPHONGBAN" OtherKey="MAPHONGBAN" Type="PHONGBAN" IsForeignKey="true" />
-      <Association Name="HOSOTUYENDUNG1_NHANVIEN" Member="HOSOTUYENDUNG1" ThisKey="MAHOSO" OtherKey="MAUNGVIEN" Type="HOSOTUYENDUNG1" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.NHOMNGUOIDUNG" Member="NHOMNGUOIDUNGs">
@@ -343,7 +333,6 @@
       <Column Name="MAQUOCTICH" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENQUOCTICH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="QUOCTICH_HOSOTUYENDUNG" Member="HOSOTUYENDUNGs" ThisKey="MAQUOCTICH" OtherKey="MAQUOCTICH" Type="HOSOTUYENDUNG" />
-      <Association Name="QUOCTICH_HOSOTUYENDUNG1" Member="HOSOTUYENDUNG1s" ThisKey="MAQUOCTICH" OtherKey="MAQUOCTICH" Type="HOSOTUYENDUNG1" />
     </Type>
   </Table>
   <Table Name="dbo.TAIKHOAN" Member="TAIKHOANs">
@@ -360,7 +349,6 @@
       <Column Name="MATONGIAO" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENTONGIAO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="TONGIAO_HOSOTUYENDUNG" Member="HOSOTUYENDUNGs" ThisKey="MATONGIAO" OtherKey="MATONGIAO" Type="HOSOTUYENDUNG" />
-      <Association Name="TONGIAO_HOSOTUYENDUNG1" Member="HOSOTUYENDUNG1s" ThisKey="MATONGIAO" OtherKey="MATONGIAO" Type="HOSOTUYENDUNG1" />
     </Type>
   </Table>
   <Table Name="dbo.TONGLUONG" Member="TONGLUONGs">
@@ -376,45 +364,6 @@
       <Column Name="MATRINHDOHOCVAN" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENTRINHDOHOCVAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="TRINHDOHOCVAN_HOSOTUYENDUNG" Member="HOSOTUYENDUNGs" ThisKey="MATRINHDOHOCVAN" OtherKey="MATRINHDOHOCVAN" Type="HOSOTUYENDUNG" />
-      <Association Name="TRINHDOHOCVAN_HOSOTUYENDUNG1" Member="HOSOTUYENDUNG1s" ThisKey="MATRINHDOHOCVAN" OtherKey="MATRINHDOHOCVAN" Type="HOSOTUYENDUNG1" />
-    </Type>
-  </Table>
-  <Table Name="dbo.HOSOTUYENDUNG" Member="HOSOTUYENDUNG1s">
-    <Type Name="HOSOTUYENDUNG1">
-      <Column Name="MAUNGVIEN" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MADANTOC" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MATONGIAO" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MAQUOCTICH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="HOTEN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="GIOITINH" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Column Name="NGAYSINH" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="NOISINH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="CMND" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="NGAYCAP" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="NOICAP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="QUEQUAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="DIACHITHUONGTRU" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="NOIOHIENTAI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="DIENTHOAI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="TINHTRANGHONNHAN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Column Name="DIENUUTIEN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="TINHTRANGSUCKHOE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="NGAYTUYENDUNG" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="HINHTHUCTUYENDUNG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="VITRITUYENDUNG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="MATRINHDOHOCVAN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Column Name="MATRINHDOTINHOC" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Association Name="HOSOTUYENDUNG1_CHITIETCHUYENMON" Member="CHITIETCHUYENMONs" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="CHITIETCHUYENMON" />
-      <Association Name="HOSOTUYENDUNG1_CHITIETNGOAINGU" Member="CHITIETNGOAINGUs" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="CHITIETNGOAINGU" />
-      <Association Name="HOSOTUYENDUNG1_HINHANH" Member="HINHANHs" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="HINHANH" />
-      <Association Name="HOSOTUYENDUNG1_KQ_TUYENDUNG" Member="KQ_TUYENDUNGs" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="KQ_TUYENDUNG" />
-      <Association Name="HOSOTUYENDUNG1_NHANVIEN" Member="NHANVIENs" ThisKey="MAUNGVIEN" OtherKey="MAHOSO" Type="NHANVIEN" />
-      <Association Name="DANTOC_HOSOTUYENDUNG1" Member="DANTOC" ThisKey="MADANTOC" OtherKey="MADANTOC" Type="DANTOC" IsForeignKey="true" />
-      <Association Name="QUOCTICH_HOSOTUYENDUNG1" Member="QUOCTICH" ThisKey="MAQUOCTICH" OtherKey="MAQUOCTICH" Type="QUOCTICH" IsForeignKey="true" />
-      <Association Name="TONGIAO_HOSOTUYENDUNG1" Member="TONGIAO" ThisKey="MATONGIAO" OtherKey="MATONGIAO" Type="TONGIAO" IsForeignKey="true" />
-      <Association Name="TRINHDOHOCVAN_HOSOTUYENDUNG1" Member="TRINHDOHOCVAN" ThisKey="MATRINHDOHOCVAN" OtherKey="MATRINHDOHOCVAN" Type="TRINHDOHOCVAN" IsForeignKey="true" />
-      <Association Name="TRINHDOTINHOC_HOSOTUYENDUNG1" Member="TRINHDOTINHOC" ThisKey="MATRINHDOTINHOC" OtherKey="MATRINHDOTINHOC" Type="TRINHDOTINHOC" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

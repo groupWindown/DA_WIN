@@ -22,17 +22,7 @@ namespace QuanLy_NhanSu
 
         private void frm_DangNhap_Load(object sender, EventArgs e)
         {
-            //gán mật khẩu củ đã lưu
-            if (Properties.Settings.Default.flag == 1.ToString())//1 là nhớ tk mk
-            {
-                txt_User.Text = Properties.Settings.Default.user;
-                txt_Password.Text = Properties.Settings.Default.pass;
-            }
-            else//0 là không nhớ tk mk
-            {
-                txt_User.Text = "";
-                txt_Password.Text = "";
-            }
+      
         }
 
         private void btn_DangNhap_Click(object sender, EventArgs e)
@@ -57,6 +47,8 @@ namespace QuanLy_NhanSu
                     {
                         if (cauhinh.Check_Config() == 0)
                         {
+                            Properties.Settings.Default.user = txt_User.Text.ToUpper();
+                            Properties.Settings.Default.pass = txt_Password.Text.ToUpper();
                             ProcessLogin();// Cấu hình phù hợp xử lý đăng nhập
                         }
                         if (cauhinh.Check_Config() == 1)
@@ -70,17 +62,8 @@ namespace QuanLy_NhanSu
                             ProcessConfig();
                         }
 
-                        //luu tai khoan mat khau
-                        if (ckb_LuuTK.Checked)
-                        {
-                            Properties.Settings.Default.flag = 1.ToString();
-                        }
-                        else
-                        {
-                            Properties.Settings.Default.flag = 1.ToString();
-                        }
-                        Properties.Settings.Default.user = txt_User.Text;
-                        Properties.Settings.Default.pass = txt_Password.Text;
+                   
+                        
                     }
                 }
             }
@@ -108,6 +91,8 @@ namespace QuanLy_NhanSu
                 Program.frmMain = new frm_Main();
             }
             this.Visible = false;
+            txt_User.Clear();
+            txt_Password.Clear();
             Program.frmMain.Show();
         }
 

@@ -225,11 +225,11 @@
     <Compile Include="frm_Sua_ThemMoiNV_UngVien.Designer.cs">
       <DependentUpon>frm_Sua_ThemMoiNV_UngVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_ThemNV_TuUV.cs">
+    <Compile Include="frm_ThemUV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_ThemNV_TuUV.Designer.cs">
-      <DependentUpon>frm_ThemNV_TuUV.cs</DependentUpon>
+    <Compile Include="frm_ThemUV.Designer.cs">
+      <DependentUpon>frm_ThemUV.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ThongKe.cs">
       <SubType>UserControl</SubType>
@@ -313,8 +313,8 @@
     <EmbeddedResource Include="frm_Sua_ThemMoiNV_UngVien.resx">
       <DependentUpon>frm_Sua_ThemMoiNV_UngVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_ThemNV_TuUV.resx">
-      <DependentUpon>frm_ThemNV_TuUV.cs</DependentUpon>
+    <EmbeddedResource Include="frm_ThemUV.resx">
+      <DependentUpon>frm_ThemUV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ThongKe.resx">
       <DependentUpon>frm_ThongKe.cs</DependentUpon>

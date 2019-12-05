@@ -39,22 +39,41 @@ namespace QuanLy_NhanSu
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataSetQLNS.TAIKHOAN' table. You can move, or remove it, as needed.
+            this.tAIKHOANTableAdapter.Fill(this.dataSetQLNS.TAIKHOAN);
+            // TODO: This line of code loads data into the 'dataSetQLNS.PHANQUYEN' table. You can move, or remove it, as needed.
+            this.pHANQUYENTableAdapter.Fill(this.dataSetQLNS.PHANQUYEN);
+            // TODO: This line of code loads data into the 'dataSetQLNS.NHOMNGUOIDUNG' table. You can move, or remove it, as needed.
+            this.nHOMNGUOIDUNGTableAdapter.Fill(this.dataSetQLNS.NHOMNGUOIDUNG);
+            // TODO: This line of code loads data into the 'dataSetQLNS.NGUOIDUNGNHOMNGUOIDUNG' table. You can move, or remove it, as needed.
+            this.nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Fill(this.dataSetQLNS.NGUOIDUNGNHOMNGUOIDUNG);
+            // TODO: This line of code loads data into the 'dataSetQLNS.MANHINH' table. You can move, or remove it, as needed.
+            this.mANHINHTableAdapter.Fill(this.dataSetQLNS.MANHINH);
             // TODO: This line of code loads data into the 'dataSetQLNS.NHANVIEN' table. You can move, or remove it, as needed.
             this.nHANVIENTableAdapter.Fill(this.dataSetQLNS.NHANVIEN);
-            ////load screen 
-            //DataTable dt = GetNhomNguoiDung(Properties.Settings.Default.user);
+            //load screen 
+            DataTable dt = GetNhomNguoiDung(Properties.Settings.Default.user.ToUpper());
 
-            //foreach (DataRow item in dt.Rows)
-            //{
-            //    DataTable dsQuyen = GetMaManHinh(item[0].ToString());
-            //    foreach (DataRow mh in dsQuyen.Rows)
-            //    {
-            //        FindMenuPhanQuyen(this.ribbonPage_TacVu.Groups, mh[0].ToString(), Convert.ToBoolean(mh[1].ToString()));
-            //    }
-            //}
-            nHANVIENTableAdapter.Fill(dataSetQLNS.NHANVIEN);
-            LabelTenNV.Text = dataSetQLNS.NHANVIEN.FindByMANV(Properties.Settings.Default.user).HOTEN.ToString();
-            labelChucVu.Text= dataSetQLNS.NHANVIEN.FindByMANV(Properties.Settings.Default.user).MACHUCVU.ToString();
+            foreach (DataRow item in dt.Rows)
+            {
+                DataTable dsQuyen = GetMaManHinh(item[1].ToString());
+                foreach (DataRow mh in dsQuyen.Rows)
+                {
+                    FindMenuPhanQuyen(this.ribbonPage_TacVu.Groups, mh[0].ToString(), Convert.ToBoolean(mh[2].ToString()));
+                }
+            }
+            try
+            {
+                LabelTenNV.Text = dataSetQLNS.NHANVIEN.FindByMANV(Properties.Settings.Default.user).HOTEN.ToString();
+                labelChucVu.Text = dataSetQLNS.NHANVIEN.FindByMANV(Properties.Settings.Default.user).MACHUCVU.ToString();
+
+            }
+            catch
+            {
+                LabelTenNV.Text = "Admin nè";
+                labelChucVu.Text = "Admin nè";
+
+            }
 
 
 
@@ -64,40 +83,61 @@ namespace QuanLy_NhanSu
         LinQDataContext linQDataContext = new LinQDataContext();
         public DataTable GetNhomNguoiDung(string str)
         {
+            DataTable dt= dataSetQLNS.NGUOIDUNGNHOMNGUOIDUNG;
+            DataTable dtR = dt.Clone();
+            foreach (DataRow dr in dt.Rows)
+            {
+                if(dr[0].ToString()==str)
+                {
+                    dtR.ImportRow(dr);
+                }
+            }
+            return dtR;
             //using LinQ to get MaNhom
             
-            DataGridView nhomND = new DataGridView();
+            //DataGridView nhomND = new DataGridView();
 
-            var list = (from danhSachNhom in linQDataContext.NGUOIDUNGNHOMNGUOIDUNGs
-                       join taikhoan in linQDataContext.TAIKHOANs
-                       on danhSachNhom.MANV equals taikhoan.MANV
-                       where taikhoan.MANV == str
-                       select new { danhSachNhom.MANHOM }).Distinct();
+            //var list = (from danhSachNhom in linQDataContext.NGUOIDUNGNHOMNGUOIDUNGs
+            //           join taikhoan in linQDataContext.TAIKHOANs
+            //           on danhSachNhom.MANV equals taikhoan.MANV
+            //           where taikhoan.MANV == str
+            //           select new { danhSachNhom.MANHOM,danhSachNhom.MANV }).Distinct();
+            
+            //DataTable dt = new DataTable();
+            //nhomND.DataSource = list.ToList<string>();
+            //dt = (DataTable)nhomND.DataSource;
 
-            DataTable dt = new DataTable();
-            nhomND.DataSource = list;
-            dt = (DataTable)nhomND.DataSource;
-
-            return dt;
+            //return list.ToList<string>();
         }
 
         
         public DataTable GetMaManHinh(string str)
         {
-            //using LinQ to get MaManHinh
-           
-            DataGridView nhomND = new DataGridView();
+            DataTable dt = dataSetQLNS.PHANQUYEN;
+            DataTable dtR = dt.Clone();
+            foreach (DataRow dr in dt.Rows)
+            {
+                if (dr[1].ToString() == str)
+                {
+                    dtR.ImportRow(dr);
+                }
+            }
+            return dtR;
+            ////using LinQ to get MaManHinh
 
-            var list = (from nhomNguoiDung in linQDataContext.NHOMNGUOIDUNGs
-                       join phanQuyen in linQDataContext.PHANQUYENs
-                       on nhomNguoiDung.MANHOM equals phanQuyen.MANHOM
-                       where nhomNguoiDung.MANHOM == str
-                       select new { phanQuyen.MAMANHINH }).Distinct();
+            //DataGridView nhomND = new DataGridView();
 
-            DataTable dt = new DataTable();
-            nhomND.DataSource = list;
-            dt = (DataTable)nhomND.DataSource;
-            return dt;
+            //var list = (from nhomNguoiDung in linQDataContext.NHOMNGUOIDUNGs
+            //           join phanQuyen in linQDataContext.PHANQUYENs
+            //           on nhomNguoiDung.MANHOM equals phanQuyen.MANHOM
+            //           where nhomNguoiDung.MANHOM == str
+            //           select new { phanQuyen.MAMANHINH,
+            //           phanQuyen.COQUYEN}).Distinct();
+
+            //DataTable dt = new DataTable();
+            //nhomND.DataSource = list;
+            //dt = (DataTable)nhomND.DataSource;
+            //return dt;
         }
 
 

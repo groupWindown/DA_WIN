@@ -35,8 +35,9 @@ namespace QuanLy_NhanSu
             txt_NhapLaiMatKhau.PasswordChar = '*';
             txt_NhapMatKhau.PasswordChar = '*';
             nHANVIENTableAdapter.Fill(dataSetQLNS.NHANVIEN);
-            labelNV.Text = dataSetQLNS.NHANVIEN.FindByMANV(Properties.Settings.Default.user).HOTEN.ToString();
+
         }
+            
 
         private void btn_MatKhauMoi_Click(object sender, EventArgs e)
         {
@@ -88,7 +89,7 @@ namespace QuanLy_NhanSu
                 {
                     txt_NhapMatKhau.Clear();
                     txt_NhapLaiMatKhau.Clear();
-                    MessageBox.Show("Nhập lại MK mới");
+                    MessageBox.Show("Mật khẩu mới không trùng nhau");
                 }
             }
             else

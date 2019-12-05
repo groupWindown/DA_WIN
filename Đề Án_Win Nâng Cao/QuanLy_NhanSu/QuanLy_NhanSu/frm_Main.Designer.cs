@@ -70,6 +70,16 @@
             this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nHANVIENTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NHANVIENTableAdapter();
             this.tableAdapterManager = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager();
+            this.mANHINHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mANHINHTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.MANHINHTableAdapter();
+            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nGUOIDUNGNHOMNGUOIDUNGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NGUOIDUNGNHOMNGUOIDUNGTableAdapter();
+            this.nHOMNGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nHOMNGUOIDUNGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NHOMNGUOIDUNGTableAdapter();
+            this.pHANQUYENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pHANQUYENTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.PHANQUYENTableAdapter();
+            this.tAIKHOANBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tAIKHOANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TAIKHOANTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl_Main)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
@@ -78,6 +88,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mANHINHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl_Main
@@ -254,32 +269,37 @@
             // 
             this.ribbonPageGroup6_HoSoUV.ItemLinks.Add(this.barButtonItem_HoSoUngVien);
             this.ribbonPageGroup6_HoSoUV.Name = "ribbonPageGroup6_HoSoUV";
-            this.ribbonPageGroup6_HoSoUV.Tag = "MH02";
+            this.ribbonPageGroup6_HoSoUV.Tag = "MH01";
+            this.ribbonPageGroup6_HoSoUV.Visible = false;
             // 
             // ribbonPageGroup_Luong
             // 
             this.ribbonPageGroup_Luong.ItemLinks.Add(this.barButtonItem_HoSoNhanVien);
             this.ribbonPageGroup_Luong.Name = "ribbonPageGroup_Luong";
-            this.ribbonPageGroup_Luong.Tag = "MH03";
+            this.ribbonPageGroup_Luong.Tag = "MH02";
+            this.ribbonPageGroup_Luong.Visible = false;
             // 
             // ribbonPageGroup_ChamCong
             // 
             this.ribbonPageGroup_ChamCong.ItemLinks.Add(this.barButtonItem_ChamCong);
             this.ribbonPageGroup_ChamCong.Name = "ribbonPageGroup_ChamCong";
-            this.ribbonPageGroup_ChamCong.Tag = "MH04";
+            this.ribbonPageGroup_ChamCong.Tag = "MH03";
+            this.ribbonPageGroup_ChamCong.Visible = false;
             // 
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem_ThongKe);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Tag = "MH05";
+            this.ribbonPageGroup2.Tag = "MH04";
+            this.ribbonPageGroup2.Visible = false;
             // 
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem_TuongTacDuLieu);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Tag = "MH06";
+            this.ribbonPageGroup5.Tag = "MH05";
+            this.ribbonPageGroup5.Visible = false;
             // 
             // ribbonPage_TroGiup
             // 
@@ -330,7 +350,7 @@
             this.panel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Main.Location = new System.Drawing.Point(0, 141);
             this.panel_Main.Name = "panel_Main";
-            this.panel_Main.Size = new System.Drawing.Size(925, 309);
+            this.panel_Main.Size = new System.Drawing.Size(925, 350);
             this.panel_Main.TabIndex = 3;
             this.panel_Main.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Main_Paint);
             // 
@@ -439,11 +459,56 @@
             this.tableAdapterManager.TRINHDOTINHOCTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // mANHINHBindingSource
+            // 
+            this.mANHINHBindingSource.DataMember = "MANHINH";
+            this.mANHINHBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // mANHINHTableAdapter
+            // 
+            this.mANHINHTableAdapter.ClearBeforeFill = true;
+            // 
+            // nGUOIDUNGNHOMNGUOIDUNGBindingSource
+            // 
+            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource.DataMember = "NGUOIDUNGNHOMNGUOIDUNG";
+            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // nGUOIDUNGNHOMNGUOIDUNGTableAdapter
+            // 
+            this.nGUOIDUNGNHOMNGUOIDUNGTableAdapter.ClearBeforeFill = true;
+            // 
+            // nHOMNGUOIDUNGBindingSource
+            // 
+            this.nHOMNGUOIDUNGBindingSource.DataMember = "NHOMNGUOIDUNG";
+            this.nHOMNGUOIDUNGBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // nHOMNGUOIDUNGTableAdapter
+            // 
+            this.nHOMNGUOIDUNGTableAdapter.ClearBeforeFill = true;
+            // 
+            // pHANQUYENBindingSource
+            // 
+            this.pHANQUYENBindingSource.DataMember = "PHANQUYEN";
+            this.pHANQUYENBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // pHANQUYENTableAdapter
+            // 
+            this.pHANQUYENTableAdapter.ClearBeforeFill = true;
+            // 
+            // tAIKHOANBindingSource
+            // 
+            this.tAIKHOANBindingSource.DataMember = "TAIKHOAN";
+            this.tAIKHOANBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tAIKHOANTableAdapter
+            // 
+            this.tAIKHOANTableAdapter.ClearBeforeFill = true;
+            // 
             // frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(925, 450);
+            this.ClientSize = new System.Drawing.Size(925, 491);
             this.Controls.Add(this.labelChucVu);
             this.Controls.Add(this.LabelTenNV);
             this.Controls.Add(this.panel_Main);
@@ -463,6 +528,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mANHINHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,5 +580,15 @@
         private DataSetQLNS dataSetQLNS;
         private DataSetQLNSTableAdapters.NHANVIENTableAdapter nHANVIENTableAdapter;
         private DataSetQLNSTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingSource mANHINHBindingSource;
+        private DataSetQLNSTableAdapters.MANHINHTableAdapter mANHINHTableAdapter;
+        private System.Windows.Forms.BindingSource nGUOIDUNGNHOMNGUOIDUNGBindingSource;
+        private DataSetQLNSTableAdapters.NGUOIDUNGNHOMNGUOIDUNGTableAdapter nGUOIDUNGNHOMNGUOIDUNGTableAdapter;
+        private System.Windows.Forms.BindingSource nHOMNGUOIDUNGBindingSource;
+        private DataSetQLNSTableAdapters.NHOMNGUOIDUNGTableAdapter nHOMNGUOIDUNGTableAdapter;
+        private System.Windows.Forms.BindingSource pHANQUYENBindingSource;
+        private DataSetQLNSTableAdapters.PHANQUYENTableAdapter pHANQUYENTableAdapter;
+        private System.Windows.Forms.BindingSource tAIKHOANBindingSource;
+        private DataSetQLNSTableAdapters.TAIKHOANTableAdapter tAIKHOANTableAdapter;
     }
 }

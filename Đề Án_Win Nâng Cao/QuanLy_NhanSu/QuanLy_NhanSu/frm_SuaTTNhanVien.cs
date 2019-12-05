@@ -27,6 +27,10 @@ namespace QuanLy_NhanSu
 
         private void frm_SuaTTNhanVien_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataSetQLNS.CHITIETCHUYENMON' table. You can move, or remove it, as needed.
+            this.cHITIETCHUYENMONTableAdapter.Fill(this.dataSetQLNS.CHITIETCHUYENMON);
+            // TODO: This line of code loads data into the 'dataSetQLNS.CHITIETNGOAINGU' table. You can move, or remove it, as needed.
+            this.cHITIETNGOAINGUTableAdapter.Fill(this.dataSetQLNS.CHITIETNGOAINGU);
             // TODO: This line of code loads data into the 'dataSetQLNS.CHUYENMON' table. You can move, or remove it, as needed.
             this.cHUYENMONTableAdapter.Fill(this.dataSetQLNS.CHUYENMON);
             // TODO: This line of code loads data into the 'dataSetQLNS.NGOAINGU' table. You can move, or remove it, as needed.
@@ -49,7 +53,30 @@ namespace QuanLy_NhanSu
             this.hOSOTUYENDUNGTableAdapter.Fill(this.dataSetQLNS.HOSOTUYENDUNG);
             // TODO: This line of code loads data into the 'dataSetQLNS.NHANVIEN' table. You can move, or remove it, as needed.
             this.nHANVIENTableAdapter.Fill(this.dataSetQLNS.NHANVIEN);
+            Load_CM_NN();
+        }
+        private void Load_CM_NN()
+        {
+            for (int i = 0; i < gridViewCM.DataRowCount; i++)
+            {
+                cHITIETCHUYENMONTableAdapter.Fill(dataSetQLNS.CHITIETCHUYENMON);
+                DataSetQLNS.CHITIETCHUYENMONRow data = dataSetQLNS.CHITIETCHUYENMON.FindByMACHUYENMONMAUNGVIEN(gridViewCM.GetDataRow(i)["MACHUYENMON"].ToString().Trim(), txt_MaNV.Text.Trim());
+                if (data != null)
+                {
+                    gridViewCM.SelectRow(i);
+                }
 
+
+            }
+            for (int i = 0; i < gridViewNN.DataRowCount; i++)
+            {
+                cHITIETNGOAINGUTableAdapter.Fill(dataSetQLNS.CHITIETNGOAINGU);
+                DataSetQLNS.CHITIETNGOAINGURow data = dataSetQLNS.CHITIETNGOAINGU.FindByMANGOAINGUMAUNGVIEN(gridViewNN.GetDataRow(i)["MANGOAINGU"].ToString(), txt_MaNV.Text.Trim());
+                if (data != null)
+                {
+                    gridViewNN.SelectRow(i);
+                }
+            }
         }
     }
 }

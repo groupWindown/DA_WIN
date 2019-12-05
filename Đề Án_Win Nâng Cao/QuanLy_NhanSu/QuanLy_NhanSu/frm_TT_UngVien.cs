@@ -322,7 +322,7 @@ namespace QuanLy_NhanSu
 
         private void btn_ThemUV_Click(object sender, EventArgs e)
         {
-            frm_ThemNV_TuUV frm = new frm_ThemNV_TuUV();
+            frm_ThemUV frm = new frm_ThemUV();
             frm.ShowDialog();
 
             //load lại

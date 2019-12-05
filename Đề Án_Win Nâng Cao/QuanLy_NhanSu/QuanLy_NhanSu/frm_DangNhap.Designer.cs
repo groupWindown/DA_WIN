@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_DangNhap));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ckb_LuuTK = new System.Windows.Forms.CheckBox();
             this.btn_DangNhap = new System.Windows.Forms.Button();
             this.txt_Password = new System.Windows.Forms.TextBox();
             this.txt_User = new System.Windows.Forms.TextBox();
@@ -46,7 +45,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.ckb_LuuTK);
             this.panel1.Controls.Add(this.btn_DangNhap);
             this.panel1.Controls.Add(this.txt_Password);
             this.panel1.Controls.Add(this.txt_User);
@@ -69,17 +67,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
-            // 
-            // ckb_LuuTK
-            // 
-            this.ckb_LuuTK.AutoSize = true;
-            this.ckb_LuuTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckb_LuuTK.Location = new System.Drawing.Point(318, 195);
-            this.ckb_LuuTK.Name = "ckb_LuuTK";
-            this.ckb_LuuTK.Size = new System.Drawing.Size(118, 20);
-            this.ckb_LuuTK.TabIndex = 15;
-            this.ckb_LuuTK.Text = "Lưu tài khoản";
-            this.ckb_LuuTK.UseVisualStyleBackColor = true;
             // 
             // btn_DangNhap
             // 
@@ -153,7 +140,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frm_DangNhap";
-            this.Text = "frm_DangNhap";
+            this.Text = "Hệ thống quản lí nhân";
             this.Load += new System.EventHandler(this.frm_DangNhap_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -166,7 +153,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox ckb_LuuTK;
         private System.Windows.Forms.Button btn_DangNhap;
         private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.TextBox txt_User;
