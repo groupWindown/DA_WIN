@@ -22,5 +22,16 @@ namespace DAL.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-DSSGJN2\\SQLEXPRESS;Initial Catalog=DA_WIN_NANGCAO;Integrated " +
+            "Security=True")]
+        public string DA_WIN_NANGCAOConnectionString1 {
+            get {
+                return ((string)(this["DA_WIN_NANGCAOConnectionString1"]));
+            }
+        }
     }
 }

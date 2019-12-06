@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChucVu.cs" />
+    <Compile Include="DAL_Load.cs" />
     <Compile Include="linQ.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

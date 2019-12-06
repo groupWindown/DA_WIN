@@ -34,26 +34,17 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tRINHDOHOCVANComboBox = new System.Windows.Forms.ComboBox();
-            this.tRINHDOHOCVANBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSetQLNS = new QuanLy_NhanSu.DataSetQLNS();
             this.tRINHDOTINHOCComboBox = new System.Windows.Forms.ComboBox();
-            this.tRINHDOTINHOCBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.txt_MaNV = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.qUOCTICHComboBox = new System.Windows.Forms.ComboBox();
-            this.qUOCTICHBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tONGIAOComboBox = new System.Windows.Forms.ComboBox();
-            this.tONGIAOBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pHONGBANComboBox = new System.Windows.Forms.ComboBox();
-            this.pHONGBANBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cHUCVUComboBox = new System.Windows.Forms.ComboBox();
-            this.cHUCVUBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dANTOCComboBox = new System.Windows.Forms.ComboBox();
-            this.dANTOCBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.hOTENTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.hOSOTUYENDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nGAYSINHDateEdit = new DevExpress.XtraEditors.DateEdit();
             this.nOISINHTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.cMNDTextEdit = new DevExpress.XtraEditors.TextEdit();
@@ -72,13 +63,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.gridControlCM = new DevExpress.XtraGrid.GridControl();
-            this.cHUYENMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridViewCM = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMACHUYENMON = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTENCHUYENMON = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gridControlNN = new DevExpress.XtraGrid.GridControl();
-            this.nGOAINGUBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridViewNN = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMANGOAINGU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTENNGOAINGU = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -107,44 +96,11 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nHANVIENTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NHANVIENTableAdapter();
-            this.tableAdapterManager = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager();
-            this.cHUCVUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHUCVUTableAdapter();
-            this.cHUYENMONTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHUYENMONTableAdapter();
-            this.dANTOCTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DANTOCTableAdapter();
-            this.hOSOTUYENDUNGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.HOSOTUYENDUNGTableAdapter();
-            this.nGOAINGUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NGOAINGUTableAdapter();
-            this.pHONGBANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.PHONGBANTableAdapter();
-            this.qUOCTICHTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.QUOCTICHTableAdapter();
-            this.tONGIAOTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TONGIAOTableAdapter();
-            this.tRINHDOHOCVANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOHOCVANTableAdapter();
-            this.tRINHDOTINHOCTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOTINHOCTableAdapter();
-            this.dANTOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cHUCVUBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pHONGBANBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tONGIAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.qUOCTICHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tRINHDOTINHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tRINHDOHOCVANBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cHITIETNGOAINGUBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cHITIETNGOAINGUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHITIETNGOAINGUTableAdapter();
-            this.cHITIETCHUYENMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cHITIETCHUYENMONTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHITIETCHUYENMONTableAdapter();
             hINHTHUCTUYENDUNGLabel = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tONGIAOBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANTOCBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOTENTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hOSOTUYENDUNGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGAYSINHDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGAYSINHDateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nOISINHTextEdit.Properties)).BeginInit();
@@ -165,22 +121,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.hINHTHUCTUYENDUNGTextEdit.Properties)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlCM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCM)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlNN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewNN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANTOCBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tONGIAOBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHITIETNGOAINGUBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHITIETCHUYENMONBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // hINHTHUCTUYENDUNGLabel
@@ -272,8 +216,6 @@
             // 
             // tRINHDOHOCVANComboBox
             // 
-            this.tRINHDOHOCVANComboBox.DataSource = this.tRINHDOHOCVANBindingSource1;
-            this.tRINHDOHOCVANComboBox.DisplayMember = "TENTRINHDOHOCVAN";
             this.tRINHDOHOCVANComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tRINHDOHOCVANComboBox.FormattingEnabled = true;
             this.tRINHDOHOCVANComboBox.Location = new System.Drawing.Point(713, 597);
@@ -282,20 +224,8 @@
             this.tRINHDOHOCVANComboBox.TabIndex = 132;
             this.tRINHDOHOCVANComboBox.ValueMember = "MATRINHDOHOCVAN";
             // 
-            // tRINHDOHOCVANBindingSource1
-            // 
-            this.tRINHDOHOCVANBindingSource1.DataMember = "TRINHDOHOCVAN";
-            this.tRINHDOHOCVANBindingSource1.DataSource = this.dataSetQLNS;
-            // 
-            // dataSetQLNS
-            // 
-            this.dataSetQLNS.DataSetName = "DataSetQLNS";
-            this.dataSetQLNS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tRINHDOTINHOCComboBox
             // 
-            this.tRINHDOTINHOCComboBox.DataSource = this.tRINHDOTINHOCBindingSource1;
-            this.tRINHDOTINHOCComboBox.DisplayMember = "TENTRINHDOTINHOC";
             this.tRINHDOTINHOCComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tRINHDOTINHOCComboBox.FormattingEnabled = true;
             this.tRINHDOTINHOCComboBox.Location = new System.Drawing.Point(713, 644);
@@ -303,11 +233,6 @@
             this.tRINHDOTINHOCComboBox.Size = new System.Drawing.Size(183, 28);
             this.tRINHDOTINHOCComboBox.TabIndex = 132;
             this.tRINHDOTINHOCComboBox.ValueMember = "MATRINHDOTINHOC";
-            // 
-            // tRINHDOTINHOCBindingSource1
-            // 
-            this.tRINHDOTINHOCBindingSource1.DataMember = "TRINHDOTINHOC";
-            this.tRINHDOTINHOCBindingSource1.DataSource = this.dataSetQLNS;
             // 
             // pictureEdit1
             // 
@@ -346,8 +271,6 @@
             // 
             // qUOCTICHComboBox
             // 
-            this.qUOCTICHComboBox.DataSource = this.qUOCTICHBindingSource1;
-            this.qUOCTICHComboBox.DisplayMember = "TENQUOCTICH";
             this.qUOCTICHComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qUOCTICHComboBox.FormattingEnabled = true;
             this.qUOCTICHComboBox.Location = new System.Drawing.Point(115, 344);
@@ -356,15 +279,8 @@
             this.qUOCTICHComboBox.TabIndex = 128;
             this.qUOCTICHComboBox.ValueMember = "MAQUOCTICH";
             // 
-            // qUOCTICHBindingSource1
-            // 
-            this.qUOCTICHBindingSource1.DataMember = "QUOCTICH";
-            this.qUOCTICHBindingSource1.DataSource = this.dataSetQLNS;
-            // 
             // tONGIAOComboBox
             // 
-            this.tONGIAOComboBox.DataSource = this.tONGIAOBindingSource1;
-            this.tONGIAOComboBox.DisplayMember = "TENTONGIAO";
             this.tONGIAOComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tONGIAOComboBox.FormattingEnabled = true;
             this.tONGIAOComboBox.Location = new System.Drawing.Point(362, 288);
@@ -373,15 +289,8 @@
             this.tONGIAOComboBox.TabIndex = 128;
             this.tONGIAOComboBox.ValueMember = "MATONGIAO";
             // 
-            // tONGIAOBindingSource1
-            // 
-            this.tONGIAOBindingSource1.DataMember = "TONGIAO";
-            this.tONGIAOBindingSource1.DataSource = this.dataSetQLNS;
-            // 
             // pHONGBANComboBox
             // 
-            this.pHONGBANComboBox.DataSource = this.pHONGBANBindingSource1;
-            this.pHONGBANComboBox.DisplayMember = "TENPHONGBAN";
             this.pHONGBANComboBox.FormattingEnabled = true;
             this.pHONGBANComboBox.Location = new System.Drawing.Point(652, 347);
             this.pHONGBANComboBox.Name = "pHONGBANComboBox";
@@ -389,15 +298,8 @@
             this.pHONGBANComboBox.TabIndex = 128;
             this.pHONGBANComboBox.ValueMember = "MAPHONGBAN";
             // 
-            // pHONGBANBindingSource1
-            // 
-            this.pHONGBANBindingSource1.DataMember = "PHONGBAN";
-            this.pHONGBANBindingSource1.DataSource = this.dataSetQLNS;
-            // 
             // cHUCVUComboBox
             // 
-            this.cHUCVUComboBox.DataSource = this.cHUCVUBindingSource1;
-            this.cHUCVUComboBox.DisplayMember = "TENCHUCVU";
             this.cHUCVUComboBox.FormattingEnabled = true;
             this.cHUCVUComboBox.Location = new System.Drawing.Point(652, 403);
             this.cHUCVUComboBox.Name = "cHUCVUComboBox";
@@ -405,15 +307,8 @@
             this.cHUCVUComboBox.TabIndex = 128;
             this.cHUCVUComboBox.ValueMember = "MACHUCVU";
             // 
-            // cHUCVUBindingSource1
-            // 
-            this.cHUCVUBindingSource1.DataMember = "CHUCVU";
-            this.cHUCVUBindingSource1.DataSource = this.dataSetQLNS;
-            // 
             // dANTOCComboBox
             // 
-            this.dANTOCComboBox.DataSource = this.dANTOCBindingSource1;
-            this.dANTOCComboBox.DisplayMember = "TENDANTOC";
             this.dANTOCComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dANTOCComboBox.FormattingEnabled = true;
             this.dANTOCComboBox.Location = new System.Drawing.Point(115, 288);
@@ -422,14 +317,8 @@
             this.dANTOCComboBox.TabIndex = 128;
             this.dANTOCComboBox.ValueMember = "MADANTOC";
             // 
-            // dANTOCBindingSource1
-            // 
-            this.dANTOCBindingSource1.DataMember = "DANTOC";
-            this.dANTOCBindingSource1.DataSource = this.dataSetQLNS;
-            // 
             // hOTENTextEdit
             // 
-            this.hOTENTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "HOTEN", true));
             this.hOTENTextEdit.Location = new System.Drawing.Point(115, 91);
             this.hOTENTextEdit.Name = "hOTENTextEdit";
             this.hOTENTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -437,14 +326,8 @@
             this.hOTENTextEdit.Size = new System.Drawing.Size(404, 26);
             this.hOTENTextEdit.TabIndex = 96;
             // 
-            // hOSOTUYENDUNGBindingSource
-            // 
-            this.hOSOTUYENDUNGBindingSource.DataMember = "HOSOTUYENDUNG";
-            this.hOSOTUYENDUNGBindingSource.DataSource = this.dataSetQLNS;
-            // 
             // nGAYSINHDateEdit
             // 
-            this.nGAYSINHDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "NGAYSINH", true));
             this.nGAYSINHDateEdit.EditValue = null;
             this.nGAYSINHDateEdit.Location = new System.Drawing.Point(362, 142);
             this.nGAYSINHDateEdit.Name = "nGAYSINHDateEdit";
@@ -459,7 +342,6 @@
             // 
             // nOISINHTextEdit
             // 
-            this.nOISINHTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "NOISINH", true));
             this.nOISINHTextEdit.Location = new System.Drawing.Point(115, 403);
             this.nOISINHTextEdit.Name = "nOISINHTextEdit";
             this.nOISINHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -469,7 +351,6 @@
             // 
             // cMNDTextEdit
             // 
-            this.cMNDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "CMND", true));
             this.cMNDTextEdit.Location = new System.Drawing.Point(115, 190);
             this.cMNDTextEdit.Name = "cMNDTextEdit";
             this.cMNDTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -479,7 +360,6 @@
             // 
             // nGAYCAPDateEdit
             // 
-            this.nGAYCAPDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "NGAYCAP", true));
             this.nGAYCAPDateEdit.EditValue = null;
             this.nGAYCAPDateEdit.Location = new System.Drawing.Point(115, 240);
             this.nGAYCAPDateEdit.Name = "nGAYCAPDateEdit";
@@ -494,7 +374,6 @@
             // 
             // nOICAPTextEdit
             // 
-            this.nOICAPTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "NOICAP", true));
             this.nOICAPTextEdit.Location = new System.Drawing.Point(362, 240);
             this.nOICAPTextEdit.Name = "nOICAPTextEdit";
             this.nOICAPTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -504,7 +383,6 @@
             // 
             // qUEQUANTextEdit
             // 
-            this.qUEQUANTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "QUEQUAN", true));
             this.qUEQUANTextEdit.Location = new System.Drawing.Point(362, 346);
             this.qUEQUANTextEdit.Name = "qUEQUANTextEdit";
             this.qUEQUANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -514,7 +392,6 @@
             // 
             // dIACHITHUONGTRUTextEdit
             // 
-            this.dIACHITHUONGTRUTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "DIACHITHUONGTRU", true));
             this.dIACHITHUONGTRUTextEdit.Location = new System.Drawing.Point(172, 454);
             this.dIACHITHUONGTRUTextEdit.Name = "dIACHITHUONGTRUTextEdit";
             this.dIACHITHUONGTRUTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -524,7 +401,6 @@
             // 
             // nOIOHIENTAITextEdit
             // 
-            this.nOIOHIENTAITextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "NOIOHIENTAI", true));
             this.nOIOHIENTAITextEdit.Location = new System.Drawing.Point(171, 505);
             this.nOIOHIENTAITextEdit.Name = "nOIOHIENTAITextEdit";
             this.nOIOHIENTAITextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -534,7 +410,6 @@
             // 
             // dIENTHOAITextEdit
             // 
-            this.dIENTHOAITextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "DIENTHOAI", true));
             this.dIENTHOAITextEdit.Location = new System.Drawing.Point(173, 554);
             this.dIENTHOAITextEdit.Name = "dIENTHOAITextEdit";
             this.dIENTHOAITextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -544,7 +419,6 @@
             // 
             // eMAILTextEdit
             // 
-            this.eMAILTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "EMAIL", true));
             this.eMAILTextEdit.Location = new System.Drawing.Point(173, 602);
             this.eMAILTextEdit.Name = "eMAILTextEdit";
             this.eMAILTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -554,7 +428,6 @@
             // 
             // tINHTRANGHONNHANTextEdit
             // 
-            this.tINHTRANGHONNHANTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "TINHTRANGHONNHAN", true));
             this.tINHTRANGHONNHANTextEdit.Location = new System.Drawing.Point(713, 505);
             this.tINHTRANGHONNHANTextEdit.Name = "tINHTRANGHONNHANTextEdit";
             this.tINHTRANGHONNHANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -564,7 +437,6 @@
             // 
             // dIENUUTIENTextEdit
             // 
-            this.dIENUUTIENTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "DIENUUTIEN", true));
             this.dIENUUTIENTextEdit.Location = new System.Drawing.Point(173, 648);
             this.dIENUUTIENTextEdit.Name = "dIENUUTIENTextEdit";
             this.dIENUUTIENTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -574,7 +446,6 @@
             // 
             // tINHTRANGSUCKHOETextEdit
             // 
-            this.tINHTRANGSUCKHOETextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "TINHTRANGSUCKHOE", true));
             this.tINHTRANGSUCKHOETextEdit.Location = new System.Drawing.Point(173, 693);
             this.tINHTRANGSUCKHOETextEdit.Name = "tINHTRANGSUCKHOETextEdit";
             this.tINHTRANGSUCKHOETextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -584,7 +455,6 @@
             // 
             // nGAYTUYENDUNGDateEdit
             // 
-            this.nGAYTUYENDUNGDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "NGAYTUYENDUNG", true));
             this.nGAYTUYENDUNGDateEdit.EditValue = null;
             this.nGAYTUYENDUNGDateEdit.Location = new System.Drawing.Point(713, 551);
             this.nGAYTUYENDUNGDateEdit.Name = "nGAYTUYENDUNGDateEdit";
@@ -599,7 +469,6 @@
             // 
             // hINHTHUCTUYENDUNGTextEdit
             // 
-            this.hINHTHUCTUYENDUNGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "HINHTHUCTUYENDUNG", true));
             this.hINHTHUCTUYENDUNGTextEdit.Location = new System.Drawing.Point(713, 693);
             this.hINHTHUCTUYENDUNGTextEdit.Name = "hINHTHUCTUYENDUNGTextEdit";
             this.hINHTHUCTUYENDUNGTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -628,7 +497,6 @@
             // 
             // gridControlCM
             // 
-            this.gridControlCM.DataSource = this.cHUYENMONBindingSource;
             this.gridControlCM.Location = new System.Drawing.Point(-37, 28);
             this.gridControlCM.MainView = this.gridViewCM;
             this.gridControlCM.Name = "gridControlCM";
@@ -636,11 +504,6 @@
             this.gridControlCM.TabIndex = 0;
             this.gridControlCM.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewCM});
-            // 
-            // cHUYENMONBindingSource
-            // 
-            this.cHUYENMONBindingSource.DataMember = "CHUYENMON";
-            this.cHUYENMONBindingSource.DataSource = this.dataSetQLNS;
             // 
             // gridViewCM
             // 
@@ -678,7 +541,6 @@
             // 
             // gridControlNN
             // 
-            this.gridControlNN.DataSource = this.nGOAINGUBindingSource;
             this.gridControlNN.Location = new System.Drawing.Point(-37, 25);
             this.gridControlNN.MainView = this.gridViewNN;
             this.gridControlNN.Name = "gridControlNN";
@@ -686,11 +548,6 @@
             this.gridControlNN.TabIndex = 0;
             this.gridControlNN.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewNN});
-            // 
-            // nGOAINGUBindingSource
-            // 
-            this.nGOAINGUBindingSource.DataMember = "NGOAINGU";
-            this.nGOAINGUBindingSource.DataSource = this.dataSetQLNS;
             // 
             // gridViewNN
             // 
@@ -963,149 +820,6 @@
             this.label41.TabIndex = 12;
             this.label41.Text = "Giới tính";
             // 
-            // nHANVIENBindingSource
-            // 
-            this.nHANVIENBindingSource.DataMember = "NHANVIEN";
-            this.nHANVIENBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // nHANVIENTableAdapter
-            // 
-            this.nHANVIENTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.BANGCHAMCONGTableAdapter = null;
-            this.tableAdapterManager.BANGTANGCATableAdapter = null;
-            this.tableAdapterManager.BANGTANGLUONGTableAdapter = null;
-            this.tableAdapterManager.BAOHIEMTableAdapter = null;
-            this.tableAdapterManager.CHITIETCHUYENMONTableAdapter = null;
-            this.tableAdapterManager.CHITIETHOPDONGTableAdapter = null;
-            this.tableAdapterManager.CHITIETKHENTHUONGTableAdapter = null;
-            this.tableAdapterManager.CHITIETNGOAINGUTableAdapter = null;
-            this.tableAdapterManager.CHUCVUTableAdapter = this.cHUCVUTableAdapter;
-            this.tableAdapterManager.CHUONGTRINHDAOTAOTableAdapter = null;
-            this.tableAdapterManager.CHUYENMONTableAdapter = this.cHUYENMONTableAdapter;
-            this.tableAdapterManager.DANHMUCTANGCATableAdapter = null;
-            this.tableAdapterManager.DANTOCTableAdapter = this.dANTOCTableAdapter;
-            this.tableAdapterManager.DAOTAOTableAdapter = null;
-            this.tableAdapterManager.DS_KYLUATTableAdapter = null;
-            this.tableAdapterManager.HINHANHTableAdapter = null;
-            this.tableAdapterManager.HOPDONGLAODONGTableAdapter = null;
-            this.tableAdapterManager.HOSOTUYENDUNGTableAdapter = this.hOSOTUYENDUNGTableAdapter;
-            this.tableAdapterManager.KQ_TUYENDUNGTableAdapter = null;
-            this.tableAdapterManager.LOAIKHENTHUONGTableAdapter = null;
-            this.tableAdapterManager.MANHINHTableAdapter = null;
-            this.tableAdapterManager.NGOAINGUTableAdapter = this.nGOAINGUTableAdapter;
-            this.tableAdapterManager.NGUOIDUNGNHOMNGUOIDUNGTableAdapter = null;
-            this.tableAdapterManager.NHANVIENTableAdapter = this.nHANVIENTableAdapter;
-            this.tableAdapterManager.NHOMNGUOIDUNGTableAdapter = null;
-            this.tableAdapterManager.PHANQUYENTableAdapter = null;
-            this.tableAdapterManager.PHONGBANTableAdapter = this.pHONGBANTableAdapter;
-            this.tableAdapterManager.QUANLYKYLUATTableAdapter = null;
-            this.tableAdapterManager.QUANLYNGHIVIECTableAdapter = null;
-            this.tableAdapterManager.QUANLYTHAISANTableAdapter = null;
-            this.tableAdapterManager.QUOCTICHTableAdapter = this.qUOCTICHTableAdapter;
-            this.tableAdapterManager.TAIKHOANTableAdapter = null;
-            this.tableAdapterManager.TONGIAOTableAdapter = this.tONGIAOTableAdapter;
-            this.tableAdapterManager.TONGLUONGTableAdapter = null;
-            this.tableAdapterManager.TRINHDOHOCVANTableAdapter = this.tRINHDOHOCVANTableAdapter;
-            this.tableAdapterManager.TRINHDOTINHOCTableAdapter = this.tRINHDOTINHOCTableAdapter;
-            this.tableAdapterManager.UpdateOrder = QuanLy_NhanSu.DataSetQLNSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // cHUCVUTableAdapter
-            // 
-            this.cHUCVUTableAdapter.ClearBeforeFill = true;
-            // 
-            // cHUYENMONTableAdapter
-            // 
-            this.cHUYENMONTableAdapter.ClearBeforeFill = true;
-            // 
-            // dANTOCTableAdapter
-            // 
-            this.dANTOCTableAdapter.ClearBeforeFill = true;
-            // 
-            // hOSOTUYENDUNGTableAdapter
-            // 
-            this.hOSOTUYENDUNGTableAdapter.ClearBeforeFill = true;
-            // 
-            // nGOAINGUTableAdapter
-            // 
-            this.nGOAINGUTableAdapter.ClearBeforeFill = true;
-            // 
-            // pHONGBANTableAdapter
-            // 
-            this.pHONGBANTableAdapter.ClearBeforeFill = true;
-            // 
-            // qUOCTICHTableAdapter
-            // 
-            this.qUOCTICHTableAdapter.ClearBeforeFill = true;
-            // 
-            // tONGIAOTableAdapter
-            // 
-            this.tONGIAOTableAdapter.ClearBeforeFill = true;
-            // 
-            // tRINHDOHOCVANTableAdapter
-            // 
-            this.tRINHDOHOCVANTableAdapter.ClearBeforeFill = true;
-            // 
-            // tRINHDOTINHOCTableAdapter
-            // 
-            this.tRINHDOTINHOCTableAdapter.ClearBeforeFill = true;
-            // 
-            // dANTOCBindingSource
-            // 
-            this.dANTOCBindingSource.DataMember = "DANTOC";
-            this.dANTOCBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // cHUCVUBindingSource
-            // 
-            this.cHUCVUBindingSource.DataMember = "CHUCVU";
-            this.cHUCVUBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // pHONGBANBindingSource
-            // 
-            this.pHONGBANBindingSource.DataMember = "PHONGBAN";
-            this.pHONGBANBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // tONGIAOBindingSource
-            // 
-            this.tONGIAOBindingSource.DataMember = "TONGIAO";
-            this.tONGIAOBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // qUOCTICHBindingSource
-            // 
-            this.qUOCTICHBindingSource.DataMember = "QUOCTICH";
-            this.qUOCTICHBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // tRINHDOTINHOCBindingSource
-            // 
-            this.tRINHDOTINHOCBindingSource.DataMember = "TRINHDOTINHOC";
-            this.tRINHDOTINHOCBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // tRINHDOHOCVANBindingSource
-            // 
-            this.tRINHDOHOCVANBindingSource.DataMember = "TRINHDOHOCVAN";
-            this.tRINHDOHOCVANBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // cHITIETNGOAINGUBindingSource
-            // 
-            this.cHITIETNGOAINGUBindingSource.DataMember = "CHITIETNGOAINGU";
-            this.cHITIETNGOAINGUBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // cHITIETNGOAINGUTableAdapter
-            // 
-            this.cHITIETNGOAINGUTableAdapter.ClearBeforeFill = true;
-            // 
-            // cHITIETCHUYENMONBindingSource
-            // 
-            this.cHITIETCHUYENMONBindingSource.DataMember = "CHITIETCHUYENMON";
-            this.cHITIETCHUYENMONBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // cHITIETCHUYENMONTableAdapter
-            // 
-            this.cHITIETCHUYENMONTableAdapter.ClearBeforeFill = true;
-            // 
             // frm_SuaTTNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1121,17 +835,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tONGIAOBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANTOCBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOTENTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hOSOTUYENDUNGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGAYSINHDateEdit.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGAYSINHDateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nOISINHTextEdit.Properties)).EndInit();
@@ -1152,22 +857,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.hINHTHUCTUYENDUNGTextEdit.Properties)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlCM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCM)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlNN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewNN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANTOCBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tONGIAOBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHITIETNGOAINGUBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHITIETCHUYENMONBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1203,12 +896,6 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
-        private DataSetQLNS dataSetQLNS;
-        private System.Windows.Forms.BindingSource nHANVIENBindingSource;
-        private DataSetQLNSTableAdapters.NHANVIENTableAdapter nHANVIENTableAdapter;
-        private DataSetQLNSTableAdapters.TableAdapterManager tableAdapterManager;
-        private DataSetQLNSTableAdapters.HOSOTUYENDUNGTableAdapter hOSOTUYENDUNGTableAdapter;
-        private System.Windows.Forms.BindingSource hOSOTUYENDUNGBindingSource;
         private DevExpress.XtraEditors.TextEdit hOTENTextEdit;
         private DevExpress.XtraEditors.DateEdit nGAYSINHDateEdit;
         private DevExpress.XtraEditors.TextEdit nOISINHTextEdit;
@@ -1225,54 +912,25 @@
         private DevExpress.XtraEditors.TextEdit tINHTRANGSUCKHOETextEdit;
         private DevExpress.XtraEditors.DateEdit nGAYTUYENDUNGDateEdit;
         private DevExpress.XtraEditors.TextEdit hINHTHUCTUYENDUNGTextEdit;
-        private DataSetQLNSTableAdapters.DANTOCTableAdapter dANTOCTableAdapter;
-        private System.Windows.Forms.BindingSource dANTOCBindingSource;
         private System.Windows.Forms.ComboBox dANTOCComboBox;
-        private System.Windows.Forms.BindingSource dANTOCBindingSource1;
-        private DataSetQLNSTableAdapters.CHUCVUTableAdapter cHUCVUTableAdapter;
-        private System.Windows.Forms.BindingSource cHUCVUBindingSource;
         private System.Windows.Forms.ComboBox cHUCVUComboBox;
-        private System.Windows.Forms.BindingSource cHUCVUBindingSource1;
-        private DataSetQLNSTableAdapters.PHONGBANTableAdapter pHONGBANTableAdapter;
-        private System.Windows.Forms.BindingSource pHONGBANBindingSource;
         private System.Windows.Forms.ComboBox pHONGBANComboBox;
-        private System.Windows.Forms.BindingSource pHONGBANBindingSource1;
-        private DataSetQLNSTableAdapters.TONGIAOTableAdapter tONGIAOTableAdapter;
-        private System.Windows.Forms.BindingSource tONGIAOBindingSource;
         private System.Windows.Forms.ComboBox tONGIAOComboBox;
-        private System.Windows.Forms.BindingSource tONGIAOBindingSource1;
-        private DataSetQLNSTableAdapters.QUOCTICHTableAdapter qUOCTICHTableAdapter;
-        private System.Windows.Forms.BindingSource qUOCTICHBindingSource;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private System.Windows.Forms.TextBox txt_MaNV;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox qUOCTICHComboBox;
-        private System.Windows.Forms.BindingSource qUOCTICHBindingSource1;
-        private DataSetQLNSTableAdapters.TRINHDOTINHOCTableAdapter tRINHDOTINHOCTableAdapter;
-        private System.Windows.Forms.BindingSource tRINHDOTINHOCBindingSource;
         private System.Windows.Forms.ComboBox tRINHDOTINHOCComboBox;
-        private System.Windows.Forms.BindingSource tRINHDOTINHOCBindingSource1;
-        private DataSetQLNSTableAdapters.TRINHDOHOCVANTableAdapter tRINHDOHOCVANTableAdapter;
-        private System.Windows.Forms.BindingSource tRINHDOHOCVANBindingSource;
         private System.Windows.Forms.ComboBox tRINHDOHOCVANComboBox;
-        private System.Windows.Forms.BindingSource tRINHDOHOCVANBindingSource1;
         private DevExpress.XtraGrid.GridControl gridControlCM;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewCM;
         private DevExpress.XtraGrid.GridControl gridControlNN;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewNN;
-        private DataSetQLNSTableAdapters.NGOAINGUTableAdapter nGOAINGUTableAdapter;
-        private System.Windows.Forms.BindingSource nGOAINGUBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colMANGOAINGU;
         private DevExpress.XtraGrid.Columns.GridColumn colTENNGOAINGU;
-        private DataSetQLNSTableAdapters.CHUYENMONTableAdapter cHUYENMONTableAdapter;
-        private System.Windows.Forms.BindingSource cHUYENMONBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colMACHUYENMON;
         private DevExpress.XtraGrid.Columns.GridColumn colTENCHUYENMON;
-        private System.Windows.Forms.BindingSource cHITIETNGOAINGUBindingSource;
-        private DataSetQLNSTableAdapters.CHITIETNGOAINGUTableAdapter cHITIETNGOAINGUTableAdapter;
-        private System.Windows.Forms.BindingSource cHITIETCHUYENMONBindingSource;
-        private DataSetQLNSTableAdapters.CHITIETCHUYENMONTableAdapter cHITIETCHUYENMONTableAdapter;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

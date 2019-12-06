@@ -80,7 +80,6 @@ namespace QuanLy_NhanSu
         }
 
    
-        LinQDataContext linQDataContext = new LinQDataContext();
         public DataTable GetNhomNguoiDung(string str)
         {
             DataTable dt= dataSetQLNS.NGUOIDUNGNHOMNGUOIDUNG;
@@ -93,21 +92,7 @@ namespace QuanLy_NhanSu
                 }
             }
             return dtR;
-            //using LinQ to get MaNhom
-            
-            //DataGridView nhomND = new DataGridView();
-
-            //var list = (from danhSachNhom in linQDataContext.NGUOIDUNGNHOMNGUOIDUNGs
-            //           join taikhoan in linQDataContext.TAIKHOANs
-            //           on danhSachNhom.MANV equals taikhoan.MANV
-            //           where taikhoan.MANV == str
-            //           select new { danhSachNhom.MANHOM,danhSachNhom.MANV }).Distinct();
-            
-            //DataTable dt = new DataTable();
-            //nhomND.DataSource = list.ToList<string>();
-            //dt = (DataTable)nhomND.DataSource;
-
-            //return list.ToList<string>();
+         
         }
 
         
