@@ -32,6 +32,7 @@
             System.Windows.Forms.Label hINHTHUCTUYENDUNGLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_SuaTTNhanVien));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tRINHDOHOCVANComboBox = new System.Windows.Forms.ComboBox();
             this.tRINHDOHOCVANBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetQLNS = new QuanLy_NhanSu.DataSetQLNS();
@@ -130,9 +131,9 @@
             this.cHITIETNGOAINGUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHITIETNGOAINGUTableAdapter();
             this.cHITIETCHUYENMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cHITIETCHUYENMONTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHITIETCHUYENMONTableAdapter();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             hINHTHUCTUYENDUNGLabel = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource1)).BeginInit();
@@ -180,7 +181,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETNGOAINGUBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETCHUYENMONBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // hINHTHUCTUYENDUNGLabel
@@ -260,6 +260,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin nhân viên";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QuanLy_NhanSu.Properties.Resources.ic_x1;
+            this.pictureBox1.Location = new System.Drawing.Point(807, 143);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(17, 19);
+            this.pictureBox1.TabIndex = 138;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // tRINHDOHOCVANComboBox
             // 
             this.tRINHDOHOCVANComboBox.DataSource = this.tRINHDOHOCVANBindingSource1;
@@ -304,6 +314,7 @@
             this.pictureEdit1.Location = new System.Drawing.Point(652, 143);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit1.Size = new System.Drawing.Size(149, 180);
             this.pictureEdit1.TabIndex = 132;
             // 
@@ -1095,16 +1106,6 @@
             // 
             this.cHITIETCHUYENMONTableAdapter.ClearBeforeFill = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QuanLy_NhanSu.Properties.Resources.ic_x1;
-            this.pictureBox1.Location = new System.Drawing.Point(807, 143);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(17, 19);
-            this.pictureBox1.TabIndex = 138;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // frm_SuaTTNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1119,6 +1120,7 @@
             this.Load += new System.EventHandler(this.frm_SuaTTNhanVien_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource1)).EndInit();
@@ -1166,7 +1168,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETNGOAINGUBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHITIETCHUYENMONBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

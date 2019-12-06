@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tONGIAOComboBox = new System.Windows.Forms.ComboBox();
             this.tONGIAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetQLNS = new QuanLy_NhanSu.DataSetQLNS();
@@ -109,9 +110,15 @@
             this.tONGIAOTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TONGIAOTableAdapter();
             this.tRINHDOHOCVANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOHOCVANTableAdapter();
             this.tRINHDOTINHOCTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOTINHOCTableAdapter();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.xtraOpenFileDialog1 = new DevExpress.XtraEditors.XtraOpenFileDialog(this.components);
+            this.hINHANHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hINHANHTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.HINHANHTableAdapter();
+            this.cHITIETCHUYENMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cHITIETCHUYENMONTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHITIETCHUYENMONTableAdapter();
+            this.cHITIETNGOAINGUBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cHITIETNGOAINGUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHITIETNGOAINGUTableAdapter();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tONGIAOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).BeginInit();
@@ -149,7 +156,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlNN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewNN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hINHANHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHITIETCHUYENMONBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHITIETNGOAINGUBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -215,6 +224,16 @@
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin ứng viên";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QuanLy_NhanSu.Properties.Resources.ic_x1;
+            this.pictureBox1.Location = new System.Drawing.Point(841, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(17, 19);
+            this.pictureBox1.TabIndex = 138;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // tONGIAOComboBox
             // 
@@ -318,6 +337,7 @@
             // mAUNGVIENTextEdit
             // 
             this.mAUNGVIENTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOSOTUYENDUNGBindingSource, "MAUNGVIEN", true));
+            this.mAUNGVIENTextEdit.Enabled = false;
             this.mAUNGVIENTextEdit.Location = new System.Drawing.Point(143, 34);
             this.mAUNGVIENTextEdit.Name = "mAUNGVIENTextEdit";
             this.mAUNGVIENTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -521,8 +541,10 @@
             this.pictureEdit1.Location = new System.Drawing.Point(686, 37);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit1.Size = new System.Drawing.Size(149, 180);
             this.pictureEdit1.TabIndex = 87;
+            this.pictureEdit1.EditValueChanged += new System.EventHandler(this.pictureEdit1_EditValueChanged);
             this.pictureEdit1.Click += new System.EventHandler(this.pictureEdit1_Click);
             // 
             // groupBox2
@@ -950,19 +972,36 @@
             // 
             this.tRINHDOTINHOCTableAdapter.ClearBeforeFill = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QuanLy_NhanSu.Properties.Resources.ic_x1;
-            this.pictureBox1.Location = new System.Drawing.Point(841, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(17, 19);
-            this.pictureBox1.TabIndex = 138;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // xtraOpenFileDialog1
             // 
             this.xtraOpenFileDialog1.FileName = "xtraOpenFileDialog1";
+            // 
+            // hINHANHBindingSource
+            // 
+            this.hINHANHBindingSource.DataMember = "HINHANH";
+            this.hINHANHBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // hINHANHTableAdapter
+            // 
+            this.hINHANHTableAdapter.ClearBeforeFill = true;
+            // 
+            // cHITIETCHUYENMONBindingSource
+            // 
+            this.cHITIETCHUYENMONBindingSource.DataMember = "CHITIETCHUYENMON";
+            this.cHITIETCHUYENMONBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // cHITIETCHUYENMONTableAdapter
+            // 
+            this.cHITIETCHUYENMONTableAdapter.ClearBeforeFill = true;
+            // 
+            // cHITIETNGOAINGUBindingSource
+            // 
+            this.cHITIETNGOAINGUBindingSource.DataMember = "CHITIETNGOAINGU";
+            this.cHITIETNGOAINGUBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // cHITIETNGOAINGUTableAdapter
+            // 
+            this.cHITIETNGOAINGUTableAdapter.ClearBeforeFill = true;
             // 
             // frm_ThemUV
             // 
@@ -974,9 +1013,11 @@
             this.Name = "frm_ThemUV";
             this.Text = "frm_ThemUngVien";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_ThemUV_FormClosed);
             this.Load += new System.EventHandler(this.frm_ThemNV_TuUV_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tONGIAOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).EndInit();
@@ -1014,7 +1055,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControlNN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewNN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hINHANHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHITIETCHUYENMONBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHITIETNGOAINGUBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1103,5 +1146,11 @@
         private System.Windows.Forms.ComboBox tONGIAOComboBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.XtraOpenFileDialog xtraOpenFileDialog1;
+        private System.Windows.Forms.BindingSource hINHANHBindingSource;
+        private DataSetQLNSTableAdapters.HINHANHTableAdapter hINHANHTableAdapter;
+        private System.Windows.Forms.BindingSource cHITIETCHUYENMONBindingSource;
+        private DataSetQLNSTableAdapters.CHITIETCHUYENMONTableAdapter cHITIETCHUYENMONTableAdapter;
+        private System.Windows.Forms.BindingSource cHITIETNGOAINGUBindingSource;
+        private DataSetQLNSTableAdapters.CHITIETNGOAINGUTableAdapter cHITIETNGOAINGUTableAdapter;
     }
 }

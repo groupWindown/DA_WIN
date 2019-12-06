@@ -18,6 +18,7 @@ namespace QuanLy_NhanSu
 {
     public partial class frm_Sua_ThemMoiNV_UngVien : Form
     {
+        Strick st = new Strick();
         public frm_Sua_ThemMoiNV_UngVien()
         {
             InitializeComponent();
@@ -160,7 +161,7 @@ namespace QuanLy_NhanSu
                 {
                     if(rows.MAUNGVIEN.ToString()==v)
                     {
-                        pictureEdit_hinhUV.Image = byteArrayToImage(rows.URL.ToArray());
+                        pictureEdit_hinhUV.Image = st.byteArrayToImage(rows.URL.ToArray());
                     }
                 }
                 return null;
@@ -171,20 +172,7 @@ namespace QuanLy_NhanSu
                 return null;
             }
         }
-        //ảnh -> byte[]
-        public byte[] imageToByteArray(System.Drawing.Image imageIn)
-        {
-            MemoryStream ms = new MemoryStream();
-            imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Gif);
-            return ms.ToArray();
-        }
-        //byte[] -> ảnh
-        public System.Drawing.Image byteArrayToImage(byte[] byteArrayIn)
-        {
-            MemoryStream ms = new MemoryStream(byteArrayIn);
-            System.Drawing.Image returnImage = System.Drawing.Image.FromStream(ms);
-            return returnImage;
-        }
+    
 
 
         private void cbo_KetQuaTuyenDung_SelectedIndexChanged(object sender, EventArgs e)
@@ -238,7 +226,7 @@ namespace QuanLy_NhanSu
                             //thêm KQTD
                             insertKQTD();
                             //thêm Nhân Viên
-                            string nhanvien = sinhtudongMaNV();
+                            string nhanvien = sinhtudongMaNV(0);
                             insertNhanVien(nhanvien);
                             //thêm Hợp Đồng
                             insertHDLD(nhanvien);
@@ -296,13 +284,13 @@ namespace QuanLy_NhanSu
             {
                 try
                 {
-                    hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, imageToByteArray(pictureEdit_hinhUV.Image), timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
+                    hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, st.imageToByteArray(pictureEdit_hinhUV.Image), timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
                 }
                 catch
                 {
                     try
                     {
-                        hINHANHTableAdapter.Insert(sinhtudongMaHA(), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, imageToByteArray(pictureEdit_hinhUV.Image));
+                        hINHANHTableAdapter.Insert(sinhtudongMaHA(0), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, st.imageToByteArray(pictureEdit_hinhUV.Image));
                     }
                     catch
                     {
@@ -320,7 +308,7 @@ namespace QuanLy_NhanSu
                 {
                     try
                     {
-                        hINHANHTableAdapter.Insert(sinhtudongMaHA(), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null);
+                        hINHANHTableAdapter.Insert(sinhtudongMaHA(0), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null);
                     }
                     catch
                     {
@@ -342,9 +330,9 @@ namespace QuanLy_NhanSu
             return null;
         }
         //tự sinh Mã Hình ảnh
-        private string sinhtudongMaHA()
+        private string sinhtudongMaHA(int num)
         {
-            int number = dataSetQLNS.HINHANH.Count + 1;
+            int number = dataSetQLNS.HINHANH.Count + 1 +num;
             int value = number;
             int strick = 1;
             while (number < 999999)
@@ -352,7 +340,15 @@ namespace QuanLy_NhanSu
                 number = value + strick;
                 strick *= 10;
             }
-            return "HA" + number.ToString().Substring(1, 6);
+            string str= "HA" + number.ToString().Substring(1, 6);
+            if (dataSetQLNS.HINHANH.FindByMAHINHANH(str) != null)
+            {
+                return sinhtudongMaHA(++num);
+            }
+            else
+            {
+                return str;
+            }
         }
 
         private void insertNhanVien(string nhanvien)
@@ -362,9 +358,9 @@ namespace QuanLy_NhanSu
             nHANVIENTableAdapter.Insert(nhanvien,dataSetQLNS.HOSOTUYENDUNG.FindByMAUNGVIEN(mAUNGVIENTextEdit.Text).HOTEN.ToString(),pHONGBANComboBox.SelectedValue.ToString(),cHUCVUComboBox.SelectedValue.ToString(), DateTime.Now,"Đang làm",mAUNGVIENTextEdit.Text);
         }
         //tự sinh Mã Nhân viên
-        private string sinhtudongMaNV()
+        private string sinhtudongMaNV(int num)
         {
-            int number = dataSetQLNS.NHANVIEN.Count + 1;
+            int number = dataSetQLNS.NHANVIEN.Count + 1+num;
             int value = number;
             int strick = 1;
             while(number<999999)
@@ -372,12 +368,20 @@ namespace QuanLy_NhanSu
                 number =value+strick;
                 strick *= 10;
             }
-            return "NV" + number.ToString().Substring(1, 6);
+            string str = "NV" + number.ToString().Substring(1, 6);
+            if (dataSetQLNS.HINHANH.FindByMAHINHANH(str) != null)
+            {
+                return sinhtudongMaNV(++num);
+            }
+            else
+            {
+                return str;
+            }
         }
         //tự sinh Mã ChiTietHopDong
-        private string sinhtudongCTHD()
+        private string sinhtudongCTHD(int num)
         {
-            int number = dataSetQLNS.CHITIETHOPDONG.Count + 1;
+            int number = dataSetQLNS.CHITIETHOPDONG.Count + 1+num;
             int value = number;
             int strick = 1;
             while (number < 9999)
@@ -385,11 +389,19 @@ namespace QuanLy_NhanSu
                 number = value + strick;
                 strick *= 10;
             }
-            return "CTHD" + number.ToString().Substring(1, 4);
+            string str = "CTHD" + number.ToString().Substring(1, 4);
+            if (dataSetQLNS.HINHANH.FindByMAHINHANH(str) != null)
+            {
+                return sinhtudongCTHD(++num);
+            }
+            else
+            {
+                return str;
+            }
         }
         private void insertHDLD(string nhanvien)
         {
-            cHITIETHOPDONGTableAdapter.Insert(sinhtudongCTHD(), hOPDONGLAODONGComboBox.SelectedValue.ToString(), nhanvien,0, DateTime.Now, DateTime.Parse( dateEdit_NgayBatDau.Text),getNgayKT(),decimal.Parse(txt_LuongThoaThuan.Text.Trim()));
+            cHITIETHOPDONGTableAdapter.Insert(sinhtudongCTHD(0), hOPDONGLAODONGComboBox.SelectedValue.ToString(), nhanvien,0, DateTime.Now, DateTime.Parse( dateEdit_NgayBatDau.Text),getNgayKT(),decimal.Parse(txt_LuongThoaThuan.Text.Trim()));
         }
 
         private DateTime? getNgayKT()
@@ -549,7 +561,7 @@ namespace QuanLy_NhanSu
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (pictureBox1.Image != null)
+            if (pictureEdit_hinhUV.Image != null && pictureEdit_hinhUV != null )
             {
                 pictureEdit_hinhUV.Image.Dispose();
                 pictureEdit_hinhUV.Image = null;
