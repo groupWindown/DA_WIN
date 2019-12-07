@@ -113,11 +113,9 @@ namespace QuanLy_NhanSu
                 byte[] kq=bLL_Load.BLL_loadURLHinhAnh(v);
                 if (kq!=null)
                 {
-                    st.byteArrayToImage(kq);
+                    return st.byteArrayToImage(kq);
                 }
-              
                 return null;
-
             }
             catch
             {
@@ -355,6 +353,15 @@ namespace QuanLy_NhanSu
                     }
                 }
             }
+        }
+
+        private void btn_SaThai_Click(object sender, EventArgs e)
+        {
+            //update tai khoan
+
+            //update nhan vien
+
+
         }
     }
 }

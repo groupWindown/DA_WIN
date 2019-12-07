@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="DAL_KiemTra.cs" />
     <Compile Include="DAL_Load.cs" />
+    <Compile Include="DAL_NhanVien.cs" />
     <Compile Include="linQ.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

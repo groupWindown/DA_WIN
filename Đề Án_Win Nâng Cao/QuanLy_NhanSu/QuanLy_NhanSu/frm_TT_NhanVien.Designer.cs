@@ -138,6 +138,7 @@
             this.label65 = new System.Windows.Forms.Label();
             this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.panel_TT_NhanVien = new System.Windows.Forms.Panel();
+            this.dataGridView_gerSRC = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_SaThai = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -150,7 +151,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.schedulerDataStorage1 = new DevExpress.XtraScheduler.SchedulerDataStorage(this.components);
             this.hopdonglaodongTableAdapter1 = new QuanLy_NhanSu.DataSetQLNSTableAdapters.HOPDONGLAODONGTableAdapter();
-            this.dataGridView_gerSRC = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
             this.tabNavigationPage2.SuspendLayout();
@@ -179,10 +179,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties)).BeginInit();
             this.tabNavigationPage6.SuspendLayout();
             this.panel_TT_NhanVien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_gerSRC)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataStorage1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_gerSRC)).BeginInit();
             this.SuspendLayout();
             // 
             // editFormUserControl2
@@ -191,7 +191,7 @@
             this.editFormUserControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editFormUserControl2.Location = new System.Drawing.Point(0, 0);
             this.editFormUserControl2.Name = "editFormUserControl2";
-            this.editFormUserControl2.Size = new System.Drawing.Size(1370, 526);
+            this.editFormUserControl2.Size = new System.Drawing.Size(1367, 526);
             this.editFormUserControl2.TabIndex = 1;
             // 
             // tabPane1
@@ -209,9 +209,9 @@
             this.tabNavigationPage6,
             this.tabNavigationPage4,
             this.tabNavigationPage5});
-            this.tabPane1.RegularSize = new System.Drawing.Size(1370, 526);
+            this.tabPane1.RegularSize = new System.Drawing.Size(1367, 526);
             this.tabPane1.SelectedPage = this.tabNavigationPage6;
-            this.tabPane1.Size = new System.Drawing.Size(1370, 526);
+            this.tabPane1.Size = new System.Drawing.Size(1367, 526);
             this.tabPane1.TabIndex = 35;
             this.tabPane1.Text = "tabPane1";
             // 
@@ -662,7 +662,7 @@
             this.tabNavigationPage4.Controls.Add(this.groupBox6);
             this.tabNavigationPage4.Controls.Add(this.groupBox5);
             this.tabNavigationPage4.Name = "tabNavigationPage4";
-            this.tabNavigationPage4.Size = new System.Drawing.Size(1370, 499);
+            this.tabNavigationPage4.Size = new System.Drawing.Size(1367, 499);
             // 
             // groupBox7
             // 
@@ -1002,7 +1002,7 @@
             this.tabNavigationPage5.Controls.Add(this.groupBox9);
             this.tabNavigationPage5.Controls.Add(this.groupBox8);
             this.tabNavigationPage5.Name = "tabNavigationPage5";
-            this.tabNavigationPage5.Size = new System.Drawing.Size(1370, 499);
+            this.tabNavigationPage5.Size = new System.Drawing.Size(1367, 499);
             // 
             // groupBox10
             // 
@@ -1303,7 +1303,7 @@
             this.tabNavigationPage6.Controls.Add(this.panel_TT_NhanVien);
             this.tabNavigationPage6.Controls.Add(this.panel1);
             this.tabNavigationPage6.Name = "tabNavigationPage6";
-            this.tabNavigationPage6.Size = new System.Drawing.Size(1370, 499);
+            this.tabNavigationPage6.Size = new System.Drawing.Size(1367, 499);
             // 
             // panel_TT_NhanVien
             // 
@@ -1312,8 +1312,18 @@
             this.panel_TT_NhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_TT_NhanVien.Location = new System.Drawing.Point(352, 0);
             this.panel_TT_NhanVien.Name = "panel_TT_NhanVien";
-            this.panel_TT_NhanVien.Size = new System.Drawing.Size(1018, 499);
+            this.panel_TT_NhanVien.Size = new System.Drawing.Size(1015, 499);
             this.panel_TT_NhanVien.TabIndex = 0;
+            // 
+            // dataGridView_gerSRC
+            // 
+            this.editFormUserControl2.SetBoundPropertyName(this.dataGridView_gerSRC, "");
+            this.dataGridView_gerSRC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_gerSRC.Location = new System.Drawing.Point(949, 457);
+            this.dataGridView_gerSRC.Name = "dataGridView_gerSRC";
+            this.dataGridView_gerSRC.Size = new System.Drawing.Size(66, 37);
+            this.dataGridView_gerSRC.TabIndex = 0;
+            this.dataGridView_gerSRC.Visible = false;
             // 
             // panel1
             // 
@@ -1336,6 +1346,7 @@
             this.btn_SaThai.TabIndex = 37;
             this.btn_SaThai.Text = "Sa thải";
             this.btn_SaThai.UseVisualStyleBackColor = true;
+            this.btn_SaThai.Click += new System.EventHandler(this.btn_SaThai_Click);
             // 
             // label1
             // 
@@ -1439,16 +1450,6 @@
             // 
             this.hopdonglaodongTableAdapter1.ClearBeforeFill = true;
             // 
-            // dataGridView_gerSRC
-            // 
-            this.editFormUserControl2.SetBoundPropertyName(this.dataGridView_gerSRC, "");
-            this.dataGridView_gerSRC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_gerSRC.Location = new System.Drawing.Point(949, 457);
-            this.dataGridView_gerSRC.Name = "dataGridView_gerSRC";
-            this.dataGridView_gerSRC.Size = new System.Drawing.Size(66, 37);
-            this.dataGridView_gerSRC.TabIndex = 0;
-            this.dataGridView_gerSRC.Visible = false;
-            // 
             // frm_TT_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1457,7 +1458,7 @@
             this.Controls.Add(this.tabPane1);
             this.Controls.Add(this.editFormUserControl2);
             this.Name = "frm_TT_NhanVien";
-            this.Size = new System.Drawing.Size(1370, 526);
+            this.Size = new System.Drawing.Size(1367, 526);
             this.Load += new System.EventHandler(this.from_TT_NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
@@ -1492,11 +1493,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties)).EndInit();
             this.tabNavigationPage6.ResumeLayout(false);
             this.panel_TT_NhanVien.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_gerSRC)).EndInit();
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataStorage1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_gerSRC)).EndInit();
             this.ResumeLayout(false);
 
         }

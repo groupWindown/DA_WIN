@@ -36,17 +36,17 @@ namespace QuanLy_NhanSu
         {
 
 
-            //    for (int i = 0; i < gridViewCM.DataRowCount; i++)
-            //    {
-            //        cHITIETCHUYENMONTableAdapter.Fill(dataSetQLNS.CHITIETCHUYENMON);
-            //        DataSetQLNS.CHITIETCHUYENMONRow data = dataSetQLNS.CHITIETCHUYENMON.FindByMACHUYENMONMAUNGVIEN(gridViewCM.GetDataRow(i)["MACHUYENMON"].ToString().Trim(), txt_MaNV.Text.Trim());
-            //        if (data != null)
-            //        {
-            //            gridViewCM.SelectRow(i);
-            //        }
+            for (int i = 0; i < gridViewCM.DataRowCount; i++)
+            {
+                //        cHITIETCHUYENMONTableAdapter.Fill(dataSetQLNS.CHITIETCHUYENMON);
+                //        DataSetQLNS.CHITIETCHUYENMONRow data = dataSetQLNS.CHITIETCHUYENMON.FindByMACHUYENMONMAUNGVIEN(gridViewCM.GetDataRow(i)["MACHUYENMON"].ToString().Trim(), txt_MaNV.Text.Trim());
+                //if (data != null)
+                //{
+                //    gridViewCM.SelectRow(i);
+                //}
 
 
-            //    }
+            }
             //    for (int i = 0; i < gridViewNN.DataRowCount; i++)
             //    {
             //        cHITIETNGOAINGUTableAdapter.Fill(dataSetQLNS.CHITIETNGOAINGU);
@@ -82,6 +82,29 @@ namespace QuanLy_NhanSu
 
                 }
             }
+        }
+
+        private void pictureEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureEdit1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                xtraOpenFileDialog1.ShowDialog();
+                xtraOpenFileDialog1.Filter = "JPG FILE (*.jpg)|*.jpg|All files (*.*)|*.*";
+                string file = xtraOpenFileDialog1.FileName;
+                if (string.IsNullOrEmpty(file))
+                {
+                    return;
+                }
+                System.Drawing.Image image = System.Drawing.Image.FromFile(file);
+                pictureEdit1.Image = image;
+            }
+            catch
+            { }
         }
     }
 }

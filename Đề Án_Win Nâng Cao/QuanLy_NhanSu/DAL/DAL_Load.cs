@@ -46,21 +46,16 @@ namespace DAL
         {
             return linQ.NGOAINGUs.Select(t => t).ToList<NGOAINGU>();
         }
-        public string loadChiTietNgoaiNgu(string pMaNN)
+        public List<CHITIETNGOAINGU> loadChiTietNgoaiNgu(string pMaNV)
         {
-            if(linQ.CHITIETNGOAINGUs.Where(t => t.MANGOAINGU == pMaNN).FirstOrDefault()!=null)
-            {
-                return linQ.CHITIETNGOAINGUs.Where(t => t.MANGOAINGU == pMaNN).FirstOrDefault().ToString();
-            }
-            return null;
+            if (linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault() == null)
+                return null;
+            string UV = linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
+            return linQ.CHITIETNGOAINGUs.Where(t => t.MAUNGVIEN == UV).ToList<CHITIETNGOAINGU>();
         }
-        public string loadChiTietChuyenMon(string pMaCM)
+        public List<CHITIETCHUYENMON> loadChiTietChuyenMon(string pMaNV)
         {
-            if( linQ.CHITIETCHUYENMONs.Where(t => t.MACHUYENMON== pMaCM).FirstOrDefault()!=null)
-            {
-                return linQ.CHITIETCHUYENMONs.Where(t => t.MACHUYENMON == pMaCM).FirstOrDefault().ToString();
-            }
-            return null;
+            return linQ.CHITIETCHUYENMONs.Where(t => t.MAUNGVIEN == pMaNV).ToList<CHITIETCHUYENMON>();
         }
         public List<HOSOTUYENDUNG> loadHoSoTuyenDung()
         {
@@ -101,7 +96,10 @@ namespace DAL
             if (linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault() == null)
                 return null;
             string UV = linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
-            return linQ.HINHANHs.Where(t => t.MAUNGVIEN==UV).FirstOrDefault().URL.ToArray();
+            string s = linQ.HINHANHs.Where(t => t.MAUNGVIEN == UV).FirstOrDefault().URL.ToString();
+            byte[] s1 = linQ.HINHANHs.Where(t => t.MAUNGVIEN == UV).FirstOrDefault().URL.ToArray();
+               
+            return s1;
         }
 
 
