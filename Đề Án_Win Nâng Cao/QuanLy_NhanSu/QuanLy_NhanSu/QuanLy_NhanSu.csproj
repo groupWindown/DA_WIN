@@ -264,6 +264,12 @@
     <Compile Include="Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_Dong_NhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Dong_NhanVien.Designer.cs">
+      <DependentUpon>UserControl_Dong_NhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Dong_UngVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -343,6 +349,9 @@
     </Compile>
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Dong_NhanVien.resx">
+      <DependentUpon>UserControl_Dong_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Dong_UngVien.resx">
       <DependentUpon>UserControl_Dong_UngVien.cs</DependentUpon>
@@ -499,6 +508,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\backg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{784aba81-1253-4557-9f76-9de0b87785b4}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

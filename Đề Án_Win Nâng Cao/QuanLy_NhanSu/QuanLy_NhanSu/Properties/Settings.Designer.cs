@@ -93,5 +93,17 @@ namespace QuanLy_NhanSu.Properties {
                 this["controldongclick"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string controldongclickmaNV {
+            get {
+                return ((string)(this["controldongclickmaNV"]));
+            }
+            set {
+                this["controldongclickmaNV"] = value;
+            }
+        }
     }
 }

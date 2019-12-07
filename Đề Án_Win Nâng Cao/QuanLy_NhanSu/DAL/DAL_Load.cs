@@ -61,7 +61,40 @@ namespace DAL
             }
             return null;
         }
-
+        public List<HOSOTUYENDUNG> loadHoSoTuyenDung()
+        {
+            return linQ.HOSOTUYENDUNGs.Select(t => t).ToList<HOSOTUYENDUNG>();
+        }
+        public List<NHANVIEN> loadNhanVien()
+        {
+            return linQ.NHANVIENs.Select(t => t).ToList<NHANVIEN>();
+        }
+        public List<HINHANH> loadHinhAnh()
+        {
+            return linQ.HINHANHs.Select(t => t).ToList<HINHANH>();
+        }
+        public string loadTenChucVu(string pMaCV)
+        {
+            if (linQ.CHUCVUs.Where(t => t.MACHUCVU == pMaCV).FirstOrDefault() != null)
+            {
+                return linQ.CHUCVUs.Where(t => t.MACHUCVU == pMaCV).FirstOrDefault().TENCHUCVU.ToString();
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public string loadTenPhongBan(string pMaPB)
+        {
+            if (linQ.PHONGBANs.Where(t => t.MAPHONGBAN == pMaPB).FirstOrDefault() != null)
+            {
+                return linQ.PHONGBANs.Where(t => t.MAPHONGBAN == pMaPB).FirstOrDefault().TENPHONGBAN.ToString();
+            }
+            else
+            {
+                return null;
+            }
+        }
 
 
 

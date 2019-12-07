@@ -8,11 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraScheduler;
+using BLL;
+using DAL;
 
 namespace QuanLy_NhanSu
 {
+
     public partial class frm_TT_NhanVien : UserControl
     {
+        List<UserControl_Dong_NhanVien> listQLNS = new List<UserControl_Dong_NhanVien>();
+        List<UserControl_Dong_NhanVien> listQLNSSearch = new List<UserControl_Dong_NhanVien>();
+        BLL_Load bLL_Load = new BLL_Load();
+        Strick st = new Strick();
         public frm_TT_NhanVien()
         {
             InitializeComponent();
@@ -20,586 +27,108 @@ namespace QuanLy_NhanSu
 
         private void from_TT_NhanVien_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSetQLNS.DataTable1' table. You can move, or remove it, as needed.
-           
-            // TODO: This line of code loads data into the 'dataSetQLNS.PHONGBAN' table. You can move, or remove it, as needed.
-           
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pHONGBANBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-           
-
-        }
-
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void editFormUserControl1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void editFormUserControl2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabNavigationPage2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void groupBox4_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabNavigationPage3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox18_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox19_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox20_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label26_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label27_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label28_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label29_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label30_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox21_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label31_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox22_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label32_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox23_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label33_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox24_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label34_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox25_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label35_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox26_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox27_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox28_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox29_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox30_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox31_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox32_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox33_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label36_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label37_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label38_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label39_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label40_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label41_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label42_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label43_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label44_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPane1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox36_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox35_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox34_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox17_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox15_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox14_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
+            cbo_ChucVu.DataSource = bLL_Load.BLL_loadChucVu();
+            cbo_PhongBan.DataSource = bLL_Load.BLL_loadPhongBan();
+            cbo_ChucVu.ValueMember = "MACHUCVU";
+            cbo_PhongBan.ValueMember = "MAPHONGBAN";
+            cbo_ChucVu.DisplayMember = "TENCHUCVU";
+            cbo_PhongBan.DisplayMember = "TENPHONGBAN";
+            
+            load();
+        }
+
+        private void load()
+        {
+            loadctrldong();
+            sapxep(listQLNS);
+        }
+        private void sapxep(List<UserControl_Dong_NhanVien> lst)
+        {
+            int x = 1;
+            int y = 1;
+            panel_TT_NhanVien.Controls.Clear();
+
+            int bac = 0;
+
+            foreach (UserControl_Dong_NhanVien control in lst)
+            {
+                if (control.GetType() == typeof(UserControl_Dong_NhanVien))
+                {
+
+                    control.Location = new Point(x, y);
+                    panel_TT_NhanVien.Controls.Add(control);
+                    x += 222;
+
+                    if (bac >= 2)
+                    {
+                        y += 108;
+                        x = 1;
+                        bac = 0;
+                        y--;
+                        x--;
+                    }
+                    else
+                    {
+                        bac++;
+                        x--;
+                    }
+                }
+            }
+        }
+        private void loadctrldong()
+        {
+            listQLNS.Clear();
+
+           // DataGridView dtr = bLL_Load.BLL_loadNhanVien();
+            dataGridView2.DataSource = bLL_Load.BLL_loadNhanVien();
+            for (int i=0;i< dataGridView2.Rows.Count;i++)
+            {
+                DataGridViewRow dataRow = new DataGridViewRow();
+                dataRow = dataGridView2.Rows[i];
+                if (dataRow.Cells["TINHTRANG"].Value != null)
+                {
+                    if (dataRow.Cells["TINHTRANG"].Value.ToString() == "Đang làm")
+                    {
+                        string pMaUV = dataRow.Cells["MANV"].Value.ToString();
+                        string pTenUV = dataRow.Cells["HOTEN"].Value.ToString();
+                        string pNgayUV = dataRow.Cells["NGAYVAOLAM"].Value.ToString().Split(' ')[0].ToString();
+                        string pSDTUV = bLL_Load.BLL_loadTenPhongBan( dataRow.Cells["MAPHONGBAN"].Value.ToString().Trim());
+                        string pEMailUV = dataRow.Cells["MAHOSO"].Value.ToString();
+                        string pChucVuUV = bLL_Load.BLL_loadTenChucVu( dataRow.Cells["MACHUCVU"].Value.ToString().Trim());
+
+                        UserControl_Dong_NhanVien usercotrol = new UserControl_Dong_NhanVien(pMaUV, pTenUV, pNgayUV, pSDTUV, pEMailUV, pChucVuUV, loadhinh(pMaUV));
+                       
+                        listQLNS.Add(usercotrol);
+                    }
+                }
+            }
+        }
+        private Image loadhinh(string v)
+        {
+            try
+            {
+                //DataSetQLNS.HINHANHDataTable data = dataSetQLNS.HINHANH;
+                //foreach (DataSetQLNS.HINHANHRow rows in data.Rows)
+                //{
+                //    if (rows.MAUNGVIEN.ToString() == v)
+                //    {
+                //        return byteArrayToImage(rows.URL.ToArray());
+                //    }
+                //}
+                return null;
+
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        private void txt_HoTen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
-        private void textBox13_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox12_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox11_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label24_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabNavigationPage1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabNavigationPage4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dateEdit3_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label60_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label45_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

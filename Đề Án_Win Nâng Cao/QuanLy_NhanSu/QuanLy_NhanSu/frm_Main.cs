@@ -62,21 +62,12 @@ namespace QuanLy_NhanSu
                     FindMenuPhanQuyen(this.ribbonPage_TacVu.Groups, mh[0].ToString(), Convert.ToBoolean(mh[2].ToString()));
                 }
             }
-            try
-            {
-                LabelTenNV.Text = dataSetQLNS.NHANVIEN.FindByMANV(Properties.Settings.Default.user).HOTEN.ToString();
-                labelChucVu.Text = dataSetQLNS.NHANVIEN.FindByMANV(Properties.Settings.Default.user).MACHUCVU.ToString();
-
-            }
-            catch
-            {
-                LabelTenNV.Text = "Admin nè";
-                labelChucVu.Text = "Admin nè";
-
-            }
+         
             Background frm = new Background();
             panel_Main.Controls.Add(frm);
 
+            DevExpress.LookAndFeel.DefaultLookAndFeel themes = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            themes.LookAndFeel.SkinName = ""; 
         }
 
    

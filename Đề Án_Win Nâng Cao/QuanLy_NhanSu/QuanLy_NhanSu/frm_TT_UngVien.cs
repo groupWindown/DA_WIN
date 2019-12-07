@@ -15,6 +15,7 @@ namespace QuanLy_NhanSu
     {
         List<UserControl_Dong_UngVien> listQLNS = new List<UserControl_Dong_UngVien>();
         List<UserControl_Dong_UngVien> listQLNSSearch = new List<UserControl_Dong_UngVien>();
+        Strick st = new Strick();
         public frm_TT_UngVien()
         {
             InitializeComponent();
@@ -65,7 +66,7 @@ namespace QuanLy_NhanSu
                 {
                     if (rows.MAUNGVIEN.ToString() == v)
                     {
-                        return byteArrayToImage(rows.URL.ToArray());
+                        return st.byteArrayToImage(rows.URL.ToArray());
                     }
                 }
                 return null;
@@ -76,13 +77,7 @@ namespace QuanLy_NhanSu
                 return null;
             }
         }
-        //byte[] -> ảnh
-        public System.Drawing.Image byteArrayToImage(byte[] byteArrayIn)
-        {
-            MemoryStream ms = new MemoryStream(byteArrayIn);
-            System.Drawing.Image returnImage = System.Drawing.Image.FromStream(ms);
-            return returnImage;
-        }
+      
 
         private bool kiemtratrungMaUngVien(string v)
         {

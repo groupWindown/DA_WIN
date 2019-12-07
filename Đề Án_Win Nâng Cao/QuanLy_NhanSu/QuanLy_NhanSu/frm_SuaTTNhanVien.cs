@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BLL;
+using DAL;
 namespace QuanLy_NhanSu
 {
     public partial class frm_SuaTTNhanVien : Form
     {
+        BLL_Load bLL_load = new BLL_Load();
         public frm_SuaTTNhanVien()
         {
             InitializeComponent();
@@ -25,32 +27,35 @@ namespace QuanLy_NhanSu
 
         private void frm_SuaTTNhanVien_Load(object sender, EventArgs e)
         {
-
-           // Load_CM_NN();
+            dANTOCComboBox.DataSource= bLL_load.BLL_loadDanToc();
+            dANTOCComboBox.ValueMember = "MADANTOC";
+            dANTOCComboBox.DisplayMember = "TENDANTOC";
+            Load_CM_NN();
         }
-        //private void Load_CM_NN()
-        //{
-        //    for (int i = 0; i < gridViewCM.DataRowCount; i++)
-        //    {
-        //        cHITIETCHUYENMONTableAdapter.Fill(dataSetQLNS.CHITIETCHUYENMON);
-        //        DataSetQLNS.CHITIETCHUYENMONRow data = dataSetQLNS.CHITIETCHUYENMON.FindByMACHUYENMONMAUNGVIEN(gridViewCM.GetDataRow(i)["MACHUYENMON"].ToString().Trim(), txt_MaNV.Text.Trim());
-        //        if (data != null)
-        //        {
-        //            gridViewCM.SelectRow(i);
-        //        }
+        private void Load_CM_NN()
+        {
 
 
-        //    }
-        //    for (int i = 0; i < gridViewNN.DataRowCount; i++)
-        //    {
-        //        cHITIETNGOAINGUTableAdapter.Fill(dataSetQLNS.CHITIETNGOAINGU);
-        //        DataSetQLNS.CHITIETNGOAINGURow data = dataSetQLNS.CHITIETNGOAINGU.FindByMANGOAINGUMAUNGVIEN(gridViewNN.GetDataRow(i)["MANGOAINGU"].ToString(), txt_MaNV.Text.Trim());
-        //        if (data != null)
-        //        {
-        //            gridViewNN.SelectRow(i);
-        //        }
-        //    }
-        //}
+            //    for (int i = 0; i < gridViewCM.DataRowCount; i++)
+            //    {
+            //        cHITIETCHUYENMONTableAdapter.Fill(dataSetQLNS.CHITIETCHUYENMON);
+            //        DataSetQLNS.CHITIETCHUYENMONRow data = dataSetQLNS.CHITIETCHUYENMON.FindByMACHUYENMONMAUNGVIEN(gridViewCM.GetDataRow(i)["MACHUYENMON"].ToString().Trim(), txt_MaNV.Text.Trim());
+            //        if (data != null)
+            //        {
+            //            gridViewCM.SelectRow(i);
+            //        }
+
+
+            //    }
+            //    for (int i = 0; i < gridViewNN.DataRowCount; i++)
+            //    {
+            //        cHITIETNGOAINGUTableAdapter.Fill(dataSetQLNS.CHITIETNGOAINGU);
+            //        DataSetQLNS.CHITIETNGOAINGURow data = dataSetQLNS.CHITIETNGOAINGU.FindByMANGOAINGUMAUNGVIEN(gridViewNN.GetDataRow(i)["MANGOAINGU"].ToString(), txt_MaNV.Text.Trim());
+            //        if (data != null)
+            //        {
+            //            gridViewNN.SelectRow(i);
+            //        }
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

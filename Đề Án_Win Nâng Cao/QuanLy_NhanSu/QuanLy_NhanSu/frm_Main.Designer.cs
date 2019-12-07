@@ -64,8 +64,6 @@
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.ribbonMiniToolbar2 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
-            this.LabelTenNV = new System.Windows.Forms.Label();
-            this.labelChucVu = new System.Windows.Forms.Label();
             this.dataSetQLNS = new QuanLy_NhanSu.DataSetQLNS();
             this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nHANVIENTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NHANVIENTableAdapter();
@@ -80,6 +78,8 @@
             this.pHANQUYENTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.PHANQUYENTableAdapter();
             this.tAIKHOANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tAIKHOANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TAIKHOANTableAdapter();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl_Main)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
@@ -111,9 +111,10 @@
             this.barButtonItem_ThongKe,
             this.barButtonItem_DangXuat,
             this.barButtonItem_HoSoNhanVien,
-            this.barButtonItem_TuongTacDuLieu});
+            this.barButtonItem_TuongTacDuLieu,
+            this.skinRibbonGalleryBarItem1});
             this.ribbonControl_Main.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl_Main.MaxItemId = 1;
+            this.ribbonControl_Main.MaxItemId = 2;
             this.ribbonControl_Main.Name = "ribbonControl_Main";
             this.ribbonControl_Main.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage_HeThong,
@@ -240,7 +241,8 @@
             // 
             this.ribbonPage_HeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup4,
-            this.ribbonPageGroup10});
+            this.ribbonPageGroup10,
+            this.ribbonPageGroup1});
             this.ribbonPage_HeThong.Name = "ribbonPage_HeThong";
             this.ribbonPage_HeThong.Text = "Hệ thống";
             // 
@@ -377,28 +379,6 @@
             this.barButtonItem14.Id = 23;
             this.barButtonItem14.Name = "barButtonItem14";
             // 
-            // LabelTenNV
-            // 
-            this.LabelTenNV.AutoSize = true;
-            this.LabelTenNV.BackColor = System.Drawing.Color.White;
-            this.LabelTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTenNV.Location = new System.Drawing.Point(348, 68);
-            this.LabelTenNV.Name = "LabelTenNV";
-            this.LabelTenNV.Size = new System.Drawing.Size(16, 18);
-            this.LabelTenNV.TabIndex = 5;
-            this.LabelTenNV.Text = "a";
-            // 
-            // labelChucVu
-            // 
-            this.labelChucVu.AutoSize = true;
-            this.labelChucVu.BackColor = System.Drawing.Color.White;
-            this.labelChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChucVu.Location = new System.Drawing.Point(348, 95);
-            this.labelChucVu.Name = "labelChucVu";
-            this.labelChucVu.Size = new System.Drawing.Size(16, 18);
-            this.labelChucVu.TabIndex = 5;
-            this.labelChucVu.Text = "a";
-            // 
             // dataSetQLNS
             // 
             this.dataSetQLNS.DataSetName = "DataSetQLNS";
@@ -499,13 +479,22 @@
             // 
             this.tAIKHOANTableAdapter.ClearBeforeFill = true;
             // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // skinRibbonGalleryBarItem1
+            // 
+            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem1.Id = 1;
+            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
+            // 
             // frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 491);
-            this.Controls.Add(this.labelChucVu);
-            this.Controls.Add(this.LabelTenNV);
             this.Controls.Add(this.panel_Main);
             this.Controls.Add(this.ribbonControl_Main);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -569,8 +558,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem_TuongTacDuLieu;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
-        private System.Windows.Forms.Label LabelTenNV;
-        private System.Windows.Forms.Label labelChucVu;
         private System.Windows.Forms.BindingSource nHANVIENBindingSource;
         private DataSetQLNS dataSetQLNS;
         private DataSetQLNSTableAdapters.NHANVIENTableAdapter nHANVIENTableAdapter;
@@ -585,5 +572,7 @@
         private DataSetQLNSTableAdapters.PHANQUYENTableAdapter pHANQUYENTableAdapter;
         private System.Windows.Forms.BindingSource tAIKHOANBindingSource;
         private DataSetQLNSTableAdapters.TAIKHOANTableAdapter tAIKHOANTableAdapter;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
     }
 }
