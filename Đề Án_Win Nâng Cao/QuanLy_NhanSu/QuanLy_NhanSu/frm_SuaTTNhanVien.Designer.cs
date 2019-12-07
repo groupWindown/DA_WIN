@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label hINHTHUCTUYENDUNGLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_SuaTTNhanVien));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -199,7 +198,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(12, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1375, 739);
+            this.groupBox3.Size = new System.Drawing.Size(1375, 736);
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin nhân viên";
@@ -216,6 +215,7 @@
             // 
             // tRINHDOHOCVANComboBox
             // 
+            this.tRINHDOHOCVANComboBox.DisplayMember = "MATRINHDOHOCVAN";
             this.tRINHDOHOCVANComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tRINHDOHOCVANComboBox.FormattingEnabled = true;
             this.tRINHDOHOCVANComboBox.Location = new System.Drawing.Point(713, 597);
@@ -226,6 +226,7 @@
             // 
             // tRINHDOTINHOCComboBox
             // 
+            this.tRINHDOTINHOCComboBox.DisplayMember = "MATRINHDOTINHOC";
             this.tRINHDOTINHOCComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tRINHDOTINHOCComboBox.FormattingEnabled = true;
             this.tRINHDOTINHOCComboBox.Location = new System.Drawing.Point(713, 644);
@@ -271,6 +272,7 @@
             // 
             // qUOCTICHComboBox
             // 
+            this.qUOCTICHComboBox.DisplayMember = "MAQUOCTICH";
             this.qUOCTICHComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qUOCTICHComboBox.FormattingEnabled = true;
             this.qUOCTICHComboBox.Location = new System.Drawing.Point(115, 344);
@@ -281,6 +283,7 @@
             // 
             // tONGIAOComboBox
             // 
+            this.tONGIAOComboBox.DisplayMember = "MATONGIAO";
             this.tONGIAOComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tONGIAOComboBox.FormattingEnabled = true;
             this.tONGIAOComboBox.Location = new System.Drawing.Point(362, 288);
@@ -291,6 +294,7 @@
             // 
             // pHONGBANComboBox
             // 
+            this.pHONGBANComboBox.DisplayMember = "MAPHONGBAN";
             this.pHONGBANComboBox.FormattingEnabled = true;
             this.pHONGBANComboBox.Location = new System.Drawing.Point(652, 347);
             this.pHONGBANComboBox.Name = "pHONGBANComboBox";
@@ -300,6 +304,7 @@
             // 
             // cHUCVUComboBox
             // 
+            this.cHUCVUComboBox.DisplayMember = "MACHUCVU";
             this.cHUCVUComboBox.FormattingEnabled = true;
             this.cHUCVUComboBox.Location = new System.Drawing.Point(652, 403);
             this.cHUCVUComboBox.Name = "cHUCVUComboBox";
@@ -309,6 +314,7 @@
             // 
             // dANTOCComboBox
             // 
+            this.dANTOCComboBox.DisplayMember = "MADANTOC";
             this.dANTOCComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dANTOCComboBox.FormattingEnabled = true;
             this.dANTOCComboBox.Location = new System.Drawing.Point(115, 288);
@@ -831,6 +837,7 @@
             this.Name = "frm_SuaTTNhanVien";
             this.Text = "frm_SuaTTNhanVien";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_SuaTTNhanVien_FormClosed);
             this.Load += new System.EventHandler(this.frm_SuaTTNhanVien_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

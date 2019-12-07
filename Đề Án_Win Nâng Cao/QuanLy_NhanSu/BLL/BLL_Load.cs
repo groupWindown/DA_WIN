@@ -73,6 +73,9 @@ namespace BLL
         {
             return dal.loadTenPhongBan(p);
         }
-
+        public byte[] BLL_loadURLHinhAnh(string p)
+        {
+            return dal.loadURLHinhAnh(p);
+        }
     }
 }

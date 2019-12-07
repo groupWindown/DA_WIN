@@ -150,6 +150,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.schedulerDataStorage1 = new DevExpress.XtraScheduler.SchedulerDataStorage(this.components);
             this.hopdonglaodongTableAdapter1 = new QuanLy_NhanSu.DataSetQLNSTableAdapters.HOPDONGLAODONGTableAdapter();
+            this.dataGridView_gerSRC = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
             this.tabNavigationPage2.SuspendLayout();
@@ -177,9 +178,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties)).BeginInit();
             this.tabNavigationPage6.SuspendLayout();
+            this.panel_TT_NhanVien.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataStorage1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_gerSRC)).BeginInit();
             this.SuspendLayout();
             // 
             // editFormUserControl2
@@ -878,7 +881,7 @@
             // 
             this.label54.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label54, "");
-            this.label54.Location = new System.Drawing.Point(397, 129);
+            this.label54.Location = new System.Drawing.Point(400, 129);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(96, 19);
             this.label54.TabIndex = 81;
@@ -888,7 +891,7 @@
             // 
             this.label53.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label53, "");
-            this.label53.Location = new System.Drawing.Point(397, 87);
+            this.label53.Location = new System.Drawing.Point(400, 87);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(91, 19);
             this.label53.TabIndex = 80;
@@ -898,7 +901,7 @@
             // 
             this.label52.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label52, "");
-            this.label52.Location = new System.Drawing.Point(397, 43);
+            this.label52.Location = new System.Drawing.Point(400, 43);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(61, 19);
             this.label52.TabIndex = 79;
@@ -1114,7 +1117,7 @@
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.dateEdit5, "");
             this.dateEdit5.EditValue = null;
-            this.dateEdit5.Location = new System.Drawing.Point(919, 86);
+            this.dateEdit5.Location = new System.Drawing.Point(898, 85);
             this.dateEdit5.Name = "dateEdit5";
             this.dateEdit5.Properties.AutoHeight = false;
             this.dateEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1122,23 +1125,23 @@
             this.dateEdit5.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit5.Properties.CellSize = new System.Drawing.Size(207, 27);
-            this.dateEdit5.Size = new System.Drawing.Size(221, 27);
+            this.dateEdit5.Size = new System.Drawing.Size(242, 27);
             this.dateEdit5.TabIndex = 90;
             // 
             // textBox41
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.textBox41, "");
-            this.textBox41.Location = new System.Drawing.Point(919, 43);
+            this.textBox41.Location = new System.Drawing.Point(898, 43);
             this.textBox41.Multiline = true;
             this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(221, 27);
+            this.textBox41.Size = new System.Drawing.Size(242, 27);
             this.textBox41.TabIndex = 89;
             // 
             // dateEdit6
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.dateEdit6, "");
             this.dateEdit6.EditValue = null;
-            this.dateEdit6.Location = new System.Drawing.Point(919, 130);
+            this.dateEdit6.Location = new System.Drawing.Point(898, 126);
             this.dateEdit6.Name = "dateEdit6";
             this.dateEdit6.Properties.AutoHeight = false;
             this.dateEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1146,7 +1149,7 @@
             this.dateEdit6.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit6.Properties.CellSize = new System.Drawing.Size(207, 27);
-            this.dateEdit6.Size = new System.Drawing.Size(221, 27);
+            this.dateEdit6.Size = new System.Drawing.Size(242, 27);
             this.dateEdit6.TabIndex = 88;
             // 
             // comboBox6
@@ -1180,7 +1183,7 @@
             // 
             this.label56.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label56, "");
-            this.label56.Location = new System.Drawing.Point(798, 43);
+            this.label56.Location = new System.Drawing.Point(797, 43);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(69, 19);
             this.label56.TabIndex = 82;
@@ -1190,7 +1193,7 @@
             // 
             this.label57.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label57, "");
-            this.label57.Location = new System.Drawing.Point(798, 132);
+            this.label57.Location = new System.Drawing.Point(802, 129);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(89, 19);
             this.label57.TabIndex = 81;
@@ -1200,7 +1203,7 @@
             // 
             this.label58.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label58, "");
-            this.label58.Location = new System.Drawing.Point(798, 85);
+            this.label58.Location = new System.Drawing.Point(797, 87);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(94, 19);
             this.label58.TabIndex = 80;
@@ -1305,6 +1308,7 @@
             // panel_TT_NhanVien
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.panel_TT_NhanVien, "");
+            this.panel_TT_NhanVien.Controls.Add(this.dataGridView_gerSRC);
             this.panel_TT_NhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_TT_NhanVien.Location = new System.Drawing.Point(352, 0);
             this.panel_TT_NhanVien.Name = "panel_TT_NhanVien";
@@ -1435,6 +1439,16 @@
             // 
             this.hopdonglaodongTableAdapter1.ClearBeforeFill = true;
             // 
+            // dataGridView_gerSRC
+            // 
+            this.editFormUserControl2.SetBoundPropertyName(this.dataGridView_gerSRC, "");
+            this.dataGridView_gerSRC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_gerSRC.Location = new System.Drawing.Point(949, 457);
+            this.dataGridView_gerSRC.Name = "dataGridView_gerSRC";
+            this.dataGridView_gerSRC.Size = new System.Drawing.Size(66, 37);
+            this.dataGridView_gerSRC.TabIndex = 0;
+            this.dataGridView_gerSRC.Visible = false;
+            // 
             // frm_TT_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1477,10 +1491,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties)).EndInit();
             this.tabNavigationPage6.ResumeLayout(false);
+            this.panel_TT_NhanVien.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataStorage1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_gerSRC)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1607,5 +1623,6 @@
         private System.Windows.Forms.TextBox txt_HoTen;
         private System.Windows.Forms.Label label2;
         private DataSetQLNSTableAdapters.HOPDONGLAODONGTableAdapter hopdonglaodongTableAdapter1;
+        private System.Windows.Forms.DataGridView dataGridView_gerSRC;
     }
 }

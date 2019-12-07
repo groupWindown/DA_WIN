@@ -49,6 +49,7 @@
             this.lbl_SDT.Text = "SDT";
             this.lbl_SDT.Click += new System.EventHandler(this.lbl_TenUngVien_Click);
             this.lbl_SDT.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseClick);
+            this.lbl_SDT.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseDoubleClick);
             this.lbl_SDT.MouseLeave += new System.EventHandler(this.lbl_SDT_MouseLeave);
             this.lbl_SDT.MouseHover += new System.EventHandler(this.pictureEdit_HinhAnh_MouseHover);
             // 
@@ -63,6 +64,7 @@
             this.lbl_Email.Text = "Email";
             this.lbl_Email.Click += new System.EventHandler(this.lbl_TenUngVien_Click);
             this.lbl_Email.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseClick);
+            this.lbl_Email.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseDoubleClick);
             this.lbl_Email.MouseLeave += new System.EventHandler(this.lbl_SDT_MouseLeave);
             this.lbl_Email.MouseHover += new System.EventHandler(this.pictureEdit_HinhAnh_MouseHover);
             // 
@@ -77,6 +79,7 @@
             this.lbl_NgaySinh.Text = "NgaySinh";
             this.lbl_NgaySinh.Click += new System.EventHandler(this.lbl_TenUngVien_Click);
             this.lbl_NgaySinh.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseClick);
+            this.lbl_NgaySinh.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseDoubleClick);
             this.lbl_NgaySinh.MouseLeave += new System.EventHandler(this.lbl_SDT_MouseLeave);
             this.lbl_NgaySinh.MouseHover += new System.EventHandler(this.pictureEdit_HinhAnh_MouseHover);
             // 
@@ -91,6 +94,7 @@
             this.lbl_ChucVuUngTuyen.Text = "ChucVu";
             this.lbl_ChucVuUngTuyen.Click += new System.EventHandler(this.lbl_TenUngVien_Click);
             this.lbl_ChucVuUngTuyen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseClick);
+            this.lbl_ChucVuUngTuyen.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseDoubleClick);
             this.lbl_ChucVuUngTuyen.MouseLeave += new System.EventHandler(this.lbl_SDT_MouseLeave);
             this.lbl_ChucVuUngTuyen.MouseHover += new System.EventHandler(this.pictureEdit_HinhAnh_MouseHover);
             // 
@@ -105,6 +109,7 @@
             this.lbl_MaUngVienCtrl.Text = "HSTD0001";
             this.lbl_MaUngVienCtrl.Click += new System.EventHandler(this.lbl_TenUngVien_Click);
             this.lbl_MaUngVienCtrl.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseClick);
+            this.lbl_MaUngVienCtrl.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseDoubleClick);
             this.lbl_MaUngVienCtrl.MouseLeave += new System.EventHandler(this.lbl_SDT_MouseLeave);
             this.lbl_MaUngVienCtrl.MouseHover += new System.EventHandler(this.pictureEdit_HinhAnh_MouseHover);
             // 
@@ -119,6 +124,7 @@
             this.lbl_TenUngVien.Text = "Ten";
             this.lbl_TenUngVien.Click += new System.EventHandler(this.lbl_TenUngVien_Click);
             this.lbl_TenUngVien.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseClick);
+            this.lbl_TenUngVien.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseDoubleClick);
             this.lbl_TenUngVien.MouseLeave += new System.EventHandler(this.lbl_SDT_MouseLeave);
             this.lbl_TenUngVien.MouseHover += new System.EventHandler(this.pictureEdit_HinhAnh_MouseHover);
             // 
@@ -133,6 +139,7 @@
             this.pictureEdit_HinhAnh.EditValueChanged += new System.EventHandler(this.pictureEdit_HinhAnh_EditValueChanged);
             this.pictureEdit_HinhAnh.Click += new System.EventHandler(this.lbl_TenUngVien_Click);
             this.pictureEdit_HinhAnh.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseClick);
+            this.pictureEdit_HinhAnh.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseDoubleClick);
             this.pictureEdit_HinhAnh.MouseLeave += new System.EventHandler(this.lbl_SDT_MouseLeave);
             this.pictureEdit_HinhAnh.MouseHover += new System.EventHandler(this.pictureEdit_HinhAnh_MouseHover);
             // 
@@ -153,6 +160,7 @@
             this.Load += new System.EventHandler(this.UserControl_Dong_NhanVien_Load);
             this.Click += new System.EventHandler(this.lbl_TenUngVien_Click);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseClick);
+            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbl_SDT_MouseDoubleClick);
             this.MouseLeave += new System.EventHandler(this.lbl_SDT_MouseLeave);
             this.MouseHover += new System.EventHandler(this.pictureEdit_HinhAnh_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit_HinhAnh.Properties)).EndInit();

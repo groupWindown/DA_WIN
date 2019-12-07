@@ -65,5 +65,23 @@ namespace QuanLy_NhanSu
                 pictureEdit1.Image = null;
             }
         }
+
+        private void frm_SuaTTNhanVien_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            refreshPanel();
+        }
+        private void refreshPanel()
+        {
+            foreach (System.Windows.Forms.Control ctrl in Program.frmMain.Controls)
+            {
+                if (ctrl.GetType() == typeof(System.Windows.Forms.Panel))
+                {
+                    ctrl.Controls.Clear();
+                    frm_TT_NhanVien frm = new frm_TT_NhanVien();
+                    ctrl.Controls.Add(frm);
+
+                }
+            }
+        }
     }
 }

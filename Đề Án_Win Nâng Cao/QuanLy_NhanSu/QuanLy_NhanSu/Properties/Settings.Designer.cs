@@ -105,5 +105,17 @@ namespace QuanLy_NhanSu.Properties {
                 this["controldongclickmaNV"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string NhanVienClick {
+            get {
+                return ((string)(this["NhanVienClick"]));
+            }
+            set {
+                this["NhanVienClick"] = value;
+            }
+        }
     }
 }

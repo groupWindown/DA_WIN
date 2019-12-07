@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace DAL
 {
@@ -95,7 +96,13 @@ namespace DAL
                 return null;
             }
         }
-
+        public byte[] loadURLHinhAnh(string pMaNV)
+        {
+            if (linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault() == null)
+                return null;
+            string UV = linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
+            return linQ.HINHANHs.Where(t => t.MAUNGVIEN==UV).FirstOrDefault().URL.ToArray();
+        }
 
 
     }
