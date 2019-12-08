@@ -27,36 +27,68 @@ namespace QuanLy_NhanSu
 
         private void frm_SuaTTNhanVien_Load(object sender, EventArgs e)
         {
-            dANTOCComboBox.DataSource= bLL_load.BLL_loadDanToc();
+            //load các combobox,girdcontrol
+            loadthongso();
+            //load chitietchuyenmon,ngoaingu
+            //Load_CM_NN();
+        }
+
+        private void loadthongso()
+        {
+            dANTOCComboBox.DataSource = bLL_load.BLL_loadDanToc();
             dANTOCComboBox.ValueMember = "MADANTOC";
             dANTOCComboBox.DisplayMember = "TENDANTOC";
-            Load_CM_NN();
+            pHONGBANComboBox.DataSource = bLL_load.BLL_loadPhongBan();
+            pHONGBANComboBox.ValueMember = "MAPHONGBAN";
+            pHONGBANComboBox.DisplayMember = "TENPHONGBAN";
+            qUOCTICHComboBox.DataSource = bLL_load.BLL_loadPhongBan();
+            qUOCTICHComboBox.ValueMember = "MAQUOCTICH";
+            qUOCTICHComboBox.DisplayMember = "TENQUOCTICH";
+            cHUCVUComboBox.DataSource = bLL_load.BLL_loadChucVu();
+            cHUCVUComboBox.ValueMember = "MACHUCVU";
+            cHUCVUComboBox.DisplayMember = "TENCHUCVU";
+            qUOCTICHComboBox.DataSource = bLL_load.BLL_loadQuocTich();
+            qUOCTICHComboBox.ValueMember = "MAQUOCTICH";
+            qUOCTICHComboBox.DisplayMember = "TENQUOCTICH";
+            tRINHDOHOCVANComboBox.DataSource = bLL_load.BLL_loadTrinhDoHocVan();
+            tRINHDOHOCVANComboBox.ValueMember = "MATRINHDOHOCVAN";
+            tRINHDOHOCVANComboBox.DisplayMember = "TENTRINHDOHOCVAN";
+            tRINHDOTINHOCComboBox.DataSource = bLL_load.BLL_loadTrinhDoTinHoc();
+            tRINHDOTINHOCComboBox.ValueMember = "MATRINHDOTINHOC";
+            tRINHDOTINHOCComboBox.DisplayMember = "TENTRINHDOTINHOC";
+            gridControlCM.DataSource = bLL_load.BLL_loadChuyenMon();
+            gridControlNN.DataSource = bLL_load.BLL_loadNgoaiNgu();
+            // add in comboboxGioitinh
+            cbo_GioiTinh.Items.Add("Nam");
+            cbo_GioiTinh.Items.Add("Nữ");
+            cbo_GioiTinh.SelectedIndex = 0;
+            // add in comboboxtinhtrang
+            cbo_TinhTrang.Items.Add("Đang làm");
+            cbo_TinhTrang.Items.Add("Nghỉ làm");
+            cbo_TinhTrang.SelectedIndex = 0;
+
+            txt_MaNV.Text = Properties.Settings.Default.NhanVienClick;
         }
+
         private void Load_CM_NN()
         {
-
-
             for (int i = 0; i < gridViewCM.DataRowCount; i++)
             {
-                //        cHITIETCHUYENMONTableAdapter.Fill(dataSetQLNS.CHITIETCHUYENMON);
-                //        DataSetQLNS.CHITIETCHUYENMONRow data = dataSetQLNS.CHITIETCHUYENMON.FindByMACHUYENMONMAUNGVIEN(gridViewCM.GetDataRow(i)["MACHUYENMON"].ToString().Trim(), txt_MaNV.Text.Trim());
-                //if (data != null)
-                //{
-                //    gridViewCM.SelectRow(i);
-                //}
-
-
+                
+                string a = gridViewCM.GetDataRow(i)[0].ToString();
+                if (bLL_load.BLL_loadChiTietChuyenMon(txt_MaNV.Text.Trim(), a) != null)
+                {
+                    gridViewCM.SelectRow(i);
+                }
             }
-            //    for (int i = 0; i < gridViewNN.DataRowCount; i++)
-            //    {
-            //        cHITIETNGOAINGUTableAdapter.Fill(dataSetQLNS.CHITIETNGOAINGU);
-            //        DataSetQLNS.CHITIETNGOAINGURow data = dataSetQLNS.CHITIETNGOAINGU.FindByMANGOAINGUMAUNGVIEN(gridViewNN.GetDataRow(i)["MANGOAINGU"].ToString(), txt_MaNV.Text.Trim());
-            //        if (data != null)
-            //        {
-            //            gridViewNN.SelectRow(i);
-            //        }
+            for (int i = 0; i < gridViewNN.DataRowCount; i++)
+            {
+                if (bLL_load.BLL_loadChiTietChuyenMon(txt_MaNV.Text.Trim(), gridViewNN.GetDataRow(i)["MANGOAINGU"].ToString().Trim()) != null)
+                {
+                    gridViewNN.SelectRow(i);
+                }
+            }
         }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             if (pictureEdit1.Image != null && pictureEdit1 != null)
@@ -108,6 +140,11 @@ namespace QuanLy_NhanSu
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
         {
 
         }

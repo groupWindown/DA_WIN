@@ -141,11 +141,11 @@
             this.tabPane1.SelectedPage = this.tabNavigationPage1;
             this.tabPane1.Size = new System.Drawing.Size(1367, 526);
             this.tabPane1.TabIndex = 53;
-            this.tabPane1.Text = "tabPane1";
             // 
             // tabNavigationPage1
             // 
             this.tabNavigationPage1.Caption = "Danh sách ứng viên";
+            this.tabNavigationPage1.CausesValidation = false;
             this.tabNavigationPage1.Controls.Add(this.panel_TT_UngVien);
             this.tabNavigationPage1.Controls.Add(this.panel1);
             this.tabNavigationPage1.Controls.Add(this.tabNavigationPage4);

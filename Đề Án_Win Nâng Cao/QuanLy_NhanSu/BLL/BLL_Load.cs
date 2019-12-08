@@ -45,13 +45,13 @@ namespace BLL
         {
             return dal.loadNgoaiNgu();
         }
-        public List<CHITIETNGOAINGU> BLL_loadChiTietNgoaiNgu(string p)
+        public CHITIETNGOAINGU BLL_loadChiTietNgoaiNgu(string p, string q)
         {
-            return dal.loadChiTietNgoaiNgu(p);
+            return dal.loadChiTietNgoaiNgu(p,q);
         }
-        public List<CHITIETCHUYENMON> BLL_loadChiTietChuyenMon(string p)
+        public CHITIETCHUYENMON BLL_loadChiTietChuyenMon(string p, string q)
         {
-            return dal.loadChiTietChuyenMon(p);
+            return dal.loadChiTietChuyenMon(p,q);
         }
         public List<HOSOTUYENDUNG> BLL_loadHoSoTuyenDung()
         {

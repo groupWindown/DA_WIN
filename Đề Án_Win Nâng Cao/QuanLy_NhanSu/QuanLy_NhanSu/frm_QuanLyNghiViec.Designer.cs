@@ -41,8 +41,8 @@
             this.nGAYQUYETDINHDateEdit = new DevExpress.XtraEditors.DateEdit();
             this.nGUOIKYTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.nGAYNGHIVIECDateEdit = new DevExpress.XtraEditors.DateEdit();
-            this.lYDOTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.btn_SaThai = new System.Windows.Forms.Button();
+            this.txt_LyDo = new System.Windows.Forms.TextBox();
             mAQUANLYNGHIVIECLabel = new System.Windows.Forms.Label();
             mANVLabel = new System.Windows.Forms.Label();
             sOQUYETDINHLabel = new System.Windows.Forms.Label();
@@ -58,7 +58,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nGUOIKYTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGAYNGHIVIECDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGAYNGHIVIECDateEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lYDOTextEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // mAQUANLYNGHIVIECLabel
@@ -204,18 +203,6 @@
             this.nGAYNGHIVIECDateEdit.Size = new System.Drawing.Size(345, 26);
             this.nGAYNGHIVIECDateEdit.TabIndex = 12;
             // 
-            // lYDOTextEdit
-            // 
-            this.lYDOTextEdit.Location = new System.Drawing.Point(697, 53);
-            this.lYDOTextEdit.MinimumSize = new System.Drawing.Size(345, 200);
-            this.lYDOTextEdit.Name = "lYDOTextEdit";
-            this.lYDOTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lYDOTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.lYDOTextEdit.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lYDOTextEdit.Properties.AppearanceDisabled.Options.UseFont = true;
-            this.lYDOTextEdit.Size = new System.Drawing.Size(345, 200);
-            this.lYDOTextEdit.TabIndex = 14;
-            // 
             // btn_SaThai
             // 
             this.btn_SaThai.Location = new System.Drawing.Point(697, 284);
@@ -226,11 +213,21 @@
             this.btn_SaThai.UseVisualStyleBackColor = true;
             this.btn_SaThai.Click += new System.EventHandler(this.btn_SaThai_Click);
             // 
+            // txt_LyDo
+            // 
+            this.txt_LyDo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_LyDo.Location = new System.Drawing.Point(697, 54);
+            this.txt_LyDo.Multiline = true;
+            this.txt_LyDo.Name = "txt_LyDo";
+            this.txt_LyDo.Size = new System.Drawing.Size(345, 200);
+            this.txt_LyDo.TabIndex = 16;
+            // 
             // frm_QuanLyNghiViec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1143, 344);
+            this.Controls.Add(this.txt_LyDo);
             this.Controls.Add(this.btn_SaThai);
             this.Controls.Add(mAQUANLYNGHIVIECLabel);
             this.Controls.Add(this.mAQUANLYNGHIVIECTextEdit);
@@ -245,7 +242,6 @@
             this.Controls.Add(nGAYNGHIVIECLabel);
             this.Controls.Add(this.nGAYNGHIVIECDateEdit);
             this.Controls.Add(lYDOLabel);
-            this.Controls.Add(this.lYDOTextEdit);
             this.Name = "frm_QuanLyNghiViec";
             this.Text = "frm_QuanLyNghiViec";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_QuanLyNghiViec_FormClosed);
@@ -258,7 +254,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nGUOIKYTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGAYNGHIVIECDateEdit.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGAYNGHIVIECDateEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lYDOTextEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,7 +267,7 @@
         private DevExpress.XtraEditors.DateEdit nGAYQUYETDINHDateEdit;
         private DevExpress.XtraEditors.TextEdit nGUOIKYTextEdit;
         private DevExpress.XtraEditors.DateEdit nGAYNGHIVIECDateEdit;
-        private DevExpress.XtraEditors.TextEdit lYDOTextEdit;
         private System.Windows.Forms.Button btn_SaThai;
+        private System.Windows.Forms.TextBox txt_LyDo;
     }
 }

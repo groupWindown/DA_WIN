@@ -10,3 +10,4 @@ C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\DAL\
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\DAL\obj\Debug\DAL.dll
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\DAL\obj\Debug\DAL.pdb
+C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\DAL\obj\Debug\DAL.csprojAssemblyReference.cache

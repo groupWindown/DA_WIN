@@ -28,18 +28,16 @@ namespace QuanLy_NhanSu
 
         private void frm_QuanLyNghiViec_Load(object sender, EventArgs e)
         {
-            lYDOTextEdit.Size = new Size(345, 200);
             mAQUANLYNGHIVIECTextEdit.Text = bLL_NhanVien.sinhtudongMaQLNV(0);
             mANVTextEdit.Text = Properties.Settings.Default.controldongclickmaNV;
             nGAYNGHIVIECDateEdit.DateTime = DateTime.Parse(DateTime.Now.ToShortDateString());
             nGAYQUYETDINHDateEdit.DateTime = DateTime.Parse(DateTime.Now.ToShortDateString());
             nGUOIKYTextEdit.Text = "";
-            lYDOTextEdit.Text = "";
         }
 
         private void btn_SaThai_Click(object sender, EventArgs e)
         {
-            if (mANVTextEdit.Text.Length > 0 && nGAYNGHIVIECDateEdit.DateTime != null && nGAYQUYETDINHDateEdit.DateTime != null && sOQUYETDINHSpinEdit.Text.Length > 0 && nGUOIKYTextEdit.Text.Length > 0 && lYDOTextEdit.Text.Length > 0 && mAQUANLYNGHIVIECTextEdit.Text.Length > 0)
+            if (mANVTextEdit.Text.Length > 0 && nGAYNGHIVIECDateEdit.DateTime != null && nGAYQUYETDINHDateEdit.DateTime != null && sOQUYETDINHSpinEdit.Text.Length > 0 && nGUOIKYTextEdit.Text.Length > 0 && txt_LyDo.Text.Length > 0 && mAQUANLYNGHIVIECTextEdit.Text.Length > 0)
             {
                 //update tai khoan
                 if (!bLL_NhanVien.BLL_KhoaTaiKhoan(mANVTextEdit.Text))
@@ -60,7 +58,7 @@ namespace QuanLy_NhanSu
                 qUANLYNGHIVIEC.NGAYNGHIVIEC = nGAYNGHIVIECDateEdit.DateTime;
                 qUANLYNGHIVIEC.NGAYQUYETDINH = nGAYQUYETDINHDateEdit.DateTime;
                 qUANLYNGHIVIEC.NGUOIKY = nGUOIKYTextEdit.Text;
-                qUANLYNGHIVIEC.LYDO = lYDOTextEdit.Text;
+                qUANLYNGHIVIEC.LYDO = txt_LyDo.Text;
                 if (!bLL_NhanVien.ThemQuanLyNghiViec(qUANLYNGHIVIEC))
                 {
                     MessageBox.Show("lỗi không thể cho nhân viên '"+ qUANLYNGHIVIEC.MANV + "'nghĩ việc");
@@ -70,6 +68,8 @@ namespace QuanLy_NhanSu
                 MessageBox.Show("Thành công");
                 this.Close();
             }
+            else
+                MessageBox.Show("Vui lòng nhập đủ dữ liệu");
         }
 
         private void frm_QuanLyNghiViec_FormClosed(object sender, FormClosedEventArgs e)

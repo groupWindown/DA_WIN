@@ -44,12 +44,10 @@ namespace QuanLy_NhanSu
             this.pHONGBANTableAdapter.Fill(this.dataSetQLNS.PHONGBAN);
             // TODO: This line of code loads data into the 'dataSetQLNS.CHUCVU' table. You can move, or remove it, as needed.
             this.cHUCVUTableAdapter.Fill(this.dataSetQLNS.CHUCVU);
-
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
         }
 
         ///kiểm tra khóa chính
@@ -64,7 +62,6 @@ namespace QuanLy_NhanSu
             {
                 return false;
             }
-
         }
         
         //Chức vụ

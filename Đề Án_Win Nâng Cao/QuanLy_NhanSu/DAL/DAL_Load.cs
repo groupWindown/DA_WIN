@@ -46,16 +46,19 @@ namespace DAL
         {
             return linQ.NGOAINGUs.Select(t => t).ToList<NGOAINGU>();
         }
-        public List<CHITIETNGOAINGU> loadChiTietNgoaiNgu(string pMaNV)
+        public CHITIETNGOAINGU loadChiTietNgoaiNgu(string pMaNV,string pMaNN)
         {
             if (linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault() == null)
                 return null;
             string UV = linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
-            return linQ.CHITIETNGOAINGUs.Where(t => t.MAUNGVIEN == UV).ToList<CHITIETNGOAINGU>();
+            return linQ.CHITIETNGOAINGUs.Where(t => t.MAUNGVIEN == UV&&t.MANGOAINGU==pMaNN).FirstOrDefault();
         }
-        public List<CHITIETCHUYENMON> loadChiTietChuyenMon(string pMaNV)
+        public CHITIETCHUYENMON loadChiTietChuyenMon(string pMaNV,string pMaCM)
         {
-            return linQ.CHITIETCHUYENMONs.Where(t => t.MAUNGVIEN == pMaNV).ToList<CHITIETCHUYENMON>();
+            if (linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault() == null)
+                return null;
+            string UV = linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString() ;
+            return linQ.CHITIETCHUYENMONs.Where(t => t.MAUNGVIEN == pMaNV && t.MACHUYENMON==pMaCM).FirstOrDefault();
         }
         public List<HOSOTUYENDUNG> loadHoSoTuyenDung()
         {
@@ -112,6 +115,6 @@ namespace DAL
         {
             return linQ.QUANLYTHAISANs.Select(t => t).ToList<QUANLYTHAISAN>();
         }
- 
+       
     }
 }
