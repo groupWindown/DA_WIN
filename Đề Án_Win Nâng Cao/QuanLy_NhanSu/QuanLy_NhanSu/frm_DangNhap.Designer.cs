@@ -51,9 +51,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.labler1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(123, 49);
+            this.panel1.Location = new System.Drawing.Point(101, 37);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(451, 264);
+            this.panel1.Size = new System.Drawing.Size(448, 264);
             this.panel1.TabIndex = 9;
             // 
             // pictureBox1
@@ -61,7 +61,7 @@
             this.pictureBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.pictureBox1.Enabled = false;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(346, 77);
+            this.pictureBox1.Location = new System.Drawing.Point(326, 77);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(90, 85);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,9 +75,9 @@
             this.btn_DangNhap.ForeColor = System.Drawing.Color.White;
             this.btn_DangNhap.Location = new System.Drawing.Point(106, 187);
             this.btn_DangNhap.Name = "btn_DangNhap";
-            this.btn_DangNhap.Size = new System.Drawing.Size(142, 33);
+            this.btn_DangNhap.Size = new System.Drawing.Size(201, 33);
             this.btn_DangNhap.TabIndex = 14;
-            this.btn_DangNhap.Text = "Sign In";
+            this.btn_DangNhap.Text = "Đăng Nhập";
             this.btn_DangNhap.UseVisualStyleBackColor = false;
             this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 
@@ -103,39 +103,39 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 146);
+            this.label2.Location = new System.Drawing.Point(22, 140);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 16);
+            this.label2.Size = new System.Drawing.Size(71, 16);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Password";
+            this.label2.Text = "Mật Khẩu";
             // 
             // labler1
             // 
             this.labler1.AutoSize = true;
             this.labler1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labler1.Location = new System.Drawing.Point(50, 101);
+            this.labler1.Location = new System.Drawing.Point(22, 95);
             this.labler1.Name = "labler1";
-            this.labler1.Size = new System.Drawing.Size(41, 16);
+            this.labler1.Size = new System.Drawing.Size(78, 16);
             this.labler1.TabIndex = 10;
-            this.labler1.Text = "User";
+            this.labler1.Text = "Tài Khoản";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.label1.Location = new System.Drawing.Point(165, 32);
+            this.label1.Location = new System.Drawing.Point(101, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 25);
+            this.label1.Size = new System.Drawing.Size(270, 25);
             this.label1.TabIndex = 9;
-            this.label1.Text = "User Login";
+            this.label1.Text = "Đăng nhập vào hệ thống";
             // 
             // frm_DangNhap
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.DarkOrchid;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(702, 376);
+            this.ClientSize = new System.Drawing.Size(645, 335);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

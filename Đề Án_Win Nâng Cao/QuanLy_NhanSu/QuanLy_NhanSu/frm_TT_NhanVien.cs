@@ -19,6 +19,7 @@ namespace QuanLy_NhanSu
         List<UserControl_Dong_NhanVien> listQLNS = new List<UserControl_Dong_NhanVien>();
         List<UserControl_Dong_NhanVien> listQLNSSearch = new List<UserControl_Dong_NhanVien>();
         BLL_Load bLL_Load = new BLL_Load();
+        BLL_NhanVien bLL_NhanVien = new BLL_NhanVien();
         Strick st = new Strick();
         public frm_TT_NhanVien()
         {
@@ -357,11 +358,13 @@ namespace QuanLy_NhanSu
 
         private void btn_SaThai_Click(object sender, EventArgs e)
         {
-            //update tai khoan
-
-            //update nhan vien
-
-
+            if (Properties.Settings.Default.controldongclickmaNV != null)
+            {
+                frm_QuanLyNghiViec frm = new frm_QuanLyNghiViec();
+                frm.ShowDialog();
+            }
+            else
+                MessageBox.Show("Vui lòng chọn nhân viên để xóa");
         }
     }
 }

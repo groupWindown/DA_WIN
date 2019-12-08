@@ -13,6 +13,20 @@ namespace DAL
         {
             NHANVIEN nHANVIEN = linq.NHANVIENs.Where(t=>t.MANV==pMaNV).FirstOrDefault();
             nHANVIEN.TINHTRANG = "Nghỉ làm";
+            linq.SubmitChanges();
+            return true;
+        }
+        public bool KhoaTaiKhoan(string pMaNV)
+        {
+            TAIKHOAN tAIKHOAN = linq.TAIKHOANs.Where(t => t.MANV == pMaNV).FirstOrDefault();
+            tAIKHOAN.HOATDONG = false;
+            linq.SubmitChanges();
+            return true;
+        }
+        public bool ThemQuanLyNghiViec(QUANLYNGHIVIEC qUANLYNGHIVIEC)
+        {
+            linq.QUANLYNGHIVIECs.InsertOnSubmit(qUANLYNGHIVIEC);
+            linq.SubmitChanges();
             return true;
         }
     }
