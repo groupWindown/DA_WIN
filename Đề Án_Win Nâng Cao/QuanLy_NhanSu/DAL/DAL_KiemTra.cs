@@ -8,8 +8,24 @@ namespace DAL
 {
     public class DAL_KiemTra
     {
-        public bool kiemTraTrungMaUV(string p)
+        linQDataContext linQ = new linQDataContext();
+    
+        public bool kiemTraTrungMaQLNV(string p)
         {
+            if(linQ.QUANLYNGHIVIECs.Where(t => t.MAQUANLYNGHIVIEC == p).FirstOrDefault()!=null)
+                return false;
+            return true;
+        }
+        public bool kiemTraTrungMaQLTS(string p)
+        {
+            if (linQ.QUANLYTHAISANs.Where(t => t.MAQUANLYTHAISAN == p).FirstOrDefault()!=null)
+                 return false;
+            return true;
+        }
+        public bool kiemTraTrungMaQLKL(string p)
+        {
+            if(linQ.QUANLYKYLUATs.Where(t => t.MAQUANLYKYLUAT == p).FirstOrDefault()!=null)
+                return false;
             return true;
         }
     }

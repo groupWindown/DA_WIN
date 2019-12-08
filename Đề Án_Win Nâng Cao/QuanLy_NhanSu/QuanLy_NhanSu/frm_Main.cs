@@ -67,7 +67,9 @@ namespace QuanLy_NhanSu
             panel_Main.Controls.Add(frm);
 
             DevExpress.LookAndFeel.DefaultLookAndFeel themes = new DevExpress.LookAndFeel.DefaultLookAndFeel();
-            themes.LookAndFeel.SkinName = ""; 
+            themes.LookAndFeel.SkinName = "";
+
+            
         }
 
    
@@ -201,7 +203,14 @@ namespace QuanLy_NhanSu
 
         private void ribbonControl_Main_Click(object sender, EventArgs e)
         {
-
+            //colorDialog1.ShowDialog();
+            //if (colorDialog1.ShowDialog() == DialogResult.OK) //Nếu nhấp vào nút OK trên hộp thoại
+            //{
+            //    string strcolor = null; //Khai báo biến str
+            //    strcolor = colorDialog1.Color.Name; //Trả lại tên của màu đã lựa chọn
+            //    /*DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle("Office 2016 Colorful");*/ //Set skin khi load form
+            //    DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinMaskColor = Color.FromName(strcolor);
+            //}
         }
 
         private void nHANVIENBindingNavigatorSaveItem_Click(object sender, EventArgs e)

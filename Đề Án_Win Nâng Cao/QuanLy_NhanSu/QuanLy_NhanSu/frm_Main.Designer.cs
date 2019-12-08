@@ -43,10 +43,14 @@
             this.barButtonItem_HoSoNhanVien = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem_TuongTacDuLieu = new DevExpress.XtraBars.BarButtonItem();
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.barButtonItem_XemCaLam = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem_ThongtinCT = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem_ThongtinPM = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage_HeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage_TacVu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6_HoSoUV = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup_Luong = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -55,6 +59,7 @@
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage_TroGiup = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.repositoryItemImageEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageEdit();
             this.repositoryItemImageEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemImageEdit();
@@ -80,11 +85,13 @@
             this.pHANQUYENTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.PHANQUYENTableAdapter();
             this.tAIKHOANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tAIKHOANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TAIKHOANTableAdapter();
-            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem_XemCaLam = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
+            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
+            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewTabItem2 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl_Main)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
@@ -98,6 +105,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
+            this.backstageViewControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl2)).BeginInit();
+            this.backstageViewControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonControl_Main
@@ -119,10 +130,10 @@
             this.barButtonItem_TuongTacDuLieu,
             this.skinRibbonGalleryBarItem1,
             this.barButtonItem_XemCaLam,
-            this.barButtonItem2,
-            this.barButtonItem5});
+            this.barButtonItem_ThongtinCT,
+            this.barButtonItem_ThongtinPM});
             this.ribbonControl_Main.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl_Main.MaxItemId = 5;
+            this.ribbonControl_Main.MaxItemId = 1;
             this.ribbonControl_Main.Name = "ribbonControl_Main";
             this.ribbonControl_Main.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage_HeThong,
@@ -134,6 +145,7 @@
             this.repositoryItemImageEdit2,
             this.repositoryItemPictureEdit2,
             this.repositoryItemImageComboBox1});
+            this.ribbonControl_Main.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;
             this.ribbonControl_Main.Size = new System.Drawing.Size(925, 141);
             this.ribbonControl_Main.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Above;
             this.ribbonControl_Main.Click += new System.EventHandler(this.ribbonControl_Main_Click);
@@ -251,6 +263,33 @@
             this.skinRibbonGalleryBarItem1.Id = 1;
             this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
+            // barButtonItem_XemCaLam
+            // 
+            this.barButtonItem_XemCaLam.Caption = "Xem Ca Làm";
+            this.barButtonItem_XemCaLam.Id = 2;
+            this.barButtonItem_XemCaLam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem_XemCaLam.ImageOptions.Image")));
+            this.barButtonItem_XemCaLam.Name = "barButtonItem_XemCaLam";
+            this.barButtonItem_XemCaLam.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
+            // barButtonItem_ThongtinCT
+            // 
+            this.barButtonItem_ThongtinCT.Caption = "Thông tin công ty";
+            this.barButtonItem_ThongtinCT.Id = 3;
+            this.barButtonItem_ThongtinCT.ImageOptions.Image = global::QuanLy_NhanSu.Properties.Resources.company;
+            this.barButtonItem_ThongtinCT.Name = "barButtonItem_ThongtinCT";
+            this.barButtonItem_ThongtinCT.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
+            // barButtonItem_ThongtinPM
+            // 
+            this.barButtonItem_ThongtinPM.Caption = "Thông tin phần mềm";
+            this.barButtonItem_ThongtinPM.Id = 4;
+            this.barButtonItem_ThongtinPM.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.barButtonItem_ThongtinPM.Name = "barButtonItem_ThongtinPM";
+            this.barButtonItem_ThongtinPM.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
             // ribbonPage_HeThong
             // 
             this.ribbonPage_HeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -266,15 +305,20 @@
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem_DoiMatKhau);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             // 
-            // ribbonPageGroup10
+            // ribbonPageGroup6
             // 
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem_DangXuat);
-            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem_XemCaLam);
+            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             // 
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // ribbonPageGroup10
+            // 
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem_DangXuat);
+            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             // 
             // ribbonPage_TacVu
             // 
@@ -328,8 +372,13 @@
             // 
             // ribbonPageGroup3
             // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem_ThongtinCT);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            // 
+            // ribbonPageGroup7
+            // 
+            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem_ThongtinPM);
+            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             // 
             // repositoryItemPictureEdit1
             // 
@@ -501,42 +550,49 @@
             // 
             this.tAIKHOANTableAdapter.ClearBeforeFill = true;
             // 
-            // ribbonPageGroup6
+            // backstageViewControl1
             // 
-            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem_XemCaLam);
-            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
+            this.backstageViewControl1.Items.Add(this.backstageViewTabItem1);
+            this.backstageViewControl1.Location = new System.Drawing.Point(70, 211);
+            this.backstageViewControl1.Name = "backstageViewControl1";
+            this.backstageViewControl1.Size = new System.Drawing.Size(480, 150);
+            this.backstageViewControl1.TabIndex = 5;
             // 
-            // barButtonItem_XemCaLam
+            // backstageViewClientControl1
             // 
-            this.barButtonItem_XemCaLam.Caption = "Xem Ca Làm";
-            this.barButtonItem_XemCaLam.Id = 2;
-            this.barButtonItem_XemCaLam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem_XemCaLam.Name = "barButtonItem_XemCaLam";
-            this.barButtonItem_XemCaLam.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
-            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.backstageViewClientControl1.Location = new System.Drawing.Point(0, 0);
+            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(150, 150);
+            this.backstageViewClientControl1.TabIndex = 1;
             // 
-            // barButtonItem2
+            // backstageViewTabItem1
             // 
-            this.barButtonItem2.Caption = "Thông tin công ty";
-            this.barButtonItem2.Id = 3;
-            this.barButtonItem2.ImageOptions.Image = global::QuanLy_NhanSu.Properties.Resources.company;
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
-            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.backstageViewTabItem1.Caption = "backstageViewTabItem1";
+            this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
+            this.backstageViewTabItem1.Name = "backstageViewTabItem1";
             // 
-            // ribbonPageGroup7
+            // backstageViewControl2
             // 
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem5);
-            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            this.backstageViewControl2.Controls.Add(this.backstageViewClientControl2);
+            this.backstageViewControl2.Items.Add(this.backstageViewTabItem2);
+            this.backstageViewControl2.Location = new System.Drawing.Point(70, 211);
+            this.backstageViewControl2.Name = "backstageViewControl2";
+            this.backstageViewControl2.Size = new System.Drawing.Size(480, 150);
+            this.backstageViewControl2.TabIndex = 6;
             // 
-            // barButtonItem5
+            // backstageViewClientControl2
             // 
-            this.barButtonItem5.Caption = "Thông tin phần mềm";
-            this.barButtonItem5.Id = 4;
-            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.barButtonItem5.Name = "barButtonItem5";
-            this.barButtonItem5.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
-            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.backstageViewClientControl2.Location = new System.Drawing.Point(0, 0);
+            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
+            this.backstageViewClientControl2.Size = new System.Drawing.Size(150, 150);
+            this.backstageViewClientControl2.TabIndex = 1;
+            // 
+            // backstageViewTabItem2
+            // 
+            this.backstageViewTabItem2.Caption = "backstageViewTabItem2";
+            this.backstageViewTabItem2.ContentControl = this.backstageViewClientControl2;
+            this.backstageViewTabItem2.Name = "backstageViewTabItem2";
             // 
             // frm_Main
             // 
@@ -545,6 +601,8 @@
             this.ClientSize = new System.Drawing.Size(925, 491);
             this.Controls.Add(this.panel_Main);
             this.Controls.Add(this.ribbonControl_Main);
+            this.Controls.Add(this.backstageViewControl1);
+            this.Controls.Add(this.backstageViewControl2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_Main";
             this.Text = "frm_Main";
@@ -565,6 +623,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
+            this.backstageViewControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl2)).EndInit();
+            this.backstageViewControl2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -623,9 +685,16 @@
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem_XemCaLam;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem_ThongtinCT;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem_ThongtinPM;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl2;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl2;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem2;
+        private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem1;
     }
 }

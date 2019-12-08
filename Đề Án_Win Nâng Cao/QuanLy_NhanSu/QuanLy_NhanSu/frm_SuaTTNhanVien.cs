@@ -106,5 +106,10 @@ namespace QuanLy_NhanSu
             catch
             { }
         }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

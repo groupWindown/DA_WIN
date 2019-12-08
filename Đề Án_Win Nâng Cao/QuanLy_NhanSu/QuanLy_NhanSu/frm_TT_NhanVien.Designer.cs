@@ -83,8 +83,8 @@
             this.Colum10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnInHopDong = new System.Windows.Forms.Button();
+            this.btnGiaHan = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
@@ -92,7 +92,7 @@
             this.dateEdit3 = new DevExpress.XtraEditors.DateEdit();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbo = new System.Windows.Forms.ComboBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
@@ -727,8 +727,8 @@
             // groupBox6
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.groupBox6, "");
-            this.groupBox6.Controls.Add(this.button6);
-            this.groupBox6.Controls.Add(this.button7);
+            this.groupBox6.Controls.Add(this.btnInHopDong);
+            this.groupBox6.Controls.Add(this.btnGiaHan);
             this.groupBox6.Location = new System.Drawing.Point(1175, 3);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(189, 210);
@@ -736,25 +736,25 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Tác vụ";
             // 
-            // button6
+            // btnInHopDong
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.button6, "");
-            this.button6.Location = new System.Drawing.Point(30, 83);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(127, 32);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "In hợp đồng";
-            this.button6.UseVisualStyleBackColor = true;
+            this.editFormUserControl2.SetBoundPropertyName(this.btnInHopDong, "");
+            this.btnInHopDong.Location = new System.Drawing.Point(30, 83);
+            this.btnInHopDong.Name = "btnInHopDong";
+            this.btnInHopDong.Size = new System.Drawing.Size(127, 32);
+            this.btnInHopDong.TabIndex = 1;
+            this.btnInHopDong.Text = "In hợp đồng";
+            this.btnInHopDong.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnGiaHan
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.button7, "");
-            this.button7.Location = new System.Drawing.Point(30, 32);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(127, 32);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Gia hạn hợp đồng";
-            this.button7.UseVisualStyleBackColor = true;
+            this.editFormUserControl2.SetBoundPropertyName(this.btnGiaHan, "");
+            this.btnGiaHan.Location = new System.Drawing.Point(30, 32);
+            this.btnGiaHan.Name = "btnGiaHan";
+            this.btnGiaHan.Size = new System.Drawing.Size(127, 32);
+            this.btnGiaHan.TabIndex = 0;
+            this.btnGiaHan.Text = "Gia hạn hợp đồng";
+            this.btnGiaHan.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -765,7 +765,7 @@
             this.groupBox5.Controls.Add(this.dateEdit3);
             this.groupBox5.Controls.Add(this.comboBox5);
             this.groupBox5.Controls.Add(this.comboBox4);
-            this.groupBox5.Controls.Add(this.comboBox3);
+            this.groupBox5.Controls.Add(this.cbo);
             this.groupBox5.Controls.Add(this.label55);
             this.groupBox5.Controls.Add(this.label54);
             this.groupBox5.Controls.Add(this.label53);
@@ -858,14 +858,14 @@
             this.comboBox4.Size = new System.Drawing.Size(249, 27);
             this.comboBox4.TabIndex = 84;
             // 
-            // comboBox3
+            // cbo
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.comboBox3, "");
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(121, 43);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(249, 27);
-            this.comboBox3.TabIndex = 83;
+            this.editFormUserControl2.SetBoundPropertyName(this.cbo, "");
+            this.cbo.FormattingEnabled = true;
+            this.cbo.Location = new System.Drawing.Point(121, 43);
+            this.cbo.Name = "cbo";
+            this.cbo.Size = new System.Drawing.Size(249, 27);
+            this.cbo.TabIndex = 83;
             // 
             // label55
             // 
@@ -1012,7 +1012,7 @@
             this.groupBox10.Controls.Add(this.dataGridView3);
             this.groupBox10.Location = new System.Drawing.Point(3, 183);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(1364, 211);
+            this.groupBox10.Size = new System.Drawing.Size(1364, 302);
             this.groupBox10.TabIndex = 53;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Danh sách bảo hiểm";
@@ -1031,7 +1031,7 @@
             this.Column12});
             this.dataGridView3.Location = new System.Drawing.Point(6, 25);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(1352, 323);
+            this.dataGridView3.Size = new System.Drawing.Size(1352, 271);
             this.dataGridView3.TabIndex = 0;
             // 
             // Column4
@@ -1213,7 +1213,7 @@
             // 
             this.label60.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label60, "");
-            this.label60.Location = new System.Drawing.Point(404, 129);
+            this.label60.Location = new System.Drawing.Point(402, 129);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(58, 19);
             this.label60.TabIndex = 78;
@@ -1223,7 +1223,7 @@
             // 
             this.label61.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label61, "");
-            this.label61.Location = new System.Drawing.Point(404, 87);
+            this.label61.Location = new System.Drawing.Point(402, 87);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(95, 19);
             this.label61.TabIndex = 77;
@@ -1233,7 +1233,7 @@
             // 
             this.label62.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label62, "");
-            this.label62.Location = new System.Drawing.Point(404, 43);
+            this.label62.Location = new System.Drawing.Point(402, 43);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(89, 19);
             this.label62.TabIndex = 76;
@@ -1307,6 +1307,7 @@
             // 
             // panel_TT_NhanVien
             // 
+            this.panel_TT_NhanVien.AutoScroll = true;
             this.editFormUserControl2.SetBoundPropertyName(this.panel_TT_NhanVien, "");
             this.panel_TT_NhanVien.Controls.Add(this.dataGridView_gerSRC);
             this.panel_TT_NhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1340,7 +1341,7 @@
             // btn_SaThai
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.btn_SaThai, "");
-            this.btn_SaThai.Location = new System.Drawing.Point(200, 230);
+            this.btn_SaThai.Location = new System.Drawing.Point(209, 246);
             this.btn_SaThai.Name = "btn_SaThai";
             this.btn_SaThai.Size = new System.Drawing.Size(120, 28);
             this.btn_SaThai.TabIndex = 37;
@@ -1372,9 +1373,9 @@
             this.groupBox1.Controls.Add(this.txt_HoTen);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(6, 68);
+            this.groupBox1.Location = new System.Drawing.Point(15, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(344, 156);
+            this.groupBox1.Size = new System.Drawing.Size(330, 177);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm nâng cao";
@@ -1383,7 +1384,7 @@
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.cbo_ChucVu, "");
             this.cbo_ChucVu.FormattingEnabled = true;
-            this.cbo_ChucVu.Location = new System.Drawing.Point(97, 111);
+            this.cbo_ChucVu.Location = new System.Drawing.Point(97, 124);
             this.cbo_ChucVu.Name = "cbo_ChucVu";
             this.cbo_ChucVu.Size = new System.Drawing.Size(217, 27);
             this.cbo_ChucVu.TabIndex = 6;
@@ -1393,7 +1394,7 @@
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.cbo_PhongBan, "");
             this.cbo_PhongBan.FormattingEnabled = true;
-            this.cbo_PhongBan.Location = new System.Drawing.Point(97, 69);
+            this.cbo_PhongBan.Location = new System.Drawing.Point(97, 77);
             this.cbo_PhongBan.Name = "cbo_PhongBan";
             this.cbo_PhongBan.Size = new System.Drawing.Size(217, 27);
             this.cbo_PhongBan.TabIndex = 5;
@@ -1403,7 +1404,7 @@
             // 
             this.label4.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label4, "");
-            this.label4.Location = new System.Drawing.Point(6, 114);
+            this.label4.Location = new System.Drawing.Point(6, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 19);
             this.label4.TabIndex = 4;
@@ -1413,7 +1414,7 @@
             // 
             this.label3.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label3, "");
-            this.label3.Location = new System.Drawing.Point(6, 72);
+            this.label3.Location = new System.Drawing.Point(6, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 19);
             this.label3.TabIndex = 3;
@@ -1422,7 +1423,7 @@
             // txt_HoTen
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.txt_HoTen, "");
-            this.txt_HoTen.Location = new System.Drawing.Point(97, 26);
+            this.txt_HoTen.Location = new System.Drawing.Point(97, 30);
             this.txt_HoTen.Multiline = true;
             this.txt_HoTen.Name = "txt_HoTen";
             this.txt_HoTen.Size = new System.Drawing.Size(217, 27);
@@ -1433,7 +1434,7 @@
             // 
             this.label2.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label2, "");
-            this.label2.Location = new System.Drawing.Point(6, 29);
+            this.label2.Location = new System.Drawing.Point(6, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 19);
             this.label2.TabIndex = 0;
@@ -1510,13 +1511,13 @@
         private DevExpress.XtraScheduler.SchedulerDataStorage schedulerDataStorage1;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnInHopDong;
+        private System.Windows.Forms.Button btnGiaHan;
         private System.Windows.Forms.TextBox textBox37;
         private DevExpress.XtraEditors.DateEdit dateEdit3;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbo;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;

@@ -219,6 +219,12 @@
     <Compile Include="frm_NhapLieu_TrinhDo.Designer.cs">
       <DependentUpon>frm_NhapLieu_TrinhDo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_QuanLyNghiViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLyNghiViec.Designer.cs">
+      <DependentUpon>frm_QuanLyNghiViec.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_SuaTTNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -317,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_NhapLieu_TrinhDo.resx">
       <DependentUpon>frm_NhapLieu_TrinhDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLyNghiViec.resx">
+      <DependentUpon>frm_QuanLyNghiViec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_SuaTTNhanVien.resx">
       <DependentUpon>frm_SuaTTNhanVien.cs</DependentUpon>

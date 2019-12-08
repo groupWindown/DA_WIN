@@ -125,7 +125,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1370, 627);
+            this.panel2.Size = new System.Drawing.Size(1367, 526);
             this.panel2.TabIndex = 1;
             // 
             // tabPane1
@@ -137,9 +137,9 @@
             this.tabPane1.Name = "tabPane1";
             this.tabPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.tabNavigationPage1});
-            this.tabPane1.RegularSize = new System.Drawing.Size(1370, 627);
+            this.tabPane1.RegularSize = new System.Drawing.Size(1367, 526);
             this.tabPane1.SelectedPage = this.tabNavigationPage1;
-            this.tabPane1.Size = new System.Drawing.Size(1370, 627);
+            this.tabPane1.Size = new System.Drawing.Size(1367, 526);
             this.tabPane1.TabIndex = 53;
             this.tabPane1.Text = "tabPane1";
             // 
@@ -151,14 +151,15 @@
             this.tabNavigationPage1.Controls.Add(this.tabNavigationPage4);
             this.tabNavigationPage1.Controls.Add(this.label83);
             this.tabNavigationPage1.Name = "tabNavigationPage1";
-            this.tabNavigationPage1.Size = new System.Drawing.Size(1370, 600);
+            this.tabNavigationPage1.Size = new System.Drawing.Size(1367, 499);
             // 
             // panel_TT_UngVien
             // 
+            this.panel_TT_UngVien.AutoScroll = true;
             this.panel_TT_UngVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_TT_UngVien.Location = new System.Drawing.Point(348, 0);
             this.panel_TT_UngVien.Name = "panel_TT_UngVien";
-            this.panel_TT_UngVien.Size = new System.Drawing.Size(1022, 600);
+            this.panel_TT_UngVien.Size = new System.Drawing.Size(1019, 499);
             this.panel_TT_UngVien.TabIndex = 60;
             // 
             // panel1
@@ -169,7 +170,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(348, 600);
+            this.panel1.Size = new System.Drawing.Size(348, 499);
             this.panel1.TabIndex = 59;
             // 
             // groupBox5
@@ -181,7 +182,7 @@
             this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Controls.Add(this.label50);
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(12, 54);
+            this.groupBox5.Location = new System.Drawing.Point(12, 62);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(330, 177);
             this.groupBox5.TabIndex = 57;
@@ -244,7 +245,7 @@
             // 
             // btn_ThemUV
             // 
-            this.btn_ThemUV.Location = new System.Drawing.Point(205, 237);
+            this.btn_ThemUV.Location = new System.Drawing.Point(205, 245);
             this.btn_ThemUV.Name = "btn_ThemUV";
             this.btn_ThemUV.Size = new System.Drawing.Size(124, 28);
             this.btn_ThemUV.TabIndex = 15;
@@ -761,7 +762,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Name = "frm_TT_UngVien";
-            this.Size = new System.Drawing.Size(1370, 627);
+            this.Size = new System.Drawing.Size(1367, 526);
             this.Load += new System.EventHandler(this.frm_TT_UngVien_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();

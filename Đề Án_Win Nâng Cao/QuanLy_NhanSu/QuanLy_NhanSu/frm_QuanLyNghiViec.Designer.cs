@@ -71,16 +71,6 @@
             mAQUANLYNGHIVIECLabel.TabIndex = 1;
             mAQUANLYNGHIVIECLabel.Text = "Mã quản lý nghĩ việc";
             // 
-            // mAQUANLYNGHIVIECTextEdit
-            // 
-            this.mAQUANLYNGHIVIECTextEdit.Enabled = false;
-            this.mAQUANLYNGHIVIECTextEdit.Location = new System.Drawing.Point(239, 54);
-            this.mAQUANLYNGHIVIECTextEdit.Name = "mAQUANLYNGHIVIECTextEdit";
-            this.mAQUANLYNGHIVIECTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mAQUANLYNGHIVIECTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mAQUANLYNGHIVIECTextEdit.Size = new System.Drawing.Size(345, 26);
-            this.mAQUANLYNGHIVIECTextEdit.TabIndex = 2;
-            // 
             // mANVLabel
             // 
             mANVLabel.AutoSize = true;
@@ -91,16 +81,6 @@
             mANVLabel.TabIndex = 3;
             mANVLabel.Text = "Mã nhân viên";
             // 
-            // mANVTextEdit
-            // 
-            this.mANVTextEdit.Enabled = false;
-            this.mANVTextEdit.Location = new System.Drawing.Point(239, 99);
-            this.mANVTextEdit.Name = "mANVTextEdit";
-            this.mANVTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mANVTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mANVTextEdit.Size = new System.Drawing.Size(345, 26);
-            this.mANVTextEdit.TabIndex = 4;
-            // 
             // sOQUYETDINHLabel
             // 
             sOQUYETDINHLabel.AutoSize = true;
@@ -110,6 +90,66 @@
             sOQUYETDINHLabel.Size = new System.Drawing.Size(106, 20);
             sOQUYETDINHLabel.TabIndex = 5;
             sOQUYETDINHLabel.Text = "Số quyết định";
+            // 
+            // nGAYQUYETDINHLabel
+            // 
+            nGAYQUYETDINHLabel.AutoSize = true;
+            nGAYQUYETDINHLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nGAYQUYETDINHLabel.Location = new System.Drawing.Point(62, 196);
+            nGAYQUYETDINHLabel.Name = "nGAYQUYETDINHLabel";
+            nGAYQUYETDINHLabel.Size = new System.Drawing.Size(122, 20);
+            nGAYQUYETDINHLabel.TabIndex = 7;
+            nGAYQUYETDINHLabel.Text = "Ngày quyết định";
+            // 
+            // nGUOIKYLabel
+            // 
+            nGUOIKYLabel.AutoSize = true;
+            nGUOIKYLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nGUOIKYLabel.Location = new System.Drawing.Point(62, 241);
+            nGUOIKYLabel.Name = "nGUOIKYLabel";
+            nGUOIKYLabel.Size = new System.Drawing.Size(69, 20);
+            nGUOIKYLabel.TabIndex = 9;
+            nGUOIKYLabel.Text = "Người ký";
+            // 
+            // nGAYNGHIVIECLabel
+            // 
+            nGAYNGHIVIECLabel.AutoSize = true;
+            nGAYNGHIVIECLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nGAYNGHIVIECLabel.Location = new System.Drawing.Point(62, 287);
+            nGAYNGHIVIECLabel.Name = "nGAYNGHIVIECLabel";
+            nGAYNGHIVIECLabel.Size = new System.Drawing.Size(110, 20);
+            nGAYNGHIVIECLabel.TabIndex = 11;
+            nGAYNGHIVIECLabel.Text = "Ngày nghĩ việc";
+            // 
+            // lYDOLabel
+            // 
+            lYDOLabel.AutoSize = true;
+            lYDOLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lYDOLabel.Location = new System.Drawing.Point(629, 57);
+            lYDOLabel.Name = "lYDOLabel";
+            lYDOLabel.Size = new System.Drawing.Size(47, 20);
+            lYDOLabel.TabIndex = 13;
+            lYDOLabel.Text = "Lý do";
+            // 
+            // mAQUANLYNGHIVIECTextEdit
+            // 
+            this.mAQUANLYNGHIVIECTextEdit.Enabled = false;
+            this.mAQUANLYNGHIVIECTextEdit.Location = new System.Drawing.Point(239, 54);
+            this.mAQUANLYNGHIVIECTextEdit.Name = "mAQUANLYNGHIVIECTextEdit";
+            this.mAQUANLYNGHIVIECTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mAQUANLYNGHIVIECTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mAQUANLYNGHIVIECTextEdit.Size = new System.Drawing.Size(345, 26);
+            this.mAQUANLYNGHIVIECTextEdit.TabIndex = 2;
+            // 
+            // mANVTextEdit
+            // 
+            this.mANVTextEdit.Enabled = false;
+            this.mANVTextEdit.Location = new System.Drawing.Point(239, 99);
+            this.mANVTextEdit.Name = "mANVTextEdit";
+            this.mANVTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mANVTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mANVTextEdit.Size = new System.Drawing.Size(345, 26);
+            this.mANVTextEdit.TabIndex = 4;
             // 
             // sOQUYETDINHSpinEdit
             // 
@@ -127,16 +167,6 @@
             this.sOQUYETDINHSpinEdit.Size = new System.Drawing.Size(345, 26);
             this.sOQUYETDINHSpinEdit.TabIndex = 6;
             // 
-            // nGAYQUYETDINHLabel
-            // 
-            nGAYQUYETDINHLabel.AutoSize = true;
-            nGAYQUYETDINHLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nGAYQUYETDINHLabel.Location = new System.Drawing.Point(62, 196);
-            nGAYQUYETDINHLabel.Name = "nGAYQUYETDINHLabel";
-            nGAYQUYETDINHLabel.Size = new System.Drawing.Size(122, 20);
-            nGAYQUYETDINHLabel.TabIndex = 7;
-            nGAYQUYETDINHLabel.Text = "Ngày quyết định";
-            // 
             // nGAYQUYETDINHDateEdit
             // 
             this.nGAYQUYETDINHDateEdit.EditValue = null;
@@ -151,16 +181,6 @@
             this.nGAYQUYETDINHDateEdit.Size = new System.Drawing.Size(345, 26);
             this.nGAYQUYETDINHDateEdit.TabIndex = 8;
             // 
-            // nGUOIKYLabel
-            // 
-            nGUOIKYLabel.AutoSize = true;
-            nGUOIKYLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nGUOIKYLabel.Location = new System.Drawing.Point(62, 241);
-            nGUOIKYLabel.Name = "nGUOIKYLabel";
-            nGUOIKYLabel.Size = new System.Drawing.Size(69, 20);
-            nGUOIKYLabel.TabIndex = 9;
-            nGUOIKYLabel.Text = "Người ký";
-            // 
             // nGUOIKYTextEdit
             // 
             this.nGUOIKYTextEdit.Location = new System.Drawing.Point(239, 238);
@@ -169,16 +189,6 @@
             this.nGUOIKYTextEdit.Properties.Appearance.Options.UseFont = true;
             this.nGUOIKYTextEdit.Size = new System.Drawing.Size(345, 26);
             this.nGUOIKYTextEdit.TabIndex = 10;
-            // 
-            // nGAYNGHIVIECLabel
-            // 
-            nGAYNGHIVIECLabel.AutoSize = true;
-            nGAYNGHIVIECLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nGAYNGHIVIECLabel.Location = new System.Drawing.Point(62, 287);
-            nGAYNGHIVIECLabel.Name = "nGAYNGHIVIECLabel";
-            nGAYNGHIVIECLabel.Size = new System.Drawing.Size(110, 20);
-            nGAYNGHIVIECLabel.TabIndex = 11;
-            nGAYNGHIVIECLabel.Text = "Ngày nghĩ việc";
             // 
             // nGAYNGHIVIECDateEdit
             // 
@@ -194,19 +204,9 @@
             this.nGAYNGHIVIECDateEdit.Size = new System.Drawing.Size(345, 26);
             this.nGAYNGHIVIECDateEdit.TabIndex = 12;
             // 
-            // lYDOLabel
-            // 
-            lYDOLabel.AutoSize = true;
-            lYDOLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lYDOLabel.Location = new System.Drawing.Point(629, 57);
-            lYDOLabel.Name = "lYDOLabel";
-            lYDOLabel.Size = new System.Drawing.Size(47, 20);
-            lYDOLabel.TabIndex = 13;
-            lYDOLabel.Text = "Lý do";
-            // 
             // lYDOTextEdit
             // 
-            this.lYDOTextEdit.Location = new System.Drawing.Point(697, 54);
+            this.lYDOTextEdit.Location = new System.Drawing.Point(697, 53);
             this.lYDOTextEdit.MinimumSize = new System.Drawing.Size(345, 200);
             this.lYDOTextEdit.Name = "lYDOTextEdit";
             this.lYDOTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

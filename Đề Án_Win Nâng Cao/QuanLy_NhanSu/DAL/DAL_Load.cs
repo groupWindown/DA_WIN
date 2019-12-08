@@ -97,11 +97,21 @@ namespace DAL
                 return null;
             string UV = linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
             string s = linQ.HINHANHs.Where(t => t.MAUNGVIEN == UV).FirstOrDefault().URL.ToString();
-            byte[] s1 = linQ.HINHANHs.Where(t => t.MAUNGVIEN == UV).FirstOrDefault().URL.ToArray();
-               
+            byte[] s1 = linQ.HINHANHs.Where(t => t.MAUNGVIEN == UV).FirstOrDefault().URL.ToArray();       
             return s1;
         }
-
-
+        public List<QUANLYNGHIVIEC> loadQuanLyNghiViec()
+        {
+            return linQ.QUANLYNGHIVIECs.Select(t => t).ToList<QUANLYNGHIVIEC>();
+        }
+        public List<QUANLYKYLUAT> loadQuanLyKyLuat()
+        {
+            return linQ.QUANLYKYLUATs.Select(t => t).ToList<QUANLYKYLUAT>();
+        }
+        public List<QUANLYTHAISAN> loadQuanLyThaiSan()
+        {
+            return linQ.QUANLYTHAISANs.Select(t => t).ToList<QUANLYTHAISAN>();
+        }
+ 
     }
 }

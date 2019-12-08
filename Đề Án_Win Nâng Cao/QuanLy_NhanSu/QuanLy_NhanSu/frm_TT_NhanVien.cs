@@ -360,8 +360,13 @@ namespace QuanLy_NhanSu
         {
             if (Properties.Settings.Default.controldongclickmaNV != null)
             {
-                frm_QuanLyNghiViec frm = new frm_QuanLyNghiViec();
-                frm.ShowDialog();
+                if (Properties.Settings.Default.controldongclickmaNV.ToString().Trim().Length > 0)
+                {
+                    frm_QuanLyNghiViec frm = new frm_QuanLyNghiViec();
+                    frm.ShowDialog();
+                }
+                else
+                    MessageBox.Show("Vui lòng chọn nhân viên để xóa");
             }
             else
                 MessageBox.Show("Vui lòng chọn nhân viên để xóa");

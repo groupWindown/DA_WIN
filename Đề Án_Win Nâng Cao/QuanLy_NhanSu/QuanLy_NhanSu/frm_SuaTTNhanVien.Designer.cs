@@ -132,7 +132,7 @@
             // 
             hINHTHUCTUYENDUNGLabel.AutoSize = true;
             hINHTHUCTUYENDUNGLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            hINHTHUCTUYENDUNGLabel.Location = new System.Drawing.Point(547, 696);
+            hINHTHUCTUYENDUNGLabel.Location = new System.Drawing.Point(522, 691);
             hINHTHUCTUYENDUNGLabel.Name = "hINHTHUCTUYENDUNGLabel";
             hINHTHUCTUYENDUNGLabel.Size = new System.Drawing.Size(160, 20);
             hINHTHUCTUYENDUNGLabel.TabIndex = 127;
@@ -198,9 +198,9 @@
             this.groupBox3.Controls.Add(this.label40);
             this.groupBox3.Controls.Add(this.label41);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 12);
+            this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1375, 736);
+            this.groupBox3.Size = new System.Drawing.Size(1307, 736);
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin nhân viên";
@@ -208,7 +208,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QuanLy_NhanSu.Properties.Resources.ic_x1;
-            this.pictureBox1.Location = new System.Drawing.Point(807, 143);
+            this.pictureBox1.Location = new System.Drawing.Point(782, 142);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(17, 19);
             this.pictureBox1.TabIndex = 138;
@@ -220,7 +220,7 @@
             this.tRINHDOHOCVANComboBox.DisplayMember = "MATRINHDOHOCVAN";
             this.tRINHDOHOCVANComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tRINHDOHOCVANComboBox.FormattingEnabled = true;
-            this.tRINHDOHOCVANComboBox.Location = new System.Drawing.Point(713, 597);
+            this.tRINHDOHOCVANComboBox.Location = new System.Drawing.Point(688, 590);
             this.tRINHDOHOCVANComboBox.Name = "tRINHDOHOCVANComboBox";
             this.tRINHDOHOCVANComboBox.Size = new System.Drawing.Size(183, 28);
             this.tRINHDOHOCVANComboBox.TabIndex = 132;
@@ -231,7 +231,7 @@
             this.tRINHDOTINHOCComboBox.DisplayMember = "MATRINHDOTINHOC";
             this.tRINHDOTINHOCComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tRINHDOTINHOCComboBox.FormattingEnabled = true;
-            this.tRINHDOTINHOCComboBox.Location = new System.Drawing.Point(713, 644);
+            this.tRINHDOTINHOCComboBox.Location = new System.Drawing.Point(688, 637);
             this.tRINHDOTINHOCComboBox.Name = "tRINHDOTINHOCComboBox";
             this.tRINHDOTINHOCComboBox.Size = new System.Drawing.Size(183, 28);
             this.tRINHDOTINHOCComboBox.TabIndex = 132;
@@ -239,7 +239,7 @@
             // 
             // pictureEdit1
             // 
-            this.pictureEdit1.Location = new System.Drawing.Point(652, 143);
+            this.pictureEdit1.Location = new System.Drawing.Point(627, 142);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
@@ -260,7 +260,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(652, 453);
+            this.comboBox2.Location = new System.Drawing.Point(627, 446);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(244, 27);
             this.comboBox2.TabIndex = 130;
@@ -300,7 +300,7 @@
             // 
             this.pHONGBANComboBox.DisplayMember = "MAPHONGBAN";
             this.pHONGBANComboBox.FormattingEnabled = true;
-            this.pHONGBANComboBox.Location = new System.Drawing.Point(652, 347);
+            this.pHONGBANComboBox.Location = new System.Drawing.Point(627, 346);
             this.pHONGBANComboBox.Name = "pHONGBANComboBox";
             this.pHONGBANComboBox.Size = new System.Drawing.Size(244, 27);
             this.pHONGBANComboBox.TabIndex = 128;
@@ -310,7 +310,7 @@
             // 
             this.cHUCVUComboBox.DisplayMember = "MACHUCVU";
             this.cHUCVUComboBox.FormattingEnabled = true;
-            this.cHUCVUComboBox.Location = new System.Drawing.Point(652, 403);
+            this.cHUCVUComboBox.Location = new System.Drawing.Point(627, 396);
             this.cHUCVUComboBox.Name = "cHUCVUComboBox";
             this.cHUCVUComboBox.Size = new System.Drawing.Size(244, 27);
             this.cHUCVUComboBox.TabIndex = 128;
@@ -352,7 +352,7 @@
             // 
             // nOISINHTextEdit
             // 
-            this.nOISINHTextEdit.Location = new System.Drawing.Point(115, 403);
+            this.nOISINHTextEdit.Location = new System.Drawing.Point(115, 397);
             this.nOISINHTextEdit.Name = "nOISINHTextEdit";
             this.nOISINHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nOISINHTextEdit.Properties.Appearance.Options.UseFont = true;
@@ -402,7 +402,7 @@
             // 
             // dIACHITHUONGTRUTextEdit
             // 
-            this.dIACHITHUONGTRUTextEdit.Location = new System.Drawing.Point(172, 454);
+            this.dIACHITHUONGTRUTextEdit.Location = new System.Drawing.Point(172, 448);
             this.dIACHITHUONGTRUTextEdit.Name = "dIACHITHUONGTRUTextEdit";
             this.dIACHITHUONGTRUTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dIACHITHUONGTRUTextEdit.Properties.Appearance.Options.UseFont = true;
@@ -411,7 +411,7 @@
             // 
             // nOIOHIENTAITextEdit
             // 
-            this.nOIOHIENTAITextEdit.Location = new System.Drawing.Point(171, 505);
+            this.nOIOHIENTAITextEdit.Location = new System.Drawing.Point(171, 499);
             this.nOIOHIENTAITextEdit.Name = "nOIOHIENTAITextEdit";
             this.nOIOHIENTAITextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nOIOHIENTAITextEdit.Properties.Appearance.Options.UseFont = true;
@@ -420,7 +420,7 @@
             // 
             // dIENTHOAITextEdit
             // 
-            this.dIENTHOAITextEdit.Location = new System.Drawing.Point(173, 554);
+            this.dIENTHOAITextEdit.Location = new System.Drawing.Point(173, 548);
             this.dIENTHOAITextEdit.Name = "dIENTHOAITextEdit";
             this.dIENTHOAITextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dIENTHOAITextEdit.Properties.Appearance.Options.UseFont = true;
@@ -429,7 +429,7 @@
             // 
             // eMAILTextEdit
             // 
-            this.eMAILTextEdit.Location = new System.Drawing.Point(173, 602);
+            this.eMAILTextEdit.Location = new System.Drawing.Point(173, 596);
             this.eMAILTextEdit.Name = "eMAILTextEdit";
             this.eMAILTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eMAILTextEdit.Properties.Appearance.Options.UseFont = true;
@@ -438,7 +438,7 @@
             // 
             // tINHTRANGHONNHANTextEdit
             // 
-            this.tINHTRANGHONNHANTextEdit.Location = new System.Drawing.Point(713, 505);
+            this.tINHTRANGHONNHANTextEdit.Location = new System.Drawing.Point(688, 498);
             this.tINHTRANGHONNHANTextEdit.Name = "tINHTRANGHONNHANTextEdit";
             this.tINHTRANGHONNHANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tINHTRANGHONNHANTextEdit.Properties.Appearance.Options.UseFont = true;
@@ -447,7 +447,7 @@
             // 
             // dIENUUTIENTextEdit
             // 
-            this.dIENUUTIENTextEdit.Location = new System.Drawing.Point(173, 648);
+            this.dIENUUTIENTextEdit.Location = new System.Drawing.Point(173, 644);
             this.dIENUUTIENTextEdit.Name = "dIENUUTIENTextEdit";
             this.dIENUUTIENTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dIENUUTIENTextEdit.Properties.Appearance.Options.UseFont = true;
@@ -456,7 +456,7 @@
             // 
             // tINHTRANGSUCKHOETextEdit
             // 
-            this.tINHTRANGSUCKHOETextEdit.Location = new System.Drawing.Point(173, 693);
+            this.tINHTRANGSUCKHOETextEdit.Location = new System.Drawing.Point(173, 690);
             this.tINHTRANGSUCKHOETextEdit.Name = "tINHTRANGSUCKHOETextEdit";
             this.tINHTRANGSUCKHOETextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tINHTRANGSUCKHOETextEdit.Properties.Appearance.Options.UseFont = true;
@@ -466,7 +466,7 @@
             // nGAYTUYENDUNGDateEdit
             // 
             this.nGAYTUYENDUNGDateEdit.EditValue = null;
-            this.nGAYTUYENDUNGDateEdit.Location = new System.Drawing.Point(713, 551);
+            this.nGAYTUYENDUNGDateEdit.Location = new System.Drawing.Point(688, 544);
             this.nGAYTUYENDUNGDateEdit.Name = "nGAYTUYENDUNGDateEdit";
             this.nGAYTUYENDUNGDateEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nGAYTUYENDUNGDateEdit.Properties.Appearance.Options.UseFont = true;
@@ -479,7 +479,7 @@
             // 
             // hINHTHUCTUYENDUNGTextEdit
             // 
-            this.hINHTHUCTUYENDUNGTextEdit.Location = new System.Drawing.Point(713, 693);
+            this.hINHTHUCTUYENDUNGTextEdit.Location = new System.Drawing.Point(688, 688);
             this.hINHTHUCTUYENDUNGTextEdit.Name = "hINHTHUCTUYENDUNGTextEdit";
             this.hINHTHUCTUYENDUNGTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hINHTHUCTUYENDUNGTextEdit.Properties.Appearance.Options.UseFont = true;
@@ -489,7 +489,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(551, 456);
+            this.label1.Location = new System.Drawing.Point(526, 449);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 19);
             this.label1.TabIndex = 87;
@@ -498,7 +498,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.gridControlCM);
-            this.groupBox2.Location = new System.Drawing.Point(932, 41);
+            this.groupBox2.Location = new System.Drawing.Point(886, 41);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(405, 292);
             this.groupBox2.TabIndex = 86;
@@ -542,7 +542,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.gridControlNN);
-            this.groupBox1.Location = new System.Drawing.Point(932, 349);
+            this.groupBox1.Location = new System.Drawing.Point(886, 349);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(405, 292);
             this.groupBox1.TabIndex = 85;
@@ -585,18 +585,19 @@
             // 
             // btn_Sua
             // 
-            this.btn_Sua.Location = new System.Drawing.Point(1201, 651);
+            this.btn_Sua.Location = new System.Drawing.Point(1164, 650);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(127, 32);
             this.btn_Sua.TabIndex = 81;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(547, 651);
+            this.label5.Location = new System.Drawing.Point(522, 650);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 50;
@@ -605,7 +606,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(547, 406);
+            this.label6.Location = new System.Drawing.Point(522, 399);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 19);
             this.label6.TabIndex = 67;
@@ -614,7 +615,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(547, 350);
+            this.label7.Location = new System.Drawing.Point(522, 349);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 19);
             this.label7.TabIndex = 68;
@@ -624,7 +625,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(547, 605);
+            this.label8.Location = new System.Drawing.Point(522, 598);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(125, 20);
             this.label8.TabIndex = 49;
@@ -634,7 +635,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(24, 508);
+            this.label10.Location = new System.Drawing.Point(24, 502);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(100, 20);
             this.label10.TabIndex = 66;
@@ -654,7 +655,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(547, 557);
+            this.label12.Location = new System.Drawing.Point(522, 550);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(103, 20);
             this.label12.TabIndex = 54;
@@ -664,7 +665,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(24, 696);
+            this.label13.Location = new System.Drawing.Point(24, 693);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(148, 20);
             this.label13.TabIndex = 53;
@@ -674,7 +675,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(24, 457);
+            this.label14.Location = new System.Drawing.Point(24, 451);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(134, 20);
             this.label14.TabIndex = 65;
@@ -714,7 +715,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(24, 406);
+            this.label18.Location = new System.Drawing.Point(24, 400);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(65, 20);
             this.label18.TabIndex = 62;
@@ -754,7 +755,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(24, 651);
+            this.label22.Location = new System.Drawing.Point(24, 647);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(94, 20);
             this.label22.TabIndex = 52;
@@ -764,7 +765,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(547, 508);
+            this.label24.Location = new System.Drawing.Point(522, 501);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(151, 20);
             this.label24.TabIndex = 27;
@@ -774,7 +775,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(24, 605);
+            this.label36.Location = new System.Drawing.Point(24, 599);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(48, 20);
             this.label36.TabIndex = 23;
@@ -784,7 +785,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(24, 557);
+            this.label37.Location = new System.Drawing.Point(24, 551);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(106, 20);
             this.label37.TabIndex = 21;
@@ -839,7 +840,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1319, 749);
             this.Controls.Add(this.groupBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_SuaTTNhanVien";
