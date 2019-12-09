@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -76,6 +77,11 @@ namespace BLL
         public byte[] BLL_loadURLHinhAnh(string p)
         {
             return dal.loadURLHinhAnh(p);
+        }
+
+        public object BLL_loadChiTietChuyenMon(string v, DataRow dataRow)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -262,6 +262,8 @@ namespace QuanLy_NhanSu
                     }
                 }
             }
+            else
+                MessageBox.Show("chọn thiếu dữ liệu cbo");
         }
 
         private void refreshPanel()

@@ -28,5 +28,11 @@ namespace DAL
                 return false;
             return true;
         }
+        public bool kiemTraTrungMaHinhAnh(string p)
+        {
+            if (linQ.HINHANHs.Where(t => t.MAHINHANH == p).FirstOrDefault() != null)
+                return false;
+            return true;
+        }
     }
 }

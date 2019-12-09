@@ -52,8 +52,6 @@
     <Type Name="CHITIETCHUYENMON">
       <Column Name="MACHUYENMON" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MAUNGVIEN" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Association Name="CHUYENMON_CHITIETCHUYENMON" Member="CHUYENMON" ThisKey="MACHUYENMON" OtherKey="MACHUYENMON" Type="CHUYENMON" IsForeignKey="true" />
-      <Association Name="HOSOTUYENDUNG_CHITIETCHUYENMON" Member="HOSOTUYENDUNG" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="HOSOTUYENDUNG" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.CHITIETHOPDONG" Member="CHITIETHOPDONGs">
@@ -110,7 +108,6 @@
     <Type Name="CHUYENMON">
       <Column Name="MACHUYENMON" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TENCHUYENMON" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Association Name="CHUYENMON_CHITIETCHUYENMON" Member="CHITIETCHUYENMONs" ThisKey="MACHUYENMON" OtherKey="MACHUYENMON" Type="CHITIETCHUYENMON" />
     </Type>
   </Table>
   <Table Name="dbo.DANHMUCTANGCA" Member="DANHMUCTANGCAs">
@@ -187,7 +184,6 @@
       <Column Name="VITRITUYENDUNG" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="MATRINHDOHOCVAN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="MATRINHDOTINHOC" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Association Name="HOSOTUYENDUNG_CHITIETCHUYENMON" Member="CHITIETCHUYENMONs" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="CHITIETCHUYENMON" />
       <Association Name="HOSOTUYENDUNG_CHITIETNGOAINGU" Member="CHITIETNGOAINGUs" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="CHITIETNGOAINGU" />
       <Association Name="HOSOTUYENDUNG_HINHANH" Member="HINHANHs" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="HINHANH" />
       <Association Name="HOSOTUYENDUNG_KQ_TUYENDUNG" Member="KQ_TUYENDUNGs" ThisKey="MAUNGVIEN" OtherKey="MAUNGVIEN" Type="KQ_TUYENDUNG" />

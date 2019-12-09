@@ -555,10 +555,10 @@
             // 
             // gridControlNN
             // 
-            this.gridControlNN.Location = new System.Drawing.Point(0, 25);
+            this.gridControlNN.Location = new System.Drawing.Point(-37, 25);
             this.gridControlNN.MainView = this.gridViewNN;
             this.gridControlNN.Name = "gridControlNN";
-            this.gridControlNN.Size = new System.Drawing.Size(399, 261);
+            this.gridControlNN.Size = new System.Drawing.Size(436, 261);
             this.gridControlNN.TabIndex = 0;
             this.gridControlNN.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewNN});

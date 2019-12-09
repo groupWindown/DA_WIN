@@ -1420,10 +1420,6 @@ namespace DAL
 		
 		private string _MAUNGVIEN;
 		
-		private EntityRef<CHUYENMON> _CHUYENMON;
-		
-		private EntityRef<HOSOTUYENDUNG> _HOSOTUYENDUNG;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -1436,8 +1432,6 @@ namespace DAL
 		
 		public CHITIETCHUYENMON()
 		{
-			this._CHUYENMON = default(EntityRef<CHUYENMON>);
-			this._HOSOTUYENDUNG = default(EntityRef<HOSOTUYENDUNG>);
 			OnCreated();
 		}
 		
@@ -1452,10 +1446,6 @@ namespace DAL
 			{
 				if ((this._MACHUYENMON != value))
 				{
-					if (this._CHUYENMON.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMACHUYENMONChanging(value);
 					this.SendPropertyChanging();
 					this._MACHUYENMON = value;
@@ -1476,83 +1466,11 @@ namespace DAL
 			{
 				if ((this._MAUNGVIEN != value))
 				{
-					if (this._HOSOTUYENDUNG.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMAUNGVIENChanging(value);
 					this.SendPropertyChanging();
 					this._MAUNGVIEN = value;
 					this.SendPropertyChanged("MAUNGVIEN");
 					this.OnMAUNGVIENChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="CHUYENMON_CHITIETCHUYENMON", Storage="_CHUYENMON", ThisKey="MACHUYENMON", OtherKey="MACHUYENMON", IsForeignKey=true)]
-		public CHUYENMON CHUYENMON
-		{
-			get
-			{
-				return this._CHUYENMON.Entity;
-			}
-			set
-			{
-				CHUYENMON previousValue = this._CHUYENMON.Entity;
-				if (((previousValue != value) 
-							|| (this._CHUYENMON.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._CHUYENMON.Entity = null;
-						previousValue.CHITIETCHUYENMONs.Remove(this);
-					}
-					this._CHUYENMON.Entity = value;
-					if ((value != null))
-					{
-						value.CHITIETCHUYENMONs.Add(this);
-						this._MACHUYENMON = value.MACHUYENMON;
-					}
-					else
-					{
-						this._MACHUYENMON = default(string);
-					}
-					this.SendPropertyChanged("CHUYENMON");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HOSOTUYENDUNG_CHITIETCHUYENMON", Storage="_HOSOTUYENDUNG", ThisKey="MAUNGVIEN", OtherKey="MAUNGVIEN", IsForeignKey=true)]
-		public HOSOTUYENDUNG HOSOTUYENDUNG
-		{
-			get
-			{
-				return this._HOSOTUYENDUNG.Entity;
-			}
-			set
-			{
-				HOSOTUYENDUNG previousValue = this._HOSOTUYENDUNG.Entity;
-				if (((previousValue != value) 
-							|| (this._HOSOTUYENDUNG.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._HOSOTUYENDUNG.Entity = null;
-						previousValue.CHITIETCHUYENMONs.Remove(this);
-					}
-					this._HOSOTUYENDUNG.Entity = value;
-					if ((value != null))
-					{
-						value.CHITIETCHUYENMONs.Add(this);
-						this._MAUNGVIEN = value.MAUNGVIEN;
-					}
-					else
-					{
-						this._MAUNGVIEN = default(string);
-					}
-					this.SendPropertyChanged("HOSOTUYENDUNG");
 				}
 			}
 		}
@@ -2638,8 +2556,6 @@ namespace DAL
 		
 		private string _TENCHUYENMON;
 		
-		private EntitySet<CHITIETCHUYENMON> _CHITIETCHUYENMONs;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -2652,7 +2568,6 @@ namespace DAL
 		
 		public CHUYENMON()
 		{
-			this._CHITIETCHUYENMONs = new EntitySet<CHITIETCHUYENMON>(new Action<CHITIETCHUYENMON>(this.attach_CHITIETCHUYENMONs), new Action<CHITIETCHUYENMON>(this.detach_CHITIETCHUYENMONs));
 			OnCreated();
 		}
 		
@@ -2696,19 +2611,6 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="CHUYENMON_CHITIETCHUYENMON", Storage="_CHITIETCHUYENMONs", ThisKey="MACHUYENMON", OtherKey="MACHUYENMON")]
-		public EntitySet<CHITIETCHUYENMON> CHITIETCHUYENMONs
-		{
-			get
-			{
-				return this._CHITIETCHUYENMONs;
-			}
-			set
-			{
-				this._CHITIETCHUYENMONs.Assign(value);
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -2727,18 +2629,6 @@ namespace DAL
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_CHITIETCHUYENMONs(CHITIETCHUYENMON entity)
-		{
-			this.SendPropertyChanging();
-			entity.CHUYENMON = this;
-		}
-		
-		private void detach_CHITIETCHUYENMONs(CHITIETCHUYENMON entity)
-		{
-			this.SendPropertyChanging();
-			entity.CHUYENMON = null;
 		}
 	}
 	
@@ -3637,8 +3527,6 @@ namespace DAL
 		
 		private string _MATRINHDOTINHOC;
 		
-		private EntitySet<CHITIETCHUYENMON> _CHITIETCHUYENMONs;
-		
 		private EntitySet<CHITIETNGOAINGU> _CHITIETNGOAINGUs;
 		
 		private EntitySet<HINHANH> _HINHANHs;
@@ -3713,7 +3601,6 @@ namespace DAL
 		
 		public HOSOTUYENDUNG()
 		{
-			this._CHITIETCHUYENMONs = new EntitySet<CHITIETCHUYENMON>(new Action<CHITIETCHUYENMON>(this.attach_CHITIETCHUYENMONs), new Action<CHITIETCHUYENMON>(this.detach_CHITIETCHUYENMONs));
 			this._CHITIETNGOAINGUs = new EntitySet<CHITIETNGOAINGU>(new Action<CHITIETNGOAINGU>(this.attach_CHITIETNGOAINGUs), new Action<CHITIETNGOAINGU>(this.detach_CHITIETNGOAINGUs));
 			this._HINHANHs = new EntitySet<HINHANH>(new Action<HINHANH>(this.attach_HINHANHs), new Action<HINHANH>(this.detach_HINHANHs));
 			this._KQ_TUYENDUNGs = new EntitySet<KQ_TUYENDUNG>(new Action<KQ_TUYENDUNG>(this.attach_KQ_TUYENDUNGs), new Action<KQ_TUYENDUNG>(this.detach_KQ_TUYENDUNGs));
@@ -4226,19 +4113,6 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HOSOTUYENDUNG_CHITIETCHUYENMON", Storage="_CHITIETCHUYENMONs", ThisKey="MAUNGVIEN", OtherKey="MAUNGVIEN")]
-		public EntitySet<CHITIETCHUYENMON> CHITIETCHUYENMONs
-		{
-			get
-			{
-				return this._CHITIETCHUYENMONs;
-			}
-			set
-			{
-				this._CHITIETCHUYENMONs.Assign(value);
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HOSOTUYENDUNG_CHITIETNGOAINGU", Storage="_CHITIETNGOAINGUs", ThisKey="MAUNGVIEN", OtherKey="MAUNGVIEN")]
 		public EntitySet<CHITIETNGOAINGU> CHITIETNGOAINGUs
 		{
@@ -4479,18 +4353,6 @@ namespace DAL
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_CHITIETCHUYENMONs(CHITIETCHUYENMON entity)
-		{
-			this.SendPropertyChanging();
-			entity.HOSOTUYENDUNG = this;
-		}
-		
-		private void detach_CHITIETCHUYENMONs(CHITIETCHUYENMON entity)
-		{
-			this.SendPropertyChanging();
-			entity.HOSOTUYENDUNG = null;
 		}
 		
 		private void attach_CHITIETNGOAINGUs(CHITIETNGOAINGU entity)

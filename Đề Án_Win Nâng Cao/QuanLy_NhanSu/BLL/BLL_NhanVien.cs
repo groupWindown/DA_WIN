@@ -45,5 +45,38 @@ namespace BLL
             }
 
         }
+        public bool BLL_UpdateHinhAnh(HINHANH p)
+        {
+            return dAL_NhanVien.UpdateHinhAnh(p);
+        }
+        public bool BLL_InsertHinhAnh(HINHANH p)
+        {
+            return dAL_NhanVien.InsertHinhAnh(p);
+        }
+        public string BLL_FindHinhAnhByMANV(string p)
+        {
+            return dAL_NhanVien.FindHinhAnhByMaNV(p);
+        }
+        public string sinhtudongMaHinhAnh(int v)
+        {
+            int number = dAL_Load.loadHinhAnh().Count + 1 + v;
+            int value = number;
+            int strick = 1;
+            while (number < 999999)
+            {
+                number = value + strick;
+                strick *= 10;
+            }
+            string str = "HA" + number.ToString().Substring(1, 6);
+            if (!dAL_KiemTra.kiemTraTrungMaQLNV(str))
+            {
+                return sinhtudongMaHinhAnh(++v);
+            }
+            else
+            {
+                return str;
+            }
+
+        }
     }
 }

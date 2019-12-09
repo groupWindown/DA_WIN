@@ -32,10 +32,10 @@
         <elementListCompartment Id="f9ec0aa6-adbb-4412-b75a-13cbbf460a0f" absoluteBounds="12.015, 34.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="6165ccbc-3e9d-4270-a2d3-7ee178c6d461" absoluteBounds="6.25, 22.5, 2, 1.1939925130208309">
+    <classShape Id="6165ccbc-3e9d-4270-a2d3-7ee178c6d461" absoluteBounds="6.5, 22.5, 2, 1.1939925130208309">
       <DataClassMoniker Name="/linQDataContext/CHITIETCHUYENMON" />
       <nestedChildShapes>
-        <elementListCompartment Id="20199f8a-7151-4e49-9035-bca14f7c3189" absoluteBounds="6.265, 22.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="20199f8a-7151-4e49-9035-bca14f7c3189" absoluteBounds="6.515, 22.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="a7c258a9-2734-40bc-8a17-d55903fe324a" absoluteBounds="15, 28, 2, 2.3478011067708309">
@@ -218,21 +218,14 @@
         <elementListCompartment Id="52669d15-df95-4aa3-b8c8-61e4585b79e5" absoluteBounds="0.765, 28.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.5 : 27.5); (5.875 : 27.125); (5.875 : 24.0689925130208); (6.25 : 23.6939925130208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/linQDataContext/CHUYENMON/CHUYENMON_CHITIETCHUYENMON" />
-      <nodes>
-        <classShapeMoniker Id="1cf44eb2-3c6c-4ae2-b05d-49c5b3bae94b" />
-        <classShapeMoniker Id="6165ccbc-3e9d-4270-a2d3-7ee178c6d461" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(11.25 : 25.6306469726563); (11.5416666666667 : 25.6306469726563 : JumpStart); (11.8020833333333 : 25.6306469726563 : JumpEnd); (12 : 25.6306469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(11.25 : 25.6306469726563); (12 : 25.6306469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/DANHMUCTANGCA/DANHMUCTANGCA_BANGTANGCA" />
       <nodes>
         <classShapeMoniker Id="023369ce-db51-425b-9cdc-d4d0a97ea7ed" />
         <classShapeMoniker Id="9e154d01-cca0-4949-b06f-8c553b7cdb0e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(14.15625 : 40.5); (14.15625 : 26.4848453776042); (15 : 26.4848453776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(14.15625 : 40.5); (14.15625 : 26.4848453776042); (14.6666666666667 : 26.4848453776042 : JumpStart); (14.8333333333333 : 26.4848453776042 : JumpEnd); (15 : 26.4848453776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/DAOTAO/DAOTAO_CHUONGTRINHDAOTAO" />
       <nodes>
         <classShapeMoniker Id="ab060314-3a21-4d44-b295-5d4baeb5d93d" />
@@ -246,13 +239,6 @@
         <classShapeMoniker Id="a7c258a9-2734-40bc-8a17-d55903fe324a" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 23.0657437565104); (6.25 : 23.0657437565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/linQDataContext/HOSOTUYENDUNG/HOSOTUYENDUNG_CHITIETCHUYENMON" />
-      <nodes>
-        <classShapeMoniker Id="15cf6097-737f-4bed-b8f9-77bb14c45362" />
-        <classShapeMoniker Id="6165ccbc-3e9d-4270-a2d3-7ee178c6d461" />
-      </nodes>
-    </associationConnector>
     <associationConnector edgePoints="[(5.5 : 21.0969962565104); (6.25 : 21.0969962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/HOSOTUYENDUNG/HOSOTUYENDUNG_CHITIETNGOAINGU" />
       <nodes>
@@ -260,7 +246,7 @@
         <classShapeMoniker Id="998cd632-9e16-47c0-a48a-4a7f801af501" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 25.7365461003606); (5.81607443490112 : 26.0526205352617 : JumpStart); (5.93392556509888 : 26.1704716654595 : JumpEnd); (6.0625 : 26.2990461003606); (6.0625 : 28.0392976888021); (6.25 : 28.0392976888021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 25.7365461003606); (6.0625 : 26.2990461003606); (6.0625 : 28.0392976888021); (6.25 : 28.0392976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/HOSOTUYENDUNG/HOSOTUYENDUNG_HINHANH" />
       <nodes>
         <classShapeMoniker Id="15cf6097-737f-4bed-b8f9-77bb14c45362" />
@@ -281,7 +267,7 @@
         <classShapeMoniker Id="15cf6097-737f-4bed-b8f9-77bb14c45362" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 25.3995205501803); (5.79166666666667 : 25.3995205501803 : JumpStart); (5.95833333333333 : 25.3995205501803 : JumpEnd); (6.25 : 25.3995205501803)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(5.5 : 25.3995205501803); (6.25 : 25.3995205501803)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/HOSOTUYENDUNG/HOSOTUYENDUNG_KQ_TUYENDUNG" />
       <nodes>
         <classShapeMoniker Id="15cf6097-737f-4bed-b8f9-77bb14c45362" />
@@ -302,7 +288,7 @@
         <classShapeMoniker Id="998cd632-9e16-47c0-a48a-4a7f801af501" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(11.25 : 22.7267976888021); (11.7916666666667 : 22.7267976888021 : JumpStart); (11.9583333333333 : 22.7267976888021 : JumpEnd); (12 : 22.7267976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(11.25 : 22.7267976888021); (12 : 22.7267976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/NHANVIEN/NHANVIEN_BANGCHAMCONG" />
       <nodes>
         <classShapeMoniker Id="2058628c-5c40-48d8-bf42-4fcc3ecd5e4e" />
@@ -330,42 +316,42 @@
         <classShapeMoniker Id="69642510-6fc9-4c0a-8b8d-ad445703744b" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(11.25 : 23.415763566256); (11.75 : 23.415763566256); (11.75 : 24.2035953776042); (11.7916666666667 : 24.2035953776042 : JumpStart); (11.9583333333333 : 24.2035953776042 : JumpEnd); (14.75 : 24.2035953776042); (14.75 : 27.625); (16 : 27.625); (16 : 28)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(11.25 : 23.415763566256); (11.75 : 23.415763566256); (11.75 : 24.2035953776042); (14.75 : 24.2035953776042); (14.75 : 27.625); (16 : 27.625); (16 : 28)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/NHANVIEN/NHANVIEN_CHITIETHOPDONG" />
       <nodes>
         <classShapeMoniker Id="2058628c-5c40-48d8-bf42-4fcc3ecd5e4e" />
         <classShapeMoniker Id="a7c258a9-2734-40bc-8a17-d55903fe324a" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(11.25 : 23.9067203776042); (11.7916666666667 : 23.9067203776042 : JumpStart); (11.9583333333333 : 23.9067203776042 : JumpEnd); (15 : 23.9067203776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(11.25 : 23.9067203776042); (15 : 23.9067203776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/NHANVIEN/NHANVIEN_CHITIETKHENTHUONG" />
       <nodes>
         <classShapeMoniker Id="2058628c-5c40-48d8-bf42-4fcc3ecd5e4e" />
         <classShapeMoniker Id="74b00be3-0d2c-425f-a77c-9a4d67a40bee" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(11.25 : 22.332146844401); (11.875 : 22.332146844401); (11.875 : 24.3285953776042); (16 : 24.3285953776042); (16 : 25.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(11.25 : 22.332146844401); (11.875 : 22.332146844401); (11.875 : 24.3285953776042); (14.6666666666667 : 24.3285953776042 : JumpStart); (14.8333333333333 : 24.3285953776042 : JumpEnd); (16 : 24.3285953776042); (16 : 25.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/NHANVIEN/NHANVIEN_CHUONGTRINHDAOTAO" />
       <nodes>
         <classShapeMoniker Id="2058628c-5c40-48d8-bf42-4fcc3ecd5e4e" />
         <classShapeMoniker Id="243293e9-5bf1-484f-97b5-103386e44887" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(8.40625 : 19.6939925130208); (8.40625 : 22.21875); (9.25 : 22.21875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(8.5 : 19.0969962565104); (9.45312125 : 19.0969962565104); (9.45312125 : 22)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/linQDataContext/CHUCVU/CHUCVU_NHANVIEN" />
       <nodes>
         <classShapeMoniker Id="461a50b3-f4b5-4ce7-b84b-51ce7bb55efc" />
         <classShapeMoniker Id="2058628c-5c40-48d8-bf42-4fcc3ecd5e4e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 23.95599609375); (5.9046630859375 : 23.95599609375 : JumpStart); (6.07132975260417 : 23.95599609375 : JumpEnd); (9.25 : 23.95599609375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(5.5 : 22.21875); (9.25 : 22.21875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/linQDataContext/HOSOTUYENDUNG/HOSOTUYENDUNG_NHANVIEN" />
       <nodes>
         <classShapeMoniker Id="15cf6097-737f-4bed-b8f9-77bb14c45362" />
         <classShapeMoniker Id="2058628c-5c40-48d8-bf42-4fcc3ecd5e4e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(14 : 14.0112939453125); (14.375 : 14.3862939453125); (14.375 : 18.3181469726563); (14.75 : 18.3181469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(14 : 14.0112939453125); (14.0973244349011 : 14.1086183802136 : JumpStart); (14.2151755650989 : 14.2264695104114 : JumpEnd); (14.375 : 14.3862939453125); (14.375 : 18.3181469726563); (14.75 : 18.3181469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/NHOMNGUOIDUNG/NHOMNGUOIDUNG_NGUOIDUNGNHOMNGUOIDUNG" />
       <nodes>
         <classShapeMoniker Id="d42a4fba-e287-412a-b0e5-32da87cd28d0" />
@@ -379,7 +365,7 @@
         <classShapeMoniker Id="25623305-713a-4bcc-a4ac-d63c69fcb556" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(14 : 13.2868944726563); (14.75 : 13.2868944726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(14 : 13.2868944726563); (14.0729166666667 : 13.2868944726563 : JumpStart); (14.2395833333333 : 13.2868944726563 : JumpEnd); (14.75 : 13.2868944726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/NHOMNGUOIDUNG/NHOMNGUOIDUNG_PHANQUYEN" />
       <nodes>
         <classShapeMoniker Id="d42a4fba-e287-412a-b0e5-32da87cd28d0" />
@@ -400,7 +386,7 @@
         <classShapeMoniker Id="276ca55d-2cae-43c1-8892-65d081dfad87" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(11.25 : 28.6979484049479); (11.5416666666667 : 28.6979484049479 : JumpStart); (11.9270833333333 : 28.6979484049479 : JumpEnd); (12 : 28.6979484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(11.25 : 28.6979484049479); (12 : 28.6979484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/DS_KYLUAT/DS_KYLUAT_QUANLYKYLUAT" />
       <nodes>
         <classShapeMoniker Id="ba295bfe-6b19-44e0-a645-072aa86fc116" />
@@ -428,7 +414,7 @@
         <classShapeMoniker Id="0c6d47bc-062f-4d25-94cb-b6590474e1d6" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 25.2123120117188); (3.04166666666667 : 25.2123120117188 : JumpStart); (3.36458333333333 : 25.2123120117188 : JumpEnd); (3.5 : 25.2123120117188)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(2.75 : 25.2123120117188); (3.5 : 25.2123120117188)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/QUOCTICH/QUOCTICH_HOSOTUYENDUNG" />
       <nodes>
         <classShapeMoniker Id="aba1cc43-eec9-4fa2-807a-1a3e04f3823f" />
@@ -442,7 +428,7 @@
         <classShapeMoniker Id="be25b4eb-f3e6-4585-8b16-78fe33e50c9e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(9.7187475 : 22); (9.7187475 : 18.3181469726563); (12 : 18.3181469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(9.7187475 : 22); (9.7187475 : 18.3181469726563); (10.1666666666667 : 18.3181469726563 : JumpStart); (10.3333333333333 : 18.3181469726563 : JumpEnd); (10.6979191666667 : 18.3181469726563 : JumpStart); (10.8645858333333 : 18.3181469726563 : JumpEnd); (12 : 18.3181469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/linQDataContext/NHANVIEN/NHANVIEN_TAIKHOAN" />
       <nodes>
         <classShapeMoniker Id="2058628c-5c40-48d8-bf42-4fcc3ecd5e4e" />

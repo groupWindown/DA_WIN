@@ -13,7 +13,7 @@ namespace QuanLy_NhanSu
 {
     public partial class frm_SuaTTNhanVien : Form
     {
-        BLL_Load bLL_load = new BLL_Load();
+        BLL_Load bLL_load = new BLL_Load(); BLL_NhanVien bLL_NhanVien = new BLL_NhanVien();
         public frm_SuaTTNhanVien()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace QuanLy_NhanSu
             //load các combobox,girdcontrol
             loadthongso();
             //load chitietchuyenmon,ngoaingu
-            //Load_CM_NN();
+            Load_CM_NN();
         }
 
         private void loadthongso()
@@ -75,15 +75,14 @@ namespace QuanLy_NhanSu
             for (int i = 0; i < gridViewCM.DataRowCount; i++)
             {
                 
-                string a = gridViewCM.GetDataRow(i)[0].ToString();
-                if (bLL_load.BLL_loadChiTietChuyenMon(txt_MaNV.Text.Trim(), a) != null)
+                if (bLL_load.BLL_loadChiTietChuyenMon(txt_MaNV.Text.Trim(), gridViewCM.GetRowCellValue((i),"MACHUYENMON").ToString()) != null)
                 {
                     gridViewCM.SelectRow(i);
                 }
             }
             for (int i = 0; i < gridViewNN.DataRowCount; i++)
             {
-                if (bLL_load.BLL_loadChiTietChuyenMon(txt_MaNV.Text.Trim(), gridViewNN.GetDataRow(i)["MANGOAINGU"].ToString().Trim()) != null)
+                if (bLL_load.BLL_loadChiTietChuyenMon(txt_MaNV.Text.Trim(), gridViewNN.GetRowCellValue((i), "MANGOAINGU").ToString().Trim()) != null)
                 {
                     gridViewNN.SelectRow(i);
                 }
@@ -141,7 +140,114 @@ namespace QuanLy_NhanSu
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
+            if (qUOCTICHComboBox.SelectedValue != null && dANTOCComboBox.SelectedValue != null && tONGIAOComboBox.SelectedValue != null && tRINHDOTINHOCComboBox.SelectedValue != null && tRINHDOHOCVANComboBox.SelectedValue != null)
+            {
+                //luu hinh anh
+                insertHinhAnh();
+                //update du lieu cua ung vien
+               // hOSOTUYENDUNGTableAdapter.Update(mAUNGVIENTextEdit.Text, dANTOCComboBox.SelectedValue.ToString(), tONGIAOComboBox.SelectedValue.ToString(), qUOCTICHComboBox.SelectedValue.ToString(), hOTENTextEdit.Text, cbo_GioiTinh.Text, nGAYSINHDateEdit.DateTime, nOISINHTextEdit.Text, cMNDTextEdit.Text, nGAYCAPDateEdit.DateTime, nOICAPTextEdit.Text, qUEQUANTextEdit.Text, dIACHITHUONGTRUTextEdit.Text, nOIOHIENTAITextEdit.Text, dIENTHOAITextEdit.Text, eMAILTextEdit.Text, tINHTRANGHONNHANTextEdit.Text, dIENUUTIENTextEdit.Text, tINHTRANGSUCKHOETextEdit.Text, nGAYTUYENDUNGDateEdit.DateTime, hINHTHUCTUYENDUNGTextEdit.Text, vITRITUYENDUNGTextEdit.Text, tRINHDOHOCVANComboBox.Text, tRINHDOTINHOCComboBox.Text, mAUNGVIENTextEdit.Text, dANTOCComboBox.SelectedValue.ToString(), tONGIAOComboBox.SelectedValue.ToString(), qUOCTICHComboBox.SelectedValue.ToString(), hOTENTextEdit.Text, cbo_GioiTinh.Text, nGAYSINHDateEdit.DateTime, nOISINHTextEdit.Text, cMNDTextEdit.Text, nGAYCAPDateEdit.DateTime, nOICAPTextEdit.Text, qUEQUANTextEdit.Text, dIACHITHUONGTRUTextEdit.Text, nOIOHIENTAITextEdit.Text, dIENTHOAITextEdit.Text, eMAILTextEdit.Text, tINHTRANGHONNHANTextEdit.Text, dIENUUTIENTextEdit.Text, tINHTRANGSUCKHOETextEdit.Text, nGAYTUYENDUNGDateEdit.DateTime, hINHTHUCTUYENDUNGTextEdit.Text, vITRITUYENDUNGTextEdit.Text, tRINHDOHOCVANComboBox.Text, tRINHDOTINHOCComboBox.Text);
+                //update chuyen mon
+                for (int i = 0; i < gridViewCM.RowCount; i++)
+                {
+                    if (gridViewCM.IsRowSelected(i))
+                    {
+                        try
+                        {
+                           // cHITIETCHUYENMONTableAdapter.Insert(gridView1.GetRowCellValue(i, "MACHUYENMON").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                        catch
+                        {
+                            //cHITIETCHUYENMONTableAdapter.Update(gridView1.GetRowCellValue(i, "MACHUYENMON").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                    }
+                    else
+                    {
+                        try
+                        {
+                            //cHITIETCHUYENMONTableAdapter.Delete(gridView1.GetRowCellValue(i, "MACHUYENMON").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                        catch
+                        {
 
+                        }
+                    }
+                }
+                //update ngoai ngu
+                for (int i = 0; i < gridViewNN.RowCount; i++)
+                {
+                    if (gridViewNN.IsRowSelected(i))
+                    {
+                        try
+                        {
+                           // cHITIETNGOAINGUTableAdapter.Insert(gridView2.GetRowCellValue(i, "MANGOAINGU").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                        catch
+                        {
+                          //  cHITIETNGOAINGUTableAdapter.Update(gridView2.GetRowCellValue(i, "MANGOAINGU").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                    }
+                    else
+                    {
+                        try
+                        {
+                           // cHITIETNGOAINGUTableAdapter.Delete(gridView2.GetRowCellValue(i, "MANGOAINGU").ToString(), mAUNGVIENTextEdit.Text);
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                }
+
+                MessageBox.Show("Sửa thành công");
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đủ Trình độ Học Vấn,Tin học,Quốc tịch,Dân tộc,Tôn giáo");
+            }
+        }
+
+        private void insertHinhAnh()
+        {
+            if (pictureEdit1.Image != null)
+            {
+                try
+                {
+                    //hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, st.imageToByteArray(pictureEdit_hinhUV.Image), timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
+                    HINHANH ha = new HINHANH();
+                    ha.MAHINHANH=
+                    bLL_NhanVien.BLL_UpdateHinhAnh();
+                }
+                catch
+                {
+                    try
+                    {
+                        //hINHANHTableAdapter.Insert(sinhtudongMaHA(0), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, st.imageToByteArray(pictureEdit_hinhUV.Image));
+                    }
+                    catch
+                    {
+
+                    }
+                }
+            }
+            else
+            {
+                try
+                {
+                    //hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null, timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
+                }
+                catch
+                {
+                    try
+                    {
+                       // hINHANHTableAdapter.Insert(sinhtudongMaHA(0), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null);
+                    }
+                    catch
+                    {
+
+                    }
+                }
+            }
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
