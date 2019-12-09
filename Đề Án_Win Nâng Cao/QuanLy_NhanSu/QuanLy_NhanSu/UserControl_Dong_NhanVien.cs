@@ -70,6 +70,8 @@ namespace QuanLy_NhanSu
 
         private void lbl_SDT_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            Properties.Settings.Default.controldongclickmaNV = this.lbl_MaUngVienCtrl.Text;
+
             frm_SuaTTNhanVien frm = new frm_SuaTTNhanVien();
             Properties.Settings.Default.NhanVienClick = lbl_MaUngVienCtrl.Text.Trim().ToString();
             frm.ShowDialog();

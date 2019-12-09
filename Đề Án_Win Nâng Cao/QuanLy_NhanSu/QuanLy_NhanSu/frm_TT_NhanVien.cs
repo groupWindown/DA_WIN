@@ -371,5 +371,96 @@ namespace QuanLy_NhanSu
             else
                 MessageBox.Show("Vui lòng chọn nhân viên để xóa");
         }
+
+        private void txtLuongThoaThuan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGiaHan_Click(object sender, EventArgs e)
+        {
+            frm_GiaHanHopDong frm = new frm_GiaHanHopDong();
+            frm.ShowDialog();
+        }
+
+        private void tabNavigationPage4_TabIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tabPane1_TabIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("avc");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void tabPane1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabNavigationPage4_SizeChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tabNavigationPage6_Leave(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void tabNavigationPage4_Enter(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void tabNavigationPage4_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void tabNavigationPage4_RegionChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void tabPane1_StateChanged(object sender, DevExpress.XtraBars.Navigation.StateChangedEventArgs e)
+        {
+            
+        }
+
+        private void tabPane1_SelectedPageIndexChanged(object sender, EventArgs e)
+        {
+            gridControlThongtinHD.DataSource = bLL_Load.BLL_loadHopDongNhanVien(Properties.Settings.Default.controldongclickmaNV);
+            
+        }
+
+        private void gridViewThongtinHD_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            }
+
+        private void gridViewThongtinHD_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            txtHoTenThongtin.Text = bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).HOTEN.ToString();
+            txtMaHopDong.Text = gridViewThongtinHD.GetFocusedRowCellValue("MaHopDong").ToString();
+            txtKyLanThu.Text = gridViewThongtinHD.GetFocusedRowCellValue("KyLanThu").ToString();
+            txtLuongThoaThuan.Text = gridViewThongtinHD.GetFocusedRowCellValue("LuongThoaThuan").ToString();
+            cboChucVuThongtin.Text = bLL_Load.BLL_loadTenChucVu(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MACHUCVU.ToString());
+            cboPhongbanThongtiin.Text = bLL_Load.BLL_loadTenPhongBan(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MAPHONGBAN.ToString());
+            cboLoaiHopDong.Text = gridViewThongtinHD.GetFocusedRowCellValue("TenHopDong").ToString();
+            dateEditNgayBatDau.Text = gridViewThongtinHD.GetFocusedRowCellValue("NgayBatDau").ToString();
+            dateEditNgayKy.Text = gridViewThongtinHD.GetFocusedRowCellValue("NgayKy").ToString();
+            dateEditNgayKetThuc.Text = gridViewThongtinHD.GetFocusedRowCellValue("NgayKetThuc").ToString();
+
+        }
+
+        private void btnInHopDong_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

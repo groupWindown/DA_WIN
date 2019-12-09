@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using DAL;
 namespace BLL
 {
-     public class BLL_Load
+    public class BLL_Load
     {
         DAL_Load dal = new DAL_Load();
         public List<TONGIAO> BLL_loadTonGiao()
@@ -48,11 +48,11 @@ namespace BLL
         }
         public CHITIETNGOAINGU BLL_loadChiTietNgoaiNgu(string p, string q)
         {
-            return dal.loadChiTietNgoaiNgu(p,q);
+            return dal.loadChiTietNgoaiNgu(p, q);
         }
         public CHITIETCHUYENMON BLL_loadChiTietChuyenMon(string p, string q)
         {
-            return dal.loadChiTietChuyenMon(p,q);
+            return dal.loadChiTietChuyenMon(p, q);
         }
         public List<HOSOTUYENDUNG> BLL_loadHoSoTuyenDung()
         {
@@ -94,6 +94,10 @@ namespace BLL
         public string BLL_FindUngVienByMaNV(string p)
         {
             return dal.FindUngVienByMaNV(p);
+        }
+        public List<BangGhepHopDongLaoDong> BLL_loadHopDongNhanVien(string pMaNhanVien)
+        {
+            return dal.loadHopDongNhanVien(pMaNhanVien);
         }
     }
 }

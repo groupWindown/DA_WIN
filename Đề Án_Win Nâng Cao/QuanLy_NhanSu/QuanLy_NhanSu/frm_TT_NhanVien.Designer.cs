@@ -75,24 +75,25 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Colum7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Colum10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridControlThongtinHD = new DevExpress.XtraGrid.GridControl();
+            this.gridViewThongtinHD = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btnInHopDong = new System.Windows.Forms.Button();
             this.btnGiaHan = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.dateEdit3 = new DevExpress.XtraEditors.DateEdit();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.cbo = new System.Windows.Forms.ComboBox();
+            this.dateEditNgayKy = new DevExpress.XtraEditors.DateEdit();
+            this.dateEditNgayBatDau = new DevExpress.XtraEditors.DateEdit();
+            this.txtLuongThoaThuan = new System.Windows.Forms.TextBox();
+            this.dateEditNgayKetThuc = new DevExpress.XtraEditors.DateEdit();
+            this.cboLoaiHopDong = new System.Windows.Forms.ComboBox();
+            this.cboChucVuThongtin = new System.Windows.Forms.ComboBox();
+            this.cboPhongbanThongtiin = new System.Windows.Forms.ComboBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
@@ -100,41 +101,42 @@
             this.label51 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.txtHoTenThongtin = new System.Windows.Forms.TextBox();
+            this.txtMaHopDong = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
-            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.txtKyLanThu = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridControlBaoHiem = new DevExpress.XtraGrid.GridControl();
+            this.gridViewBaoHiem = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.button10 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.dateEdit5 = new DevExpress.XtraEditors.DateEdit();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.dateEdit6 = new DevExpress.XtraEditors.DateEdit();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.dateEditNgayDangKy = new DevExpress.XtraEditors.DateEdit();
+            this.txtNoiKham = new System.Windows.Forms.TextBox();
+            this.dateEditNGayHetHan = new DevExpress.XtraEditors.DateEdit();
+            this.cboLoaiBaoHiem = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.cboPhongbanbaohiem = new System.Windows.Forms.ComboBox();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.txtHoTenBaoHiem = new System.Windows.Forms.TextBox();
+            this.txtMaBaoHiem = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
-            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.txtNoiCapBaoHiem = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
             this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.panel_TT_NhanVien = new System.Windows.Forms.Panel();
@@ -151,6 +153,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.schedulerDataStorage1 = new DevExpress.XtraScheduler.SchedulerDataStorage(this.components);
             this.hopdonglaodongTableAdapter1 = new QuanLy_NhanSu.DataSetQLNSTableAdapters.HOPDONGLAODONGTableAdapter();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
             this.tabNavigationPage2.SuspendLayout();
@@ -159,24 +162,26 @@
             this.groupBox3.SuspendLayout();
             this.tabNavigationPage4.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlThongtinHD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewThongtinHD)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayKy.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayKy.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayBatDau.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayBatDau.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayKetThuc.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayKetThuc.Properties)).BeginInit();
             this.tabNavigationPage5.SuspendLayout();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlBaoHiem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewBaoHiem)).BeginInit();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit5.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayDangKy.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayDangKy.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNGayHetHan.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNGayHetHan.Properties)).BeginInit();
             this.tabNavigationPage6.SuspendLayout();
             this.panel_TT_NhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_gerSRC)).BeginInit();
@@ -214,6 +219,10 @@
             this.tabPane1.Size = new System.Drawing.Size(1367, 526);
             this.tabPane1.TabIndex = 35;
             this.tabPane1.Text = "tabPane1";
+            this.tabPane1.StateChanged += new DevExpress.XtraBars.Navigation.StateChangedEventHandler(this.tabPane1_StateChanged);
+            this.tabPane1.SelectedPageIndexChanged += new System.EventHandler(this.tabPane1_SelectedPageIndexChanged);
+            this.tabPane1.TabIndexChanged += new System.EventHandler(this.tabPane1_TabIndexChanged);
+            this.tabPane1.Click += new System.EventHandler(this.tabPane1_Click);
             // 
             // tabNavigationPage2
             // 
@@ -663,66 +672,97 @@
             this.tabNavigationPage4.Controls.Add(this.groupBox5);
             this.tabNavigationPage4.Name = "tabNavigationPage4";
             this.tabNavigationPage4.Size = new System.Drawing.Size(1367, 499);
+            this.tabNavigationPage4.RegionChanged += new System.EventHandler(this.tabNavigationPage4_RegionChanged);
+            this.tabNavigationPage4.SizeChanged += new System.EventHandler(this.tabNavigationPage4_SizeChanged);
+            this.tabNavigationPage4.TabIndexChanged += new System.EventHandler(this.tabNavigationPage4_TabIndexChanged);
+            this.tabNavigationPage4.Paint += new System.Windows.Forms.PaintEventHandler(this.tabNavigationPage4_Paint);
+            this.tabNavigationPage4.Enter += new System.EventHandler(this.tabNavigationPage4_Enter);
             // 
             // groupBox7
             // 
             this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.editFormUserControl2.SetBoundPropertyName(this.groupBox7, "");
-            this.groupBox7.Controls.Add(this.dataGridView2);
+            this.groupBox7.Controls.Add(this.gridControlThongtinHD);
             this.groupBox7.Location = new System.Drawing.Point(6, 219);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(1361, 275);
+            this.groupBox7.Size = new System.Drawing.Size(1361, 298);
             this.groupBox7.TabIndex = 52;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Danh sách hợp đồng đã ký";
             // 
-            // dataGridView2
+            // gridControlThongtinHD
             // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.editFormUserControl2.SetBoundPropertyName(this.dataGridView2, "");
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Colum7,
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Colum10,
-            this.Column10});
-            this.dataGridView2.Location = new System.Drawing.Point(6, 28);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1349, 241);
-            this.dataGridView2.TabIndex = 0;
+            this.editFormUserControl2.SetBoundPropertyName(this.gridControlThongtinHD, "");
+            this.gridControlThongtinHD.Location = new System.Drawing.Point(6, 18);
+            this.gridControlThongtinHD.MainView = this.gridViewThongtinHD;
+            this.gridControlThongtinHD.Name = "gridControlThongtinHD";
+            this.gridControlThongtinHD.Size = new System.Drawing.Size(1352, 282);
+            this.gridControlThongtinHD.TabIndex = 1;
+            this.gridControlThongtinHD.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewThongtinHD});
             // 
-            // Colum7
+            // gridViewThongtinHD
             // 
-            this.Colum7.HeaderText = "Mã hợp đồng";
-            this.Colum7.Name = "Colum7";
+            this.gridViewThongtinHD.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6});
+            this.gridViewThongtinHD.GridControl = this.gridControlThongtinHD;
+            this.gridViewThongtinHD.Name = "gridViewThongtinHD";
+            this.gridViewThongtinHD.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridViewThongtinHD_RowClick);
+            this.gridViewThongtinHD.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewThongtinHD_FocusedRowChanged);
             // 
-            // Column7
+            // gridColumn1
             // 
-            this.Column7.HeaderText = "Loại hợp đồng";
-            this.Column7.Name = "Column7";
+            this.gridColumn1.Caption = "Mã hợp đồng ";
+            this.gridColumn1.FieldName = "MaHopDong";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
             // 
-            // Column8
+            // gridColumn2
             // 
-            this.Column8.HeaderText = "Ngày ký";
-            this.Column8.Name = "Column8";
+            this.gridColumn2.Caption = "Loại hợp đồng";
+            this.gridColumn2.FieldName = "TenHopDong";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
             // 
-            // Column9
+            // gridColumn3
             // 
-            this.Column9.HeaderText = "Ngày bắt đầu";
-            this.Column9.Name = "Column9";
+            this.gridColumn3.Caption = "Ngày ký";
+            this.gridColumn3.FieldName = "NgayKy";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 2;
             // 
-            // Colum10
+            // gridColumn4
             // 
-            this.Colum10.HeaderText = "Ngày kết thúc";
-            this.Colum10.Name = "Colum10";
+            this.gridColumn4.Caption = "Ngày bắt đầu";
+            this.gridColumn4.FieldName = "NgayBatDau";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 3;
             // 
-            // Column10
+            // gridColumn5
             // 
-            this.Column10.HeaderText = "Lương thỏa thuận";
-            this.Column10.Name = "Column10";
+            this.gridColumn5.Caption = "Ngày kết thúc";
+            this.gridColumn5.FieldName = "NgayKetThuc";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 4;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "Lương thỏa thuận";
+            this.gridColumn6.FieldName = "LuongThoaThuan";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 5;
             // 
             // groupBox6
             // 
@@ -745,6 +785,7 @@
             this.btnInHopDong.TabIndex = 1;
             this.btnInHopDong.Text = "In hợp đồng";
             this.btnInHopDong.UseVisualStyleBackColor = true;
+            this.btnInHopDong.Click += new System.EventHandler(this.btnInHopDong_Click);
             // 
             // btnGiaHan
             // 
@@ -755,17 +796,18 @@
             this.btnGiaHan.TabIndex = 0;
             this.btnGiaHan.Text = "Gia hạn hợp đồng";
             this.btnGiaHan.UseVisualStyleBackColor = true;
+            this.btnGiaHan.Click += new System.EventHandler(this.btnGiaHan_Click);
             // 
             // groupBox5
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.groupBox5, "");
-            this.groupBox5.Controls.Add(this.dateEdit2);
-            this.groupBox5.Controls.Add(this.dateEdit1);
-            this.groupBox5.Controls.Add(this.textBox37);
-            this.groupBox5.Controls.Add(this.dateEdit3);
-            this.groupBox5.Controls.Add(this.comboBox5);
-            this.groupBox5.Controls.Add(this.comboBox4);
-            this.groupBox5.Controls.Add(this.cbo);
+            this.groupBox5.Controls.Add(this.dateEditNgayKy);
+            this.groupBox5.Controls.Add(this.dateEditNgayBatDau);
+            this.groupBox5.Controls.Add(this.txtLuongThoaThuan);
+            this.groupBox5.Controls.Add(this.dateEditNgayKetThuc);
+            this.groupBox5.Controls.Add(this.cboLoaiHopDong);
+            this.groupBox5.Controls.Add(this.cboChucVuThongtin);
+            this.groupBox5.Controls.Add(this.cboPhongbanThongtiin);
             this.groupBox5.Controls.Add(this.label55);
             this.groupBox5.Controls.Add(this.label54);
             this.groupBox5.Controls.Add(this.label53);
@@ -773,11 +815,11 @@
             this.groupBox5.Controls.Add(this.label51);
             this.groupBox5.Controls.Add(this.label50);
             this.groupBox5.Controls.Add(this.label46);
-            this.groupBox5.Controls.Add(this.textBox38);
-            this.groupBox5.Controls.Add(this.textBox39);
+            this.groupBox5.Controls.Add(this.txtHoTenThongtin);
+            this.groupBox5.Controls.Add(this.txtMaHopDong);
             this.groupBox5.Controls.Add(this.label48);
             this.groupBox5.Controls.Add(this.label47);
-            this.groupBox5.Controls.Add(this.textBox40);
+            this.groupBox5.Controls.Add(this.txtKyLanThu);
             this.groupBox5.Controls.Add(this.label49);
             this.groupBox5.Location = new System.Drawing.Point(3, 3);
             this.groupBox5.Name = "groupBox5";
@@ -786,86 +828,100 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin chi tiết";
             // 
-            // dateEdit2
+            // dateEditNgayKy
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.dateEdit2, "");
-            this.dateEdit2.EditValue = null;
-            this.dateEdit2.Location = new System.Drawing.Point(513, 43);
-            this.dateEdit2.Name = "dateEdit2";
-            this.dateEdit2.Properties.AutoHeight = false;
-            this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.editFormUserControl2.SetBoundPropertyName(this.dateEditNgayKy, "");
+            this.dateEditNgayKy.EditValue = null;
+            this.dateEditNgayKy.Enabled = false;
+            this.dateEditNgayKy.Location = new System.Drawing.Point(513, 40);
+            this.dateEditNgayKy.Name = "dateEditNgayKy";
+            this.dateEditNgayKy.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateEditNgayKy.Properties.Appearance.Options.UseFont = true;
+            this.dateEditNgayKy.Properties.AutoHeight = false;
+            this.dateEditNgayKy.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateEditNgayKy.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Properties.CellSize = new System.Drawing.Size(207, 27);
-            this.dateEdit2.Size = new System.Drawing.Size(250, 27);
-            this.dateEdit2.TabIndex = 91;
+            this.dateEditNgayKy.Properties.CellSize = new System.Drawing.Size(207, 27);
+            this.dateEditNgayKy.Size = new System.Drawing.Size(250, 27);
+            this.dateEditNgayKy.TabIndex = 91;
             // 
-            // dateEdit1
+            // dateEditNgayBatDau
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.dateEdit1, "");
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(513, 85);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.AutoHeight = false;
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.editFormUserControl2.SetBoundPropertyName(this.dateEditNgayBatDau, "");
+            this.dateEditNgayBatDau.EditValue = null;
+            this.dateEditNgayBatDau.Enabled = false;
+            this.dateEditNgayBatDau.Location = new System.Drawing.Point(513, 85);
+            this.dateEditNgayBatDau.Name = "dateEditNgayBatDau";
+            this.dateEditNgayBatDau.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateEditNgayBatDau.Properties.Appearance.Options.UseFont = true;
+            this.dateEditNgayBatDau.Properties.AutoHeight = false;
+            this.dateEditNgayBatDau.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateEditNgayBatDau.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CellSize = new System.Drawing.Size(207, 27);
-            this.dateEdit1.Size = new System.Drawing.Size(250, 27);
-            this.dateEdit1.TabIndex = 90;
+            this.dateEditNgayBatDau.Properties.CellSize = new System.Drawing.Size(207, 27);
+            this.dateEditNgayBatDau.Size = new System.Drawing.Size(250, 27);
+            this.dateEditNgayBatDau.TabIndex = 90;
             // 
-            // textBox37
+            // txtLuongThoaThuan
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.textBox37, "");
-            this.textBox37.Location = new System.Drawing.Point(910, 127);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(226, 27);
-            this.textBox37.TabIndex = 89;
+            this.editFormUserControl2.SetBoundPropertyName(this.txtLuongThoaThuan, "");
+            this.txtLuongThoaThuan.Enabled = false;
+            this.txtLuongThoaThuan.Location = new System.Drawing.Point(910, 128);
+            this.txtLuongThoaThuan.Multiline = true;
+            this.txtLuongThoaThuan.Name = "txtLuongThoaThuan";
+            this.txtLuongThoaThuan.Size = new System.Drawing.Size(226, 27);
+            this.txtLuongThoaThuan.TabIndex = 89;
+            this.txtLuongThoaThuan.TextChanged += new System.EventHandler(this.txtLuongThoaThuan_TextChanged);
             // 
-            // dateEdit3
+            // dateEditNgayKetThuc
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.dateEdit3, "");
-            this.dateEdit3.EditValue = null;
-            this.dateEdit3.Location = new System.Drawing.Point(513, 130);
-            this.dateEdit3.Name = "dateEdit3";
-            this.dateEdit3.Properties.AutoHeight = false;
-            this.dateEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.editFormUserControl2.SetBoundPropertyName(this.dateEditNgayKetThuc, "");
+            this.dateEditNgayKetThuc.EditValue = null;
+            this.dateEditNgayKetThuc.Enabled = false;
+            this.dateEditNgayKetThuc.Location = new System.Drawing.Point(513, 130);
+            this.dateEditNgayKetThuc.Name = "dateEditNgayKetThuc";
+            this.dateEditNgayKetThuc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateEditNgayKetThuc.Properties.Appearance.Options.UseFont = true;
+            this.dateEditNgayKetThuc.Properties.AutoHeight = false;
+            this.dateEditNgayKetThuc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateEditNgayKetThuc.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit3.Properties.CellSize = new System.Drawing.Size(207, 27);
-            this.dateEdit3.Size = new System.Drawing.Size(250, 27);
-            this.dateEdit3.TabIndex = 88;
+            this.dateEditNgayKetThuc.Properties.CellSize = new System.Drawing.Size(207, 27);
+            this.dateEditNgayKetThuc.Size = new System.Drawing.Size(250, 27);
+            this.dateEditNgayKetThuc.TabIndex = 88;
             // 
-            // comboBox5
+            // cboLoaiHopDong
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.comboBox5, "");
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(910, 40);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(226, 27);
-            this.comboBox5.TabIndex = 85;
+            this.editFormUserControl2.SetBoundPropertyName(this.cboLoaiHopDong, "");
+            this.cboLoaiHopDong.Enabled = false;
+            this.cboLoaiHopDong.FormattingEnabled = true;
+            this.cboLoaiHopDong.Location = new System.Drawing.Point(910, 40);
+            this.cboLoaiHopDong.Name = "cboLoaiHopDong";
+            this.cboLoaiHopDong.Size = new System.Drawing.Size(226, 27);
+            this.cboLoaiHopDong.TabIndex = 85;
             // 
-            // comboBox4
+            // cboChucVuThongtin
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.comboBox4, "");
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(121, 87);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(249, 27);
-            this.comboBox4.TabIndex = 84;
+            this.editFormUserControl2.SetBoundPropertyName(this.cboChucVuThongtin, "");
+            this.cboChucVuThongtin.Enabled = false;
+            this.cboChucVuThongtin.FormattingEnabled = true;
+            this.cboChucVuThongtin.Location = new System.Drawing.Point(121, 87);
+            this.cboChucVuThongtin.Name = "cboChucVuThongtin";
+            this.cboChucVuThongtin.Size = new System.Drawing.Size(249, 27);
+            this.cboChucVuThongtin.TabIndex = 84;
             // 
-            // cbo
+            // cboPhongbanThongtiin
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.cbo, "");
-            this.cbo.FormattingEnabled = true;
-            this.cbo.Location = new System.Drawing.Point(121, 43);
-            this.cbo.Name = "cbo";
-            this.cbo.Size = new System.Drawing.Size(249, 27);
-            this.cbo.TabIndex = 83;
+            this.editFormUserControl2.SetBoundPropertyName(this.cboPhongbanThongtiin, "");
+            this.cboPhongbanThongtiin.Enabled = false;
+            this.cboPhongbanThongtiin.FormattingEnabled = true;
+            this.cboPhongbanThongtiin.Location = new System.Drawing.Point(121, 43);
+            this.cboPhongbanThongtiin.Name = "cboPhongbanThongtiin";
+            this.cboPhongbanThongtiin.Size = new System.Drawing.Size(249, 27);
+            this.cboPhongbanThongtiin.TabIndex = 83;
             // 
             // label55
             // 
@@ -883,9 +939,9 @@
             this.editFormUserControl2.SetBoundPropertyName(this.label54, "");
             this.label54.Location = new System.Drawing.Point(400, 129);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(96, 19);
+            this.label54.Size = new System.Drawing.Size(94, 19);
             this.label54.TabIndex = 81;
-            this.label54.Text = "Ngày kết thức";
+            this.label54.Text = "Ngày kết thúc";
             // 
             // label53
             // 
@@ -937,23 +993,25 @@
             this.label46.TabIndex = 76;
             this.label46.Text = "Mã hợp đồng";
             // 
-            // textBox38
+            // txtHoTenThongtin
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.textBox38, "");
-            this.textBox38.Location = new System.Drawing.Point(121, 129);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(249, 27);
-            this.textBox38.TabIndex = 75;
+            this.editFormUserControl2.SetBoundPropertyName(this.txtHoTenThongtin, "");
+            this.txtHoTenThongtin.Enabled = false;
+            this.txtHoTenThongtin.Location = new System.Drawing.Point(121, 129);
+            this.txtHoTenThongtin.Multiline = true;
+            this.txtHoTenThongtin.Name = "txtHoTenThongtin";
+            this.txtHoTenThongtin.Size = new System.Drawing.Size(249, 27);
+            this.txtHoTenThongtin.TabIndex = 75;
             // 
-            // textBox39
+            // txtMaHopDong
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.textBox39, "");
-            this.textBox39.Location = new System.Drawing.Point(121, 173);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(249, 27);
-            this.textBox39.TabIndex = 74;
+            this.editFormUserControl2.SetBoundPropertyName(this.txtMaHopDong, "");
+            this.txtMaHopDong.Enabled = false;
+            this.txtMaHopDong.Location = new System.Drawing.Point(121, 173);
+            this.txtMaHopDong.Multiline = true;
+            this.txtMaHopDong.Name = "txtMaHopDong";
+            this.txtMaHopDong.Size = new System.Drawing.Size(249, 27);
+            this.txtMaHopDong.TabIndex = 74;
             // 
             // label48
             // 
@@ -975,14 +1033,15 @@
             this.label47.TabIndex = 72;
             this.label47.Text = "Chức vụ";
             // 
-            // textBox40
+            // txtKyLanThu
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.textBox40, "");
-            this.textBox40.Location = new System.Drawing.Point(910, 85);
-            this.textBox40.Multiline = true;
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(226, 27);
-            this.textBox40.TabIndex = 71;
+            this.editFormUserControl2.SetBoundPropertyName(this.txtKyLanThu, "");
+            this.txtKyLanThu.Enabled = false;
+            this.txtKyLanThu.Location = new System.Drawing.Point(910, 85);
+            this.txtKyLanThu.Multiline = true;
+            this.txtKyLanThu.Name = "txtKyLanThu";
+            this.txtKyLanThu.Size = new System.Drawing.Size(226, 27);
+            this.txtKyLanThu.TabIndex = 71;
             // 
             // label49
             // 
@@ -1009,68 +1068,92 @@
             this.groupBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.editFormUserControl2.SetBoundPropertyName(this.groupBox10, "");
-            this.groupBox10.Controls.Add(this.dataGridView3);
+            this.groupBox10.Controls.Add(this.gridControlBaoHiem);
             this.groupBox10.Location = new System.Drawing.Point(3, 183);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(1364, 302);
+            this.groupBox10.Size = new System.Drawing.Size(1364, 339);
             this.groupBox10.TabIndex = 53;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Danh sách bảo hiểm";
             // 
-            // dataGridView3
+            // gridControlBaoHiem
             // 
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.editFormUserControl2.SetBoundPropertyName(this.dataGridView3, "");
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column13,
-            this.Column11,
-            this.Column12});
-            this.dataGridView3.Location = new System.Drawing.Point(6, 25);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(1352, 271);
-            this.dataGridView3.TabIndex = 0;
+            this.editFormUserControl2.SetBoundPropertyName(this.gridControlBaoHiem, "");
+            this.gridControlBaoHiem.Location = new System.Drawing.Point(6, 16);
+            this.gridControlBaoHiem.MainView = this.gridViewBaoHiem;
+            this.gridControlBaoHiem.Name = "gridControlBaoHiem";
+            this.gridControlBaoHiem.Size = new System.Drawing.Size(1355, 326);
+            this.gridControlBaoHiem.TabIndex = 1;
+            this.gridControlBaoHiem.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewBaoHiem});
             // 
-            // Column4
+            // gridViewBaoHiem
             // 
-            this.Column4.HeaderText = "Mã bảo hiểm";
-            this.Column4.Name = "Column4";
+            this.gridViewBaoHiem.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn7,
+            this.gridColumn8,
+            this.gridColumn9,
+            this.gridColumn10,
+            this.gridColumn11,
+            this.gridColumn12});
+            this.gridViewBaoHiem.GridControl = this.gridControlBaoHiem;
+            this.gridViewBaoHiem.Name = "gridViewBaoHiem";
             // 
-            // Column5
+            // gridColumn7
             // 
-            this.Column5.HeaderText = "Loại bảo hiểm";
-            this.Column5.Name = "Column5";
+            this.gridColumn7.Caption = "Mã bảo hiểm";
+            this.gridColumn7.FieldName = "MaBaoHiem";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 0;
             // 
-            // Column6
+            // gridColumn8
             // 
-            this.Column6.HeaderText = "Nơi cấp";
-            this.Column6.Name = "Column6";
+            this.gridColumn8.Caption = "Loại bảo hiểm";
+            this.gridColumn8.FieldName = "TenBaoHiem";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 1;
             // 
-            // Column13
+            // gridColumn9
             // 
-            this.Column13.HeaderText = "Nơi khám";
-            this.Column13.Name = "Column13";
+            this.gridColumn9.Caption = "Nơi cấp ";
+            this.gridColumn9.FieldName = "NoiCap";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 2;
             // 
-            // Column11
+            // gridColumn10
             // 
-            this.Column11.HeaderText = "Ngày đăng ký";
-            this.Column11.Name = "Column11";
+            this.gridColumn10.Caption = "Nơi Khám";
+            this.gridColumn10.FieldName = "NoiKham";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 3;
             // 
-            // Column12
+            // gridColumn11
             // 
-            this.Column12.HeaderText = "Ngày hết hạn";
-            this.Column12.Name = "Column12";
+            this.gridColumn11.Caption = "Ngày đăng ký";
+            this.gridColumn11.FieldName = "NgayDang";
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.Visible = true;
+            this.gridColumn11.VisibleIndex = 4;
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.Caption = "Ngày hết hạn";
+            this.gridColumn12.FieldName = "NgayHetHan";
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.Visible = true;
+            this.gridColumn12.VisibleIndex = 5;
             // 
             // groupBox9
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.groupBox9, "");
             this.groupBox9.Controls.Add(this.button10);
-            this.groupBox9.Location = new System.Drawing.Point(1178, 9);
+            this.groupBox9.Location = new System.Drawing.Point(1178, 3);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(189, 168);
+            this.groupBox9.Size = new System.Drawing.Size(189, 174);
             this.groupBox9.TabIndex = 52;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Tác vụ";
@@ -1078,7 +1161,7 @@
             // button10
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.button10, "");
-            this.button10.Location = new System.Drawing.Point(30, 32);
+            this.button10.Location = new System.Drawing.Point(31, 39);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(127, 32);
             this.button10.TabIndex = 0;
@@ -1088,23 +1171,23 @@
             // groupBox8
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.groupBox8, "");
-            this.groupBox8.Controls.Add(this.dateEdit5);
-            this.groupBox8.Controls.Add(this.textBox41);
-            this.groupBox8.Controls.Add(this.dateEdit6);
-            this.groupBox8.Controls.Add(this.comboBox6);
+            this.groupBox8.Controls.Add(this.dateEditNgayDangKy);
+            this.groupBox8.Controls.Add(this.txtNoiKham);
+            this.groupBox8.Controls.Add(this.dateEditNGayHetHan);
+            this.groupBox8.Controls.Add(this.cboLoaiBaoHiem);
             this.groupBox8.Controls.Add(this.comboBox7);
-            this.groupBox8.Controls.Add(this.comboBox8);
+            this.groupBox8.Controls.Add(this.cboPhongbanbaohiem);
             this.groupBox8.Controls.Add(this.label56);
             this.groupBox8.Controls.Add(this.label57);
             this.groupBox8.Controls.Add(this.label58);
             this.groupBox8.Controls.Add(this.label60);
             this.groupBox8.Controls.Add(this.label61);
             this.groupBox8.Controls.Add(this.label62);
-            this.groupBox8.Controls.Add(this.textBox42);
-            this.groupBox8.Controls.Add(this.textBox43);
+            this.groupBox8.Controls.Add(this.txtHoTenBaoHiem);
+            this.groupBox8.Controls.Add(this.txtMaBaoHiem);
             this.groupBox8.Controls.Add(this.label63);
             this.groupBox8.Controls.Add(this.label64);
-            this.groupBox8.Controls.Add(this.textBox44);
+            this.groupBox8.Controls.Add(this.txtNoiCapBaoHiem);
             this.groupBox8.Controls.Add(this.label65);
             this.groupBox8.Location = new System.Drawing.Point(3, 3);
             this.groupBox8.Name = "groupBox8";
@@ -1113,53 +1196,53 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Thông tin chi tiết";
             // 
-            // dateEdit5
+            // dateEditNgayDangKy
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.dateEdit5, "");
-            this.dateEdit5.EditValue = null;
-            this.dateEdit5.Location = new System.Drawing.Point(898, 85);
-            this.dateEdit5.Name = "dateEdit5";
-            this.dateEdit5.Properties.AutoHeight = false;
-            this.dateEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.editFormUserControl2.SetBoundPropertyName(this.dateEditNgayDangKy, "");
+            this.dateEditNgayDangKy.EditValue = null;
+            this.dateEditNgayDangKy.Location = new System.Drawing.Point(898, 84);
+            this.dateEditNgayDangKy.Name = "dateEditNgayDangKy";
+            this.dateEditNgayDangKy.Properties.AutoHeight = false;
+            this.dateEditNgayDangKy.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit5.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateEditNgayDangKy.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit5.Properties.CellSize = new System.Drawing.Size(207, 27);
-            this.dateEdit5.Size = new System.Drawing.Size(242, 27);
-            this.dateEdit5.TabIndex = 90;
+            this.dateEditNgayDangKy.Properties.CellSize = new System.Drawing.Size(207, 27);
+            this.dateEditNgayDangKy.Size = new System.Drawing.Size(242, 27);
+            this.dateEditNgayDangKy.TabIndex = 90;
             // 
-            // textBox41
+            // txtNoiKham
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.textBox41, "");
-            this.textBox41.Location = new System.Drawing.Point(898, 43);
-            this.textBox41.Multiline = true;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(242, 27);
-            this.textBox41.TabIndex = 89;
+            this.editFormUserControl2.SetBoundPropertyName(this.txtNoiKham, "");
+            this.txtNoiKham.Location = new System.Drawing.Point(898, 40);
+            this.txtNoiKham.Multiline = true;
+            this.txtNoiKham.Name = "txtNoiKham";
+            this.txtNoiKham.Size = new System.Drawing.Size(242, 27);
+            this.txtNoiKham.TabIndex = 89;
             // 
-            // dateEdit6
+            // dateEditNGayHetHan
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.dateEdit6, "");
-            this.dateEdit6.EditValue = null;
-            this.dateEdit6.Location = new System.Drawing.Point(898, 126);
-            this.dateEdit6.Name = "dateEdit6";
-            this.dateEdit6.Properties.AutoHeight = false;
-            this.dateEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.editFormUserControl2.SetBoundPropertyName(this.dateEditNGayHetHan, "");
+            this.dateEditNGayHetHan.EditValue = null;
+            this.dateEditNGayHetHan.Location = new System.Drawing.Point(898, 126);
+            this.dateEditNGayHetHan.Name = "dateEditNGayHetHan";
+            this.dateEditNGayHetHan.Properties.AutoHeight = false;
+            this.dateEditNGayHetHan.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit6.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateEditNGayHetHan.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit6.Properties.CellSize = new System.Drawing.Size(207, 27);
-            this.dateEdit6.Size = new System.Drawing.Size(242, 27);
-            this.dateEdit6.TabIndex = 88;
+            this.dateEditNGayHetHan.Properties.CellSize = new System.Drawing.Size(207, 27);
+            this.dateEditNGayHetHan.Size = new System.Drawing.Size(242, 27);
+            this.dateEditNGayHetHan.TabIndex = 88;
             // 
-            // comboBox6
+            // cboLoaiBaoHiem
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.comboBox6, "");
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(510, 85);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(252, 27);
-            this.comboBox6.TabIndex = 85;
+            this.editFormUserControl2.SetBoundPropertyName(this.cboLoaiBaoHiem, "");
+            this.cboLoaiBaoHiem.FormattingEnabled = true;
+            this.cboLoaiBaoHiem.Location = new System.Drawing.Point(510, 85);
+            this.cboLoaiBaoHiem.Name = "cboLoaiBaoHiem";
+            this.cboLoaiBaoHiem.Size = new System.Drawing.Size(252, 27);
+            this.cboLoaiBaoHiem.TabIndex = 85;
             // 
             // comboBox7
             // 
@@ -1170,14 +1253,14 @@
             this.comboBox7.Size = new System.Drawing.Size(249, 27);
             this.comboBox7.TabIndex = 84;
             // 
-            // comboBox8
+            // cboPhongbanbaohiem
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.comboBox8, "");
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(121, 43);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(249, 27);
-            this.comboBox8.TabIndex = 83;
+            this.editFormUserControl2.SetBoundPropertyName(this.cboPhongbanbaohiem, "");
+            this.cboPhongbanbaohiem.FormattingEnabled = true;
+            this.cboPhongbanbaohiem.Location = new System.Drawing.Point(121, 43);
+            this.cboPhongbanbaohiem.Name = "cboPhongbanbaohiem";
+            this.cboPhongbanbaohiem.Size = new System.Drawing.Size(249, 27);
+            this.cboPhongbanbaohiem.TabIndex = 83;
             // 
             // label56
             // 
@@ -1193,7 +1276,7 @@
             // 
             this.label57.AutoSize = true;
             this.editFormUserControl2.SetBoundPropertyName(this.label57, "");
-            this.label57.Location = new System.Drawing.Point(802, 129);
+            this.label57.Location = new System.Drawing.Point(797, 130);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(89, 19);
             this.label57.TabIndex = 81;
@@ -1239,23 +1322,23 @@
             this.label62.TabIndex = 76;
             this.label62.Text = "Mã bảo hiểm";
             // 
-            // textBox42
+            // txtHoTenBaoHiem
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.textBox42, "");
-            this.textBox42.Location = new System.Drawing.Point(121, 129);
-            this.textBox42.Multiline = true;
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(249, 27);
-            this.textBox42.TabIndex = 75;
+            this.editFormUserControl2.SetBoundPropertyName(this.txtHoTenBaoHiem, "");
+            this.txtHoTenBaoHiem.Location = new System.Drawing.Point(121, 129);
+            this.txtHoTenBaoHiem.Multiline = true;
+            this.txtHoTenBaoHiem.Name = "txtHoTenBaoHiem";
+            this.txtHoTenBaoHiem.Size = new System.Drawing.Size(249, 27);
+            this.txtHoTenBaoHiem.TabIndex = 75;
             // 
-            // textBox43
+            // txtMaBaoHiem
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.textBox43, "");
-            this.textBox43.Location = new System.Drawing.Point(510, 42);
-            this.textBox43.Multiline = true;
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(252, 27);
-            this.textBox43.TabIndex = 74;
+            this.editFormUserControl2.SetBoundPropertyName(this.txtMaBaoHiem, "");
+            this.txtMaBaoHiem.Location = new System.Drawing.Point(510, 42);
+            this.txtMaBaoHiem.Multiline = true;
+            this.txtMaBaoHiem.Name = "txtMaBaoHiem";
+            this.txtMaBaoHiem.Size = new System.Drawing.Size(252, 27);
+            this.txtMaBaoHiem.TabIndex = 74;
             // 
             // label63
             // 
@@ -1277,14 +1360,14 @@
             this.label64.TabIndex = 72;
             this.label64.Text = "Chức vụ";
             // 
-            // textBox44
+            // txtNoiCapBaoHiem
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.textBox44, "");
-            this.textBox44.Location = new System.Drawing.Point(510, 126);
-            this.textBox44.Multiline = true;
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(252, 27);
-            this.textBox44.TabIndex = 71;
+            this.editFormUserControl2.SetBoundPropertyName(this.txtNoiCapBaoHiem, "");
+            this.txtNoiCapBaoHiem.Location = new System.Drawing.Point(510, 126);
+            this.txtNoiCapBaoHiem.Multiline = true;
+            this.txtNoiCapBaoHiem.Name = "txtNoiCapBaoHiem";
+            this.txtNoiCapBaoHiem.Size = new System.Drawing.Size(252, 27);
+            this.txtNoiCapBaoHiem.TabIndex = 71;
             // 
             // label65
             // 
@@ -1304,6 +1387,7 @@
             this.tabNavigationPage6.Controls.Add(this.panel1);
             this.tabNavigationPage6.Name = "tabNavigationPage6";
             this.tabNavigationPage6.Size = new System.Drawing.Size(1367, 499);
+            this.tabNavigationPage6.Leave += new System.EventHandler(this.tabNavigationPage6_Leave);
             // 
             // panel_TT_NhanVien
             // 
@@ -1451,6 +1535,11 @@
             // 
             this.hopdonglaodongTableAdapter1.ClearBeforeFill = true;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frm_TT_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1472,26 +1561,28 @@
             this.groupBox3.PerformLayout();
             this.tabNavigationPage4.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlThongtinHD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewThongtinHD)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayKy.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayKy.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayBatDau.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayBatDau.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayKetThuc.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayKetThuc.Properties)).EndInit();
             this.tabNavigationPage5.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlBaoHiem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewBaoHiem)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit5.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayDangKy.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgayDangKy.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNGayHetHan.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNGayHetHan.Properties)).EndInit();
             this.tabNavigationPage6.ResumeLayout(false);
             this.panel_TT_NhanVien.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_gerSRC)).EndInit();
@@ -1513,11 +1604,11 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button btnInHopDong;
         private System.Windows.Forms.Button btnGiaHan;
-        private System.Windows.Forms.TextBox textBox37;
-        private DevExpress.XtraEditors.DateEdit dateEdit3;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox cbo;
+        private System.Windows.Forms.TextBox txtLuongThoaThuan;
+        private DevExpress.XtraEditors.DateEdit dateEditNgayKetThuc;
+        private System.Windows.Forms.ComboBox cboLoaiHopDong;
+        private System.Windows.Forms.ComboBox cboChucVuThongtin;
+        private System.Windows.Forms.ComboBox cboPhongbanThongtiin;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
@@ -1525,51 +1616,37 @@
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.TextBox txtHoTenThongtin;
+        private System.Windows.Forms.TextBox txtMaHopDong;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.TextBox txtKyLanThu;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Colum7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Colum10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private DevExpress.XtraEditors.DateEdit dateEdit2;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private DevExpress.XtraEditors.DateEdit dateEditNgayKy;
+        private DevExpress.XtraEditors.DateEdit dateEditNgayBatDau;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.GroupBox groupBox8;
-        private DevExpress.XtraEditors.DateEdit dateEdit5;
-        private System.Windows.Forms.TextBox textBox41;
-        private DevExpress.XtraEditors.DateEdit dateEdit6;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private DevExpress.XtraEditors.DateEdit dateEditNgayDangKy;
+        private System.Windows.Forms.TextBox txtNoiKham;
+        private DevExpress.XtraEditors.DateEdit dateEditNGayHetHan;
+        private System.Windows.Forms.ComboBox cboLoaiBaoHiem;
         private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox cboPhongbanbaohiem;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.TextBox txtHoTenBaoHiem;
+        private System.Windows.Forms.TextBox txtMaBaoHiem;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.TextBox txtNoiCapBaoHiem;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage2;
         private System.Windows.Forms.Label label45;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage3;
@@ -1626,5 +1703,22 @@
         private System.Windows.Forms.Label label2;
         private DataSetQLNSTableAdapters.HOPDONGLAODONGTableAdapter hopdonglaodongTableAdapter1;
         private System.Windows.Forms.DataGridView dataGridView_gerSRC;
+        private DevExpress.XtraGrid.GridControl gridControlThongtinHD;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewThongtinHD;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.GridControl gridControlBaoHiem;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewBaoHiem;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private System.Windows.Forms.Timer timer1;
     }
 }

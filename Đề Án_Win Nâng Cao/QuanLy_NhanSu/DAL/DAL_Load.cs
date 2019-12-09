@@ -12,7 +12,7 @@ namespace DAL
         linQDataContext linQ = new linQDataContext();
         public List<TONGIAO> loadTonGiao()
         {
-            return linQ.TONGIAOs.Select(t=>t).ToList<TONGIAO>();
+            return linQ.TONGIAOs.Select(t => t).ToList<TONGIAO>();
         }
         public List<DANTOC> loadDanToc()
         {
@@ -40,7 +40,7 @@ namespace DAL
         }
         public NHANVIEN loadThongTinNhanVien(string p)
         {
-            return linQ.NHANVIENs.Where(t => t.MANV==p).FirstOrDefault();
+            return linQ.NHANVIENs.Where(t => t.MANV == p).FirstOrDefault();
         }
         public List<CHUYENMON> loadChuyenMon()
         {
@@ -50,19 +50,19 @@ namespace DAL
         {
             return linQ.NGOAINGUs.Select(t => t).ToList<NGOAINGU>();
         }
-        public CHITIETNGOAINGU loadChiTietNgoaiNgu(string pMaNV,string pMaNN)
+        public CHITIETNGOAINGU loadChiTietNgoaiNgu(string pMaNV, string pMaNN)
         {
             if (linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault() == null)
                 return null;
             string UV = linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
-            return linQ.CHITIETNGOAINGUs.Where(t => t.MAUNGVIEN == UV&&t.MANGOAINGU==pMaNN).FirstOrDefault();
+            return linQ.CHITIETNGOAINGUs.Where(t => t.MAUNGVIEN == UV && t.MANGOAINGU == pMaNN).FirstOrDefault();
         }
-        public CHITIETCHUYENMON loadChiTietChuyenMon(string pMaNV,string pMaCM)
+        public CHITIETCHUYENMON loadChiTietChuyenMon(string pMaNV, string pMaCM)
         {
             if (linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault() == null)
                 return null;
-            string UV = linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString() ;
-            return linQ.CHITIETCHUYENMONs.Where(t => t.MAUNGVIEN == UV && t.MACHUYENMON==pMaCM).FirstOrDefault();
+            string UV = linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
+            return linQ.CHITIETCHUYENMONs.Where(t => t.MAUNGVIEN == UV && t.MACHUYENMON == pMaCM).FirstOrDefault();
         }
         public List<HOSOTUYENDUNG> loadHoSoTuyenDung()
         {
@@ -70,7 +70,7 @@ namespace DAL
         }
         public HOSOTUYENDUNG loadHoSoTuyenDungUngVien(string p)
         {
-            return linQ.HOSOTUYENDUNGs.Where(t => t.MAUNGVIEN==p).FirstOrDefault();
+            return linQ.HOSOTUYENDUNGs.Where(t => t.MAUNGVIEN == p).FirstOrDefault();
         }
         public List<NHANVIEN> loadNhanVien()
         {
@@ -108,7 +108,7 @@ namespace DAL
                 return null;
             string UV = linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
             string s = linQ.HINHANHs.Where(t => t.MAUNGVIEN == UV).FirstOrDefault().URL.ToString();
-            byte[] s1 = linQ.HINHANHs.Where(t => t.MAUNGVIEN == UV).FirstOrDefault().URL.ToArray();       
+            byte[] s1 = linQ.HINHANHs.Where(t => t.MAUNGVIEN == UV).FirstOrDefault().URL.ToArray();
             return s1;
         }
         public List<QUANLYNGHIVIEC> loadQuanLyNghiViec()
@@ -129,5 +129,35 @@ namespace DAL
                 return null;
             return linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
         }
+        public List<BangGhepHopDongLaoDong> loadHopDongNhanVien(string pMaNhanVien)
+        {
+            var temp = (from mh in linQ.HOPDONGLAODONGs
+                        join lmh in linQ.CHITIETHOPDONGs on mh.MAHOPDONG
+                        equals lmh.MAHOPDONG
+                        where pMaNhanVien==lmh.MANV
+                        select new
+                        {
+                            MaHopdong = mh.MAHOPDONG,
+                            TenHopdong = mh.TENHOPDONG,
+                            KyLanThu = lmh.KYLANTHU,
+                            NgayBD = lmh.NGAYBD,
+                            NgayKT = lmh.NGAYKT,
+                            NgayKy = lmh.NGAYKY,
+                            LuongThoaThuan = lmh.LUONGTHOATHUAN,
+
+                        }).AsEnumerable().Select(x => new BangGhepHopDongLaoDong
+                        {
+                            MaHopDong = x.MaHopdong,
+                            TenHopDong = x.TenHopdong,
+                            KyLanThu = x.KyLanThu,
+                            NgayBatDau = x.NgayBD,
+                            NgayKetThuc = x.NgayKT,
+                            NgayKy = x.NgayKy,
+                            LuongThoaThuan = x.LuongThoaThuan,
+
+                        }).ToList<BangGhepHopDongLaoDong>(); 
+            
+            return temp;
+         }
     }
 }

@@ -96,5 +96,9 @@ namespace BLL
         {
             return dAL_NhanVien.XoaChiTietNgoaiNgu(p);
         }
+        public bool BLL_SuaNhanVien(NHANVIEN pNhanVien)
+        {
+            return dAL_NhanVien.SuaNhanVien(pNhanVien);
+        }
     }
 }

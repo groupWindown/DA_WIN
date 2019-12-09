@@ -178,7 +178,7 @@ namespace QuanLy_NhanSu
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            if (qUOCTICHComboBox.SelectedValue != null && dANTOCComboBox.SelectedValue != null && tONGIAOComboBox.SelectedValue != null && tRINHDOTINHOCComboBox.SelectedValue != null && tRINHDOHOCVANComboBox.SelectedValue != null)
+            if (qUOCTICHComboBox.SelectedValue != null && dANTOCComboBox.SelectedValue != null && tONGIAOComboBox.SelectedValue != null && tRINHDOTINHOCComboBox.SelectedValue != null && tRINHDOHOCVANComboBox.SelectedValue != null&& cHUCVUComboBox.SelectedValue != null && pHONGBANComboBox.SelectedValue != null)
             {
                 //update chuyen mon
                 for (int i = 0; i < gridViewCM.RowCount; i++)
@@ -264,6 +264,14 @@ namespace QuanLy_NhanSu
                         { }
                     }
                 }
+                //update nhanvien
+                NHANVIEN nHANVIEN = new NHANVIEN();
+                nHANVIEN.MANV = txt_MaNV.Text;
+                nHANVIEN.HOTEN = hOTENTextEdit.Text;
+                nHANVIEN.MACHUCVU = cHUCVUComboBox.SelectedValue.ToString();
+                nHANVIEN.MAPHONGBAN = pHONGBANComboBox.SelectedValue.ToString();
+                nHANVIEN.NGAYVAOLAM = nGAYTUYENDUNGDateEdit.DateTime;
+                bLL_NhanVien.BLL_SuaNhanVien(nHANVIEN);
                 MessageBox.Show("Sửa thành công");
             }
             else
@@ -278,8 +286,7 @@ namespace QuanLy_NhanSu
             {
                 try
                 {
-                    //hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, st.imageToByteArray(pictureEdit_hinhUV.Image), timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
-                    HINHANH ha = new HINHANH();
+                     HINHANH ha = new HINHANH();
                     ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
                     ha.TENHINHANH = pictureEdit1.Text;
                     ha.URL = st.imageToByteArray(pictureEdit1.Image);
@@ -289,7 +296,6 @@ namespace QuanLy_NhanSu
                 {
                     try
                     {
-                        //hINHANHTableAdapter.Insert(sinhtudongMaHA(0), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, st.imageToByteArray(pictureEdit_hinhUV.Image));
                         HINHANH ha = new HINHANH();
                         ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
                         ha.TENHINHANH = pictureEdit1.Text;
@@ -307,8 +313,7 @@ namespace QuanLy_NhanSu
             {
                 try
                 {
-                    //hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null, timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
-                    HINHANH ha = new HINHANH();
+                     HINHANH ha = new HINHANH();
                     ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
                     ha.TENHINHANH = pictureEdit1.Text;
                     ha.URL = null;
@@ -318,7 +323,6 @@ namespace QuanLy_NhanSu
                 {
                     try
                     {
-                        // hINHANHTableAdapter.Insert(sinhtudongMaHA(0), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null);
                         HINHANH ha = new HINHANH();
                         ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
                         ha.TENHINHANH = pictureEdit1.Text;

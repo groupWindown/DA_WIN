@@ -143,5 +143,22 @@ namespace DAL
             chitiet1.SubmitChanges();
             return true;
         }
+        public bool SuaNhanVien(NHANVIEN pNhanVien)
+        {
+            try
+            {
+                NHANVIEN nHANVIEN= linq.NHANVIENs.Where(t=>t.MANV==pNhanVien.MANV).FirstOrDefault();
+                nHANVIEN.HOTEN = pNhanVien.HOTEN;
+                nHANVIEN.MACHUCVU = pNhanVien.MACHUCVU;
+                nHANVIEN.MAPHONGBAN = pNhanVien.MAPHONGBAN;
+                nHANVIEN.NGAYVAOLAM = pNhanVien.NGAYVAOLAM;
+                linq.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
