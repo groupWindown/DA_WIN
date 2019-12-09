@@ -158,6 +158,14 @@ namespace DAL
                         }).ToList<BangGhepHopDongLaoDong>(); 
             
             return temp;
-         }
+        }
+        public List<BAOHIEM> loadBaoHiem()
+        {
+            return linQ.BAOHIEMs.Select(t => t).ToList<BAOHIEM>();
+        }
+        public List<BAOHIEM> loadBaoHiemNV(string pMaNV)
+        {
+            return linQ.BAOHIEMs.Where(t => t.MANV==pMaNV).ToList<BAOHIEM>();
+        }
     }
 }

@@ -124,7 +124,7 @@
             this.txtNoiKham = new System.Windows.Forms.TextBox();
             this.dateEditNGayHetHan = new DevExpress.XtraEditors.DateEdit();
             this.cboLoaiBaoHiem = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.cboChucVuBaoHiem = new System.Windows.Forms.ComboBox();
             this.cboPhongbanbaohiem = new System.Windows.Forms.ComboBox();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
@@ -1098,11 +1098,12 @@
             this.gridColumn12});
             this.gridViewBaoHiem.GridControl = this.gridControlBaoHiem;
             this.gridViewBaoHiem.Name = "gridViewBaoHiem";
+            this.gridViewBaoHiem.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewBaoHiem_FocusedRowChanged);
             // 
             // gridColumn7
             // 
             this.gridColumn7.Caption = "Mã bảo hiểm";
-            this.gridColumn7.FieldName = "MaBaoHiem";
+            this.gridColumn7.FieldName = "MABAOHIEM";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 0;
@@ -1110,7 +1111,7 @@
             // gridColumn8
             // 
             this.gridColumn8.Caption = "Loại bảo hiểm";
-            this.gridColumn8.FieldName = "TenBaoHiem";
+            this.gridColumn8.FieldName = "LOAIBAOHIEM";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 1;
@@ -1118,7 +1119,7 @@
             // gridColumn9
             // 
             this.gridColumn9.Caption = "Nơi cấp ";
-            this.gridColumn9.FieldName = "NoiCap";
+            this.gridColumn9.FieldName = "NOICAP";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 2;
@@ -1126,7 +1127,7 @@
             // gridColumn10
             // 
             this.gridColumn10.Caption = "Nơi Khám";
-            this.gridColumn10.FieldName = "NoiKham";
+            this.gridColumn10.FieldName = "NOIKHAM";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 3;
@@ -1134,7 +1135,7 @@
             // gridColumn11
             // 
             this.gridColumn11.Caption = "Ngày đăng ký";
-            this.gridColumn11.FieldName = "NgayDang";
+            this.gridColumn11.FieldName = "NGAYDK";
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 4;
@@ -1142,7 +1143,7 @@
             // gridColumn12
             // 
             this.gridColumn12.Caption = "Ngày hết hạn";
-            this.gridColumn12.FieldName = "NgayHetHan";
+            this.gridColumn12.FieldName = "NGAYHH";
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.Visible = true;
             this.gridColumn12.VisibleIndex = 5;
@@ -1175,7 +1176,7 @@
             this.groupBox8.Controls.Add(this.txtNoiKham);
             this.groupBox8.Controls.Add(this.dateEditNGayHetHan);
             this.groupBox8.Controls.Add(this.cboLoaiBaoHiem);
-            this.groupBox8.Controls.Add(this.comboBox7);
+            this.groupBox8.Controls.Add(this.cboChucVuBaoHiem);
             this.groupBox8.Controls.Add(this.cboPhongbanbaohiem);
             this.groupBox8.Controls.Add(this.label56);
             this.groupBox8.Controls.Add(this.label57);
@@ -1244,14 +1245,14 @@
             this.cboLoaiBaoHiem.Size = new System.Drawing.Size(252, 27);
             this.cboLoaiBaoHiem.TabIndex = 85;
             // 
-            // comboBox7
+            // cboChucVuBaoHiem
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.comboBox7, "");
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(121, 87);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(249, 27);
-            this.comboBox7.TabIndex = 84;
+            this.editFormUserControl2.SetBoundPropertyName(this.cboChucVuBaoHiem, "");
+            this.cboChucVuBaoHiem.FormattingEnabled = true;
+            this.cboChucVuBaoHiem.Location = new System.Drawing.Point(121, 87);
+            this.cboChucVuBaoHiem.Name = "cboChucVuBaoHiem";
+            this.cboChucVuBaoHiem.Size = new System.Drawing.Size(249, 27);
+            this.cboChucVuBaoHiem.TabIndex = 84;
             // 
             // cboPhongbanbaohiem
             // 
@@ -1632,7 +1633,7 @@
         private System.Windows.Forms.TextBox txtNoiKham;
         private DevExpress.XtraEditors.DateEdit dateEditNGayHetHan;
         private System.Windows.Forms.ComboBox cboLoaiBaoHiem;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox cboChucVuBaoHiem;
         private System.Windows.Forms.ComboBox cboPhongbanbaohiem;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;

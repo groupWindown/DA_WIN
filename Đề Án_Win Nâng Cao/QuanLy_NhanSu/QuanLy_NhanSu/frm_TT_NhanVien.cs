@@ -436,12 +436,12 @@ namespace QuanLy_NhanSu
         private void tabPane1_SelectedPageIndexChanged(object sender, EventArgs e)
         {
             gridControlThongtinHD.DataSource = bLL_Load.BLL_loadHopDongNhanVien(Properties.Settings.Default.controldongclickmaNV);
-            
+            gridControlBaoHiem.DataSource= bLL_Load.BLL_loadBaoHiemNV(Properties.Settings.Default.controldongclickmaNV);
         }
 
         private void gridViewThongtinHD_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
-            }
+        }
 
         private void gridViewThongtinHD_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
@@ -461,6 +461,20 @@ namespace QuanLy_NhanSu
         private void btnInHopDong_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gridViewBaoHiem_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            txtHoTenBaoHiem.Text = bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).HOTEN.ToString();
+            txtMaBaoHiem.Text = gridViewBaoHiem.GetFocusedRowCellValue("MABAOHIEM").ToString();
+            cboLoaiBaoHiem.Text = gridViewBaoHiem.GetFocusedRowCellValue("LOAIBAOHIEM").ToString();
+            txtNoiCapBaoHiem.Text = gridViewBaoHiem.GetFocusedRowCellValue("NOICAP").ToString();
+            cboChucVuBaoHiem.Text = bLL_Load.BLL_loadTenChucVu(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MACHUCVU.ToString());
+            cboPhongbanbaohiem.Text = bLL_Load.BLL_loadTenPhongBan(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MAPHONGBAN.ToString());
+            txtNoiKham.Text = gridViewBaoHiem.GetFocusedRowCellValue("NOIKHAM").ToString();
+            dateEditNGayHetHan.Text = gridViewBaoHiem.GetFocusedRowCellValue("NGAYHH").ToString();
+            dateEditNgayDangKy.Text = gridViewBaoHiem.GetFocusedRowCellValue("NGAYDK").ToString();
+            
         }
     }
 }

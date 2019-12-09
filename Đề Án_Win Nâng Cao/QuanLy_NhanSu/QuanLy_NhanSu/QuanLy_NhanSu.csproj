@@ -141,6 +141,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetQLNS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frm_CaLam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frm_CaLam.Designer.cs">
+      <DependentUpon>frm_CaLam.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_ChamCong.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -195,11 +201,11 @@
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_NhaLieu_PhanQuyen.cs">
+    <Compile Include="frm_NhapLieu_PhanQuyen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frm_NhaLieu_PhanQuyen.Designer.cs">
-      <DependentUpon>frm_NhaLieu_PhanQuyen.cs</DependentUpon>
+    <Compile Include="frm_NhapLieu_PhanQuyen.Designer.cs">
+      <DependentUpon>frm_NhapLieu_PhanQuyen.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_NhapLieu.cs">
       <SubType>UserControl</SubType>
@@ -249,6 +255,18 @@
     <Compile Include="frm_ThongKe.Designer.cs">
       <DependentUpon>frm_ThongKe.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_ThongTinCongTy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frm_ThongTinCongTy.Designer.cs">
+      <DependentUpon>frm_ThongTinCongTy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ThongTinHeThong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frm_ThongTinHeThong.Designer.cs">
+      <DependentUpon>frm_ThongTinHeThong.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_TT_UngVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -285,6 +303,9 @@
     <EmbeddedResource Include="Background.resx">
       <DependentUpon>Background.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_CaLam.resx">
+      <DependentUpon>frm_CaLam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_ChamCong.resx">
       <DependentUpon>frm_ChamCong.cs</DependentUpon>
     </EmbeddedResource>
@@ -312,8 +333,8 @@
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_NhaLieu_PhanQuyen.resx">
-      <DependentUpon>frm_NhaLieu_PhanQuyen.cs</DependentUpon>
+    <EmbeddedResource Include="frm_NhapLieu_PhanQuyen.resx">
+      <DependentUpon>frm_NhapLieu_PhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_NhapLieu.resx">
       <DependentUpon>frm_NhapLieu.cs</DependentUpon>
@@ -338,6 +359,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ThongKe.resx">
       <DependentUpon>frm_ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ThongTinCongTy.resx">
+      <DependentUpon>frm_ThongTinCongTy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ThongTinHeThong.resx">
+      <DependentUpon>frm_ThongTinHeThong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_TT_UngVien.resx">
       <DependentUpon>frm_TT_UngVien.cs</DependentUpon>

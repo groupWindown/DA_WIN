@@ -99,5 +99,13 @@ namespace BLL
         {
             return dal.loadHopDongNhanVien(pMaNhanVien);
         }
+        public List<BAOHIEM> BLL_loadBaoHiem()
+        {
+            return dal.loadBaoHiem();
+        }
+        public List<BAOHIEM> BLL_loadBaoHiemNV(string pMaNV)
+        {
+            return dal.loadBaoHiemNV(pMaNV);
+        }
     }
 }

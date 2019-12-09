@@ -271,6 +271,7 @@
             this.barButtonItem_XemCaLam.Name = "barButtonItem_XemCaLam";
             this.barButtonItem_XemCaLam.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem_XemCaLam.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_XemCaLam_ItemClick);
             // 
             // barButtonItem_ThongtinCT
             // 
@@ -280,15 +281,17 @@
             this.barButtonItem_ThongtinCT.Name = "barButtonItem_ThongtinCT";
             this.barButtonItem_ThongtinCT.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem_ThongtinCT.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_ThongtinCT_ItemClick);
             // 
             // barButtonItem_ThongtinPM
             // 
             this.barButtonItem_ThongtinPM.Caption = "Thông tin phần mềm";
             this.barButtonItem_ThongtinPM.Id = 4;
-            this.barButtonItem_ThongtinPM.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.barButtonItem_ThongtinPM.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem_ThongtinPM.ImageOptions.Image")));
             this.barButtonItem_ThongtinPM.Name = "barButtonItem_ThongtinPM";
             this.barButtonItem_ThongtinPM.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem_ThongtinPM.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_ThongtinPM_ItemClick);
             // 
             // ribbonPage_HeThong
             // 
@@ -561,9 +564,9 @@
             // 
             // backstageViewClientControl1
             // 
-            this.backstageViewClientControl1.Location = new System.Drawing.Point(0, 0);
+            this.backstageViewClientControl1.Location = new System.Drawing.Point(188, 0);
             this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            this.backstageViewClientControl1.Size = new System.Drawing.Size(150, 150);
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(292, 150);
             this.backstageViewClientControl1.TabIndex = 1;
             // 
             // backstageViewTabItem1
@@ -583,9 +586,9 @@
             // 
             // backstageViewClientControl2
             // 
-            this.backstageViewClientControl2.Location = new System.Drawing.Point(0, 0);
+            this.backstageViewClientControl2.Location = new System.Drawing.Point(188, 0);
             this.backstageViewClientControl2.Name = "backstageViewClientControl2";
-            this.backstageViewClientControl2.Size = new System.Drawing.Size(150, 150);
+            this.backstageViewClientControl2.Size = new System.Drawing.Size(292, 150);
             this.backstageViewClientControl2.TabIndex = 1;
             // 
             // backstageViewTabItem2

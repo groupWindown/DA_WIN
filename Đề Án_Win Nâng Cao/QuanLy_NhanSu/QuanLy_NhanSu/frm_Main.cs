@@ -220,6 +220,25 @@ namespace QuanLy_NhanSu
             this.tableAdapterManager.UpdateAll(this.dataSetQLNS);
 
         }
+
+        private void barButtonItem_XemCaLam_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_CaLam frm_CaLam = new frm_CaLam();
+            panel_Main.Controls.Clear();
+            panel_Main.Controls.Add(frm_CaLam);
+        }
+        private void barButtonItem_ThongtinCT_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_ThongTinCongTy frm_ThongTinCongTy = new frm_ThongTinCongTy();
+            panel_Main.Controls.Clear();
+            panel_Main.Controls.Add(frm_ThongTinCongTy);
+        }
+        private void barButtonItem_ThongtinPM_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_ThongTinHeThong frm_ThongTinHeThong = new frm_ThongTinHeThong();
+            panel_Main.Controls.Clear();
+            panel_Main.Controls.Add(frm_ThongTinHeThong);
+        }
         //private bool CheckAllMenuChildVisible(RibbonPageGroupCollection mnuItems)
         //{
         //    foreach (RibbonPageGroup menuItem in mnuItems)
