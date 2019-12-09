@@ -23,7 +23,6 @@ namespace BLL
         {
             return dAL_NhanVien.ThemQuanLyNghiViec(qUANLYNGHIVIEC);
         }
-
         public string sinhtudongMaQLNV(int v)
         {
             int number = dAL_Load.loadQuanLyNghiViec().Count + 1 + v;
@@ -47,11 +46,11 @@ namespace BLL
         }
         public bool BLL_UpdateHinhAnh(HINHANH p)
         {
-            return dAL_NhanVien.UpdateHinhAnh(p);
+            return dAL_NhanVien.SuaHinhAnh(p);
         }
         public bool BLL_InsertHinhAnh(HINHANH p)
         {
-            return dAL_NhanVien.InsertHinhAnh(p);
+            return dAL_NhanVien.ThemHinhAnh(p);
         }
         public string BLL_FindHinhAnhByMANV(string p)
         {
@@ -76,7 +75,26 @@ namespace BLL
             {
                 return str;
             }
-
+        }
+        public bool BLL_SuaHoSoNV(HOSOTUYENDUNG p)
+        {
+            return dAL_NhanVien.SuaHoSoNV(p);
+        }
+        public bool BLL_ThemChiTietChuyenMon(CHITIETCHUYENMON p)
+        {
+            return dAL_NhanVien.ThemChiTietChuyenMon(p);
+        }
+        public bool BLL_XoaChiTietChuyenMon(CHITIETCHUYENMON p)
+        {
+            return dAL_NhanVien.XoaChiTietChuyenMon(p);
+        }
+        public bool BLL_ThemChiTietNgoaiNgu(CHITIETNGOAINGU p)
+        {
+            return dAL_NhanVien.ThemChiTietNgoaiNgu(p);
+        }
+        public bool BLL_XoaChiTietNgoaiNgu(CHITIETNGOAINGU p)
+        {
+            return dAL_NhanVien.XoaChiTietNgoaiNgu(p);
         }
     }
 }

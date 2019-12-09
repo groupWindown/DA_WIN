@@ -448,7 +448,7 @@
             this.mAUNGVIENTextEdit.Name = "mAUNGVIENTextEdit";
             this.mAUNGVIENTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mAUNGVIENTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mAUNGVIENTextEdit.Size = new System.Drawing.Size(139, 26);
+            this.mAUNGVIENTextEdit.Size = new System.Drawing.Size(364, 26);
             this.mAUNGVIENTextEdit.TabIndex = 89;
             // 
             // hOSOTUYENDUNGBindingSource
@@ -463,7 +463,7 @@
             this.hOTENTextEdit.Name = "hOTENTextEdit";
             this.hOTENTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hOTENTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.hOTENTextEdit.Size = new System.Drawing.Size(139, 26);
+            this.hOTENTextEdit.Size = new System.Drawing.Size(364, 26);
             this.hOTENTextEdit.TabIndex = 97;
             // 
             // nGAYSINHDateEdit

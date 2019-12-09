@@ -38,6 +38,10 @@ namespace DAL
         {
             return linQ.CHUCVUs.Select(t => t).ToList<CHUCVU>();
         }
+        public NHANVIEN loadThongTinNhanVien(string p)
+        {
+            return linQ.NHANVIENs.Where(t => t.MANV==p).FirstOrDefault();
+        }
         public List<CHUYENMON> loadChuyenMon()
         {
             return linQ.CHUYENMONs.Select(t => t).ToList<CHUYENMON>();
@@ -58,11 +62,15 @@ namespace DAL
             if (linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault() == null)
                 return null;
             string UV = linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString() ;
-            return linQ.CHITIETCHUYENMONs.Where(t => t.MAUNGVIEN == pMaNV && t.MACHUYENMON==pMaCM).FirstOrDefault();
+            return linQ.CHITIETCHUYENMONs.Where(t => t.MAUNGVIEN == UV && t.MACHUYENMON==pMaCM).FirstOrDefault();
         }
         public List<HOSOTUYENDUNG> loadHoSoTuyenDung()
         {
             return linQ.HOSOTUYENDUNGs.Select(t => t).ToList<HOSOTUYENDUNG>();
+        }
+        public HOSOTUYENDUNG loadHoSoTuyenDungUngVien(string p)
+        {
+            return linQ.HOSOTUYENDUNGs.Where(t => t.MAUNGVIEN==p).FirstOrDefault();
         }
         public List<NHANVIEN> loadNhanVien()
         {
@@ -119,7 +127,7 @@ namespace DAL
         {
             if (linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault() == null)
                 return null;
-           return linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
+            return linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
         }
     }
 }

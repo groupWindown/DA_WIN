@@ -403,7 +403,7 @@ namespace QuanLy_NhanSu
         }
         private void insertHDLD(string nhanvien)
         {
-            cHITIETHOPDONGTableAdapter.Insert(sinhtudongCTHD(0), hOPDONGLAODONGComboBox.SelectedValue.ToString(), nhanvien,0, DateTime.Now, DateTime.Parse( dateEdit_NgayBatDau.Text),getNgayKT(),decimal.Parse(txt_LuongThoaThuan.Text.Trim()));
+            cHITIETHOPDONGTableAdapter.Insert(sinhtudongCTHD(0), hOPDONGLAODONGComboBox.SelectedValue.ToString(), nhanvien,1, DateTime.Now, DateTime.Parse( dateEdit_NgayBatDau.Text),getNgayKT(),decimal.Parse(txt_LuongThoaThuan.Text.Trim()));
         }
 
         private DateTime? getNgayKT()

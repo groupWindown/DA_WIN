@@ -64,19 +64,55 @@ namespace QuanLy_NhanSu
             cbo_GioiTinh.Items.Add("Nam");
             cbo_GioiTinh.Items.Add("Nữ");
             cbo_GioiTinh.SelectedIndex = 0;
-            // add in comboboxtinhtrang
-            cbo_TinhTrang.Items.Add("Đang làm");
-            cbo_TinhTrang.Items.Add("Nghỉ làm");
-            cbo_TinhTrang.SelectedIndex = 0;
+     
 
             txt_MaNV.Text = Properties.Settings.Default.NhanVienClick;
+            HOSOTUYENDUNG hOSOTUYENDUNG = bLL_load.BLL_loadHoSoTuyenDungUngVien(bLL_load.BLL_FindUngVienByMaNV(txt_MaNV.Text));
+            NHANVIEN nv = bLL_load.BLL_loadThongTinNhanVien(txt_MaNV.Text);
+            hOTENTextEdit.Text =hOSOTUYENDUNG.HOTEN;
+            cbo_GioiTinh.Text =hOSOTUYENDUNG.GIOITINH;
+            nGAYSINHDateEdit.DateTime =DateTime.Parse(hOSOTUYENDUNG.NGAYSINH.ToString());
+            cMNDTextEdit.Text =hOSOTUYENDUNG.CMND;
+            nGAYCAPDateEdit.DateTime = DateTime.Parse(hOSOTUYENDUNG.NGAYCAP.ToString());
+            nOICAPTextEdit.Text =hOSOTUYENDUNG.NOICAP;
+            dANTOCComboBox.SelectedValue =hOSOTUYENDUNG.MADANTOC;
+            tONGIAOComboBox.SelectedValue = hOSOTUYENDUNG.MATONGIAO;
+            qUOCTICHComboBox.SelectedValue = hOSOTUYENDUNG.MAQUOCTICH;
+            qUEQUANTextEdit.Text =hOSOTUYENDUNG.QUEQUAN;
+            nOISINHTextEdit.Text =hOSOTUYENDUNG.NOISINH;
+            dIACHITHUONGTRUTextEdit.Text =hOSOTUYENDUNG.DIACHITHUONGTRU;
+            nOIOHIENTAITextEdit.Text =hOSOTUYENDUNG.NOIOHIENTAI;
+            dIENTHOAITextEdit.Text =hOSOTUYENDUNG.DIENTHOAI;
+            eMAILTextEdit.Text =hOSOTUYENDUNG.EMAIL;
+            dIENUUTIENTextEdit.Text =hOSOTUYENDUNG.DIENUUTIEN;
+            pHONGBANComboBox.SelectedValue = nv.MAPHONGBAN;
+            cHUCVUComboBox.SelectedValue = nv.MACHUCVU;
+            tINHTRANGSUCKHOETextEdit.SelectedText = hOSOTUYENDUNG.TINHTRANGSUCKHOE;
+            tINHTRANGHONNHANTextEdit.SelectedText = hOSOTUYENDUNG.TINHTRANGHONNHAN;
+            nGAYTUYENDUNGDateEdit.DateTime = DateTime.Parse(hOSOTUYENDUNG.NGAYTUYENDUNG.ToString()) ;
+            hINHTHUCTUYENDUNGTextEdit.Text = hOSOTUYENDUNG.HINHTHUCTUYENDUNG;
+            pictureEdit1.Image = loadhinh(txt_MaNV.Text);
         }
-
+        private Image loadhinh(string v)
+        {
+            try
+            {
+                byte[] kq = bLL_load.BLL_loadURLHinhAnh(v);
+                if (kq != null)
+                {
+                    return st.byteArrayToImage(kq);
+                }
+                return null;
+            }
+            catch
+            {
+                return null;
+            }
+        }
         private void Load_CM_NN()
         {
             for (int i = 0; i < gridViewCM.DataRowCount; i++)
             {
-                
                 if (bLL_load.BLL_loadChiTietChuyenMon(txt_MaNV.Text.Trim(), gridViewCM.GetRowCellValue((i),"MACHUYENMON").ToString()) != null)
                 {
                     gridViewCM.SelectRow(i);
@@ -84,7 +120,7 @@ namespace QuanLy_NhanSu
             }
             for (int i = 0; i < gridViewNN.DataRowCount; i++)
             {
-                if (bLL_load.BLL_loadChiTietChuyenMon(txt_MaNV.Text.Trim(), gridViewNN.GetRowCellValue((i), "MANGOAINGU").ToString().Trim()) != null)
+                if (bLL_load.BLL_loadChiTietNgoaiNgu(txt_MaNV.Text.Trim(), gridViewNN.GetRowCellValue((i), "MANGOAINGU").ToString().Trim()) != null)
                 {
                     gridViewNN.SelectRow(i);
                 }
@@ -144,10 +180,6 @@ namespace QuanLy_NhanSu
         {
             if (qUOCTICHComboBox.SelectedValue != null && dANTOCComboBox.SelectedValue != null && tONGIAOComboBox.SelectedValue != null && tRINHDOTINHOCComboBox.SelectedValue != null && tRINHDOHOCVANComboBox.SelectedValue != null)
             {
-                //luu hinh anh
-                insertHinhAnh();
-                //update du lieu cua ung vien
-               // hOSOTUYENDUNGTableAdapter.Update(mAUNGVIENTextEdit.Text, dANTOCComboBox.SelectedValue.ToString(), tONGIAOComboBox.SelectedValue.ToString(), qUOCTICHComboBox.SelectedValue.ToString(), hOTENTextEdit.Text, cbo_GioiTinh.Text, nGAYSINHDateEdit.DateTime, nOISINHTextEdit.Text, cMNDTextEdit.Text, nGAYCAPDateEdit.DateTime, nOICAPTextEdit.Text, qUEQUANTextEdit.Text, dIACHITHUONGTRUTextEdit.Text, nOIOHIENTAITextEdit.Text, dIENTHOAITextEdit.Text, eMAILTextEdit.Text, tINHTRANGHONNHANTextEdit.Text, dIENUUTIENTextEdit.Text, tINHTRANGSUCKHOETextEdit.Text, nGAYTUYENDUNGDateEdit.DateTime, hINHTHUCTUYENDUNGTextEdit.Text, vITRITUYENDUNGTextEdit.Text, tRINHDOHOCVANComboBox.Text, tRINHDOTINHOCComboBox.Text, mAUNGVIENTextEdit.Text, dANTOCComboBox.SelectedValue.ToString(), tONGIAOComboBox.SelectedValue.ToString(), qUOCTICHComboBox.SelectedValue.ToString(), hOTENTextEdit.Text, cbo_GioiTinh.Text, nGAYSINHDateEdit.DateTime, nOISINHTextEdit.Text, cMNDTextEdit.Text, nGAYCAPDateEdit.DateTime, nOICAPTextEdit.Text, qUEQUANTextEdit.Text, dIACHITHUONGTRUTextEdit.Text, nOIOHIENTAITextEdit.Text, dIENTHOAITextEdit.Text, eMAILTextEdit.Text, tINHTRANGHONNHANTextEdit.Text, dIENUUTIENTextEdit.Text, tINHTRANGSUCKHOETextEdit.Text, nGAYTUYENDUNGDateEdit.DateTime, hINHTHUCTUYENDUNGTextEdit.Text, vITRITUYENDUNGTextEdit.Text, tRINHDOHOCVANComboBox.Text, tRINHDOTINHOCComboBox.Text);
                 //update chuyen mon
                 for (int i = 0; i < gridViewCM.RowCount; i++)
                 {
@@ -155,25 +187,55 @@ namespace QuanLy_NhanSu
                     {
                         try
                         {
-                           // cHITIETCHUYENMONTableAdapter.Insert(gridView1.GetRowCellValue(i, "MACHUYENMON").ToString(), mAUNGVIENTextEdit.Text);
+                            CHITIETCHUYENMON cHITIETCHUYENMON = new CHITIETCHUYENMON();
+                            cHITIETCHUYENMON.MACHUYENMON = gridViewCM.GetRowCellValue(i, "MACHUYENMON").ToString();
+                            cHITIETCHUYENMON.MAUNGVIEN = bLL_load.BLL_FindUngVienByMaNV(txt_MaNV.Text);
+                            bLL_NhanVien.BLL_ThemChiTietChuyenMon(cHITIETCHUYENMON);
                         }
                         catch
-                        {
-                            //cHITIETCHUYENMONTableAdapter.Update(gridView1.GetRowCellValue(i, "MACHUYENMON").ToString(), mAUNGVIENTextEdit.Text);
-                        }
+                        { }
                     }
                     else
                     {
                         try
                         {
-                            //cHITIETCHUYENMONTableAdapter.Delete(gridView1.GetRowCellValue(i, "MACHUYENMON").ToString(), mAUNGVIENTextEdit.Text);
+                            CHITIETCHUYENMON cHITIETCHUYENMON = new CHITIETCHUYENMON();
+                            cHITIETCHUYENMON.MACHUYENMON = gridViewCM.GetRowCellValue(i, "MACHUYENMON").ToString();
+                            cHITIETCHUYENMON.MAUNGVIEN = bLL_load.BLL_FindUngVienByMaNV(txt_MaNV.Text);
+                            bLL_NhanVien.BLL_XoaChiTietChuyenMon(cHITIETCHUYENMON);
                         }
                         catch
-                        {
-
-                        }
+                        { }
                     }
                 }
+                //luu hinh anh
+                insertHinhAnh();
+                //update du lieu cua ung vien
+                 HOSOTUYENDUNG hOSOTUYENDUNG = new HOSOTUYENDUNG();
+                hOSOTUYENDUNG.MAUNGVIEN = bLL_load.BLL_FindUngVienByMaNV(txt_MaNV.Text) ;
+                hOSOTUYENDUNG.HOTEN = hOTENTextEdit.Text;
+                hOSOTUYENDUNG.DIENTHOAI = dIENTHOAITextEdit.Text;
+                hOSOTUYENDUNG.EMAIL = eMAILTextEdit.Text;
+                hOSOTUYENDUNG.GIOITINH = cbo_GioiTinh.Text;
+                hOSOTUYENDUNG.NGAYSINH = nGAYSINHDateEdit.DateTime;
+                hOSOTUYENDUNG.NGAYCAP = nGAYCAPDateEdit.DateTime;
+                hOSOTUYENDUNG.NGAYTUYENDUNG = nGAYTUYENDUNGDateEdit.DateTime;
+                hOSOTUYENDUNG.NOICAP = nOICAPTextEdit.Text;
+                hOSOTUYENDUNG.NOIOHIENTAI = nOIOHIENTAITextEdit.Text;
+                hOSOTUYENDUNG.NOISINH = nOISINHTextEdit.Text;
+                hOSOTUYENDUNG.QUEQUAN =qUEQUANTextEdit.Text;
+                hOSOTUYENDUNG.TINHTRANGHONNHAN = tINHTRANGHONNHANTextEdit.Text;
+                hOSOTUYENDUNG.TINHTRANGSUCKHOE = tINHTRANGSUCKHOETextEdit.Text;
+                hOSOTUYENDUNG.MATRINHDOHOCVAN = tRINHDOHOCVANComboBox.SelectedValue.ToString();
+                hOSOTUYENDUNG.MATRINHDOTINHOC = tRINHDOTINHOCComboBox.SelectedValue.ToString() ;
+                hOSOTUYENDUNG.MADANTOC = dANTOCComboBox.SelectedValue.ToString();
+                hOSOTUYENDUNG.MAQUOCTICH = qUOCTICHComboBox.SelectedValue.ToString();
+                hOSOTUYENDUNG.MATONGIAO =tONGIAOComboBox.SelectedValue.ToString();
+                hOSOTUYENDUNG.DIENUUTIEN = dIENUUTIENTextEdit.Text;
+                hOSOTUYENDUNG.CMND = cMNDTextEdit.Text;
+                hOSOTUYENDUNG.DIACHITHUONGTRU = dIACHITHUONGTRUTextEdit.Text;
+                bLL_NhanVien.BLL_SuaHoSoNV(hOSOTUYENDUNG);
+               
                 //update ngoai ngu
                 for (int i = 0; i < gridViewNN.RowCount; i++)
                 {
@@ -181,26 +243,27 @@ namespace QuanLy_NhanSu
                     {
                         try
                         {
-                           // cHITIETNGOAINGUTableAdapter.Insert(gridView2.GetRowCellValue(i, "MANGOAINGU").ToString(), mAUNGVIENTextEdit.Text);
+                            CHITIETNGOAINGU cHITIETNGOAINGU = new CHITIETNGOAINGU();
+                            cHITIETNGOAINGU.MANGOAINGU = gridViewNN.GetRowCellValue(i, "MANGOAINGU").ToString();
+                            cHITIETNGOAINGU.MAUNGVIEN = bLL_load.BLL_FindUngVienByMaNV(txt_MaNV.Text);
+                            bLL_NhanVien.BLL_ThemChiTietNgoaiNgu(cHITIETNGOAINGU);
                         }
                         catch
-                        {
-                          //  cHITIETNGOAINGUTableAdapter.Update(gridView2.GetRowCellValue(i, "MANGOAINGU").ToString(), mAUNGVIENTextEdit.Text);
-                        }
+                        { }
                     }
                     else
                     {
                         try
                         {
-                           // cHITIETNGOAINGUTableAdapter.Delete(gridView2.GetRowCellValue(i, "MANGOAINGU").ToString(), mAUNGVIENTextEdit.Text);
+                            CHITIETNGOAINGU cHITIETNGOAINGU = new CHITIETNGOAINGU();
+                            cHITIETNGOAINGU.MANGOAINGU = gridViewNN.GetRowCellValue(i, "MANGOAINGU").ToString();
+                            cHITIETNGOAINGU.MAUNGVIEN = bLL_load.BLL_FindUngVienByMaNV(txt_MaNV.Text);
+                            bLL_NhanVien.BLL_XoaChiTietNgoaiNgu(cHITIETNGOAINGU);
                         }
                         catch
-                        {
-
-                        }
+                        { }
                     }
                 }
-
                 MessageBox.Show("Sửa thành công");
             }
             else
@@ -218,7 +281,7 @@ namespace QuanLy_NhanSu
                     //hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, st.imageToByteArray(pictureEdit_hinhUV.Image), timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
                     HINHANH ha = new HINHANH();
                     ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
-                    ha.TENHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                    ha.TENHINHANH = pictureEdit1.Text;
                     ha.URL = st.imageToByteArray(pictureEdit1.Image);
                     bLL_NhanVien.BLL_UpdateHinhAnh(ha);
                 }
@@ -229,7 +292,7 @@ namespace QuanLy_NhanSu
                         //hINHANHTableAdapter.Insert(sinhtudongMaHA(0), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, st.imageToByteArray(pictureEdit_hinhUV.Image));
                         HINHANH ha = new HINHANH();
                         ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
-                        ha.TENHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                        ha.TENHINHANH = pictureEdit1.Text;
                         ha.URL = st.imageToByteArray(pictureEdit1.Image);
                         ha.MAUNGVIEN = bLL_load.BLL_FindUngVienByMaNV(txt_MaNV.Text);
                         bLL_NhanVien.BLL_InsertHinhAnh(ha);
@@ -247,7 +310,7 @@ namespace QuanLy_NhanSu
                     //hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null, timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
                     HINHANH ha = new HINHANH();
                     ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
-                    ha.TENHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                    ha.TENHINHANH = pictureEdit1.Text;
                     ha.URL = null;
                     bLL_NhanVien.BLL_UpdateHinhAnh(ha);
                 }
@@ -258,7 +321,7 @@ namespace QuanLy_NhanSu
                         // hINHANHTableAdapter.Insert(sinhtudongMaHA(0), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null);
                         HINHANH ha = new HINHANH();
                         ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
-                        ha.TENHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                        ha.TENHINHANH = pictureEdit1.Text;
                         ha.URL = null;
                         ha.MAUNGVIEN = bLL_load.BLL_FindUngVienByMaNV(txt_MaNV.Text);
                         bLL_NhanVien.BLL_InsertHinhAnh(ha);

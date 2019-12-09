@@ -58,9 +58,17 @@ namespace BLL
         {
             return dal.loadHoSoTuyenDung();
         }
+        public HOSOTUYENDUNG BLL_loadHoSoTuyenDungUngVien(string p)
+        {
+            return dal.loadHoSoTuyenDungUngVien(p);
+        }
         public List<NHANVIEN> BLL_loadNhanVien()
         {
             return dal.loadNhanVien();
+        }
+        public NHANVIEN BLL_loadThongTinNhanVien(string p)
+        {
+            return dal.loadThongTinNhanVien(p);
         }
         public List<HINHANH> BLL_loadHinhAnh()
         {
