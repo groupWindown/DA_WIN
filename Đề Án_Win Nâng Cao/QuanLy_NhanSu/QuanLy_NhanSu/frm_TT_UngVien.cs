@@ -15,7 +15,7 @@ namespace QuanLy_NhanSu
     {
         List<UserControl_Dong_UngVien> listQLNS = new List<UserControl_Dong_UngVien>();
         List<UserControl_Dong_UngVien> listQLNSSearch = new List<UserControl_Dong_UngVien>();
-        Strick st = new Strick();
+        Trick st = new Trick();
         public frm_TT_UngVien()
         {
             InitializeComponent();

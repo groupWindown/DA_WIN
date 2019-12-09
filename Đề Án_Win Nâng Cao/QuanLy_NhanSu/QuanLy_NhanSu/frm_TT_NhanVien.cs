@@ -20,7 +20,7 @@ namespace QuanLy_NhanSu
         List<UserControl_Dong_NhanVien> listQLNSSearch = new List<UserControl_Dong_NhanVien>();
         BLL_Load bLL_Load = new BLL_Load();
         BLL_NhanVien bLL_NhanVien = new BLL_NhanVien();
-        Strick st = new Strick();
+        Trick st = new Trick();
         public frm_TT_NhanVien()
         {
             InitializeComponent();

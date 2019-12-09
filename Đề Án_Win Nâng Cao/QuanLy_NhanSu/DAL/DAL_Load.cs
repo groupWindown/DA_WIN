@@ -115,6 +115,11 @@ namespace DAL
         {
             return linQ.QUANLYTHAISANs.Select(t => t).ToList<QUANLYTHAISAN>();
         }
-       
+        public string FindUngVienByMaNV(string pMaNV)
+        {
+            if (linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault() == null)
+                return null;
+           return linQ.NHANVIENs.Where(t => t.MANV == pMaNV).FirstOrDefault().MAHOSO.ToString();
+        }
     }
 }

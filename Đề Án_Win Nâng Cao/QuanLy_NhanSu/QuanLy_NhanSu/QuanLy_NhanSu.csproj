@@ -263,7 +263,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Strick.cs" />
+    <Compile Include="Trick.cs" />
     <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>

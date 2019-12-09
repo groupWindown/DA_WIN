@@ -209,7 +209,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QuanLy_NhanSu.Properties.Resources.ic_x1;
-            this.pictureBox1.Location = new System.Drawing.Point(803, 139);
+            this.pictureBox1.Location = new System.Drawing.Point(803, 117);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(17, 19);
             this.pictureBox1.TabIndex = 138;

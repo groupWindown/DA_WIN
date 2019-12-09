@@ -13,7 +13,9 @@ namespace QuanLy_NhanSu
 {
     public partial class frm_SuaTTNhanVien : Form
     {
-        BLL_Load bLL_load = new BLL_Load(); BLL_NhanVien bLL_NhanVien = new BLL_NhanVien();
+        BLL_Load bLL_load = new BLL_Load();
+        BLL_NhanVien bLL_NhanVien = new BLL_NhanVien();
+        Trick st = new Trick();
         public frm_SuaTTNhanVien()
         {
             InitializeComponent();
@@ -41,9 +43,9 @@ namespace QuanLy_NhanSu
             pHONGBANComboBox.DataSource = bLL_load.BLL_loadPhongBan();
             pHONGBANComboBox.ValueMember = "MAPHONGBAN";
             pHONGBANComboBox.DisplayMember = "TENPHONGBAN";
-            qUOCTICHComboBox.DataSource = bLL_load.BLL_loadPhongBan();
-            qUOCTICHComboBox.ValueMember = "MAQUOCTICH";
-            qUOCTICHComboBox.DisplayMember = "TENQUOCTICH";
+            tONGIAOComboBox.DataSource = bLL_load.BLL_loadTonGiao();
+            tONGIAOComboBox.ValueMember = "MATONGIAO";
+            tONGIAOComboBox.DisplayMember = "TENTONGIAO";
             cHUCVUComboBox.DataSource = bLL_load.BLL_loadChucVu();
             cHUCVUComboBox.ValueMember = "MACHUCVU";
             cHUCVUComboBox.DisplayMember = "TENCHUCVU";
@@ -215,14 +217,22 @@ namespace QuanLy_NhanSu
                 {
                     //hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, st.imageToByteArray(pictureEdit_hinhUV.Image), timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
                     HINHANH ha = new HINHANH();
-                    ha.MAHINHANH=
-                    bLL_NhanVien.BLL_UpdateHinhAnh();
+                    ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                    ha.TENHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                    ha.URL = st.imageToByteArray(pictureEdit1.Image);
+                    bLL_NhanVien.BLL_UpdateHinhAnh(ha);
                 }
                 catch
                 {
                     try
                     {
                         //hINHANHTableAdapter.Insert(sinhtudongMaHA(0), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, st.imageToByteArray(pictureEdit_hinhUV.Image));
+                        HINHANH ha = new HINHANH();
+                        ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                        ha.TENHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                        ha.URL = st.imageToByteArray(pictureEdit1.Image);
+                        ha.MAUNGVIEN = bLL_load.BLL_FindUngVienByMaNV(txt_MaNV.Text);
+                        bLL_NhanVien.BLL_InsertHinhAnh(ha);
                     }
                     catch
                     {
@@ -235,12 +245,23 @@ namespace QuanLy_NhanSu
                 try
                 {
                     //hINHANHTableAdapter.Update(pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null, timhinhanh(mAUNGVIENTextEdit.Text), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text);
+                    HINHANH ha = new HINHANH();
+                    ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                    ha.TENHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                    ha.URL = null;
+                    bLL_NhanVien.BLL_UpdateHinhAnh(ha);
                 }
                 catch
                 {
                     try
                     {
-                       // hINHANHTableAdapter.Insert(sinhtudongMaHA(0), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null);
+                        // hINHANHTableAdapter.Insert(sinhtudongMaHA(0), pictureEdit_hinhUV.Name, mAUNGVIENTextEdit.Text, null);
+                        HINHANH ha = new HINHANH();
+                        ha.MAHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                        ha.TENHINHANH = bLL_NhanVien.BLL_FindHinhAnhByMANV(txt_MaNV.Text);
+                        ha.URL = null;
+                        ha.MAUNGVIEN = bLL_load.BLL_FindUngVienByMaNV(txt_MaNV.Text);
+                        bLL_NhanVien.BLL_InsertHinhAnh(ha);
                     }
                     catch
                     {

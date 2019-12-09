@@ -12,7 +12,7 @@ namespace QuanLy_NhanSu
 {
     public partial class frm_ThemUV : Form
     {
-        Strick st = new Strick();
+        Trick st = new Trick();
         public frm_ThemUV()
         {
             InitializeComponent();

@@ -52,8 +52,7 @@ namespace DAL
         }
         public bool UpdateHinhAnh(HINHANH p)
         {
-            HINHANH hinh = linq.HINHANHs.Where(t => t.MAHINHANH == p.MAHINHANH).FirstOrDefault();
-            hinh.MAUNGVIEN = p.MAUNGVIEN;
+            HINHANH hinh = linq.HINHANHs.Where(t => t.MAHINHANH == p.MAHINHANH).FirstOrDefault();   
             hinh.TENHINHANH = p.TENHINHANH;
             hinh.URL = p.URL;
          

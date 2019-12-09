@@ -83,5 +83,9 @@ namespace BLL
         {
             throw new NotImplementedException();
         }
+        public string BLL_FindUngVienByMaNV(string p)
+        {
+            return dal.FindUngVienByMaNV(p);
+        }
     }
 }

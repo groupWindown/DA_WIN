@@ -18,7 +18,7 @@ namespace QuanLy_NhanSu
 {
     public partial class frm_Sua_ThemMoiNV_UngVien : Form
     {
-        Strick st = new Strick();
+        Trick st = new Trick();
         public frm_Sua_ThemMoiNV_UngVien()
         {
             InitializeComponent();
