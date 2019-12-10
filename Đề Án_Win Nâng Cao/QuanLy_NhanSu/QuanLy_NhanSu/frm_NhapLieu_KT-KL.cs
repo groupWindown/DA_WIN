@@ -839,5 +839,212 @@ namespace QuanLy_NhanSu
             tONGIAOTableAdapter.Update(this.dataSetQLNS.TONGIAO);
             load_dataTonGiao();
         }
+        public void load_dataChuyenMon()
+        {
+            gridControl_ChuyenMon.DataSource = cHUYENMONTableAdapter.Fill(this.dataSetQLNS.CHUYENMON);
+        }
+        private void btn_Them_ChuyenMon_Click(object sender, EventArgs e)
+        {
+            //kiem tra khoa chinh
+            if (KTKC_New(mACHUYENMONTextEdit.Text.ToString(), dataSetQLNS.CHUYENMON) == false)
+            {
+                cHUYENMONTableAdapter.Insert(mACHUYENMONTextEdit.Text, tENCHUYENMONTextEdit.Text);
+                load_dataChuyenMon();
+                MessageBox.Show("Thêm thành công !!!");
+            }
+            else
+            {
+                MessageBox.Show("Trùng khoá chính !!!");
+            }
+        }
+
+        private void btn_Xoa_ChuyenMon_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                return;
+            int cathu = gridView_ChuyenMon.FocusedRowHandle;
+            string sql_macm = gridView_ChuyenMon.GetRowCellValue(cathu, "MACHUYENMON").ToString();
+            string sql_tencm = gridView_ChuyenMon.GetRowCellValue(cathu, "TENCHUYENMON").ToString();
+            
+            cHUYENMONTableAdapter.Delete(sql_macm, sql_tencm);MessageBox.Show("Thành công");
+            load_dataChuyenMon();
+        }
+
+        private void btn_Sua_ChuyenMon_Click(object sender, EventArgs e)
+        {
+            int cathu = gridView_ChuyenMon.FocusedRowHandle;
+            string sql_macm = gridView_ChuyenMon.GetRowCellValue(cathu, "MACHUYENMON").ToString();
+            string sql_tencm = gridView_ChuyenMon.GetRowCellValue(cathu, "TENCHUYENMON").ToString();
+            DataSetQLNS.CHUYENMONRow data = dataSetQLNS.CHUYENMON.FindByMACHUYENMON(sql_macm);
+            data.TENCHUYENMON = sql_tencm;
+            cHUYENMONTableAdapter.Update(this.dataSetQLNS.CHUYENMON);
+            //cHUCVUTableAdapter
+            load_dataChuyenMon();
+        }
+        public void load_dataDaoTao()
+        {
+            gridControl_DaoTao.DataSource = dAOTAOTableAdapter.Fill(this.dataSetQLNS.DAOTAO);
+        }
+        private void btn_Them_DaoTao_Click(object sender, EventArgs e)
+        {
+            //kiem tra khoa chinh
+            if (KTKC_New(mAKHOADAOTAOTextEdit.Text.ToString(), dataSetQLNS.DAOTAO) == false)
+            {
+                dAOTAOTableAdapter.Insert(mAKHOADAOTAOTextEdit.Text, tENKHOADAOTAOTextEdit.Text);
+                load_dataDaoTao();
+                MessageBox.Show("Thêm thành công !!!");
+            }
+            else
+            {
+                MessageBox.Show("Trùng khoá chính !!!");
+            }
+        }
+
+        private void btn_Xoa_DaoTao_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                return;
+            int cathu = gridView_DaoTao.FocusedRowHandle;
+            string sql_madt = gridView_DaoTao.GetRowCellValue(cathu, "MAKHOADAOTAO").ToString();
+            string sql_tendt = gridView_DaoTao.GetRowCellValue(cathu, "TENKHOADAOTAO").ToString();
+            
+            dAOTAOTableAdapter.Delete(sql_madt, sql_tendt);MessageBox.Show("Thành công");
+            load_dataDaoTao();
+        }
+
+        private void btn_Sua_DaoTao_Click(object sender, EventArgs e)
+        {
+            int cathu = gridView_DaoTao.FocusedRowHandle;
+            string sql_madt = gridView_DaoTao.GetRowCellValue(cathu, "MAKHOADAOTAO").ToString();
+            string sql_tendt = gridView_DaoTao.GetRowCellValue(cathu, "TENKHOADAOTAO").ToString();
+            DataSetQLNS.DAOTAORow data = dataSetQLNS.DAOTAO.FindByMAKHOADAOTAO(sql_madt);
+            data.TENKHOADAOTAO = sql_tendt;
+            dAOTAOTableAdapter.Update(this.dataSetQLNS.DAOTAO);
+            //cHUCVUTableAdapter
+            load_dataDaoTao();
+        }
+        public void load_dataTDTinHoc()
+        {
+            gridControl_TinHoc.DataSource = tRINHDOTINHOCTableAdapter.Fill(this.dataSetQLNS.TRINHDOTINHOC);
+        }
+        private void btn_Them_TinHoc_Click(object sender, EventArgs e)
+        {
+            if (KTKC_New(mATRINHDOTINHOCTextEdit.Text.ToString(), dataSetQLNS.TRINHDOTINHOC) == false)
+            {
+                tRINHDOTINHOCTableAdapter.Insert(mATRINHDOTINHOCTextEdit.Text, tENTRINHDOTINHOCTextEdit.Text);
+                load_dataTDTinHoc();
+                MessageBox.Show("Thêm thành công !!!");
+            }
+            else
+            {
+                MessageBox.Show("Trùng khoá chính !!!");
+            }
+        }
+
+        private void btn_Xoa_TinHoc_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                return;
+            int cathu = gridView_TinHoc.FocusedRowHandle;
+            string sql_matdth = gridView_TinHoc.GetRowCellValue(cathu, "MATRINHDOTINHOC").ToString();
+            string sql_tentdth = gridView_TinHoc.GetRowCellValue(cathu, "TENTRINHDOTINHOC").ToString();
+            
+            tRINHDOTINHOCTableAdapter.Delete(sql_matdth, sql_tentdth);MessageBox.Show("Thành công");
+            load_dataTDTinHoc();
+        }
+
+        private void btn_Sua_TinHoc_Click(object sender, EventArgs e)
+        {
+            int cathu = gridView_TinHoc.FocusedRowHandle;
+            string sql_matdth = gridView_TinHoc.GetRowCellValue(cathu, "MATRINHDOTINHOC").ToString();
+            string sql_tentdth = gridView_TinHoc.GetRowCellValue(cathu, "TENTRINHDOTINHOC").ToString();
+            DataSetQLNS.TRINHDOTINHOCRow data = dataSetQLNS.TRINHDOTINHOC.FindByMATRINHDOTINHOC(sql_matdth);
+            data.TENTRINHDOTINHOC = sql_tentdth;
+            tRINHDOTINHOCTableAdapter.Update(this.dataSetQLNS.TRINHDOTINHOC);
+            //cHUCVUTableAdapter
+            load_dataTDTinHoc();
+        }
+        public void load_dataTDNgoaiNgu()
+        {
+            gridControl_NgoaiNgu.DataSource = nGOAINGUTableAdapter.Fill(this.dataSetQLNS.NGOAINGU);
+        }
+        private void btn_Them_NgoaiNgu_Click(object sender, EventArgs e)
+        {
+            if (KTKC_New(mANGOAINGUTextEdit.Text.ToString(), dataSetQLNS.NGOAINGU) == false)
+            {
+                nGOAINGUTableAdapter.Insert(mANGOAINGUTextEdit.Text, tENNGOAINGUTextEdit.Text);
+                load_dataTDNgoaiNgu();
+                MessageBox.Show("Thêm thành công !!!");
+            }
+            else
+            {
+                MessageBox.Show("Trùng khoá chính !!!");
+            }
+        }
+
+        private void btn_Xoa_NgoaiNgu_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                return;
+            int cathu = gridView_NgoaiNgu.FocusedRowHandle;
+            string sql_matdnn = gridView_NgoaiNgu.GetRowCellValue(cathu, "MANGOAINGU").ToString();
+            string sql_tentdnn = gridView_NgoaiNgu.GetRowCellValue(cathu, "TENNGOAINGU").ToString();
+            MessageBox.Show("Thành công");
+            nGOAINGUTableAdapter.Delete(sql_matdnn, sql_tentdnn);
+            load_dataTDNgoaiNgu();
+        }
+
+        private void btn_Sua_NgoaiNgu_Click(object sender, EventArgs e)
+        {
+            int cathu = gridView_NgoaiNgu.FocusedRowHandle;
+            string sql_matdnn = gridView_NgoaiNgu.GetRowCellValue(cathu, "MANGOAINGU").ToString();
+            string sql_tentdnn = gridView_NgoaiNgu.GetRowCellValue(cathu, "TENNGOAINGU").ToString();
+            DataSetQLNS.NGOAINGURow data = dataSetQLNS.NGOAINGU.FindByMANGOAINGU(sql_matdnn);
+            data.TENNGOAINGU = sql_tentdnn;
+            nGOAINGUTableAdapter.Update(this.dataSetQLNS.NGOAINGU);
+            //cHUCVUTableAdapter
+            load_dataTDNgoaiNgu();
+        }
+        public void load_dataTDHocVan()
+        {
+            gridControl_TDHocVan.DataSource = tRINHDOHOCVANTableAdapter.Fill(this.dataSetQLNS.TRINHDOHOCVAN);
+        }
+        private void btn_Them_TDHocVan_Click(object sender, EventArgs e)
+        {
+            if (KTKC_New(mATRINHDOHOCVANTextEdit.Text.ToString(), dataSetQLNS.TRINHDOHOCVAN) == false)
+            {
+                tRINHDOHOCVANTableAdapter.Insert(mATRINHDOHOCVANTextEdit.Text, tENTRINHDOHOCVANTextEdit.Text);
+                load_dataTDHocVan();
+                MessageBox.Show("Thêm thành công !!!");
+            }
+            else
+            {
+                MessageBox.Show("Trùng khoá chính !!!");
+            }
+        }
+
+        private void btn_Xoa_TDHocVan_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                return;
+            int cathu = gridView_TDHocVan.FocusedRowHandle;
+            string sql_matdhv = gridView_TDHocVan.GetRowCellValue(cathu, "MATRINHDOHOCVAN").ToString();
+            string sql_tentdhv = gridView_TDHocVan.GetRowCellValue(cathu, "TENTRINHDOHOCVAN").ToString();
+            MessageBox.Show("Thành công");
+            tRINHDOHOCVANTableAdapter.Delete(sql_matdhv, sql_tentdhv);
+            load_dataTDHocVan();
+        }
+
+        private void btn_Sua_TDHocVan_Click(object sender, EventArgs e)
+        {
+            int cathu = gridView_TDHocVan.FocusedRowHandle;
+            string sql_matdhv = gridView_TDHocVan.GetRowCellValue(cathu, "MATRINHDOHOCVAN").ToString();
+            string sql_tentdhv = gridView_TDHocVan.GetRowCellValue(cathu, "TENTRINHDOHOCVAN").ToString();
+            DataSetQLNS.TRINHDOHOCVANRow data = dataSetQLNS.TRINHDOHOCVAN.FindByMATRINHDOHOCVAN(sql_matdhv);
+            data.TENTRINHDOHOCVAN = sql_tentdhv;
+            tRINHDOHOCVANTableAdapter.Update(this.dataSetQLNS.TRINHDOHOCVAN);
+            //cHUCVUTableAdapter
+            load_dataTDHocVan();
+        }
     }
 }
