@@ -27,6 +27,24 @@ namespace QuanLy_NhanSu
             this.dS_KYLUATTableAdapter.Fill(this.dataSetQLNS.DS_KYLUAT);
             // TODO: This line of code loads data into the 'dataSetQLNS.LOAIKHENTHUONG' table. You can move, or remove it, as needed.
             this.lOAIKHENTHUONGTableAdapter.Fill(this.dataSetQLNS.LOAIKHENTHUONG);
+            // TODO: This line of code loads data into the 'dataSetQLNS.QUOCTICH' table. You can move, or remove it, as needed.
+            this.qUOCTICHTableAdapter.Fill(this.dataSetQLNS.QUOCTICH);
+            // TODO: This line of code loads data into the 'dataSetQLNS.TONGIAO' table. You can move, or remove it, as needed.
+            this.tONGIAOTableAdapter.Fill(this.dataSetQLNS.TONGIAO);
+            // TODO: This line of code loads data into the 'dataSetQLNS.DANTOC' table. You can move, or remove it, as needed.
+            this.dANTOCTableAdapter.Fill(this.dataSetQLNS.DANTOC);
+            // TODO: This line of code loads data into the 'dataSetQLNS.PHONGBAN' table. You can move, or remove it, as needed.
+            this.pHONGBANTableAdapter.Fill(this.dataSetQLNS.PHONGBAN);
+            // TODO: This line of code loads data into the 'dataSetQLNS.CHUCVU' table. You can move, or remove it, as needed.
+            this.cHUCVUTableAdapter.Fill(this.dataSetQLNS.CHUCVU);
+            // TODO: This line of code loads data into the 'dataSetQLNS.NGUOIDUNGNHOMNGUOIDUNG' table. You can move, or remove it, as needed.
+            this.nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Fill(this.dataSetQLNS.NGUOIDUNGNHOMNGUOIDUNG);
+            // TODO: This line of code loads data into the 'dataSetQLNS.TAIKHOAN' table. You can move, or remove it, as needed.
+            this.tAIKHOANTableAdapter.Fill(this.dataSetQLNS.TAIKHOAN);
+            // TODO: This line of code loads data into the 'dataSetQLNS.MANHINH' table. You can move, or remove it, as needed.
+            this.mANHINHTableAdapter.Fill(this.dataSetQLNS.MANHINH);
+            // TODO: This line of code loads data into the 'dataSetQLNS.NHOMNGUOIDUNG' table. You can move, or remove it, as needed.
+            this.nHOMNGUOIDUNGTableAdapter.Fill(this.dataSetQLNS.NHOMNGUOIDUNG);
 
         }
 
@@ -111,6 +129,7 @@ namespace QuanLy_NhanSu
         }
         private void btn_Them_KyLuat_Click(object sender, EventArgs e)
         {
+            
             if (KTKC_New(txt_MaKyLuat.Text.ToString(), dataSetQLNS.DS_KYLUAT) == false)
             {
                 dS_KYLUATTableAdapter.Insert(txt_MaKyLuat.Text, txt_TenKyLuat.Text,txt_HinhThuc.Text, Convert.ToDecimal (txt_TienKyLuat.Text));
