@@ -404,18 +404,7 @@ namespace QuanLy_NhanSu
         {
             int i = gridViewManHinh.GetFocusedDataSourceRowIndex();
             //update ManHinh
-            if (gridViewManHinh.IsRowSelected(gridViewManHinh.GetFocusedDataSourceRowIndex()))
-            {
-                try
-                {
-                    pHANQUYENTableAdapter.Insert(gridViewManHinh.GetRowCellValue(i, "MAMANHINH").ToString(), gridViewNhomNguoiDung.GetFocusedRowCellValue("MANHOM").ToString(), true);
-                }
-                catch
-                {
-                    pHANQUYENTableAdapter.Update(true, gridViewManHinh.GetRowCellValue(i, "MAMANHINH").ToString(), gridViewNhomNguoiDung.GetFocusedRowCellValue("MANHOM").ToString(), true);
-                }
-            }
-            else
+            if (gridViewManHinh.IsRowSelected(i))//dang duoc click
             {
                 try
                 {
@@ -426,6 +415,17 @@ namespace QuanLy_NhanSu
 
                 }
             }
+            else //dang khong duoc click
+            {
+                try
+                {
+                    pHANQUYENTableAdapter.Insert(gridViewManHinh.GetRowCellValue(i, "MAMANHINH").ToString(), gridViewNhomNguoiDung.GetFocusedRowCellValue("MANHOM").ToString(), true);
+                }
+                catch
+                {
+                    pHANQUYENTableAdapter.Update(true, gridViewManHinh.GetRowCellValue(i, "MAMANHINH").ToString(), gridViewNhomNguoiDung.GetFocusedRowCellValue("MANHOM").ToString(), true);
+                }
+            }
 
         }
 
@@ -433,18 +433,7 @@ namespace QuanLy_NhanSu
         {
             int i = gridView_TaiKhoan.GetFocusedDataSourceRowIndex();
             //update ManHinh
-            if (gridView_TaiKhoan.IsRowSelected(gridView_TaiKhoan.GetFocusedDataSourceRowIndex()))
-            {
-                try
-                {
-                    nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Insert(gridView_TaiKhoan.GetRowCellValue(i, "MANV").ToString(), gridViewNhomNguoiDung.GetFocusedRowCellValue("MANHOM").ToString(), "");
-                }
-                catch
-                {
-                    nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Update("", gridView_TaiKhoan.GetRowCellValue(i, "MANV").ToString(), gridViewNhomNguoiDung.GetFocusedRowCellValue("MANHOM").ToString(), "");
-                }
-            }
-            else
+            if (gridView_TaiKhoan.IsRowSelected(i))
             {
                 try
                 {
@@ -453,6 +442,18 @@ namespace QuanLy_NhanSu
                 catch
                 {
 
+                }
+            }
+            else
+            {
+              
+                try
+                {
+                    nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Insert(gridView_TaiKhoan.GetRowCellValue(i, "MANV").ToString(), gridViewNhomNguoiDung.GetFocusedRowCellValue("MANHOM").ToString(), "");
+                }
+                catch
+                {
+                    nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Update("", gridView_TaiKhoan.GetRowCellValue(i, "MANV").ToString(), gridViewNhomNguoiDung.GetFocusedRowCellValue("MANHOM").ToString(), "");
                 }
             }
         }
