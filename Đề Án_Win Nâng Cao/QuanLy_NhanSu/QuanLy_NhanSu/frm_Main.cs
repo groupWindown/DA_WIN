@@ -79,7 +79,7 @@ namespace QuanLy_NhanSu
             DataTable dtR = dt.Clone();
             foreach (DataRow dr in dt.Rows)
             {
-                if(dr[0].ToString()==str)
+                if(dr[0].ToString().ToUpper()==str.ToUpper())
                 {
                     dtR.ImportRow(dr);
                 }
