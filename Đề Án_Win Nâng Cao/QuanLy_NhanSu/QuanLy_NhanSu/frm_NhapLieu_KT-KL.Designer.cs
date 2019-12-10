@@ -95,6 +95,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.groupBox_PhongBan = new System.Windows.Forms.GroupBox();
+            this.mAPHONGBANTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.pHONGBANBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tENPHONGBANTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.mATRUONGPHONGTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.label12 = new System.Windows.Forms.Label();
             this.gridControl_PhongBan = new DevExpress.XtraGrid.GridControl();
             this.gridView_PhongBan = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -107,6 +111,9 @@
             this.btn_Xoa_PhongBan = new System.Windows.Forms.Button();
             this.btn_Them_PhongBan = new System.Windows.Forms.Button();
             this.groupBox_ChucVu = new System.Windows.Forms.GroupBox();
+            this.mACHUCVUTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.cHUCVUBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tENCHUCVUTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.gridControl_ChucVu = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMACHUCVU = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -117,6 +124,9 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox_QuocTich = new System.Windows.Forms.GroupBox();
+            this.mAQUOCTICHTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.qUOCTICHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tENQUOCTICHTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.gridControl_QuocTich = new DevExpress.XtraGrid.GridControl();
             this.gridView_QuocTich = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMAQUOCTICH = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -127,6 +137,9 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox_TonGiao = new System.Windows.Forms.GroupBox();
+            this.mATONGIAOTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.tONGIAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tENTONGIAOTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.gridControl_TonGiao = new DevExpress.XtraGrid.GridControl();
             this.gridView_TonGiao = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMATONGIAO = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -137,6 +150,9 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox_DanToc = new System.Windows.Forms.GroupBox();
+            this.mADANTOCTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.dANTOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tENDANTOCTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.gridControl_DanToc = new DevExpress.XtraGrid.GridControl();
             this.gridView_DanToc = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMADANTOC = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -148,20 +164,25 @@
             this.label22 = new System.Windows.Forms.Label();
             this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.groupBox_NguoiDungNhomNguoiDun = new System.Windows.Forms.GroupBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.nHOMNGUOIDUNGComboBox = new System.Windows.Forms.ComboBox();
-            this.gridControl_NDNND = new DevExpress.XtraGrid.GridControl();
-            this.gridView_NDNND = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colMANV1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMANHOM1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colGHICHU1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridControlManHinh = new DevExpress.XtraGrid.GridControl();
+            this.mANHINHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridViewManHinh = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMAMANHINH1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTENMANHINH1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridControlNhomNguoiDung = new DevExpress.XtraGrid.GridControl();
+            this.nHOMNGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridViewNhomNguoiDung = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMANHOM2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTENNHOM1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGHICHU2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl_TaiKhoan = new DevExpress.XtraGrid.GridControl();
+            this.tAIKHOANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView_TaiKhoan = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMANV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMATKHAU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colHOATDONG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btn_Them_NDNND = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.mAMANHINHTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.tENMANHINHTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.gridControl_ManHinh = new DevExpress.XtraGrid.GridControl();
             this.gridView_ManHinh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMAMANHINH = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -172,51 +193,32 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gridControl_NhomNguoiDung = new DevExpress.XtraGrid.GridControl();
+            this.gridView_NhomNguoiDung = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMANHOM = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTENNHOM = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGHICHU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.mANHOMComboBox = new System.Windows.Forms.ComboBox();
+            this.tENNHOMTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.gHICHUTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.label26 = new System.Windows.Forms.Label();
             this.btn_Sua_NhomNguoiDung = new System.Windows.Forms.Button();
             this.btn_Xoa_NhomNguoiDung = new System.Windows.Forms.Button();
             this.btn_Them_NhomNguoiDung = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.nHOMNGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nHOMNGUOIDUNGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NHOMNGUOIDUNGTableAdapter();
-            this.mANHINHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mANHINHTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.MANHINHTableAdapter();
             this.nGUOIDUNGNHOMNGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nHOMNGUOIDUNGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NHOMNGUOIDUNGTableAdapter();
+            this.mANHINHTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.MANHINHTableAdapter();
             this.nGUOIDUNGNHOMNGUOIDUNGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NGUOIDUNGNHOMNGUOIDUNGTableAdapter();
-            this.tAIKHOANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tAIKHOANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TAIKHOANTableAdapter();
-            this.mANHOMComboBox = new System.Windows.Forms.ComboBox();
-            this.tENNHOMTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.gHICHUTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.cHUCVUBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cHUCVUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHUCVUTableAdapter();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colMANHOM = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTENNHOM = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colGHICHU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.qUOCTICHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qUOCTICHTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.QUOCTICHTableAdapter();
-            this.tONGIAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tONGIAOTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TONGIAOTableAdapter();
-            this.pHONGBANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pHONGBANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.PHONGBANTableAdapter();
-            this.dANTOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dANTOCTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DANTOCTableAdapter();
-            this.mAMANHINHTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tENMANHINHTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.mAPHONGBANTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tENPHONGBANTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.mATRUONGPHONGTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.mATONGIAOTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tENTONGIAOTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.mADANTOCTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tENDANTOCTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.mAQUOCTICHTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tENQUOCTICHTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.mACHUCVUTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tENCHUCVUTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.pHANQUYENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pHANQUYENTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.PHANQUYENTableAdapter();
             this.groupBox_KhenThuong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_KhenThuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIKHENTHUONGBindingSource)).BeginInit();
@@ -236,56 +238,59 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView_DMTangCa)).BeginInit();
             this.tabNavigationPage2.SuspendLayout();
             this.groupBox_PhongBan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mAPHONGBANTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENPHONGBANTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRUONGPHONGTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_PhongBan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_PhongBan)).BeginInit();
             this.groupBox_ChucVu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mACHUCVUTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENCHUCVUTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_ChucVu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.groupBox_QuocTich.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mAQUOCTICHTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENQUOCTICHTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_QuocTich)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_QuocTich)).BeginInit();
             this.groupBox_TonGiao.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mATONGIAOTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tONGIAOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENTONGIAOTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_TonGiao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_TonGiao)).BeginInit();
             this.groupBox_DanToc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mADANTOCTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANTOCBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENDANTOCTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_DanToc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_DanToc)).BeginInit();
             this.tabNavigationPage3.SuspendLayout();
             this.groupBox_NguoiDungNhomNguoiDun.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl_NDNND)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView_NDNND)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlManHinh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mANHINHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewManHinh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlNhomNguoiDung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewNhomNguoiDung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_TaiKhoan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_TaiKhoan)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mAMANHINHTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENMANHINHTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_ManHinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_ManHinh)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mANHINHBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_NhomNguoiDung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_NhomNguoiDung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tENNHOMTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gHICHUTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tONGIAOBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANTOCBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAMANHINHTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENMANHINHTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAPHONGBANTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENPHONGBANTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRUONGPHONGTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATONGIAOTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENTONGIAOTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mADANTOCTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENDANTOCTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAQUOCTICHTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENQUOCTICHTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mACHUCVUTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENCHUCVUTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Sua_KyLuat
@@ -363,9 +368,9 @@
             this.groupBox_KhenThuong.Controls.Add(this.label2);
             this.groupBox_KhenThuong.Controls.Add(this.label3);
             this.groupBox_KhenThuong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_KhenThuong.Location = new System.Drawing.Point(313, 381);
+            this.groupBox_KhenThuong.Location = new System.Drawing.Point(355, 381);
             this.groupBox_KhenThuong.Name = "groupBox_KhenThuong";
-            this.groupBox_KhenThuong.Size = new System.Drawing.Size(619, 314);
+            this.groupBox_KhenThuong.Size = new System.Drawing.Size(651, 335);
             this.groupBox_KhenThuong.TabIndex = 7;
             this.groupBox_KhenThuong.TabStop = false;
             this.groupBox_KhenThuong.Text = "Khen thưởng";
@@ -393,10 +398,10 @@
             gridLevelNode1.RelationName = "Level1";
             this.gridControl_KhenThuong.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
-            this.gridControl_KhenThuong.Location = new System.Drawing.Point(22, 120);
+            this.gridControl_KhenThuong.Location = new System.Drawing.Point(24, 136);
             this.gridControl_KhenThuong.MainView = this.gridView_KhenThuong;
             this.gridControl_KhenThuong.Name = "gridControl_KhenThuong";
-            this.gridControl_KhenThuong.Size = new System.Drawing.Size(573, 178);
+            this.gridControl_KhenThuong.Size = new System.Drawing.Size(607, 178);
             this.gridControl_KhenThuong.TabIndex = 12;
             this.gridControl_KhenThuong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_KhenThuong});
@@ -701,9 +706,9 @@
             this.tabNavigationPage1,
             this.tabNavigationPage2,
             this.tabNavigationPage3});
-            this.tabPane1.RegularSize = new System.Drawing.Size(1341, 768);
+            this.tabPane1.RegularSize = new System.Drawing.Size(1341, 770);
             this.tabPane1.SelectedPage = this.tabNavigationPage1;
-            this.tabPane1.Size = new System.Drawing.Size(1341, 768);
+            this.tabPane1.Size = new System.Drawing.Size(1341, 770);
             this.tabPane1.TabIndex = 10;
             this.tabPane1.Text = "tabPane1";
             // 
@@ -714,7 +719,7 @@
             this.tabNavigationPage1.Controls.Add(this.groupBox_KyLuat);
             this.tabNavigationPage1.Controls.Add(this.groupBox_KhenThuong);
             this.tabNavigationPage1.Name = "tabNavigationPage1";
-            this.tabNavigationPage1.Size = new System.Drawing.Size(1341, 741);
+            this.tabNavigationPage1.Size = new System.Drawing.Size(1341, 743);
             // 
             // groupBox_DanhMucTangCa
             // 
@@ -914,6 +919,41 @@
             this.groupBox_PhongBan.TabStop = false;
             this.groupBox_PhongBan.Text = "Phòng ban";
             // 
+            // mAPHONGBANTextEdit
+            // 
+            this.mAPHONGBANTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pHONGBANBindingSource, "MAPHONGBAN", true));
+            this.mAPHONGBANTextEdit.Location = new System.Drawing.Point(149, 34);
+            this.mAPHONGBANTextEdit.Name = "mAPHONGBANTextEdit";
+            this.mAPHONGBANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mAPHONGBANTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mAPHONGBANTextEdit.Size = new System.Drawing.Size(202, 26);
+            this.mAPHONGBANTextEdit.TabIndex = 26;
+            // 
+            // pHONGBANBindingSource
+            // 
+            this.pHONGBANBindingSource.DataMember = "PHONGBAN";
+            this.pHONGBANBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tENPHONGBANTextEdit
+            // 
+            this.tENPHONGBANTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pHONGBANBindingSource, "TENPHONGBAN", true));
+            this.tENPHONGBANTextEdit.Location = new System.Drawing.Point(149, 66);
+            this.tENPHONGBANTextEdit.Name = "tENPHONGBANTextEdit";
+            this.tENPHONGBANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tENPHONGBANTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tENPHONGBANTextEdit.Size = new System.Drawing.Size(202, 26);
+            this.tENPHONGBANTextEdit.TabIndex = 28;
+            // 
+            // mATRUONGPHONGTextEdit
+            // 
+            this.mATRUONGPHONGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pHONGBANBindingSource, "MATRUONGPHONG", true));
+            this.mATRUONGPHONGTextEdit.Location = new System.Drawing.Point(149, 98);
+            this.mATRUONGPHONGTextEdit.Name = "mATRUONGPHONGTextEdit";
+            this.mATRUONGPHONGTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mATRUONGPHONGTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mATRUONGPHONGTextEdit.Size = new System.Drawing.Size(202, 26);
+            this.mATRUONGPHONGTextEdit.TabIndex = 30;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -1030,6 +1070,31 @@
             this.groupBox_ChucVu.TabStop = false;
             this.groupBox_ChucVu.Text = "Chức vụ ";
             // 
+            // mACHUCVUTextEdit
+            // 
+            this.mACHUCVUTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.cHUCVUBindingSource, "MACHUCVU", true));
+            this.mACHUCVUTextEdit.Location = new System.Drawing.Point(110, 21);
+            this.mACHUCVUTextEdit.Name = "mACHUCVUTextEdit";
+            this.mACHUCVUTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mACHUCVUTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mACHUCVUTextEdit.Size = new System.Drawing.Size(230, 26);
+            this.mACHUCVUTextEdit.TabIndex = 23;
+            // 
+            // cHUCVUBindingSource
+            // 
+            this.cHUCVUBindingSource.DataMember = "CHUCVU";
+            this.cHUCVUBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tENCHUCVUTextEdit
+            // 
+            this.tENCHUCVUTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.cHUCVUBindingSource, "TENCHUCVU", true));
+            this.tENCHUCVUTextEdit.Location = new System.Drawing.Point(110, 55);
+            this.tENCHUCVUTextEdit.Name = "tENCHUCVUTextEdit";
+            this.tENCHUCVUTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tENCHUCVUTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tENCHUCVUTextEdit.Size = new System.Drawing.Size(230, 26);
+            this.tENCHUCVUTextEdit.TabIndex = 25;
+            // 
             // gridControl_ChucVu
             // 
             this.gridControl_ChucVu.DataSource = this.cHUCVUBindingSource;
@@ -1126,6 +1191,31 @@
             this.groupBox_QuocTich.TabIndex = 7;
             this.groupBox_QuocTich.TabStop = false;
             this.groupBox_QuocTich.Text = "Quốc tịch";
+            // 
+            // mAQUOCTICHTextEdit
+            // 
+            this.mAQUOCTICHTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.qUOCTICHBindingSource, "MAQUOCTICH", true));
+            this.mAQUOCTICHTextEdit.Location = new System.Drawing.Point(115, 26);
+            this.mAQUOCTICHTextEdit.Name = "mAQUOCTICHTextEdit";
+            this.mAQUOCTICHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mAQUOCTICHTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mAQUOCTICHTextEdit.Size = new System.Drawing.Size(211, 26);
+            this.mAQUOCTICHTextEdit.TabIndex = 22;
+            // 
+            // qUOCTICHBindingSource
+            // 
+            this.qUOCTICHBindingSource.DataMember = "QUOCTICH";
+            this.qUOCTICHBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tENQUOCTICHTextEdit
+            // 
+            this.tENQUOCTICHTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.qUOCTICHBindingSource, "TENQUOCTICH", true));
+            this.tENQUOCTICHTextEdit.Location = new System.Drawing.Point(115, 59);
+            this.tENQUOCTICHTextEdit.Name = "tENQUOCTICHTextEdit";
+            this.tENQUOCTICHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tENQUOCTICHTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tENQUOCTICHTextEdit.Size = new System.Drawing.Size(211, 26);
+            this.tENQUOCTICHTextEdit.TabIndex = 24;
             // 
             // gridControl_QuocTich
             // 
@@ -1225,6 +1315,31 @@
             this.groupBox_TonGiao.TabStop = false;
             this.groupBox_TonGiao.Text = "Tôn giáo";
             // 
+            // mATONGIAOTextEdit
+            // 
+            this.mATONGIAOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tONGIAOBindingSource, "MATONGIAO", true));
+            this.mATONGIAOTextEdit.Location = new System.Drawing.Point(124, 24);
+            this.mATONGIAOTextEdit.Name = "mATONGIAOTextEdit";
+            this.mATONGIAOTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mATONGIAOTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mATONGIAOTextEdit.Size = new System.Drawing.Size(202, 26);
+            this.mATONGIAOTextEdit.TabIndex = 23;
+            // 
+            // tONGIAOBindingSource
+            // 
+            this.tONGIAOBindingSource.DataMember = "TONGIAO";
+            this.tONGIAOBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tENTONGIAOTextEdit
+            // 
+            this.tENTONGIAOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tONGIAOBindingSource, "TENTONGIAO", true));
+            this.tENTONGIAOTextEdit.Location = new System.Drawing.Point(124, 56);
+            this.tENTONGIAOTextEdit.Name = "tENTONGIAOTextEdit";
+            this.tENTONGIAOTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tENTONGIAOTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tENTONGIAOTextEdit.Size = new System.Drawing.Size(202, 26);
+            this.tENTONGIAOTextEdit.TabIndex = 25;
+            // 
             // gridControl_TonGiao
             // 
             this.gridControl_TonGiao.DataSource = this.tONGIAOBindingSource;
@@ -1323,6 +1438,31 @@
             this.groupBox_DanToc.TabStop = false;
             this.groupBox_DanToc.Text = "Dân tộc";
             // 
+            // mADANTOCTextEdit
+            // 
+            this.mADANTOCTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.dANTOCBindingSource, "MADANTOC", true));
+            this.mADANTOCTextEdit.Location = new System.Drawing.Point(105, 24);
+            this.mADANTOCTextEdit.Name = "mADANTOCTextEdit";
+            this.mADANTOCTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mADANTOCTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mADANTOCTextEdit.Size = new System.Drawing.Size(221, 26);
+            this.mADANTOCTextEdit.TabIndex = 23;
+            // 
+            // dANTOCBindingSource
+            // 
+            this.dANTOCBindingSource.DataMember = "DANTOC";
+            this.dANTOCBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tENDANTOCTextEdit
+            // 
+            this.tENDANTOCTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.dANTOCBindingSource, "TENDANTOC", true));
+            this.tENDANTOCTextEdit.Location = new System.Drawing.Point(105, 57);
+            this.tENDANTOCTextEdit.Name = "tENDANTOCTextEdit";
+            this.tENDANTOCTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tENDANTOCTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tENDANTOCTextEdit.Size = new System.Drawing.Size(221, 26);
+            this.tENDANTOCTextEdit.TabIndex = 25;
+            // 
             // gridControl_DanToc
             // 
             this.gridControl_DanToc.DataSource = this.dANTOCBindingSource;
@@ -1410,105 +1550,140 @@
             this.tabNavigationPage3.Controls.Add(this.groupBox2);
             this.tabNavigationPage3.Controls.Add(this.groupBox1);
             this.tabNavigationPage3.Name = "tabNavigationPage3";
-            this.tabNavigationPage3.Size = new System.Drawing.Size(1341, 741);
+            this.tabNavigationPage3.Size = new System.Drawing.Size(1341, 743);
             // 
             // groupBox_NguoiDungNhomNguoiDun
             // 
-            this.groupBox_NguoiDungNhomNguoiDun.Controls.Add(this.label23);
-            this.groupBox_NguoiDungNhomNguoiDun.Controls.Add(this.nHOMNGUOIDUNGComboBox);
-            this.groupBox_NguoiDungNhomNguoiDun.Controls.Add(this.gridControl_NDNND);
+            this.groupBox_NguoiDungNhomNguoiDun.Controls.Add(this.gridControlManHinh);
+            this.groupBox_NguoiDungNhomNguoiDun.Controls.Add(this.gridControlNhomNguoiDung);
             this.groupBox_NguoiDungNhomNguoiDun.Controls.Add(this.gridControl_TaiKhoan);
-            this.groupBox_NguoiDungNhomNguoiDun.Controls.Add(this.btn_Them_NDNND);
             this.groupBox_NguoiDungNhomNguoiDun.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox_NguoiDungNhomNguoiDun.Location = new System.Drawing.Point(3, 363);
             this.groupBox_NguoiDungNhomNguoiDun.Name = "groupBox_NguoiDungNhomNguoiDun";
-            this.groupBox_NguoiDungNhomNguoiDun.Size = new System.Drawing.Size(1039, 276);
+            this.groupBox_NguoiDungNhomNguoiDun.Size = new System.Drawing.Size(1336, 370);
             this.groupBox_NguoiDungNhomNguoiDun.TabIndex = 5;
             this.groupBox_NguoiDungNhomNguoiDun.TabStop = false;
             this.groupBox_NguoiDungNhomNguoiDun.Text = "Người dùng nhóm người dùng";
             // 
-            // label23
+            // gridControlManHinh
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(27, 41);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(118, 19);
-            this.label23.TabIndex = 24;
-            this.label23.Text = "Nhóm người dùng";
+            this.gridControlManHinh.DataSource = this.mANHINHBindingSource;
+            this.gridControlManHinh.Location = new System.Drawing.Point(901, 25);
+            this.gridControlManHinh.MainView = this.gridViewManHinh;
+            this.gridControlManHinh.Name = "gridControlManHinh";
+            this.gridControlManHinh.Size = new System.Drawing.Size(415, 325);
+            this.gridControlManHinh.TabIndex = 26;
+            this.gridControlManHinh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewManHinh});
             // 
-            // nHOMNGUOIDUNGComboBox
+            // mANHINHBindingSource
             // 
-            this.nHOMNGUOIDUNGComboBox.DisplayMember = "TENNHOM";
-            this.nHOMNGUOIDUNGComboBox.FormattingEnabled = true;
-            this.nHOMNGUOIDUNGComboBox.Location = new System.Drawing.Point(151, 38);
-            this.nHOMNGUOIDUNGComboBox.Name = "nHOMNGUOIDUNGComboBox";
-            this.nHOMNGUOIDUNGComboBox.Size = new System.Drawing.Size(280, 27);
-            this.nHOMNGUOIDUNGComboBox.TabIndex = 23;
-            this.nHOMNGUOIDUNGComboBox.ValueMember = "MANHOM";
+            this.mANHINHBindingSource.DataMember = "MANHINH";
+            this.mANHINHBindingSource.DataSource = this.dataSetQLNS;
             // 
-            // gridControl_NDNND
+            // gridViewManHinh
             // 
-            this.gridControl_NDNND.DataSource = this.nGUOIDUNGNHOMNGUOIDUNGBindingSource;
-            this.gridControl_NDNND.Location = new System.Drawing.Point(597, 67);
-            this.gridControl_NDNND.MainView = this.gridView_NDNND;
-            this.gridControl_NDNND.Name = "gridControl_NDNND";
-            this.gridControl_NDNND.Size = new System.Drawing.Size(400, 200);
-            this.gridControl_NDNND.TabIndex = 23;
-            this.gridControl_NDNND.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView_NDNND});
+            this.gridViewManHinh.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMAMANHINH1,
+            this.colTENMANHINH1});
+            this.gridViewManHinh.GridControl = this.gridControlManHinh;
+            this.gridViewManHinh.Name = "gridViewManHinh";
+            this.gridViewManHinh.OptionsSelection.MultiSelect = true;
+            this.gridViewManHinh.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.gridViewManHinh.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridViewManHinh_RowCellClick);
             // 
-            // gridView_NDNND
+            // colMAMANHINH1
             // 
-            this.gridView_NDNND.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colMANV1,
-            this.colMANHOM1,
-            this.colGHICHU1});
-            this.gridView_NDNND.GridControl = this.gridControl_NDNND;
-            this.gridView_NDNND.Name = "gridView_NDNND";
+            this.colMAMANHINH1.Caption = "Mã màn  hình";
+            this.colMAMANHINH1.FieldName = "MAMANHINH";
+            this.colMAMANHINH1.Name = "colMAMANHINH1";
+            this.colMAMANHINH1.Visible = true;
+            this.colMAMANHINH1.VisibleIndex = 1;
             // 
-            // colMANV1
+            // colTENMANHINH1
             // 
-            this.colMANV1.Caption = "Mã nhân viên";
-            this.colMANV1.FieldName = "MANV";
-            this.colMANV1.Name = "colMANV1";
-            this.colMANV1.Visible = true;
-            this.colMANV1.VisibleIndex = 0;
+            this.colTENMANHINH1.Caption = "Tên màn hình";
+            this.colTENMANHINH1.FieldName = "TENMANHINH";
+            this.colTENMANHINH1.Name = "colTENMANHINH1";
+            this.colTENMANHINH1.Visible = true;
+            this.colTENMANHINH1.VisibleIndex = 2;
             // 
-            // colMANHOM1
+            // gridControlNhomNguoiDung
             // 
-            this.colMANHOM1.Caption = "Mã nhóm";
-            this.colMANHOM1.FieldName = "MANHOM";
-            this.colMANHOM1.Name = "colMANHOM1";
-            this.colMANHOM1.Visible = true;
-            this.colMANHOM1.VisibleIndex = 1;
+            this.gridControlNhomNguoiDung.DataSource = this.nHOMNGUOIDUNGBindingSource;
+            this.gridControlNhomNguoiDung.Location = new System.Drawing.Point(13, 25);
+            this.gridControlNhomNguoiDung.MainView = this.gridViewNhomNguoiDung;
+            this.gridControlNhomNguoiDung.Name = "gridControlNhomNguoiDung";
+            this.gridControlNhomNguoiDung.Size = new System.Drawing.Size(400, 325);
+            this.gridControlNhomNguoiDung.TabIndex = 25;
+            this.gridControlNhomNguoiDung.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewNhomNguoiDung});
             // 
-            // colGHICHU1
+            // nHOMNGUOIDUNGBindingSource
             // 
-            this.colGHICHU1.Caption = "Ghi chú";
-            this.colGHICHU1.FieldName = "GHICHU";
-            this.colGHICHU1.Name = "colGHICHU1";
-            this.colGHICHU1.Visible = true;
-            this.colGHICHU1.VisibleIndex = 2;
+            this.nHOMNGUOIDUNGBindingSource.DataMember = "NHOMNGUOIDUNG";
+            this.nHOMNGUOIDUNGBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // gridViewNhomNguoiDung
+            // 
+            this.gridViewNhomNguoiDung.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMANHOM2,
+            this.colTENNHOM1,
+            this.colGHICHU2});
+            this.gridViewNhomNguoiDung.GridControl = this.gridControlNhomNguoiDung;
+            this.gridViewNhomNguoiDung.Name = "gridViewNhomNguoiDung";
+            this.gridViewNhomNguoiDung.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewNhomNguoiDung_FocusedRowChanged);
+            // 
+            // colMANHOM2
+            // 
+            this.colMANHOM2.Caption = "Mã nhóm";
+            this.colMANHOM2.FieldName = "MANHOM";
+            this.colMANHOM2.Name = "colMANHOM2";
+            this.colMANHOM2.Visible = true;
+            this.colMANHOM2.VisibleIndex = 0;
+            // 
+            // colTENNHOM1
+            // 
+            this.colTENNHOM1.Caption = "Tên nhóm";
+            this.colTENNHOM1.FieldName = "TENNHOM";
+            this.colTENNHOM1.Name = "colTENNHOM1";
+            this.colTENNHOM1.Visible = true;
+            this.colTENNHOM1.VisibleIndex = 1;
+            // 
+            // colGHICHU2
+            // 
+            this.colGHICHU2.Caption = "Ghi chú";
+            this.colGHICHU2.FieldName = "GHICHU";
+            this.colGHICHU2.Name = "colGHICHU2";
+            this.colGHICHU2.Visible = true;
+            this.colGHICHU2.VisibleIndex = 2;
             // 
             // gridControl_TaiKhoan
             // 
             this.gridControl_TaiKhoan.DataSource = this.tAIKHOANBindingSource;
-            this.gridControl_TaiKhoan.Location = new System.Drawing.Point(31, 71);
+            this.gridControl_TaiKhoan.Location = new System.Drawing.Point(459, 25);
             this.gridControl_TaiKhoan.MainView = this.gridView_TaiKhoan;
             this.gridControl_TaiKhoan.Name = "gridControl_TaiKhoan";
-            this.gridControl_TaiKhoan.Size = new System.Drawing.Size(400, 200);
+            this.gridControl_TaiKhoan.Size = new System.Drawing.Size(400, 325);
             this.gridControl_TaiKhoan.TabIndex = 22;
             this.gridControl_TaiKhoan.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_TaiKhoan});
+            // 
+            // tAIKHOANBindingSource
+            // 
+            this.tAIKHOANBindingSource.DataMember = "TAIKHOAN";
+            this.tAIKHOANBindingSource.DataSource = this.dataSetQLNS;
             // 
             // gridView_TaiKhoan
             // 
             this.gridView_TaiKhoan.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colMANV,
-            this.colMATKHAU,
-            this.colHOATDONG});
+            this.colMATKHAU});
             this.gridView_TaiKhoan.GridControl = this.gridControl_TaiKhoan;
             this.gridView_TaiKhoan.Name = "gridView_TaiKhoan";
+            this.gridView_TaiKhoan.OptionsSelection.MultiSelect = true;
+            this.gridView_TaiKhoan.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+              this.gridView_TaiKhoan.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView_TaiKhoan_RowCellClick);
             // 
             // colMANV
             // 
@@ -1516,7 +1691,7 @@
             this.colMANV.FieldName = "MANV";
             this.colMANV.Name = "colMANV";
             this.colMANV.Visible = true;
-            this.colMANV.VisibleIndex = 0;
+            this.colMANV.VisibleIndex = 1;
             // 
             // colMATKHAU
             // 
@@ -1524,24 +1699,7 @@
             this.colMATKHAU.FieldName = "MATKHAU";
             this.colMATKHAU.Name = "colMATKHAU";
             this.colMATKHAU.Visible = true;
-            this.colMATKHAU.VisibleIndex = 1;
-            // 
-            // colHOATDONG
-            // 
-            this.colHOATDONG.Caption = "Hoạt động";
-            this.colHOATDONG.FieldName = "HOATDONG";
-            this.colHOATDONG.Name = "colHOATDONG";
-            this.colHOATDONG.Visible = true;
-            this.colHOATDONG.VisibleIndex = 2;
-            // 
-            // btn_Them_NDNND
-            // 
-            this.btn_Them_NDNND.Location = new System.Drawing.Point(473, 119);
-            this.btn_Them_NDNND.Name = "btn_Them_NDNND";
-            this.btn_Them_NDNND.Size = new System.Drawing.Size(75, 29);
-            this.btn_Them_NDNND.TabIndex = 19;
-            this.btn_Them_NDNND.Text = "Thêm";
-            this.btn_Them_NDNND.UseVisualStyleBackColor = true;
+            this.colMATKHAU.VisibleIndex = 2;
             // 
             // groupBox2
             // 
@@ -1561,13 +1719,33 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Màn Hình";
             // 
+            // mAMANHINHTextEdit
+            // 
+            this.mAMANHINHTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.mANHINHBindingSource, "MAMANHINH", true));
+            this.mAMANHINHTextEdit.Location = new System.Drawing.Point(122, 29);
+            this.mAMANHINHTextEdit.Name = "mAMANHINHTextEdit";
+            this.mAMANHINHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mAMANHINHTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mAMANHINHTextEdit.Size = new System.Drawing.Size(207, 26);
+            this.mAMANHINHTextEdit.TabIndex = 20;
+            // 
+            // tENMANHINHTextEdit
+            // 
+            this.tENMANHINHTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.mANHINHBindingSource, "TENMANHINH", true));
+            this.tENMANHINHTextEdit.Location = new System.Drawing.Point(122, 64);
+            this.tENMANHINHTextEdit.Name = "tENMANHINHTextEdit";
+            this.tENMANHINHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tENMANHINHTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tENMANHINHTextEdit.Size = new System.Drawing.Size(207, 26);
+            this.tENMANHINHTextEdit.TabIndex = 22;
+            // 
             // gridControl_ManHinh
             // 
             this.gridControl_ManHinh.DataSource = this.mANHINHBindingSource;
-            this.gridControl_ManHinh.Location = new System.Drawing.Point(31, 102);
+            this.gridControl_ManHinh.Location = new System.Drawing.Point(6, 102);
             this.gridControl_ManHinh.MainView = this.gridView_ManHinh;
             this.gridControl_ManHinh.Name = "gridControl_ManHinh";
-            this.gridControl_ManHinh.Size = new System.Drawing.Size(541, 200);
+            this.gridControl_ManHinh.Size = new System.Drawing.Size(583, 246);
             this.gridControl_ManHinh.TabIndex = 19;
             this.gridControl_ManHinh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_ManHinh});
@@ -1604,6 +1782,7 @@
             this.btn_Sua_ManHinh.TabIndex = 18;
             this.btn_Sua_ManHinh.Text = "Sửa";
             this.btn_Sua_ManHinh.UseVisualStyleBackColor = true;
+            this.btn_Sua_ManHinh.Click += new System.EventHandler(this.btn_Sua_ManHinh_Click);
             // 
             // btn_Xoa_ManHinh
             // 
@@ -1613,6 +1792,7 @@
             this.btn_Xoa_ManHinh.TabIndex = 17;
             this.btn_Xoa_ManHinh.Text = "Xóa";
             this.btn_Xoa_ManHinh.UseVisualStyleBackColor = true;
+            this.btn_Xoa_ManHinh.Click += new System.EventHandler(this.btn_Xoa_ManHinh_Click);
             // 
             // btn_Them_ManHinh
             // 
@@ -1622,6 +1802,7 @@
             this.btn_Them_ManHinh.TabIndex = 16;
             this.btn_Them_ManHinh.Text = "Thêm";
             this.btn_Them_ManHinh.UseVisualStyleBackColor = true;
+            this.btn_Them_ManHinh.Click += new System.EventHandler(this.btn_Them_ManHinh_Click);
             // 
             // label24
             // 
@@ -1643,7 +1824,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.gridControl1);
+            this.groupBox1.Controls.Add(this.gridControl_NhomNguoiDung);
             this.groupBox1.Controls.Add(this.mANHOMComboBox);
             this.groupBox1.Controls.Add(this.tENNHOMTextEdit);
             this.groupBox1.Controls.Add(this.gHICHUTextEdit);
@@ -1661,95 +1842,49 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhóm người dùng";
             // 
-            // label26
+            // gridControl_NhomNguoiDung
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(27, 102);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(55, 19);
-            this.label26.TabIndex = 19;
-            this.label26.Text = "Ghi chú";
+            this.gridControl_NhomNguoiDung.DataSource = this.nHOMNGUOIDUNGBindingSource;
+            this.gridControl_NhomNguoiDung.Location = new System.Drawing.Point(7, 136);
+            this.gridControl_NhomNguoiDung.MainView = this.gridView_NhomNguoiDung;
+            this.gridControl_NhomNguoiDung.Name = "gridControl_NhomNguoiDung";
+            this.gridControl_NhomNguoiDung.Size = new System.Drawing.Size(582, 212);
+            this.gridControl_NhomNguoiDung.TabIndex = 27;
+            this.gridControl_NhomNguoiDung.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView_NhomNguoiDung});
             // 
-            // btn_Sua_NhomNguoiDung
+            // gridView_NhomNguoiDung
             // 
-            this.btn_Sua_NhomNguoiDung.Location = new System.Drawing.Point(494, 62);
-            this.btn_Sua_NhomNguoiDung.Name = "btn_Sua_NhomNguoiDung";
-            this.btn_Sua_NhomNguoiDung.Size = new System.Drawing.Size(75, 29);
-            this.btn_Sua_NhomNguoiDung.TabIndex = 18;
-            this.btn_Sua_NhomNguoiDung.Text = "Sửa";
-            this.btn_Sua_NhomNguoiDung.UseVisualStyleBackColor = true;
+            this.gridView_NhomNguoiDung.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMANHOM,
+            this.colTENNHOM,
+            this.colGHICHU});
+            this.gridView_NhomNguoiDung.GridControl = this.gridControl_NhomNguoiDung;
+            this.gridView_NhomNguoiDung.Name = "gridView_NhomNguoiDung";
             // 
-            // btn_Xoa_NhomNguoiDung
+            // colMANHOM
             // 
-            this.btn_Xoa_NhomNguoiDung.Location = new System.Drawing.Point(413, 62);
-            this.btn_Xoa_NhomNguoiDung.Name = "btn_Xoa_NhomNguoiDung";
-            this.btn_Xoa_NhomNguoiDung.Size = new System.Drawing.Size(75, 29);
-            this.btn_Xoa_NhomNguoiDung.TabIndex = 17;
-            this.btn_Xoa_NhomNguoiDung.Text = "Xóa";
-            this.btn_Xoa_NhomNguoiDung.UseVisualStyleBackColor = true;
+            this.colMANHOM.Caption = "Mã nhóm";
+            this.colMANHOM.FieldName = "MANHOM";
+            this.colMANHOM.Name = "colMANHOM";
+            this.colMANHOM.Visible = true;
+            this.colMANHOM.VisibleIndex = 0;
             // 
-            // btn_Them_NhomNguoiDung
+            // colTENNHOM
             // 
-            this.btn_Them_NhomNguoiDung.Location = new System.Drawing.Point(332, 62);
-            this.btn_Them_NhomNguoiDung.Name = "btn_Them_NhomNguoiDung";
-            this.btn_Them_NhomNguoiDung.Size = new System.Drawing.Size(75, 29);
-            this.btn_Them_NhomNguoiDung.TabIndex = 16;
-            this.btn_Them_NhomNguoiDung.Text = "Thêm";
-            this.btn_Them_NhomNguoiDung.UseVisualStyleBackColor = true;
+            this.colTENNHOM.Caption = "Tên nhóm";
+            this.colTENNHOM.FieldName = "TENNHOM";
+            this.colTENNHOM.Name = "colTENNHOM";
+            this.colTENNHOM.Visible = true;
+            this.colTENNHOM.VisibleIndex = 1;
             // 
-            // label27
+            // colGHICHU
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(27, 67);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(69, 19);
-            this.label27.TabIndex = 13;
-            this.label27.Text = "Tên nhóm";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(27, 33);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(67, 19);
-            this.label28.TabIndex = 12;
-            this.label28.Text = "Mã nhóm";
-            // 
-            // nHOMNGUOIDUNGBindingSource
-            // 
-            this.nHOMNGUOIDUNGBindingSource.DataMember = "NHOMNGUOIDUNG";
-            this.nHOMNGUOIDUNGBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // nHOMNGUOIDUNGTableAdapter
-            // 
-            this.nHOMNGUOIDUNGTableAdapter.ClearBeforeFill = true;
-            // 
-            // mANHINHBindingSource
-            // 
-            this.mANHINHBindingSource.DataMember = "MANHINH";
-            this.mANHINHBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // mANHINHTableAdapter
-            // 
-            this.mANHINHTableAdapter.ClearBeforeFill = true;
-            // 
-            // nGUOIDUNGNHOMNGUOIDUNGBindingSource
-            // 
-            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource.DataMember = "NGUOIDUNGNHOMNGUOIDUNG";
-            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // nGUOIDUNGNHOMNGUOIDUNGTableAdapter
-            // 
-            this.nGUOIDUNGNHOMNGUOIDUNGTableAdapter.ClearBeforeFill = true;
-            // 
-            // tAIKHOANBindingSource
-            // 
-            this.tAIKHOANBindingSource.DataMember = "TAIKHOAN";
-            this.tAIKHOANBindingSource.DataSource = this.dataSetQLNS;
-            // 
-            // tAIKHOANTableAdapter
-            // 
-            this.tAIKHOANTableAdapter.ClearBeforeFill = true;
+            this.colGHICHU.Caption = "Ghi chú";
+            this.colGHICHU.FieldName = "GHICHU";
+            this.colGHICHU.Name = "colGHICHU";
+            this.colGHICHU.Visible = true;
+            this.colGHICHU.VisibleIndex = 2;
             // 
             // mANHOMComboBox
             // 
@@ -1781,221 +1916,112 @@
             this.gHICHUTextEdit.Size = new System.Drawing.Size(208, 26);
             this.gHICHUTextEdit.TabIndex = 26;
             // 
-            // cHUCVUBindingSource
+            // label26
             // 
-            this.cHUCVUBindingSource.DataMember = "CHUCVU";
-            this.cHUCVUBindingSource.DataSource = this.dataSetQLNS;
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(27, 102);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(55, 19);
+            this.label26.TabIndex = 19;
+            this.label26.Text = "Ghi chú";
+            // 
+            // btn_Sua_NhomNguoiDung
+            // 
+            this.btn_Sua_NhomNguoiDung.Location = new System.Drawing.Point(494, 62);
+            this.btn_Sua_NhomNguoiDung.Name = "btn_Sua_NhomNguoiDung";
+            this.btn_Sua_NhomNguoiDung.Size = new System.Drawing.Size(75, 29);
+            this.btn_Sua_NhomNguoiDung.TabIndex = 18;
+            this.btn_Sua_NhomNguoiDung.Text = "Sửa";
+            this.btn_Sua_NhomNguoiDung.UseVisualStyleBackColor = true;
+            this.btn_Sua_NhomNguoiDung.Click += new System.EventHandler(this.btn_Sua_NhomNguoiDung_Click);
+            // 
+            // btn_Xoa_NhomNguoiDung
+            // 
+            this.btn_Xoa_NhomNguoiDung.Location = new System.Drawing.Point(413, 62);
+            this.btn_Xoa_NhomNguoiDung.Name = "btn_Xoa_NhomNguoiDung";
+            this.btn_Xoa_NhomNguoiDung.Size = new System.Drawing.Size(75, 29);
+            this.btn_Xoa_NhomNguoiDung.TabIndex = 17;
+            this.btn_Xoa_NhomNguoiDung.Text = "Xóa";
+            this.btn_Xoa_NhomNguoiDung.UseVisualStyleBackColor = true;
+            this.btn_Xoa_NhomNguoiDung.Click += new System.EventHandler(this.btn_Xoa_NhomNguoiDung_Click);
+            // 
+            // btn_Them_NhomNguoiDung
+            // 
+            this.btn_Them_NhomNguoiDung.Location = new System.Drawing.Point(332, 62);
+            this.btn_Them_NhomNguoiDung.Name = "btn_Them_NhomNguoiDung";
+            this.btn_Them_NhomNguoiDung.Size = new System.Drawing.Size(75, 29);
+            this.btn_Them_NhomNguoiDung.TabIndex = 16;
+            this.btn_Them_NhomNguoiDung.Text = "Thêm";
+            this.btn_Them_NhomNguoiDung.UseVisualStyleBackColor = true;
+            this.btn_Them_NhomNguoiDung.Click += new System.EventHandler(this.btn_Them_NhomNguoiDung_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(27, 67);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(69, 19);
+            this.label27.TabIndex = 13;
+            this.label27.Text = "Tên nhóm";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(27, 33);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(67, 19);
+            this.label28.TabIndex = 12;
+            this.label28.Text = "Mã nhóm";
+            // 
+            // nGUOIDUNGNHOMNGUOIDUNGBindingSource
+            // 
+            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource.DataMember = "NGUOIDUNGNHOMNGUOIDUNG";
+            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // nHOMNGUOIDUNGTableAdapter
+            // 
+            this.nHOMNGUOIDUNGTableAdapter.ClearBeforeFill = true;
+            // 
+            // mANHINHTableAdapter
+            // 
+            this.mANHINHTableAdapter.ClearBeforeFill = true;
+            // 
+            // nGUOIDUNGNHOMNGUOIDUNGTableAdapter
+            // 
+            this.nGUOIDUNGNHOMNGUOIDUNGTableAdapter.ClearBeforeFill = true;
+            // 
+            // tAIKHOANTableAdapter
+            // 
+            this.tAIKHOANTableAdapter.ClearBeforeFill = true;
             // 
             // cHUCVUTableAdapter
             // 
             this.cHUCVUTableAdapter.ClearBeforeFill = true;
             // 
-            // gridControl1
-            // 
-            this.gridControl1.DataSource = this.nHOMNGUOIDUNGBindingSource;
-            this.gridControl1.Location = new System.Drawing.Point(7, 136);
-            this.gridControl1.MainView = this.gridView2;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(582, 212);
-            this.gridControl1.TabIndex = 27;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2});
-            // 
-            // gridView2
-            // 
-            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colMANHOM,
-            this.colTENNHOM,
-            this.colGHICHU});
-            this.gridView2.GridControl = this.gridControl1;
-            this.gridView2.Name = "gridView2";
-            // 
-            // colMANHOM
-            // 
-            this.colMANHOM.FieldName = "MANHOM";
-            this.colMANHOM.Name = "colMANHOM";
-            this.colMANHOM.Visible = true;
-            this.colMANHOM.VisibleIndex = 0;
-            // 
-            // colTENNHOM
-            // 
-            this.colTENNHOM.FieldName = "TENNHOM";
-            this.colTENNHOM.Name = "colTENNHOM";
-            this.colTENNHOM.Visible = true;
-            this.colTENNHOM.VisibleIndex = 1;
-            // 
-            // colGHICHU
-            // 
-            this.colGHICHU.FieldName = "GHICHU";
-            this.colGHICHU.Name = "colGHICHU";
-            this.colGHICHU.Visible = true;
-            this.colGHICHU.VisibleIndex = 2;
-            // 
-            // qUOCTICHBindingSource
-            // 
-            this.qUOCTICHBindingSource.DataMember = "QUOCTICH";
-            this.qUOCTICHBindingSource.DataSource = this.dataSetQLNS;
-            // 
             // qUOCTICHTableAdapter
             // 
             this.qUOCTICHTableAdapter.ClearBeforeFill = true;
-            // 
-            // tONGIAOBindingSource
-            // 
-            this.tONGIAOBindingSource.DataMember = "TONGIAO";
-            this.tONGIAOBindingSource.DataSource = this.dataSetQLNS;
             // 
             // tONGIAOTableAdapter
             // 
             this.tONGIAOTableAdapter.ClearBeforeFill = true;
             // 
-            // pHONGBANBindingSource
-            // 
-            this.pHONGBANBindingSource.DataMember = "PHONGBAN";
-            this.pHONGBANBindingSource.DataSource = this.dataSetQLNS;
-            // 
             // pHONGBANTableAdapter
             // 
             this.pHONGBANTableAdapter.ClearBeforeFill = true;
-            // 
-            // dANTOCBindingSource
-            // 
-            this.dANTOCBindingSource.DataMember = "DANTOC";
-            this.dANTOCBindingSource.DataSource = this.dataSetQLNS;
             // 
             // dANTOCTableAdapter
             // 
             this.dANTOCTableAdapter.ClearBeforeFill = true;
             // 
-            // mAMANHINHTextEdit
+            // pHANQUYENBindingSource
             // 
-            this.mAMANHINHTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.mANHINHBindingSource, "MAMANHINH", true));
-            this.mAMANHINHTextEdit.Location = new System.Drawing.Point(122, 29);
-            this.mAMANHINHTextEdit.Name = "mAMANHINHTextEdit";
-            this.mAMANHINHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mAMANHINHTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mAMANHINHTextEdit.Size = new System.Drawing.Size(207, 26);
-            this.mAMANHINHTextEdit.TabIndex = 20;
+            this.pHANQUYENBindingSource.DataMember = "PHANQUYEN";
+            this.pHANQUYENBindingSource.DataSource = this.dataSetQLNS;
             // 
-            // tENMANHINHTextEdit
+            // pHANQUYENTableAdapter
             // 
-            this.tENMANHINHTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.mANHINHBindingSource, "TENMANHINH", true));
-            this.tENMANHINHTextEdit.Location = new System.Drawing.Point(122, 64);
-            this.tENMANHINHTextEdit.Name = "tENMANHINHTextEdit";
-            this.tENMANHINHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tENMANHINHTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tENMANHINHTextEdit.Size = new System.Drawing.Size(207, 26);
-            this.tENMANHINHTextEdit.TabIndex = 22;
-            // 
-            // mAPHONGBANTextEdit
-            // 
-            this.mAPHONGBANTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pHONGBANBindingSource, "MAPHONGBAN", true));
-            this.mAPHONGBANTextEdit.Location = new System.Drawing.Point(149, 34);
-            this.mAPHONGBANTextEdit.Name = "mAPHONGBANTextEdit";
-            this.mAPHONGBANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mAPHONGBANTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mAPHONGBANTextEdit.Size = new System.Drawing.Size(202, 26);
-            this.mAPHONGBANTextEdit.TabIndex = 26;
-            // 
-            // tENPHONGBANTextEdit
-            // 
-            this.tENPHONGBANTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pHONGBANBindingSource, "TENPHONGBAN", true));
-            this.tENPHONGBANTextEdit.Location = new System.Drawing.Point(149, 66);
-            this.tENPHONGBANTextEdit.Name = "tENPHONGBANTextEdit";
-            this.tENPHONGBANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tENPHONGBANTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tENPHONGBANTextEdit.Size = new System.Drawing.Size(202, 26);
-            this.tENPHONGBANTextEdit.TabIndex = 28;
-            // 
-            // mATRUONGPHONGTextEdit
-            // 
-            this.mATRUONGPHONGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pHONGBANBindingSource, "MATRUONGPHONG", true));
-            this.mATRUONGPHONGTextEdit.Location = new System.Drawing.Point(149, 98);
-            this.mATRUONGPHONGTextEdit.Name = "mATRUONGPHONGTextEdit";
-            this.mATRUONGPHONGTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mATRUONGPHONGTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mATRUONGPHONGTextEdit.Size = new System.Drawing.Size(202, 26);
-            this.mATRUONGPHONGTextEdit.TabIndex = 30;
-            // 
-            // mATONGIAOTextEdit
-            // 
-            this.mATONGIAOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tONGIAOBindingSource, "MATONGIAO", true));
-            this.mATONGIAOTextEdit.Location = new System.Drawing.Point(124, 24);
-            this.mATONGIAOTextEdit.Name = "mATONGIAOTextEdit";
-            this.mATONGIAOTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mATONGIAOTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mATONGIAOTextEdit.Size = new System.Drawing.Size(202, 26);
-            this.mATONGIAOTextEdit.TabIndex = 23;
-            // 
-            // tENTONGIAOTextEdit
-            // 
-            this.tENTONGIAOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tONGIAOBindingSource, "TENTONGIAO", true));
-            this.tENTONGIAOTextEdit.Location = new System.Drawing.Point(124, 56);
-            this.tENTONGIAOTextEdit.Name = "tENTONGIAOTextEdit";
-            this.tENTONGIAOTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tENTONGIAOTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tENTONGIAOTextEdit.Size = new System.Drawing.Size(202, 26);
-            this.tENTONGIAOTextEdit.TabIndex = 25;
-            // 
-            // mADANTOCTextEdit
-            // 
-            this.mADANTOCTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.dANTOCBindingSource, "MADANTOC", true));
-            this.mADANTOCTextEdit.Location = new System.Drawing.Point(105, 24);
-            this.mADANTOCTextEdit.Name = "mADANTOCTextEdit";
-            this.mADANTOCTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mADANTOCTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mADANTOCTextEdit.Size = new System.Drawing.Size(221, 26);
-            this.mADANTOCTextEdit.TabIndex = 23;
-            // 
-            // tENDANTOCTextEdit
-            // 
-            this.tENDANTOCTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.dANTOCBindingSource, "TENDANTOC", true));
-            this.tENDANTOCTextEdit.Location = new System.Drawing.Point(105, 57);
-            this.tENDANTOCTextEdit.Name = "tENDANTOCTextEdit";
-            this.tENDANTOCTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tENDANTOCTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tENDANTOCTextEdit.Size = new System.Drawing.Size(221, 26);
-            this.tENDANTOCTextEdit.TabIndex = 25;
-            // 
-            // mAQUOCTICHTextEdit
-            // 
-            this.mAQUOCTICHTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.qUOCTICHBindingSource, "MAQUOCTICH", true));
-            this.mAQUOCTICHTextEdit.Location = new System.Drawing.Point(115, 26);
-            this.mAQUOCTICHTextEdit.Name = "mAQUOCTICHTextEdit";
-            this.mAQUOCTICHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mAQUOCTICHTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mAQUOCTICHTextEdit.Size = new System.Drawing.Size(211, 26);
-            this.mAQUOCTICHTextEdit.TabIndex = 22;
-            // 
-            // tENQUOCTICHTextEdit
-            // 
-            this.tENQUOCTICHTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.qUOCTICHBindingSource, "TENQUOCTICH", true));
-            this.tENQUOCTICHTextEdit.Location = new System.Drawing.Point(115, 59);
-            this.tENQUOCTICHTextEdit.Name = "tENQUOCTICHTextEdit";
-            this.tENQUOCTICHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tENQUOCTICHTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tENQUOCTICHTextEdit.Size = new System.Drawing.Size(211, 26);
-            this.tENQUOCTICHTextEdit.TabIndex = 24;
-            // 
-            // mACHUCVUTextEdit
-            // 
-            this.mACHUCVUTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.cHUCVUBindingSource, "MACHUCVU", true));
-            this.mACHUCVUTextEdit.Location = new System.Drawing.Point(110, 21);
-            this.mACHUCVUTextEdit.Name = "mACHUCVUTextEdit";
-            this.mACHUCVUTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mACHUCVUTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mACHUCVUTextEdit.Size = new System.Drawing.Size(230, 26);
-            this.mACHUCVUTextEdit.TabIndex = 23;
-            // 
-            // tENCHUCVUTextEdit
-            // 
-            this.tENCHUCVUTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.cHUCVUBindingSource, "TENCHUCVU", true));
-            this.tENCHUCVUTextEdit.Location = new System.Drawing.Point(110, 55);
-            this.tENCHUCVUTextEdit.Name = "tENCHUCVUTextEdit";
-            this.tENCHUCVUTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tENCHUCVUTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tENCHUCVUTextEdit.Size = new System.Drawing.Size(230, 26);
-            this.tENCHUCVUTextEdit.TabIndex = 25;
+            this.pHANQUYENTableAdapter.ClearBeforeFill = true;
             // 
             // frm_NhapLieu_KT_KL
             // 
@@ -2003,7 +2029,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabPane1);
             this.Name = "frm_NhapLieu_KT_KL";
-            this.Size = new System.Drawing.Size(1346, 768);
+            this.Size = new System.Drawing.Size(1346, 770);
             this.Load += new System.EventHandler(this.frm_NhapLieu_KT_KL_Load);
             this.groupBox_KhenThuong.ResumeLayout(false);
             this.groupBox_KhenThuong.PerformLayout();
@@ -2028,63 +2054,65 @@
             this.tabNavigationPage2.ResumeLayout(false);
             this.groupBox_PhongBan.ResumeLayout(false);
             this.groupBox_PhongBan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mAPHONGBANTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENPHONGBANTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRUONGPHONGTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_PhongBan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_PhongBan)).EndInit();
             this.groupBox_ChucVu.ResumeLayout(false);
             this.groupBox_ChucVu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mACHUCVUTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENCHUCVUTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_ChucVu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.groupBox_QuocTich.ResumeLayout(false);
             this.groupBox_QuocTich.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mAQUOCTICHTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENQUOCTICHTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_QuocTich)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_QuocTich)).EndInit();
             this.groupBox_TonGiao.ResumeLayout(false);
             this.groupBox_TonGiao.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mATONGIAOTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tONGIAOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENTONGIAOTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_TonGiao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_TonGiao)).EndInit();
             this.groupBox_DanToc.ResumeLayout(false);
             this.groupBox_DanToc.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mADANTOCTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANTOCBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENDANTOCTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_DanToc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_DanToc)).EndInit();
             this.tabNavigationPage3.ResumeLayout(false);
             this.groupBox_NguoiDungNhomNguoiDun.ResumeLayout(false);
-            this.groupBox_NguoiDungNhomNguoiDun.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl_NDNND)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView_NDNND)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlManHinh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mANHINHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewManHinh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlNhomNguoiDung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewNhomNguoiDung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_TaiKhoan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_TaiKhoan)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mAMANHINHTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENMANHINHTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_ManHinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_ManHinh)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mANHINHBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tAIKHOANBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_NhomNguoiDung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_NhomNguoiDung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tENNHOMTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gHICHUTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUCVUBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qUOCTICHBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tONGIAOBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBANBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANTOCBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAMANHINHTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENMANHINHTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAPHONGBANTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENPHONGBANTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRUONGPHONGTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATONGIAOTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENTONGIAOTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mADANTOCTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENDANTOCTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAQUOCTICHTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENQUOCTICHTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mACHUCVUTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENCHUCVUTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2208,19 +2236,10 @@
         private System.Windows.Forms.Label label22;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage3;
         private System.Windows.Forms.GroupBox groupBox_NguoiDungNhomNguoiDun;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.ComboBox nHOMNGUOIDUNGComboBox;
-        private DevExpress.XtraGrid.GridControl gridControl_NDNND;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView_NDNND;
-        private DevExpress.XtraGrid.Columns.GridColumn colMANV1;
-        private DevExpress.XtraGrid.Columns.GridColumn colMANHOM1;
-        private DevExpress.XtraGrid.Columns.GridColumn colGHICHU1;
         private DevExpress.XtraGrid.GridControl gridControl_TaiKhoan;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView_TaiKhoan;
         private DevExpress.XtraGrid.Columns.GridColumn colMANV;
         private DevExpress.XtraGrid.Columns.GridColumn colMATKHAU;
-        private DevExpress.XtraGrid.Columns.GridColumn colHOATDONG;
-        private System.Windows.Forms.Button btn_Them_NDNND;
         private System.Windows.Forms.GroupBox groupBox2;
         private DevExpress.XtraGrid.GridControl gridControl_ManHinh;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView_ManHinh;
@@ -2250,8 +2269,8 @@
         private DevExpress.XtraEditors.TextEdit tENNHOMTextEdit;
         private DevExpress.XtraEditors.TextEdit gHICHUTextEdit;
         private System.Windows.Forms.BindingSource cHUCVUBindingSource;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.GridControl gridControl_NhomNguoiDung;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView_NhomNguoiDung;
         private DevExpress.XtraGrid.Columns.GridColumn colMANHOM;
         private DevExpress.XtraGrid.Columns.GridColumn colTENNHOM;
         private DevExpress.XtraGrid.Columns.GridColumn colGHICHU;
@@ -2277,5 +2296,16 @@
         private DevExpress.XtraEditors.TextEdit tENDANTOCTextEdit;
         private DevExpress.XtraEditors.TextEdit mACHUCVUTextEdit;
         private DevExpress.XtraEditors.TextEdit tENCHUCVUTextEdit;
+        private DevExpress.XtraGrid.GridControl gridControlManHinh;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewManHinh;
+        private DevExpress.XtraGrid.Columns.GridColumn colMAMANHINH1;
+        private DevExpress.XtraGrid.Columns.GridColumn colTENMANHINH1;
+        private DevExpress.XtraGrid.GridControl gridControlNhomNguoiDung;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewNhomNguoiDung;
+        private DevExpress.XtraGrid.Columns.GridColumn colMANHOM2;
+        private DevExpress.XtraGrid.Columns.GridColumn colTENNHOM1;
+        private DevExpress.XtraGrid.Columns.GridColumn colGHICHU2;
+        private System.Windows.Forms.BindingSource pHANQUYENBindingSource;
+        private DataSetQLNSTableAdapters.PHANQUYENTableAdapter pHANQUYENTableAdapter;
     }
 }

@@ -100,16 +100,23 @@ namespace QuanLy_NhanSu
 
         private void btn_Xoa_NhomNguoiDung_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-                return;
-            int cathu = gridView_NhomNguoiDung.FocusedRowHandle;
-            string sql_manhom = gridView_NhomNguoiDung.GetRowCellValue(cathu, "MANHOM").ToString();
-            string sql_tennhom = gridView_NhomNguoiDung.GetRowCellValue(cathu, "TENNHOM").ToString();
-            string sql_ghichu = gridView_NhomNguoiDung.GetRowCellValue(cathu, "GHICHU").ToString();
-            MessageBox.Show(sql_manhom);
-            nHOMNGUOIDUNGTableAdapter.Delete(sql_manhom, sql_tennhom,sql_ghichu);
-            load_dataNhomNguoiDung();
-        }
+            if (gridView_NhomNguoiDung.FocusedRowHandle != null)
+            {
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    return;
+                int cathu = gridView_NhomNguoiDung.FocusedRowHandle;
+                string sql_manhom = gridView_NhomNguoiDung.GetRowCellValue(cathu, "MANHOM").ToString();
+                string sql_tennhom = gridView_NhomNguoiDung.GetRowCellValue(cathu, "TENNHOM").ToString();
+                string sql_ghichu = gridView_NhomNguoiDung.GetRowCellValue(cathu, "GHICHU").ToString();
+                MessageBox.Show(sql_manhom);
+                nHOMNGUOIDUNGTableAdapter.Delete(sql_manhom, sql_tennhom, sql_ghichu);
+                load_dataNhomNguoiDung();
+            }
+            else
+            {
+                MessageBox.Show("chọn dòng muốn xóa !!!");
+            }
+}
 
         private void btn_Sua_NhomNguoiDung_Click(object sender, EventArgs e)
         {
