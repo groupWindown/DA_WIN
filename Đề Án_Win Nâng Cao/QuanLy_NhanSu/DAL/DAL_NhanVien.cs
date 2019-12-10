@@ -160,5 +160,25 @@ namespace DAL
                 return false;
             }
         }
+        public bool ThemBaoHiem(BAOHIEM p)
+        {
+            try
+            {
+                linq.BAOHIEMs.InsertOnSubmit(p);
+                linq.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool ThemChiTietHopDong(CHITIETHOPDONG p)
+        {
+            linQDataContext chitiet1 = new linQDataContext();
+            chitiet1.CHITIETHOPDONGs.InsertOnSubmit(p);
+            chitiet1.SubmitChanges();
+            return true;
+        }
     }
 }

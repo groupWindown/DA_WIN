@@ -100,5 +100,34 @@ namespace BLL
         {
             return dAL_NhanVien.SuaNhanVien(pNhanVien);
         }
+        public bool BLL_ThemBaoHiem(BAOHIEM p)
+        {
+            return dAL_NhanVien.ThemBaoHiem(p);
+        }
+        public string sinhtudongMaHopDong(int v)
+        {
+            int number = dAL_Load.loadChiTietHopDong().Count + 1 + v;
+            int value = number;
+            int strick = 1;
+            while (number < 9999)
+            {
+                number = value + strick;
+                strick *= 10;
+            }
+            string str = "CTHD" + number.ToString().Substring(1, 4);
+            if (!dAL_KiemTra.kiemTraTrungMaHopDong(str))
+            {
+                return sinhtudongMaQLNV(++v);
+            }
+            else
+            {
+                return str;
+            }
+
+        }
+        public bool BLL_ThemChiTietHopDong(CHITIETHOPDONG p)
+        {
+            return dAL_NhanVien.ThemChiTietHopDong(p);
+        }
     }
 }

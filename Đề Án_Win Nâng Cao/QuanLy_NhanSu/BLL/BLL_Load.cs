@@ -107,5 +107,9 @@ namespace BLL
         {
             return dal.loadBaoHiemNV(pMaNV);
         }
+        public List<HOPDONGLAODONG> BLL_loadHopDong()
+        {
+            return dal.loadHopDong();
+        }
     }
 }

@@ -379,8 +379,16 @@ namespace QuanLy_NhanSu
 
         private void btnGiaHan_Click(object sender, EventArgs e)
         {
-            frm_GiaHanHopDong frm = new frm_GiaHanHopDong();
-            frm.ShowDialog();
+            if (Properties.Settings.Default.controldongclickmaNV != "")
+            {
+                frm_GiaHanHopDong frm = new frm_GiaHanHopDong(Properties.Settings.Default.controldongclickmaNV, gridViewThongtinHD.RowCount + 1);
+                frm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn nhân viên để tiếp tục");
+                tabNavigationPage6.Select();
+            }
         }
 
         private void tabNavigationPage4_TabIndexChanged(object sender, EventArgs e)
@@ -435,6 +443,8 @@ namespace QuanLy_NhanSu
 
         private void tabPane1_SelectedPageIndexChanged(object sender, EventArgs e)
         {
+            gridControlThongtinHD.DataSource=null;
+            gridControlBaoHiem.DataSource=null;
             gridControlThongtinHD.DataSource = bLL_Load.BLL_loadHopDongNhanVien(Properties.Settings.Default.controldongclickmaNV);
             gridControlBaoHiem.DataSource= bLL_Load.BLL_loadBaoHiemNV(Properties.Settings.Default.controldongclickmaNV);
         }
@@ -445,36 +455,79 @@ namespace QuanLy_NhanSu
 
         private void gridViewThongtinHD_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtHoTenThongtin.Text = bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).HOTEN.ToString();
-            txtMaHopDong.Text = gridViewThongtinHD.GetFocusedRowCellValue("MaHopDong").ToString();
-            txtKyLanThu.Text = gridViewThongtinHD.GetFocusedRowCellValue("KyLanThu").ToString();
-            txtLuongThoaThuan.Text = gridViewThongtinHD.GetFocusedRowCellValue("LuongThoaThuan").ToString();
-            cboChucVuThongtin.Text = bLL_Load.BLL_loadTenChucVu(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MACHUCVU.ToString());
-            cboPhongbanThongtiin.Text = bLL_Load.BLL_loadTenPhongBan(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MAPHONGBAN.ToString());
-            cboLoaiHopDong.Text = gridViewThongtinHD.GetFocusedRowCellValue("TenHopDong").ToString();
-            dateEditNgayBatDau.Text = gridViewThongtinHD.GetFocusedRowCellValue("NgayBatDau").ToString();
-            dateEditNgayKy.Text = gridViewThongtinHD.GetFocusedRowCellValue("NgayKy").ToString();
-            dateEditNgayKetThuc.Text = gridViewThongtinHD.GetFocusedRowCellValue("NgayKetThuc").ToString();
+            if (gridViewThongtinHD.DataRowCount > 0)
+            {
+                txtHoTenThongtin.Text = bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).HOTEN.ToString();
+                txtMaHopDong.Text = gridViewThongtinHD.GetFocusedRowCellValue("MaHopDong").ToString();
+                txtKyLanThu.Text = gridViewThongtinHD.GetFocusedRowCellValue("KyLanThu").ToString();
+                txtLuongThoaThuan.Text = gridViewThongtinHD.GetFocusedRowCellValue("LuongThoaThuan").ToString();
+                cboChucVuThongtin.Text = bLL_Load.BLL_loadTenChucVu(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MACHUCVU.ToString());
+                cboPhongbanThongtiin.Text = bLL_Load.BLL_loadTenPhongBan(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MAPHONGBAN.ToString());
+                cboLoaiHopDong.Text = gridViewThongtinHD.GetFocusedRowCellValue("TenHopDong").ToString();
+                dateEditNgayBatDau.Text = gridViewThongtinHD.GetFocusedRowCellValue("NgayBatDau").ToString().Split(' ')[0].ToString();
+                dateEditNgayKy.Text = gridViewThongtinHD.GetFocusedRowCellValue("NgayKy").ToString().Split(' ')[0].ToString();
+                dateEditNgayKetThuc.Text = gridViewThongtinHD.GetFocusedRowCellValue("NgayKetThuc").ToString().Split(' ')[0].ToString();
 
+            }
         }
 
         private void btnInHopDong_Click(object sender, EventArgs e)
         {
+            if (Properties.Settings.Default.controldongclickmaNV != "")
+            {
 
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn nhân viên để xuất hợp đồng mới");
+            }
         }
 
         private void gridViewBaoHiem_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtHoTenBaoHiem.Text = bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).HOTEN.ToString();
-            txtMaBaoHiem.Text = gridViewBaoHiem.GetFocusedRowCellValue("MABAOHIEM").ToString();
-            cboLoaiBaoHiem.Text = gridViewBaoHiem.GetFocusedRowCellValue("LOAIBAOHIEM").ToString();
-            txtNoiCapBaoHiem.Text = gridViewBaoHiem.GetFocusedRowCellValue("NOICAP").ToString();
-            cboChucVuBaoHiem.Text = bLL_Load.BLL_loadTenChucVu(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MACHUCVU.ToString());
-            cboPhongbanbaohiem.Text = bLL_Load.BLL_loadTenPhongBan(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MAPHONGBAN.ToString());
-            txtNoiKham.Text = gridViewBaoHiem.GetFocusedRowCellValue("NOIKHAM").ToString();
-            dateEditNGayHetHan.Text = gridViewBaoHiem.GetFocusedRowCellValue("NGAYHH").ToString();
-            dateEditNgayDangKy.Text = gridViewBaoHiem.GetFocusedRowCellValue("NGAYDK").ToString();
-            
+            if (gridViewBaoHiem.DataRowCount > 0)
+            {
+                txtHoTenBaoHiem.Text = bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).HOTEN.ToString();
+                txtMaBaoHiem.Text = gridViewBaoHiem.GetFocusedRowCellValue("MABAOHIEM").ToString();
+                cboLoaiBaoHiem.Text = gridViewBaoHiem.GetFocusedRowCellValue("LOAIBAOHIEM").ToString();
+                txtNoiCapBaoHiem.Text = gridViewBaoHiem.GetFocusedRowCellValue("NOICAP").ToString();
+                cboChucVuBaoHiem.Text = bLL_Load.BLL_loadTenChucVu(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MACHUCVU.ToString());
+                cboPhongbanbaohiem.Text = bLL_Load.BLL_loadTenPhongBan(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MAPHONGBAN.ToString());
+                txtNoiKham.Text = gridViewBaoHiem.GetFocusedRowCellValue("NOIKHAM").ToString();
+                dateEditNGayHetHan.Text = gridViewBaoHiem.GetFocusedRowCellValue("NGAYHH").ToString();
+                dateEditNgayDangKy.Text = gridViewBaoHiem.GetFocusedRowCellValue("NGAYDK").ToString();
+
+            }
+            else
+            {
+                txtHoTenBaoHiem.Text = bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).HOTEN.ToString();
+                txtMaBaoHiem.Text = "";
+                cboLoaiBaoHiem.Text = "";
+                txtNoiCapBaoHiem.Text = "";
+                cboChucVuBaoHiem.Text = bLL_Load.BLL_loadTenChucVu(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MACHUCVU.ToString());
+                cboPhongbanbaohiem.Text = bLL_Load.BLL_loadTenPhongBan(bLL_Load.BLL_loadThongTinNhanVien(Properties.Settings.Default.controldongclickmaNV).MAPHONGBAN.ToString());
+                txtNoiKham.Text = "";
+                dateEditNGayHetHan.Text = "";
+                dateEditNgayDangKy.Text = "";
+            }
+        }
+
+        private void btnDangKyBaoHiem_Click(object sender, EventArgs e)
+        {
+            if ( Properties.Settings.Default.controldongclickmaNV != "")
+            {
+                string a = Properties.Settings.Default.controldongclickmaNV;
+                if (gridViewBaoHiem.DataRowCount > 0)
+                {
+                    frm_DangKyBaoHiem frm_DangKyBaoHiem = new frm_DangKyBaoHiem(Properties.Settings.Default.controldongclickmaNV);
+                    frm_DangKyBaoHiem.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn nhân viên để thêm bảo hiểm");
+                tabNavigationPage6.Select();
+            }
         }
     }
 }

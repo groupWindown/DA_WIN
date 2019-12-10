@@ -34,5 +34,11 @@ namespace DAL
                 return false;
             return true;
         }
+        public bool kiemTraTrungMaHopDong(string p)
+        {
+            if (linQ.CHITIETHOPDONGs.Where(t => t.MACTHD == p).FirstOrDefault() != null)
+                return false;
+            return true;
+        }
     }
 }

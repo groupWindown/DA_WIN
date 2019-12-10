@@ -118,7 +118,7 @@
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnDangKyBaoHiem = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.dateEditNgayDangKy = new DevExpress.XtraEditors.DateEdit();
             this.txtNoiKham = new System.Windows.Forms.TextBox();
@@ -1151,7 +1151,7 @@
             // groupBox9
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.groupBox9, "");
-            this.groupBox9.Controls.Add(this.button10);
+            this.groupBox9.Controls.Add(this.btnDangKyBaoHiem);
             this.groupBox9.Location = new System.Drawing.Point(1178, 3);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(189, 174);
@@ -1159,15 +1159,16 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Tác vụ";
             // 
-            // button10
+            // btnDangKyBaoHiem
             // 
-            this.editFormUserControl2.SetBoundPropertyName(this.button10, "");
-            this.button10.Location = new System.Drawing.Point(31, 39);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(127, 32);
-            this.button10.TabIndex = 0;
-            this.button10.Text = "Đăng ký bảo hiểm";
-            this.button10.UseVisualStyleBackColor = true;
+            this.editFormUserControl2.SetBoundPropertyName(this.btnDangKyBaoHiem, "");
+            this.btnDangKyBaoHiem.Location = new System.Drawing.Point(31, 39);
+            this.btnDangKyBaoHiem.Name = "btnDangKyBaoHiem";
+            this.btnDangKyBaoHiem.Size = new System.Drawing.Size(127, 32);
+            this.btnDangKyBaoHiem.TabIndex = 0;
+            this.btnDangKyBaoHiem.Text = "Đăng ký bảo hiểm";
+            this.btnDangKyBaoHiem.UseVisualStyleBackColor = true;
+            this.btnDangKyBaoHiem.Click += new System.EventHandler(this.btnDangKyBaoHiem_Click);
             // 
             // groupBox8
             // 
@@ -1201,6 +1202,7 @@
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.dateEditNgayDangKy, "");
             this.dateEditNgayDangKy.EditValue = null;
+            this.dateEditNgayDangKy.Enabled = false;
             this.dateEditNgayDangKy.Location = new System.Drawing.Point(898, 84);
             this.dateEditNgayDangKy.Name = "dateEditNgayDangKy";
             this.dateEditNgayDangKy.Properties.AutoHeight = false;
@@ -1215,6 +1217,7 @@
             // txtNoiKham
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.txtNoiKham, "");
+            this.txtNoiKham.Enabled = false;
             this.txtNoiKham.Location = new System.Drawing.Point(898, 40);
             this.txtNoiKham.Multiline = true;
             this.txtNoiKham.Name = "txtNoiKham";
@@ -1225,6 +1228,7 @@
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.dateEditNGayHetHan, "");
             this.dateEditNGayHetHan.EditValue = null;
+            this.dateEditNGayHetHan.Enabled = false;
             this.dateEditNGayHetHan.Location = new System.Drawing.Point(898, 126);
             this.dateEditNGayHetHan.Name = "dateEditNGayHetHan";
             this.dateEditNGayHetHan.Properties.AutoHeight = false;
@@ -1239,6 +1243,7 @@
             // cboLoaiBaoHiem
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.cboLoaiBaoHiem, "");
+            this.cboLoaiBaoHiem.Enabled = false;
             this.cboLoaiBaoHiem.FormattingEnabled = true;
             this.cboLoaiBaoHiem.Location = new System.Drawing.Point(510, 85);
             this.cboLoaiBaoHiem.Name = "cboLoaiBaoHiem";
@@ -1248,6 +1253,7 @@
             // cboChucVuBaoHiem
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.cboChucVuBaoHiem, "");
+            this.cboChucVuBaoHiem.Enabled = false;
             this.cboChucVuBaoHiem.FormattingEnabled = true;
             this.cboChucVuBaoHiem.Location = new System.Drawing.Point(121, 87);
             this.cboChucVuBaoHiem.Name = "cboChucVuBaoHiem";
@@ -1257,6 +1263,7 @@
             // cboPhongbanbaohiem
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.cboPhongbanbaohiem, "");
+            this.cboPhongbanbaohiem.Enabled = false;
             this.cboPhongbanbaohiem.FormattingEnabled = true;
             this.cboPhongbanbaohiem.Location = new System.Drawing.Point(121, 43);
             this.cboPhongbanbaohiem.Name = "cboPhongbanbaohiem";
@@ -1326,6 +1333,7 @@
             // txtHoTenBaoHiem
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.txtHoTenBaoHiem, "");
+            this.txtHoTenBaoHiem.Enabled = false;
             this.txtHoTenBaoHiem.Location = new System.Drawing.Point(121, 129);
             this.txtHoTenBaoHiem.Multiline = true;
             this.txtHoTenBaoHiem.Name = "txtHoTenBaoHiem";
@@ -1335,6 +1343,7 @@
             // txtMaBaoHiem
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.txtMaBaoHiem, "");
+            this.txtMaBaoHiem.Enabled = false;
             this.txtMaBaoHiem.Location = new System.Drawing.Point(510, 42);
             this.txtMaBaoHiem.Multiline = true;
             this.txtMaBaoHiem.Name = "txtMaBaoHiem";
@@ -1364,6 +1373,7 @@
             // txtNoiCapBaoHiem
             // 
             this.editFormUserControl2.SetBoundPropertyName(this.txtNoiCapBaoHiem, "");
+            this.txtNoiCapBaoHiem.Enabled = false;
             this.txtNoiCapBaoHiem.Location = new System.Drawing.Point(510, 126);
             this.txtNoiCapBaoHiem.Multiline = true;
             this.txtNoiCapBaoHiem.Name = "txtNoiCapBaoHiem";
@@ -1627,7 +1637,7 @@
         private DevExpress.XtraEditors.DateEdit dateEditNgayKy;
         private DevExpress.XtraEditors.DateEdit dateEditNgayBatDau;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnDangKyBaoHiem;
         private System.Windows.Forms.GroupBox groupBox8;
         private DevExpress.XtraEditors.DateEdit dateEditNgayDangKy;
         private System.Windows.Forms.TextBox txtNoiKham;

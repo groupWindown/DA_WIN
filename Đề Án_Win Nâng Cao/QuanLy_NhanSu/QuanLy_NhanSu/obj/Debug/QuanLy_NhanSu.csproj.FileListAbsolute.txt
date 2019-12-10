@@ -526,3 +526,5 @@ C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\Quan
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\bin\Debug\BLL.dll
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_CaLam.resources
 C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_NhapLieu_PhanQuyen.resources
+C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_ThongTinCongTy.resources
+C:\Users\Hoan\Documents\GitHub\DA_WIN\Đề Án_Win Nâng Cao\QuanLy_NhanSu\QuanLy_NhanSu\obj\Debug\QuanLy_NhanSu.frm_ThongTinHeThong.resources

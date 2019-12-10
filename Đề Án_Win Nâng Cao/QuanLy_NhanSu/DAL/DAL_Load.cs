@@ -167,5 +167,13 @@ namespace DAL
         {
             return linQ.BAOHIEMs.Where(t => t.MANV==pMaNV).ToList<BAOHIEM>();
         }
+        public List<HOPDONGLAODONG> loadHopDong()
+        {
+            return linQ.HOPDONGLAODONGs.Select(t => t).ToList<HOPDONGLAODONG>();
+        }
+        public List<CHITIETHOPDONG> loadChiTietHopDong()
+        {
+            return linQ.CHITIETHOPDONGs.Select(t => t).ToList<CHITIETHOPDONG>();
+        }
     }
 }
