@@ -457,5 +457,283 @@ namespace QuanLy_NhanSu
                 }
             }
         }
+        public void load_dataChucVu()
+        {
+            gridControl_ChucVu.DataSource = cHUCVUTableAdapter.Fill(this.dataSetQLNS.CHUCVU);
+        }
+        private void btn_Them_ChucVu_Click(object sender, EventArgs e)
+        {
+            if (mACHUCVUTextEdit.Text.Length > 0 && tENCHUCVUTextEdit.Text.Length > 0)
+            {
+                //kiem tra khoa chinh
+                if (KTKC_New(mACHUCVUTextEdit.Text.ToString(), dataSetQLNS.CHUCVU) == false)
+                {
+                    cHUCVUTableAdapter.Insert(mACHUCVUTextEdit.Text, tENCHUCVUTextEdit.Text);
+                    load_dataChucVu();
+                    MessageBox.Show("Thêm thành công !!!");
+                }
+                else
+                {
+                    MessageBox.Show("Trùng khoá chính !!!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nhập thiếu dữ liệu !!!");
+            }
+        }
+
+        private void btn_Xoa_ChucVu_Click(object sender, EventArgs e)
+        {
+            if (gridView1.GetFocusedRow() != null)
+            {
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    return;
+                int cathu = gridView1.FocusedRowHandle;
+                string sql_macv = gridView1.GetRowCellValue(cathu, "MACHUCVU").ToString();
+                string sql_tencv = gridView1.GetRowCellValue(cathu, "TENCHUCVU").ToString();
+                
+                cHUCVUTableAdapter.Delete(sql_macv, sql_tencv);
+                load_dataChucVu();
+            }
+            else
+            {
+                MessageBox.Show("Chọn dữ liệu để xóa!!!");
+            }
+        }
+
+        private void btn_Sua_ChucVu_Click(object sender, EventArgs e)
+        {
+            if (mACHUCVUTextEdit.Text.Length > 0 && tENCHUCVUTextEdit.Text.Length > 0)
+            {
+                
+                DataSetQLNS.CHUCVURow data = dataSetQLNS.CHUCVU.FindByMACHUCVU(mACHUCVUTextEdit.Text);
+                data.TENCHUCVU = tENCHUCVUTextEdit.Text;
+                cHUCVUTableAdapter.Update(this.dataSetQLNS.CHUCVU);
+                //cHUCVUTableAdapter
+                load_dataChucVu();
+            }
+            else
+            {
+                MessageBox.Show("Nhập thiếu dữ liệu !!!");
+            }
+        }
+        public void load_dataPhongBan()
+        {
+            gridControl_PhongBan.DataSource = pHONGBANTableAdapter.Fill(this.dataSetQLNS.PHONGBAN);
+        }
+
+        private void btn_Them_PhongBan_Click(object sender, EventArgs e)
+        {
+            if (KTKC_New(mAPHONGBANTextEdit.Text.ToString(), dataSetQLNS.PHONGBAN) == false)
+            {
+                pHONGBANTableAdapter.Insert(mAPHONGBANTextEdit.Text, tENPHONGBANTextEdit.Text, mATRUONGPHONGTextEdit.Text);
+                load_dataPhongBan();
+                MessageBox.Show("Thêm thành công !!!");
+            }
+            else
+            {
+                MessageBox.Show("Trùng khoá chính !!!");
+            }
+        }
+
+        private void btn_Xoa_PhongBan_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (gridView_PhongBan.GetFocusedRow() != null)
+                {
+                    if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                        return;
+                    int dd = gridView_PhongBan.FocusedRowHandle;
+                    string sql_mapb = gridView_PhongBan.GetRowCellValue(dd, "MAPHONGBAN").ToString();
+                    string sql_tenpb = gridView_PhongBan.GetRowCellValue(dd, "TENPHONGBAN").ToString();
+                    string sql_matp = gridView_PhongBan.GetRowCellValue(dd, "MATRUONGPHONG").ToString();
+                    //nếu là rỗng thì chuyển sang null
+                    if (sql_matp.Length <= 0)
+                    {
+                        sql_matp = null;
+                    }
+
+                    pHONGBANTableAdapter.Delete(sql_mapb, sql_tenpb, sql_matp);
+                    MessageBox.Show(sql_mapb);
+
+                    load_dataPhongBan();
+                    MessageBox.Show("Thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Chọn dữ liệu để xóa");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Không thành công");
+            }
+        }
+
+        private void btn_Sua_PhongBan_Click(object sender, EventArgs e)
+        {
+            if (gridView_PhongBan.GetFocusedRow() != null)
+            {
+                int dd = gridView_PhongBan.FocusedRowHandle;
+                string sql_mapb = gridView_PhongBan.GetRowCellValue(dd, "MAPHONGBAN").ToString();
+                string sql_tenpb = gridView_PhongBan.GetRowCellValue(dd, "TENPHONGBAN").ToString();
+                string sql_matp = gridView_PhongBan.GetRowCellValue(dd, "MATRUONGPHONG").ToString();
+
+
+                DataSetQLNS.PHONGBANRow data = dataSetQLNS.PHONGBAN.FindByMAPHONGBAN(sql_mapb);
+                data.TENPHONGBAN = sql_tenpb;
+                data.MATRUONGPHONG = sql_matp;
+                pHONGBANTableAdapter.Update(this.dataSetQLNS.PHONGBAN);
+                //cHUCVUTableAdapter
+                load_dataPhongBan();
+            }
+            else
+            {
+                MessageBox.Show("Chọn dữ liệu để sửa");
+            }
+        }
+        public void load_dataQuocTich()
+        {
+            gridControl_QuocTich.DataSource = qUOCTICHTableAdapter.Fill(this.dataSetQLNS.QUOCTICH);
+        }
+        private void btn_Them_QuocTich_Click(object sender, EventArgs e)
+        {
+            if (mAQUOCTICHTextEdit.Text.Length > 0 && tENQUOCTICHTextEdit.Text.Length > 0)
+            {
+                //kiem tra khoa chinh
+                if (KTKC_New(mAQUOCTICHTextEdit.Text.ToString(), dataSetQLNS.QUOCTICH) == false)
+                {
+                    qUOCTICHTableAdapter.Insert(mAQUOCTICHTextEdit.Text, tENQUOCTICHTextEdit.Text);
+                    load_dataQuocTich();
+                    MessageBox.Show("Thêm thành công !!!");
+                }
+                else
+                {
+                    MessageBox.Show("Trùng khoá chính !!!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nhập thiếu dữ liệu !!!");
+            }
+        }
+
+        private void btn_Xoa_QuocTich_Click(object sender, EventArgs e)
+        {
+            if (gridView_QuocTich.GetFocusedRow() != null)
+            {
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    return;
+                int cathu = gridView_QuocTich.FocusedRowHandle;
+                string sql_maqt = gridView_QuocTich.GetRowCellValue(cathu, "MAQUOCTICH").ToString();
+                string sql_tenqt = gridView_QuocTich.GetRowCellValue(cathu, "TENQUOCTICH").ToString();
+                MessageBox.Show("Thành công");
+                qUOCTICHTableAdapter.Delete(sql_maqt, sql_tenqt);
+                load_dataQuocTich();
+            }
+            else
+            {
+                MessageBox.Show("Chọn dữ liệu để xóa");
+            }
+        }
+
+        private void btn_Sua_QuocTich_Click(object sender, EventArgs e)
+        {
+            if (gridView_QuocTich.GetFocusedRow() != null)
+            {
+                int cathu = gridView_QuocTich.FocusedRowHandle;
+                String sql_maqt = gridView_QuocTich.GetRowCellValue(cathu, "MAQUOCTICH").ToString();
+                String sql_tenqt = gridView_QuocTich.GetRowCellValue(cathu, "TENQUOCTICH").ToString();
+                DataSetQLNS.QUOCTICHRow data = dataSetQLNS.QUOCTICH.FindByMAQUOCTICH(sql_maqt);
+                data.TENQUOCTICH = sql_tenqt;
+                qUOCTICHTableAdapter.Update(this.dataSetQLNS.QUOCTICH);
+                load_dataQuocTich();
+            }
+            else
+            {
+                MessageBox.Show("Chọn dữ liệu để sửa");
+            }
+        }
+        public void load_dataDanToc()
+        {
+            gridControl_DanToc.DataSource = dANTOCTableAdapter.Fill(this.dataSetQLNS.DANTOC);
+        }
+        private void btn_Them_DanToc_Click(object sender, EventArgs e)
+        {
+            if (mADANTOCTextEdit.Text.Length>0&& tENDANTOCTextEdit.Text.Length>0)
+            {
+                //kiem tra khoa chinh
+                if (KTKC_New(mADANTOCTextEdit.Text.ToString(), dataSetQLNS.DANTOC) == false)
+                {
+                    dANTOCTableAdapter.Insert(mADANTOCTextEdit.Text, tENDANTOCTextEdit.Text);
+                    load_dataDanToc();
+                    MessageBox.Show("Thêm thành công !!!");
+                }
+                else
+                {
+                    MessageBox.Show("Trùng khoá chính !!!");
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nhập thiếu dữ liệu !!!");
+            }
+        }
+
+        private void btn_Xoa_DanToc_Click(object sender, EventArgs e)
+        {
+            if (gridView_DanToc.GetFocusedRow() != null)
+            {
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    return;
+                int cathu = gridView_DanToc.FocusedRowHandle;
+                string sql_madt = gridView_DanToc.GetRowCellValue(cathu, "MADANTOC").ToString();
+                string sql_tendt = gridView_DanToc.GetRowCellValue(cathu, "TENDANTOC").ToString();
+                
+                dANTOCTableAdapter.Delete(sql_madt, sql_tendt);
+                MessageBox.Show("Thành công");
+                load_dataDanToc();
+            }
+            else
+            {
+                MessageBox.Show("Chọn dữ liệu để xóa");
+            }
+        }
+
+        private void btn_Sua_DanToc_Click(object sender, EventArgs e)
+        {
+            if (gridView_DanToc.GetFocusedRow()!=null)
+            {
+                int cathu = gridView_DanToc.FocusedRowHandle;
+                String sql_madt = gridView_DanToc.GetRowCellValue(cathu, "MADANTOC").ToString();
+                String sql_tendt = gridView_DanToc.GetRowCellValue(cathu, "TENDANTOC").ToString();
+                DataSetQLNS.DANTOCRow data = dataSetQLNS.DANTOC.FindByMADANTOC(sql_madt);
+                data.TENDANTOC = sql_tendt;
+                dANTOCTableAdapter.Update(this.dataSetQLNS.DANTOC);
+                load_dataDanToc();
+            }
+            else
+            {
+                MessageBox.Show("Chọn dữ liệu để sửa");
+            }
+        }
+
+        private void btn_Them_TonGiao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Xoa_TonGiao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Sua_TonGiao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

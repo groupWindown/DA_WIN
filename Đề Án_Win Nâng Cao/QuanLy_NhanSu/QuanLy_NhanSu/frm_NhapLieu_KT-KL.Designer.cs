@@ -896,7 +896,7 @@
             this.tabNavigationPage2.Controls.Add(this.groupBox_TonGiao);
             this.tabNavigationPage2.Controls.Add(this.groupBox_DanToc);
             this.tabNavigationPage2.Name = "tabNavigationPage2";
-            this.tabNavigationPage2.Size = new System.Drawing.Size(1341, 741);
+            this.tabNavigationPage2.Size = new System.Drawing.Size(1341, 743);
             // 
             // groupBox_PhongBan
             // 
@@ -1024,6 +1024,7 @@
             this.btn_Sua_PhongBan.TabIndex = 19;
             this.btn_Sua_PhongBan.Text = "Sửa";
             this.btn_Sua_PhongBan.UseVisualStyleBackColor = true;
+            this.btn_Sua_PhongBan.Click += new System.EventHandler(this.btn_Sua_PhongBan_Click);
             // 
             // label14
             // 
@@ -1042,6 +1043,7 @@
             this.btn_Xoa_PhongBan.TabIndex = 18;
             this.btn_Xoa_PhongBan.Text = "Xóa";
             this.btn_Xoa_PhongBan.UseVisualStyleBackColor = true;
+            this.btn_Xoa_PhongBan.Click += new System.EventHandler(this.btn_Xoa_PhongBan_Click);
             // 
             // btn_Them_PhongBan
             // 
@@ -1051,6 +1053,7 @@
             this.btn_Them_PhongBan.TabIndex = 16;
             this.btn_Them_PhongBan.Text = "Thêm";
             this.btn_Them_PhongBan.UseVisualStyleBackColor = true;
+            this.btn_Them_PhongBan.Click += new System.EventHandler(this.btn_Them_PhongBan_Click);
             // 
             // groupBox_ChucVu
             // 
@@ -1137,6 +1140,7 @@
             this.btn_Sua_ChucVu.TabIndex = 11;
             this.btn_Sua_ChucVu.Text = "Sửa";
             this.btn_Sua_ChucVu.UseVisualStyleBackColor = true;
+            this.btn_Sua_ChucVu.Click += new System.EventHandler(this.btn_Sua_ChucVu_Click);
             // 
             // btn_Xoa_ChucVu
             // 
@@ -1146,6 +1150,7 @@
             this.btn_Xoa_ChucVu.TabIndex = 10;
             this.btn_Xoa_ChucVu.Text = "Xóa";
             this.btn_Xoa_ChucVu.UseVisualStyleBackColor = true;
+            this.btn_Xoa_ChucVu.Click += new System.EventHandler(this.btn_Xoa_ChucVu_Click);
             // 
             // btn_Them_ChucVu
             // 
@@ -1155,6 +1160,7 @@
             this.btn_Them_ChucVu.TabIndex = 8;
             this.btn_Them_ChucVu.Text = "Thêm";
             this.btn_Them_ChucVu.UseVisualStyleBackColor = true;
+            this.btn_Them_ChucVu.Click += new System.EventHandler(this.btn_Them_ChucVu_Click);
             // 
             // label15
             // 
@@ -1260,6 +1266,7 @@
             this.btn_Sua_QuocTich.TabIndex = 11;
             this.btn_Sua_QuocTich.Text = "Sửa";
             this.btn_Sua_QuocTich.UseVisualStyleBackColor = true;
+            this.btn_Sua_QuocTich.Click += new System.EventHandler(this.btn_Sua_QuocTich_Click);
             // 
             // btn_Xoa_QuocTich
             // 
@@ -1269,6 +1276,7 @@
             this.btn_Xoa_QuocTich.TabIndex = 10;
             this.btn_Xoa_QuocTich.Text = "Xóa";
             this.btn_Xoa_QuocTich.UseVisualStyleBackColor = true;
+            this.btn_Xoa_QuocTich.Click += new System.EventHandler(this.btn_Xoa_QuocTich_Click);
             // 
             // btn_Them_QuocTich
             // 
@@ -1278,6 +1286,7 @@
             this.btn_Them_QuocTich.TabIndex = 8;
             this.btn_Them_QuocTich.Text = "Thêm";
             this.btn_Them_QuocTich.UseVisualStyleBackColor = true;
+            this.btn_Them_QuocTich.Click += new System.EventHandler(this.btn_Them_QuocTich_Click);
             // 
             // label17
             // 
@@ -1383,6 +1392,7 @@
             this.btn_Sua_TonGiao.TabIndex = 11;
             this.btn_Sua_TonGiao.Text = "Sửa";
             this.btn_Sua_TonGiao.UseVisualStyleBackColor = true;
+            this.btn_Sua_TonGiao.Click += new System.EventHandler(this.btn_Sua_TonGiao_Click);
             // 
             // btn_Xoa_TonGiao
             // 
@@ -1392,6 +1402,7 @@
             this.btn_Xoa_TonGiao.TabIndex = 10;
             this.btn_Xoa_TonGiao.Text = "Xóa";
             this.btn_Xoa_TonGiao.UseVisualStyleBackColor = true;
+            this.btn_Xoa_TonGiao.Click += new System.EventHandler(this.btn_Xoa_TonGiao_Click);
             // 
             // btn_Them_TonGiao
             // 
@@ -1401,6 +1412,7 @@
             this.btn_Them_TonGiao.TabIndex = 8;
             this.btn_Them_TonGiao.Text = "Thêm";
             this.btn_Them_TonGiao.UseVisualStyleBackColor = true;
+            this.btn_Them_TonGiao.Click += new System.EventHandler(this.btn_Them_TonGiao_Click);
             // 
             // label19
             // 
@@ -1506,6 +1518,7 @@
             this.btn_Sua_DanToc.TabIndex = 11;
             this.btn_Sua_DanToc.Text = "Sửa";
             this.btn_Sua_DanToc.UseVisualStyleBackColor = true;
+            this.btn_Sua_DanToc.Click += new System.EventHandler(this.btn_Sua_DanToc_Click);
             // 
             // btn_Xoa_DanToc
             // 
@@ -1515,6 +1528,7 @@
             this.btn_Xoa_DanToc.TabIndex = 10;
             this.btn_Xoa_DanToc.Text = "Xóa";
             this.btn_Xoa_DanToc.UseVisualStyleBackColor = true;
+            this.btn_Xoa_DanToc.Click += new System.EventHandler(this.btn_Xoa_DanToc_Click);
             // 
             // btn_Them_DanToc
             // 
@@ -1524,6 +1538,7 @@
             this.btn_Them_DanToc.TabIndex = 8;
             this.btn_Them_DanToc.Text = "Thêm";
             this.btn_Them_DanToc.UseVisualStyleBackColor = true;
+            this.btn_Them_DanToc.Click += new System.EventHandler(this.btn_Them_DanToc_Click);
             // 
             // label21
             // 
@@ -1683,7 +1698,7 @@
             this.gridView_TaiKhoan.Name = "gridView_TaiKhoan";
             this.gridView_TaiKhoan.OptionsSelection.MultiSelect = true;
             this.gridView_TaiKhoan.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
-              this.gridView_TaiKhoan.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView_TaiKhoan_RowCellClick);
+            this.gridView_TaiKhoan.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView_TaiKhoan_RowCellClick);
             // 
             // colMANV
             // 
