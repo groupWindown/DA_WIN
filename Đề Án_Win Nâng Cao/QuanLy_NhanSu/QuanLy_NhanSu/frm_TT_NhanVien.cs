@@ -398,7 +398,7 @@ namespace QuanLy_NhanSu
 
         private void tabPane1_TabIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("avc");
+          
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -475,7 +475,21 @@ namespace QuanLy_NhanSu
         {
             if (Properties.Settings.Default.controldongclickmaNV != "")
             {
-
+            //    Word word = new Word();
+            //    string HoTen=txtHoTenThongtin.Text;
+            //    string MaNV= Properties.Settings.Default.controldongclickmaNV;
+            //    string ChucVu=cboChucVuThongtin.Text;
+            //    string PhongBan=cboPhongbanThongtiin.Text;
+            //    string MaHopDong=txtMaHopDong.Text;
+            //    string NgayKy=dateEditNgayKy.DateTime.ToString().Split('/')[1].ToString();
+            //    string ThangKy = dateEditNgayKy.DateTime.ToString().Split('/')[0].ToString();
+            //    string NamKy=dateEditNgayKy.DateTime.ToString().Split('/')[2].ToString();
+            //    string NgayBD=dateEditNgayBatDau.DateTime.ToString();
+            //    string NgayKT=dateEditNgayKetThuc.DateTime.ToString();
+            //    string LoaiHopDong=cboLoaiHopDong.Text;
+            //    string KyLanThu=txtKyLanThu.Text;
+            //    string LuongThoaThuan=txtLuongThoaThuan.Text;
+            //    word.W_HopDongLaoDong( HoTen, ChucVu,  MaHopDong,  NgayKy,ThangKy,NamKy,  NgayBD,  NgayKT,  LoaiHopDong,  LuongThoaThuan);
             }
             else
             {
