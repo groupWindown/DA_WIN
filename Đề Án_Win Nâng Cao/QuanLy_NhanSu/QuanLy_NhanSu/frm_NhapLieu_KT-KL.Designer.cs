@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.btn_Sua_KyLuat = new System.Windows.Forms.Button();
             this.btn_Xoa_KyLuat = new System.Windows.Forms.Button();
             this.btn_Them_KyLuat = new System.Windows.Forms.Button();
@@ -209,6 +209,8 @@
             this.label28 = new System.Windows.Forms.Label();
             this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.groupBox_DaoTao = new System.Windows.Forms.GroupBox();
+            this.mAKHOADAOTAOTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.tENKHOADAOTAOTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.gridControl_DaoTao = new DevExpress.XtraGrid.GridControl();
             this.gridView_DaoTao = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMAKHOADAOTAO = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -219,6 +221,9 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.groupBox_ChuyenMon = new System.Windows.Forms.GroupBox();
+            this.mACHUYENMONTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.cHUYENMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tENCHUYENMONTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.gridControl_ChuyenMon = new DevExpress.XtraGrid.GridControl();
             this.gridView_ChuyenMon = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMACHUYENMON = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -229,6 +234,9 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.groupBox_TinHoc = new System.Windows.Forms.GroupBox();
+            this.mATRINHDOTINHOCTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.tRINHDOTINHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tENTRINHDOTINHOCTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.gridControl_TinHoc = new DevExpress.XtraGrid.GridControl();
             this.gridView_TinHoc = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMATRINHDOTINHOC = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -239,6 +247,9 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.groupBox_NgoaiNgu = new System.Windows.Forms.GroupBox();
+            this.mANGOAINGUTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.nGOAINGUBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tENNGOAINGUTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.gridControl_NgoaiNgu = new DevExpress.XtraGrid.GridControl();
             this.gridView_NgoaiNgu = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMANGOAINGU = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -249,6 +260,9 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.groupBox_TDHocVan = new System.Windows.Forms.GroupBox();
+            this.mATRINHDOHOCVANTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.tRINHDOHOCVANBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tENTRINHDOHOCVANTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.gridControl_TDHocVan = new DevExpress.XtraGrid.GridControl();
             this.gridView_TDHocVan = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMATRINHDOHOCVAN = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -272,26 +286,12 @@
             this.pHANQUYENTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.PHANQUYENTableAdapter();
             this.qUANLYKYLUATBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qUANLYKYLUATTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.QUANLYKYLUATTableAdapter();
-            this.cHUYENMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cHUYENMONTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHUYENMONTableAdapter();
-            this.mACHUYENMONTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tENCHUYENMONTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tRINHDOHOCVANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tRINHDOHOCVANTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOHOCVANTableAdapter();
-            this.mATRINHDOHOCVANTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tENTRINHDOHOCVANTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.nGOAINGUBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nGOAINGUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.NGOAINGUTableAdapter();
-            this.mANGOAINGUTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tENNGOAINGUTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tRINHDOTINHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tRINHDOTINHOCTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TRINHDOTINHOCTableAdapter();
-            this.mATRINHDOTINHOCTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tENTRINHDOTINHOCTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.cHUONGTRINHDAOTAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cHUONGTRINHDAOTAOTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHUONGTRINHDAOTAOTableAdapter();
-            this.mAKHOADAOTAOTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.tENKHOADAOTAOTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.groupBox_KhenThuong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mALOAIKHENTHUONGTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIKHENTHUONGBindingSource)).BeginInit();
@@ -373,38 +373,38 @@
             ((System.ComponentModel.ISupportInitialize)(this.gHICHUTextEdit.Properties)).BeginInit();
             this.tabNavigationPage4.SuspendLayout();
             this.groupBox_DaoTao.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mAKHOADAOTAOTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENKHOADAOTAOTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_DaoTao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_DaoTao)).BeginInit();
             this.groupBox_ChuyenMon.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mACHUYENMONTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENCHUYENMONTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_ChuyenMon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_ChuyenMon)).BeginInit();
             this.groupBox_TinHoc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOTINHOCTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENTRINHDOTINHOCTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_TinHoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_TinHoc)).BeginInit();
             this.groupBox_NgoaiNgu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mANGOAINGUTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENNGOAINGUTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_NgoaiNgu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_NgoaiNgu)).BeginInit();
             this.groupBox_TDHocVan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOHOCVANTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENTRINHDOHOCVANTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_TDHocVan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_TDHocVan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qUANLYKYLUATBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mACHUYENMONTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENCHUYENMONTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOHOCVANTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENTRINHDOHOCVANTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mANGOAINGUTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENNGOAINGUTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOTINHOCTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENTRINHDOTINHOCTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHUONGTRINHDAOTAOBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAKHOADAOTAOTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENKHOADAOTAOTextEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Sua_KyLuat
@@ -468,7 +468,7 @@
             this.groupBox_KhenThuong.Controls.Add(this.label2);
             this.groupBox_KhenThuong.Controls.Add(this.label3);
             this.groupBox_KhenThuong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_KhenThuong.Location = new System.Drawing.Point(355, 381);
+            this.groupBox_KhenThuong.Location = new System.Drawing.Point(341, 379);
             this.groupBox_KhenThuong.Name = "groupBox_KhenThuong";
             this.groupBox_KhenThuong.Size = new System.Drawing.Size(651, 335);
             this.groupBox_KhenThuong.TabIndex = 7;
@@ -534,9 +534,9 @@
             // gridControl_KhenThuong
             // 
             this.gridControl_KhenThuong.DataSource = this.lOAIKHENTHUONGBindingSource;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.gridControl_KhenThuong.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.gridControl_KhenThuong.Location = new System.Drawing.Point(24, 136);
             this.gridControl_KhenThuong.MainView = this.gridView_KhenThuong;
             this.gridControl_KhenThuong.Name = "gridControl_KhenThuong";
@@ -855,9 +855,9 @@
             this.tabNavigationPage2,
             this.tabNavigationPage3,
             this.tabNavigationPage4});
-            this.tabPane1.RegularSize = new System.Drawing.Size(1341, 787);
+            this.tabPane1.RegularSize = new System.Drawing.Size(1341, 757);
             this.tabPane1.SelectedPage = this.tabNavigationPage1;
-            this.tabPane1.Size = new System.Drawing.Size(1341, 787);
+            this.tabPane1.Size = new System.Drawing.Size(1341, 757);
             this.tabPane1.TabIndex = 10;
             this.tabPane1.Text = "tabPane1";
             // 
@@ -868,7 +868,7 @@
             this.tabNavigationPage1.Controls.Add(this.groupBox_KyLuat);
             this.tabNavigationPage1.Controls.Add(this.groupBox_KhenThuong);
             this.tabNavigationPage1.Name = "tabNavigationPage1";
-            this.tabNavigationPage1.Size = new System.Drawing.Size(1341, 752);
+            this.tabNavigationPage1.Size = new System.Drawing.Size(1341, 730);
             // 
             // groupBox_DanhMucTangCa
             // 
@@ -1074,7 +1074,7 @@
             this.tabNavigationPage2.Controls.Add(this.groupBox_TonGiao);
             this.tabNavigationPage2.Controls.Add(this.groupBox_DanToc);
             this.tabNavigationPage2.Name = "tabNavigationPage2";
-            this.tabNavigationPage2.Size = new System.Drawing.Size(1341, 752);
+            this.tabNavigationPage2.Size = new System.Drawing.Size(1341, 730);
             // 
             // groupBox_PhongBan
             // 
@@ -1090,7 +1090,7 @@
             this.groupBox_PhongBan.Controls.Add(this.btn_Xoa_PhongBan);
             this.groupBox_PhongBan.Controls.Add(this.btn_Them_PhongBan);
             this.groupBox_PhongBan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_PhongBan.Location = new System.Drawing.Point(3, 360);
+            this.groupBox_PhongBan.Location = new System.Drawing.Point(3, 337);
             this.groupBox_PhongBan.Name = "groupBox_PhongBan";
             this.groupBox_PhongBan.Size = new System.Drawing.Size(632, 371);
             this.groupBox_PhongBan.TabIndex = 9;
@@ -1495,7 +1495,7 @@
             this.groupBox_TonGiao.Controls.Add(this.label19);
             this.groupBox_TonGiao.Controls.Add(this.label20);
             this.groupBox_TonGiao.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_TonGiao.Location = new System.Drawing.Point(654, 492);
+            this.groupBox_TonGiao.Location = new System.Drawing.Point(654, 469);
             this.groupBox_TonGiao.Name = "groupBox_TonGiao";
             this.groupBox_TonGiao.Size = new System.Drawing.Size(651, 239);
             this.groupBox_TonGiao.TabIndex = 6;
@@ -1621,7 +1621,7 @@
             this.groupBox_DanToc.Controls.Add(this.label21);
             this.groupBox_DanToc.Controls.Add(this.label22);
             this.groupBox_DanToc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_DanToc.Location = new System.Drawing.Point(654, 248);
+            this.groupBox_DanToc.Location = new System.Drawing.Point(654, 239);
             this.groupBox_DanToc.Name = "groupBox_DanToc";
             this.groupBox_DanToc.Size = new System.Drawing.Size(651, 239);
             this.groupBox_DanToc.TabIndex = 5;
@@ -1743,7 +1743,7 @@
             this.tabNavigationPage3.Controls.Add(this.groupBox2);
             this.tabNavigationPage3.Controls.Add(this.groupBox1);
             this.tabNavigationPage3.Name = "tabNavigationPage3";
-            this.tabNavigationPage3.Size = new System.Drawing.Size(1341, 752);
+            this.tabNavigationPage3.Size = new System.Drawing.Size(1341, 730);
             // 
             // groupBox_NguoiDungNhomNguoiDun
             // 
@@ -1751,9 +1751,9 @@
             this.groupBox_NguoiDungNhomNguoiDun.Controls.Add(this.gridControlNhomNguoiDung);
             this.groupBox_NguoiDungNhomNguoiDun.Controls.Add(this.gridControl_TaiKhoan);
             this.groupBox_NguoiDungNhomNguoiDun.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_NguoiDungNhomNguoiDun.Location = new System.Drawing.Point(3, 363);
+            this.groupBox_NguoiDungNhomNguoiDun.Location = new System.Drawing.Point(6, 301);
             this.groupBox_NguoiDungNhomNguoiDun.Name = "groupBox_NguoiDungNhomNguoiDun";
-            this.groupBox_NguoiDungNhomNguoiDun.Size = new System.Drawing.Size(1336, 370);
+            this.groupBox_NguoiDungNhomNguoiDun.Size = new System.Drawing.Size(1336, 285);
             this.groupBox_NguoiDungNhomNguoiDun.TabIndex = 5;
             this.groupBox_NguoiDungNhomNguoiDun.TabStop = false;
             this.groupBox_NguoiDungNhomNguoiDun.Text = "Người dùng nhóm người dùng";
@@ -1764,7 +1764,7 @@
             this.gridControlManHinh.Location = new System.Drawing.Point(901, 25);
             this.gridControlManHinh.MainView = this.gridViewManHinh;
             this.gridControlManHinh.Name = "gridControlManHinh";
-            this.gridControlManHinh.Size = new System.Drawing.Size(415, 325);
+            this.gridControlManHinh.Size = new System.Drawing.Size(415, 253);
             this.gridControlManHinh.TabIndex = 26;
             this.gridControlManHinh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewManHinh});
@@ -1807,7 +1807,7 @@
             this.gridControlNhomNguoiDung.Location = new System.Drawing.Point(13, 25);
             this.gridControlNhomNguoiDung.MainView = this.gridViewNhomNguoiDung;
             this.gridControlNhomNguoiDung.Name = "gridControlNhomNguoiDung";
-            this.gridControlNhomNguoiDung.Size = new System.Drawing.Size(400, 325);
+            this.gridControlNhomNguoiDung.Size = new System.Drawing.Size(400, 253);
             this.gridControlNhomNguoiDung.TabIndex = 25;
             this.gridControlNhomNguoiDung.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewNhomNguoiDung});
@@ -1857,7 +1857,7 @@
             this.gridControl_TaiKhoan.Location = new System.Drawing.Point(459, 25);
             this.gridControl_TaiKhoan.MainView = this.gridView_TaiKhoan;
             this.gridControl_TaiKhoan.Name = "gridControl_TaiKhoan";
-            this.gridControl_TaiKhoan.Size = new System.Drawing.Size(400, 325);
+            this.gridControl_TaiKhoan.Size = new System.Drawing.Size(400, 253);
             this.gridControl_TaiKhoan.TabIndex = 22;
             this.gridControl_TaiKhoan.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_TaiKhoan});
@@ -1907,7 +1907,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(692, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(595, 354);
+            this.groupBox2.Size = new System.Drawing.Size(595, 292);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Màn Hình";
@@ -1938,7 +1938,7 @@
             this.gridControl_ManHinh.Location = new System.Drawing.Point(6, 102);
             this.gridControl_ManHinh.MainView = this.gridView_ManHinh;
             this.gridControl_ManHinh.Name = "gridControl_ManHinh";
-            this.gridControl_ManHinh.Size = new System.Drawing.Size(583, 246);
+            this.gridControl_ManHinh.Size = new System.Drawing.Size(583, 185);
             this.gridControl_ManHinh.TabIndex = 19;
             this.gridControl_ManHinh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_ManHinh});
@@ -2030,7 +2030,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(56, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(595, 354);
+            this.groupBox1.Size = new System.Drawing.Size(595, 292);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhóm người dùng";
@@ -2041,7 +2041,7 @@
             this.gridControl_NhomNguoiDung.Location = new System.Drawing.Point(7, 136);
             this.gridControl_NhomNguoiDung.MainView = this.gridView_NhomNguoiDung;
             this.gridControl_NhomNguoiDung.Name = "gridControl_NhomNguoiDung";
-            this.gridControl_NhomNguoiDung.Size = new System.Drawing.Size(582, 212);
+            this.gridControl_NhomNguoiDung.Size = new System.Drawing.Size(582, 151);
             this.gridControl_NhomNguoiDung.TabIndex = 27;
             this.gridControl_NhomNguoiDung.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_NhomNguoiDung});
@@ -2172,10 +2172,10 @@
             this.tabNavigationPage4.Controls.Add(this.groupBox_DaoTao);
             this.tabNavigationPage4.Controls.Add(this.groupBox_ChuyenMon);
             this.tabNavigationPage4.Controls.Add(this.groupBox_TinHoc);
-            this.tabNavigationPage4.Controls.Add(this.groupBox_NgoaiNgu);
             this.tabNavigationPage4.Controls.Add(this.groupBox_TDHocVan);
+            this.tabNavigationPage4.Controls.Add(this.groupBox_NgoaiNgu);
             this.tabNavigationPage4.Name = "tabNavigationPage4";
-            this.tabNavigationPage4.Size = new System.Drawing.Size(1341, 760);
+            this.tabNavigationPage4.Size = new System.Drawing.Size(1341, 730);
             // 
             // groupBox_DaoTao
             // 
@@ -2188,12 +2188,32 @@
             this.groupBox_DaoTao.Controls.Add(this.label23);
             this.groupBox_DaoTao.Controls.Add(this.label29);
             this.groupBox_DaoTao.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_DaoTao.Location = new System.Drawing.Point(3, 383);
+            this.groupBox_DaoTao.Location = new System.Drawing.Point(3, 361);
             this.groupBox_DaoTao.Name = "groupBox_DaoTao";
             this.groupBox_DaoTao.Size = new System.Drawing.Size(641, 359);
             this.groupBox_DaoTao.TabIndex = 15;
             this.groupBox_DaoTao.TabStop = false;
             this.groupBox_DaoTao.Text = "Chương trình đào tạo";
+            // 
+            // mAKHOADAOTAOTextEdit
+            // 
+            this.mAKHOADAOTAOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.dAOTAOBindingSource, "MAKHOADAOTAO", true));
+            this.mAKHOADAOTAOTextEdit.Location = new System.Drawing.Point(154, 31);
+            this.mAKHOADAOTAOTextEdit.Name = "mAKHOADAOTAOTextEdit";
+            this.mAKHOADAOTAOTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mAKHOADAOTAOTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mAKHOADAOTAOTextEdit.Size = new System.Drawing.Size(195, 26);
+            this.mAKHOADAOTAOTextEdit.TabIndex = 13;
+            // 
+            // tENKHOADAOTAOTextEdit
+            // 
+            this.tENKHOADAOTAOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.dAOTAOBindingSource, "TENKHOADAOTAO", true));
+            this.tENKHOADAOTAOTextEdit.Location = new System.Drawing.Point(154, 63);
+            this.tENKHOADAOTAOTextEdit.Name = "tENKHOADAOTAOTextEdit";
+            this.tENKHOADAOTAOTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tENKHOADAOTAOTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tENKHOADAOTAOTextEdit.Size = new System.Drawing.Size(195, 26);
+            this.tENKHOADAOTAOTextEdit.TabIndex = 15;
             // 
             // gridControl_DaoTao
             // 
@@ -2296,6 +2316,31 @@
             this.groupBox_ChuyenMon.TabStop = false;
             this.groupBox_ChuyenMon.Text = "Trình độ chuyên môn";
             // 
+            // mACHUYENMONTextEdit
+            // 
+            this.mACHUYENMONTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.cHUYENMONBindingSource, "MACHUYENMON", true));
+            this.mACHUYENMONTextEdit.Location = new System.Drawing.Point(141, 31);
+            this.mACHUYENMONTextEdit.Name = "mACHUYENMONTextEdit";
+            this.mACHUYENMONTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mACHUYENMONTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mACHUYENMONTextEdit.Size = new System.Drawing.Size(190, 26);
+            this.mACHUYENMONTextEdit.TabIndex = 15;
+            // 
+            // cHUYENMONBindingSource
+            // 
+            this.cHUYENMONBindingSource.DataMember = "CHUYENMON";
+            this.cHUYENMONBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tENCHUYENMONTextEdit
+            // 
+            this.tENCHUYENMONTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.cHUYENMONBindingSource, "TENCHUYENMON", true));
+            this.tENCHUYENMONTextEdit.Location = new System.Drawing.Point(141, 66);
+            this.tENCHUYENMONTextEdit.Name = "tENCHUYENMONTextEdit";
+            this.tENCHUYENMONTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tENCHUYENMONTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tENCHUYENMONTextEdit.Size = new System.Drawing.Size(190, 26);
+            this.tENCHUYENMONTextEdit.TabIndex = 17;
+            // 
             // gridControl_ChuyenMon
             // 
             this.gridControl_ChuyenMon.DataSource = this.cHUYENMONBindingSource;
@@ -2390,12 +2435,37 @@
             this.groupBox_TinHoc.Controls.Add(this.label32);
             this.groupBox_TinHoc.Controls.Add(this.label33);
             this.groupBox_TinHoc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_TinHoc.Location = new System.Drawing.Point(667, 499);
+            this.groupBox_TinHoc.Location = new System.Drawing.Point(667, 477);
             this.groupBox_TinHoc.Name = "groupBox_TinHoc";
             this.groupBox_TinHoc.Size = new System.Drawing.Size(641, 243);
             this.groupBox_TinHoc.TabIndex = 13;
             this.groupBox_TinHoc.TabStop = false;
             this.groupBox_TinHoc.Text = "Trình độ tin học";
+            // 
+            // mATRINHDOTINHOCTextEdit
+            // 
+            this.mATRINHDOTINHOCTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tRINHDOTINHOCBindingSource, "MATRINHDOTINHOC", true));
+            this.mATRINHDOTINHOCTextEdit.Location = new System.Drawing.Point(119, 31);
+            this.mATRINHDOTINHOCTextEdit.Name = "mATRINHDOTINHOCTextEdit";
+            this.mATRINHDOTINHOCTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mATRINHDOTINHOCTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mATRINHDOTINHOCTextEdit.Size = new System.Drawing.Size(208, 26);
+            this.mATRINHDOTINHOCTextEdit.TabIndex = 13;
+            // 
+            // tRINHDOTINHOCBindingSource
+            // 
+            this.tRINHDOTINHOCBindingSource.DataMember = "TRINHDOTINHOC";
+            this.tRINHDOTINHOCBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tENTRINHDOTINHOCTextEdit
+            // 
+            this.tENTRINHDOTINHOCTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tRINHDOTINHOCBindingSource, "TENTRINHDOTINHOC", true));
+            this.tENTRINHDOTINHOCTextEdit.Location = new System.Drawing.Point(119, 63);
+            this.tENTRINHDOTINHOCTextEdit.Name = "tENTRINHDOTINHOCTextEdit";
+            this.tENTRINHDOTINHOCTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tENTRINHDOTINHOCTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tENTRINHDOTINHOCTextEdit.Size = new System.Drawing.Size(208, 26);
+            this.tENTRINHDOTINHOCTextEdit.TabIndex = 15;
             // 
             // gridControl_TinHoc
             // 
@@ -2491,12 +2561,37 @@
             this.groupBox_NgoaiNgu.Controls.Add(this.label34);
             this.groupBox_NgoaiNgu.Controls.Add(this.label35);
             this.groupBox_NgoaiNgu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox_NgoaiNgu.Location = new System.Drawing.Point(667, 250);
+            this.groupBox_NgoaiNgu.Location = new System.Drawing.Point(667, 242);
             this.groupBox_NgoaiNgu.Name = "groupBox_NgoaiNgu";
             this.groupBox_NgoaiNgu.Size = new System.Drawing.Size(641, 241);
             this.groupBox_NgoaiNgu.TabIndex = 12;
             this.groupBox_NgoaiNgu.TabStop = false;
             this.groupBox_NgoaiNgu.Text = "Trình độ ngoại ngữ";
+            // 
+            // mANGOAINGUTextEdit
+            // 
+            this.mANGOAINGUTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nGOAINGUBindingSource, "MANGOAINGU", true));
+            this.mANGOAINGUTextEdit.Location = new System.Drawing.Point(129, 32);
+            this.mANGOAINGUTextEdit.Name = "mANGOAINGUTextEdit";
+            this.mANGOAINGUTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mANGOAINGUTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mANGOAINGUTextEdit.Size = new System.Drawing.Size(198, 26);
+            this.mANGOAINGUTextEdit.TabIndex = 14;
+            // 
+            // nGOAINGUBindingSource
+            // 
+            this.nGOAINGUBindingSource.DataMember = "NGOAINGU";
+            this.nGOAINGUBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tENNGOAINGUTextEdit
+            // 
+            this.tENNGOAINGUTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nGOAINGUBindingSource, "TENNGOAINGU", true));
+            this.tENNGOAINGUTextEdit.Location = new System.Drawing.Point(129, 65);
+            this.tENNGOAINGUTextEdit.Name = "tENNGOAINGUTextEdit";
+            this.tENNGOAINGUTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tENNGOAINGUTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tENNGOAINGUTextEdit.Size = new System.Drawing.Size(198, 26);
+            this.tENNGOAINGUTextEdit.TabIndex = 16;
             // 
             // gridControl_NgoaiNgu
             // 
@@ -2598,6 +2693,31 @@
             this.groupBox_TDHocVan.TabIndex = 11;
             this.groupBox_TDHocVan.TabStop = false;
             this.groupBox_TDHocVan.Text = "Trình độ học vấn";
+            // 
+            // mATRINHDOHOCVANTextEdit
+            // 
+            this.mATRINHDOHOCVANTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tRINHDOHOCVANBindingSource, "MATRINHDOHOCVAN", true));
+            this.mATRINHDOHOCVANTextEdit.Location = new System.Drawing.Point(119, 30);
+            this.mATRINHDOHOCVANTextEdit.Name = "mATRINHDOHOCVANTextEdit";
+            this.mATRINHDOHOCVANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mATRINHDOHOCVANTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.mATRINHDOHOCVANTextEdit.Size = new System.Drawing.Size(208, 26);
+            this.mATRINHDOHOCVANTextEdit.TabIndex = 13;
+            // 
+            // tRINHDOHOCVANBindingSource
+            // 
+            this.tRINHDOHOCVANBindingSource.DataMember = "TRINHDOHOCVAN";
+            this.tRINHDOHOCVANBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tENTRINHDOHOCVANTextEdit
+            // 
+            this.tENTRINHDOHOCVANTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tRINHDOHOCVANBindingSource, "TENTRINHDOHOCVAN", true));
+            this.tENTRINHDOHOCVANTextEdit.Location = new System.Drawing.Point(119, 66);
+            this.tENTRINHDOHOCVANTextEdit.Name = "tENTRINHDOHOCVANTextEdit";
+            this.tENTRINHDOHOCVANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tENTRINHDOHOCVANTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tENTRINHDOHOCVANTextEdit.Size = new System.Drawing.Size(208, 26);
+            this.tENTRINHDOHOCVANTextEdit.TabIndex = 15;
             // 
             // gridControl_TDHocVan
             // 
@@ -2741,121 +2861,21 @@
             // 
             this.qUANLYKYLUATTableAdapter.ClearBeforeFill = true;
             // 
-            // cHUYENMONBindingSource
-            // 
-            this.cHUYENMONBindingSource.DataMember = "CHUYENMON";
-            this.cHUYENMONBindingSource.DataSource = this.dataSetQLNS;
-            // 
             // cHUYENMONTableAdapter
             // 
             this.cHUYENMONTableAdapter.ClearBeforeFill = true;
-            // 
-            // mACHUYENMONTextEdit
-            // 
-            this.mACHUYENMONTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.cHUYENMONBindingSource, "MACHUYENMON", true));
-            this.mACHUYENMONTextEdit.Location = new System.Drawing.Point(141, 31);
-            this.mACHUYENMONTextEdit.Name = "mACHUYENMONTextEdit";
-            this.mACHUYENMONTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mACHUYENMONTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mACHUYENMONTextEdit.Size = new System.Drawing.Size(190, 26);
-            this.mACHUYENMONTextEdit.TabIndex = 15;
-            // 
-            // tENCHUYENMONTextEdit
-            // 
-            this.tENCHUYENMONTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.cHUYENMONBindingSource, "TENCHUYENMON", true));
-            this.tENCHUYENMONTextEdit.Location = new System.Drawing.Point(141, 66);
-            this.tENCHUYENMONTextEdit.Name = "tENCHUYENMONTextEdit";
-            this.tENCHUYENMONTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tENCHUYENMONTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tENCHUYENMONTextEdit.Size = new System.Drawing.Size(190, 26);
-            this.tENCHUYENMONTextEdit.TabIndex = 17;
-            // 
-            // tRINHDOHOCVANBindingSource
-            // 
-            this.tRINHDOHOCVANBindingSource.DataMember = "TRINHDOHOCVAN";
-            this.tRINHDOHOCVANBindingSource.DataSource = this.dataSetQLNS;
             // 
             // tRINHDOHOCVANTableAdapter
             // 
             this.tRINHDOHOCVANTableAdapter.ClearBeforeFill = true;
             // 
-            // mATRINHDOHOCVANTextEdit
-            // 
-            this.mATRINHDOHOCVANTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tRINHDOHOCVANBindingSource, "MATRINHDOHOCVAN", true));
-            this.mATRINHDOHOCVANTextEdit.Location = new System.Drawing.Point(119, 30);
-            this.mATRINHDOHOCVANTextEdit.Name = "mATRINHDOHOCVANTextEdit";
-            this.mATRINHDOHOCVANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mATRINHDOHOCVANTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mATRINHDOHOCVANTextEdit.Size = new System.Drawing.Size(208, 26);
-            this.mATRINHDOHOCVANTextEdit.TabIndex = 13;
-            // 
-            // tENTRINHDOHOCVANTextEdit
-            // 
-            this.tENTRINHDOHOCVANTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tRINHDOHOCVANBindingSource, "TENTRINHDOHOCVAN", true));
-            this.tENTRINHDOHOCVANTextEdit.Location = new System.Drawing.Point(119, 66);
-            this.tENTRINHDOHOCVANTextEdit.Name = "tENTRINHDOHOCVANTextEdit";
-            this.tENTRINHDOHOCVANTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tENTRINHDOHOCVANTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tENTRINHDOHOCVANTextEdit.Size = new System.Drawing.Size(208, 26);
-            this.tENTRINHDOHOCVANTextEdit.TabIndex = 15;
-            // 
-            // nGOAINGUBindingSource
-            // 
-            this.nGOAINGUBindingSource.DataMember = "NGOAINGU";
-            this.nGOAINGUBindingSource.DataSource = this.dataSetQLNS;
-            // 
             // nGOAINGUTableAdapter
             // 
             this.nGOAINGUTableAdapter.ClearBeforeFill = true;
             // 
-            // mANGOAINGUTextEdit
-            // 
-            this.mANGOAINGUTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nGOAINGUBindingSource, "MANGOAINGU", true));
-            this.mANGOAINGUTextEdit.Location = new System.Drawing.Point(129, 32);
-            this.mANGOAINGUTextEdit.Name = "mANGOAINGUTextEdit";
-            this.mANGOAINGUTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mANGOAINGUTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mANGOAINGUTextEdit.Size = new System.Drawing.Size(198, 26);
-            this.mANGOAINGUTextEdit.TabIndex = 14;
-            // 
-            // tENNGOAINGUTextEdit
-            // 
-            this.tENNGOAINGUTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nGOAINGUBindingSource, "TENNGOAINGU", true));
-            this.tENNGOAINGUTextEdit.Location = new System.Drawing.Point(129, 65);
-            this.tENNGOAINGUTextEdit.Name = "tENNGOAINGUTextEdit";
-            this.tENNGOAINGUTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tENNGOAINGUTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tENNGOAINGUTextEdit.Size = new System.Drawing.Size(198, 26);
-            this.tENNGOAINGUTextEdit.TabIndex = 16;
-            // 
-            // tRINHDOTINHOCBindingSource
-            // 
-            this.tRINHDOTINHOCBindingSource.DataMember = "TRINHDOTINHOC";
-            this.tRINHDOTINHOCBindingSource.DataSource = this.dataSetQLNS;
-            // 
             // tRINHDOTINHOCTableAdapter
             // 
             this.tRINHDOTINHOCTableAdapter.ClearBeforeFill = true;
-            // 
-            // mATRINHDOTINHOCTextEdit
-            // 
-            this.mATRINHDOTINHOCTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tRINHDOTINHOCBindingSource, "MATRINHDOTINHOC", true));
-            this.mATRINHDOTINHOCTextEdit.Location = new System.Drawing.Point(119, 31);
-            this.mATRINHDOTINHOCTextEdit.Name = "mATRINHDOTINHOCTextEdit";
-            this.mATRINHDOTINHOCTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mATRINHDOTINHOCTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mATRINHDOTINHOCTextEdit.Size = new System.Drawing.Size(208, 26);
-            this.mATRINHDOTINHOCTextEdit.TabIndex = 13;
-            // 
-            // tENTRINHDOTINHOCTextEdit
-            // 
-            this.tENTRINHDOTINHOCTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tRINHDOTINHOCBindingSource, "TENTRINHDOTINHOC", true));
-            this.tENTRINHDOTINHOCTextEdit.Location = new System.Drawing.Point(119, 63);
-            this.tENTRINHDOTINHOCTextEdit.Name = "tENTRINHDOTINHOCTextEdit";
-            this.tENTRINHDOTINHOCTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tENTRINHDOTINHOCTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tENTRINHDOTINHOCTextEdit.Size = new System.Drawing.Size(208, 26);
-            this.tENTRINHDOTINHOCTextEdit.TabIndex = 15;
             // 
             // cHUONGTRINHDAOTAOBindingSource
             // 
@@ -2866,33 +2886,13 @@
             // 
             this.cHUONGTRINHDAOTAOTableAdapter.ClearBeforeFill = true;
             // 
-            // mAKHOADAOTAOTextEdit
-            // 
-            this.mAKHOADAOTAOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.dAOTAOBindingSource, "MAKHOADAOTAO", true));
-            this.mAKHOADAOTAOTextEdit.Location = new System.Drawing.Point(154, 31);
-            this.mAKHOADAOTAOTextEdit.Name = "mAKHOADAOTAOTextEdit";
-            this.mAKHOADAOTAOTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mAKHOADAOTAOTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.mAKHOADAOTAOTextEdit.Size = new System.Drawing.Size(195, 26);
-            this.mAKHOADAOTAOTextEdit.TabIndex = 13;
-            // 
-            // tENKHOADAOTAOTextEdit
-            // 
-            this.tENKHOADAOTAOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.dAOTAOBindingSource, "TENKHOADAOTAO", true));
-            this.tENKHOADAOTAOTextEdit.Location = new System.Drawing.Point(154, 63);
-            this.tENKHOADAOTAOTextEdit.Name = "tENKHOADAOTAOTextEdit";
-            this.tENKHOADAOTAOTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tENKHOADAOTAOTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tENKHOADAOTAOTextEdit.Size = new System.Drawing.Size(195, 26);
-            this.tENKHOADAOTAOTextEdit.TabIndex = 15;
-            // 
             // frm_NhapLieu_KT_KL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabPane1);
             this.Name = "frm_NhapLieu_KT_KL";
-            this.Size = new System.Drawing.Size(1346, 787);
+            this.Size = new System.Drawing.Size(1346, 733);
             this.Load += new System.EventHandler(this.frm_NhapLieu_KT_KL_Load);
             this.groupBox_KhenThuong.ResumeLayout(false);
             this.groupBox_KhenThuong.PerformLayout();
@@ -2986,42 +2986,42 @@
             this.tabNavigationPage4.ResumeLayout(false);
             this.groupBox_DaoTao.ResumeLayout(false);
             this.groupBox_DaoTao.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mAKHOADAOTAOTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENKHOADAOTAOTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_DaoTao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_DaoTao)).EndInit();
             this.groupBox_ChuyenMon.ResumeLayout(false);
             this.groupBox_ChuyenMon.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mACHUYENMONTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENCHUYENMONTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_ChuyenMon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_ChuyenMon)).EndInit();
             this.groupBox_TinHoc.ResumeLayout(false);
             this.groupBox_TinHoc.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOTINHOCTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENTRINHDOTINHOCTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_TinHoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_TinHoc)).EndInit();
             this.groupBox_NgoaiNgu.ResumeLayout(false);
             this.groupBox_NgoaiNgu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mANGOAINGUTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENNGOAINGUTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_NgoaiNgu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_NgoaiNgu)).EndInit();
             this.groupBox_TDHocVan.ResumeLayout(false);
             this.groupBox_TDHocVan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOHOCVANTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tENTRINHDOHOCVANTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_TDHocVan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_TDHocVan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qUANLYKYLUATBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cHUYENMONBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mACHUYENMONTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENCHUYENMONTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOHOCVANBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOHOCVANTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENTRINHDOHOCVANTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nGOAINGUBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mANGOAINGUTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENNGOAINGUTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tRINHDOTINHOCBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRINHDOTINHOCTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENTRINHDOTINHOCTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHUONGTRINHDAOTAOBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAKHOADAOTAOTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tENKHOADAOTAOTextEdit.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
