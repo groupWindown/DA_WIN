@@ -59,17 +59,6 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.dataGridView14 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label34 = new System.Windows.Forms.Label();
             this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -86,28 +75,9 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dataGridView8 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label19 = new System.Windows.Forms.Label();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn90 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn91 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn92 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn93 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dateEdit15 = new DevExpress.XtraEditors.DateEdit();
@@ -124,53 +94,18 @@
             this.xtraTabControl4 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage9 = new DevExpress.XtraTab.XtraTabPage();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dANHSACHUNGVIENDAUDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn70 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn71 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn72 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn73 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn74 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xtraTabPage10 = new DevExpress.XtraTab.XtraTabPage();
-            this.dANHSACHUNGVIENROTDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn76 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn77 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn78 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn79 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn81 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn82 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn83 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn84 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn85 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn86 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn87 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn88 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn89 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn75 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.dataGridView12 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.cHITIETKHENTHUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMACTKHENTHUONG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMALOAIKHENTHUONG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMANV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYKHENTHUONG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.dateEdit5 = new DevExpress.XtraEditors.DateEdit();
             this.dateEdit6 = new DevExpress.XtraEditors.DateEdit();
@@ -206,33 +141,21 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridControl3 = new DevExpress.XtraGrid.GridControl();
+            this.qUANLYKYLUATBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMAQUANLYKYLUAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMANV1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMAKYLUAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYKYLUAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCOQUANKYLUAT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.label13 = new System.Windows.Forms.Label();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Colum6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dateEdit4 = new DevExpress.XtraEditors.DateEdit();
             this.dateEdit3 = new DevExpress.XtraEditors.DateEdit();
@@ -247,21 +170,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateEdit9 = new DevExpress.XtraEditors.DateEdit();
             this.dateEdit10 = new DevExpress.XtraEditors.DateEdit();
@@ -280,6 +192,95 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
+            this.cHITIETKHENTHUONGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.CHITIETKHENTHUONGTableAdapter();
+            this.qUANLYKYLUATTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.QUANLYKYLUATTableAdapter();
+            this.gridControl4 = new DevExpress.XtraGrid.GridControl();
+            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.dANHSACHUNGVIENDAUBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dANHSACHUNGVIENDAUTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DANHSACHUNGVIENDAUTableAdapter();
+            this.colMAUNGVIEN = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMADANTOC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMATONGIAO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMAQUOCTICH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHOTEN = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGIOITINH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYSINH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNOISINH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCMND = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYCAP = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNOICAP = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQUEQUAN = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDIACHITHUONGTRU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNOIOHIENTAI = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDIENTHOAI = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEMAIL = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTINHTRANGHONNHAN = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDIENUUTIEN = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTINHTRANGSUCKHOE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYTUYENDUNG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHINHTHUCTUYENDUNG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colVITRITUYENDUNG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMATRINHDOHOCVAN = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMATRINHDOTINHOC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colKETQUA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridControl5 = new DevExpress.XtraGrid.GridControl();
+            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.dANHSACHUNGVIENROTBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.colMAUNGVIEN1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMADANTOC1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMATONGIAO1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMAQUOCTICH1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHOTEN1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGIOITINH1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYSINH1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNOISINH1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCMND1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYCAP1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNOICAP1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQUEQUAN1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDIACHITHUONGTRU1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNOIOHIENTAI1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDIENTHOAI1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEMAIL1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTINHTRANGHONNHAN1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDIENUUTIEN1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTINHTRANGSUCKHOE1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYTUYENDUNG1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHINHTHUCTUYENDUNG1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colVITRITUYENDUNG1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMATRINHDOHOCVAN1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMATRINHDOTINHOC1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colKETQUA1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.dANHMUCTANGCABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dANHMUCTANGCATableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.DANHMUCTANGCATableAdapter();
+            this.bANGTANGCABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bANGTANGCATableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.BANGTANGCATableAdapter();
+            this.dANHMUCTANGCABindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.gridControl6 = new DevExpress.XtraGrid.GridControl();
+            this.gridView6 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMANV2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYTANGCA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMALOAICA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridControl7 = new DevExpress.XtraGrid.GridControl();
+            this.gridView7 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControl8 = new DevExpress.XtraGrid.GridControl();
+            this.gridView8 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.tONGLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tONGLUONGTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.TONGLUONGTableAdapter();
+            this.colMANV3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLUONGTHANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTONGTIENLUONG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridControl9 = new DevExpress.XtraGrid.GridControl();
+            this.gridView9 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.qUANLYNGHIVIECBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qUANLYNGHIVIECTableAdapter = new QuanLy_NhanSu.DataSetQLNSTableAdapters.QUANLYNGHIVIECTableAdapter();
+            this.colMAQUANLYNGHIVIEC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMANV4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSOQUYETDINH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYQUYETDINH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGUOIKY = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYNGHIVIEC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLYDO = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENDAUBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetQLNS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTBindingSource)).BeginInit();
@@ -295,7 +296,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit14.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit14.Properties)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).BeginInit();
             this.xtraTabPage8.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit11.Properties.CalendarTimeProperties)).BeginInit();
@@ -303,10 +303,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit12.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit12.Properties)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.xtraTabPage1.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit15.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit15.Properties)).BeginInit();
@@ -317,15 +315,15 @@
             this.xtraTabControl4.SuspendLayout();
             this.xtraTabPage9.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENDAUDataGridView)).BeginInit();
             this.xtraTabPage10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTDataGridView)).BeginInit();
             this.tabNavigationPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage6.SuspendLayout();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHITIETKHENTHUONGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit5.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit5.Properties)).BeginInit();
@@ -338,13 +336,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit8.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit8.Properties)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUANLYKYLUATBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             this.tabNavigationPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage4.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties)).BeginInit();
@@ -352,7 +353,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).BeginInit();
             this.xtraTabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit9.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit9.Properties)).BeginInit();
@@ -364,6 +364,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENDAUBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANHMUCTANGCABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bANGTANGCABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANHMUCTANGCABindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tONGLUONGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUANLYNGHIVIECBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tileNavCategory1
@@ -670,82 +689,11 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.dataGridView14);
+            this.panel11.Controls.Add(this.gridControl6);
             this.panel11.Location = new System.Drawing.Point(347, 11);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(1014, 487);
             this.panel11.TabIndex = 3;
-            // 
-            // dataGridView14
-            // 
-            this.dataGridView14.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView14.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn54,
-            this.dataGridViewTextBoxColumn55,
-            this.dataGridViewTextBoxColumn56,
-            this.dataGridViewTextBoxColumn57,
-            this.Column22,
-            this.Column23,
-            this.Column24,
-            this.Column25,
-            this.Column26,
-            this.Column27});
-            this.dataGridView14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView14.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView14.Name = "dataGridView14";
-            this.dataGridView14.Size = new System.Drawing.Size(1014, 484);
-            this.dataGridView14.TabIndex = 4;
-            // 
-            // dataGridViewTextBoxColumn54
-            // 
-            this.dataGridViewTextBoxColumn54.HeaderText = "Mã nhân viên";
-            this.dataGridViewTextBoxColumn54.Name = "dataGridViewTextBoxColumn54";
-            // 
-            // dataGridViewTextBoxColumn55
-            // 
-            this.dataGridViewTextBoxColumn55.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn55.Name = "dataGridViewTextBoxColumn55";
-            // 
-            // dataGridViewTextBoxColumn56
-            // 
-            this.dataGridViewTextBoxColumn56.HeaderText = "Phòng ban";
-            this.dataGridViewTextBoxColumn56.Name = "dataGridViewTextBoxColumn56";
-            // 
-            // dataGridViewTextBoxColumn57
-            // 
-            this.dataGridViewTextBoxColumn57.HeaderText = "Chức vụ";
-            this.dataGridViewTextBoxColumn57.Name = "dataGridViewTextBoxColumn57";
-            // 
-            // Column22
-            // 
-            this.Column22.HeaderText = "Mã loại ca";
-            this.Column22.Name = "Column22";
-            // 
-            // Column23
-            // 
-            this.Column23.HeaderText = "Tên loại ca";
-            this.Column23.Name = "Column23";
-            // 
-            // Column24
-            // 
-            this.Column24.HeaderText = "Hệ số";
-            this.Column24.Name = "Column24";
-            // 
-            // Column25
-            // 
-            this.Column25.HeaderText = "Số giờ tăng";
-            this.Column25.Name = "Column25";
-            // 
-            // Column26
-            // 
-            this.Column26.HeaderText = "Ngày tăng ca";
-            this.Column26.Name = "Column26";
-            // 
-            // Column27
-            // 
-            this.Column27.HeaderText = "Tiền tăng ca";
-            this.Column27.Name = "Column27";
             // 
             // label34
             // 
@@ -905,64 +853,11 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.dataGridView8);
+            this.panel6.Controls.Add(this.gridControl7);
             this.panel6.Location = new System.Drawing.Point(347, 11);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1014, 484);
             this.panel6.TabIndex = 5;
-            // 
-            // dataGridView8
-            // 
-            this.dataGridView8.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn21,
-            this.dataGridViewTextBoxColumn22,
-            this.dataGridViewTextBoxColumn23,
-            this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn25,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27});
-            this.dataGridView8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView8.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.Size = new System.Drawing.Size(1014, 481);
-            this.dataGridView8.TabIndex = 3;
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.HeaderText = "Mã nhân viên";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.HeaderText = "Phòng ban";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.HeaderText = "Chức vụ";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.HeaderText = "Ngày nghỉ";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.HeaderText = "Có phép";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.HeaderText = "Không phép";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
             // 
             // label19
             // 
@@ -986,83 +881,12 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.dataGridView2);
+            this.panel5.Controls.Add(this.gridControl8);
             this.panel5.ForeColor = System.Drawing.SystemColors.Control;
             this.panel5.Location = new System.Drawing.Point(346, 11);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1015, 484);
             this.panel5.TabIndex = 44;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn28,
-            this.dataGridViewTextBoxColumn29,
-            this.dataGridViewTextBoxColumn53,
-            this.dataGridViewTextBoxColumn90,
-            this.dataGridViewTextBoxColumn91,
-            this.dataGridViewTextBoxColumn92,
-            this.dataGridViewTextBoxColumn93});
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1015, 481);
-            this.dataGridView2.TabIndex = 4;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Mã nhân viên";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Phòng ban";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.HeaderText = "Chức vụ";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.HeaderText = "Tiền thưởng";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            // 
-            // dataGridViewTextBoxColumn53
-            // 
-            this.dataGridViewTextBoxColumn53.HeaderText = "Tiền kỷ luật";
-            this.dataGridViewTextBoxColumn53.Name = "dataGridViewTextBoxColumn53";
-            // 
-            // dataGridViewTextBoxColumn90
-            // 
-            this.dataGridViewTextBoxColumn90.HeaderText = "Tiền lương thỏa thuận";
-            this.dataGridViewTextBoxColumn90.Name = "dataGridViewTextBoxColumn90";
-            // 
-            // dataGridViewTextBoxColumn91
-            // 
-            this.dataGridViewTextBoxColumn91.HeaderText = "Tiền tăng ca";
-            this.dataGridViewTextBoxColumn91.Name = "dataGridViewTextBoxColumn91";
-            // 
-            // dataGridViewTextBoxColumn92
-            // 
-            this.dataGridViewTextBoxColumn92.HeaderText = "Tiền lương tăng";
-            this.dataGridViewTextBoxColumn92.Name = "dataGridViewTextBoxColumn92";
-            // 
-            // dataGridViewTextBoxColumn93
-            // 
-            this.dataGridViewTextBoxColumn93.HeaderText = "Tổng tiền lương";
-            this.dataGridViewTextBoxColumn93.Name = "dataGridViewTextBoxColumn93";
             // 
             // label25
             // 
@@ -1229,260 +1053,19 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dANHSACHUNGVIENDAUDataGridView);
+            this.panel3.Controls.Add(this.gridControl4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1364, 498);
             this.panel3.TabIndex = 0;
             // 
-            // dANHSACHUNGVIENDAUDataGridView
-            // 
-            this.dANHSACHUNGVIENDAUDataGridView.AutoGenerateColumns = false;
-            this.dANHSACHUNGVIENDAUDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dANHSACHUNGVIENDAUDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn59,
-            this.dataGridViewTextBoxColumn60,
-            this.dataGridViewTextBoxColumn61,
-            this.dataGridViewTextBoxColumn62,
-            this.dataGridViewTextBoxColumn63,
-            this.dataGridViewTextBoxColumn64,
-            this.dataGridViewTextBoxColumn65,
-            this.dataGridViewTextBoxColumn66,
-            this.dataGridViewTextBoxColumn67,
-            this.dataGridViewTextBoxColumn68,
-            this.dataGridViewTextBoxColumn69,
-            this.dataGridViewTextBoxColumn70,
-            this.dataGridViewTextBoxColumn71,
-            this.dataGridViewTextBoxColumn72,
-            this.dataGridViewTextBoxColumn73,
-            this.dataGridViewTextBoxColumn74});
-            this.dANHSACHUNGVIENDAUDataGridView.DataSource = this.dANHSACHUNGVIENDAUBindingSource;
-            this.dANHSACHUNGVIENDAUDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dANHSACHUNGVIENDAUDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.dANHSACHUNGVIENDAUDataGridView.Name = "dANHSACHUNGVIENDAUDataGridView";
-            this.dANHSACHUNGVIENDAUDataGridView.Size = new System.Drawing.Size(1364, 498);
-            this.dANHSACHUNGVIENDAUDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn59
-            // 
-            this.dataGridViewTextBoxColumn59.DataPropertyName = "MAUNGVIEN";
-            this.dataGridViewTextBoxColumn59.HeaderText = "Mã ứng viên";
-            this.dataGridViewTextBoxColumn59.Name = "dataGridViewTextBoxColumn59";
-            // 
-            // dataGridViewTextBoxColumn60
-            // 
-            this.dataGridViewTextBoxColumn60.DataPropertyName = "HOTEN";
-            this.dataGridViewTextBoxColumn60.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn60.Name = "dataGridViewTextBoxColumn60";
-            // 
-            // dataGridViewTextBoxColumn61
-            // 
-            this.dataGridViewTextBoxColumn61.DataPropertyName = "GIOITINH";
-            this.dataGridViewTextBoxColumn61.HeaderText = "Giới tính";
-            this.dataGridViewTextBoxColumn61.Name = "dataGridViewTextBoxColumn61";
-            // 
-            // dataGridViewTextBoxColumn62
-            // 
-            this.dataGridViewTextBoxColumn62.DataPropertyName = "NGAYSINH";
-            this.dataGridViewTextBoxColumn62.HeaderText = "Ngày sinh";
-            this.dataGridViewTextBoxColumn62.Name = "dataGridViewTextBoxColumn62";
-            // 
-            // dataGridViewTextBoxColumn63
-            // 
-            this.dataGridViewTextBoxColumn63.DataPropertyName = "NOISINH";
-            this.dataGridViewTextBoxColumn63.HeaderText = "Nơi sinh";
-            this.dataGridViewTextBoxColumn63.Name = "dataGridViewTextBoxColumn63";
-            // 
-            // dataGridViewTextBoxColumn64
-            // 
-            this.dataGridViewTextBoxColumn64.DataPropertyName = "CMND";
-            this.dataGridViewTextBoxColumn64.HeaderText = "CMND";
-            this.dataGridViewTextBoxColumn64.Name = "dataGridViewTextBoxColumn64";
-            // 
-            // dataGridViewTextBoxColumn65
-            // 
-            this.dataGridViewTextBoxColumn65.DataPropertyName = "NOIOHIENTAI";
-            this.dataGridViewTextBoxColumn65.HeaderText = "Nơi ở hiện tại";
-            this.dataGridViewTextBoxColumn65.Name = "dataGridViewTextBoxColumn65";
-            // 
-            // dataGridViewTextBoxColumn66
-            // 
-            this.dataGridViewTextBoxColumn66.DataPropertyName = "DIENTHOAI";
-            this.dataGridViewTextBoxColumn66.HeaderText = "Số điện thoại";
-            this.dataGridViewTextBoxColumn66.Name = "dataGridViewTextBoxColumn66";
-            // 
-            // dataGridViewTextBoxColumn67
-            // 
-            this.dataGridViewTextBoxColumn67.DataPropertyName = "EMAIL";
-            this.dataGridViewTextBoxColumn67.HeaderText = "Email";
-            this.dataGridViewTextBoxColumn67.Name = "dataGridViewTextBoxColumn67";
-            // 
-            // dataGridViewTextBoxColumn68
-            // 
-            this.dataGridViewTextBoxColumn68.DataPropertyName = "TINHTRANGHONNHAN";
-            this.dataGridViewTextBoxColumn68.HeaderText = "Hôn nhân";
-            this.dataGridViewTextBoxColumn68.Name = "dataGridViewTextBoxColumn68";
-            // 
-            // dataGridViewTextBoxColumn69
-            // 
-            this.dataGridViewTextBoxColumn69.DataPropertyName = "DIENUUTIEN";
-            this.dataGridViewTextBoxColumn69.HeaderText = "Diện ưu tiên";
-            this.dataGridViewTextBoxColumn69.Name = "dataGridViewTextBoxColumn69";
-            // 
-            // dataGridViewTextBoxColumn70
-            // 
-            this.dataGridViewTextBoxColumn70.DataPropertyName = "TINHTRANGSUCKHOE";
-            this.dataGridViewTextBoxColumn70.HeaderText = "Sức khỏe";
-            this.dataGridViewTextBoxColumn70.Name = "dataGridViewTextBoxColumn70";
-            // 
-            // dataGridViewTextBoxColumn71
-            // 
-            this.dataGridViewTextBoxColumn71.DataPropertyName = "NGAYTUYENDUNG";
-            this.dataGridViewTextBoxColumn71.HeaderText = "Ngày tuyển dụng";
-            this.dataGridViewTextBoxColumn71.Name = "dataGridViewTextBoxColumn71";
-            // 
-            // dataGridViewTextBoxColumn72
-            // 
-            this.dataGridViewTextBoxColumn72.DataPropertyName = "HINHTHUCTUYENDUNG";
-            this.dataGridViewTextBoxColumn72.HeaderText = "Hình thức";
-            this.dataGridViewTextBoxColumn72.Name = "dataGridViewTextBoxColumn72";
-            // 
-            // dataGridViewTextBoxColumn73
-            // 
-            this.dataGridViewTextBoxColumn73.DataPropertyName = "VITRITUYENDUNG";
-            this.dataGridViewTextBoxColumn73.HeaderText = "Vị trí tuyển dụng";
-            this.dataGridViewTextBoxColumn73.Name = "dataGridViewTextBoxColumn73";
-            // 
-            // dataGridViewTextBoxColumn74
-            // 
-            this.dataGridViewTextBoxColumn74.DataPropertyName = "KETQUA";
-            this.dataGridViewTextBoxColumn74.HeaderText = "Kết qủa";
-            this.dataGridViewTextBoxColumn74.Name = "dataGridViewTextBoxColumn74";
-            // 
             // xtraTabPage10
             // 
-            this.xtraTabPage10.Controls.Add(this.dANHSACHUNGVIENROTDataGridView);
+            this.xtraTabPage10.Controls.Add(this.gridControl5);
             this.xtraTabPage10.Name = "xtraTabPage10";
             this.xtraTabPage10.Size = new System.Drawing.Size(1364, 498);
             this.xtraTabPage10.Text = "Danh sách ứng viên rớt";
-            // 
-            // dANHSACHUNGVIENROTDataGridView
-            // 
-            this.dANHSACHUNGVIENROTDataGridView.AutoGenerateColumns = false;
-            this.dANHSACHUNGVIENROTDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dANHSACHUNGVIENROTDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn76,
-            this.dataGridViewTextBoxColumn77,
-            this.dataGridViewTextBoxColumn78,
-            this.dataGridViewTextBoxColumn79,
-            this.dataGridViewTextBoxColumn80,
-            this.dataGridViewTextBoxColumn81,
-            this.dataGridViewTextBoxColumn82,
-            this.dataGridViewTextBoxColumn83,
-            this.dataGridViewTextBoxColumn84,
-            this.dataGridViewTextBoxColumn85,
-            this.dataGridViewTextBoxColumn86,
-            this.dataGridViewTextBoxColumn87,
-            this.dataGridViewTextBoxColumn88,
-            this.dataGridViewTextBoxColumn89,
-            this.dataGridViewTextBoxColumn75});
-            this.dANHSACHUNGVIENROTDataGridView.DataSource = this.dANHSACHUNGVIENROTBindingSource;
-            this.dANHSACHUNGVIENROTDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dANHSACHUNGVIENROTDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.dANHSACHUNGVIENROTDataGridView.Name = "dANHSACHUNGVIENROTDataGridView";
-            this.dANHSACHUNGVIENROTDataGridView.Size = new System.Drawing.Size(1364, 498);
-            this.dANHSACHUNGVIENROTDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn76
-            // 
-            this.dataGridViewTextBoxColumn76.DataPropertyName = "MAUNGVIEN";
-            this.dataGridViewTextBoxColumn76.HeaderText = "Mã ứng viên";
-            this.dataGridViewTextBoxColumn76.Name = "dataGridViewTextBoxColumn76";
-            // 
-            // dataGridViewTextBoxColumn77
-            // 
-            this.dataGridViewTextBoxColumn77.DataPropertyName = "HOTEN";
-            this.dataGridViewTextBoxColumn77.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn77.Name = "dataGridViewTextBoxColumn77";
-            // 
-            // dataGridViewTextBoxColumn78
-            // 
-            this.dataGridViewTextBoxColumn78.DataPropertyName = "GIOITINH";
-            this.dataGridViewTextBoxColumn78.HeaderText = "Giới tính";
-            this.dataGridViewTextBoxColumn78.Name = "dataGridViewTextBoxColumn78";
-            // 
-            // dataGridViewTextBoxColumn79
-            // 
-            this.dataGridViewTextBoxColumn79.DataPropertyName = "NGAYSINH";
-            this.dataGridViewTextBoxColumn79.HeaderText = "Ngày sinh";
-            this.dataGridViewTextBoxColumn79.Name = "dataGridViewTextBoxColumn79";
-            // 
-            // dataGridViewTextBoxColumn80
-            // 
-            this.dataGridViewTextBoxColumn80.DataPropertyName = "NOISINH";
-            this.dataGridViewTextBoxColumn80.HeaderText = "Nơi sinh";
-            this.dataGridViewTextBoxColumn80.Name = "dataGridViewTextBoxColumn80";
-            // 
-            // dataGridViewTextBoxColumn81
-            // 
-            this.dataGridViewTextBoxColumn81.DataPropertyName = "CMND";
-            this.dataGridViewTextBoxColumn81.HeaderText = "CMND";
-            this.dataGridViewTextBoxColumn81.Name = "dataGridViewTextBoxColumn81";
-            // 
-            // dataGridViewTextBoxColumn82
-            // 
-            this.dataGridViewTextBoxColumn82.DataPropertyName = "NOIOHIENTAI";
-            this.dataGridViewTextBoxColumn82.HeaderText = "Nơi ở hiện tại";
-            this.dataGridViewTextBoxColumn82.Name = "dataGridViewTextBoxColumn82";
-            // 
-            // dataGridViewTextBoxColumn83
-            // 
-            this.dataGridViewTextBoxColumn83.DataPropertyName = "DIENTHOAI";
-            this.dataGridViewTextBoxColumn83.HeaderText = "Số điện thoại";
-            this.dataGridViewTextBoxColumn83.Name = "dataGridViewTextBoxColumn83";
-            // 
-            // dataGridViewTextBoxColumn84
-            // 
-            this.dataGridViewTextBoxColumn84.DataPropertyName = "EMAIL";
-            this.dataGridViewTextBoxColumn84.HeaderText = "Email";
-            this.dataGridViewTextBoxColumn84.Name = "dataGridViewTextBoxColumn84";
-            // 
-            // dataGridViewTextBoxColumn85
-            // 
-            this.dataGridViewTextBoxColumn85.DataPropertyName = "TINHTRANGHONNHAN";
-            this.dataGridViewTextBoxColumn85.HeaderText = "Hôn nhân";
-            this.dataGridViewTextBoxColumn85.Name = "dataGridViewTextBoxColumn85";
-            // 
-            // dataGridViewTextBoxColumn86
-            // 
-            this.dataGridViewTextBoxColumn86.DataPropertyName = "TINHTRANGSUCKHOE";
-            this.dataGridViewTextBoxColumn86.HeaderText = "Sức khỏe";
-            this.dataGridViewTextBoxColumn86.Name = "dataGridViewTextBoxColumn86";
-            // 
-            // dataGridViewTextBoxColumn87
-            // 
-            this.dataGridViewTextBoxColumn87.DataPropertyName = "NGAYTUYENDUNG";
-            this.dataGridViewTextBoxColumn87.HeaderText = "Ngày tuyển dụng";
-            this.dataGridViewTextBoxColumn87.Name = "dataGridViewTextBoxColumn87";
-            // 
-            // dataGridViewTextBoxColumn88
-            // 
-            this.dataGridViewTextBoxColumn88.DataPropertyName = "HINHTHUCTUYENDUNG";
-            this.dataGridViewTextBoxColumn88.HeaderText = "Hình thức";
-            this.dataGridViewTextBoxColumn88.Name = "dataGridViewTextBoxColumn88";
-            // 
-            // dataGridViewTextBoxColumn89
-            // 
-            this.dataGridViewTextBoxColumn89.DataPropertyName = "VITRITUYENDUNG";
-            this.dataGridViewTextBoxColumn89.HeaderText = "Vị trí tuyển dụng";
-            this.dataGridViewTextBoxColumn89.Name = "dataGridViewTextBoxColumn89";
-            // 
-            // dataGridViewTextBoxColumn75
-            // 
-            this.dataGridViewTextBoxColumn75.DataPropertyName = "KETQUA";
-            this.dataGridViewTextBoxColumn75.HeaderText = "Kết quả";
-            this.dataGridViewTextBoxColumn75.Name = "dataGridViewTextBoxColumn75";
             // 
             // tabNavigationPage5
             // 
@@ -1516,69 +1099,66 @@
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.dataGridView12);
+            this.panel12.Controls.Add(this.gridControl2);
             this.panel12.Location = new System.Drawing.Point(345, 11);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(1012, 487);
             this.panel12.TabIndex = 2;
             // 
-            // dataGridView12
+            // gridControl2
             // 
-            this.dataGridView12.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView12.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView12.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn43,
-            this.dataGridViewTextBoxColumn44,
-            this.dataGridViewTextBoxColumn45,
-            this.dataGridViewTextBoxColumn46,
-            this.dataGridViewTextBoxColumn47,
-            this.dataGridViewTextBoxColumn48,
-            this.dataGridViewTextBoxColumn49,
-            this.dataGridViewTextBoxColumn51});
-            this.dataGridView12.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView12.Name = "dataGridView12";
-            this.dataGridView12.Size = new System.Drawing.Size(1015, 484);
-            this.dataGridView12.TabIndex = 4;
+            this.gridControl2.DataSource = this.cHITIETKHENTHUONGBindingSource;
+            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl2.Location = new System.Drawing.Point(0, 0);
+            this.gridControl2.MainView = this.gridView2;
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(1012, 487);
+            this.gridControl2.TabIndex = 0;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
             // 
-            // dataGridViewTextBoxColumn43
+            // cHITIETKHENTHUONGBindingSource
             // 
-            this.dataGridViewTextBoxColumn43.HeaderText = "Mã nhân viên";
-            this.dataGridViewTextBoxColumn43.Name = "dataGridViewTextBoxColumn43";
+            this.cHITIETKHENTHUONGBindingSource.DataMember = "CHITIETKHENTHUONG";
+            this.cHITIETKHENTHUONGBindingSource.DataSource = this.dataSetQLNS;
             // 
-            // dataGridViewTextBoxColumn44
+            // gridView2
             // 
-            this.dataGridViewTextBoxColumn44.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn44.Name = "dataGridViewTextBoxColumn44";
+            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMACTKHENTHUONG,
+            this.colMALOAIKHENTHUONG,
+            this.colMANV,
+            this.colNGAYKHENTHUONG});
+            this.gridView2.GridControl = this.gridControl2;
+            this.gridView2.Name = "gridView2";
             // 
-            // dataGridViewTextBoxColumn45
+            // colMACTKHENTHUONG
             // 
-            this.dataGridViewTextBoxColumn45.HeaderText = "Phòng ban";
-            this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
+            this.colMACTKHENTHUONG.FieldName = "MACTKHENTHUONG";
+            this.colMACTKHENTHUONG.Name = "colMACTKHENTHUONG";
+            this.colMACTKHENTHUONG.Visible = true;
+            this.colMACTKHENTHUONG.VisibleIndex = 0;
             // 
-            // dataGridViewTextBoxColumn46
+            // colMALOAIKHENTHUONG
             // 
-            this.dataGridViewTextBoxColumn46.HeaderText = "Chức vụ";
-            this.dataGridViewTextBoxColumn46.Name = "dataGridViewTextBoxColumn46";
+            this.colMALOAIKHENTHUONG.FieldName = "MALOAIKHENTHUONG";
+            this.colMALOAIKHENTHUONG.Name = "colMALOAIKHENTHUONG";
+            this.colMALOAIKHENTHUONG.Visible = true;
+            this.colMALOAIKHENTHUONG.VisibleIndex = 1;
             // 
-            // dataGridViewTextBoxColumn47
+            // colMANV
             // 
-            this.dataGridViewTextBoxColumn47.HeaderText = "Mã khen thưởng";
-            this.dataGridViewTextBoxColumn47.Name = "dataGridViewTextBoxColumn47";
+            this.colMANV.FieldName = "MANV";
+            this.colMANV.Name = "colMANV";
+            this.colMANV.Visible = true;
+            this.colMANV.VisibleIndex = 2;
             // 
-            // dataGridViewTextBoxColumn48
+            // colNGAYKHENTHUONG
             // 
-            this.dataGridViewTextBoxColumn48.HeaderText = "Loại khen thưởng";
-            this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
-            // 
-            // dataGridViewTextBoxColumn49
-            // 
-            this.dataGridViewTextBoxColumn49.HeaderText = "Ngày khen thưởng";
-            this.dataGridViewTextBoxColumn49.Name = "dataGridViewTextBoxColumn49";
-            // 
-            // dataGridViewTextBoxColumn51
-            // 
-            this.dataGridViewTextBoxColumn51.HeaderText = "Tiền khen thưởng";
-            this.dataGridViewTextBoxColumn51.Name = "dataGridViewTextBoxColumn51";
+            this.colNGAYKHENTHUONG.FieldName = "NGAYKHENTHUONG";
+            this.colNGAYKHENTHUONG.Name = "colNGAYKHENTHUONG";
+            this.colNGAYKHENTHUONG.Visible = true;
+            this.colNGAYKHENTHUONG.VisibleIndex = 3;
             // 
             // groupBox6
             // 
@@ -1936,76 +1516,74 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.dataGridView6);
+            this.panel4.Controls.Add(this.gridControl3);
             this.panel4.Location = new System.Drawing.Point(347, 11);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1016, 694);
             this.panel4.TabIndex = 3;
             // 
-            // dataGridView6
+            // gridControl3
             // 
-            this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn17,
-            this.Column16,
-            this.Column17,
-            this.Column18,
-            this.Column19,
-            this.Column20});
-            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView6.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(1016, 632);
-            this.dataGridView6.TabIndex = 2;
+            this.gridControl3.DataSource = this.qUANLYKYLUATBindingSource;
+            this.gridControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl3.Location = new System.Drawing.Point(0, 0);
+            this.gridControl3.MainView = this.gridView3;
+            this.gridControl3.Name = "gridControl3";
+            this.gridControl3.Size = new System.Drawing.Size(1016, 694);
+            this.gridControl3.TabIndex = 0;
+            this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView3});
             // 
-            // dataGridViewTextBoxColumn14
+            // qUANLYKYLUATBindingSource
             // 
-            this.dataGridViewTextBoxColumn14.HeaderText = "Mã nhân viên";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.qUANLYKYLUATBindingSource.DataMember = "QUANLYKYLUAT";
+            this.qUANLYKYLUATBindingSource.DataSource = this.dataSetQLNS;
             // 
-            // dataGridViewTextBoxColumn15
+            // gridView3
             // 
-            this.dataGridViewTextBoxColumn15.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.gridView3.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMAQUANLYKYLUAT,
+            this.colMANV1,
+            this.colMAKYLUAT,
+            this.colNGAYKYLUAT,
+            this.colCOQUANKYLUAT});
+            this.gridView3.GridControl = this.gridControl3;
+            this.gridView3.Name = "gridView3";
             // 
-            // dataGridViewTextBoxColumn16
+            // colMAQUANLYKYLUAT
             // 
-            this.dataGridViewTextBoxColumn16.HeaderText = "Phòng ban";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.colMAQUANLYKYLUAT.FieldName = "MAQUANLYKYLUAT";
+            this.colMAQUANLYKYLUAT.Name = "colMAQUANLYKYLUAT";
+            this.colMAQUANLYKYLUAT.Visible = true;
+            this.colMAQUANLYKYLUAT.VisibleIndex = 0;
             // 
-            // dataGridViewTextBoxColumn17
+            // colMANV1
             // 
-            this.dataGridViewTextBoxColumn17.HeaderText = "Chức vụ";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.colMANV1.FieldName = "MANV";
+            this.colMANV1.Name = "colMANV1";
+            this.colMANV1.Visible = true;
+            this.colMANV1.VisibleIndex = 1;
             // 
-            // Column16
+            // colMAKYLUAT
             // 
-            this.Column16.HeaderText = "Mã kỷ luật";
-            this.Column16.Name = "Column16";
+            this.colMAKYLUAT.FieldName = "MAKYLUAT";
+            this.colMAKYLUAT.Name = "colMAKYLUAT";
+            this.colMAKYLUAT.Visible = true;
+            this.colMAKYLUAT.VisibleIndex = 2;
             // 
-            // Column17
+            // colNGAYKYLUAT
             // 
-            this.Column17.HeaderText = "Tên kỷ luật";
-            this.Column17.Name = "Column17";
+            this.colNGAYKYLUAT.FieldName = "NGAYKYLUAT";
+            this.colNGAYKYLUAT.Name = "colNGAYKYLUAT";
+            this.colNGAYKYLUAT.Visible = true;
+            this.colNGAYKYLUAT.VisibleIndex = 3;
             // 
-            // Column18
+            // colCOQUANKYLUAT
             // 
-            this.Column18.HeaderText = "Ngày kỷ luật";
-            this.Column18.Name = "Column18";
-            // 
-            // Column19
-            // 
-            this.Column19.HeaderText = "Cơ quan kỷ luật";
-            this.Column19.Name = "Column19";
-            // 
-            // Column20
-            // 
-            this.Column20.HeaderText = "Tiền kỷ luật";
-            this.Column20.Name = "Column20";
+            this.colCOQUANKYLUAT.FieldName = "COQUANKYLUAT";
+            this.colCOQUANKYLUAT.Name = "colCOQUANKYLUAT";
+            this.colCOQUANKYLUAT.Visible = true;
+            this.colCOQUANKYLUAT.VisibleIndex = 4;
             // 
             // label13
             // 
@@ -2050,89 +1628,27 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView4);
+            this.panel2.Controls.Add(this.gridControl1);
             this.panel2.Location = new System.Drawing.Point(347, 11);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1016, 488);
             this.panel2.TabIndex = 53;
             // 
-            // dataGridView4
+            // gridControl1
             // 
-            this.dataGridView4.AllowDrop = true;
-            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.Column10,
-            this.Column11,
-            this.Column12,
-            this.Column13,
-            this.Column14,
-            this.Column15,
-            this.Colum6});
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView4.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(1016, 488);
-            this.dataGridView4.TabIndex = 1;
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(1016, 488);
+            this.gridControl1.TabIndex = 2;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
             // 
-            // dataGridViewTextBoxColumn7
+            // gridView1
             // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Mã nhân viên";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Họ tên";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "Phòng ban";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "Chức vụ";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Mã hợp đồng";
-            this.Column10.Name = "Column10";
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "Loại hợp đồng";
-            this.Column11.Name = "Column11";
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "Ký lần thứ";
-            this.Column12.Name = "Column12";
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "Ngày ký";
-            this.Column13.Name = "Column13";
-            // 
-            // Column14
-            // 
-            this.Column14.HeaderText = "Ngày bắt đầu";
-            this.Column14.Name = "Column14";
-            // 
-            // Column15
-            // 
-            this.Column15.HeaderText = "Ngày kết thúc";
-            this.Column15.Name = "Column15";
-            // 
-            // Colum6
-            // 
-            this.Colum6.HeaderText = "Lương thỏa thuận";
-            this.Colum6.Name = "Colum6";
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
             // groupBox2
             // 
@@ -2149,7 +1665,6 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(3, 45);
@@ -2242,17 +1757,17 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(82, 114);
+            this.comboBox3.Location = new System.Drawing.Point(99, 114);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(217, 27);
+            this.comboBox3.Size = new System.Drawing.Size(200, 27);
             this.comboBox3.TabIndex = 14;
             // 
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(82, 69);
+            this.comboBox4.Location = new System.Drawing.Point(99, 69);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(217, 27);
+            this.comboBox4.Size = new System.Drawing.Size(200, 27);
             this.comboBox4.TabIndex = 13;
             // 
             // label10
@@ -2275,22 +1790,11 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(82, 25);
+            this.textBox2.Location = new System.Drawing.Point(99, 25);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 27);
+            this.textBox2.Size = new System.Drawing.Size(200, 27);
             this.textBox2.TabIndex = 9;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(270, 23);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(69, 28);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
@@ -2323,85 +1827,11 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.gridControl9);
             this.panel1.Location = new System.Drawing.Point(347, 11);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1016, 494);
             this.panel1.TabIndex = 50;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowDrop = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1016, 488);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mã nhân viên";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 108;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Họ tên";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 108;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Phòng ban";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 108;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Chức vụ";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 108;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Ngày nghỉ việc";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 109;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Số quyết định";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 108;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Ngày quyết định";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 108;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Người ký";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 108;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Lý do";
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 108;
             // 
             // groupBox1
             // 
@@ -2620,6 +2050,679 @@
             this.tabPane1.TabIndex = 0;
             this.tabPane1.Text = "tabPane1";
             // 
+            // cHITIETKHENTHUONGTableAdapter
+            // 
+            this.cHITIETKHENTHUONGTableAdapter.ClearBeforeFill = true;
+            // 
+            // qUANLYKYLUATTableAdapter
+            // 
+            this.qUANLYKYLUATTableAdapter.ClearBeforeFill = true;
+            // 
+            // gridControl4
+            // 
+            this.gridControl4.DataSource = this.dANHSACHUNGVIENDAUBindingSource1;
+            this.gridControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl4.Location = new System.Drawing.Point(0, 0);
+            this.gridControl4.MainView = this.gridView4;
+            this.gridControl4.Name = "gridControl4";
+            this.gridControl4.Size = new System.Drawing.Size(1364, 498);
+            this.gridControl4.TabIndex = 0;
+            this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView4});
+            // 
+            // gridView4
+            // 
+            this.gridView4.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMAUNGVIEN,
+            this.colMADANTOC,
+            this.colMATONGIAO,
+            this.colMAQUOCTICH,
+            this.colHOTEN,
+            this.colGIOITINH,
+            this.colNGAYSINH,
+            this.colNOISINH,
+            this.colCMND,
+            this.colNGAYCAP,
+            this.colNOICAP,
+            this.colQUEQUAN,
+            this.colDIACHITHUONGTRU,
+            this.colNOIOHIENTAI,
+            this.colDIENTHOAI,
+            this.colEMAIL,
+            this.colTINHTRANGHONNHAN,
+            this.colDIENUUTIEN,
+            this.colTINHTRANGSUCKHOE,
+            this.colNGAYTUYENDUNG,
+            this.colHINHTHUCTUYENDUNG,
+            this.colVITRITUYENDUNG,
+            this.colMATRINHDOHOCVAN,
+            this.colMATRINHDOTINHOC,
+            this.colKETQUA});
+            this.gridView4.GridControl = this.gridControl4;
+            this.gridView4.Name = "gridView4";
+            // 
+            // dANHSACHUNGVIENDAUBindingSource1
+            // 
+            this.dANHSACHUNGVIENDAUBindingSource1.DataMember = "DANHSACHUNGVIENDAU";
+            this.dANHSACHUNGVIENDAUBindingSource1.DataSource = this.dataSetQLNS;
+            // 
+            // dANHSACHUNGVIENDAUTableAdapter
+            // 
+            this.dANHSACHUNGVIENDAUTableAdapter.ClearBeforeFill = true;
+            // 
+            // colMAUNGVIEN
+            // 
+            this.colMAUNGVIEN.FieldName = "MAUNGVIEN";
+            this.colMAUNGVIEN.Name = "colMAUNGVIEN";
+            this.colMAUNGVIEN.Visible = true;
+            this.colMAUNGVIEN.VisibleIndex = 0;
+            // 
+            // colMADANTOC
+            // 
+            this.colMADANTOC.FieldName = "MADANTOC";
+            this.colMADANTOC.Name = "colMADANTOC";
+            this.colMADANTOC.Visible = true;
+            this.colMADANTOC.VisibleIndex = 1;
+            // 
+            // colMATONGIAO
+            // 
+            this.colMATONGIAO.FieldName = "MATONGIAO";
+            this.colMATONGIAO.Name = "colMATONGIAO";
+            this.colMATONGIAO.Visible = true;
+            this.colMATONGIAO.VisibleIndex = 2;
+            // 
+            // colMAQUOCTICH
+            // 
+            this.colMAQUOCTICH.FieldName = "MAQUOCTICH";
+            this.colMAQUOCTICH.Name = "colMAQUOCTICH";
+            this.colMAQUOCTICH.Visible = true;
+            this.colMAQUOCTICH.VisibleIndex = 3;
+            // 
+            // colHOTEN
+            // 
+            this.colHOTEN.FieldName = "HOTEN";
+            this.colHOTEN.Name = "colHOTEN";
+            this.colHOTEN.Visible = true;
+            this.colHOTEN.VisibleIndex = 4;
+            // 
+            // colGIOITINH
+            // 
+            this.colGIOITINH.FieldName = "GIOITINH";
+            this.colGIOITINH.Name = "colGIOITINH";
+            this.colGIOITINH.Visible = true;
+            this.colGIOITINH.VisibleIndex = 5;
+            // 
+            // colNGAYSINH
+            // 
+            this.colNGAYSINH.FieldName = "NGAYSINH";
+            this.colNGAYSINH.Name = "colNGAYSINH";
+            this.colNGAYSINH.Visible = true;
+            this.colNGAYSINH.VisibleIndex = 6;
+            // 
+            // colNOISINH
+            // 
+            this.colNOISINH.FieldName = "NOISINH";
+            this.colNOISINH.Name = "colNOISINH";
+            this.colNOISINH.Visible = true;
+            this.colNOISINH.VisibleIndex = 7;
+            // 
+            // colCMND
+            // 
+            this.colCMND.FieldName = "CMND";
+            this.colCMND.Name = "colCMND";
+            this.colCMND.Visible = true;
+            this.colCMND.VisibleIndex = 8;
+            // 
+            // colNGAYCAP
+            // 
+            this.colNGAYCAP.FieldName = "NGAYCAP";
+            this.colNGAYCAP.Name = "colNGAYCAP";
+            this.colNGAYCAP.Visible = true;
+            this.colNGAYCAP.VisibleIndex = 9;
+            // 
+            // colNOICAP
+            // 
+            this.colNOICAP.FieldName = "NOICAP";
+            this.colNOICAP.Name = "colNOICAP";
+            this.colNOICAP.Visible = true;
+            this.colNOICAP.VisibleIndex = 10;
+            // 
+            // colQUEQUAN
+            // 
+            this.colQUEQUAN.FieldName = "QUEQUAN";
+            this.colQUEQUAN.Name = "colQUEQUAN";
+            this.colQUEQUAN.Visible = true;
+            this.colQUEQUAN.VisibleIndex = 11;
+            // 
+            // colDIACHITHUONGTRU
+            // 
+            this.colDIACHITHUONGTRU.FieldName = "DIACHITHUONGTRU";
+            this.colDIACHITHUONGTRU.Name = "colDIACHITHUONGTRU";
+            this.colDIACHITHUONGTRU.Visible = true;
+            this.colDIACHITHUONGTRU.VisibleIndex = 12;
+            // 
+            // colNOIOHIENTAI
+            // 
+            this.colNOIOHIENTAI.FieldName = "NOIOHIENTAI";
+            this.colNOIOHIENTAI.Name = "colNOIOHIENTAI";
+            this.colNOIOHIENTAI.Visible = true;
+            this.colNOIOHIENTAI.VisibleIndex = 13;
+            // 
+            // colDIENTHOAI
+            // 
+            this.colDIENTHOAI.FieldName = "DIENTHOAI";
+            this.colDIENTHOAI.Name = "colDIENTHOAI";
+            this.colDIENTHOAI.Visible = true;
+            this.colDIENTHOAI.VisibleIndex = 14;
+            // 
+            // colEMAIL
+            // 
+            this.colEMAIL.FieldName = "EMAIL";
+            this.colEMAIL.Name = "colEMAIL";
+            this.colEMAIL.Visible = true;
+            this.colEMAIL.VisibleIndex = 15;
+            // 
+            // colTINHTRANGHONNHAN
+            // 
+            this.colTINHTRANGHONNHAN.FieldName = "TINHTRANGHONNHAN";
+            this.colTINHTRANGHONNHAN.Name = "colTINHTRANGHONNHAN";
+            this.colTINHTRANGHONNHAN.Visible = true;
+            this.colTINHTRANGHONNHAN.VisibleIndex = 16;
+            // 
+            // colDIENUUTIEN
+            // 
+            this.colDIENUUTIEN.FieldName = "DIENUUTIEN";
+            this.colDIENUUTIEN.Name = "colDIENUUTIEN";
+            this.colDIENUUTIEN.Visible = true;
+            this.colDIENUUTIEN.VisibleIndex = 17;
+            // 
+            // colTINHTRANGSUCKHOE
+            // 
+            this.colTINHTRANGSUCKHOE.FieldName = "TINHTRANGSUCKHOE";
+            this.colTINHTRANGSUCKHOE.Name = "colTINHTRANGSUCKHOE";
+            this.colTINHTRANGSUCKHOE.Visible = true;
+            this.colTINHTRANGSUCKHOE.VisibleIndex = 18;
+            // 
+            // colNGAYTUYENDUNG
+            // 
+            this.colNGAYTUYENDUNG.FieldName = "NGAYTUYENDUNG";
+            this.colNGAYTUYENDUNG.Name = "colNGAYTUYENDUNG";
+            this.colNGAYTUYENDUNG.Visible = true;
+            this.colNGAYTUYENDUNG.VisibleIndex = 19;
+            // 
+            // colHINHTHUCTUYENDUNG
+            // 
+            this.colHINHTHUCTUYENDUNG.FieldName = "HINHTHUCTUYENDUNG";
+            this.colHINHTHUCTUYENDUNG.Name = "colHINHTHUCTUYENDUNG";
+            this.colHINHTHUCTUYENDUNG.Visible = true;
+            this.colHINHTHUCTUYENDUNG.VisibleIndex = 20;
+            // 
+            // colVITRITUYENDUNG
+            // 
+            this.colVITRITUYENDUNG.FieldName = "VITRITUYENDUNG";
+            this.colVITRITUYENDUNG.Name = "colVITRITUYENDUNG";
+            this.colVITRITUYENDUNG.Visible = true;
+            this.colVITRITUYENDUNG.VisibleIndex = 21;
+            // 
+            // colMATRINHDOHOCVAN
+            // 
+            this.colMATRINHDOHOCVAN.FieldName = "MATRINHDOHOCVAN";
+            this.colMATRINHDOHOCVAN.Name = "colMATRINHDOHOCVAN";
+            this.colMATRINHDOHOCVAN.Visible = true;
+            this.colMATRINHDOHOCVAN.VisibleIndex = 22;
+            // 
+            // colMATRINHDOTINHOC
+            // 
+            this.colMATRINHDOTINHOC.FieldName = "MATRINHDOTINHOC";
+            this.colMATRINHDOTINHOC.Name = "colMATRINHDOTINHOC";
+            this.colMATRINHDOTINHOC.Visible = true;
+            this.colMATRINHDOTINHOC.VisibleIndex = 23;
+            // 
+            // colKETQUA
+            // 
+            this.colKETQUA.FieldName = "KETQUA";
+            this.colKETQUA.Name = "colKETQUA";
+            this.colKETQUA.Visible = true;
+            this.colKETQUA.VisibleIndex = 24;
+            // 
+            // gridControl5
+            // 
+            this.gridControl5.DataSource = this.dANHSACHUNGVIENROTBindingSource1;
+            this.gridControl5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl5.Location = new System.Drawing.Point(0, 0);
+            this.gridControl5.MainView = this.gridView5;
+            this.gridControl5.Name = "gridControl5";
+            this.gridControl5.Size = new System.Drawing.Size(1364, 498);
+            this.gridControl5.TabIndex = 0;
+            this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView5});
+            // 
+            // gridView5
+            // 
+            this.gridView5.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMAUNGVIEN1,
+            this.colMADANTOC1,
+            this.colMATONGIAO1,
+            this.colMAQUOCTICH1,
+            this.colHOTEN1,
+            this.colGIOITINH1,
+            this.colNGAYSINH1,
+            this.colNOISINH1,
+            this.colCMND1,
+            this.colNGAYCAP1,
+            this.colNOICAP1,
+            this.colQUEQUAN1,
+            this.colDIACHITHUONGTRU1,
+            this.colNOIOHIENTAI1,
+            this.colDIENTHOAI1,
+            this.colEMAIL1,
+            this.colTINHTRANGHONNHAN1,
+            this.colDIENUUTIEN1,
+            this.colTINHTRANGSUCKHOE1,
+            this.colNGAYTUYENDUNG1,
+            this.colHINHTHUCTUYENDUNG1,
+            this.colVITRITUYENDUNG1,
+            this.colMATRINHDOHOCVAN1,
+            this.colMATRINHDOTINHOC1,
+            this.colKETQUA1});
+            this.gridView5.GridControl = this.gridControl5;
+            this.gridView5.Name = "gridView5";
+            // 
+            // dANHSACHUNGVIENROTBindingSource1
+            // 
+            this.dANHSACHUNGVIENROTBindingSource1.DataMember = "DANHSACHUNGVIENROT";
+            this.dANHSACHUNGVIENROTBindingSource1.DataSource = this.dataSetQLNS;
+            // 
+            // colMAUNGVIEN1
+            // 
+            this.colMAUNGVIEN1.FieldName = "MAUNGVIEN";
+            this.colMAUNGVIEN1.Name = "colMAUNGVIEN1";
+            this.colMAUNGVIEN1.Visible = true;
+            this.colMAUNGVIEN1.VisibleIndex = 0;
+            // 
+            // colMADANTOC1
+            // 
+            this.colMADANTOC1.FieldName = "MADANTOC";
+            this.colMADANTOC1.Name = "colMADANTOC1";
+            this.colMADANTOC1.Visible = true;
+            this.colMADANTOC1.VisibleIndex = 1;
+            // 
+            // colMATONGIAO1
+            // 
+            this.colMATONGIAO1.FieldName = "MATONGIAO";
+            this.colMATONGIAO1.Name = "colMATONGIAO1";
+            this.colMATONGIAO1.Visible = true;
+            this.colMATONGIAO1.VisibleIndex = 2;
+            // 
+            // colMAQUOCTICH1
+            // 
+            this.colMAQUOCTICH1.FieldName = "MAQUOCTICH";
+            this.colMAQUOCTICH1.Name = "colMAQUOCTICH1";
+            this.colMAQUOCTICH1.Visible = true;
+            this.colMAQUOCTICH1.VisibleIndex = 3;
+            // 
+            // colHOTEN1
+            // 
+            this.colHOTEN1.FieldName = "HOTEN";
+            this.colHOTEN1.Name = "colHOTEN1";
+            this.colHOTEN1.Visible = true;
+            this.colHOTEN1.VisibleIndex = 4;
+            // 
+            // colGIOITINH1
+            // 
+            this.colGIOITINH1.FieldName = "GIOITINH";
+            this.colGIOITINH1.Name = "colGIOITINH1";
+            this.colGIOITINH1.Visible = true;
+            this.colGIOITINH1.VisibleIndex = 5;
+            // 
+            // colNGAYSINH1
+            // 
+            this.colNGAYSINH1.FieldName = "NGAYSINH";
+            this.colNGAYSINH1.Name = "colNGAYSINH1";
+            this.colNGAYSINH1.Visible = true;
+            this.colNGAYSINH1.VisibleIndex = 6;
+            // 
+            // colNOISINH1
+            // 
+            this.colNOISINH1.FieldName = "NOISINH";
+            this.colNOISINH1.Name = "colNOISINH1";
+            this.colNOISINH1.Visible = true;
+            this.colNOISINH1.VisibleIndex = 7;
+            // 
+            // colCMND1
+            // 
+            this.colCMND1.FieldName = "CMND";
+            this.colCMND1.Name = "colCMND1";
+            this.colCMND1.Visible = true;
+            this.colCMND1.VisibleIndex = 8;
+            // 
+            // colNGAYCAP1
+            // 
+            this.colNGAYCAP1.FieldName = "NGAYCAP";
+            this.colNGAYCAP1.Name = "colNGAYCAP1";
+            this.colNGAYCAP1.Visible = true;
+            this.colNGAYCAP1.VisibleIndex = 9;
+            // 
+            // colNOICAP1
+            // 
+            this.colNOICAP1.FieldName = "NOICAP";
+            this.colNOICAP1.Name = "colNOICAP1";
+            this.colNOICAP1.Visible = true;
+            this.colNOICAP1.VisibleIndex = 10;
+            // 
+            // colQUEQUAN1
+            // 
+            this.colQUEQUAN1.FieldName = "QUEQUAN";
+            this.colQUEQUAN1.Name = "colQUEQUAN1";
+            this.colQUEQUAN1.Visible = true;
+            this.colQUEQUAN1.VisibleIndex = 11;
+            // 
+            // colDIACHITHUONGTRU1
+            // 
+            this.colDIACHITHUONGTRU1.FieldName = "DIACHITHUONGTRU";
+            this.colDIACHITHUONGTRU1.Name = "colDIACHITHUONGTRU1";
+            this.colDIACHITHUONGTRU1.Visible = true;
+            this.colDIACHITHUONGTRU1.VisibleIndex = 12;
+            // 
+            // colNOIOHIENTAI1
+            // 
+            this.colNOIOHIENTAI1.FieldName = "NOIOHIENTAI";
+            this.colNOIOHIENTAI1.Name = "colNOIOHIENTAI1";
+            this.colNOIOHIENTAI1.Visible = true;
+            this.colNOIOHIENTAI1.VisibleIndex = 13;
+            // 
+            // colDIENTHOAI1
+            // 
+            this.colDIENTHOAI1.FieldName = "DIENTHOAI";
+            this.colDIENTHOAI1.Name = "colDIENTHOAI1";
+            this.colDIENTHOAI1.Visible = true;
+            this.colDIENTHOAI1.VisibleIndex = 14;
+            // 
+            // colEMAIL1
+            // 
+            this.colEMAIL1.FieldName = "EMAIL";
+            this.colEMAIL1.Name = "colEMAIL1";
+            this.colEMAIL1.Visible = true;
+            this.colEMAIL1.VisibleIndex = 15;
+            // 
+            // colTINHTRANGHONNHAN1
+            // 
+            this.colTINHTRANGHONNHAN1.FieldName = "TINHTRANGHONNHAN";
+            this.colTINHTRANGHONNHAN1.Name = "colTINHTRANGHONNHAN1";
+            this.colTINHTRANGHONNHAN1.Visible = true;
+            this.colTINHTRANGHONNHAN1.VisibleIndex = 16;
+            // 
+            // colDIENUUTIEN1
+            // 
+            this.colDIENUUTIEN1.FieldName = "DIENUUTIEN";
+            this.colDIENUUTIEN1.Name = "colDIENUUTIEN1";
+            this.colDIENUUTIEN1.Visible = true;
+            this.colDIENUUTIEN1.VisibleIndex = 17;
+            // 
+            // colTINHTRANGSUCKHOE1
+            // 
+            this.colTINHTRANGSUCKHOE1.FieldName = "TINHTRANGSUCKHOE";
+            this.colTINHTRANGSUCKHOE1.Name = "colTINHTRANGSUCKHOE1";
+            this.colTINHTRANGSUCKHOE1.Visible = true;
+            this.colTINHTRANGSUCKHOE1.VisibleIndex = 18;
+            // 
+            // colNGAYTUYENDUNG1
+            // 
+            this.colNGAYTUYENDUNG1.FieldName = "NGAYTUYENDUNG";
+            this.colNGAYTUYENDUNG1.Name = "colNGAYTUYENDUNG1";
+            this.colNGAYTUYENDUNG1.Visible = true;
+            this.colNGAYTUYENDUNG1.VisibleIndex = 19;
+            // 
+            // colHINHTHUCTUYENDUNG1
+            // 
+            this.colHINHTHUCTUYENDUNG1.FieldName = "HINHTHUCTUYENDUNG";
+            this.colHINHTHUCTUYENDUNG1.Name = "colHINHTHUCTUYENDUNG1";
+            this.colHINHTHUCTUYENDUNG1.Visible = true;
+            this.colHINHTHUCTUYENDUNG1.VisibleIndex = 20;
+            // 
+            // colVITRITUYENDUNG1
+            // 
+            this.colVITRITUYENDUNG1.FieldName = "VITRITUYENDUNG";
+            this.colVITRITUYENDUNG1.Name = "colVITRITUYENDUNG1";
+            this.colVITRITUYENDUNG1.Visible = true;
+            this.colVITRITUYENDUNG1.VisibleIndex = 21;
+            // 
+            // colMATRINHDOHOCVAN1
+            // 
+            this.colMATRINHDOHOCVAN1.FieldName = "MATRINHDOHOCVAN";
+            this.colMATRINHDOHOCVAN1.Name = "colMATRINHDOHOCVAN1";
+            this.colMATRINHDOHOCVAN1.Visible = true;
+            this.colMATRINHDOHOCVAN1.VisibleIndex = 22;
+            // 
+            // colMATRINHDOTINHOC1
+            // 
+            this.colMATRINHDOTINHOC1.FieldName = "MATRINHDOTINHOC";
+            this.colMATRINHDOTINHOC1.Name = "colMATRINHDOTINHOC1";
+            this.colMATRINHDOTINHOC1.Visible = true;
+            this.colMATRINHDOTINHOC1.VisibleIndex = 23;
+            // 
+            // colKETQUA1
+            // 
+            this.colKETQUA1.FieldName = "KETQUA";
+            this.colKETQUA1.Name = "colKETQUA1";
+            this.colKETQUA1.Visible = true;
+            this.colKETQUA1.VisibleIndex = 24;
+            // 
+            // dANHMUCTANGCABindingSource
+            // 
+            this.dANHMUCTANGCABindingSource.DataMember = "DANHMUCTANGCA";
+            this.dANHMUCTANGCABindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // dANHMUCTANGCATableAdapter
+            // 
+            this.dANHMUCTANGCATableAdapter.ClearBeforeFill = true;
+            // 
+            // bANGTANGCABindingSource
+            // 
+            this.bANGTANGCABindingSource.DataMember = "BANGTANGCA";
+            this.bANGTANGCABindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // bANGTANGCATableAdapter
+            // 
+            this.bANGTANGCATableAdapter.ClearBeforeFill = true;
+            // 
+            // dANHMUCTANGCABindingSource1
+            // 
+            this.dANHMUCTANGCABindingSource1.DataMember = "DANHMUCTANGCA";
+            this.dANHMUCTANGCABindingSource1.DataSource = this.dataSetQLNS;
+            // 
+            // gridControl6
+            // 
+            this.gridControl6.DataSource = this.bANGTANGCABindingSource;
+            this.gridControl6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl6.Location = new System.Drawing.Point(0, 0);
+            this.gridControl6.MainView = this.gridView6;
+            this.gridControl6.Name = "gridControl6";
+            this.gridControl6.Size = new System.Drawing.Size(1014, 487);
+            this.gridControl6.TabIndex = 0;
+            this.gridControl6.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView6});
+            // 
+            // gridView6
+            // 
+            this.gridView6.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMANV2,
+            this.colNGAYTANGCA,
+            this.colMALOAICA});
+            this.gridView6.GridControl = this.gridControl6;
+            this.gridView6.Name = "gridView6";
+            // 
+            // colMANV2
+            // 
+            this.colMANV2.FieldName = "MANV";
+            this.colMANV2.Name = "colMANV2";
+            this.colMANV2.Visible = true;
+            this.colMANV2.VisibleIndex = 0;
+            // 
+            // colNGAYTANGCA
+            // 
+            this.colNGAYTANGCA.FieldName = "NGAYTANGCA";
+            this.colNGAYTANGCA.Name = "colNGAYTANGCA";
+            this.colNGAYTANGCA.Visible = true;
+            this.colNGAYTANGCA.VisibleIndex = 1;
+            // 
+            // colMALOAICA
+            // 
+            this.colMALOAICA.FieldName = "MALOAICA";
+            this.colMALOAICA.Name = "colMALOAICA";
+            this.colMALOAICA.Visible = true;
+            this.colMALOAICA.VisibleIndex = 2;
+            // 
+            // gridControl7
+            // 
+            this.gridControl7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl7.Location = new System.Drawing.Point(0, 0);
+            this.gridControl7.MainView = this.gridView7;
+            this.gridControl7.Name = "gridControl7";
+            this.gridControl7.Size = new System.Drawing.Size(1014, 484);
+            this.gridControl7.TabIndex = 0;
+            this.gridControl7.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView7});
+            // 
+            // gridView7
+            // 
+            this.gridView7.GridControl = this.gridControl7;
+            this.gridView7.Name = "gridView7";
+            // 
+            // gridControl8
+            // 
+            this.gridControl8.DataSource = this.tONGLUONGBindingSource;
+            this.gridControl8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl8.Location = new System.Drawing.Point(0, 0);
+            this.gridControl8.MainView = this.gridView8;
+            this.gridControl8.Name = "gridControl8";
+            this.gridControl8.Size = new System.Drawing.Size(1015, 484);
+            this.gridControl8.TabIndex = 0;
+            this.gridControl8.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView8});
+            // 
+            // gridView8
+            // 
+            this.gridView8.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMANV3,
+            this.colLUONGTHANG,
+            this.colTONGTIENLUONG});
+            this.gridView8.GridControl = this.gridControl8;
+            this.gridView8.Name = "gridView8";
+            // 
+            // tONGLUONGBindingSource
+            // 
+            this.tONGLUONGBindingSource.DataMember = "TONGLUONG";
+            this.tONGLUONGBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // tONGLUONGTableAdapter
+            // 
+            this.tONGLUONGTableAdapter.ClearBeforeFill = true;
+            // 
+            // colMANV3
+            // 
+            this.colMANV3.FieldName = "MANV";
+            this.colMANV3.Name = "colMANV3";
+            this.colMANV3.Visible = true;
+            this.colMANV3.VisibleIndex = 0;
+            // 
+            // colLUONGTHANG
+            // 
+            this.colLUONGTHANG.FieldName = "LUONGTHANG";
+            this.colLUONGTHANG.Name = "colLUONGTHANG";
+            this.colLUONGTHANG.Visible = true;
+            this.colLUONGTHANG.VisibleIndex = 1;
+            // 
+            // colTONGTIENLUONG
+            // 
+            this.colTONGTIENLUONG.FieldName = "TONGTIENLUONG";
+            this.colTONGTIENLUONG.Name = "colTONGTIENLUONG";
+            this.colTONGTIENLUONG.Visible = true;
+            this.colTONGTIENLUONG.VisibleIndex = 2;
+            // 
+            // gridControl9
+            // 
+            this.gridControl9.DataSource = this.qUANLYNGHIVIECBindingSource;
+            this.gridControl9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl9.Location = new System.Drawing.Point(0, 0);
+            this.gridControl9.MainView = this.gridView9;
+            this.gridControl9.Name = "gridControl9";
+            this.gridControl9.Size = new System.Drawing.Size(1016, 494);
+            this.gridControl9.TabIndex = 0;
+            this.gridControl9.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView9});
+            // 
+            // gridView9
+            // 
+            this.gridView9.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMAQUANLYNGHIVIEC,
+            this.colMANV4,
+            this.colSOQUYETDINH,
+            this.colNGAYQUYETDINH,
+            this.colNGUOIKY,
+            this.colNGAYNGHIVIEC,
+            this.colLYDO});
+            this.gridView9.GridControl = this.gridControl9;
+            this.gridView9.Name = "gridView9";
+            // 
+            // qUANLYNGHIVIECBindingSource
+            // 
+            this.qUANLYNGHIVIECBindingSource.DataMember = "QUANLYNGHIVIEC";
+            this.qUANLYNGHIVIECBindingSource.DataSource = this.dataSetQLNS;
+            // 
+            // qUANLYNGHIVIECTableAdapter
+            // 
+            this.qUANLYNGHIVIECTableAdapter.ClearBeforeFill = true;
+            // 
+            // colMAQUANLYNGHIVIEC
+            // 
+            this.colMAQUANLYNGHIVIEC.FieldName = "MAQUANLYNGHIVIEC";
+            this.colMAQUANLYNGHIVIEC.Name = "colMAQUANLYNGHIVIEC";
+            this.colMAQUANLYNGHIVIEC.Visible = true;
+            this.colMAQUANLYNGHIVIEC.VisibleIndex = 0;
+            // 
+            // colMANV4
+            // 
+            this.colMANV4.FieldName = "MANV";
+            this.colMANV4.Name = "colMANV4";
+            this.colMANV4.Visible = true;
+            this.colMANV4.VisibleIndex = 1;
+            // 
+            // colSOQUYETDINH
+            // 
+            this.colSOQUYETDINH.FieldName = "SOQUYETDINH";
+            this.colSOQUYETDINH.Name = "colSOQUYETDINH";
+            this.colSOQUYETDINH.Visible = true;
+            this.colSOQUYETDINH.VisibleIndex = 2;
+            // 
+            // colNGAYQUYETDINH
+            // 
+            this.colNGAYQUYETDINH.FieldName = "NGAYQUYETDINH";
+            this.colNGAYQUYETDINH.Name = "colNGAYQUYETDINH";
+            this.colNGAYQUYETDINH.Visible = true;
+            this.colNGAYQUYETDINH.VisibleIndex = 3;
+            // 
+            // colNGUOIKY
+            // 
+            this.colNGUOIKY.FieldName = "NGUOIKY";
+            this.colNGUOIKY.Name = "colNGUOIKY";
+            this.colNGUOIKY.Visible = true;
+            this.colNGUOIKY.VisibleIndex = 4;
+            // 
+            // colNGAYNGHIVIEC
+            // 
+            this.colNGAYNGHIVIEC.FieldName = "NGAYNGHIVIEC";
+            this.colNGAYNGHIVIEC.Name = "colNGAYNGHIVIEC";
+            this.colNGAYNGHIVIEC.Visible = true;
+            this.colNGAYNGHIVIEC.VisibleIndex = 5;
+            // 
+            // colLYDO
+            // 
+            this.colLYDO.FieldName = "LYDO";
+            this.colLYDO.Name = "colLYDO";
+            this.colLYDO.Visible = true;
+            this.colLYDO.VisibleIndex = 6;
+            // 
             // frm_ThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2645,7 +2748,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit14.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit14.Properties)).EndInit();
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).EndInit();
             this.xtraTabPage8.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -2654,10 +2756,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit12.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit12.Properties)).EndInit();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.xtraTabPage1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit15.Properties.CalendarTimeProperties)).EndInit();
@@ -2669,15 +2769,15 @@
             this.xtraTabControl4.ResumeLayout(false);
             this.xtraTabPage9.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENDAUDataGridView)).EndInit();
             this.xtraTabPage10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTDataGridView)).EndInit();
             this.tabNavigationPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).EndInit();
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage6.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cHITIETKHENTHUONGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit5.Properties.CalendarTimeProperties)).EndInit();
@@ -2692,13 +2792,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit8.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit8.Properties)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUANLYKYLUATBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             this.tabNavigationPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties.CalendarTimeProperties)).EndInit();
@@ -2707,7 +2810,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).EndInit();
             this.xtraTabPage2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit9.Properties.CalendarTimeProperties)).EndInit();
@@ -2720,6 +2822,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENDAUBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANHSACHUNGVIENROTBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANHMUCTANGCABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bANGTANGCABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANHMUCTANGCABindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tONGLUONGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qUANLYNGHIVIECBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2771,17 +2892,6 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.DataGridView dataGridView14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn54;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn55;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn56;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn57;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column25;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column26;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column27;
         private System.Windows.Forms.Label label34;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage8;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -2798,28 +2908,9 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.DataGridView dataGridView8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
         private System.Windows.Forms.Label label19;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn53;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn90;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn91;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn92;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn93;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox groupBox5;
         private DevExpress.XtraEditors.DateEdit dateEdit15;
@@ -2836,53 +2927,11 @@
         private DevExpress.XtraTab.XtraTabControl xtraTabControl4;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage9;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dANHSACHUNGVIENDAUDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn59;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn60;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn61;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn62;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn63;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn64;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn65;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn66;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn67;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn68;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn69;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn70;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn71;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn72;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn73;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn74;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage10;
-        private System.Windows.Forms.DataGridView dANHSACHUNGVIENROTDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn76;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn77;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn78;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn79;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn80;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn81;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn82;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn83;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn84;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn85;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn86;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn87;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn88;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn89;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn75;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage5;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl2;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage6;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.DataGridView dataGridView12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn43;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn44;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn45;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn46;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn47;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn48;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn49;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn51;
         private System.Windows.Forms.GroupBox groupBox6;
         private DevExpress.XtraEditors.DateEdit dateEdit5;
         private DevExpress.XtraEditors.DateEdit dateEdit6;
@@ -2918,33 +2967,11 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
         private System.Windows.Forms.Label label13;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage1;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Colum6;
         private System.Windows.Forms.GroupBox groupBox2;
         private DevExpress.XtraEditors.DateEdit dateEdit4;
         private DevExpress.XtraEditors.DateEdit dateEdit3;
@@ -2959,21 +2986,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraEditors.DateEdit dateEdit9;
         private DevExpress.XtraEditors.DateEdit dateEdit10;
@@ -2992,5 +3008,111 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraBars.Navigation.TabPane tabPane1;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private System.Windows.Forms.BindingSource cHITIETKHENTHUONGBindingSource;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.Columns.GridColumn colMACTKHENTHUONG;
+        private DevExpress.XtraGrid.Columns.GridColumn colMALOAIKHENTHUONG;
+        private DevExpress.XtraGrid.Columns.GridColumn colMANV;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYKHENTHUONG;
+        private DevExpress.XtraGrid.GridControl gridControl3;
+        private System.Windows.Forms.BindingSource qUANLYKYLUATBindingSource;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
+        private DevExpress.XtraGrid.Columns.GridColumn colMAQUANLYKYLUAT;
+        private DevExpress.XtraGrid.Columns.GridColumn colMANV1;
+        private DevExpress.XtraGrid.Columns.GridColumn colMAKYLUAT;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYKYLUAT;
+        private DevExpress.XtraGrid.Columns.GridColumn colCOQUANKYLUAT;
+        private DataSetQLNSTableAdapters.CHITIETKHENTHUONGTableAdapter cHITIETKHENTHUONGTableAdapter;
+        private DataSetQLNSTableAdapters.QUANLYKYLUATTableAdapter qUANLYKYLUATTableAdapter;
+        private DevExpress.XtraGrid.GridControl gridControl6;
+        private System.Windows.Forms.BindingSource bANGTANGCABindingSource;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView6;
+        private DevExpress.XtraGrid.Columns.GridColumn colMANV2;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYTANGCA;
+        private DevExpress.XtraGrid.Columns.GridColumn colMALOAICA;
+        private DevExpress.XtraGrid.GridControl gridControl7;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView7;
+        private DevExpress.XtraGrid.GridControl gridControl8;
+        private System.Windows.Forms.BindingSource tONGLUONGBindingSource;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView8;
+        private DevExpress.XtraGrid.Columns.GridColumn colMANV3;
+        private DevExpress.XtraGrid.Columns.GridColumn colLUONGTHANG;
+        private DevExpress.XtraGrid.Columns.GridColumn colTONGTIENLUONG;
+        private DevExpress.XtraGrid.GridControl gridControl4;
+        private System.Windows.Forms.BindingSource dANHSACHUNGVIENDAUBindingSource1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
+        private DevExpress.XtraGrid.Columns.GridColumn colMAUNGVIEN;
+        private DevExpress.XtraGrid.Columns.GridColumn colMADANTOC;
+        private DevExpress.XtraGrid.Columns.GridColumn colMATONGIAO;
+        private DevExpress.XtraGrid.Columns.GridColumn colMAQUOCTICH;
+        private DevExpress.XtraGrid.Columns.GridColumn colHOTEN;
+        private DevExpress.XtraGrid.Columns.GridColumn colGIOITINH;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYSINH;
+        private DevExpress.XtraGrid.Columns.GridColumn colNOISINH;
+        private DevExpress.XtraGrid.Columns.GridColumn colCMND;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYCAP;
+        private DevExpress.XtraGrid.Columns.GridColumn colNOICAP;
+        private DevExpress.XtraGrid.Columns.GridColumn colQUEQUAN;
+        private DevExpress.XtraGrid.Columns.GridColumn colDIACHITHUONGTRU;
+        private DevExpress.XtraGrid.Columns.GridColumn colNOIOHIENTAI;
+        private DevExpress.XtraGrid.Columns.GridColumn colDIENTHOAI;
+        private DevExpress.XtraGrid.Columns.GridColumn colEMAIL;
+        private DevExpress.XtraGrid.Columns.GridColumn colTINHTRANGHONNHAN;
+        private DevExpress.XtraGrid.Columns.GridColumn colDIENUUTIEN;
+        private DevExpress.XtraGrid.Columns.GridColumn colTINHTRANGSUCKHOE;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYTUYENDUNG;
+        private DevExpress.XtraGrid.Columns.GridColumn colHINHTHUCTUYENDUNG;
+        private DevExpress.XtraGrid.Columns.GridColumn colVITRITUYENDUNG;
+        private DevExpress.XtraGrid.Columns.GridColumn colMATRINHDOHOCVAN;
+        private DevExpress.XtraGrid.Columns.GridColumn colMATRINHDOTINHOC;
+        private DevExpress.XtraGrid.Columns.GridColumn colKETQUA;
+        private DevExpress.XtraGrid.GridControl gridControl5;
+        private System.Windows.Forms.BindingSource dANHSACHUNGVIENROTBindingSource1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
+        private DevExpress.XtraGrid.Columns.GridColumn colMAUNGVIEN1;
+        private DevExpress.XtraGrid.Columns.GridColumn colMADANTOC1;
+        private DevExpress.XtraGrid.Columns.GridColumn colMATONGIAO1;
+        private DevExpress.XtraGrid.Columns.GridColumn colMAQUOCTICH1;
+        private DevExpress.XtraGrid.Columns.GridColumn colHOTEN1;
+        private DevExpress.XtraGrid.Columns.GridColumn colGIOITINH1;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYSINH1;
+        private DevExpress.XtraGrid.Columns.GridColumn colNOISINH1;
+        private DevExpress.XtraGrid.Columns.GridColumn colCMND1;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYCAP1;
+        private DevExpress.XtraGrid.Columns.GridColumn colNOICAP1;
+        private DevExpress.XtraGrid.Columns.GridColumn colQUEQUAN1;
+        private DevExpress.XtraGrid.Columns.GridColumn colDIACHITHUONGTRU1;
+        private DevExpress.XtraGrid.Columns.GridColumn colNOIOHIENTAI1;
+        private DevExpress.XtraGrid.Columns.GridColumn colDIENTHOAI1;
+        private DevExpress.XtraGrid.Columns.GridColumn colEMAIL1;
+        private DevExpress.XtraGrid.Columns.GridColumn colTINHTRANGHONNHAN1;
+        private DevExpress.XtraGrid.Columns.GridColumn colDIENUUTIEN1;
+        private DevExpress.XtraGrid.Columns.GridColumn colTINHTRANGSUCKHOE1;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYTUYENDUNG1;
+        private DevExpress.XtraGrid.Columns.GridColumn colHINHTHUCTUYENDUNG1;
+        private DevExpress.XtraGrid.Columns.GridColumn colVITRITUYENDUNG1;
+        private DevExpress.XtraGrid.Columns.GridColumn colMATRINHDOHOCVAN1;
+        private DevExpress.XtraGrid.Columns.GridColumn colMATRINHDOTINHOC1;
+        private DevExpress.XtraGrid.Columns.GridColumn colKETQUA1;
+        private DevExpress.XtraGrid.GridControl gridControl9;
+        private System.Windows.Forms.BindingSource qUANLYNGHIVIECBindingSource;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView9;
+        private DevExpress.XtraGrid.Columns.GridColumn colMAQUANLYNGHIVIEC;
+        private DevExpress.XtraGrid.Columns.GridColumn colMANV4;
+        private DevExpress.XtraGrid.Columns.GridColumn colSOQUYETDINH;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYQUYETDINH;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGUOIKY;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYNGHIVIEC;
+        private DevExpress.XtraGrid.Columns.GridColumn colLYDO;
+        private DataSetQLNSTableAdapters.DANHSACHUNGVIENDAUTableAdapter dANHSACHUNGVIENDAUTableAdapter;
+        private System.Windows.Forms.BindingSource dANHMUCTANGCABindingSource;
+        private DataSetQLNSTableAdapters.DANHMUCTANGCATableAdapter dANHMUCTANGCATableAdapter;
+        private DataSetQLNSTableAdapters.BANGTANGCATableAdapter bANGTANGCATableAdapter;
+        private System.Windows.Forms.BindingSource dANHMUCTANGCABindingSource1;
+        private DataSetQLNSTableAdapters.TONGLUONGTableAdapter tONGLUONGTableAdapter;
+        private DataSetQLNSTableAdapters.QUANLYNGHIVIECTableAdapter qUANLYNGHIVIECTableAdapter;
     }
 }
