@@ -475,6 +475,8 @@ namespace QuanLy_NhanSu
         {
             if (Properties.Settings.Default.controldongclickmaNV != "")
             {
+                frm_InHopDong f = new frm_InHopDong(txtHoTenThongtin.Text,txtMaHopDong.Text,cboChucVuBaoHiem.Text,cboLoaiHopDong.Text,dateEditNgayBatDau.DateTime,dateEditNgayKetThuc.DateTime,txtLuongThoaThuan.Text);
+                f.ShowDialog();
             //    Word word = new Word();
             //    string HoTen=txtHoTenThongtin.Text;
             //    string MaNV= Properties.Settings.Default.controldongclickmaNV;
